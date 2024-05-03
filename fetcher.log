@@ -854,3 +854,15 @@
 [2024-05-04 00:41:10] INFO root fetch - processPackages [memprocfs]: Remove: archive file [/home/abi/fetcher/tmp/memprocfs-5.9.11.tar.gz]
 [2024-05-04 00:41:10] INFO root fetch - main [MainThread]: End processing [memprocfs]: success
 [2024-05-04 00:41:10] INFO root fetch - main [MainThread]: Store serial: [23052422]
+[2024-05-04 00:43:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052422]
+[2024-05-04 00:43:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 00:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unyts
+[2024-05-04 00:43:19] INFO root fetch - processPackages [unyts]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-05-04 00:43:19] INFO root fetch - processPackages [unyts]: Downloading https://files.pythonhosted.org/packages/cb/e9/b8d44bb4c2ffc94740ec36fd28074258c50d5c8934385af28f6ef798de82/unyts-0.8.1.tar.gz
+[2024-05-04 00:43:19] INFO root fetch - processPackages [unyts]: Downloading https://files.pythonhosted.org/packages/1e/50/aa3e404ddf9b1675428132aad23603a79ee6b0e5b1f40be77729bf2186e8/unyts-0.8.2.tar.gz
+[2024-05-04 00:43:20] INFO root fetch - processPackages [unyts]: executing diffoscope
+[2024-05-04 00:43:20] INFO root fetch - processPackages [unyts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unyts-0.8.1.tar.gz tmp/unyts-0.8.2.tar.gz --markdown 20240504/u/unyts/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-05-04 00:43:20] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.8.1.tar.gz]
+[2024-05-04 00:43:20] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.8.2.tar.gz]
+[2024-05-04 00:43:20] INFO root fetch - main [MainThread]: End processing [unyts]: success
+[2024-05-04 00:43:20] INFO root fetch - main [MainThread]: Store serial: [23052425]
