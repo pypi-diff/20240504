@@ -1373,3 +1373,39 @@
 [2024-05-04 01:16:18] WARNING root fetch - processPackages [LorenzTelegram]: Skipping, unable to determine old version
 [2024-05-04 01:16:18] INFO root fetch - main [MainThread]: End processing [LorenzTelegram] error
 [2024-05-04 01:16:18] INFO root fetch - main [MainThread]: Store serial: [23052686]
+[2024-05-04 01:18:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052686]
+[2024-05-04 01:18:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 01:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dtmaster-ingest-douglasleal
+[2024-05-04 01:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver-folders-aws-s3
+[2024-05-04 01:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nnfasta
+[2024-05-04 01:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gradio-rangeslider
+[2024-05-04 01:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ReverseBox
+[2024-05-04 01:18:27] INFO root fetch - processPackages [nnfasta]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 01:18:27] INFO root fetch - processPackages [ReverseBox]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-05-04 01:18:27] WARNING root fetch - processPackages [gradio-rangeslider]: Skipping, unable to determine old version
+[2024-05-04 01:18:27] INFO root fetch - main [MainThread]: End processing [gradio-rangeslider] error
+[2024-05-04 01:18:27] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/4e/c3/1c7ed4f26b1b9cc648b71504527f94c7079a5e291de6426719031a060ef2/nnfasta-0.1.8.tar.gz
+[2024-05-04 01:18:27] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/cf/15/ef17be42196c5f3541835c16f41438835ecd80159a388757b00f01955b4d/ReverseBox-0.8.4.tar.gz
+[2024-05-04 01:18:27] WARNING root fetch - processPackages [dtmaster-ingest-douglasleal]: Skipping, unable to determine old version
+[2024-05-04 01:18:27] INFO root fetch - main [MainThread]: End processing [dtmaster-ingest-douglasleal] error
+[2024-05-04 01:18:27] INFO root fetch - processPackages [heaserver-folders-aws-s3]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-04 01:18:27] INFO root fetch - processPackages [heaserver-folders-aws-s3]: Downloading https://files.pythonhosted.org/packages/a6/dc/18eedd87b6822a32eb535ca432ed80d06a2434f3988f1ce892789b22cfd1/heaserver-folders-aws-s3-1.1.1.tar.gz
+[2024-05-04 01:18:27] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/a8/4d/85bc07885211c7241d77234746e352e8814e59375b5f333c82680206268b/nnfasta-0.1.9.tar.gz
+[2024-05-04 01:18:27] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/b9/a8/4c81fcd779e5311d5553e931f8a149deec7d6c1124d0faa217268c5e3a06/ReverseBox-0.8.5.tar.gz
+[2024-05-04 01:18:27] INFO root fetch - processPackages [nnfasta]: executing diffoscope
+[2024-05-04 01:18:27] INFO root fetch - processPackages [nnfasta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnfasta-0.1.8.tar.gz tmp/nnfasta-0.1.9.tar.gz --markdown 20240504/n/nnfasta/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 01:18:27] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-04 01:18:27] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.8.4.tar.gz tmp/ReverseBox-0.8.5.tar.gz --markdown 20240504/R/ReverseBox/0.8.4-0.8.5/README.md --exclude *.pyd
+[2024-05-04 01:18:27] INFO root fetch - processPackages [heaserver-folders-aws-s3]: Downloading https://files.pythonhosted.org/packages/71/81/b4df4254c70f9c7b8bd1da267c6776bf5dd1b938ee6d1ab10ecd43d30bcd/heaserver_folders_aws_s3-1.1.2.tar.gz
+[2024-05-04 01:18:28] INFO root fetch - processPackages [heaserver-folders-aws-s3]: executing diffoscope
+[2024-05-04 01:18:28] INFO root fetch - processPackages [heaserver-folders-aws-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-folders-aws-s3-1.1.1.tar.gz tmp/heaserver_folders_aws_s3-1.1.2.tar.gz --markdown 20240504/h/heaserver-folders-aws-s3/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-04 01:18:28] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.8.tar.gz]
+[2024-05-04 01:18:28] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.9.tar.gz]
+[2024-05-04 01:18:28] INFO root fetch - main [MainThread]: End processing [nnfasta]: success
+[2024-05-04 01:18:28] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.4.tar.gz]
+[2024-05-04 01:18:28] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.5.tar.gz]
+[2024-05-04 01:18:28] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-04 01:18:28] INFO root fetch - processPackages [heaserver-folders-aws-s3]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-folders-aws-s3-1.1.1.tar.gz]
+[2024-05-04 01:18:28] INFO root fetch - processPackages [heaserver-folders-aws-s3]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_folders_aws_s3-1.1.2.tar.gz]
+[2024-05-04 01:18:28] INFO root fetch - main [MainThread]: End processing [heaserver-folders-aws-s3]: success
+[2024-05-04 01:18:28] INFO root fetch - main [MainThread]: Store serial: [23052704]
