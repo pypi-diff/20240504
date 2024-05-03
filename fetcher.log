@@ -1,0 +1,81 @@
+[2024-05-04 00:01:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23051971]
+[2024-05-04 00:01:47] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-04 00:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aissemble-machine-learning-sagemaker-training
+[2024-05-04 00:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aissemble-machine-learning-training-base
+[2024-05-04 00:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aissemble-test-data-delivery-pyspark-model
+[2024-05-04 00:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aissemble-test-data-delivery-pyspark-model-basic
+[2024-05-04 00:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cortex-python
+[2024-05-04 00:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pingintel-api
+[2024-05-04 00:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aissemble-machine-learning-training
+[2024-05-04 00:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: name-generator-nicomp
+[2024-05-04 00:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flatpack
+[2024-05-04 00:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gr1336-toolbox
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-machine-learning-sagemaker-training]: New version: [1.7.0.dev1714764515] Old Version: [1.7.0.dev1714764471]
+[2024-05-04 00:01:48] INFO root fetch - processPackages [pingintel-api]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-04 00:01:48] WARNING root fetch - processPackages [aissemble-machine-learning-training-base]: Skipping, unable to determine old version
+[2024-05-04 00:01:48] INFO root fetch - main [MainThread]: End processing [aissemble-machine-learning-training-base] error
+[2024-05-04 00:01:48] WARNING root fetch - processPackages [name-generator-nicomp]: Skipping, unable to determine old version
+[2024-05-04 00:01:48] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp] error
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-machine-learning-training]: New version: [1.7.0.dev1714773445] Old Version: [1.7.0.dev1714764425]
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model]: New version: [1.7.0.dev1714773369] Old Version: [1.7.0.dev1714764344]
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model-basic]: New version: [1.7.0.dev1714773404] Old Version: [1.7.0.dev1714764382]
+[2024-05-04 00:01:48] INFO root fetch - processPackages [pingintel-api]: Downloading https://files.pythonhosted.org/packages/81/ea/8c5d19f98e5e587b551de0ce244edcf18ec7d887cb2cfda4dce65f78504c/pingintel_api-0.4.0.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-04 00:01:48] INFO root fetch - processPackages [cortex-python]: New version: [6.5.0a6] Old Version: [6.5.0a4]
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-machine-learning-training]: Downloading https://files.pythonhosted.org/packages/a6/fa/7db7368bba7fc2d28598721c47330baf62bd8e30aada2b77201404ec39e9/aissemble_machine_learning_training-1.7.0.dev1714764425.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model]: Downloading https://files.pythonhosted.org/packages/8d/29/9f1c82870bad18df23f7718ff4b87c735200e5ebde538b99f72fc6a29d9f/aissemble_test_data_delivery_pyspark_model-1.7.0.dev1714764344.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model-basic]: Downloading https://files.pythonhosted.org/packages/d7/14/6d9087f1509604e0e3b9c61eae92aa369421178907c659e8f7349fd7c091/aissemble_test_data_delivery_pyspark_model_basic-1.7.0.dev1714764382.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [gr1336-toolbox]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-04 00:01:48] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-machine-learning-sagemaker-training]: Downloading https://files.pythonhosted.org/packages/80/42/694248d992b60b062187b43385a6f1b5b37d8e8d7d7543b27ed7fafc3aed/aissemble_machine_learning_sagemaker_training-1.7.0.dev1714764471.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [cortex-python]: Downloading https://files.pythonhosted.org/packages/1d/66/0640cf1d1333a0f9b1e66af2cf46a7b82173af9edb53eee14ddfb10b5467/cortex_python-6.5.0a4.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [gr1336-toolbox]: Downloading https://files.pythonhosted.org/packages/0c/60/8517001602f76d1ebe0a083a4fa06204e3ab37f654d6f5b859f56223a0f7/gr1336_toolbox-0.0.3.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [pingintel-api]: Downloading https://files.pythonhosted.org/packages/45/c3/797a82732c7456c5d421681a7968c6058ec0258d7ba8fbae88aed5a0bd0b/pingintel_api-0.5.0.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model-basic]: Downloading https://files.pythonhosted.org/packages/fa/86/6027d0f4352fd8648903f9c4247c14a022a479cc6899fe31fa4831802761/aissemble_test_data_delivery_pyspark_model_basic-1.7.0.dev1714773404.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model]: Downloading https://files.pythonhosted.org/packages/63/ee/f780c2e1dbef1d09a870cd7dd226db788624dbb059826098aea27e37d277/aissemble_test_data_delivery_pyspark_model-1.7.0.dev1714773369.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-machine-learning-training]: Downloading https://files.pythonhosted.org/packages/67/7c/0d249a834e32057d30406027613c4b578ec29057d70ad26ed40857e9bd33/aissemble_machine_learning_training-1.7.0.dev1714773445.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-machine-learning-sagemaker-training]: Downloading https://files.pythonhosted.org/packages/51/fc/f0acb627fe8477c57e1a7397e5e2cf64ba1d2f4c067cc2c7c05d8bf03114/aissemble_machine_learning_sagemaker_training-1.7.0.dev1714764515.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-04 00:01:48] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240504/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-04 00:01:48] INFO root fetch - processPackages [pingintel-api]: executing diffoscope
+[2024-05-04 00:01:48] INFO root fetch - processPackages [pingintel-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pingintel_api-0.4.0.tar.gz tmp/pingintel_api-0.5.0.tar.gz --markdown 20240504/p/pingintel-api/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model-basic]: executing diffoscope
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model-basic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aissemble_test_data_delivery_pyspark_model_basic-1.7.0.dev1714764382.tar.gz tmp/aissemble_test_data_delivery_pyspark_model_basic-1.7.0.dev1714773404.tar.gz --markdown 20240504/a/aissemble-test-data-delivery-pyspark-model-basic/1.7.0.dev1714764382-1.7.0.dev1714773404/README.md --exclude *.pyd
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model]: executing diffoscope
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aissemble_test_data_delivery_pyspark_model-1.7.0.dev1714764344.tar.gz tmp/aissemble_test_data_delivery_pyspark_model-1.7.0.dev1714773369.tar.gz --markdown 20240504/a/aissemble-test-data-delivery-pyspark-model/1.7.0.dev1714764344-1.7.0.dev1714773369/README.md --exclude *.pyd
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-machine-learning-training]: executing diffoscope
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-machine-learning-training]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aissemble_machine_learning_training-1.7.0.dev1714764425.tar.gz tmp/aissemble_machine_learning_training-1.7.0.dev1714773445.tar.gz --markdown 20240504/a/aissemble-machine-learning-training/1.7.0.dev1714764425-1.7.0.dev1714773445/README.md --exclude *.pyd
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-machine-learning-sagemaker-training]: executing diffoscope
+[2024-05-04 00:01:48] INFO root fetch - processPackages [aissemble-machine-learning-sagemaker-training]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aissemble_machine_learning_sagemaker_training-1.7.0.dev1714764471.tar.gz tmp/aissemble_machine_learning_sagemaker_training-1.7.0.dev1714764515.tar.gz --markdown 20240504/a/aissemble-machine-learning-sagemaker-training/1.7.0.dev1714764471-1.7.0.dev1714764515/README.md --exclude *.pyd
+[2024-05-04 00:01:48] INFO root fetch - processPackages [cortex-python]: Downloading https://files.pythonhosted.org/packages/59/4d/b7cadce66333461edd6870ed1e4572e73574872e72c75c2c57b1d4ce41ab/cortex_python-6.5.0a6.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [gr1336-toolbox]: Downloading https://files.pythonhosted.org/packages/f2/c4/306b8029b0ef02dda63fb3490ce64dc170494cb806eb6a90ef13a8fcd414/gr1336_toolbox-0.0.4.tar.gz
+[2024-05-04 00:01:48] INFO root fetch - processPackages [cortex-python]: executing diffoscope
+[2024-05-04 00:01:48] INFO root fetch - processPackages [cortex-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortex_python-6.5.0a4.tar.gz tmp/cortex_python-6.5.0a6.tar.gz --markdown 20240504/c/cortex-python/6.5.0a4-6.5.0a6/README.md --exclude *.pyd
+[2024-05-04 00:01:49] INFO root fetch - processPackages [gr1336-toolbox]: executing diffoscope
+[2024-05-04 00:01:49] INFO root fetch - processPackages [gr1336-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gr1336_toolbox-0.0.3.tar.gz tmp/gr1336_toolbox-0.0.4.tar.gz --markdown 20240504/g/gr1336-toolbox/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-04 00:01:49] INFO root fetch - processPackages [aissemble-machine-learning-sagemaker-training]: Remove: archive file [/home/abi/fetcher/tmp/aissemble_machine_learning_sagemaker_training-1.7.0.dev1714764471.tar.gz]
+[2024-05-04 00:01:49] INFO root fetch - processPackages [aissemble-machine-learning-sagemaker-training]: Remove: archive file [/home/abi/fetcher/tmp/aissemble_machine_learning_sagemaker_training-1.7.0.dev1714764515.tar.gz]
+[2024-05-04 00:01:49] INFO root fetch - main [MainThread]: End processing [aissemble-machine-learning-sagemaker-training]: success
+[2024-05-04 00:01:49] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-04 00:01:49] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-04 00:01:49] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-04 00:01:49] INFO root fetch - processPackages [pingintel-api]: Remove: archive file [/home/abi/fetcher/tmp/pingintel_api-0.4.0.tar.gz]
+[2024-05-04 00:01:49] INFO root fetch - processPackages [pingintel-api]: Remove: archive file [/home/abi/fetcher/tmp/pingintel_api-0.5.0.tar.gz]
+[2024-05-04 00:01:49] INFO root fetch - main [MainThread]: End processing [pingintel-api]: success
+[2024-05-04 00:01:49] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model-basic]: Remove: archive file [/home/abi/fetcher/tmp/aissemble_test_data_delivery_pyspark_model_basic-1.7.0.dev1714764382.tar.gz]
+[2024-05-04 00:01:49] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model-basic]: Remove: archive file [/home/abi/fetcher/tmp/aissemble_test_data_delivery_pyspark_model_basic-1.7.0.dev1714773404.tar.gz]
+[2024-05-04 00:01:49] INFO root fetch - main [MainThread]: End processing [aissemble-test-data-delivery-pyspark-model-basic]: success
+[2024-05-04 00:01:49] INFO root fetch - processPackages [aissemble-machine-learning-training]: Remove: archive file [/home/abi/fetcher/tmp/aissemble_machine_learning_training-1.7.0.dev1714764425.tar.gz]
+[2024-05-04 00:01:49] INFO root fetch - processPackages [aissemble-machine-learning-training]: Remove: archive file [/home/abi/fetcher/tmp/aissemble_machine_learning_training-1.7.0.dev1714773445.tar.gz]
+[2024-05-04 00:01:49] INFO root fetch - main [MainThread]: End processing [aissemble-machine-learning-training]: success
+[2024-05-04 00:01:50] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model]: Remove: archive file [/home/abi/fetcher/tmp/aissemble_test_data_delivery_pyspark_model-1.7.0.dev1714764344.tar.gz]
+[2024-05-04 00:01:50] INFO root fetch - processPackages [aissemble-test-data-delivery-pyspark-model]: Remove: archive file [/home/abi/fetcher/tmp/aissemble_test_data_delivery_pyspark_model-1.7.0.dev1714773369.tar.gz]
+[2024-05-04 00:01:50] INFO root fetch - main [MainThread]: End processing [aissemble-test-data-delivery-pyspark-model]: success
+[2024-05-04 00:01:50] INFO root fetch - processPackages [cortex-python]: Remove: archive file [/home/abi/fetcher/tmp/cortex_python-6.5.0a4.tar.gz]
+[2024-05-04 00:01:50] INFO root fetch - processPackages [cortex-python]: Remove: archive file [/home/abi/fetcher/tmp/cortex_python-6.5.0a6.tar.gz]
+[2024-05-04 00:01:50] INFO root fetch - main [MainThread]: End processing [cortex-python]: success
+[2024-05-04 00:01:50] INFO root fetch - processPackages [gr1336-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/gr1336_toolbox-0.0.3.tar.gz]
+[2024-05-04 00:01:50] INFO root fetch - processPackages [gr1336-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/gr1336_toolbox-0.0.4.tar.gz]
+[2024-05-04 00:01:50] INFO root fetch - main [MainThread]: End processing [gr1336-toolbox]: success
+[2024-05-04 00:01:50] INFO root fetch - main [MainThread]: Store serial: [23051997]
