@@ -516,3 +516,54 @@
 [2024-05-04 00:23:28] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.8.0.tar.gz]
 [2024-05-04 00:23:28] INFO root fetch - main [MainThread]: End processing [unyts]: success
 [2024-05-04 00:23:28] INFO root fetch - main [MainThread]: Store serial: [23052191]
+[2024-05-04 00:25:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052191]
+[2024-05-04 00:25:37] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 00:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysui-gadgets
+[2024-05-04 00:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fazah
+[2024-05-04 00:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anyscale
+[2024-05-04 00:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: diffpy.mpdf
+[2024-05-04 00:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: agent-evaluation
+[2024-05-04 00:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: metaflow-netflixext
+[2024-05-04 00:25:37] INFO root fetch - processPackages [fazah]: New version: [3.25] Old Version: [3.24]
+[2024-05-04 00:25:37] INFO root fetch - processPackages [pysui-gadgets]: New version: [0.4.9] Old Version: [0.4.3]
+[2024-05-04 00:25:37] INFO root fetch - processPackages [fazah]: Downloading https://files.pythonhosted.org/packages/df/2e/a845b3c68d1a374476c7defa7f768a64432d1098947412b0b8e5ba51affe/fazah-3.24.tar.gz
+[2024-05-04 00:25:37] WARNING root fetch - processPackages [agent-evaluation]: Skipping, unable to determine old version
+[2024-05-04 00:25:37] INFO root fetch - main [MainThread]: End processing [agent-evaluation] error
+[2024-05-04 00:25:37] INFO root fetch - processPackages [anyscale]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-05-04 00:25:37] INFO root fetch - processPackages [diffpy.mpdf]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-04 00:25:37] INFO root fetch - processPackages [metaflow-netflixext]: New version: [1.2.0] Old Version: [1.1.3]
+[2024-05-04 00:25:37] INFO root fetch - processPackages [pysui-gadgets]: Downloading https://files.pythonhosted.org/packages/98/33/e60b8d1fff01b15475564947a65eddd52b88998a452382e11d740308d335/pysui_gadgets-0.4.3-py3-none-any.whl
+[2024-05-04 00:25:37] INFO root fetch - processPackages [diffpy.mpdf]: Downloading https://files.pythonhosted.org/packages/bf/28/08d4e4e71ba8b2a4dee3a791060786a4d039b008f54ac7e00570626165b4/diffpy.mpdf-1.0.2.tar.gz
+[2024-05-04 00:25:37] INFO root fetch - processPackages [anyscale]: Downloading https://files.pythonhosted.org/packages/0d/64/8bf86d6d00617c61b31e91a8455e6fb08278056ee4d72abf6317509d592e/anyscale-0.5.98.tar.gz
+[2024-05-04 00:25:37] INFO root fetch - processPackages [metaflow-netflixext]: Downloading https://files.pythonhosted.org/packages/98/8c/871916f08579d59cf540713e7653d7546a646fe4e9dcd170d5b4c502ade4/metaflow-netflixext-1.1.3.tar.gz
+[2024-05-04 00:25:37] INFO root fetch - processPackages [fazah]: Downloading https://files.pythonhosted.org/packages/06/66/a56776225cadb1ba00d90838527929c95a6e3134e75fc40d62981a2f26e9/fazah-3.25.tar.gz
+[2024-05-04 00:25:37] INFO root fetch - processPackages [fazah]: executing diffoscope
+[2024-05-04 00:25:37] INFO root fetch - processPackages [fazah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fazah-3.24.tar.gz tmp/fazah-3.25.tar.gz --markdown 20240504/f/fazah/3.24-3.25/README.md --exclude *.pyd
+[2024-05-04 00:25:37] INFO root fetch - processPackages [pysui-gadgets]: Downloading https://files.pythonhosted.org/packages/18/1b/b178ca4092c4bcd1836ded710c90733ca00910560c3586776411ca92e3f3/pysui_gadgets-0.4.9-py3-none-any.whl
+[2024-05-04 00:25:38] INFO root fetch - processPackages [metaflow-netflixext]: Downloading https://files.pythonhosted.org/packages/26/63/6a1e1aadde754c49d7a93632c58f1e176506205c897992f5530fdbeed86d/metaflow_netflixext-1.2.0.tar.gz
+[2024-05-04 00:25:38] INFO root fetch - processPackages [pysui-gadgets]: executing diffoscope
+[2024-05-04 00:25:38] INFO root fetch - processPackages [pysui-gadgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysui_gadgets-0.4.3-py3-none-any.whl.zip tmp/pysui_gadgets-0.4.9-py3-none-any.whl.zip --markdown 20240504/p/pysui-gadgets/0.4.3-0.4.9/README.md --exclude *.pyd
+[2024-05-04 00:25:38] INFO root fetch - processPackages [diffpy.mpdf]: Downloading https://files.pythonhosted.org/packages/45/51/2b2d248e73e0b5b6927c78e19c611fc3ae0eed9ce31a4066ba78c9f8b202/diffpy_mpdf-1.0.3.tar.gz
+[2024-05-04 00:25:38] INFO root fetch - processPackages [anyscale]: Downloading https://files.pythonhosted.org/packages/61/f0/917cf3e18c478eaae2e53db68c9d20607edab461774054c8f509cc4885b6/anyscale-0.5.99.tar.gz
+[2024-05-04 00:25:38] INFO root fetch - processPackages [metaflow-netflixext]: executing diffoscope
+[2024-05-04 00:25:38] INFO root fetch - processPackages [metaflow-netflixext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaflow-netflixext-1.1.3.tar.gz tmp/metaflow_netflixext-1.2.0.tar.gz --markdown 20240504/m/metaflow-netflixext/1.1.3-1.2.0/README.md --exclude *.pyd
+[2024-05-04 00:25:38] INFO root fetch - processPackages [diffpy.mpdf]: executing diffoscope
+[2024-05-04 00:25:38] INFO root fetch - processPackages [diffpy.mpdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diffpy.mpdf-1.0.2.tar.gz tmp/diffpy_mpdf-1.0.3.tar.gz --markdown 20240504/d/diffpy.mpdf/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-04 00:25:38] INFO root fetch - processPackages [anyscale]: executing diffoscope
+[2024-05-04 00:25:38] INFO root fetch - processPackages [anyscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyscale-0.5.98.tar.gz tmp/anyscale-0.5.99.tar.gz --markdown 20240504/a/anyscale/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-05-04 00:25:38] INFO root fetch - processPackages [fazah]: Remove: archive file [/home/abi/fetcher/tmp/fazah-3.24.tar.gz]
+[2024-05-04 00:25:38] INFO root fetch - processPackages [fazah]: Remove: archive file [/home/abi/fetcher/tmp/fazah-3.25.tar.gz]
+[2024-05-04 00:25:38] INFO root fetch - main [MainThread]: End processing [fazah]: success
+[2024-05-04 00:25:38] INFO root fetch - processPackages [pysui-gadgets]: Remove: archive file [/home/abi/fetcher/tmp/pysui_gadgets-0.4.3-py3-none-any.whl.zip]
+[2024-05-04 00:25:38] INFO root fetch - processPackages [pysui-gadgets]: Remove: archive file [/home/abi/fetcher/tmp/pysui_gadgets-0.4.9-py3-none-any.whl.zip]
+[2024-05-04 00:25:38] INFO root fetch - main [MainThread]: End processing [pysui-gadgets]: success
+[2024-05-04 00:25:38] INFO root fetch - processPackages [diffpy.mpdf]: Remove: archive file [/home/abi/fetcher/tmp/diffpy.mpdf-1.0.2.tar.gz]
+[2024-05-04 00:25:38] INFO root fetch - processPackages [diffpy.mpdf]: Remove: archive file [/home/abi/fetcher/tmp/diffpy_mpdf-1.0.3.tar.gz]
+[2024-05-04 00:25:38] INFO root fetch - main [MainThread]: End processing [diffpy.mpdf]: success
+[2024-05-04 00:25:39] INFO root fetch - processPackages [metaflow-netflixext]: Remove: archive file [/home/abi/fetcher/tmp/metaflow-netflixext-1.1.3.tar.gz]
+[2024-05-04 00:25:39] INFO root fetch - processPackages [metaflow-netflixext]: Remove: archive file [/home/abi/fetcher/tmp/metaflow_netflixext-1.2.0.tar.gz]
+[2024-05-04 00:25:39] INFO root fetch - main [MainThread]: End processing [metaflow-netflixext]: success
+[2024-05-04 00:25:41] INFO root fetch - processPackages [anyscale]: Remove: archive file [/home/abi/fetcher/tmp/anyscale-0.5.98.tar.gz]
+[2024-05-04 00:25:41] INFO root fetch - processPackages [anyscale]: Remove: archive file [/home/abi/fetcher/tmp/anyscale-0.5.99.tar.gz]
+[2024-05-04 00:25:41] INFO root fetch - main [MainThread]: End processing [anyscale]: success
+[2024-05-04 00:25:41] INFO root fetch - main [MainThread]: Store serial: [23052211]
