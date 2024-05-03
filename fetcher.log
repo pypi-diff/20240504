@@ -126,3 +126,51 @@
 [2024-05-04 00:06:24] INFO root fetch - processPackages [stim]: Remove: archive file [/home/abi/fetcher/tmp/stim-1.9.0.tar.gz]
 [2024-05-04 00:06:24] INFO root fetch - main [MainThread]: End processing [stim]: success
 [2024-05-04 00:06:24] INFO root fetch - main [MainThread]: Store serial: [23052026]
+[2024-05-04 00:08:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052026]
+[2024-05-04 00:08:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 00:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stimcirq
+[2024-05-04 00:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sinter
+[2024-05-04 00:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openshift-python-wrapper
+[2024-05-04 00:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: baml-py
+[2024-05-04 00:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: juan-stats
+[2024-05-04 00:08:33] INFO root fetch - processPackages [juan-stats]: New version: [1.3] Old Version: [1.2]
+[2024-05-04 00:08:33] INFO root fetch - processPackages [openshift-python-wrapper]: New version: [4.9.9.12] Old Version: [4.9.7.12]
+[2024-05-04 00:08:33] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/30/f9/6447b9c68e122c234320a85c4dcb2d41d21d7d09fc26090169572fd44c91/juan_stats-1.2.tar.gz
+[2024-05-04 00:08:33] INFO root fetch - processPackages [baml-py]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-04 00:08:33] INFO root fetch - processPackages [sinter]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2024-05-04 00:08:33] INFO root fetch - processPackages [stimcirq]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2024-05-04 00:08:33] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/9f/52/8943f0836c823ed0ab894348233d99a219025753e654fa494137828358f9/openshift-python-wrapper-4.9.7.12.tar.gz
+[2024-05-04 00:08:33] INFO root fetch - processPackages [stimcirq]: Downloading https://files.pythonhosted.org/packages/ec/fe/38fc995ba6685f64103f3cd62faa49cd869af074b36e401597d9d2b0278d/stimcirq-1.9.dev1656756326.tar.gz
+[2024-05-04 00:08:33] INFO root fetch - processPackages [baml-py]: Downloading https://files.pythonhosted.org/packages/25/87/8c282dde1baef563a26b14da5e0dd08ad7df4c8539fdd0035e54fe0ba1bf/baml_py-0.1.7.tar.gz
+[2024-05-04 00:08:33] INFO root fetch - processPackages [sinter]: Downloading https://files.pythonhosted.org/packages/df/c6/cb2622852c76647e7b6ad9a7a7e10f4e2cac9ecdfd523ac68df0bfc130af/sinter-1.9.dev1656756326.tar.gz
+[2024-05-04 00:08:33] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/e7/2c/25381b003b6e49919b5c98f68796af474a0b6fb3e28c46552a6949c6160a/openshift-python-wrapper-4.9.9.12.tar.gz
+[2024-05-04 00:08:33] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/47/b4/73fb543917eded15198c163ed10b4bb96e02cc44940fd45b60faa2b8c1f3/juan_stats-1.3.tar.gz
+[2024-05-04 00:08:33] INFO root fetch - processPackages [openshift-python-wrapper]: executing diffoscope
+[2024-05-04 00:08:33] INFO root fetch - processPackages [openshift-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift-python-wrapper-4.9.7.12.tar.gz tmp/openshift-python-wrapper-4.9.9.12.tar.gz --markdown 20240504/o/openshift-python-wrapper/4.9.7.12-4.9.9.12/README.md --exclude *.pyd
+[2024-05-04 00:08:33] INFO root fetch - processPackages [juan-stats]: executing diffoscope
+[2024-05-04 00:08:33] INFO root fetch - processPackages [juan-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juan_stats-1.2.tar.gz tmp/juan_stats-1.3.tar.gz --markdown 20240504/j/juan-stats/1.2-1.3/README.md --exclude *.pyd
+[2024-05-04 00:08:33] INFO root fetch - processPackages [baml-py]: Downloading https://files.pythonhosted.org/packages/e9/42/107de39e54932745ce1b6948b52cab9a47b2f4440f9cd2e7c9afe8338e17/baml_py-0.1.8-cp38-abi3-win_amd64.whl
+[2024-05-04 00:08:33] INFO root fetch - processPackages [stimcirq]: Downloading https://files.pythonhosted.org/packages/a2/fe/5fa281db7d139ef59a3c4c47c96940bf9f3fab0d0017ea452412c0cfc8d3/stimcirq-1.9.dev1657429876.tar.gz
+[2024-05-04 00:08:34] INFO root fetch - processPackages [sinter]: Downloading https://files.pythonhosted.org/packages/fd/5e/bd22cf7318b95a6cb630aede242c37ca8e376f51d3c73522d4d3fafd60c3/sinter-1.9.dev1657429876.tar.gz
+[2024-05-04 00:08:34] INFO root fetch - processPackages [stimcirq]: executing diffoscope
+[2024-05-04 00:08:34] INFO root fetch - processPackages [stimcirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stimcirq-1.9.dev1656756326.tar.gz tmp/stimcirq-1.9.dev1657429876.tar.gz --markdown 20240504/s/stimcirq/1.9.dev1656756326-1.9.dev1657429876/README.md --exclude *.pyd
+[2024-05-04 00:08:34] INFO root fetch - processPackages [sinter]: executing diffoscope
+[2024-05-04 00:08:34] INFO root fetch - processPackages [sinter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinter-1.9.dev1656756326.tar.gz tmp/sinter-1.9.dev1657429876.tar.gz --markdown 20240504/s/sinter/1.9.dev1656756326-1.9.dev1657429876/README.md --exclude *.pyd
+[2024-05-04 00:08:34] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-1.2.tar.gz]
+[2024-05-04 00:08:34] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-1.3.tar.gz]
+[2024-05-04 00:08:34] INFO root fetch - main [MainThread]: End processing [juan-stats]: success
+[2024-05-04 00:08:34] INFO root fetch - processPackages [baml-py]: executing diffoscope
+[2024-05-04 00:08:34] INFO root fetch - processPackages [baml-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baml_py-0.1.7.tar.gz tmp/baml_py-0.1.8-cp38-abi3-win_amd64.whl.zip --markdown 20240504/b/baml-py/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-04 00:08:34] INFO root fetch - processPackages [openshift-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift-python-wrapper-4.9.7.12.tar.gz]
+[2024-05-04 00:08:34] INFO root fetch - processPackages [openshift-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift-python-wrapper-4.9.9.12.tar.gz]
+[2024-05-04 00:08:34] INFO root fetch - main [MainThread]: End processing [openshift-python-wrapper]: success
+[2024-05-04 00:08:34] INFO root fetch - processPackages [stimcirq]: Remove: archive file [/home/abi/fetcher/tmp/stimcirq-1.9.dev1656756326.tar.gz]
+[2024-05-04 00:08:34] INFO root fetch - processPackages [stimcirq]: Remove: archive file [/home/abi/fetcher/tmp/stimcirq-1.9.dev1657429876.tar.gz]
+[2024-05-04 00:08:34] INFO root fetch - main [MainThread]: End processing [stimcirq]: success
+[2024-05-04 00:08:34] INFO root fetch - processPackages [sinter]: Remove: archive file [/home/abi/fetcher/tmp/sinter-1.9.dev1656756326.tar.gz]
+[2024-05-04 00:08:34] INFO root fetch - processPackages [sinter]: Remove: archive file [/home/abi/fetcher/tmp/sinter-1.9.dev1657429876.tar.gz]
+[2024-05-04 00:08:34] INFO root fetch - main [MainThread]: End processing [sinter]: success
+[2024-05-04 00:08:35] INFO root fetch - processPackages [baml-py]: Remove: archive file [/home/abi/fetcher/tmp/baml_py-0.1.7.tar.gz]
+[2024-05-04 00:08:35] INFO root fetch - processPackages [baml-py]: Remove: archive file [/home/abi/fetcher/tmp/baml_py-0.1.8-cp38-abi3-win_amd64.whl.zip]
+[2024-05-04 00:08:35] INFO root fetch - main [MainThread]: End processing [baml-py]: success
+[2024-05-04 00:08:35] INFO root fetch - main [MainThread]: Store serial: [23052056]
