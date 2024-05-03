@@ -1178,3 +1178,45 @@
 [2024-05-04 01:03:16] INFO root fetch - processPackages [ruff]: Remove: archive file [/home/abi/fetcher/tmp/ruff-0.4.2.tar.gz]
 [2024-05-04 01:03:16] INFO root fetch - main [MainThread]: End processing [ruff]: success
 [2024-05-04 01:03:16] INFO root fetch - main [MainThread]: Store serial: [23052562]
+[2024-05-04 01:05:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052562]
+[2024-05-04 01:05:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 01:05:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mnists
+[2024-05-04 01:05:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: juan-stats
+[2024-05-04 01:05:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bittrade-binance-websocket
+[2024-05-04 01:05:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tkfontselector
+[2024-05-04 01:05:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bcra-api-client
+[2024-05-04 01:05:25] INFO root fetch - processPackages [tkfontselector]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-04 01:05:25] INFO root fetch - processPackages [juan-stats]: New version: [1.8] Old Version: [1.7]
+[2024-05-04 01:05:25] INFO root fetch - processPackages [bcra-api-client]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-04 01:05:25] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/1d/6b/7ac09832431da9874904f475957f217c087e06e64191bb24ff3a578776c4/tkfontselector-1.0.3.tar.gz
+[2024-05-04 01:05:25] INFO root fetch - processPackages [bittrade-binance-websocket]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-04 01:05:25] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/5d/55/898918c3971ed6dfb69d51bb8cf86232e9b53ba3dd6a48dd600e64035f26/bcra-api-client-1.1.4.tar.gz
+[2024-05-04 01:05:25] WARNING root fetch - processPackages [mnists]: Skipping, unable to determine old version
+[2024-05-04 01:05:25] INFO root fetch - main [MainThread]: End processing [mnists] error
+[2024-05-04 01:05:25] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/6c/58/5e8040fb0cc212f63cfe9b3dcf0588482fc6252fb68233d5369c8a968083/juan_stats-1.7.tar.gz
+[2024-05-04 01:05:25] INFO root fetch - processPackages [bittrade-binance-websocket]: Downloading https://files.pythonhosted.org/packages/cb/9c/09dafb3c6502c2a3baefff34c1f9d79671627dd9a50a96e216e621e3ff28/bittrade_binance_websocket-0.4.3.tar.gz
+[2024-05-04 01:05:25] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/3c/5b/4d7170e289d17099492e1594dc93ecfe32b9caac238975af8fadd9619bf1/tkfontselector-1.0.4.tar.gz
+[2024-05-04 01:05:25] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/2e/2d/871244a7ab6ae471c1779640fdf29f864c879a2b23bde7d5039d4ed45fc4/bcra-api-client-1.1.5.tar.gz
+[2024-05-04 01:05:25] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/12/0f/ff29b8beab4ca6cdf3175a83f6d91fedd2c0c9536d8934fcb97fc71041b4/juan_stats-1.8.tar.gz
+[2024-05-04 01:05:25] INFO root fetch - processPackages [bcra-api-client]: executing diffoscope
+[2024-05-04 01:05:25] INFO root fetch - processPackages [bcra-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcra-api-client-1.1.4.tar.gz tmp/bcra-api-client-1.1.5.tar.gz --markdown 20240504/b/bcra-api-client/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-04 01:05:25] INFO root fetch - processPackages [tkfontselector]: executing diffoscope
+[2024-05-04 01:05:25] INFO root fetch - processPackages [tkfontselector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkfontselector-1.0.3.tar.gz tmp/tkfontselector-1.0.4.tar.gz --markdown 20240504/t/tkfontselector/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-04 01:05:26] INFO root fetch - processPackages [juan-stats]: executing diffoscope
+[2024-05-04 01:05:26] INFO root fetch - processPackages [juan-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juan_stats-1.7.tar.gz tmp/juan_stats-1.8.tar.gz --markdown 20240504/j/juan-stats/1.7-1.8/README.md --exclude *.pyd
+[2024-05-04 01:05:26] INFO root fetch - processPackages [bittrade-binance-websocket]: Downloading https://files.pythonhosted.org/packages/cb/4c/ba37b9644b20f37298724b92e34bf9aa31b91030186dbe3dfcdbc970964f/bittrade_binance_websocket-0.4.4.tar.gz
+[2024-05-04 01:05:26] INFO root fetch - processPackages [bittrade-binance-websocket]: executing diffoscope
+[2024-05-04 01:05:26] INFO root fetch - processPackages [bittrade-binance-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bittrade_binance_websocket-0.4.3.tar.gz tmp/bittrade_binance_websocket-0.4.4.tar.gz --markdown 20240504/b/bittrade-binance-websocket/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-04 01:05:26] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra-api-client-1.1.4.tar.gz]
+[2024-05-04 01:05:26] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra-api-client-1.1.5.tar.gz]
+[2024-05-04 01:05:26] INFO root fetch - main [MainThread]: End processing [bcra-api-client]: success
+[2024-05-04 01:05:26] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.3.tar.gz]
+[2024-05-04 01:05:26] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.4.tar.gz]
+[2024-05-04 01:05:26] INFO root fetch - main [MainThread]: End processing [tkfontselector]: success
+[2024-05-04 01:05:26] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-1.7.tar.gz]
+[2024-05-04 01:05:26] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-1.8.tar.gz]
+[2024-05-04 01:05:26] INFO root fetch - main [MainThread]: End processing [juan-stats]: success
+[2024-05-04 01:05:26] INFO root fetch - processPackages [bittrade-binance-websocket]: Remove: archive file [/home/abi/fetcher/tmp/bittrade_binance_websocket-0.4.3.tar.gz]
+[2024-05-04 01:05:26] INFO root fetch - processPackages [bittrade-binance-websocket]: Remove: archive file [/home/abi/fetcher/tmp/bittrade_binance_websocket-0.4.4.tar.gz]
+[2024-05-04 01:05:26] INFO root fetch - main [MainThread]: End processing [bittrade-binance-websocket]: success
+[2024-05-04 01:05:26] INFO root fetch - main [MainThread]: Store serial: [23052584]
