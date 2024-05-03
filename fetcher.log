@@ -1409,3 +1409,9 @@
 [2024-05-04 01:18:28] INFO root fetch - processPackages [heaserver-folders-aws-s3]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_folders_aws_s3-1.1.2.tar.gz]
 [2024-05-04 01:18:28] INFO root fetch - main [MainThread]: End processing [heaserver-folders-aws-s3]: success
 [2024-05-04 01:18:28] INFO root fetch - main [MainThread]: Store serial: [23052704]
+[2024-05-04 01:20:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052704]
+[2024-05-04 01:20:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 01:20:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SMClib.py
+[2024-05-04 01:20:36] WARNING root fetch - processPackages [SMClib.py]: Skipping, unable to determine old version
+[2024-05-04 01:20:36] INFO root fetch - main [MainThread]: End processing [SMClib.py] error
+[2024-05-04 01:20:36] INFO root fetch - main [MainThread]: Store serial: [23052707]
