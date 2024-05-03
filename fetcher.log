@@ -436,3 +436,83 @@
 [2024-05-04 00:21:09] INFO root fetch - processPackages [mesop]: Remove: archive file [/home/abi/fetcher/tmp/mesop-0.5.1-py3-none-any.whl.zip]
 [2024-05-04 00:21:09] INFO root fetch - main [MainThread]: End processing [mesop]: success
 [2024-05-04 00:21:09] INFO root fetch - main [MainThread]: Store serial: [23052165]
+[2024-05-04 00:23:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052165]
+[2024-05-04 00:23:26] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-04 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wallpaper-factory
+[2024-05-04 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotlight-sdk
+[2024-05-04 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: heaserver-accounts
+[2024-05-04 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: juan-stats
+[2024-05-04 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: surfkit
+[2024-05-04 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: unyts
+[2024-05-04 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wallpaper-factory
+[2024-05-04 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: juan-stats
+[2024-05-04 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: coiled
+[2024-05-04 00:23:26] INFO root fetch - processPackages [spotlight-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 00:23:26] INFO root fetch - processPackages [juan-stats]: New version: [1.6] Old Version: [1.5]
+[2024-05-04 00:23:26] INFO root fetch - processPackages [juan-stats]: New version: [1.6] Old Version: [1.5]
+[2024-05-04 00:23:26] INFO root fetch - processPackages [surfkit]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-04 00:23:26] INFO root fetch - processPackages [spotlight-sdk]: Downloading https://files.pythonhosted.org/packages/d2/df/64f237173cbbb85bab1727e9b447a1764287a6a0b46e80a48a81d9f20ac5/spotlight-sdk-0.0.8.tar.gz
+[2024-05-04 00:23:26] INFO root fetch - processPackages [coiled]: New version: [1.9.1.dev9] Old Version: [1.9.1.dev8]
+[2024-05-04 00:23:26] INFO root fetch - processPackages [wallpaper-factory]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 00:23:26] INFO root fetch - processPackages [wallpaper-factory]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 00:23:26] INFO root fetch - processPackages [heaserver-accounts]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-04 00:23:26] INFO root fetch - processPackages [unyts]: New version: [0.8.0] Old Version: [0.7.1]
+[2024-05-04 00:23:26] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/72/8b/341964aa3641d5542d634b4bb88c8c7e6254ea79fcc0d2bd5ff8271151d8/juan_stats-1.5.tar.gz
+[2024-05-04 00:23:26] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/72/8b/341964aa3641d5542d634b4bb88c8c7e6254ea79fcc0d2bd5ff8271151d8/juan_stats-1.5.tar.gz
+[2024-05-04 00:23:26] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/c2/e4/d9d6efb4013a22047e07b2174dc8716a86fe2b3fe0652e6e1edddbde177b/surfkit-0.1.98.tar.gz
+[2024-05-04 00:23:26] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/8b/97/14337c08d9fc8bec2c9c7a5961519e141cf75d7dffa582bb987eecacefa4/coiled-1.9.1.dev8.tar.gz
+[2024-05-04 00:23:26] INFO root fetch - processPackages [heaserver-accounts]: Downloading https://files.pythonhosted.org/packages/0c/72/216b6e243bf602da8ee21d9dc4eadda426325a9d1cd23cac540db7a4ff0e/heaserver_accounts-1.1.1.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [spotlight-sdk]: Downloading https://files.pythonhosted.org/packages/e7/77/097156d6cb8a69f69aff3c7e65046379c3fd67d52e2a86936ef50e85eb68/spotlight-sdk-0.0.9.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [wallpaper-factory]: Downloading https://files.pythonhosted.org/packages/9b/3b/3da606624ce6fffbfbc1fc9453cd73b74d02082102f62c17c68311917ec8/wallpaper_factory-0.0.8.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [wallpaper-factory]: Downloading https://files.pythonhosted.org/packages/9b/3b/3da606624ce6fffbfbc1fc9453cd73b74d02082102f62c17c68311917ec8/wallpaper_factory-0.0.8.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [unyts]: Downloading https://files.pythonhosted.org/packages/11/43/849ae097005cd66aeec6d7a3f2c446602cc7f7aec5e1deeb79ca37cf74e2/unyts-0.7.1.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/65/a8/bfc822b58240522d18c4cf24a25a6f2476da037058406af11377393fa476/surfkit-0.1.99.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/58/16/aec6b9100728dfee740792b7dd55fc6e56240fdadb5ef317a1d120e019d7/coiled-1.9.1.dev9.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [spotlight-sdk]: executing diffoscope
+[2024-05-04 00:23:27] INFO root fetch - processPackages [spotlight-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotlight-sdk-0.0.8.tar.gz tmp/spotlight-sdk-0.0.9.tar.gz --markdown 20240504/s/spotlight-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 00:23:27] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/18/a0/61756500e9af340e84ebf1fd25653d8d949d80a92328ce37b093ecab452a/juan_stats-1.6.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/18/a0/61756500e9af340e84ebf1fd25653d8d949d80a92328ce37b093ecab452a/juan_stats-1.6.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [surfkit]: executing diffoscope
+[2024-05-04 00:23:27] INFO root fetch - processPackages [surfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfkit-0.1.98.tar.gz tmp/surfkit-0.1.99.tar.gz --markdown 20240504/s/surfkit/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-04 00:23:27] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2024-05-04 00:23:27] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-1.9.1.dev8.tar.gz tmp/coiled-1.9.1.dev9.tar.gz --markdown 20240504/c/coiled/1.9.1.dev8-1.9.1.dev9/README.md --exclude *.pyd
+[2024-05-04 00:23:27] INFO root fetch - processPackages [heaserver-accounts]: Downloading https://files.pythonhosted.org/packages/f0/c1/7de688d7670efacbf40a30b6417b9be389be0a0b0b8717f79c1efbd2c0cc/heaserver_accounts-1.1.2.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [juan-stats]: executing diffoscope
+[2024-05-04 00:23:27] INFO root fetch - processPackages [juan-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juan_stats-1.5.tar.gz tmp/juan_stats-1.6.tar.gz --markdown 20240504/j/juan-stats/1.5-1.6/README.md --exclude *.pyd
+[2024-05-04 00:23:27] INFO root fetch - processPackages [juan-stats]: executing diffoscope
+[2024-05-04 00:23:27] INFO root fetch - processPackages [juan-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juan_stats-1.5.tar.gz tmp/juan_stats-1.6.tar.gz --markdown 20240504/j/juan-stats/1.5-1.6/README.md --exclude *.pyd
+[2024-05-04 00:23:27] INFO root fetch - processPackages [wallpaper-factory]: Downloading https://files.pythonhosted.org/packages/82/85/f67ec9e590732b7fed48dd13c3f2e1fbc66e231c665d091bf5150eebfea7/wallpaper_factory-0.0.9.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [wallpaper-factory]: Downloading https://files.pythonhosted.org/packages/82/85/f67ec9e590732b7fed48dd13c3f2e1fbc66e231c665d091bf5150eebfea7/wallpaper_factory-0.0.9.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [unyts]: Downloading https://files.pythonhosted.org/packages/2d/18/b112aa809d570bc380dcbab545d498b55c0460efac0bed326780ff449d87/unyts-0.8.0.tar.gz
+[2024-05-04 00:23:27] INFO root fetch - processPackages [heaserver-accounts]: executing diffoscope
+[2024-05-04 00:23:27] INFO root fetch - processPackages [heaserver-accounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver_accounts-1.1.1.tar.gz tmp/heaserver_accounts-1.1.2.tar.gz --markdown 20240504/h/heaserver-accounts/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-04 00:23:27] INFO root fetch - processPackages [wallpaper-factory]: executing diffoscope
+[2024-05-04 00:23:27] INFO root fetch - processPackages [wallpaper-factory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wallpaper_factory-0.0.8.tar.gz tmp/wallpaper_factory-0.0.9.tar.gz --markdown 20240504/w/wallpaper-factory/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 00:23:27] INFO root fetch - processPackages [wallpaper-factory]: executing diffoscope
+[2024-05-04 00:23:27] INFO root fetch - processPackages [wallpaper-factory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wallpaper_factory-0.0.8.tar.gz tmp/wallpaper_factory-0.0.9.tar.gz --markdown 20240504/w/wallpaper-factory/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 00:23:27] INFO root fetch - processPackages [unyts]: executing diffoscope
+[2024-05-04 00:23:27] INFO root fetch - processPackages [unyts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unyts-0.7.1.tar.gz tmp/unyts-0.8.0.tar.gz --markdown 20240504/u/unyts/0.7.1-0.8.0/README.md --exclude *.pyd
+[2024-05-04 00:23:28] INFO root fetch - processPackages [spotlight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/spotlight-sdk-0.0.8.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - processPackages [spotlight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/spotlight-sdk-0.0.9.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - main [MainThread]: End processing [spotlight-sdk]: success
+[2024-05-04 00:23:28] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.98.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - main [MainThread]: End processing [surfkit]: success
+[2024-05-04 00:23:28] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-1.5.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-1.6.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - main [MainThread]: End processing [juan-stats]: success
+[2024-05-04 00:23:28] INFO root fetch - main [MainThread]: End processing [juan-stats]: success
+[2024-05-04 00:23:28] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev8.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev9.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2024-05-04 00:23:28] INFO root fetch - processPackages [wallpaper-factory]: Remove: archive file [/home/abi/fetcher/tmp/wallpaper_factory-0.0.8.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - processPackages [wallpaper-factory]: Remove: archive file [/home/abi/fetcher/tmp/wallpaper_factory-0.0.9.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - main [MainThread]: End processing [wallpaper-factory]: success
+[2024-05-04 00:23:28] INFO root fetch - processPackages [heaserver-accounts]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_accounts-1.1.1.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - processPackages [heaserver-accounts]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_accounts-1.1.2.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - main [MainThread]: End processing [heaserver-accounts]: success
+[2024-05-04 00:23:28] INFO root fetch - main [MainThread]: End processing [wallpaper-factory]: success
+[2024-05-04 00:23:28] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.7.1.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.8.0.tar.gz]
+[2024-05-04 00:23:28] INFO root fetch - main [MainThread]: End processing [unyts]: success
+[2024-05-04 00:23:28] INFO root fetch - main [MainThread]: Store serial: [23052191]
