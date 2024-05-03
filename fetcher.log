@@ -995,3 +995,54 @@
 [2024-05-04 00:54:17] INFO root fetch - processPackages [pymemgpt]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt-0.3.9.tar.gz]
 [2024-05-04 00:54:17] INFO root fetch - main [MainThread]: End processing [pymemgpt]: success
 [2024-05-04 00:54:17] INFO root fetch - main [MainThread]: Store serial: [23052484]
+[2024-05-04 00:56:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052484]
+[2024-05-04 00:56:26] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 00:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adrv
+[2024-05-04 00:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbt-bigquery
+[2024-05-04 00:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autorunpy
+[2024-05-04 00:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dj_component_view
+[2024-05-04 00:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hklpy2
+[2024-05-04 00:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: martian-adapters
+[2024-05-04 00:56:26] INFO root fetch - processPackages [adrv]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-05-04 00:56:26] INFO root fetch - processPackages [martian-adapters]: New version: [4.2.1] Old Version: [4.2.0]
+[2024-05-04 00:56:26] INFO root fetch - processPackages [dbt-bigquery]: New version: [1.8.0b2] Old Version: [1.8.0b1]
+[2024-05-04 00:56:26] INFO root fetch - processPackages [adrv]: Downloading https://files.pythonhosted.org/packages/8f/22/b4256bb177a4eef1538d378145a9d5e066b50041abb373b15d20fe54e38b/adrv-1.3.0.tar.gz
+[2024-05-04 00:56:26] INFO root fetch - processPackages [autorunpy]: New version: [7.3.0] Old Version: [7.2.0]
+[2024-05-04 00:56:26] INFO root fetch - processPackages [dj_component_view]: New version: [4.0] Old Version: [3.0.1]
+[2024-05-04 00:56:26] WARNING root fetch - processPackages [hklpy2]: Skipping, unable to determine old version
+[2024-05-04 00:56:26] INFO root fetch - main [MainThread]: End processing [hklpy2] error
+[2024-05-04 00:56:26] INFO root fetch - processPackages [dbt-bigquery]: Downloading https://files.pythonhosted.org/packages/7c/a5/af82b5b7ec5db4aa0b0ed8141241e353713bf41c8ec2e5a50c656293fc76/dbt-bigquery-1.8.0b1.tar.gz
+[2024-05-04 00:56:26] INFO root fetch - processPackages [martian-adapters]: Downloading https://files.pythonhosted.org/packages/80/c1/3103780aab923b68dc39360e4fab1cab844c1c897b5a0e7b06ff5228b1fc/martian_adapters-4.2.0.tar.gz
+[2024-05-04 00:56:26] INFO root fetch - processPackages [autorunpy]: Downloading https://files.pythonhosted.org/packages/35/48/5622636653425694b10b25015d9ab72861d92634b31a31a486c9c22859dc/autorunpy-7.2.0.tar.gz
+[2024-05-04 00:56:26] INFO root fetch - processPackages [adrv]: Downloading https://files.pythonhosted.org/packages/cd/bb/d88d1480976d7c0241250dee0e2bcf64619fd35598052670796e5c7c1373/adrv-1.4.0.tar.gz
+[2024-05-04 00:56:26] INFO root fetch - processPackages [dj_component_view]: Downloading https://files.pythonhosted.org/packages/e8/8a/e1c43efe52cef2d8e47746a3f15507c2cf761cdcb4ea9f4e498dae84ff59/dj_component_view-3.0.1.tar.gz
+[2024-05-04 00:56:26] INFO root fetch - processPackages [dbt-bigquery]: Downloading https://files.pythonhosted.org/packages/04/c2/108e4355903d19eed3532c4b7190a4d377c9fc184e5a583812af1dadffff/dbt-bigquery-1.8.0b2.tar.gz
+[2024-05-04 00:56:27] INFO root fetch - processPackages [adrv]: executing diffoscope
+[2024-05-04 00:56:27] INFO root fetch - processPackages [adrv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adrv-1.3.0.tar.gz tmp/adrv-1.4.0.tar.gz --markdown 20240504/a/adrv/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-05-04 00:56:27] INFO root fetch - processPackages [dbt-bigquery]: executing diffoscope
+[2024-05-04 00:56:27] INFO root fetch - processPackages [dbt-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-bigquery-1.8.0b1.tar.gz tmp/dbt-bigquery-1.8.0b2.tar.gz --markdown 20240504/d/dbt-bigquery/1.8.0b1-1.8.0b2/README.md --exclude *.pyd
+[2024-05-04 00:56:27] INFO root fetch - processPackages [martian-adapters]: Downloading https://files.pythonhosted.org/packages/6d/74/bb84d097252ad2211fb833ee669c93ba5387c65f5c4429488d23c0960db7/martian_adapters-4.2.1.tar.gz
+[2024-05-04 00:56:27] INFO root fetch - processPackages [autorunpy]: Downloading https://files.pythonhosted.org/packages/20/7e/3d549b6ac472c3a2d5e741f3352b42d2c021c6d470dc6942faf54cf5d47f/autorunpy-7.3.0.tar.gz
+[2024-05-04 00:56:27] INFO root fetch - processPackages [martian-adapters]: executing diffoscope
+[2024-05-04 00:56:27] INFO root fetch - processPackages [martian-adapters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/martian_adapters-4.2.0.tar.gz tmp/martian_adapters-4.2.1.tar.gz --markdown 20240504/m/martian-adapters/4.2.0-4.2.1/README.md --exclude *.pyd
+[2024-05-04 00:56:27] INFO root fetch - processPackages [dj_component_view]: Downloading https://files.pythonhosted.org/packages/2a/7b/7f7c9ea55c5907d8c77fd1a0bacb33bc61d3dcb70c74939745b165cdf87e/dj_component_view-4.0.tar.gz
+[2024-05-04 00:56:27] INFO root fetch - processPackages [dj_component_view]: executing diffoscope
+[2024-05-04 00:56:27] INFO root fetch - processPackages [dj_component_view]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj_component_view-3.0.1.tar.gz tmp/dj_component_view-4.0.tar.gz --markdown 20240504/d/dj_component_view/3.0.1-4.0/README.md --exclude *.pyd
+[2024-05-04 00:56:27] INFO root fetch - processPackages [autorunpy]: executing diffoscope
+[2024-05-04 00:56:27] INFO root fetch - processPackages [autorunpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autorunpy-7.2.0.tar.gz tmp/autorunpy-7.3.0.tar.gz --markdown 20240504/a/autorunpy/7.2.0-7.3.0/README.md --exclude *.pyd
+[2024-05-04 00:56:27] INFO root fetch - processPackages [adrv]: Remove: archive file [/home/abi/fetcher/tmp/adrv-1.3.0.tar.gz]
+[2024-05-04 00:56:27] INFO root fetch - processPackages [adrv]: Remove: archive file [/home/abi/fetcher/tmp/adrv-1.4.0.tar.gz]
+[2024-05-04 00:56:27] INFO root fetch - main [MainThread]: End processing [adrv]: success
+[2024-05-04 00:56:27] INFO root fetch - processPackages [dbt-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/dbt-bigquery-1.8.0b1.tar.gz]
+[2024-05-04 00:56:27] INFO root fetch - processPackages [dbt-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/dbt-bigquery-1.8.0b2.tar.gz]
+[2024-05-04 00:56:27] INFO root fetch - main [MainThread]: End processing [dbt-bigquery]: success
+[2024-05-04 00:56:27] INFO root fetch - processPackages [martian-adapters]: Remove: archive file [/home/abi/fetcher/tmp/martian_adapters-4.2.0.tar.gz]
+[2024-05-04 00:56:27] INFO root fetch - processPackages [martian-adapters]: Remove: archive file [/home/abi/fetcher/tmp/martian_adapters-4.2.1.tar.gz]
+[2024-05-04 00:56:27] INFO root fetch - main [MainThread]: End processing [martian-adapters]: success
+[2024-05-04 00:56:27] INFO root fetch - processPackages [dj_component_view]: Remove: archive file [/home/abi/fetcher/tmp/dj_component_view-3.0.1.tar.gz]
+[2024-05-04 00:56:27] INFO root fetch - processPackages [dj_component_view]: Remove: archive file [/home/abi/fetcher/tmp/dj_component_view-4.0.tar.gz]
+[2024-05-04 00:56:27] INFO root fetch - main [MainThread]: End processing [dj_component_view]: success
+[2024-05-04 00:56:28] INFO root fetch - processPackages [autorunpy]: Remove: archive file [/home/abi/fetcher/tmp/autorunpy-7.2.0.tar.gz]
+[2024-05-04 00:56:28] INFO root fetch - processPackages [autorunpy]: Remove: archive file [/home/abi/fetcher/tmp/autorunpy-7.3.0.tar.gz]
+[2024-05-04 00:56:28] INFO root fetch - main [MainThread]: End processing [autorunpy]: success
+[2024-05-04 00:56:28] INFO root fetch - main [MainThread]: Store serial: [23052502]
