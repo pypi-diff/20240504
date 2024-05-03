@@ -267,3 +267,54 @@
 [2024-05-04 00:13:22] INFO root fetch - processPackages [lusid-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-sdk-preview-1.1.98.tar.gz]
 [2024-05-04 00:13:22] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
 [2024-05-04 00:13:22] INFO root fetch - main [MainThread]: Store serial: [23052101]
+[2024-05-04 00:15:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052101]
+[2024-05-04 00:15:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 00:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leechcorepyc
+[2024-05-04 00:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: es-testbed
+[2024-05-04 00:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeastmlp
+[2024-05-04 00:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: discord-misc
+[2024-05-04 00:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bauplan
+[2024-05-04 00:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fastapi-simple-auth
+[2024-05-04 00:15:31] INFO root fetch - processPackages [es-testbed]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-04 00:15:31] INFO root fetch - processPackages [bauplan]: New version: [0.0.3a97] Old Version: [0.0.3a96]
+[2024-05-04 00:15:31] INFO root fetch - processPackages [yeastmlp]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-04 00:15:31] INFO root fetch - processPackages [leechcorepyc]: New version: [2.8.1] Old Version: [2.8.0]
+[2024-05-04 00:15:31] INFO root fetch - processPackages [es-testbed]: Downloading https://files.pythonhosted.org/packages/49/c4/b5bc9378b2eb94b4063d1db46673f54c96a2f2dde3bb02b5593e44ed34ca/es_testbed-0.6.0.tar.gz
+[2024-05-04 00:15:31] WARNING root fetch - processPackages [discord-misc]: Skipping, unable to determine old version
+[2024-05-04 00:15:31] INFO root fetch - main [MainThread]: End processing [discord-misc] error
+[2024-05-04 00:15:31] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/bb/b8/32a35f530bca4d516bfded57ef719946bbb7f3eef06e6f6b659ce2d6c174/bauplan-0.0.3a96-py3-none-win_amd64.whl
+[2024-05-04 00:15:32] INFO root fetch - processPackages [fastapi-simple-auth]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-04 00:15:32] INFO root fetch - processPackages [leechcorepyc]: Downloading https://files.pythonhosted.org/packages/54/9e/10b361cfa728f728beecfacdc1e4fc2ca0462f56c8e73fd7e8738f5c8f36/leechcorepyc-2.8.0.tar.gz
+[2024-05-04 00:15:32] INFO root fetch - processPackages [yeastmlp]: Downloading https://files.pythonhosted.org/packages/71/f4/e780e2ced2db4a520025b7b3170b0b57a0a23f1902d6400a198ece4844eb/yeastmlp-1.0.3.tar.gz
+[2024-05-04 00:15:32] INFO root fetch - processPackages [es-testbed]: Downloading https://files.pythonhosted.org/packages/5b/25/9dea7ded5666bd08b7233fe211ef273995dc626482a70304795f166272bf/es_testbed-0.7.0.tar.gz
+[2024-05-04 00:15:32] INFO root fetch - processPackages [fastapi-simple-auth]: Downloading https://files.pythonhosted.org/packages/95/9d/f3b0cea8a989ad16356daccf1b930540dc4d86504e809031b8db20e09837/fastapi_simple_auth-0.0.2.tar.gz
+[2024-05-04 00:15:32] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/29/47/bc72961d9bacb0e46801de2ba18b39f37008c2fb99a674f64f4fb70f97b2/bauplan-0.0.3a97-py3-none-win_amd64.whl
+[2024-05-04 00:15:32] INFO root fetch - processPackages [es-testbed]: executing diffoscope
+[2024-05-04 00:15:32] INFO root fetch - processPackages [es-testbed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/es_testbed-0.6.0.tar.gz tmp/es_testbed-0.7.0.tar.gz --markdown 20240504/e/es-testbed/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-04 00:15:32] INFO root fetch - processPackages [leechcorepyc]: Downloading https://files.pythonhosted.org/packages/e6/52/24292fbdc9d104ec939737b4a4b656fcc87a4a658d6cf8281f31a4ae82e8/leechcorepyc-2.8.1.tar.gz
+[2024-05-04 00:15:32] INFO root fetch - processPackages [yeastmlp]: Downloading https://files.pythonhosted.org/packages/8c/47/afc1d92a91516902d7275fe7316801019ae0dd6edbd529e1c96fef2d9511/yeastmlp-1.0.4.tar.gz
+[2024-05-04 00:15:32] INFO root fetch - processPackages [fastapi-simple-auth]: Downloading https://files.pythonhosted.org/packages/bf/ad/5e91e5edad301e6608d65c8c1f2b7cdc3311fa5f469899d3411256203568/fastapi_simple_auth-0.0.3.tar.gz
+[2024-05-04 00:15:32] INFO root fetch - processPackages [yeastmlp]: executing diffoscope
+[2024-05-04 00:15:32] INFO root fetch - processPackages [yeastmlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeastmlp-1.0.3.tar.gz tmp/yeastmlp-1.0.4.tar.gz --markdown 20240504/y/yeastmlp/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-04 00:15:32] INFO root fetch - processPackages [bauplan]: executing diffoscope
+[2024-05-04 00:15:32] INFO root fetch - processPackages [bauplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bauplan-0.0.3a96-py3-none-win_amd64.whl.zip tmp/bauplan-0.0.3a97-py3-none-win_amd64.whl.zip --markdown 20240504/b/bauplan/0.0.3a96-0.0.3a97/README.md --exclude *.pyd
+[2024-05-04 00:15:32] INFO root fetch - processPackages [leechcorepyc]: executing diffoscope
+[2024-05-04 00:15:32] INFO root fetch - processPackages [leechcorepyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leechcorepyc-2.8.0.tar.gz tmp/leechcorepyc-2.8.1.tar.gz --markdown 20240504/l/leechcorepyc/2.8.0-2.8.1/README.md --exclude *.pyd
+[2024-05-04 00:15:33] INFO root fetch - processPackages [yeastmlp]: Remove: archive file [/home/abi/fetcher/tmp/yeastmlp-1.0.3.tar.gz]
+[2024-05-04 00:15:33] INFO root fetch - processPackages [yeastmlp]: Remove: archive file [/home/abi/fetcher/tmp/yeastmlp-1.0.4.tar.gz]
+[2024-05-04 00:15:33] INFO root fetch - main [MainThread]: End processing [yeastmlp]: success
+[2024-05-04 00:15:33] INFO root fetch - processPackages [fastapi-simple-auth]: executing diffoscope
+[2024-05-04 00:15:33] INFO root fetch - processPackages [fastapi-simple-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_simple_auth-0.0.2.tar.gz tmp/fastapi_simple_auth-0.0.3.tar.gz --markdown 20240504/f/fastapi-simple-auth/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-04 00:15:33] INFO root fetch - processPackages [leechcorepyc]: Remove: archive file [/home/abi/fetcher/tmp/leechcorepyc-2.8.0.tar.gz]
+[2024-05-04 00:15:33] INFO root fetch - processPackages [leechcorepyc]: Remove: archive file [/home/abi/fetcher/tmp/leechcorepyc-2.8.1.tar.gz]
+[2024-05-04 00:15:33] INFO root fetch - main [MainThread]: End processing [leechcorepyc]: success
+[2024-05-04 00:15:33] INFO root fetch - processPackages [fastapi-simple-auth]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_simple_auth-0.0.2.tar.gz]
+[2024-05-04 00:15:33] INFO root fetch - processPackages [fastapi-simple-auth]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_simple_auth-0.0.3.tar.gz]
+[2024-05-04 00:15:33] INFO root fetch - main [MainThread]: End processing [fastapi-simple-auth]: success
+[2024-05-04 00:15:33] INFO root fetch - processPackages [es-testbed]: Remove: archive file [/home/abi/fetcher/tmp/es_testbed-0.6.0.tar.gz]
+[2024-05-04 00:15:33] INFO root fetch - processPackages [es-testbed]: Remove: archive file [/home/abi/fetcher/tmp/es_testbed-0.7.0.tar.gz]
+[2024-05-04 00:15:33] INFO root fetch - main [MainThread]: End processing [es-testbed]: success
+[2024-05-04 00:16:22] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a96-py3-none-win_amd64.whl.zip]
+[2024-05-04 00:16:22] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a97-py3-none-win_amd64.whl.zip]
+[2024-05-04 00:16:22] INFO root fetch - main [MainThread]: End processing [bauplan]: success
+[2024-05-04 00:16:22] INFO root fetch - main [MainThread]: Store serial: [23052123]
