@@ -1046,3 +1046,36 @@
 [2024-05-04 00:56:28] INFO root fetch - processPackages [autorunpy]: Remove: archive file [/home/abi/fetcher/tmp/autorunpy-7.3.0.tar.gz]
 [2024-05-04 00:56:28] INFO root fetch - main [MainThread]: End processing [autorunpy]: success
 [2024-05-04 00:56:28] INFO root fetch - main [MainThread]: Store serial: [23052502]
+[2024-05-04 00:58:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052502]
+[2024-05-04 00:58:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 00:58:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nnfasta
+[2024-05-04 00:58:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LorenzTelegram
+[2024-05-04 00:58:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ork.build
+[2024-05-04 00:58:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ReverseBox
+[2024-05-04 00:58:36] INFO root fetch - processPackages [nnfasta]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-04 00:58:36] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/7a/09/72726182d426957ef53587dbf2ca1a8acc33c1e0528c7443aca030307b5f/nnfasta-0.1.7.tar.gz
+[2024-05-04 00:58:36] WARNING root fetch - processPackages [LorenzTelegram]: Skipping, unable to determine old version
+[2024-05-04 00:58:36] INFO root fetch - main [MainThread]: End processing [LorenzTelegram] error
+[2024-05-04 00:58:36] INFO root fetch - processPackages [ReverseBox]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-05-04 00:58:36] INFO root fetch - processPackages [ork.build]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-04 00:58:36] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/a2/c2/4fb1599b7d5c19fba75f1764679d5560cc01032b44ae5d0c0631776c6449/ReverseBox-0.8.2.tar.gz
+[2024-05-04 00:58:36] INFO root fetch - processPackages [ork.build]: Downloading https://files.pythonhosted.org/packages/3d/f4/8ad5f3e93d32785fbcc2c448d2821991024fbf7a8add8d1ce6def33a2c89/ork.build-0.0.98.tar.gz
+[2024-05-04 00:58:36] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/4e/c3/1c7ed4f26b1b9cc648b71504527f94c7079a5e291de6426719031a060ef2/nnfasta-0.1.8.tar.gz
+[2024-05-04 00:58:37] INFO root fetch - processPackages [nnfasta]: executing diffoscope
+[2024-05-04 00:58:37] INFO root fetch - processPackages [nnfasta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnfasta-0.1.7.tar.gz tmp/nnfasta-0.1.8.tar.gz --markdown 20240504/n/nnfasta/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-04 00:58:37] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/07/dc/f3ad155be5cfcb47d17ccb720805913b5ec6a43aa0bbb34e2497504ff89c/ReverseBox-0.8.3.tar.gz
+[2024-05-04 00:58:37] INFO root fetch - processPackages [ork.build]: Downloading https://files.pythonhosted.org/packages/57/6c/cdc688ee4714601fa2294fce5ed69c29405197d09e82485271d2ba7a76c2/ork.build-0.0.99.tar.gz
+[2024-05-04 00:58:37] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-04 00:58:37] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.8.2.tar.gz tmp/ReverseBox-0.8.3.tar.gz --markdown 20240504/R/ReverseBox/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-05-04 00:58:37] INFO root fetch - processPackages [ork.build]: executing diffoscope
+[2024-05-04 00:58:37] INFO root fetch - processPackages [ork.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ork.build-0.0.98.tar.gz tmp/ork.build-0.0.99.tar.gz --markdown 20240504/o/ork.build/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-04 00:58:37] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.7.tar.gz]
+[2024-05-04 00:58:37] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.8.tar.gz]
+[2024-05-04 00:58:37] INFO root fetch - main [MainThread]: End processing [nnfasta]: success
+[2024-05-04 00:58:37] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.2.tar.gz]
+[2024-05-04 00:58:37] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.3.tar.gz]
+[2024-05-04 00:58:37] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-04 00:58:39] INFO root fetch - processPackages [ork.build]: Remove: archive file [/home/abi/fetcher/tmp/ork.build-0.0.98.tar.gz]
+[2024-05-04 00:58:39] INFO root fetch - processPackages [ork.build]: Remove: archive file [/home/abi/fetcher/tmp/ork.build-0.0.99.tar.gz]
+[2024-05-04 00:58:39] INFO root fetch - main [MainThread]: End processing [ork.build]: success
+[2024-05-04 00:58:39] INFO root fetch - main [MainThread]: Store serial: [23052516]
