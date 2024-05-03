@@ -1313,3 +1313,27 @@
 [2024-05-04 01:09:49] INFO root fetch - processPackages [memprocfs]: Remove: archive file [/home/abi/fetcher/tmp/memprocfs-5.9.12.tar.gz]
 [2024-05-04 01:09:49] INFO root fetch - main [MainThread]: End processing [memprocfs]: success
 [2024-05-04 01:09:49] INFO root fetch - main [MainThread]: Store serial: [23052637]
+[2024-05-04 01:11:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052637]
+[2024-05-04 01:11:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 01:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SMClib.py
+[2024-05-04 01:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyramid-swagger
+[2024-05-04 01:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nilm-usb
+[2024-05-04 01:11:58] INFO root fetch - processPackages [nilm-usb]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-04 01:11:58] WARNING root fetch - processPackages [SMClib.py]: Skipping, unable to determine old version
+[2024-05-04 01:11:58] INFO root fetch - main [MainThread]: End processing [SMClib.py] error
+[2024-05-04 01:11:58] INFO root fetch - processPackages [pyramid-swagger]: New version: [2.8.0] Old Version: [2.7.0]
+[2024-05-04 01:11:58] INFO root fetch - processPackages [nilm-usb]: Downloading https://files.pythonhosted.org/packages/f9/74/93f67c850066752375516e2693686358d7c41862ce5af44bc49f5cfeae75/nilm_usb-0.0.2.tar.gz
+[2024-05-04 01:11:58] INFO root fetch - processPackages [pyramid-swagger]: Downloading https://files.pythonhosted.org/packages/33/78/5dbd7b2f8d185e4bb6d5e11a5260831378a744a9d8a0dc601926cc9083fd/pyramid_swagger-2.7.0.tar.gz
+[2024-05-04 01:11:58] INFO root fetch - processPackages [nilm-usb]: Downloading https://files.pythonhosted.org/packages/01/09/d8e3089abb8726779af74835199eb070f526852b0faef0c12742ed4ae2e5/nilm_usb-0.0.3.tar.gz
+[2024-05-04 01:11:58] INFO root fetch - processPackages [pyramid-swagger]: Downloading https://files.pythonhosted.org/packages/cb/71/5ac1ef7557cb8f8cf87291435cde04e0dfec627515714f486f01d38a3c6e/pyramid_swagger-2.8.0.tar.gz
+[2024-05-04 01:11:58] INFO root fetch - processPackages [pyramid-swagger]: executing diffoscope
+[2024-05-04 01:11:58] INFO root fetch - processPackages [pyramid-swagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyramid_swagger-2.7.0.tar.gz tmp/pyramid_swagger-2.8.0.tar.gz --markdown 20240504/p/pyramid-swagger/2.7.0-2.8.0/README.md --exclude *.pyd
+[2024-05-04 01:11:58] INFO root fetch - processPackages [nilm-usb]: executing diffoscope
+[2024-05-04 01:11:58] INFO root fetch - processPackages [nilm-usb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nilm_usb-0.0.2.tar.gz tmp/nilm_usb-0.0.3.tar.gz --markdown 20240504/n/nilm-usb/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-04 01:11:59] INFO root fetch - processPackages [nilm-usb]: Remove: archive file [/home/abi/fetcher/tmp/nilm_usb-0.0.2.tar.gz]
+[2024-05-04 01:11:59] INFO root fetch - processPackages [nilm-usb]: Remove: archive file [/home/abi/fetcher/tmp/nilm_usb-0.0.3.tar.gz]
+[2024-05-04 01:11:59] INFO root fetch - main [MainThread]: End processing [nilm-usb]: success
+[2024-05-04 01:11:59] INFO root fetch - processPackages [pyramid-swagger]: Remove: archive file [/home/abi/fetcher/tmp/pyramid_swagger-2.7.0.tar.gz]
+[2024-05-04 01:11:59] INFO root fetch - processPackages [pyramid-swagger]: Remove: archive file [/home/abi/fetcher/tmp/pyramid_swagger-2.8.0.tar.gz]
+[2024-05-04 01:11:59] INFO root fetch - main [MainThread]: End processing [pyramid-swagger]: success
+[2024-05-04 01:11:59] INFO root fetch - main [MainThread]: Store serial: [23052647]
