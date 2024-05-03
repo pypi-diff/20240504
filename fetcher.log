@@ -1118,3 +1118,63 @@
 [2024-05-04 01:00:49] INFO root fetch - processPackages [keepercommander]: Remove: archive file [/home/abi/fetcher/tmp/keepercommander-4.9.tar.gz]
 [2024-05-04 01:00:49] INFO root fetch - main [MainThread]: End processing [keepercommander]: success
 [2024-05-04 01:00:49] INFO root fetch - main [MainThread]: Store serial: [23052527]
+[2024-05-04 01:02:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052527]
+[2024-05-04 01:02:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: logiclayer
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaobject
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tree-sitter-c-sharp
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ruff
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ReverseBox
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nilm-usb
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bcra-api-client
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ReverseBox]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-05-04 01:02:59] INFO root fetch - processPackages [bcra-api-client]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-05-04 01:02:59] WARNING root fetch - processPackages [tree-sitter-c-sharp]: Skipping, unable to determine old version
+[2024-05-04 01:02:59] INFO root fetch - main [MainThread]: End processing [tree-sitter-c-sharp] error
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ruff]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-04 01:02:59] INFO root fetch - processPackages [logiclayer]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-04 01:02:59] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/79/6b/374d2ef5c30236a672fe4f1e2258ded1d2b5181e82f7722d23acf8b2f998/bcra-api-client-1.1.3.tar.gz
+[2024-05-04 01:02:59] INFO root fetch - processPackages [nilm-usb]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-04 01:02:59] INFO root fetch - processPackages [heaobject]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/a2/c2/4fb1599b7d5c19fba75f1764679d5560cc01032b44ae5d0c0631776c6449/ReverseBox-0.8.2.tar.gz
+[2024-05-04 01:02:59] INFO root fetch - processPackages [logiclayer]: Downloading https://files.pythonhosted.org/packages/32/2c/2c5565e3caadbbb438c9db567b84e4b92f5cb53bc46cd4babf91edd7bbe9/logiclayer-0.3.3.tar.gz
+[2024-05-04 01:02:59] INFO root fetch - processPackages [heaobject]: Downloading https://files.pythonhosted.org/packages/38/ad/fd549904e745c9103a642c2df551bfde02ca811da74313ddafc7a73b1cbd/heaobject-1.5.0.tar.gz
+[2024-05-04 01:02:59] INFO root fetch - processPackages [nilm-usb]: Downloading https://files.pythonhosted.org/packages/59/b8/68713a3ec197be559fd0fa6a93fffa88d6372fa1d3a8170cc05e22d2492b/nilm_usb-0.0.1.tar.gz
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ruff]: Downloading https://files.pythonhosted.org/packages/cd/76/667f7536232ff6c3769a13f8d67911e038367350f7c3b3e09c4d98648fbc/ruff-0.4.1.tar.gz
+[2024-05-04 01:02:59] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/5d/55/898918c3971ed6dfb69d51bb8cf86232e9b53ba3dd6a48dd600e64035f26/bcra-api-client-1.1.4.tar.gz
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/07/dc/f3ad155be5cfcb47d17ccb720805913b5ec6a43aa0bbb34e2497504ff89c/ReverseBox-0.8.3.tar.gz
+[2024-05-04 01:02:59] INFO root fetch - processPackages [bcra-api-client]: executing diffoscope
+[2024-05-04 01:02:59] INFO root fetch - processPackages [bcra-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcra-api-client-1.1.3.tar.gz tmp/bcra-api-client-1.1.4.tar.gz --markdown 20240504/b/bcra-api-client/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-04 01:02:59] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.8.2.tar.gz tmp/ReverseBox-0.8.3.tar.gz --markdown 20240504/R/ReverseBox/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-05-04 01:02:59] INFO root fetch - processPackages [logiclayer]: Downloading https://files.pythonhosted.org/packages/5e/17/6409b36bc9094f284c2e130f035894254c2f28ca46264db01e12ad075a7b/logiclayer-0.3.4.tar.gz
+[2024-05-04 01:02:59] INFO root fetch - processPackages [heaobject]: Downloading https://files.pythonhosted.org/packages/a6/f0/98acd10807dcc5be4493173baa14b62a4ead5b0d460e8fd23f33c0742b5d/heaobject-1.5.1.tar.gz
+[2024-05-04 01:02:59] INFO root fetch - processPackages [nilm-usb]: Downloading https://files.pythonhosted.org/packages/f9/74/93f67c850066752375516e2693686358d7c41862ce5af44bc49f5cfeae75/nilm_usb-0.0.2.tar.gz
+[2024-05-04 01:03:00] INFO root fetch - processPackages [logiclayer]: executing diffoscope
+[2024-05-04 01:03:00] INFO root fetch - processPackages [logiclayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logiclayer-0.3.3.tar.gz tmp/logiclayer-0.3.4.tar.gz --markdown 20240504/l/logiclayer/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-04 01:03:00] INFO root fetch - processPackages [heaobject]: executing diffoscope
+[2024-05-04 01:03:00] INFO root fetch - processPackages [heaobject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaobject-1.5.0.tar.gz tmp/heaobject-1.5.1.tar.gz --markdown 20240504/h/heaobject/1.5.0-1.5.1/README.md --exclude *.pyd
+[2024-05-04 01:03:00] INFO root fetch - processPackages [ruff]: Downloading https://files.pythonhosted.org/packages/f1/ef/b34ab9103284368f9ef958547998168955d32b017e02e4d66acfb8c57b9a/ruff-0.4.2.tar.gz
+[2024-05-04 01:03:00] INFO root fetch - processPackages [nilm-usb]: executing diffoscope
+[2024-05-04 01:03:00] INFO root fetch - processPackages [nilm-usb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nilm_usb-0.0.1.tar.gz tmp/nilm_usb-0.0.2.tar.gz --markdown 20240504/n/nilm-usb/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-04 01:03:00] INFO root fetch - processPackages [ruff]: executing diffoscope
+[2024-05-04 01:03:00] INFO root fetch - processPackages [ruff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruff-0.4.1.tar.gz tmp/ruff-0.4.2.tar.gz --markdown 20240504/r/ruff/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-04 01:03:00] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra-api-client-1.1.3.tar.gz]
+[2024-05-04 01:03:00] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra-api-client-1.1.4.tar.gz]
+[2024-05-04 01:03:00] INFO root fetch - main [MainThread]: End processing [bcra-api-client]: success
+[2024-05-04 01:03:00] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.2.tar.gz]
+[2024-05-04 01:03:00] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.3.tar.gz]
+[2024-05-04 01:03:00] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-04 01:03:00] INFO root fetch - processPackages [logiclayer]: Remove: archive file [/home/abi/fetcher/tmp/logiclayer-0.3.3.tar.gz]
+[2024-05-04 01:03:00] INFO root fetch - processPackages [logiclayer]: Remove: archive file [/home/abi/fetcher/tmp/logiclayer-0.3.4.tar.gz]
+[2024-05-04 01:03:00] INFO root fetch - main [MainThread]: End processing [logiclayer]: success
+[2024-05-04 01:03:00] INFO root fetch - processPackages [nilm-usb]: Remove: archive file [/home/abi/fetcher/tmp/nilm_usb-0.0.1.tar.gz]
+[2024-05-04 01:03:00] INFO root fetch - processPackages [nilm-usb]: Remove: archive file [/home/abi/fetcher/tmp/nilm_usb-0.0.2.tar.gz]
+[2024-05-04 01:03:00] INFO root fetch - main [MainThread]: End processing [nilm-usb]: success
+[2024-05-04 01:03:00] INFO root fetch - processPackages [heaobject]: Remove: archive file [/home/abi/fetcher/tmp/heaobject-1.5.0.tar.gz]
+[2024-05-04 01:03:00] INFO root fetch - processPackages [heaobject]: Remove: archive file [/home/abi/fetcher/tmp/heaobject-1.5.1.tar.gz]
+[2024-05-04 01:03:00] INFO root fetch - main [MainThread]: End processing [heaobject]: success
+[2024-05-04 01:03:16] INFO root fetch - processPackages [ruff]: Remove: archive file [/home/abi/fetcher/tmp/ruff-0.4.1.tar.gz]
+[2024-05-04 01:03:16] INFO root fetch - processPackages [ruff]: Remove: archive file [/home/abi/fetcher/tmp/ruff-0.4.2.tar.gz]
+[2024-05-04 01:03:16] INFO root fetch - main [MainThread]: End processing [ruff]: success
+[2024-05-04 01:03:16] INFO root fetch - main [MainThread]: Store serial: [23052562]
