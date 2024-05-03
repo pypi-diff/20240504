@@ -591,3 +591,33 @@
 [2024-05-04 00:27:51] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.8.0.tar.gz]
 [2024-05-04 00:27:51] INFO root fetch - main [MainThread]: End processing [unyts]: success
 [2024-05-04 00:27:51] INFO root fetch - main [MainThread]: Store serial: [23052222]
+[2024-05-04 00:29:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052222]
+[2024-05-04 00:30:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 00:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tulp
+[2024-05-04 00:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: awkward
+[2024-05-04 00:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lbt-honeybee
+[2024-05-04 00:30:00] INFO root fetch - processPackages [tulp]: New version: [2.0] Old Version: [1.0]
+[2024-05-04 00:30:00] INFO root fetch - processPackages [awkward]: New version: [2.6.4] Old Version: [2.6.3rc2]
+[2024-05-04 00:30:00] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-05-04 00:30:00] INFO root fetch - processPackages [tulp]: Downloading https://files.pythonhosted.org/packages/50/57/0a49d34589f994cc760aad67cb3a94b020aa75928be6309f59c0205345de/tulp-1.0.tar.gz
+[2024-05-04 00:30:00] INFO root fetch - processPackages [awkward]: Downloading https://files.pythonhosted.org/packages/0f/42/4cbb76b2d4cc414cde47006f157dfcf99effd1defcd67e4ea6eed3a73f8a/awkward-2.6.3rc2.tar.gz
+[2024-05-04 00:30:00] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-05-04 00:30:00] INFO root fetch - processPackages [tulp]: Downloading https://files.pythonhosted.org/packages/35/2c/103bbef34883305ed56c6ab13205415d0df927bafcc15e4ad0458505e950/tulp-2.0.tar.gz
+[2024-05-04 00:30:00] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-05-04 00:30:00] INFO root fetch - processPackages [tulp]: executing diffoscope
+[2024-05-04 00:30:00] INFO root fetch - processPackages [tulp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulp-1.0.tar.gz tmp/tulp-2.0.tar.gz --markdown 20240504/t/tulp/1.0-2.0/README.md --exclude *.pyd
+[2024-05-04 00:30:01] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-05-04 00:30:01] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240504/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-05-04 00:30:01] INFO root fetch - processPackages [awkward]: Downloading https://files.pythonhosted.org/packages/bf/7c/bc09157a55080f7c0fb9b64793002f851da9bcc12f1db63a2a421df3ed52/awkward-2.6.4.tar.gz
+[2024-05-04 00:30:01] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-05-04 00:30:01] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-05-04 00:30:01] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-05-04 00:30:01] INFO root fetch - processPackages [tulp]: Remove: archive file [/home/abi/fetcher/tmp/tulp-1.0.tar.gz]
+[2024-05-04 00:30:01] INFO root fetch - processPackages [tulp]: Remove: archive file [/home/abi/fetcher/tmp/tulp-2.0.tar.gz]
+[2024-05-04 00:30:01] INFO root fetch - main [MainThread]: End processing [tulp]: success
+[2024-05-04 00:30:02] INFO root fetch - processPackages [awkward]: executing diffoscope
+[2024-05-04 00:30:02] INFO root fetch - processPackages [awkward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awkward-2.6.3rc2.tar.gz tmp/awkward-2.6.4.tar.gz --markdown 20240504/a/awkward/2.6.3rc2-2.6.4/README.md --exclude *.pyd
+[2024-05-04 00:30:11] INFO root fetch - processPackages [awkward]: Remove: archive file [/home/abi/fetcher/tmp/awkward-2.6.3rc2.tar.gz]
+[2024-05-04 00:30:11] INFO root fetch - processPackages [awkward]: Remove: archive file [/home/abi/fetcher/tmp/awkward-2.6.4.tar.gz]
+[2024-05-04 00:30:11] INFO root fetch - main [MainThread]: End processing [awkward]: success
+[2024-05-04 00:30:11] INFO root fetch - main [MainThread]: Store serial: [23052233]
