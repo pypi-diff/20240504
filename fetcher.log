@@ -1550,3 +1550,36 @@
 [2024-05-04 01:42:52] INFO root fetch - processPackages [azure-quantum]: Remove: archive file [/home/abi/fetcher/tmp/azure-quantum-2.0.1.tar.gz]
 [2024-05-04 01:42:52] INFO root fetch - main [MainThread]: End processing [azure-quantum]: success
 [2024-05-04 01:42:52] INFO root fetch - main [MainThread]: Store serial: [23052757]
+[2024-05-04 01:44:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052757]
+[2024-05-04 01:45:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 01:45:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: manabase-solver
+[2024-05-04 01:45:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mtok
+[2024-05-04 01:45:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snaptrade-python-sdk
+[2024-05-04 01:45:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blastpipe
+[2024-05-04 01:45:01] WARNING root fetch - processPackages [manabase-solver]: Skipping, unable to determine old version
+[2024-05-04 01:45:01] INFO root fetch - main [MainThread]: End processing [manabase-solver] error
+[2024-05-04 01:45:01] INFO root fetch - processPackages [blastpipe]: New version: [2024.4.1] Old Version: [2024.4.0]
+[2024-05-04 01:45:01] INFO root fetch - processPackages [snaptrade-python-sdk]: New version: [9.0.0] Old Version: [8.4.0]
+[2024-05-04 01:45:01] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/44/b5/f7611abd45850e993b9b553181c60c6fed55db5dfc916d851c7ee339cca0/blastpipe-2024.4.0.tar.gz
+[2024-05-04 01:45:01] INFO root fetch - processPackages [snaptrade-python-sdk]: Downloading https://files.pythonhosted.org/packages/6f/c7/47221dc28e809cffa217eee9b3e3ab3b2e102b70f8259c8619c4d06252a1/snaptrade-python-sdk-8.4.0.tar.gz
+[2024-05-04 01:45:01] INFO root fetch - processPackages [mtok]: New version: [4.3.0] Old Version: [4.2.1]
+[2024-05-04 01:45:01] INFO root fetch - processPackages [mtok]: Downloading https://files.pythonhosted.org/packages/58/67/b9f64732c1e2995c2d65cfcaaf265e47f16a1e40441bf1a8a11058e761b9/mtok-4.2.1.tar.gz
+[2024-05-04 01:45:01] INFO root fetch - processPackages [snaptrade-python-sdk]: Downloading https://files.pythonhosted.org/packages/e8/91/81180245a4093fa5b9c1f540d35e7336338579401f2ae021892d41cf39f7/snaptrade-python-sdk-9.0.0.tar.gz
+[2024-05-04 01:45:01] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/70/b2/6ffc7839f6f10eaffa39de54b9e4fd6a11cba1d4b44efb6397e5c800fb72/blastpipe-2024.4.1.tar.gz
+[2024-05-04 01:45:01] INFO root fetch - processPackages [snaptrade-python-sdk]: executing diffoscope
+[2024-05-04 01:45:01] INFO root fetch - processPackages [snaptrade-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snaptrade-python-sdk-8.4.0.tar.gz tmp/snaptrade-python-sdk-9.0.0.tar.gz --markdown 20240504/s/snaptrade-python-sdk/8.4.0-9.0.0/README.md --exclude *.pyd
+[2024-05-04 01:45:01] INFO root fetch - processPackages [mtok]: Downloading https://files.pythonhosted.org/packages/12/45/3af6e67b9d1537c0779c8aa721f0ec32fddc80d15a907e07402e79ccc618/mtok-4.3.0.tar.gz
+[2024-05-04 01:45:01] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-05-04 01:45:01] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.4.0.tar.gz tmp/blastpipe-2024.4.1.tar.gz --markdown 20240504/b/blastpipe/2024.4.0-2024.4.1/README.md --exclude *.pyd
+[2024-05-04 01:45:01] INFO root fetch - processPackages [mtok]: executing diffoscope
+[2024-05-04 01:45:01] INFO root fetch - processPackages [mtok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtok-4.2.1.tar.gz tmp/mtok-4.3.0.tar.gz --markdown 20240504/m/mtok/4.2.1-4.3.0/README.md --exclude *.pyd
+[2024-05-04 01:45:02] INFO root fetch - processPackages [mtok]: Remove: archive file [/home/abi/fetcher/tmp/mtok-4.2.1.tar.gz]
+[2024-05-04 01:45:02] INFO root fetch - processPackages [mtok]: Remove: archive file [/home/abi/fetcher/tmp/mtok-4.3.0.tar.gz]
+[2024-05-04 01:45:02] INFO root fetch - main [MainThread]: End processing [mtok]: success
+[2024-05-04 01:45:02] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.0.tar.gz]
+[2024-05-04 01:45:02] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.1.tar.gz]
+[2024-05-04 01:45:02] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-05-04 01:45:03] INFO root fetch - processPackages [snaptrade-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/snaptrade-python-sdk-8.4.0.tar.gz]
+[2024-05-04 01:45:03] INFO root fetch - processPackages [snaptrade-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/snaptrade-python-sdk-9.0.0.tar.gz]
+[2024-05-04 01:45:03] INFO root fetch - main [MainThread]: End processing [snaptrade-python-sdk]: success
+[2024-05-04 01:45:03] INFO root fetch - main [MainThread]: Store serial: [23052771]
