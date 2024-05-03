@@ -803,3 +803,54 @@
 [2024-05-04 00:38:56] INFO root fetch - processPackages [sphractal]: Remove: archive file [/home/abi/fetcher/tmp/sphractal-1.1.4.tar.gz]
 [2024-05-04 00:38:56] INFO root fetch - main [MainThread]: End processing [sphractal]: success
 [2024-05-04 00:38:56] INFO root fetch - main [MainThread]: Store serial: [23052399]
+[2024-05-04 00:40:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052399]
+[2024-05-04 00:41:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 00:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphractal
+[2024-05-04 00:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: memprocfs
+[2024-05-04 00:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: loggpy
+[2024-05-04 00:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unyts
+[2024-05-04 00:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scrapkit
+[2024-05-04 00:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: surfkit
+[2024-05-04 00:41:04] INFO root fetch - processPackages [scrapkit]: New version: [2.0] Old Version: [1.7]
+[2024-05-04 00:41:04] INFO root fetch - processPackages [sphractal]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-05-04 00:41:04] INFO root fetch - processPackages [surfkit]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-04 00:41:04] WARNING root fetch - processPackages [loggpy]: Skipping, unable to determine old version
+[2024-05-04 00:41:04] INFO root fetch - main [MainThread]: End processing [loggpy] error
+[2024-05-04 00:41:04] INFO root fetch - processPackages [scrapkit]: Downloading https://files.pythonhosted.org/packages/79/5a/4c044c64fde544b21139becc31f3d90a8e6a02556360e3f7e40b7c42cfc8/scrapkit-1.7.tar.gz
+[2024-05-04 00:41:04] INFO root fetch - processPackages [sphractal]: Downloading https://files.pythonhosted.org/packages/c0/c3/367b8a3be3f4ec9c5eb788df87bd1b35c4f09566cab288591a580f534248/sphractal-1.1.3.tar.gz
+[2024-05-04 00:41:04] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/c2/e4/d9d6efb4013a22047e07b2174dc8716a86fe2b3fe0652e6e1edddbde177b/surfkit-0.1.98.tar.gz
+[2024-05-04 00:41:04] INFO root fetch - processPackages [unyts]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-05-04 00:41:04] INFO root fetch - processPackages [memprocfs]: New version: [5.9.11] Old Version: [5.9.0]
+[2024-05-04 00:41:04] INFO root fetch - processPackages [scrapkit]: Downloading https://files.pythonhosted.org/packages/8d/0a/8948c4248449d339380e4e989b42fb9ef5b26216b2eed5ed2ad063edabb2/scrapkit-2.0.tar.gz
+[2024-05-04 00:41:04] INFO root fetch - processPackages [memprocfs]: Downloading https://files.pythonhosted.org/packages/64/8e/0cfd4697a1cf2b9ed26449e9c4bafc4b2fea5740bccab83b41d14f160d36/memprocfs-5.9.0.tar.gz
+[2024-05-04 00:41:04] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/65/a8/bfc822b58240522d18c4cf24a25a6f2476da037058406af11377393fa476/surfkit-0.1.99.tar.gz
+[2024-05-04 00:41:04] INFO root fetch - processPackages [unyts]: Downloading https://files.pythonhosted.org/packages/cb/e9/b8d44bb4c2ffc94740ec36fd28074258c50d5c8934385af28f6ef798de82/unyts-0.8.1.tar.gz
+[2024-05-04 00:41:04] INFO root fetch - processPackages [scrapkit]: executing diffoscope
+[2024-05-04 00:41:04] INFO root fetch - processPackages [scrapkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapkit-1.7.tar.gz tmp/scrapkit-2.0.tar.gz --markdown 20240504/s/scrapkit/1.7-2.0/README.md --exclude *.pyd
+[2024-05-04 00:41:04] INFO root fetch - processPackages [sphractal]: Downloading https://files.pythonhosted.org/packages/0e/96/1ac3442ef3db127d287d2bf640ca06157722ea5b89ac2123fd68a5ee3596/sphractal-1.1.4.tar.gz
+[2024-05-04 00:41:04] INFO root fetch - processPackages [surfkit]: executing diffoscope
+[2024-05-04 00:41:04] INFO root fetch - processPackages [surfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfkit-0.1.98.tar.gz tmp/surfkit-0.1.99.tar.gz --markdown 20240504/s/surfkit/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-04 00:41:05] INFO root fetch - processPackages [sphractal]: executing diffoscope
+[2024-05-04 00:41:05] INFO root fetch - processPackages [sphractal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphractal-1.1.3.tar.gz tmp/sphractal-1.1.4.tar.gz --markdown 20240504/s/sphractal/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-05-04 00:41:05] INFO root fetch - processPackages [unyts]: Downloading https://files.pythonhosted.org/packages/1e/50/aa3e404ddf9b1675428132aad23603a79ee6b0e5b1f40be77729bf2186e8/unyts-0.8.2.tar.gz
+[2024-05-04 00:41:05] INFO root fetch - processPackages [scrapkit]: Remove: archive file [/home/abi/fetcher/tmp/scrapkit-1.7.tar.gz]
+[2024-05-04 00:41:05] INFO root fetch - processPackages [scrapkit]: Remove: archive file [/home/abi/fetcher/tmp/scrapkit-2.0.tar.gz]
+[2024-05-04 00:41:05] INFO root fetch - main [MainThread]: End processing [scrapkit]: success
+[2024-05-04 00:41:05] INFO root fetch - processPackages [unyts]: executing diffoscope
+[2024-05-04 00:41:05] INFO root fetch - processPackages [unyts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unyts-0.8.1.tar.gz tmp/unyts-0.8.2.tar.gz --markdown 20240504/u/unyts/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-05-04 00:41:05] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.98.tar.gz]
+[2024-05-04 00:41:05] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
+[2024-05-04 00:41:05] INFO root fetch - main [MainThread]: End processing [surfkit]: success
+[2024-05-04 00:41:05] INFO root fetch - processPackages [memprocfs]: Downloading https://files.pythonhosted.org/packages/ee/0d/b9b7c5a9e2554bc3fef06892f926b3f23be9c48098a4883db67171df0ffb/memprocfs-5.9.11.tar.gz
+[2024-05-04 00:41:06] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.8.1.tar.gz]
+[2024-05-04 00:41:06] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.8.2.tar.gz]
+[2024-05-04 00:41:06] INFO root fetch - main [MainThread]: End processing [unyts]: success
+[2024-05-04 00:41:06] INFO root fetch - processPackages [sphractal]: Remove: archive file [/home/abi/fetcher/tmp/sphractal-1.1.3.tar.gz]
+[2024-05-04 00:41:06] INFO root fetch - processPackages [sphractal]: Remove: archive file [/home/abi/fetcher/tmp/sphractal-1.1.4.tar.gz]
+[2024-05-04 00:41:06] INFO root fetch - main [MainThread]: End processing [sphractal]: success
+[2024-05-04 00:41:06] INFO root fetch - processPackages [memprocfs]: executing diffoscope
+[2024-05-04 00:41:06] INFO root fetch - processPackages [memprocfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memprocfs-5.9.0.tar.gz tmp/memprocfs-5.9.11.tar.gz --markdown 20240504/m/memprocfs/5.9.0-5.9.11/README.md --exclude *.pyd
+[2024-05-04 00:41:10] INFO root fetch - processPackages [memprocfs]: Remove: archive file [/home/abi/fetcher/tmp/memprocfs-5.9.0.tar.gz]
+[2024-05-04 00:41:10] INFO root fetch - processPackages [memprocfs]: Remove: archive file [/home/abi/fetcher/tmp/memprocfs-5.9.11.tar.gz]
+[2024-05-04 00:41:10] INFO root fetch - main [MainThread]: End processing [memprocfs]: success
+[2024-05-04 00:41:10] INFO root fetch - main [MainThread]: Store serial: [23052422]
