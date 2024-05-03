@@ -1079,3 +1079,42 @@
 [2024-05-04 00:58:39] INFO root fetch - processPackages [ork.build]: Remove: archive file [/home/abi/fetcher/tmp/ork.build-0.0.99.tar.gz]
 [2024-05-04 00:58:39] INFO root fetch - main [MainThread]: End processing [ork.build]: success
 [2024-05-04 00:58:39] INFO root fetch - main [MainThread]: Store serial: [23052516]
+[2024-05-04 01:00:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052516]
+[2024-05-04 01:00:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 01:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swarms
+[2024-05-04 01:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keepercommander
+[2024-05-04 01:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bcra-api-client
+[2024-05-04 01:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiproxy-python
+[2024-05-04 01:00:47] INFO root fetch - processPackages [bcra-api-client]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-04 01:00:47] INFO root fetch - processPackages [swarms]: New version: [4.9.1] Old Version: [4.9.0]
+[2024-05-04 01:00:47] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/e7/de/51156027bb4e924ef97f51cf4cc0862fc724be1d727895a7af0c27fad21f/bcra-api-client-1.1.2.tar.gz
+[2024-05-04 01:00:47] INFO root fetch - processPackages [aiproxy-python]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-04 01:00:47] INFO root fetch - processPackages [keepercommander]: New version: [4.9] Old Version: [4.88]
+[2024-05-04 01:00:47] INFO root fetch - processPackages [swarms]: Downloading https://files.pythonhosted.org/packages/24/e0/45a46a4c402bdf1c58e62c1cc547ed582dfabcc908b551f148e1d222ec97/swarms-4.9.0-py3-none-any.whl
+[2024-05-04 01:00:47] INFO root fetch - processPackages [aiproxy-python]: Downloading https://files.pythonhosted.org/packages/90/ec/36ad80179a4e47f21357f4eec3fe85c4193cf63f4fc7839cbef4d0dcd5cd/aiproxy_python-0.4.1-py3-none-any.whl
+[2024-05-04 01:00:47] INFO root fetch - processPackages [keepercommander]: Downloading https://files.pythonhosted.org/packages/16/91/5a24b372408888daef4a70bb214157f171e35ef268f1a3904fd190336343/keepercommander-4.88.tar.gz
+[2024-05-04 01:00:48] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/79/6b/374d2ef5c30236a672fe4f1e2258ded1d2b5181e82f7722d23acf8b2f998/bcra-api-client-1.1.3.tar.gz
+[2024-05-04 01:00:48] INFO root fetch - processPackages [bcra-api-client]: executing diffoscope
+[2024-05-04 01:00:48] INFO root fetch - processPackages [bcra-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcra-api-client-1.1.2.tar.gz tmp/bcra-api-client-1.1.3.tar.gz --markdown 20240504/b/bcra-api-client/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-04 01:00:48] INFO root fetch - processPackages [swarms]: Downloading https://files.pythonhosted.org/packages/1b/1a/5d5aeff2d55d2571201aa7c3c8b246437d7e5f29e989e2575564876dc91d/swarms-4.9.1.tar.gz
+[2024-05-04 01:00:48] INFO root fetch - processPackages [aiproxy-python]: Downloading https://files.pythonhosted.org/packages/48/24/2b7b3224c9fd1c69b844f69124a98668b3ff441da723f68ee1aa6100887e/aiproxy_python-0.4.2-py3-none-any.whl
+[2024-05-04 01:00:48] INFO root fetch - processPackages [keepercommander]: Downloading https://files.pythonhosted.org/packages/81/36/49b1c4234938830448040dbce4a33041541130d80e9ff959c80a7863be75/keepercommander-4.9.tar.gz
+[2024-05-04 01:00:48] INFO root fetch - processPackages [aiproxy-python]: executing diffoscope
+[2024-05-04 01:00:48] INFO root fetch - processPackages [aiproxy-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiproxy_python-0.4.1-py3-none-any.whl.zip tmp/aiproxy_python-0.4.2-py3-none-any.whl.zip --markdown 20240504/a/aiproxy-python/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-04 01:00:48] INFO root fetch - processPackages [swarms]: executing diffoscope
+[2024-05-04 01:00:48] INFO root fetch - processPackages [swarms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swarms-4.9.0-py3-none-any.whl.zip tmp/swarms-4.9.1.tar.gz --markdown 20240504/s/swarms/4.9.0-4.9.1/README.md --exclude *.pyd
+[2024-05-04 01:00:48] INFO root fetch - processPackages [keepercommander]: executing diffoscope
+[2024-05-04 01:00:48] INFO root fetch - processPackages [keepercommander]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keepercommander-4.88.tar.gz tmp/keepercommander-4.9.tar.gz --markdown 20240504/k/keepercommander/4.88-4.9/README.md --exclude *.pyd
+[2024-05-04 01:00:48] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra-api-client-1.1.2.tar.gz]
+[2024-05-04 01:00:48] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra-api-client-1.1.3.tar.gz]
+[2024-05-04 01:00:48] INFO root fetch - main [MainThread]: End processing [bcra-api-client]: success
+[2024-05-04 01:00:48] INFO root fetch - processPackages [aiproxy-python]: Remove: archive file [/home/abi/fetcher/tmp/aiproxy_python-0.4.1-py3-none-any.whl.zip]
+[2024-05-04 01:00:48] INFO root fetch - processPackages [aiproxy-python]: Remove: archive file [/home/abi/fetcher/tmp/aiproxy_python-0.4.2-py3-none-any.whl.zip]
+[2024-05-04 01:00:48] INFO root fetch - main [MainThread]: End processing [aiproxy-python]: success
+[2024-05-04 01:00:49] INFO root fetch - processPackages [swarms]: Remove: archive file [/home/abi/fetcher/tmp/swarms-4.9.0-py3-none-any.whl.zip]
+[2024-05-04 01:00:49] INFO root fetch - processPackages [swarms]: Remove: archive file [/home/abi/fetcher/tmp/swarms-4.9.1.tar.gz]
+[2024-05-04 01:00:49] INFO root fetch - main [MainThread]: End processing [swarms]: success
+[2024-05-04 01:00:49] INFO root fetch - processPackages [keepercommander]: Remove: archive file [/home/abi/fetcher/tmp/keepercommander-4.88.tar.gz]
+[2024-05-04 01:00:49] INFO root fetch - processPackages [keepercommander]: Remove: archive file [/home/abi/fetcher/tmp/keepercommander-4.9.tar.gz]
+[2024-05-04 01:00:49] INFO root fetch - main [MainThread]: End processing [keepercommander]: success
+[2024-05-04 01:00:49] INFO root fetch - main [MainThread]: Store serial: [23052527]
