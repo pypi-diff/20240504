@@ -1220,3 +1220,54 @@
 [2024-05-04 01:05:26] INFO root fetch - processPackages [bittrade-binance-websocket]: Remove: archive file [/home/abi/fetcher/tmp/bittrade_binance_websocket-0.4.4.tar.gz]
 [2024-05-04 01:05:26] INFO root fetch - main [MainThread]: End processing [bittrade-binance-websocket]: success
 [2024-05-04 01:05:26] INFO root fetch - main [MainThread]: Store serial: [23052584]
+[2024-05-04 01:07:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052584]
+[2024-05-04 01:07:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 01:07:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt
+[2024-05-04 01:07:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flwr-nightly
+[2024-05-04 01:07:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ReverseBox
+[2024-05-04 01:07:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hklpy2
+[2024-05-04 01:07:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-tetris-stats
+[2024-05-04 01:07:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rutificador
+[2024-05-04 01:07:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: discord-misc
+[2024-05-04 01:07:35] INFO root fetch - processPackages [tmnt]: New version: [0.7.52b20240502] Old Version: [0.7.52b20240501]
+[2024-05-04 01:07:35] WARNING root fetch - processPackages [hklpy2]: Skipping, unable to determine old version
+[2024-05-04 01:07:35] INFO root fetch - main [MainThread]: End processing [hklpy2] error
+[2024-05-04 01:07:35] INFO root fetch - processPackages [ReverseBox]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-05-04 01:07:35] INFO root fetch - processPackages [flwr-nightly]: New version: [1.9.0.dev20240502] Old Version: [1.9.0.dev20240501]
+[2024-05-04 01:07:35] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/48/03/fe93b39e8c22103d7c426a0e7817b03608afad9cd1ac8958fd89926c0e6b/tmnt-0.7.52b20240501.tar.gz
+[2024-05-04 01:07:35] ERROR root fetch - processPackages [discord-misc]: Unable to get metadata: No such project 'discord-misc'
+[2024-05-04 01:07:35] INFO root fetch - main [MainThread]: End processing [discord-misc] error
+[2024-05-04 01:07:35] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/07/dc/f3ad155be5cfcb47d17ccb720805913b5ec6a43aa0bbb34e2497504ff89c/ReverseBox-0.8.3.tar.gz
+[2024-05-04 01:07:35] INFO root fetch - processPackages [rutificador]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-04 01:07:35] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: New version: [1.0.1] Old Version: [1.0.0a9]
+[2024-05-04 01:07:35] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/0c/c1/44e55967533dfd836c9361842dcba5b068a6ff66ded5bed03f8030a1b80c/flwr_nightly-1.9.0.dev20240501.tar.gz
+[2024-05-04 01:07:35] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: Downloading https://files.pythonhosted.org/packages/7e/11/b4ca4dc842c04eac5b47b20f80a08e20d52d805cceb9e1059c5d42d20875/nonebot_plugin_tetris_stats-1.0.0a9.tar.gz
+[2024-05-04 01:07:35] INFO root fetch - processPackages [rutificador]: Downloading https://files.pythonhosted.org/packages/c3/bf/1eb80149e26e6d795255dc937503fc3fdb3f23b4e1cae8723f4bf99d9253/rutificador-0.2.3.tar.gz
+[2024-05-04 01:07:35] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/c9/a3/5cab375360ac009865537e3631bb8bf6ddb15a6fbfedf75ba25820543be9/tmnt-0.7.52b20240502.tar.gz
+[2024-05-04 01:07:35] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/cf/15/ef17be42196c5f3541835c16f41438835ecd80159a388757b00f01955b4d/ReverseBox-0.8.4.tar.gz
+[2024-05-04 01:07:35] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/ff/97/efba9969d389f0f984b70b7d621ab47a8bf8c5030748bc73463bceb8eb14/flwr_nightly-1.9.0.dev20240502.tar.gz
+[2024-05-04 01:07:36] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-04 01:07:36] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.8.3.tar.gz tmp/ReverseBox-0.8.4.tar.gz --markdown 20240504/R/ReverseBox/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-05-04 01:07:36] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-05-04 01:07:36] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.52b20240501.tar.gz tmp/tmnt-0.7.52b20240502.tar.gz --markdown 20240504/t/tmnt/0.7.52b20240501-0.7.52b20240502/README.md --exclude *.pyd
+[2024-05-04 01:07:36] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2024-05-04 01:07:36] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.9.0.dev20240501.tar.gz tmp/flwr_nightly-1.9.0.dev20240502.tar.gz --markdown 20240504/f/flwr-nightly/1.9.0.dev20240501-1.9.0.dev20240502/README.md --exclude *.pyd
+[2024-05-04 01:07:36] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: Downloading https://files.pythonhosted.org/packages/56/88/dc08fa0749da4d06e1fd838e6b51789d2a00a0c84dbb868e687e74fad638/nonebot_plugin_tetris_stats-1.0.1.tar.gz
+[2024-05-04 01:07:36] INFO root fetch - processPackages [rutificador]: Downloading https://files.pythonhosted.org/packages/ff/d7/291406561bebbf9d20553762b3e4e90193c68ca880453d5afcff4bc6de5d/rutificador-0.2.4.tar.gz
+[2024-05-04 01:07:36] WARNING root fetch - processPackages [nonebot-plugin-tetris-stats]: Skipping package: exceeds size limit 15972229>=10485760
+[2024-05-04 01:07:36] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-tetris-stats] error
+[2024-05-04 01:07:36] INFO root fetch - processPackages [rutificador]: executing diffoscope
+[2024-05-04 01:07:36] INFO root fetch - processPackages [rutificador]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rutificador-0.2.3.tar.gz tmp/rutificador-0.2.4.tar.gz --markdown 20240504/r/rutificador/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-04 01:07:36] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.3.tar.gz]
+[2024-05-04 01:07:36] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.4.tar.gz]
+[2024-05-04 01:07:36] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-04 01:07:36] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240501.tar.gz]
+[2024-05-04 01:07:36] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240502.tar.gz]
+[2024-05-04 01:07:36] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-05-04 01:07:36] INFO root fetch - processPackages [rutificador]: Remove: archive file [/home/abi/fetcher/tmp/rutificador-0.2.3.tar.gz]
+[2024-05-04 01:07:36] INFO root fetch - processPackages [rutificador]: Remove: archive file [/home/abi/fetcher/tmp/rutificador-0.2.4.tar.gz]
+[2024-05-04 01:07:36] INFO root fetch - main [MainThread]: End processing [rutificador]: success
+[2024-05-04 01:07:37] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240501.tar.gz]
+[2024-05-04 01:07:37] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240502.tar.gz]
+[2024-05-04 01:07:37] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2024-05-04 01:07:37] INFO root fetch - main [MainThread]: Store serial: [23052609]
