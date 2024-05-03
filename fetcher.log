@@ -1427,3 +1427,39 @@
 [2024-05-04 01:22:46] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
 [2024-05-04 01:22:46] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
 [2024-05-04 01:22:46] INFO root fetch - main [MainThread]: Store serial: [23052710]
+[2024-05-04 01:24:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052710]
+[2024-05-04 01:24:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 01:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cfn-lint
+[2024-05-04 01:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SMClib.py
+[2024-05-04 01:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bidskit
+[2024-05-04 01:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OZI
+[2024-05-04 01:24:54] INFO root fetch - processPackages [SMClib.py]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 01:24:54] INFO root fetch - processPackages [cfn-lint]: New version: [1.2.5a7] Old Version: [1.2.5a6]
+[2024-05-04 01:24:54] INFO root fetch - processPackages [OZI]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-05-04 01:24:54] INFO root fetch - processPackages [bidskit]: New version: [2024.5.3] Old Version: [2024.1.12]
+[2024-05-04 01:24:54] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/13/f7/1a46f4c63fe317440829a6faa155bf2666987347a9f51244523d9166639a/OZI-1.3.0.tar.gz
+[2024-05-04 01:24:54] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/46/a0/b31e6132c9d3ed06fd669c014fb38db74b7d6c3f2cc8c1b91ab7e252c716/SMClib.py-1.0.0.tar.gz
+[2024-05-04 01:24:54] INFO root fetch - processPackages [cfn-lint]: executing diffoscope
+[2024-05-04 01:24:54] INFO root fetch - processPackages [cfn-lint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfn_lint-1.2.5a6.tar.gz tmp/cfn_lint-1.2.5a7.tar.gz --markdown 20240504/c/cfn-lint/1.2.5a6-1.2.5a7/README.md --exclude *.pyd
+[2024-05-04 01:24:54] INFO root fetch - processPackages [bidskit]: Downloading https://files.pythonhosted.org/packages/79/8f/49edc63e3c553959e93f89bcf7aa25f38b3cd4cb680f1d16372e86c8a524/bidskit-2024.1.12.tar.gz
+[2024-05-04 01:24:55] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/f8/76/dbf1f79ab99442903792d150a87ce3f5fb66b08769b649b1c5b006fa03fc/SMClib.py-1.0.1.tar.gz
+[2024-05-04 01:24:55] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/d9/5c/c9f2b3c48a7f758d7e05e0776148f824235fcc28ccdd1cb3cb8301ac96e2/OZI-1.3.1.tar.gz
+[2024-05-04 01:24:55] INFO root fetch - processPackages [SMClib.py]: executing diffoscope
+[2024-05-04 01:24:55] INFO root fetch - processPackages [SMClib.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SMClib.py-1.0.0.tar.gz tmp/SMClib.py-1.0.1.tar.gz --markdown 20240504/S/SMClib.py/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 01:24:55] INFO root fetch - processPackages [bidskit]: Downloading https://files.pythonhosted.org/packages/e5/7c/a8c4fc6330d18327864b997b6153cbb50e447576ad9ba693c755edd0c025/bidskit-2024.5.3.tar.gz
+[2024-05-04 01:24:55] INFO root fetch - processPackages [bidskit]: executing diffoscope
+[2024-05-04 01:24:55] INFO root fetch - processPackages [bidskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bidskit-2024.1.12.tar.gz tmp/bidskit-2024.5.3.tar.gz --markdown 20240504/b/bidskit/2024.1.12-2024.5.3/README.md --exclude *.pyd
+[2024-05-04 01:24:55] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-05-04 01:24:55] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.3.0.tar.gz tmp/OZI-1.3.1.tar.gz --markdown 20240504/O/OZI/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-05-04 01:24:55] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.0.tar.gz]
+[2024-05-04 01:24:55] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.1.tar.gz]
+[2024-05-04 01:24:55] INFO root fetch - main [MainThread]: End processing [SMClib.py]: success
+[2024-05-04 01:24:55] INFO root fetch - processPackages [bidskit]: Remove: archive file [/home/abi/fetcher/tmp/bidskit-2024.1.12.tar.gz]
+[2024-05-04 01:24:55] INFO root fetch - processPackages [bidskit]: Remove: archive file [/home/abi/fetcher/tmp/bidskit-2024.5.3.tar.gz]
+[2024-05-04 01:24:55] INFO root fetch - main [MainThread]: End processing [bidskit]: success
+[2024-05-04 01:24:56] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.3.0.tar.gz]
+[2024-05-04 01:24:56] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.3.1.tar.gz]
+[2024-05-04 01:24:56] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-05-04 01:27:55] ERROR root fetch - processPackages [cfn-lint]: Timeout during execution of pkgdiff
+[2024-05-04 01:27:55] INFO root fetch - main [MainThread]: End processing [cfn-lint] error
+[2024-05-04 01:27:55] INFO root fetch - main [MainThread]: Store serial: [23052724]
