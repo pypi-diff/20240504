@@ -174,3 +174,72 @@
 [2024-05-04 00:08:35] INFO root fetch - processPackages [baml-py]: Remove: archive file [/home/abi/fetcher/tmp/baml_py-0.1.8-cp38-abi3-win_amd64.whl.zip]
 [2024-05-04 00:08:35] INFO root fetch - main [MainThread]: End processing [baml-py]: success
 [2024-05-04 00:08:35] INFO root fetch - main [MainThread]: Store serial: [23052056]
+[2024-05-04 00:10:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052056]
+[2024-05-04 00:10:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-04 00:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-oci
+[2024-05-04 00:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: texplot
+[2024-05-04 00:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: juan-stats
+[2024-05-04 00:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: discord-toolkit
+[2024-05-04 00:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: heaserver
+[2024-05-04 00:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pynhl
+[2024-05-04 00:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: CTDFjorder
+[2024-05-04 00:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: psp-liquids-daq-parser
+[2024-05-04 00:10:43] INFO root fetch - processPackages [juan-stats]: New version: [1.4] Old Version: [1.3]
+[2024-05-04 00:10:43] INFO root fetch - processPackages [CTDFjorder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 00:10:43] INFO root fetch - processPackages [pulumi-oci]: New version: [1.9.0a1693981063] Old Version: [1.9.0a1693634572]
+[2024-05-04 00:10:43] WARNING root fetch - processPackages [discord-toolkit]: Skipping, unable to determine old version
+[2024-05-04 00:10:43] INFO root fetch - main [MainThread]: End processing [discord-toolkit] error
+[2024-05-04 00:10:43] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/47/b4/73fb543917eded15198c163ed10b4bb96e02cc44940fd45b60faa2b8c1f3/juan_stats-1.3.tar.gz
+[2024-05-04 00:10:43] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/f4/55/a40186b16bc262a9be94d2bc145b870286c15bed2abf982a6f1a7227f885/CTDFjorder-0.0.8.tar.gz
+[2024-05-04 00:10:43] INFO root fetch - processPackages [pynhl]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-04 00:10:43] INFO root fetch - processPackages [texplot]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-04 00:10:43] INFO root fetch - processPackages [pulumi-oci]: Downloading https://files.pythonhosted.org/packages/02/f8/59b31ede3416e4e37062af605ed2293a67d7cfe3eec867258c58481c638d/pulumi_oci-1.9.0a1693634572.tar.gz
+[2024-05-04 00:10:43] INFO root fetch - processPackages [heaserver]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-05-04 00:10:43] INFO root fetch - processPackages [psp-liquids-daq-parser]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-04 00:10:44] INFO root fetch - processPackages [texplot]: Downloading https://files.pythonhosted.org/packages/93/60/b129f595d54580f02298c8c9ae6d82fa40e8aa661f64849f9aa403a1281d/texplot-0.0.1.tar.gz
+[2024-05-04 00:10:44] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/e4/08/9eb66c9f842964f28a0e8214bd3791b744a8bbf8a3dec102434a6d25c486/CTDFjorder-0.0.9.tar.gz
+[2024-05-04 00:10:44] INFO root fetch - processPackages [heaserver]: Downloading https://files.pythonhosted.org/packages/5f/81/7b9c17b8d17e9ba7c6aeac2399df4e1bf4b45400631458f06e3fb9220fe2/heaserver-1.5.1.tar.gz
+[2024-05-04 00:10:44] INFO root fetch - processPackages [pynhl]: Downloading https://files.pythonhosted.org/packages/4c/31/2e43587e49e6bd38fdd46490ce04dbb1d35afedf298405bbd8d4f4926f9e/pynhl-0.4.5.tar.gz
+[2024-05-04 00:10:44] INFO root fetch - processPackages [psp-liquids-daq-parser]: Downloading https://files.pythonhosted.org/packages/af/cb/344c74cd9f4cbc83bb58e66bfaed9045669a3d0b8f09680889344f7ac8e9/psp_liquids_daq_parser-0.0.7.tar.gz
+[2024-05-04 00:10:44] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/de/f7/fd2851a2a2dac5b01928fb1e7c4274206b3f852f31d7b462449b0c51b79b/juan_stats-1.4.tar.gz
+[2024-05-04 00:10:44] INFO root fetch - processPackages [CTDFjorder]: executing diffoscope
+[2024-05-04 00:10:44] INFO root fetch - processPackages [CTDFjorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTDFjorder-0.0.8.tar.gz tmp/CTDFjorder-0.0.9.tar.gz --markdown 20240504/C/CTDFjorder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 00:10:44] INFO root fetch - processPackages [juan-stats]: executing diffoscope
+[2024-05-04 00:10:44] INFO root fetch - processPackages [juan-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juan_stats-1.3.tar.gz tmp/juan_stats-1.4.tar.gz --markdown 20240504/j/juan-stats/1.3-1.4/README.md --exclude *.pyd
+[2024-05-04 00:10:44] INFO root fetch - processPackages [texplot]: Downloading https://files.pythonhosted.org/packages/00/94/0cd17640a998230f8976ce9a79134730b9a4172add58385bdec9aad24a7b/texplot-0.0.2.tar.gz
+[2024-05-04 00:10:44] INFO root fetch - processPackages [pulumi-oci]: Downloading https://files.pythonhosted.org/packages/77/93/cd3384a9ca236f6aa79a6f6fa7c94647e0588bdaf8a86d173cca47e31e21/pulumi_oci-1.9.0a1693981063.tar.gz
+[2024-05-04 00:10:44] INFO root fetch - processPackages [heaserver]: Downloading https://files.pythonhosted.org/packages/ca/28/140df910e225ee82c8b78e744c3afddbb9af8a2bb77908129457c3233f57/heaserver-1.5.2.tar.gz
+[2024-05-04 00:10:44] INFO root fetch - processPackages [texplot]: executing diffoscope
+[2024-05-04 00:10:44] INFO root fetch - processPackages [texplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/texplot-0.0.1.tar.gz tmp/texplot-0.0.2.tar.gz --markdown 20240504/t/texplot/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-04 00:10:44] INFO root fetch - processPackages [pynhl]: Downloading https://files.pythonhosted.org/packages/7c/4b/4d5c0a2cd8c29f0d880a33dfd7d0282eee2f8765dfddf1480d984b02af2f/pynhl-0.4.6.tar.gz
+[2024-05-04 00:10:44] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2024-05-04 00:10:44] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.5.1.tar.gz tmp/heaserver-1.5.2.tar.gz --markdown 20240504/h/heaserver/1.5.1-1.5.2/README.md --exclude *.pyd
+[2024-05-04 00:10:44] INFO root fetch - processPackages [psp-liquids-daq-parser]: Downloading https://files.pythonhosted.org/packages/5a/ac/acb2afa30ac1f5b2b0951c15a15e36c8ff37d2b157a58f13f26d6da72f9d/psp_liquids_daq_parser-0.0.8.tar.gz
+[2024-05-04 00:10:44] INFO root fetch - processPackages [pynhl]: executing diffoscope
+[2024-05-04 00:10:44] INFO root fetch - processPackages [pynhl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynhl-0.4.5.tar.gz tmp/pynhl-0.4.6.tar.gz --markdown 20240504/p/pynhl/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-04 00:10:44] INFO root fetch - processPackages [psp-liquids-daq-parser]: executing diffoscope
+[2024-05-04 00:10:44] INFO root fetch - processPackages [psp-liquids-daq-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psp_liquids_daq_parser-0.0.7.tar.gz tmp/psp_liquids_daq_parser-0.0.8.tar.gz --markdown 20240504/p/psp-liquids-daq-parser/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-04 00:10:44] INFO root fetch - processPackages [pulumi-oci]: executing diffoscope
+[2024-05-04 00:10:44] INFO root fetch - processPackages [pulumi-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_oci-1.9.0a1693634572.tar.gz tmp/pulumi_oci-1.9.0a1693981063.tar.gz --markdown 20240504/p/pulumi-oci/1.9.0a1693634572-1.9.0a1693981063/README.md --exclude *.pyd
+[2024-05-04 00:10:44] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/CTDFjorder-0.0.8.tar.gz]
+[2024-05-04 00:10:44] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/CTDFjorder-0.0.9.tar.gz]
+[2024-05-04 00:10:44] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
+[2024-05-04 00:10:45] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-1.3.tar.gz]
+[2024-05-04 00:10:45] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-1.4.tar.gz]
+[2024-05-04 00:10:45] INFO root fetch - main [MainThread]: End processing [juan-stats]: success
+[2024-05-04 00:10:45] INFO root fetch - processPackages [texplot]: Remove: archive file [/home/abi/fetcher/tmp/texplot-0.0.1.tar.gz]
+[2024-05-04 00:10:45] INFO root fetch - processPackages [texplot]: Remove: archive file [/home/abi/fetcher/tmp/texplot-0.0.2.tar.gz]
+[2024-05-04 00:10:45] INFO root fetch - main [MainThread]: End processing [texplot]: success
+[2024-05-04 00:10:45] INFO root fetch - processPackages [pynhl]: Remove: archive file [/home/abi/fetcher/tmp/pynhl-0.4.5.tar.gz]
+[2024-05-04 00:10:45] INFO root fetch - processPackages [pynhl]: Remove: archive file [/home/abi/fetcher/tmp/pynhl-0.4.6.tar.gz]
+[2024-05-04 00:10:45] INFO root fetch - main [MainThread]: End processing [pynhl]: success
+[2024-05-04 00:10:45] INFO root fetch - processPackages [psp-liquids-daq-parser]: Remove: archive file [/home/abi/fetcher/tmp/psp_liquids_daq_parser-0.0.7.tar.gz]
+[2024-05-04 00:10:45] INFO root fetch - processPackages [psp-liquids-daq-parser]: Remove: archive file [/home/abi/fetcher/tmp/psp_liquids_daq_parser-0.0.8.tar.gz]
+[2024-05-04 00:10:45] INFO root fetch - main [MainThread]: End processing [psp-liquids-daq-parser]: success
+[2024-05-04 00:10:45] INFO root fetch - processPackages [heaserver]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-1.5.1.tar.gz]
+[2024-05-04 00:10:45] INFO root fetch - processPackages [heaserver]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-1.5.2.tar.gz]
+[2024-05-04 00:10:45] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2024-05-04 00:10:59] INFO root fetch - processPackages [pulumi-oci]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_oci-1.9.0a1693634572.tar.gz]
+[2024-05-04 00:10:59] INFO root fetch - processPackages [pulumi-oci]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_oci-1.9.0a1693981063.tar.gz]
+[2024-05-04 00:10:59] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
+[2024-05-04 00:10:59] INFO root fetch - main [MainThread]: Store serial: [23052080]
