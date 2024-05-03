@@ -243,3 +243,27 @@
 [2024-05-04 00:10:59] INFO root fetch - processPackages [pulumi-oci]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_oci-1.9.0a1693981063.tar.gz]
 [2024-05-04 00:10:59] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
 [2024-05-04 00:10:59] INFO root fetch - main [MainThread]: Store serial: [23052080]
+[2024-05-04 00:13:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052080]
+[2024-05-04 00:13:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 00:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lusid-sdk
+[2024-05-04 00:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lusid-sdk-preview
+[2024-05-04 00:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zemia
+[2024-05-04 00:13:08] WARNING root fetch - processPackages [zemia]: Skipping, unable to determine old version
+[2024-05-04 00:13:08] INFO root fetch - main [MainThread]: End processing [zemia] error
+[2024-05-04 00:13:08] INFO root fetch - processPackages [lusid-sdk-preview]: New version: [1.1.98] Old Version: [1.1.97]
+[2024-05-04 00:13:08] INFO root fetch - processPackages [lusid-sdk-preview]: Downloading https://files.pythonhosted.org/packages/f9/fb/fc53cb5d0455e9bbd1207566684f6f2cd700268ae435d3172e9489e357d8/lusid-sdk-preview-1.1.97.tar.gz
+[2024-05-04 00:13:08] INFO root fetch - processPackages [lusid-sdk]: New version: [2.1.90] Old Version: [2.1.88]
+[2024-05-04 00:13:08] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/2f/6d/acef6bbcc8b4e3addc91a31d80c19785d5d5d966d3441c9c96438a46032c/lusid_sdk-2.1.88.tar.gz
+[2024-05-04 00:13:09] INFO root fetch - processPackages [lusid-sdk-preview]: Downloading https://files.pythonhosted.org/packages/c5/34/68330ec346008829c8b0f483665ee7ae8ba394a18406fd563696f8ee59e8/lusid-sdk-preview-1.1.98.tar.gz
+[2024-05-04 00:13:09] INFO root fetch - processPackages [lusid-sdk-preview]: executing diffoscope
+[2024-05-04 00:13:09] INFO root fetch - processPackages [lusid-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-preview-1.1.97.tar.gz tmp/lusid-sdk-preview-1.1.98.tar.gz --markdown 20240504/l/lusid-sdk-preview/1.1.97-1.1.98/README.md --exclude *.pyd
+[2024-05-04 00:13:09] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/e2/93/72143bd559886897c54af313322d4bb6c789d8b87b76991b2077e536c780/lusid_sdk-2.1.90.tar.gz
+[2024-05-04 00:13:09] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2024-05-04 00:13:09] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_sdk-2.1.88.tar.gz tmp/lusid_sdk-2.1.90.tar.gz --markdown 20240504/l/lusid-sdk/2.1.88-2.1.90/README.md --exclude *.pyd
+[2024-05-04 00:13:13] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.88.tar.gz]
+[2024-05-04 00:13:13] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.90.tar.gz]
+[2024-05-04 00:13:13] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2024-05-04 00:13:22] INFO root fetch - processPackages [lusid-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-sdk-preview-1.1.97.tar.gz]
+[2024-05-04 00:13:22] INFO root fetch - processPackages [lusid-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-sdk-preview-1.1.98.tar.gz]
+[2024-05-04 00:13:22] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
+[2024-05-04 00:13:22] INFO root fetch - main [MainThread]: Store serial: [23052101]
