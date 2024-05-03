@@ -621,3 +621,65 @@
 [2024-05-04 00:30:11] INFO root fetch - processPackages [awkward]: Remove: archive file [/home/abi/fetcher/tmp/awkward-2.6.4.tar.gz]
 [2024-05-04 00:30:11] INFO root fetch - main [MainThread]: End processing [awkward]: success
 [2024-05-04 00:30:11] INFO root fetch - main [MainThread]: Store serial: [23052233]
+[2024-05-04 00:32:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052233]
+[2024-05-04 00:32:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 00:32:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-hashid-field
+[2024-05-04 00:32:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pvorca
+[2024-05-04 00:32:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prompt-learner
+[2024-05-04 00:32:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: haondt-charon
+[2024-05-04 00:32:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlpile
+[2024-05-04 00:32:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stim
+[2024-05-04 00:32:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lbt-dragonfly
+[2024-05-04 00:32:20] INFO root fetch - processPackages [prompt-learner]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-04 00:32:20] INFO root fetch - processPackages [haondt-charon]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-04 00:32:20] INFO root fetch - processPackages [pvorca]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-05-04 00:32:20] INFO root fetch - processPackages [sqlpile]: New version: [0.2.2] Old Version: [0.2.0]
+[2024-05-04 00:32:20] INFO root fetch - processPackages [django-hashid-field]: New version: [3.4.1] Old Version: [3.4.0]
+[2024-05-04 00:32:20] INFO root fetch - processPackages [prompt-learner]: Downloading https://files.pythonhosted.org/packages/80/70/f14f930b2de3489110b1ecc648a1ca1243de6e44c58799b1980a92d535b4/prompt_learner-0.1.9.tar.gz
+[2024-05-04 00:32:20] INFO root fetch - processPackages [haondt-charon]: Downloading https://files.pythonhosted.org/packages/d0/c3/bc0bc5f3b6b4cd770a2c33b9ba87caab7703749dd8b3da2b9f832778e8ea/haondt_charon-1.0.3.tar.gz
+[2024-05-04 00:32:20] INFO root fetch - processPackages [sqlpile]: Downloading https://files.pythonhosted.org/packages/7e/b0/b4539362649645ef8437f12abad3c7d7e08b879f99f0789653abd1c6b29e/sqlpile-0.2.0.tar.gz
+[2024-05-04 00:32:20] INFO root fetch - processPackages [pvorca]: Downloading https://files.pythonhosted.org/packages/9b/e3/6af4918084a09a7391d5d682e7fc4e6d1480b43de242b66e92b87000bb0d/pvorca-0.1.4.tar.gz
+[2024-05-04 00:32:20] INFO root fetch - processPackages [django-hashid-field]: Downloading https://files.pythonhosted.org/packages/57/c3/dcbe75d406e60e8e9a2f6c1bfb2a720bbcb4dd05bd1550291ad673468141/django-hashid-field-3.4.0.tar.gz
+[2024-05-04 00:32:20] WARNING root fetch - processPackages [pvorca]: Skipping package: exceeds size limit 21701919>=10485760
+[2024-05-04 00:32:20] INFO root fetch - main [MainThread]: End processing [pvorca] error
+[2024-05-04 00:32:20] INFO root fetch - processPackages [haondt-charon]: Downloading https://files.pythonhosted.org/packages/82/7e/01f688b2f73a56bd8522f234b34b3c127c2d3ff52f262e367edd303b09aa/haondt_charon-1.0.4.tar.gz
+[2024-05-04 00:32:20] INFO root fetch - processPackages [stim]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-04 00:32:20] INFO root fetch - processPackages [prompt-learner]: Downloading https://files.pythonhosted.org/packages/b6/4e/e03d70948d19169ab02404f8d18e372346e4431de398e3241a5b63687618/prompt_learner-0.2.0.tar.gz
+[2024-05-04 00:32:21] INFO root fetch - processPackages [django-hashid-field]: Downloading https://files.pythonhosted.org/packages/0f/a5/49127bcdb4015e08ca620a3a124e0ef522d37289360f87b1418d16202ac8/django-hashid-field-3.4.1.tar.gz
+[2024-05-04 00:32:21] INFO root fetch - processPackages [haondt-charon]: executing diffoscope
+[2024-05-04 00:32:21] INFO root fetch - processPackages [haondt-charon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haondt_charon-1.0.3.tar.gz tmp/haondt_charon-1.0.4.tar.gz --markdown 20240504/h/haondt-charon/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-04 00:32:21] INFO root fetch - processPackages [prompt-learner]: executing diffoscope
+[2024-05-04 00:32:21] INFO root fetch - processPackages [prompt-learner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt_learner-0.1.9.tar.gz tmp/prompt_learner-0.2.0.tar.gz --markdown 20240504/p/prompt-learner/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-04 00:32:21] INFO root fetch - processPackages [sqlpile]: Downloading https://files.pythonhosted.org/packages/80/08/9a32db102983937b85a5ddedd7595ef5291f50ac07ccb2a7cd9bb856edcb/sqlpile-0.2.2.tar.gz
+[2024-05-04 00:32:21] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-05-04 00:32:21] INFO root fetch - processPackages [django-hashid-field]: executing diffoscope
+[2024-05-04 00:32:21] INFO root fetch - processPackages [django-hashid-field]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-hashid-field-3.4.0.tar.gz tmp/django-hashid-field-3.4.1.tar.gz --markdown 20240504/d/django-hashid-field/3.4.0-3.4.1/README.md --exclude *.pyd
+[2024-05-04 00:32:21] INFO root fetch - processPackages [stim]: Downloading https://files.pythonhosted.org/packages/a7/d7/36196ad48b77efebe7d5d4e198ad0a9cac4f5acb5e0a8a7035133184a641/stim-1.8.0.tar.gz
+[2024-05-04 00:32:21] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-05-04 00:32:21] INFO root fetch - processPackages [sqlpile]: executing diffoscope
+[2024-05-04 00:32:21] INFO root fetch - processPackages [sqlpile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlpile-0.2.0.tar.gz tmp/sqlpile-0.2.2.tar.gz --markdown 20240504/s/sqlpile/0.2.0-0.2.2/README.md --exclude *.pyd
+[2024-05-04 00:32:21] INFO root fetch - processPackages [stim]: Downloading https://files.pythonhosted.org/packages/d4/c3/eba3f24b52d2c1ed2e7fd5490f31c7cafa4a0a82b9282b1ffee94eee8a4c/stim-1.9.0.tar.gz
+[2024-05-04 00:32:21] INFO root fetch - processPackages [haondt-charon]: Remove: archive file [/home/abi/fetcher/tmp/haondt_charon-1.0.3.tar.gz]
+[2024-05-04 00:32:21] INFO root fetch - processPackages [haondt-charon]: Remove: archive file [/home/abi/fetcher/tmp/haondt_charon-1.0.4.tar.gz]
+[2024-05-04 00:32:21] INFO root fetch - main [MainThread]: End processing [haondt-charon]: success
+[2024-05-04 00:32:21] INFO root fetch - processPackages [stim]: executing diffoscope
+[2024-05-04 00:32:21] INFO root fetch - processPackages [stim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stim-1.8.0.tar.gz tmp/stim-1.9.0.tar.gz --markdown 20240504/s/stim/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-04 00:32:21] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-05-04 00:32:21] INFO root fetch - processPackages [prompt-learner]: Remove: archive file [/home/abi/fetcher/tmp/prompt_learner-0.1.9.tar.gz]
+[2024-05-04 00:32:21] INFO root fetch - processPackages [prompt-learner]: Remove: archive file [/home/abi/fetcher/tmp/prompt_learner-0.2.0.tar.gz]
+[2024-05-04 00:32:21] INFO root fetch - main [MainThread]: End processing [prompt-learner]: success
+[2024-05-04 00:32:21] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-05-04 00:32:21] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240504/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-05-04 00:32:21] INFO root fetch - processPackages [django-hashid-field]: Remove: archive file [/home/abi/fetcher/tmp/django-hashid-field-3.4.0.tar.gz]
+[2024-05-04 00:32:21] INFO root fetch - processPackages [django-hashid-field]: Remove: archive file [/home/abi/fetcher/tmp/django-hashid-field-3.4.1.tar.gz]
+[2024-05-04 00:32:21] INFO root fetch - main [MainThread]: End processing [django-hashid-field]: success
+[2024-05-04 00:32:22] INFO root fetch - processPackages [sqlpile]: Remove: archive file [/home/abi/fetcher/tmp/sqlpile-0.2.0.tar.gz]
+[2024-05-04 00:32:22] INFO root fetch - processPackages [sqlpile]: Remove: archive file [/home/abi/fetcher/tmp/sqlpile-0.2.2.tar.gz]
+[2024-05-04 00:32:22] INFO root fetch - main [MainThread]: End processing [sqlpile]: success
+[2024-05-04 00:32:22] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-05-04 00:32:22] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-05-04 00:32:22] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-05-04 00:32:22] INFO root fetch - processPackages [stim]: Remove: archive file [/home/abi/fetcher/tmp/stim-1.8.0.tar.gz]
+[2024-05-04 00:32:22] INFO root fetch - processPackages [stim]: Remove: archive file [/home/abi/fetcher/tmp/stim-1.9.0.tar.gz]
+[2024-05-04 00:32:22] INFO root fetch - main [MainThread]: End processing [stim]: success
+[2024-05-04 00:32:22] INFO root fetch - main [MainThread]: Store serial: [23052264]
