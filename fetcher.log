@@ -1513,3 +1513,28 @@
 [2024-05-04 01:34:22] INFO root fetch - processPackages [dbt-redshift]: Remove: archive file [/home/abi/fetcher/tmp/dbt_redshift-1.8.0rc1.tar.gz]
 [2024-05-04 01:34:22] INFO root fetch - main [MainThread]: End processing [dbt-redshift]: success
 [2024-05-04 01:34:22] INFO root fetch - main [MainThread]: Store serial: [23052745]
+[2024-05-04 01:36:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052745]
+[2024-05-04 01:36:30] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 01:38:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052745]
+[2024-05-04 01:38:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 01:40:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052745]
+[2024-05-04 01:40:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 01:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgedb-pydantic-codegen
+[2024-05-04 01:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver-buckets
+[2024-05-04 01:40:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: New version: [2024.5.0] Old Version: [2024.4.3]
+[2024-05-04 01:40:41] INFO root fetch - processPackages [heaserver-buckets]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-04 01:40:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/fa/3d/ca03f59621da97b2b071e675554f3657a3eeb7bff23166a4d105c53158de/edgedb_pydantic_codegen-2024.4.3.tar.gz
+[2024-05-04 01:40:41] INFO root fetch - processPackages [heaserver-buckets]: Downloading https://files.pythonhosted.org/packages/df/c3/ddee74990ab0cabed7932f577e79cd307df0c61fac0bb75dbfdde440b254/heaserver-buckets-1.1.1.tar.gz
+[2024-05-04 01:40:42] INFO root fetch - processPackages [heaserver-buckets]: Downloading https://files.pythonhosted.org/packages/2d/0e/b0d112152201dfa8550b6ebb8ec3cba64e5ffa5b3c2d7668e8165e554e17/heaserver_buckets-1.1.2.tar.gz
+[2024-05-04 01:40:42] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/8b/da/3d767340e59534c633964d9f215063294b63b2d9568d6eec84f404a343a3/edgedb_pydantic_codegen-2024.5.0.tar.gz
+[2024-05-04 01:40:42] INFO root fetch - processPackages [heaserver-buckets]: executing diffoscope
+[2024-05-04 01:40:42] INFO root fetch - processPackages [heaserver-buckets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-buckets-1.1.1.tar.gz tmp/heaserver_buckets-1.1.2.tar.gz --markdown 20240504/h/heaserver-buckets/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-04 01:40:42] INFO root fetch - processPackages [edgedb-pydantic-codegen]: executing diffoscope
+[2024-05-04 01:40:42] INFO root fetch - processPackages [edgedb-pydantic-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb_pydantic_codegen-2024.4.3.tar.gz tmp/edgedb_pydantic_codegen-2024.5.0.tar.gz --markdown 20240504/e/edgedb-pydantic-codegen/2024.4.3-2024.5.0/README.md --exclude *.pyd
+[2024-05-04 01:40:42] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.4.3.tar.gz]
+[2024-05-04 01:40:42] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.5.0.tar.gz]
+[2024-05-04 01:40:42] INFO root fetch - main [MainThread]: End processing [edgedb-pydantic-codegen]: success
+[2024-05-04 01:40:42] INFO root fetch - processPackages [heaserver-buckets]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-buckets-1.1.1.tar.gz]
+[2024-05-04 01:40:42] INFO root fetch - processPackages [heaserver-buckets]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_buckets-1.1.2.tar.gz]
+[2024-05-04 01:40:42] INFO root fetch - main [MainThread]: End processing [heaserver-buckets]: success
+[2024-05-04 01:40:42] INFO root fetch - main [MainThread]: Store serial: [23052751]
