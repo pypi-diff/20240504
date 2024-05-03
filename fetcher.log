@@ -567,3 +567,27 @@
 [2024-05-04 00:25:41] INFO root fetch - processPackages [anyscale]: Remove: archive file [/home/abi/fetcher/tmp/anyscale-0.5.99.tar.gz]
 [2024-05-04 00:25:41] INFO root fetch - main [MainThread]: End processing [anyscale]: success
 [2024-05-04 00:25:41] INFO root fetch - main [MainThread]: Store serial: [23052211]
+[2024-05-04 00:27:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052211]
+[2024-05-04 00:27:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 00:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: texplot
+[2024-05-04 00:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nilm-usb
+[2024-05-04 00:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unyts
+[2024-05-04 00:27:50] INFO root fetch - processPackages [texplot]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-04 00:27:50] INFO root fetch - processPackages [unyts]: New version: [0.8.0] Old Version: [0.7.1]
+[2024-05-04 00:27:50] WARNING root fetch - processPackages [nilm-usb]: Skipping, unable to determine old version
+[2024-05-04 00:27:50] INFO root fetch - main [MainThread]: End processing [nilm-usb] error
+[2024-05-04 00:27:50] INFO root fetch - processPackages [texplot]: Downloading https://files.pythonhosted.org/packages/93/60/b129f595d54580f02298c8c9ae6d82fa40e8aa661f64849f9aa403a1281d/texplot-0.0.1.tar.gz
+[2024-05-04 00:27:50] INFO root fetch - processPackages [unyts]: Downloading https://files.pythonhosted.org/packages/11/43/849ae097005cd66aeec6d7a3f2c446602cc7f7aec5e1deeb79ca37cf74e2/unyts-0.7.1.tar.gz
+[2024-05-04 00:27:50] INFO root fetch - processPackages [texplot]: Downloading https://files.pythonhosted.org/packages/00/94/0cd17640a998230f8976ce9a79134730b9a4172add58385bdec9aad24a7b/texplot-0.0.2.tar.gz
+[2024-05-04 00:27:50] INFO root fetch - processPackages [unyts]: Downloading https://files.pythonhosted.org/packages/2d/18/b112aa809d570bc380dcbab545d498b55c0460efac0bed326780ff449d87/unyts-0.8.0.tar.gz
+[2024-05-04 00:27:51] INFO root fetch - processPackages [texplot]: executing diffoscope
+[2024-05-04 00:27:51] INFO root fetch - processPackages [texplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/texplot-0.0.1.tar.gz tmp/texplot-0.0.2.tar.gz --markdown 20240504/t/texplot/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-04 00:27:51] INFO root fetch - processPackages [unyts]: executing diffoscope
+[2024-05-04 00:27:51] INFO root fetch - processPackages [unyts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unyts-0.7.1.tar.gz tmp/unyts-0.8.0.tar.gz --markdown 20240504/u/unyts/0.7.1-0.8.0/README.md --exclude *.pyd
+[2024-05-04 00:27:51] INFO root fetch - processPackages [texplot]: Remove: archive file [/home/abi/fetcher/tmp/texplot-0.0.1.tar.gz]
+[2024-05-04 00:27:51] INFO root fetch - processPackages [texplot]: Remove: archive file [/home/abi/fetcher/tmp/texplot-0.0.2.tar.gz]
+[2024-05-04 00:27:51] INFO root fetch - main [MainThread]: End processing [texplot]: success
+[2024-05-04 00:27:51] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.7.1.tar.gz]
+[2024-05-04 00:27:51] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.8.0.tar.gz]
+[2024-05-04 00:27:51] INFO root fetch - main [MainThread]: End processing [unyts]: success
+[2024-05-04 00:27:51] INFO root fetch - main [MainThread]: Store serial: [23052222]
