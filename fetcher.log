@@ -1337,3 +1337,33 @@
 [2024-05-04 01:11:59] INFO root fetch - processPackages [pyramid-swagger]: Remove: archive file [/home/abi/fetcher/tmp/pyramid_swagger-2.8.0.tar.gz]
 [2024-05-04 01:11:59] INFO root fetch - main [MainThread]: End processing [pyramid-swagger]: success
 [2024-05-04 01:11:59] INFO root fetch - main [MainThread]: Store serial: [23052647]
+[2024-05-04 01:14:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052647]
+[2024-05-04 01:14:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 01:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nmfspalettepy
+[2024-05-04 01:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drepr-v2
+[2024-05-04 01:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dispatch-py
+[2024-05-04 01:14:08] INFO root fetch - processPackages [nmfspalettepy]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-04 01:14:08] INFO root fetch - processPackages [nmfspalettepy]: Downloading https://files.pythonhosted.org/packages/33/80/15b2748743dce708396822317546b6dc5a18421fa8ee607fe24b940ca9a6/nmfspalettepy-0.1.4.tar.gz
+[2024-05-04 01:14:08] INFO root fetch - processPackages [drepr-v2]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-04 01:14:08] INFO root fetch - processPackages [dispatch-py]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-04 01:14:08] INFO root fetch - processPackages [nmfspalettepy]: Downloading https://files.pythonhosted.org/packages/eb/0c/968f6552c77683a739df63beb850d32ce5f530c94fbddd2e9e9247717e7f/nmfspalettepy-0.1.5.tar.gz
+[2024-05-04 01:14:08] INFO root fetch - processPackages [drepr-v2]: Downloading https://files.pythonhosted.org/packages/3d/00/bf090d3acb59d99e8f27937776e4a3b0dac630688ffe26c42a494e94b784/drepr_v2-1.2.1.tar.gz
+[2024-05-04 01:14:08] INFO root fetch - processPackages [nmfspalettepy]: executing diffoscope
+[2024-05-04 01:14:08] INFO root fetch - processPackages [nmfspalettepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmfspalettepy-0.1.4.tar.gz tmp/nmfspalettepy-0.1.5.tar.gz --markdown 20240504/n/nmfspalettepy/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-04 01:14:08] INFO root fetch - processPackages [dispatch-py]: Downloading https://files.pythonhosted.org/packages/40/cb/8a8fff1d25deb0bdc86421802526847b3a98bde6e470da562fd9234b716a/dispatch_py-0.6.0.tar.gz
+[2024-05-04 01:14:09] INFO root fetch - processPackages [drepr-v2]: Downloading https://files.pythonhosted.org/packages/25/9a/d83b844f16746ba31134df106bfb89e854077fc8c1acacc3def10325a17e/drepr_v2-1.2.2.tar.gz
+[2024-05-04 01:14:09] INFO root fetch - processPackages [dispatch-py]: Downloading https://files.pythonhosted.org/packages/85/0f/83a79f8ac17eb0a66b3c691078643a283ad7817791f3a3b4713239a66f26/dispatch_py-0.7.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl
+[2024-05-04 01:14:09] INFO root fetch - processPackages [drepr-v2]: executing diffoscope
+[2024-05-04 01:14:09] INFO root fetch - processPackages [drepr-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drepr_v2-1.2.1.tar.gz tmp/drepr_v2-1.2.2.tar.gz --markdown 20240504/d/drepr-v2/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-04 01:14:09] INFO root fetch - processPackages [nmfspalettepy]: Remove: archive file [/home/abi/fetcher/tmp/nmfspalettepy-0.1.4.tar.gz]
+[2024-05-04 01:14:09] INFO root fetch - processPackages [nmfspalettepy]: Remove: archive file [/home/abi/fetcher/tmp/nmfspalettepy-0.1.5.tar.gz]
+[2024-05-04 01:14:09] INFO root fetch - main [MainThread]: End processing [nmfspalettepy]: success
+[2024-05-04 01:14:09] INFO root fetch - processPackages [drepr-v2]: Remove: archive file [/home/abi/fetcher/tmp/drepr_v2-1.2.1.tar.gz]
+[2024-05-04 01:14:09] INFO root fetch - processPackages [drepr-v2]: Remove: archive file [/home/abi/fetcher/tmp/drepr_v2-1.2.2.tar.gz]
+[2024-05-04 01:14:09] INFO root fetch - main [MainThread]: End processing [drepr-v2]: success
+[2024-05-04 01:14:09] INFO root fetch - processPackages [dispatch-py]: executing diffoscope
+[2024-05-04 01:14:09] INFO root fetch - processPackages [dispatch-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dispatch_py-0.6.0.tar.gz tmp/dispatch_py-0.7.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip --markdown 20240504/d/dispatch-py/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-04 01:14:10] INFO root fetch - processPackages [dispatch-py]: Remove: archive file [/home/abi/fetcher/tmp/dispatch_py-0.6.0.tar.gz]
+[2024-05-04 01:14:10] INFO root fetch - processPackages [dispatch-py]: Remove: archive file [/home/abi/fetcher/tmp/dispatch_py-0.7.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
+[2024-05-04 01:14:10] INFO root fetch - main [MainThread]: End processing [dispatch-py]: success
+[2024-05-04 01:14:10] INFO root fetch - main [MainThread]: Store serial: [23052656]
