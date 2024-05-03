@@ -866,3 +866,24 @@
 [2024-05-04 00:43:20] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.8.2.tar.gz]
 [2024-05-04 00:43:20] INFO root fetch - main [MainThread]: End processing [unyts]: success
 [2024-05-04 00:43:20] INFO root fetch - main [MainThread]: Store serial: [23052425]
+[2024-05-04 00:45:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052425]
+[2024-05-04 00:45:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 00:45:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adrv
+[2024-05-04 00:45:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tkfontselector
+[2024-05-04 00:45:29] INFO root fetch - processPackages [tkfontselector]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-04 00:45:29] INFO root fetch - processPackages [adrv]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-05-04 00:45:29] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/49/56/cba9840358a439922d4c26f6ad6f35bd4d0043531dace5fadb15ab406bac/tkfontselector-1.0.2.tar.gz
+[2024-05-04 00:45:29] INFO root fetch - processPackages [adrv]: Downloading https://files.pythonhosted.org/packages/8f/22/b4256bb177a4eef1538d378145a9d5e066b50041abb373b15d20fe54e38b/adrv-1.3.0.tar.gz
+[2024-05-04 00:45:29] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/1d/6b/7ac09832431da9874904f475957f217c087e06e64191bb24ff3a578776c4/tkfontselector-1.0.3.tar.gz
+[2024-05-04 00:45:29] INFO root fetch - processPackages [tkfontselector]: executing diffoscope
+[2024-05-04 00:45:29] INFO root fetch - processPackages [tkfontselector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkfontselector-1.0.2.tar.gz tmp/tkfontselector-1.0.3.tar.gz --markdown 20240504/t/tkfontselector/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-04 00:45:29] INFO root fetch - processPackages [adrv]: Downloading https://files.pythonhosted.org/packages/cd/bb/d88d1480976d7c0241250dee0e2bcf64619fd35598052670796e5c7c1373/adrv-1.4.0.tar.gz
+[2024-05-04 00:45:29] INFO root fetch - processPackages [adrv]: executing diffoscope
+[2024-05-04 00:45:29] INFO root fetch - processPackages [adrv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adrv-1.3.0.tar.gz tmp/adrv-1.4.0.tar.gz --markdown 20240504/a/adrv/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-05-04 00:45:30] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.2.tar.gz]
+[2024-05-04 00:45:30] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.3.tar.gz]
+[2024-05-04 00:45:30] INFO root fetch - main [MainThread]: End processing [tkfontselector]: success
+[2024-05-04 00:45:30] INFO root fetch - processPackages [adrv]: Remove: archive file [/home/abi/fetcher/tmp/adrv-1.3.0.tar.gz]
+[2024-05-04 00:45:30] INFO root fetch - processPackages [adrv]: Remove: archive file [/home/abi/fetcher/tmp/adrv-1.4.0.tar.gz]
+[2024-05-04 00:45:30] INFO root fetch - main [MainThread]: End processing [adrv]: success
+[2024-05-04 00:45:30] INFO root fetch - main [MainThread]: Store serial: [23052432]
