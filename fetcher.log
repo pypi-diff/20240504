@@ -1271,3 +1271,45 @@
 [2024-05-04 01:07:37] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240502.tar.gz]
 [2024-05-04 01:07:37] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
 [2024-05-04 01:07:37] INFO root fetch - main [MainThread]: Store serial: [23052609]
+[2024-05-04 01:09:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052609]
+[2024-05-04 01:09:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 01:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leechcorepyc
+[2024-05-04 01:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mytiktok
+[2024-05-04 01:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discord-misc
+[2024-05-04 01:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: memprocfs
+[2024-05-04 01:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nmfspalettepy
+[2024-05-04 01:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gradio-collection
+[2024-05-04 01:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: discord-misc
+[2024-05-04 01:09:46] INFO root fetch - processPackages [leechcorepyc]: New version: [2.8.1] Old Version: [2.8.0]
+[2024-05-04 01:09:46] INFO root fetch - processPackages [leechcorepyc]: Downloading https://files.pythonhosted.org/packages/54/9e/10b361cfa728f728beecfacdc1e4fc2ca0462f56c8e73fd7e8738f5c8f36/leechcorepyc-2.8.0.tar.gz
+[2024-05-04 01:09:46] ERROR root fetch - processPackages [discord-misc]: Unable to get metadata: No such project 'discord-misc'
+[2024-05-04 01:09:46] INFO root fetch - main [MainThread]: End processing [discord-misc] error
+[2024-05-04 01:09:46] ERROR root fetch - processPackages [discord-misc]: Unable to get metadata: No such project 'discord-misc'
+[2024-05-04 01:09:46] INFO root fetch - main [MainThread]: End processing [discord-misc] error
+[2024-05-04 01:09:46] WARNING root fetch - processPackages [gradio-collection]: Skipping, unable to determine old version
+[2024-05-04 01:09:46] INFO root fetch - main [MainThread]: End processing [gradio-collection] error
+[2024-05-04 01:09:46] INFO root fetch - processPackages [nmfspalettepy]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-04 01:09:46] INFO root fetch - processPackages [memprocfs]: New version: [5.9.12] Old Version: [5.9.11]
+[2024-05-04 01:09:46] WARNING root fetch - processPackages [mytiktok]: Skipping, unable to determine old version
+[2024-05-04 01:09:46] INFO root fetch - main [MainThread]: End processing [mytiktok] error
+[2024-05-04 01:09:46] INFO root fetch - processPackages [memprocfs]: Downloading https://files.pythonhosted.org/packages/ee/0d/b9b7c5a9e2554bc3fef06892f926b3f23be9c48098a4883db67171df0ffb/memprocfs-5.9.11.tar.gz
+[2024-05-04 01:09:46] INFO root fetch - processPackages [nmfspalettepy]: Downloading https://files.pythonhosted.org/packages/33/80/15b2748743dce708396822317546b6dc5a18421fa8ee607fe24b940ca9a6/nmfspalettepy-0.1.4.tar.gz
+[2024-05-04 01:09:46] INFO root fetch - processPackages [leechcorepyc]: Downloading https://files.pythonhosted.org/packages/e6/52/24292fbdc9d104ec939737b4a4b656fcc87a4a658d6cf8281f31a4ae82e8/leechcorepyc-2.8.1.tar.gz
+[2024-05-04 01:09:46] INFO root fetch - processPackages [leechcorepyc]: executing diffoscope
+[2024-05-04 01:09:46] INFO root fetch - processPackages [leechcorepyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leechcorepyc-2.8.0.tar.gz tmp/leechcorepyc-2.8.1.tar.gz --markdown 20240504/l/leechcorepyc/2.8.0-2.8.1/README.md --exclude *.pyd
+[2024-05-04 01:09:46] INFO root fetch - processPackages [nmfspalettepy]: Downloading https://files.pythonhosted.org/packages/eb/0c/968f6552c77683a739df63beb850d32ce5f530c94fbddd2e9e9247717e7f/nmfspalettepy-0.1.5.tar.gz
+[2024-05-04 01:09:47] INFO root fetch - processPackages [nmfspalettepy]: executing diffoscope
+[2024-05-04 01:09:47] INFO root fetch - processPackages [nmfspalettepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmfspalettepy-0.1.4.tar.gz tmp/nmfspalettepy-0.1.5.tar.gz --markdown 20240504/n/nmfspalettepy/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-04 01:09:47] INFO root fetch - processPackages [memprocfs]: Downloading https://files.pythonhosted.org/packages/fd/a3/9f80fc2bf12692a41d41d21f4994255d22a1ea33615d3bbc56495d609b4a/memprocfs-5.9.12.tar.gz
+[2024-05-04 01:09:47] INFO root fetch - processPackages [leechcorepyc]: Remove: archive file [/home/abi/fetcher/tmp/leechcorepyc-2.8.0.tar.gz]
+[2024-05-04 01:09:47] INFO root fetch - processPackages [leechcorepyc]: Remove: archive file [/home/abi/fetcher/tmp/leechcorepyc-2.8.1.tar.gz]
+[2024-05-04 01:09:47] INFO root fetch - main [MainThread]: End processing [leechcorepyc]: success
+[2024-05-04 01:09:47] INFO root fetch - processPackages [nmfspalettepy]: Remove: archive file [/home/abi/fetcher/tmp/nmfspalettepy-0.1.4.tar.gz]
+[2024-05-04 01:09:47] INFO root fetch - processPackages [nmfspalettepy]: Remove: archive file [/home/abi/fetcher/tmp/nmfspalettepy-0.1.5.tar.gz]
+[2024-05-04 01:09:47] INFO root fetch - main [MainThread]: End processing [nmfspalettepy]: success
+[2024-05-04 01:09:47] INFO root fetch - processPackages [memprocfs]: executing diffoscope
+[2024-05-04 01:09:47] INFO root fetch - processPackages [memprocfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memprocfs-5.9.11.tar.gz tmp/memprocfs-5.9.12.tar.gz --markdown 20240504/m/memprocfs/5.9.11-5.9.12/README.md --exclude *.pyd
+[2024-05-04 01:09:49] INFO root fetch - processPackages [memprocfs]: Remove: archive file [/home/abi/fetcher/tmp/memprocfs-5.9.11.tar.gz]
+[2024-05-04 01:09:49] INFO root fetch - processPackages [memprocfs]: Remove: archive file [/home/abi/fetcher/tmp/memprocfs-5.9.12.tar.gz]
+[2024-05-04 01:09:49] INFO root fetch - main [MainThread]: End processing [memprocfs]: success
+[2024-05-04 01:09:49] INFO root fetch - main [MainThread]: Store serial: [23052637]
