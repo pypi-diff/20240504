@@ -1654,3 +1654,42 @@
 [2024-05-04 01:53:37] INFO root fetch - processPackages [opendapi]: Remove: archive file [/home/abi/fetcher/tmp/opendapi-0.0.9.tar.gz]
 [2024-05-04 01:53:37] INFO root fetch - main [MainThread]: End processing [opendapi]: success
 [2024-05-04 01:53:37] INFO root fetch - main [MainThread]: Store serial: [23052795]
+[2024-05-04 01:55:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052795]
+[2024-05-04 01:55:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 01:55:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: k8
+[2024-05-04 01:55:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rship-sdk
+[2024-05-04 01:55:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: highlight-io
+[2024-05-04 01:55:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easy-llama
+[2024-05-04 01:55:46] INFO root fetch - processPackages [easy-llama]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 01:55:46] INFO root fetch - processPackages [highlight-io]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-04 01:55:46] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 01:55:46] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/ce/e9/39a06b9ce349625a5d6c7da00644a8cc7320112fb3ba2b2e54944d3a6135/easy_llama-0.1.8.tar.gz
+[2024-05-04 01:55:46] INFO root fetch - processPackages [k8]: New version: [29.0.8] Old Version: [29.0.7]
+[2024-05-04 01:55:46] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 01:55:46] INFO root fetch - processPackages [highlight-io]: Downloading https://files.pythonhosted.org/packages/5c/11/54205ddaba8f52c3328f57be124646a440bf7a2adaeda7c68c1fc92e2d09/highlight_io-0.7.0.tar.gz
+[2024-05-04 01:55:46] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/98/5d/f5007368104957b81fc41c01c18234178e2875066cca25192bec1d846caf/easy_llama-0.1.9.tar.gz
+[2024-05-04 01:55:46] INFO root fetch - processPackages [k8]: Downloading https://files.pythonhosted.org/packages/25/91/77b6e7a1fde8f9d9e8b98734e6539fd8574cd18aafa1cf779556b6a5aab0/k8-29.0.7.tar.gz
+[2024-05-04 01:55:46] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 01:55:46] INFO root fetch - processPackages [highlight-io]: Downloading https://files.pythonhosted.org/packages/45/2c/be1848ec30d269ad243cf9d4c6e3fe79af72712ea33f942dd77fdb34e712/highlight_io-0.7.1.tar.gz
+[2024-05-04 01:55:46] INFO root fetch - processPackages [easy-llama]: executing diffoscope
+[2024-05-04 01:55:46] INFO root fetch - processPackages [easy-llama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_llama-0.1.8.tar.gz tmp/easy_llama-0.1.9.tar.gz --markdown 20240504/e/easy-llama/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 01:55:46] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 01:55:46] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 01:55:46] INFO root fetch - processPackages [highlight-io]: executing diffoscope
+[2024-05-04 01:55:46] INFO root fetch - processPackages [highlight-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/highlight_io-0.7.0.tar.gz tmp/highlight_io-0.7.1.tar.gz --markdown 20240504/h/highlight-io/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-04 01:55:46] INFO root fetch - processPackages [k8]: Downloading https://files.pythonhosted.org/packages/c8/22/fd8f8735fb594afa0bdcab1e063fd841e0c0e7132027f4a0506cbd5f9fc2/k8-29.0.8.tar.gz
+[2024-05-04 01:55:46] INFO root fetch - processPackages [k8]: executing diffoscope
+[2024-05-04 01:55:46] INFO root fetch - processPackages [k8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/k8-29.0.7.tar.gz tmp/k8-29.0.8.tar.gz --markdown 20240504/k/k8/29.0.7-29.0.8/README.md --exclude *.pyd
+[2024-05-04 01:55:47] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 01:55:47] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 01:55:47] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 01:55:47] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.8.tar.gz]
+[2024-05-04 01:55:47] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.9.tar.gz]
+[2024-05-04 01:55:47] INFO root fetch - main [MainThread]: End processing [easy-llama]: success
+[2024-05-04 01:55:47] INFO root fetch - processPackages [highlight-io]: Remove: archive file [/home/abi/fetcher/tmp/highlight_io-0.7.0.tar.gz]
+[2024-05-04 01:55:47] INFO root fetch - processPackages [highlight-io]: Remove: archive file [/home/abi/fetcher/tmp/highlight_io-0.7.1.tar.gz]
+[2024-05-04 01:55:47] INFO root fetch - main [MainThread]: End processing [highlight-io]: success
+[2024-05-04 01:55:49] INFO root fetch - processPackages [k8]: Remove: archive file [/home/abi/fetcher/tmp/k8-29.0.7.tar.gz]
+[2024-05-04 01:55:49] INFO root fetch - processPackages [k8]: Remove: archive file [/home/abi/fetcher/tmp/k8-29.0.8.tar.gz]
+[2024-05-04 01:55:49] INFO root fetch - main [MainThread]: End processing [k8]: success
+[2024-05-04 01:55:49] INFO root fetch - main [MainThread]: Store serial: [23052808]
