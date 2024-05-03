@@ -914,3 +914,33 @@
 [2024-05-04 00:49:49] INFO root fetch - processPackages [WITecSDK]: Remove: archive file [/home/abi/fetcher/tmp/WITecSDK-1.3.0-py3-none-any.whl.zip]
 [2024-05-04 00:49:49] INFO root fetch - main [MainThread]: End processing [WITecSDK]: success
 [2024-05-04 00:49:49] INFO root fetch - main [MainThread]: Store serial: [23052447]
+[2024-05-04 00:51:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052447]
+[2024-05-04 00:51:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 00:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amazon-codewhisperer-jupyterlab-ext
+[2024-05-04 00:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ioxplugin
+[2024-05-04 00:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pynhl
+[2024-05-04 00:51:58] INFO root fetch - processPackages [amazon-codewhisperer-jupyterlab-ext]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-04 00:51:58] INFO root fetch - processPackages [pynhl]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-04 00:51:58] INFO root fetch - processPackages [ioxplugin]: New version: [1.0.0] Old Version: [0.1.2]
+[2024-05-04 00:51:58] INFO root fetch - processPackages [pynhl]: Downloading https://files.pythonhosted.org/packages/4c/31/2e43587e49e6bd38fdd46490ce04dbb1d35afedf298405bbd8d4f4926f9e/pynhl-0.4.5.tar.gz
+[2024-05-04 00:51:58] INFO root fetch - processPackages [amazon-codewhisperer-jupyterlab-ext]: Downloading https://files.pythonhosted.org/packages/c2/3f/d85913aa9b1e33ae2963e75f4a56d2f2e61c27c2fc134a4445a952e1554c/amazon-codewhisperer-jupyterlab-ext-2.0.0.tar.gz
+[2024-05-04 00:51:58] INFO root fetch - processPackages [ioxplugin]: Downloading https://files.pythonhosted.org/packages/a0/e8/f8fbdc422f8d09ded1c803c88cb69ab5de941d6dcf6d80d0eff7c4d45d53/ioxplugin-0.1.2.tar.gz
+[2024-05-04 00:51:58] INFO root fetch - processPackages [pynhl]: Downloading https://files.pythonhosted.org/packages/7c/4b/4d5c0a2cd8c29f0d880a33dfd7d0282eee2f8765dfddf1480d984b02af2f/pynhl-0.4.6.tar.gz
+[2024-05-04 00:51:58] INFO root fetch - processPackages [pynhl]: executing diffoscope
+[2024-05-04 00:51:58] INFO root fetch - processPackages [pynhl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynhl-0.4.5.tar.gz tmp/pynhl-0.4.6.tar.gz --markdown 20240504/p/pynhl/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-04 00:51:58] INFO root fetch - processPackages [ioxplugin]: Downloading https://files.pythonhosted.org/packages/95/8e/1ba749162a509e0f36a73f74b8ed5b09487632b2ea4bc493593ae4439713/ioxplugin-1.0.0.tar.gz
+[2024-05-04 00:51:58] INFO root fetch - processPackages [ioxplugin]: executing diffoscope
+[2024-05-04 00:51:58] INFO root fetch - processPackages [ioxplugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ioxplugin-0.1.2.tar.gz tmp/ioxplugin-1.0.0.tar.gz --markdown 20240504/i/ioxplugin/0.1.2-1.0.0/README.md --exclude *.pyd
+[2024-05-04 00:51:58] INFO root fetch - processPackages [amazon-codewhisperer-jupyterlab-ext]: Downloading https://files.pythonhosted.org/packages/2e/2d/c66d3dbd678945c905a2ef0727f2bf72fbe5c60d68496336d197f6bb34bb/amazon-codewhisperer-jupyterlab-ext-2.0.1.tar.gz
+[2024-05-04 00:51:59] INFO root fetch - processPackages [amazon-codewhisperer-jupyterlab-ext]: executing diffoscope
+[2024-05-04 00:51:59] INFO root fetch - processPackages [amazon-codewhisperer-jupyterlab-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-codewhisperer-jupyterlab-ext-2.0.0.tar.gz tmp/amazon-codewhisperer-jupyterlab-ext-2.0.1.tar.gz --markdown 20240504/a/amazon-codewhisperer-jupyterlab-ext/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-04 00:51:59] INFO root fetch - processPackages [pynhl]: Remove: archive file [/home/abi/fetcher/tmp/pynhl-0.4.5.tar.gz]
+[2024-05-04 00:51:59] INFO root fetch - processPackages [pynhl]: Remove: archive file [/home/abi/fetcher/tmp/pynhl-0.4.6.tar.gz]
+[2024-05-04 00:51:59] INFO root fetch - main [MainThread]: End processing [pynhl]: success
+[2024-05-04 00:51:59] INFO root fetch - processPackages [ioxplugin]: Remove: archive file [/home/abi/fetcher/tmp/ioxplugin-0.1.2.tar.gz]
+[2024-05-04 00:51:59] INFO root fetch - processPackages [ioxplugin]: Remove: archive file [/home/abi/fetcher/tmp/ioxplugin-1.0.0.tar.gz]
+[2024-05-04 00:51:59] INFO root fetch - main [MainThread]: End processing [ioxplugin]: success
+[2024-05-04 00:52:00] INFO root fetch - processPackages [amazon-codewhisperer-jupyterlab-ext]: Remove: archive file [/home/abi/fetcher/tmp/amazon-codewhisperer-jupyterlab-ext-2.0.0.tar.gz]
+[2024-05-04 00:52:00] INFO root fetch - processPackages [amazon-codewhisperer-jupyterlab-ext]: Remove: archive file [/home/abi/fetcher/tmp/amazon-codewhisperer-jupyterlab-ext-2.0.1.tar.gz]
+[2024-05-04 00:52:00] INFO root fetch - main [MainThread]: End processing [amazon-codewhisperer-jupyterlab-ext]: success
+[2024-05-04 00:52:00] INFO root fetch - main [MainThread]: Store serial: [23052456]
