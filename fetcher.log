@@ -318,3 +318,121 @@
 [2024-05-04 00:16:22] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a97-py3-none-win_amd64.whl.zip]
 [2024-05-04 00:16:22] INFO root fetch - main [MainThread]: End processing [bauplan]: success
 [2024-05-04 00:16:22] INFO root fetch - main [MainThread]: Store serial: [23052123]
+[2024-05-04 00:18:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052123]
+[2024-05-04 00:18:31] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi-simple-auth
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deephaven-core
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dataset-iterator
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RTS-WebUIBuilder
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: deephaven-server
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pydeephaven
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ieeg
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pydeephaven-ticking
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: discord-misc
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: zemia
+[2024-05-04 00:18:31] INFO root fetch - processPackages [fastapi-simple-auth]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-04 00:18:31] INFO root fetch - processPackages [RTS-WebUIBuilder]: New version: [0.4] Old Version: [0.3]
+[2024-05-04 00:18:31] WARNING root fetch - processPackages [discord-misc]: Skipping, unable to determine old version
+[2024-05-04 00:18:31] INFO root fetch - processPackages [discord-misc]: Start processing: latch-cloud-clients
+[2024-05-04 00:18:31] INFO root fetch - main [MainThread]: End processing [discord-misc] error
+[2024-05-04 00:18:31] WARNING root fetch - processPackages [zemia]: Skipping, unable to determine old version
+[2024-05-04 00:18:31] INFO root fetch - processPackages [zemia]: Start processing: CTDFjorder
+[2024-05-04 00:18:31] INFO root fetch - main [MainThread]: End processing [zemia] error
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ieeg]: New version: [0.5] Old Version: [0.4]
+[2024-05-04 00:18:31] INFO root fetch - processPackages [deephaven-server]: New version: [0.34.1] Old Version: [0.34.0]
+[2024-05-04 00:18:31] INFO root fetch - processPackages [deephaven-core]: New version: [0.34.1] Old Version: [0.34.0]
+[2024-05-04 00:18:31] INFO root fetch - processPackages [pydeephaven]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-04 00:18:31] INFO root fetch - processPackages [pydeephaven-ticking]: New version: [0.34.1] Old Version: [0.34.0]
+[2024-05-04 00:18:31] INFO root fetch - processPackages [dataset-iterator]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-04 00:18:31] INFO root fetch - processPackages [fastapi-simple-auth]: Downloading https://files.pythonhosted.org/packages/95/9d/f3b0cea8a989ad16356daccf1b930540dc4d86504e809031b8db20e09837/fastapi_simple_auth-0.0.2.tar.gz
+[2024-05-04 00:18:31] INFO root fetch - processPackages [latch-cloud-clients]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 00:18:31] INFO root fetch - processPackages [RTS-WebUIBuilder]: Downloading https://files.pythonhosted.org/packages/e3/14/c04af4f855b95ab6a570f556ac9d3675422f1b793e83e33ad0fd2763de40/RTS-WebUIBuilder-0.3.tar.gz
+[2024-05-04 00:18:31] INFO root fetch - processPackages [CTDFjorder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 00:18:31] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/f4/55/a40186b16bc262a9be94d2bc145b870286c15bed2abf982a6f1a7227f885/CTDFjorder-0.0.8.tar.gz
+[2024-05-04 00:18:31] INFO root fetch - processPackages [deephaven-core]: Downloading https://files.pythonhosted.org/packages/e6/f1/3f08b79c8c90c1b68f756b299531ae8de60f8a03e4daa9474754353c7c19/deephaven_core-0.34.0-py3-none-any.whl
+[2024-05-04 00:18:31] INFO root fetch - processPackages [ieeg]: Downloading https://files.pythonhosted.org/packages/1e/6b/5b767e5f6a7fdfed2983bf7aa2718782ae9645e3bb6758d8746616606361/ieeg-0.4.tar.gz
+[2024-05-04 00:18:31] INFO root fetch - processPackages [deephaven-server]: Downloading https://files.pythonhosted.org/packages/2a/63/23575551359c9edb28b49713ce108312226730d0386b49f995d6f0b8dec8/deephaven_server-0.34.0-py3-none-any.whl
+[2024-05-04 00:18:31] INFO root fetch - processPackages [pydeephaven]: Downloading https://files.pythonhosted.org/packages/f4/d6/073c81e81e07ab90a283b7ca9315e273567b95873c9dc0afbf6cccb67255/pydeephaven-0.8.0-py3-none-any.whl
+[2024-05-04 00:18:31] INFO root fetch - processPackages [pydeephaven-ticking]: Downloading https://files.pythonhosted.org/packages/95/77/f0fb3882e0233a11a5cb8d3d91c01c10c747a2aa9cb693893e6744be2c6e/pydeephaven_ticking-0.34.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-04 00:18:31] INFO root fetch - processPackages [dataset-iterator]: Downloading https://files.pythonhosted.org/packages/5c/d9/8b87b8b91388c733ff46a58ac073df9e05961f6035583e304b2ac71d59d7/dataset_iterator-0.4.2.tar.gz
+[2024-05-04 00:18:31] INFO root fetch - processPackages [latch-cloud-clients]: Downloading https://files.pythonhosted.org/packages/39/00/928ff564c7506a0f9c519ca3c26d072d1c23e6ed8bdb3404b7ca780a67d7/latch_cloud_clients-0.1.8.tar.gz
+[2024-05-04 00:18:31] WARNING root fetch - processPackages [deephaven-server]: Skipping package: exceeds size limit 217486149>=10485760
+[2024-05-04 00:18:31] INFO root fetch - processPackages [fastapi-simple-auth]: Downloading https://files.pythonhosted.org/packages/bf/ad/5e91e5edad301e6608d65c8c1f2b7cdc3311fa5f469899d3411256203568/fastapi_simple_auth-0.0.3.tar.gz
+[2024-05-04 00:18:31] INFO root fetch - processPackages [deephaven-server]: Start processing: juan-stats
+[2024-05-04 00:18:31] INFO root fetch - main [MainThread]: End processing [deephaven-server] error
+[2024-05-04 00:18:32] INFO root fetch - processPackages [juan-stats]: New version: [1.5] Old Version: [1.4]
+[2024-05-04 00:18:32] INFO root fetch - processPackages [RTS-WebUIBuilder]: Downloading https://files.pythonhosted.org/packages/18/2b/fde7cdf60663cbfe28dced96a39ced964282b987e320bc558466a8e8c317/RTS-WebUIBuilder-0.4.tar.gz
+[2024-05-04 00:18:32] WARNING root fetch - processPackages [pydeephaven-ticking]: Skipping package: exceeds size limit 10757084>=10485760
+[2024-05-04 00:18:32] INFO root fetch - processPackages [pydeephaven-ticking]: Start processing: mesop
+[2024-05-04 00:18:32] INFO root fetch - main [MainThread]: End processing [pydeephaven-ticking] error
+[2024-05-04 00:18:32] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/e4/08/9eb66c9f842964f28a0e8214bd3791b744a8bbf8a3dec102434a6d25c486/CTDFjorder-0.0.9.tar.gz
+[2024-05-04 00:18:32] INFO root fetch - processPackages [fastapi-simple-auth]: executing diffoscope
+[2024-05-04 00:18:32] INFO root fetch - processPackages [fastapi-simple-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_simple_auth-0.0.2.tar.gz tmp/fastapi_simple_auth-0.0.3.tar.gz --markdown 20240504/f/fastapi-simple-auth/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-04 00:18:32] INFO root fetch - processPackages [RTS-WebUIBuilder]: executing diffoscope
+[2024-05-04 00:18:32] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/de/f7/fd2851a2a2dac5b01928fb1e7c4274206b3f852f31d7b462449b0c51b79b/juan_stats-1.4.tar.gz
+[2024-05-04 00:18:32] INFO root fetch - processPackages [RTS-WebUIBuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RTS-WebUIBuilder-0.3.tar.gz tmp/RTS-WebUIBuilder-0.4.tar.gz --markdown 20240504/R/RTS-WebUIBuilder/0.3-0.4/README.md --exclude *.pyd
+[2024-05-04 00:18:32] INFO root fetch - processPackages [mesop]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-04 00:18:32] INFO root fetch - processPackages [CTDFjorder]: executing diffoscope
+[2024-05-04 00:18:32] INFO root fetch - processPackages [CTDFjorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTDFjorder-0.0.8.tar.gz tmp/CTDFjorder-0.0.9.tar.gz --markdown 20240504/C/CTDFjorder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 00:18:32] INFO root fetch - processPackages [dataset-iterator]: Downloading https://files.pythonhosted.org/packages/50/68/9e1b975653ee1250cd9e12d0cff45bc469bafdaab6b518b50d2dffa76a11/dataset_iterator-0.4.3.tar.gz
+[2024-05-04 00:18:32] INFO root fetch - processPackages [deephaven-core]: Downloading https://files.pythonhosted.org/packages/9a/67/fb746cb8bfac998e2fa7b1f02150ce5e6be44f17934de174c6aaddebf5a2/deephaven_core-0.34.1-py3-none-any.whl
+[2024-05-04 00:18:32] INFO root fetch - processPackages [pydeephaven]: Downloading https://files.pythonhosted.org/packages/ba/d1/29e55a8d2d903d0fe4a0231e278a16816ae5fa4ee5b06795a577e848fefe/pydeephaven-0.9.0-py3-none-any.whl
+[2024-05-04 00:18:32] INFO root fetch - processPackages [latch-cloud-clients]: Downloading https://files.pythonhosted.org/packages/4c/6a/9701d200b8339e435fef04dc8b24a7e7a7ecee4e1b38a16e4a1f10fcbdf8/latch_cloud_clients-0.1.9.tar.gz
+[2024-05-04 00:18:32] INFO root fetch - processPackages [ieeg]: Downloading https://files.pythonhosted.org/packages/ef/a3/f22b24ce02d4bef7480ac21b0ec72897c63147a41890db51cbc425f3566f/ieeg-0.5.tar.gz
+[2024-05-04 00:18:32] INFO root fetch - processPackages [dataset-iterator]: executing diffoscope
+[2024-05-04 00:18:32] INFO root fetch - processPackages [dataset-iterator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataset_iterator-0.4.2.tar.gz tmp/dataset_iterator-0.4.3.tar.gz --markdown 20240504/d/dataset-iterator/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-04 00:18:32] INFO root fetch - processPackages [deephaven-core]: executing diffoscope
+[2024-05-04 00:18:32] INFO root fetch - processPackages [deephaven-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deephaven_core-0.34.0-py3-none-any.whl.zip tmp/deephaven_core-0.34.1-py3-none-any.whl.zip --markdown 20240504/d/deephaven-core/0.34.0-0.34.1/README.md --exclude *.pyd
+[2024-05-04 00:18:32] INFO root fetch - processPackages [latch-cloud-clients]: executing diffoscope
+[2024-05-04 00:18:32] INFO root fetch - processPackages [latch-cloud-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch_cloud_clients-0.1.8.tar.gz tmp/latch_cloud_clients-0.1.9.tar.gz --markdown 20240504/l/latch-cloud-clients/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 00:18:32] INFO root fetch - processPackages [mesop]: Downloading https://files.pythonhosted.org/packages/18/92/0f5db1f14912b1803d03155052417baef15e74cf735d8c5df0c252fda94f/mesop-0.5.0-py3-none-any.whl
+[2024-05-04 00:18:32] INFO root fetch - processPackages [pydeephaven]: executing diffoscope
+[2024-05-04 00:18:32] INFO root fetch - processPackages [pydeephaven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydeephaven-0.8.0-py3-none-any.whl.zip tmp/pydeephaven-0.9.0-py3-none-any.whl.zip --markdown 20240504/p/pydeephaven/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-04 00:18:32] INFO root fetch - processPackages [ieeg]: executing diffoscope
+[2024-05-04 00:18:32] INFO root fetch - processPackages [ieeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ieeg-0.4.tar.gz tmp/ieeg-0.5.tar.gz --markdown 20240504/i/ieeg/0.4-0.5/README.md --exclude *.pyd
+[2024-05-04 00:18:32] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/72/8b/341964aa3641d5542d634b4bb88c8c7e6254ea79fcc0d2bd5ff8271151d8/juan_stats-1.5.tar.gz
+[2024-05-04 00:18:32] INFO root fetch - processPackages [juan-stats]: executing diffoscope
+[2024-05-04 00:18:32] INFO root fetch - processPackages [juan-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juan_stats-1.4.tar.gz tmp/juan_stats-1.5.tar.gz --markdown 20240504/j/juan-stats/1.4-1.5/README.md --exclude *.pyd
+[2024-05-04 00:18:33] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/CTDFjorder-0.0.8.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/CTDFjorder-0.0.9.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - processPackages [CTDFjorder]: Start processing: py-gadzooks
+[2024-05-04 00:18:33] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
+[2024-05-04 00:18:33] INFO root fetch - processPackages [fastapi-simple-auth]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_simple_auth-0.0.2.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - processPackages [fastapi-simple-auth]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_simple_auth-0.0.3.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - main [MainThread]: End processing [fastapi-simple-auth]: success
+[2024-05-04 00:18:33] INFO root fetch - processPackages [mesop]: Downloading https://files.pythonhosted.org/packages/a0/8f/5b7e094252fe6cdad10804b81926a153bdeccacca6374506c6ad36834a3c/mesop-0.5.1-py3-none-any.whl
+[2024-05-04 00:18:33] INFO root fetch - processPackages [RTS-WebUIBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS-WebUIBuilder-0.3.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - processPackages [RTS-WebUIBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS-WebUIBuilder-0.4.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - main [MainThread]: End processing [RTS-WebUIBuilder]: success
+[2024-05-04 00:18:33] INFO root fetch - processPackages [py-gadzooks]: New version: [0.2.7] Old Version: [0.2.5]
+[2024-05-04 00:18:33] INFO root fetch - processPackages [latch-cloud-clients]: Remove: archive file [/home/abi/fetcher/tmp/latch_cloud_clients-0.1.8.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - processPackages [latch-cloud-clients]: Remove: archive file [/home/abi/fetcher/tmp/latch_cloud_clients-0.1.9.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - main [MainThread]: End processing [latch-cloud-clients]: success
+[2024-05-04 00:18:33] INFO root fetch - processPackages [dataset-iterator]: Remove: archive file [/home/abi/fetcher/tmp/dataset_iterator-0.4.2.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - processPackages [dataset-iterator]: Remove: archive file [/home/abi/fetcher/tmp/dataset_iterator-0.4.3.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - main [MainThread]: End processing [dataset-iterator]: success
+[2024-05-04 00:18:33] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-1.4.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-1.5.tar.gz]
+[2024-05-04 00:18:33] INFO root fetch - main [MainThread]: End processing [juan-stats]: success
+[2024-05-04 00:18:33] INFO root fetch - processPackages [py-gadzooks]: Downloading https://files.pythonhosted.org/packages/67/91/428a40a6744179cbef6a48f336a57a73b96fb75e83e7f666d3d586accf98/py_gadzooks-0.2.5.tar.gz
+[2024-05-04 00:18:33] INFO root fetch - processPackages [pydeephaven]: Remove: archive file [/home/abi/fetcher/tmp/pydeephaven-0.8.0-py3-none-any.whl.zip]
+[2024-05-04 00:18:33] INFO root fetch - processPackages [pydeephaven]: Remove: archive file [/home/abi/fetcher/tmp/pydeephaven-0.9.0-py3-none-any.whl.zip]
+[2024-05-04 00:18:33] INFO root fetch - main [MainThread]: End processing [pydeephaven]: success
+[2024-05-04 00:18:33] INFO root fetch - processPackages [deephaven-core]: Remove: archive file [/home/abi/fetcher/tmp/deephaven_core-0.34.0-py3-none-any.whl.zip]
+[2024-05-04 00:18:33] INFO root fetch - processPackages [deephaven-core]: Remove: archive file [/home/abi/fetcher/tmp/deephaven_core-0.34.1-py3-none-any.whl.zip]
+[2024-05-04 00:18:33] INFO root fetch - main [MainThread]: End processing [deephaven-core]: success
+[2024-05-04 00:18:33] INFO root fetch - processPackages [py-gadzooks]: Downloading https://files.pythonhosted.org/packages/37/68/6911ed8da68cda6717e85bdadb83491bc9c365bf659fce3d37df83b7f0d5/py_gadzooks-0.2.7.tar.gz
+[2024-05-04 00:18:33] INFO root fetch - processPackages [mesop]: executing diffoscope
+[2024-05-04 00:18:33] INFO root fetch - processPackages [mesop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mesop-0.5.0-py3-none-any.whl.zip tmp/mesop-0.5.1-py3-none-any.whl.zip --markdown 20240504/m/mesop/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-04 00:18:33] INFO root fetch - processPackages [py-gadzooks]: executing diffoscope
+[2024-05-04 00:18:33] INFO root fetch - processPackages [py-gadzooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_gadzooks-0.2.5.tar.gz tmp/py_gadzooks-0.2.7.tar.gz --markdown 20240504/p/py-gadzooks/0.2.5-0.2.7/README.md --exclude *.pyd
+[2024-05-04 00:18:34] INFO root fetch - processPackages [py-gadzooks]: Remove: archive file [/home/abi/fetcher/tmp/py_gadzooks-0.2.5.tar.gz]
+[2024-05-04 00:18:34] INFO root fetch - processPackages [py-gadzooks]: Remove: archive file [/home/abi/fetcher/tmp/py_gadzooks-0.2.7.tar.gz]
+[2024-05-04 00:18:34] INFO root fetch - main [MainThread]: End processing [py-gadzooks]: success
+[2024-05-04 00:18:35] INFO root fetch - processPackages [ieeg]: Remove: archive file [/home/abi/fetcher/tmp/ieeg-0.4.tar.gz]
+[2024-05-04 00:18:35] INFO root fetch - processPackages [ieeg]: Remove: archive file [/home/abi/fetcher/tmp/ieeg-0.5.tar.gz]
+[2024-05-04 00:18:35] INFO root fetch - main [MainThread]: End processing [ieeg]: success
+[2024-05-04 00:21:09] INFO root fetch - processPackages [mesop]: Remove: archive file [/home/abi/fetcher/tmp/mesop-0.5.0-py3-none-any.whl.zip]
+[2024-05-04 00:21:09] INFO root fetch - processPackages [mesop]: Remove: archive file [/home/abi/fetcher/tmp/mesop-0.5.1-py3-none-any.whl.zip]
+[2024-05-04 00:21:09] INFO root fetch - main [MainThread]: End processing [mesop]: success
+[2024-05-04 00:21:09] INFO root fetch - main [MainThread]: Store serial: [23052165]
