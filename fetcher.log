@@ -944,3 +944,54 @@
 [2024-05-04 00:52:00] INFO root fetch - processPackages [amazon-codewhisperer-jupyterlab-ext]: Remove: archive file [/home/abi/fetcher/tmp/amazon-codewhisperer-jupyterlab-ext-2.0.1.tar.gz]
 [2024-05-04 00:52:00] INFO root fetch - main [MainThread]: End processing [amazon-codewhisperer-jupyterlab-ext]: success
 [2024-05-04 00:52:00] INFO root fetch - main [MainThread]: Store serial: [23052456]
+[2024-05-04 00:54:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052456]
+[2024-05-04 00:54:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 00:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RegScale-CLI
+[2024-05-04 00:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymemgpt
+[2024-05-04 00:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymemgpt-nightly
+[2024-05-04 00:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tree-sitter-c-sharp
+[2024-05-04 00:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyretries
+[2024-05-04 00:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tinyticker
+[2024-05-04 00:54:09] WARNING root fetch - processPackages [tree-sitter-c-sharp]: Skipping, unable to determine old version
+[2024-05-04 00:54:09] INFO root fetch - processPackages [pyretries]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-04 00:54:09] INFO root fetch - main [MainThread]: End processing [tree-sitter-c-sharp] error
+[2024-05-04 00:54:09] INFO root fetch - processPackages [tinyticker]: New version: [0.5.0] Old Version: [0.4.9]
+[2024-05-04 00:54:09] INFO root fetch - processPackages [pymemgpt]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-04 00:54:09] INFO root fetch - processPackages [RegScale-CLI]: New version: [5.9.0] Old Version: [5.8.0]
+[2024-05-04 00:54:09] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-05-04 00:54:09] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-05-04 00:54:09] INFO root fetch - processPackages [pymemgpt]: Downloading https://files.pythonhosted.org/packages/06/f9/30dc88091552c220242217b9fd60e294f4f9792315fa873eceb3375e0b87/pymemgpt-0.3.8.tar.gz
+[2024-05-04 00:54:09] INFO root fetch - processPackages [RegScale-CLI]: Downloading https://files.pythonhosted.org/packages/2b/3f/878438fa28f5ffd3c38125c73b4b234937896776bf6f52a64031c5602a30/RegScale_CLI-5.8.0-py3-none-any.whl
+[2024-05-04 00:54:09] INFO root fetch - processPackages [tinyticker]: Downloading https://files.pythonhosted.org/packages/9e/95/bc6f02167fd098fa6814f72222fab337fe13814e1b02c20f9302f729569e/tinyticker-0.4.9.tar.gz
+[2024-05-04 00:54:09] INFO root fetch - processPackages [pyretries]: Downloading https://files.pythonhosted.org/packages/e6/05/bc6dff9ad5fa1fdd9ca617f002b6b1bd201e2d70bd4c5e4bdbde47c79031/pyretries-0.2.8.tar.gz
+[2024-05-04 00:54:09] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-05-04 00:54:10] INFO root fetch - processPackages [tinyticker]: Downloading https://files.pythonhosted.org/packages/01/4d/ecbbfb6f8217f927296717abcd4e7be23f1359b8148efcf3be9e15b8911c/tinyticker-0.5.0.tar.gz
+[2024-05-04 00:54:10] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-05-04 00:54:10] INFO root fetch - processPackages [RegScale-CLI]: Downloading https://files.pythonhosted.org/packages/81/07/778978d646b2a15a81f5db8b7ec76ce6f41543e491b67f82cc41051e8332/RegScale_CLI-5.9.0-py3-none-any.whl
+[2024-05-04 00:54:10] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240504/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-05-04 00:54:10] INFO root fetch - processPackages [pyretries]: Downloading https://files.pythonhosted.org/packages/a9/d3/85206195bc62ef05131d45dbf14f4cb8b162a4db01fe982faf81f4a97320/pyretries-0.2.9.tar.gz
+[2024-05-04 00:54:10] INFO root fetch - processPackages [pymemgpt]: Downloading https://files.pythonhosted.org/packages/cd/2e/4361ff93f07d87ed5b38cfc0fa22c2bf04b2bc5429a7d4cd910728659112/pymemgpt-0.3.9.tar.gz
+[2024-05-04 00:54:10] INFO root fetch - processPackages [pyretries]: executing diffoscope
+[2024-05-04 00:54:10] INFO root fetch - processPackages [pyretries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyretries-0.2.8.tar.gz tmp/pyretries-0.2.9.tar.gz --markdown 20240504/p/pyretries/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-04 00:54:10] INFO root fetch - processPackages [RegScale-CLI]: executing diffoscope
+[2024-05-04 00:54:10] INFO root fetch - processPackages [RegScale-CLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RegScale_CLI-5.8.0-py3-none-any.whl.zip tmp/RegScale_CLI-5.9.0-py3-none-any.whl.zip --markdown 20240504/R/RegScale-CLI/5.8.0-5.9.0/README.md --exclude *.pyd
+[2024-05-04 00:54:10] INFO root fetch - processPackages [tinyticker]: executing diffoscope
+[2024-05-04 00:54:10] INFO root fetch - processPackages [tinyticker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyticker-0.4.9.tar.gz tmp/tinyticker-0.5.0.tar.gz --markdown 20240504/t/tinyticker/0.4.9-0.5.0/README.md --exclude *.pyd
+[2024-05-04 00:54:10] INFO root fetch - processPackages [pymemgpt]: executing diffoscope
+[2024-05-04 00:54:10] INFO root fetch - processPackages [pymemgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt-0.3.8.tar.gz tmp/pymemgpt-0.3.9.tar.gz --markdown 20240504/p/pymemgpt/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-04 00:54:10] INFO root fetch - processPackages [pyretries]: Remove: archive file [/home/abi/fetcher/tmp/pyretries-0.2.8.tar.gz]
+[2024-05-04 00:54:10] INFO root fetch - processPackages [pyretries]: Remove: archive file [/home/abi/fetcher/tmp/pyretries-0.2.9.tar.gz]
+[2024-05-04 00:54:10] INFO root fetch - main [MainThread]: End processing [pyretries]: success
+[2024-05-04 00:54:11] INFO root fetch - processPackages [tinyticker]: Remove: archive file [/home/abi/fetcher/tmp/tinyticker-0.4.9.tar.gz]
+[2024-05-04 00:54:11] INFO root fetch - processPackages [tinyticker]: Remove: archive file [/home/abi/fetcher/tmp/tinyticker-0.5.0.tar.gz]
+[2024-05-04 00:54:11] INFO root fetch - main [MainThread]: End processing [tinyticker]: success
+[2024-05-04 00:54:11] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-05-04 00:54:11] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-05-04 00:54:11] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-05-04 00:54:11] INFO root fetch - processPackages [RegScale-CLI]: Remove: archive file [/home/abi/fetcher/tmp/RegScale_CLI-5.8.0-py3-none-any.whl.zip]
+[2024-05-04 00:54:11] INFO root fetch - processPackages [RegScale-CLI]: Remove: archive file [/home/abi/fetcher/tmp/RegScale_CLI-5.9.0-py3-none-any.whl.zip]
+[2024-05-04 00:54:11] INFO root fetch - main [MainThread]: End processing [RegScale-CLI]: success
+[2024-05-04 00:54:17] INFO root fetch - processPackages [pymemgpt]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt-0.3.8.tar.gz]
+[2024-05-04 00:54:17] INFO root fetch - processPackages [pymemgpt]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt-0.3.9.tar.gz]
+[2024-05-04 00:54:17] INFO root fetch - main [MainThread]: End processing [pymemgpt]: success
+[2024-05-04 00:54:17] INFO root fetch - main [MainThread]: Store serial: [23052484]
