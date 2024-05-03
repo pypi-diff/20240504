@@ -1496,3 +1496,20 @@
 [2024-05-04 01:30:04] INFO root fetch - processPackages [dank-mids]: Remove: archive file [/home/abi/fetcher/tmp/dank_mids-4.20.93.tar.gz]
 [2024-05-04 01:30:04] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
 [2024-05-04 01:30:04] INFO root fetch - main [MainThread]: Store serial: [23052738]
+[2024-05-04 01:32:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052738]
+[2024-05-04 01:32:15] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 01:34:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052738]
+[2024-05-04 01:34:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 01:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bytetracker-gml
+[2024-05-04 01:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbt-redshift
+[2024-05-04 01:34:20] WARNING root fetch - processPackages [bytetracker-gml]: Skipping, unable to determine old version
+[2024-05-04 01:34:20] INFO root fetch - main [MainThread]: End processing [bytetracker-gml] error
+[2024-05-04 01:34:20] INFO root fetch - processPackages [dbt-redshift]: New version: [1.8.0rc1] Old Version: [1.8.0b3]
+[2024-05-04 01:34:21] INFO root fetch - processPackages [dbt-redshift]: Downloading https://files.pythonhosted.org/packages/35/28/0549e9341bd7e7495cd7b521898f97a83c72b67b0db0e2ad054c0d0b049f/dbt_redshift-1.8.0b3.tar.gz
+[2024-05-04 01:34:21] INFO root fetch - processPackages [dbt-redshift]: Downloading https://files.pythonhosted.org/packages/5b/a2/47e38d57d78e769bf5b8954694d697a2ee7fee54f9d0266a0fea53310abd/dbt_redshift-1.8.0rc1.tar.gz
+[2024-05-04 01:34:21] INFO root fetch - processPackages [dbt-redshift]: executing diffoscope
+[2024-05-04 01:34:21] INFO root fetch - processPackages [dbt-redshift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_redshift-1.8.0b3.tar.gz tmp/dbt_redshift-1.8.0rc1.tar.gz --markdown 20240504/d/dbt-redshift/1.8.0b3-1.8.0rc1/README.md --exclude *.pyd
+[2024-05-04 01:34:22] INFO root fetch - processPackages [dbt-redshift]: Remove: archive file [/home/abi/fetcher/tmp/dbt_redshift-1.8.0b3.tar.gz]
+[2024-05-04 01:34:22] INFO root fetch - processPackages [dbt-redshift]: Remove: archive file [/home/abi/fetcher/tmp/dbt_redshift-1.8.0rc1.tar.gz]
+[2024-05-04 01:34:22] INFO root fetch - main [MainThread]: End processing [dbt-redshift]: success
+[2024-05-04 01:34:22] INFO root fetch - main [MainThread]: Store serial: [23052745]
