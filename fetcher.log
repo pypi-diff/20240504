@@ -17723,3 +17723,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:30:00] INFO root fetch - processPackages [llm-axe]: Remove: archive file [/home/abi/fetcher/tmp/llm_axe-1.0.7.tar.gz]
 [2024-05-04 19:30:00] INFO root fetch - main [MainThread]: End processing [llm-axe]: success
 [2024-05-04 19:30:00] INFO root fetch - main [MainThread]: Store serial: [23059572]
+[2024-05-04 19:32:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059572]
+[2024-05-04 19:32:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 19:32:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ciostream
+[2024-05-04 19:32:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-times
+[2024-05-04 19:32:11] INFO root fetch - processPackages [ciostream]: New version: [0.0.1.post8952132004] Old Version: [0.0.1.post8125288576]
+[2024-05-04 19:32:11] INFO root fetch - processPackages [mo-times]: New version: [5.617.24125] Old Version: [5.609.24119]
+[2024-05-04 19:32:11] INFO root fetch - processPackages [ciostream]: Downloading https://files.pythonhosted.org/packages/fa/c8/eb52efaa4b2c4342ed7e6fbb55f69c129691d6207e264a7c69663790cd8c/ciostream-0.0.1.post8125288576.tar.gz
+[2024-05-04 19:32:11] INFO root fetch - processPackages [mo-times]: Downloading https://files.pythonhosted.org/packages/c0/b2/2a9734dadc967722a0eea8e8994b8891ace160e9ef17335a6c5e2b39caa0/mo_times-5.609.24119.tar.gz
+[2024-05-04 19:32:11] INFO root fetch - processPackages [mo-times]: Downloading https://files.pythonhosted.org/packages/16/69/508e59057bd7aee21c007568c208d9dd94d7b5e50a7e89b0c13276535d90/mo_times-5.617.24125.tar.gz
+[2024-05-04 19:32:11] INFO root fetch - processPackages [ciostream]: Downloading https://files.pythonhosted.org/packages/7f/1d/117485a66506bf81822fb64e581a85dc7e845d911458cd3ee1f4f69bd4d9/ciostream-0.0.1.post8952132004.tar.gz
+[2024-05-04 19:32:11] INFO root fetch - processPackages [mo-times]: executing diffoscope
+[2024-05-04 19:32:11] INFO root fetch - processPackages [mo-times]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_times-5.609.24119.tar.gz tmp/mo_times-5.617.24125.tar.gz --markdown 20240504/m/mo-times/5.609.24119-5.617.24125/README.md --exclude *.pyd
+[2024-05-04 19:32:11] INFO root fetch - processPackages [ciostream]: executing diffoscope
+[2024-05-04 19:32:11] INFO root fetch - processPackages [ciostream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ciostream-0.0.1.post8125288576.tar.gz tmp/ciostream-0.0.1.post8952132004.tar.gz --markdown 20240504/c/ciostream/0.0.1.post8125288576-0.0.1.post8952132004/README.md --exclude *.pyd
+[2024-05-04 19:32:12] INFO root fetch - processPackages [ciostream]: Remove: archive file [/home/abi/fetcher/tmp/ciostream-0.0.1.post8125288576.tar.gz]
+[2024-05-04 19:32:12] INFO root fetch - processPackages [ciostream]: Remove: archive file [/home/abi/fetcher/tmp/ciostream-0.0.1.post8952132004.tar.gz]
+[2024-05-04 19:32:12] INFO root fetch - main [MainThread]: End processing [ciostream]: success
+[2024-05-04 19:32:12] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo_times-5.609.24119.tar.gz]
+[2024-05-04 19:32:12] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo_times-5.617.24125.tar.gz]
+[2024-05-04 19:32:12] INFO root fetch - main [MainThread]: End processing [mo-times]: success
+[2024-05-04 19:32:12] INFO root fetch - main [MainThread]: Store serial: [23059586]
