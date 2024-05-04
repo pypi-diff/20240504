@@ -19412,3 +19412,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:28:05] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b1.tar.gz]
 [2024-05-04 21:28:05] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-05-04 21:28:05] INFO root fetch - main [MainThread]: Store serial: [23060455]
+[2024-05-04 21:30:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060455]
+[2024-05-04 21:30:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 21:30:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: specsy
+[2024-05-04 21:30:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bcra-api-client
+[2024-05-04 21:30:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbb-api
+[2024-05-04 21:30:14] INFO root fetch - processPackages [specsy]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-04 21:30:14] INFO root fetch - processPackages [bcra-api-client]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-05-04 21:30:14] INFO root fetch - processPackages [nbb-api]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-04 21:30:14] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/15/3d/4321075452c4779f064e35e9259b36111061032e4e5b0e5b330ade1198c9/bcra-api-client-1.1.7.tar.gz
+[2024-05-04 21:30:14] INFO root fetch - processPackages [specsy]: Downloading https://files.pythonhosted.org/packages/54/4b/ccb6ed3d585224d2f33ca2da891d52281ea8b2acbe8de53d7122cbd47156/specsy-0.2.2.tar.gz
+[2024-05-04 21:30:14] INFO root fetch - processPackages [nbb-api]: Downloading https://files.pythonhosted.org/packages/87/c1/b17e1a2069d9059834332927361862c2ef2c982333595eba75003912031c/nbb_api-0.1.5.tar.gz
+[2024-05-04 21:30:14] INFO root fetch - processPackages [specsy]: Downloading https://files.pythonhosted.org/packages/8c/32/cdc923db18c92b605e62466e5dec9c5931f9bbf0201b8155f8deba2d229c/specsy-0.2.3.tar.gz
+[2024-05-04 21:30:14] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/62/e6/d73a8ce7f0453b7d88c27e62aac3476fb0f347ce92c69fd71969284cb7e6/bcra_api_client-1.1.8.tar.gz
+[2024-05-04 21:30:14] INFO root fetch - processPackages [specsy]: executing diffoscope
+[2024-05-04 21:30:14] INFO root fetch - processPackages [specsy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/specsy-0.2.2.tar.gz tmp/specsy-0.2.3.tar.gz --markdown 20240504/s/specsy/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-04 21:30:14] INFO root fetch - processPackages [bcra-api-client]: executing diffoscope
+[2024-05-04 21:30:14] INFO root fetch - processPackages [bcra-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcra-api-client-1.1.7.tar.gz tmp/bcra_api_client-1.1.8.tar.gz --markdown 20240504/b/bcra-api-client/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-05-04 21:30:14] INFO root fetch - processPackages [nbb-api]: Downloading https://files.pythonhosted.org/packages/1a/9b/e6aea38dac7cf7a80d0bdd3800be93821af09b8685b37093dd2633098162/nbb_api-0.1.6.tar.gz
+[2024-05-04 21:30:14] INFO root fetch - processPackages [nbb-api]: executing diffoscope
+[2024-05-04 21:30:14] INFO root fetch - processPackages [nbb-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbb_api-0.1.5.tar.gz tmp/nbb_api-0.1.6.tar.gz --markdown 20240504/n/nbb-api/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-04 21:30:15] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra-api-client-1.1.7.tar.gz]
+[2024-05-04 21:30:15] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra_api_client-1.1.8.tar.gz]
+[2024-05-04 21:30:15] INFO root fetch - main [MainThread]: End processing [bcra-api-client]: success
+[2024-05-04 21:30:15] INFO root fetch - processPackages [nbb-api]: Remove: archive file [/home/abi/fetcher/tmp/nbb_api-0.1.5.tar.gz]
+[2024-05-04 21:30:15] INFO root fetch - processPackages [nbb-api]: Remove: archive file [/home/abi/fetcher/tmp/nbb_api-0.1.6.tar.gz]
+[2024-05-04 21:30:15] INFO root fetch - main [MainThread]: End processing [nbb-api]: success
+[2024-05-04 21:30:15] INFO root fetch - processPackages [specsy]: Remove: archive file [/home/abi/fetcher/tmp/specsy-0.2.2.tar.gz]
+[2024-05-04 21:30:15] INFO root fetch - processPackages [specsy]: Remove: archive file [/home/abi/fetcher/tmp/specsy-0.2.3.tar.gz]
+[2024-05-04 21:30:15] INFO root fetch - main [MainThread]: End processing [specsy]: success
+[2024-05-04 21:30:15] INFO root fetch - main [MainThread]: Store serial: [23060464]
