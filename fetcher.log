@@ -17687,3 +17687,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:25:40] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
 [2024-05-04 19:25:40] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-05-04 19:25:40] INFO root fetch - main [MainThread]: Store serial: [23059560]
+[2024-05-04 19:27:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059560]
+[2024-05-04 19:27:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 19:27:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crazy-thursday
+[2024-05-04 19:27:49] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.4.1] Old Version: [2024.5.4.0]
+[2024-05-04 19:27:49] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/27/c9/ee1237883d0b02bfb12a1505bb3377fa23f803cfa692546d26f790f8e0b4/crazy_thursday-2024.5.4.0.tar.gz
+[2024-05-04 19:27:49] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/51/fa/c91f54d577d36aa427361cbe929ae66f1ee7b92eab7acf1d0199fd0b93fd/crazy_thursday-2024.5.4.1.tar.gz
+[2024-05-04 19:27:49] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-04 19:27:49] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.4.0.tar.gz tmp/crazy_thursday-2024.5.4.1.tar.gz --markdown 20240504/c/crazy-thursday/2024.5.4.0-2024.5.4.1/README.md --exclude *.pyd
+[2024-05-04 19:27:50] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.4.0.tar.gz]
+[2024-05-04 19:27:50] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.4.1.tar.gz]
+[2024-05-04 19:27:50] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-04 19:27:50] INFO root fetch - main [MainThread]: Store serial: [23059563]
