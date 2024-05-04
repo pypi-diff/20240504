@@ -7178,3 +7178,15 @@
 [2024-05-04 04:06:40] INFO root fetch - processPackages [tesseract-olap]: Remove: archive file [/home/abi/fetcher/tmp/tesseract_olap-0.9.5.tar.gz]
 [2024-05-04 04:06:40] INFO root fetch - main [MainThread]: End processing [tesseract-olap]: success
 [2024-05-04 04:06:40] INFO root fetch - main [MainThread]: Store serial: [23054680]
+[2024-05-04 04:08:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054680]
+[2024-05-04 04:08:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 04:08:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgegap-api
+[2024-05-04 04:08:49] INFO root fetch - processPackages [edgegap-api]: New version: [1.6.7] Old Version: [1.6.6]
+[2024-05-04 04:08:49] INFO root fetch - processPackages [edgegap-api]: Downloading https://files.pythonhosted.org/packages/ea/b0/78cfe705fa64837023a107d3926e4546e7e12a7bb945de5556eeaca7b740/edgegap_api-1.6.6.tar.gz
+[2024-05-04 04:08:49] INFO root fetch - processPackages [edgegap-api]: Downloading https://files.pythonhosted.org/packages/fc/36/ac8c17a462e7f14ed68183ffa60c2b80a992f9bae51d6b20b44af0baf5ee/edgegap_api-1.6.7.tar.gz
+[2024-05-04 04:08:50] INFO root fetch - processPackages [edgegap-api]: executing diffoscope
+[2024-05-04 04:08:50] INFO root fetch - processPackages [edgegap-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_api-1.6.6.tar.gz tmp/edgegap_api-1.6.7.tar.gz --markdown 20240504/e/edgegap-api/1.6.6-1.6.7/README.md --exclude *.pyd
+[2024-05-04 04:08:50] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.6.tar.gz]
+[2024-05-04 04:08:50] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.7.tar.gz]
+[2024-05-04 04:08:50] INFO root fetch - main [MainThread]: End processing [edgegap-api]: success
+[2024-05-04 04:08:50] INFO root fetch - main [MainThread]: Store serial: [23054685]
