@@ -8318,3 +8318,42 @@
 [2024-05-04 05:14:17] INFO root fetch - processPackages [py-near]: Remove: archive file [/home/abi/fetcher/tmp/py_near-1.1.9.tar.gz]
 [2024-05-04 05:14:17] INFO root fetch - main [MainThread]: End processing [py-near]: success
 [2024-05-04 05:14:17] INFO root fetch - main [MainThread]: Store serial: [23055256]
+[2024-05-04 05:16:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055256]
+[2024-05-04 05:16:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 05:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-near
+[2024-05-04 05:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: packyak-aws-cdk
+[2024-05-04 05:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keras-cv-nightly
+[2024-05-04 05:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blastpipe
+[2024-05-04 05:16:36] INFO root fetch - processPackages [py-near]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-04 05:16:36] INFO root fetch - processPackages [packyak-aws-cdk]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-04 05:16:36] INFO root fetch - processPackages [blastpipe]: New version: [2024.4.3] Old Version: [2024.4.2]
+[2024-05-04 05:16:36] INFO root fetch - processPackages [keras-cv-nightly]: New version: [0.9.0.dev2024043000] Old Version: [0.9.0.dev2024042919]
+[2024-05-04 05:16:36] INFO root fetch - processPackages [py-near]: Downloading https://files.pythonhosted.org/packages/aa/de/beface0702603924b5d0a916d15f1c6cc26697783b8191af8e33620e805d/py_near-1.1.8.tar.gz
+[2024-05-04 05:16:36] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/d7/b3/3fcb829919645b60c366eafad1a235ccf43f1579285200ecc089b778b2f9/blastpipe-2024.4.2.tar.gz
+[2024-05-04 05:16:36] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/bd/17/3faa9e969f58abadca2ff3a4053bed558afb777bae344f994feeeaf1cfd3/keras_cv_nightly-0.9.0.dev2024042919.tar.gz
+[2024-05-04 05:16:36] INFO root fetch - processPackages [packyak-aws-cdk]: Downloading https://files.pythonhosted.org/packages/3f/5c/9c62d5ca11e5b2b4dce5e057fc33093ed5dbde055cfab1842da917cf273b/packyak-aws-cdk-0.4.8.tar.gz
+[2024-05-04 05:16:37] INFO root fetch - processPackages [py-near]: Downloading https://files.pythonhosted.org/packages/3e/73/28d02d95d66304797b8d5f4f59e2c20a6e393c56657b991e31c16ca77e9f/py_near-1.1.9.tar.gz
+[2024-05-04 05:16:37] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/e9/fa/b71090ffae8d4416559d53d6d136899314a472ee517185e9fff7be017fe7/blastpipe-2024.4.3.tar.gz
+[2024-05-04 05:16:37] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/81/e8/990891e08c4d6686000132786b783a9e72d0cf684f6f44245f2949fd0e57/keras_cv_nightly-0.9.0.dev2024043000.tar.gz
+[2024-05-04 05:16:37] INFO root fetch - processPackages [packyak-aws-cdk]: Downloading https://files.pythonhosted.org/packages/f5/c9/e1e1e0b9b00311d30bf76d73a1b624c59a03f40fa3252dd635089b115f37/packyak-aws-cdk-0.4.9.tar.gz
+[2024-05-04 05:16:37] INFO root fetch - processPackages [py-near]: executing diffoscope
+[2024-05-04 05:16:37] INFO root fetch - processPackages [py-near]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_near-1.1.8.tar.gz tmp/py_near-1.1.9.tar.gz --markdown 20240504/p/py-near/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-04 05:16:37] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-05-04 05:16:37] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.4.2.tar.gz tmp/blastpipe-2024.4.3.tar.gz --markdown 20240504/b/blastpipe/2024.4.2-2024.4.3/README.md --exclude *.pyd
+[2024-05-04 05:16:37] INFO root fetch - processPackages [keras-cv-nightly]: executing diffoscope
+[2024-05-04 05:16:37] INFO root fetch - processPackages [keras-cv-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz --markdown 20240504/k/keras-cv-nightly/0.9.0.dev2024042919-0.9.0.dev2024043000/README.md --exclude *.pyd
+[2024-05-04 05:16:37] INFO root fetch - processPackages [packyak-aws-cdk]: executing diffoscope
+[2024-05-04 05:16:37] INFO root fetch - processPackages [packyak-aws-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packyak-aws-cdk-0.4.8.tar.gz tmp/packyak-aws-cdk-0.4.9.tar.gz --markdown 20240504/p/packyak-aws-cdk/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-04 05:16:37] INFO root fetch - processPackages [py-near]: Remove: archive file [/home/abi/fetcher/tmp/py_near-1.1.8.tar.gz]
+[2024-05-04 05:16:37] INFO root fetch - processPackages [py-near]: Remove: archive file [/home/abi/fetcher/tmp/py_near-1.1.9.tar.gz]
+[2024-05-04 05:16:37] INFO root fetch - main [MainThread]: End processing [py-near]: success
+[2024-05-04 05:16:38] INFO root fetch - processPackages [packyak-aws-cdk]: Remove: archive file [/home/abi/fetcher/tmp/packyak-aws-cdk-0.4.8.tar.gz]
+[2024-05-04 05:16:38] INFO root fetch - processPackages [packyak-aws-cdk]: Remove: archive file [/home/abi/fetcher/tmp/packyak-aws-cdk-0.4.9.tar.gz]
+[2024-05-04 05:16:38] INFO root fetch - main [MainThread]: End processing [packyak-aws-cdk]: success
+[2024-05-04 05:16:38] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.2.tar.gz]
+[2024-05-04 05:16:38] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.3.tar.gz]
+[2024-05-04 05:16:38] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-05-04 05:16:38] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz]
+[2024-05-04 05:16:38] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
+[2024-05-04 05:16:38] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
+[2024-05-04 05:16:38] INFO root fetch - main [MainThread]: Store serial: [23055269]
