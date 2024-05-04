@@ -7104,3 +7104,24 @@
 [2024-05-04 03:55:55] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.3.tar.gz]
 [2024-05-04 03:55:55] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
 [2024-05-04 03:55:55] INFO root fetch - main [MainThread]: Store serial: [23054651]
+[2024-05-04 03:57:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054651]
+[2024-05-04 03:58:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 03:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hbox
+[2024-05-04 03:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lytils
+[2024-05-04 03:58:04] INFO root fetch - processPackages [hbox]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-04 03:58:04] INFO root fetch - processPackages [lytils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-04 03:58:04] INFO root fetch - processPackages [hbox]: Downloading https://files.pythonhosted.org/packages/3d/8f/f2b9895396b390ee95f4a17b812baa1266d381c1727ee5d88b9476f47098/hbox-0.2.6.tar.gz
+[2024-05-04 03:58:04] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/6e/79/5cd4f342f50738cbc5e1a311292daf9f217d9c13730121069eb724b612fc/lytils-0.1.7.tar.gz
+[2024-05-04 03:58:04] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/e5/63/947a765769a040af108780166ef416734281e055d3577ce6f8ecd6dcff7b/lytils-0.1.8.tar.gz
+[2024-05-04 03:58:04] INFO root fetch - processPackages [lytils]: executing diffoscope
+[2024-05-04 03:58:04] INFO root fetch - processPackages [lytils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lytils-0.1.7.tar.gz tmp/lytils-0.1.8.tar.gz --markdown 20240504/l/lytils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-04 03:58:04] INFO root fetch - processPackages [hbox]: Downloading https://files.pythonhosted.org/packages/78/98/894eeddec0643abcf1e28c1cbc3a729aeff4d9908678fbde218c71a36352/hbox-0.2.7.tar.gz
+[2024-05-04 03:58:04] INFO root fetch - processPackages [hbox]: executing diffoscope
+[2024-05-04 03:58:04] INFO root fetch - processPackages [hbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbox-0.2.6.tar.gz tmp/hbox-0.2.7.tar.gz --markdown 20240504/h/hbox/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-04 03:58:05] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.7.tar.gz]
+[2024-05-04 03:58:05] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.8.tar.gz]
+[2024-05-04 03:58:05] INFO root fetch - main [MainThread]: End processing [lytils]: success
+[2024-05-04 03:58:05] INFO root fetch - processPackages [hbox]: Remove: archive file [/home/abi/fetcher/tmp/hbox-0.2.6.tar.gz]
+[2024-05-04 03:58:05] INFO root fetch - processPackages [hbox]: Remove: archive file [/home/abi/fetcher/tmp/hbox-0.2.7.tar.gz]
+[2024-05-04 03:58:05] INFO root fetch - main [MainThread]: End processing [hbox]: success
+[2024-05-04 03:58:05] INFO root fetch - main [MainThread]: Store serial: [23054657]
