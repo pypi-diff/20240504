@@ -20234,3 +20234,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:25:10] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.9.tar.gz]
 [2024-05-04 22:25:10] INFO root fetch - main [MainThread]: End processing [got-cli]: success
 [2024-05-04 22:25:10] INFO root fetch - main [MainThread]: Store serial: [23060785]
+[2024-05-04 22:27:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060785]
+[2024-05-04 22:27:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 22:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yolo-world-open
+[2024-05-04 22:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cterasdk
+[2024-05-04 22:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-streams
+[2024-05-04 22:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: specsy
+[2024-05-04 22:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AlgoGrade
+[2024-05-04 22:27:19] INFO root fetch - processPackages [specsy]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-04 22:27:19] INFO root fetch - processPackages [mo-streams]: New version: [1.624.24125] Old Version: [1.620.24125]
+[2024-05-04 22:27:19] INFO root fetch - processPackages [AlgoGrade]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-04 22:27:19] INFO root fetch - processPackages [specsy]: Downloading https://files.pythonhosted.org/packages/ca/42/127b0b5401776056413802d93e2764f2bc79ec3c645105257b032d51cdad/specsy-0.2.5.tar.gz
+[2024-05-04 22:27:19] INFO root fetch - processPackages [yolo-world-open]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-04 22:27:19] INFO root fetch - processPackages [mo-streams]: Downloading https://files.pythonhosted.org/packages/bd/d6/73f8ea5bfa0239d46b1838ffbe8c0a338755e32807a8239828167a353b63/mo_streams-1.620.24125.tar.gz
+[2024-05-04 22:27:19] INFO root fetch - processPackages [cterasdk]: New version: [2.9.0] Old Version: [2.8.32]
+[2024-05-04 22:27:19] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/33/90/206b7f28a7e746ae76657cb69afe50035d6aff011258781e2ece9766581b/AlgoGrade-1.0.8.tar.gz
+[2024-05-04 22:27:19] INFO root fetch - processPackages [cterasdk]: Downloading https://files.pythonhosted.org/packages/c2/ce/c95746ee47212ba7b5c85fcfa94d1ebbcf4e2531af136ebcc0e3a2e3bf1e/cterasdk-2.8.32.tar.gz
+[2024-05-04 22:27:19] INFO root fetch - processPackages [yolo-world-open]: Downloading https://files.pythonhosted.org/packages/1f/3e/15394944ceee01c68bcdcd7f91f8e800ca9d4a69fb146c4eccfe24de88ac/yolo_world_open-0.2.0.tar.gz
+[2024-05-04 22:27:19] INFO root fetch - processPackages [mo-streams]: Downloading https://files.pythonhosted.org/packages/49/8d/c824fe274d622db6b0a1457dc4c274c6df7ebabb5d25b4945650a7aa9ec2/mo_streams-1.624.24125.tar.gz
+[2024-05-04 22:27:19] INFO root fetch - processPackages [specsy]: Downloading https://files.pythonhosted.org/packages/f1/fe/629f6746adf5cd5c16391b41eb2e61c0ea3a681abe4251b06782f958d918/specsy-0.2.6.tar.gz
+[2024-05-04 22:27:19] INFO root fetch - processPackages [mo-streams]: executing diffoscope
+[2024-05-04 22:27:19] INFO root fetch - processPackages [mo-streams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_streams-1.620.24125.tar.gz tmp/mo_streams-1.624.24125.tar.gz --markdown 20240504/m/mo-streams/1.620.24125-1.624.24125/README.md --exclude *.pyd
+[2024-05-04 22:27:19] INFO root fetch - processPackages [specsy]: executing diffoscope
+[2024-05-04 22:27:19] INFO root fetch - processPackages [specsy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/specsy-0.2.5.tar.gz tmp/specsy-0.2.6.tar.gz --markdown 20240504/s/specsy/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-04 22:27:19] INFO root fetch - processPackages [yolo-world-open]: Downloading https://files.pythonhosted.org/packages/c2/15/f742eb331c43e0e6bd291639abaa3923544b8aea026e9a3681e522d236d7/yolo_world_open-0.3.0.tar.gz
+[2024-05-04 22:27:19] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/f3/8c/50a21ccffcb9d6f18d7b27b3039f1e90a1b91fe9721d89295f083a8bf52c/AlgoGrade-1.0.9.tar.gz
+[2024-05-04 22:27:19] INFO root fetch - processPackages [cterasdk]: Downloading https://files.pythonhosted.org/packages/d4/ab/317328c3787fbc48fb1b583a042be4337d3957d4b83b9eaa386bffe76e02/cterasdk-2.9.0.tar.gz
+[2024-05-04 22:27:20] INFO root fetch - processPackages [AlgoGrade]: executing diffoscope
+[2024-05-04 22:27:20] INFO root fetch - processPackages [AlgoGrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AlgoGrade-1.0.8.tar.gz tmp/AlgoGrade-1.0.9.tar.gz --markdown 20240504/A/AlgoGrade/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-04 22:27:20] INFO root fetch - processPackages [yolo-world-open]: executing diffoscope
+[2024-05-04 22:27:20] INFO root fetch - processPackages [yolo-world-open]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yolo_world_open-0.2.0.tar.gz tmp/yolo_world_open-0.3.0.tar.gz --markdown 20240504/y/yolo-world-open/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-04 22:27:20] INFO root fetch - processPackages [cterasdk]: executing diffoscope
+[2024-05-04 22:27:20] INFO root fetch - processPackages [cterasdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cterasdk-2.8.32.tar.gz tmp/cterasdk-2.9.0.tar.gz --markdown 20240504/c/cterasdk/2.8.32-2.9.0/README.md --exclude *.pyd
+[2024-05-04 22:27:20] INFO root fetch - processPackages [mo-streams]: Remove: archive file [/home/abi/fetcher/tmp/mo_streams-1.620.24125.tar.gz]
+[2024-05-04 22:27:20] INFO root fetch - processPackages [mo-streams]: Remove: archive file [/home/abi/fetcher/tmp/mo_streams-1.624.24125.tar.gz]
+[2024-05-04 22:27:20] INFO root fetch - main [MainThread]: End processing [mo-streams]: success
+[2024-05-04 22:27:20] INFO root fetch - processPackages [specsy]: Remove: archive file [/home/abi/fetcher/tmp/specsy-0.2.5.tar.gz]
+[2024-05-04 22:27:20] INFO root fetch - processPackages [specsy]: Remove: archive file [/home/abi/fetcher/tmp/specsy-0.2.6.tar.gz]
+[2024-05-04 22:27:20] INFO root fetch - main [MainThread]: End processing [specsy]: success
+[2024-05-04 22:27:20] INFO root fetch - processPackages [yolo-world-open]: Remove: archive file [/home/abi/fetcher/tmp/yolo_world_open-0.2.0.tar.gz]
+[2024-05-04 22:27:20] INFO root fetch - processPackages [yolo-world-open]: Remove: archive file [/home/abi/fetcher/tmp/yolo_world_open-0.3.0.tar.gz]
+[2024-05-04 22:27:20] INFO root fetch - main [MainThread]: End processing [yolo-world-open]: success
+[2024-05-04 22:27:20] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.0.8.tar.gz]
+[2024-05-04 22:27:20] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.0.9.tar.gz]
+[2024-05-04 22:27:20] INFO root fetch - main [MainThread]: End processing [AlgoGrade]: success
+[2024-05-04 22:27:21] INFO root fetch - processPackages [cterasdk]: Remove: archive file [/home/abi/fetcher/tmp/cterasdk-2.8.32.tar.gz]
+[2024-05-04 22:27:21] INFO root fetch - processPackages [cterasdk]: Remove: archive file [/home/abi/fetcher/tmp/cterasdk-2.9.0.tar.gz]
+[2024-05-04 22:27:21] INFO root fetch - main [MainThread]: End processing [cterasdk]: success
+[2024-05-04 22:27:21] INFO root fetch - main [MainThread]: Store serial: [23060800]
