@@ -9705,3 +9705,15 @@
 [2024-05-04 07:21:31] INFO root fetch - processPackages [thundra-ai]: Remove: archive file [/home/abi/fetcher/tmp/thundra_ai-0.0.9.tar.gz]
 [2024-05-04 07:21:31] INFO root fetch - main [MainThread]: End processing [thundra-ai]: success
 [2024-05-04 07:21:31] INFO root fetch - main [MainThread]: Store serial: [23055873]
+[2024-05-04 07:23:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055873]
+[2024-05-04 07:23:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 07:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hgraph
+[2024-05-04 07:23:40] INFO root fetch - processPackages [hgraph]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-04 07:23:40] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/da/ad/e83b1d8661a0e583d3a8e4e301911d6797358607dad40d27057574e75081/hgraph-0.2.8.tar.gz
+[2024-05-04 07:23:40] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/22/05/43ea3ada7d538f8592b51d36721d624366793ada729a497eaaff2db9b540/hgraph-0.2.9.tar.gz
+[2024-05-04 07:23:40] INFO root fetch - processPackages [hgraph]: executing diffoscope
+[2024-05-04 07:23:40] INFO root fetch - processPackages [hgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hgraph-0.2.8.tar.gz tmp/hgraph-0.2.9.tar.gz --markdown 20240504/h/hgraph/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-04 07:23:41] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.8.tar.gz]
+[2024-05-04 07:23:41] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.9.tar.gz]
+[2024-05-04 07:23:41] INFO root fetch - main [MainThread]: End processing [hgraph]: success
+[2024-05-04 07:23:41] INFO root fetch - main [MainThread]: Store serial: [23055876]
