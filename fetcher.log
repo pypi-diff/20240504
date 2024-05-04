@@ -20790,3 +20790,23 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:08:53] INFO root fetch - processPackages [xflow-net]: Remove: archive file [/home/abi/fetcher/tmp/xflow-net-0.1.3.tar.gz]
 [2024-05-04 23:08:53] INFO root fetch - main [MainThread]: End processing [xflow-net]: success
 [2024-05-04 23:08:53] INFO root fetch - main [MainThread]: Store serial: [23061012]
+[2024-05-04 23:10:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061012]
+[2024-05-04 23:11:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 23:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jx-sqlite
+[2024-05-04 23:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exectools-vrb
+[2024-05-04 23:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-core
+[2024-05-04 23:11:02] WARNING root fetch - processPackages [exectools-vrb]: Skipping, unable to determine old version
+[2024-05-04 23:11:02] INFO root fetch - main [MainThread]: End processing [exectools-vrb] error
+[2024-05-04 23:11:02] INFO root fetch - processPackages [jx-sqlite]: New version: [5.626.24125] Old Version: [5.607.24116]
+[2024-05-04 23:11:02] INFO root fetch - processPackages [ovos-core]: New version: [0.0.8a94] Old Version: [0.0.8a93]
+[2024-05-04 23:11:02] INFO root fetch - processPackages [jx-sqlite]: Downloading https://files.pythonhosted.org/packages/be/7e/8ee31af2efcdd3ef75148a758f5cc87f1a6d9768a140b1737a931f655096/jx_sqlite-5.607.24116.tar.gz
+[2024-05-04 23:11:02] INFO root fetch - processPackages [ovos-core]: Downloading https://files.pythonhosted.org/packages/1b/88/6478dc4bd16c9c9bffcb382f2b6e326a6cb51b19af9e09c813f5deabf48f/ovos_core-0.0.8a93-py3-none-any.whl
+[2024-05-04 23:11:02] WARNING root fetch - processPackages [ovos-core]: Skipping package: exceeds size limit 18553617>=10485760
+[2024-05-04 23:11:02] INFO root fetch - main [MainThread]: End processing [ovos-core] error
+[2024-05-04 23:11:02] INFO root fetch - processPackages [jx-sqlite]: Downloading https://files.pythonhosted.org/packages/cd/5c/d6b8cdb6e04b7c50103fbe12b08fbf4eb7a69cce558f940d488da24e3ba7/jx_sqlite-5.626.24125.tar.gz
+[2024-05-04 23:11:02] INFO root fetch - processPackages [jx-sqlite]: executing diffoscope
+[2024-05-04 23:11:02] INFO root fetch - processPackages [jx-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jx_sqlite-5.607.24116.tar.gz tmp/jx_sqlite-5.626.24125.tar.gz --markdown 20240504/j/jx-sqlite/5.607.24116-5.626.24125/README.md --exclude *.pyd
+[2024-05-04 23:11:03] INFO root fetch - processPackages [jx-sqlite]: Remove: archive file [/home/abi/fetcher/tmp/jx_sqlite-5.607.24116.tar.gz]
+[2024-05-04 23:11:03] INFO root fetch - processPackages [jx-sqlite]: Remove: archive file [/home/abi/fetcher/tmp/jx_sqlite-5.626.24125.tar.gz]
+[2024-05-04 23:11:03] INFO root fetch - main [MainThread]: End processing [jx-sqlite]: success
+[2024-05-04 23:11:03] INFO root fetch - main [MainThread]: Store serial: [23061021]
