@@ -11435,3 +11435,27 @@
 [2024-05-04 10:02:09] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.6.1.tar.gz]
 [2024-05-04 10:02:09] INFO root fetch - main [MainThread]: End processing [twikit]: success
 [2024-05-04 10:02:09] INFO root fetch - main [MainThread]: Store serial: [23056703]
+[2024-05-04 10:04:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056703]
+[2024-05-04 10:04:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 10:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tree-sitter-css
+[2024-05-04 10:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: evnex
+[2024-05-04 10:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langfun
+[2024-05-04 10:04:18] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240503] Old Version: [0.0.2.dev20240502]
+[2024-05-04 10:04:18] WARNING root fetch - processPackages [tree-sitter-css]: Skipping, unable to determine old version
+[2024-05-04 10:04:18] INFO root fetch - main [MainThread]: End processing [tree-sitter-css] error
+[2024-05-04 10:04:18] INFO root fetch - processPackages [evnex]: New version: [0.4.0a1] Old Version: [0.3.9]
+[2024-05-04 10:04:18] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/39/54/f8578ad7f3636e62b635a2a6a9b0be7be9eb8f06863664255e31fbb4e256/langfun-0.0.2.dev20240502.tar.gz
+[2024-05-04 10:04:18] INFO root fetch - processPackages [evnex]: Downloading https://files.pythonhosted.org/packages/15/d2/9d8b7f43c6d755faf91fd7a83608f656dbff05a0d2a267037e306615e78b/evnex-0.3.9.tar.gz
+[2024-05-04 10:04:19] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/c6/85/8be9bccf0691b2feac6fcf62d8c9b49d537606c7d2eedaf41307a3454d18/langfun-0.0.2.dev20240503.tar.gz
+[2024-05-04 10:04:19] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-05-04 10:04:19] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240502.tar.gz tmp/langfun-0.0.2.dev20240503.tar.gz --markdown 20240504/l/langfun/0.0.2.dev20240502-0.0.2.dev20240503/README.md --exclude *.pyd
+[2024-05-04 10:04:19] INFO root fetch - processPackages [evnex]: Downloading https://files.pythonhosted.org/packages/0e/1d/dc54a6c3cc13b3b54a5f92fa3d35ad4aba1fb07ebe6be70b6b00c1a89627/evnex-0.4.0a1.tar.gz
+[2024-05-04 10:04:19] INFO root fetch - processPackages [evnex]: executing diffoscope
+[2024-05-04 10:04:19] INFO root fetch - processPackages [evnex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evnex-0.3.9.tar.gz tmp/evnex-0.4.0a1.tar.gz --markdown 20240504/e/evnex/0.3.9-0.4.0a1/README.md --exclude *.pyd
+[2024-05-04 10:04:19] INFO root fetch - processPackages [evnex]: Remove: archive file [/home/abi/fetcher/tmp/evnex-0.3.9.tar.gz]
+[2024-05-04 10:04:19] INFO root fetch - processPackages [evnex]: Remove: archive file [/home/abi/fetcher/tmp/evnex-0.4.0a1.tar.gz]
+[2024-05-04 10:04:19] INFO root fetch - main [MainThread]: End processing [evnex]: success
+[2024-05-04 10:04:20] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240502.tar.gz]
+[2024-05-04 10:04:20] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240503.tar.gz]
+[2024-05-04 10:04:20] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-05-04 10:04:20] INFO root fetch - main [MainThread]: Store serial: [23056720]
