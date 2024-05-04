@@ -13532,3 +13532,33 @@
 [2024-05-04 13:26:45] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.3-py3-none-any.whl.zip]
 [2024-05-04 13:26:45] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
 [2024-05-04 13:26:45] INFO root fetch - main [MainThread]: Store serial: [23057699]
+[2024-05-04 13:28:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057699]
+[2024-05-04 13:28:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 13:28:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: acmecse-test
+[2024-05-04 13:28:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TH-camera-calibration
+[2024-05-04 13:28:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: STAIR-tools
+[2024-05-04 13:28:54] INFO root fetch - processPackages [STAIR-tools]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-04 13:28:54] INFO root fetch - processPackages [acmecse-test]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-05-04 13:28:54] INFO root fetch - processPackages [TH-camera-calibration]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-05-04 13:28:54] INFO root fetch - processPackages [acmecse-test]: Downloading https://files.pythonhosted.org/packages/83/c7/8079f1a0ff34e30ee02bc2b22b749824103789dd73e1354f4f728e7f6686/acmecse_test-2024.4.8-py3-none-any.whl
+[2024-05-04 13:28:54] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/ff/ae/83f41b628b5793d382a53085aa085b5ae7f79c6bc6ddcffb24cc69499264/STAIR-tools-1.1.8.tar.gz
+[2024-05-04 13:28:54] INFO root fetch - processPackages [TH-camera-calibration]: Downloading https://files.pythonhosted.org/packages/e7/60/47506ece8107e603af5856d8fb2961478c4f925ced0af2e041afccbcf775/TH_camera_calibration-0.4.6.tar.gz
+[2024-05-04 13:28:54] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/74/eb/8ee770b8afd9281320fe1bceeb1715aa6a38e65aed7e66e556f7c8822913/STAIR-tools-1.1.9.tar.gz
+[2024-05-04 13:28:54] INFO root fetch - processPackages [acmecse-test]: Downloading https://files.pythonhosted.org/packages/98/16/773da797873f8244cf7d50979913aea9c6125ce94e470fa94154f776bbc5/acmecse_test-2024.4.9-py3-none-any.whl
+[2024-05-04 13:28:54] INFO root fetch - processPackages [STAIR-tools]: executing diffoscope
+[2024-05-04 13:28:54] INFO root fetch - processPackages [STAIR-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAIR-tools-1.1.8.tar.gz tmp/STAIR-tools-1.1.9.tar.gz --markdown 20240504/S/STAIR-tools/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-04 13:28:54] INFO root fetch - processPackages [TH-camera-calibration]: Downloading https://files.pythonhosted.org/packages/fa/a5/70cf0f8f9b6eec0c1c8a82e82ce37a49e6ed6dbc0f41e670e295e89d8aba/TH_camera_calibration-0.4.7.tar.gz
+[2024-05-04 13:28:54] INFO root fetch - processPackages [acmecse-test]: executing diffoscope
+[2024-05-04 13:28:54] INFO root fetch - processPackages [acmecse-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acmecse_test-2024.4.8-py3-none-any.whl.zip tmp/acmecse_test-2024.4.9-py3-none-any.whl.zip --markdown 20240504/a/acmecse-test/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-05-04 13:28:55] INFO root fetch - processPackages [TH-camera-calibration]: executing diffoscope
+[2024-05-04 13:28:55] INFO root fetch - processPackages [TH-camera-calibration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TH_camera_calibration-0.4.6.tar.gz tmp/TH_camera_calibration-0.4.7.tar.gz --markdown 20240504/T/TH-camera-calibration/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-05-04 13:28:55] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.8.tar.gz]
+[2024-05-04 13:28:55] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.9.tar.gz]
+[2024-05-04 13:28:55] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
+[2024-05-04 13:28:55] INFO root fetch - processPackages [TH-camera-calibration]: Remove: archive file [/home/abi/fetcher/tmp/TH_camera_calibration-0.4.6.tar.gz]
+[2024-05-04 13:28:55] INFO root fetch - processPackages [TH-camera-calibration]: Remove: archive file [/home/abi/fetcher/tmp/TH_camera_calibration-0.4.7.tar.gz]
+[2024-05-04 13:28:55] INFO root fetch - main [MainThread]: End processing [TH-camera-calibration]: success
+[2024-05-04 13:28:55] INFO root fetch - processPackages [acmecse-test]: Remove: archive file [/home/abi/fetcher/tmp/acmecse_test-2024.4.8-py3-none-any.whl.zip]
+[2024-05-04 13:28:55] INFO root fetch - processPackages [acmecse-test]: Remove: archive file [/home/abi/fetcher/tmp/acmecse_test-2024.4.9-py3-none-any.whl.zip]
+[2024-05-04 13:28:55] INFO root fetch - main [MainThread]: End processing [acmecse-test]: success
+[2024-05-04 13:28:55] INFO root fetch - main [MainThread]: Store serial: [23057711]
