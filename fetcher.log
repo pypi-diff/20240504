@@ -16404,3 +16404,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:47:02] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.6.tar.gz]
 [2024-05-04 17:47:02] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-04 17:47:02] INFO root fetch - main [MainThread]: Store serial: [23059002]
+[2024-05-04 17:49:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059002]
+[2024-05-04 17:49:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 17:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stac-fastapi.mongo
+[2024-05-04 17:49:11] INFO root fetch - processPackages [stac-fastapi.mongo]: New version: [3.2.0] Old Version: [3.1.0]
+[2024-05-04 17:49:11] INFO root fetch - processPackages [stac-fastapi.mongo]: Downloading https://files.pythonhosted.org/packages/8d/8a/a7170b07452386ab6f28cb9e0e08095ff6f8dd94552cb36d080f4d39cefb/stac_fastapi_mongo-3.1.0.tar.gz
+[2024-05-04 17:49:12] INFO root fetch - processPackages [stac-fastapi.mongo]: Downloading https://files.pythonhosted.org/packages/9d/46/68a60093a14f9bbad3acbd03b44ea43ded8b0945297ee7b30886bce57976/stac_fastapi_mongo-3.2.0.tar.gz
+[2024-05-04 17:49:12] INFO root fetch - processPackages [stac-fastapi.mongo]: executing diffoscope
+[2024-05-04 17:49:12] INFO root fetch - processPackages [stac-fastapi.mongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stac_fastapi_mongo-3.1.0.tar.gz tmp/stac_fastapi_mongo-3.2.0.tar.gz --markdown 20240504/s/stac-fastapi.mongo/3.1.0-3.2.0/README.md --exclude *.pyd
+[2024-05-04 17:49:12] INFO root fetch - processPackages [stac-fastapi.mongo]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_mongo-3.1.0.tar.gz]
+[2024-05-04 17:49:12] INFO root fetch - processPackages [stac-fastapi.mongo]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_mongo-3.2.0.tar.gz]
+[2024-05-04 17:49:12] INFO root fetch - main [MainThread]: End processing [stac-fastapi.mongo]: success
+[2024-05-04 17:49:12] INFO root fetch - main [MainThread]: Store serial: [23059005]
