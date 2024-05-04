@@ -13726,3 +13726,42 @@
 [2024-05-04 13:48:12] INFO root fetch - processPackages [calldict]: Remove: archive file [/home/abi/fetcher/tmp/calldict-0.7.tar.gz]
 [2024-05-04 13:48:12] INFO root fetch - main [MainThread]: End processing [calldict]: success
 [2024-05-04 13:48:12] INFO root fetch - main [MainThread]: Store serial: [23057766]
+[2024-05-04 13:50:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057766]
+[2024-05-04 13:50:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 13:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CustomTkinterTitlebar
+[2024-05-04 13:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pcffont
+[2024-05-04 13:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: setux-core
+[2024-05-04 13:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: setux
+[2024-05-04 13:50:21] INFO root fetch - processPackages [CustomTkinterTitlebar]: New version: [1.0.8.3] Old Version: [1.0.8.2]
+[2024-05-04 13:50:21] INFO root fetch - processPackages [CustomTkinterTitlebar]: Downloading https://files.pythonhosted.org/packages/4d/8f/1847c2a82a8bf65bf0b6013cd78d647af5b4c3da128ea7226ae3946180c2/CustomTkinterTitlebar-1.0.8.2.tar.gz
+[2024-05-04 13:50:21] INFO root fetch - processPackages [pcffont]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-04 13:50:21] INFO root fetch - processPackages [setux-core]: New version: [0.4.0] Old Version: [0.3.5]
+[2024-05-04 13:50:21] INFO root fetch - processPackages [setux]: New version: [0.6.3.1] Old Version: [0.6.3.0]
+[2024-05-04 13:50:21] INFO root fetch - processPackages [pcffont]: Downloading https://files.pythonhosted.org/packages/a3/bf/77177c9c402abe5b436afd456890bdbf60e5a7e7b75a552ba97f32d7989b/pcffont-0.0.6.tar.gz
+[2024-05-04 13:50:21] INFO root fetch - processPackages [setux-core]: Downloading https://files.pythonhosted.org/packages/07/0a/b0f125d0ea0fb024a5a25895fb9ec8cbd58d601a9544621a3b97e8ea5651/setux_core-0.3.5.tar.gz
+[2024-05-04 13:50:21] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/2f/49/91934bd9aee6533448fdf391683c7a735a63a59ad2cf2563b52b98ad4201/setux-0.6.3.0.tar.gz
+[2024-05-04 13:50:22] INFO root fetch - processPackages [CustomTkinterTitlebar]: Downloading https://files.pythonhosted.org/packages/56/4c/b534c24667036924a10a1d0e4ddd84b6a75e64568bb9b1d73ef5b2cce789/customtkintertitlebar-1.0.8.3.tar.gz
+[2024-05-04 13:50:22] INFO root fetch - processPackages [CustomTkinterTitlebar]: executing diffoscope
+[2024-05-04 13:50:22] INFO root fetch - processPackages [CustomTkinterTitlebar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CustomTkinterTitlebar-1.0.8.2.tar.gz tmp/customtkintertitlebar-1.0.8.3.tar.gz --markdown 20240504/C/CustomTkinterTitlebar/1.0.8.2-1.0.8.3/README.md --exclude *.pyd
+[2024-05-04 13:50:22] INFO root fetch - processPackages [setux-core]: Downloading https://files.pythonhosted.org/packages/ed/77/65720bbda554ab48f737d9ea9e1bf46b03caba7bea3fc61056ef42ecce6a/setux_core-0.4.0.tar.gz
+[2024-05-04 13:50:22] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/ad/0f/ea659bb0a2030b085f60069b2fb29d1dc322f7444f95eaa97478e78035e2/setux-0.6.3.1.tar.gz
+[2024-05-04 13:50:22] INFO root fetch - processPackages [setux-core]: executing diffoscope
+[2024-05-04 13:50:22] INFO root fetch - processPackages [setux-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux_core-0.3.5.tar.gz tmp/setux_core-0.4.0.tar.gz --markdown 20240504/s/setux-core/0.3.5-0.4.0/README.md --exclude *.pyd
+[2024-05-04 13:50:22] INFO root fetch - processPackages [setux]: executing diffoscope
+[2024-05-04 13:50:22] INFO root fetch - processPackages [setux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux-0.6.3.0.tar.gz tmp/setux-0.6.3.1.tar.gz --markdown 20240504/s/setux/0.6.3.0-0.6.3.1/README.md --exclude *.pyd
+[2024-05-04 13:50:22] INFO root fetch - processPackages [CustomTkinterTitlebar]: Remove: archive file [/home/abi/fetcher/tmp/CustomTkinterTitlebar-1.0.8.2.tar.gz]
+[2024-05-04 13:50:22] INFO root fetch - processPackages [CustomTkinterTitlebar]: Remove: archive file [/home/abi/fetcher/tmp/customtkintertitlebar-1.0.8.3.tar.gz]
+[2024-05-04 13:50:22] INFO root fetch - main [MainThread]: End processing [CustomTkinterTitlebar]: success
+[2024-05-04 13:50:22] INFO root fetch - processPackages [pcffont]: Downloading https://files.pythonhosted.org/packages/8f/65/c5a79f96f3fb90276c59162aeffa250d4afc055e628f150f637b57290373/pcffont-0.0.7.tar.gz
+[2024-05-04 13:50:22] INFO root fetch - processPackages [pcffont]: executing diffoscope
+[2024-05-04 13:50:22] INFO root fetch - processPackages [pcffont]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcffont-0.0.6.tar.gz tmp/pcffont-0.0.7.tar.gz --markdown 20240504/p/pcffont/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-04 13:50:23] INFO root fetch - processPackages [setux]: Remove: archive file [/home/abi/fetcher/tmp/setux-0.6.3.0.tar.gz]
+[2024-05-04 13:50:23] INFO root fetch - processPackages [setux]: Remove: archive file [/home/abi/fetcher/tmp/setux-0.6.3.1.tar.gz]
+[2024-05-04 13:50:23] INFO root fetch - main [MainThread]: End processing [setux]: success
+[2024-05-04 13:50:23] INFO root fetch - processPackages [setux-core]: Remove: archive file [/home/abi/fetcher/tmp/setux_core-0.3.5.tar.gz]
+[2024-05-04 13:50:23] INFO root fetch - processPackages [setux-core]: Remove: archive file [/home/abi/fetcher/tmp/setux_core-0.4.0.tar.gz]
+[2024-05-04 13:50:23] INFO root fetch - main [MainThread]: End processing [setux-core]: success
+[2024-05-04 13:50:23] INFO root fetch - processPackages [pcffont]: Remove: archive file [/home/abi/fetcher/tmp/pcffont-0.0.6.tar.gz]
+[2024-05-04 13:50:23] INFO root fetch - processPackages [pcffont]: Remove: archive file [/home/abi/fetcher/tmp/pcffont-0.0.7.tar.gz]
+[2024-05-04 13:50:23] INFO root fetch - main [MainThread]: End processing [pcffont]: success
+[2024-05-04 13:50:23] INFO root fetch - main [MainThread]: Store serial: [23057778]
