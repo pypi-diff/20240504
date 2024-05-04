@@ -2251,3 +2251,23 @@
 [2024-05-04 02:22:04] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
 [2024-05-04 02:22:04] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
 [2024-05-04 02:22:04] INFO root fetch - main [MainThread]: Store serial: [23053005]
+[2024-05-04 02:24:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053005]
+[2024-05-04 02:24:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 02:24:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NEURON-nightly
+[2024-05-04 02:24:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pivol
+[2024-05-04 02:24:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-certbot-dns-route53
+[2024-05-04 02:24:13] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-05-04 02:24:13] WARNING root fetch - processPackages [pivol]: Skipping, unable to determine old version
+[2024-05-04 02:24:13] INFO root fetch - main [MainThread]: End processing [pivol] error
+[2024-05-04 02:24:13] INFO root fetch - processPackages [NEURON-nightly]: New version: [9.0a1.dev236] Old Version: [9.0a1.dev235]
+[2024-05-04 02:24:13] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-05-04 02:24:13] INFO root fetch - processPackages [NEURON-nightly]: Downloading https://files.pythonhosted.org/packages/84/0b/bbc50d46b6775b0c605d64f8fe35b3a8eb357ad1ff391d3eb1d6d0918a7c/NEURON_nightly-9.0a1.dev235-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-04 02:24:13] WARNING root fetch - processPackages [NEURON-nightly]: Skipping package: exceeds size limit 26078968>=10485760
+[2024-05-04 02:24:13] INFO root fetch - main [MainThread]: End processing [NEURON-nightly] error
+[2024-05-04 02:24:13] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-05-04 02:24:13] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-05-04 02:24:13] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240504/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-05-04 02:24:14] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-05-04 02:24:14] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-05-04 02:24:14] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-05-04 02:24:14] INFO root fetch - main [MainThread]: Store serial: [23053018]
