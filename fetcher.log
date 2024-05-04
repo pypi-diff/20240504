@@ -14268,3 +14268,33 @@
 [2024-05-04 14:42:28] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
 [2024-05-04 14:42:28] INFO root fetch - main [MainThread]: End processing [flatpack]: success
 [2024-05-04 14:42:28] INFO root fetch - main [MainThread]: Store serial: [23058030]
+[2024-05-04 14:44:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058030]
+[2024-05-04 14:44:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 14:44:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TrainingAnimation
+[2024-05-04 14:44:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DrissionPage
+[2024-05-04 14:44:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mptradelib
+[2024-05-04 14:44:37] INFO root fetch - processPackages [TrainingAnimation]: New version: [0.0.11] Old Version: [0.0.10]
+[2024-05-04 14:44:37] INFO root fetch - processPackages [mptradelib]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-04 14:44:37] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/eb/7b/4c2e8c12a1eec8de1f0e064c4e8e71999596152bcc4c59d92d49ff45fa49/mptradelib-0.3.6.tar.gz
+[2024-05-04 14:44:37] INFO root fetch - processPackages [DrissionPage]: New version: [4.0.4.9] Old Version: [4.0.4.8]
+[2024-05-04 14:44:37] INFO root fetch - processPackages [TrainingAnimation]: Downloading https://files.pythonhosted.org/packages/90/76/309f89486f95009445154e84007c13dcb57aaa45b529e08dd1b2b677414d/TrainingAnimation-0.0.10.tar.gz
+[2024-05-04 14:44:37] INFO root fetch - processPackages [DrissionPage]: Downloading https://files.pythonhosted.org/packages/56/a7/6e4cb2fc6c3d98ce7aa86af28784841a513088d9d8ba11cbff686e0f994c/DrissionPage-4.0.4.8.tar.gz
+[2024-05-04 14:44:37] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/9a/46/a91961d5ba5cd291dc8747e6dcd447317b69a825c0ec4e276280e99bf54b/mptradelib-0.3.7.tar.gz
+[2024-05-04 14:44:37] INFO root fetch - processPackages [TrainingAnimation]: Downloading https://files.pythonhosted.org/packages/4c/fb/52c59732db971a22987a0d72ed1da29f8aacdb8e5215be7dbe2e145487ba/TrainingAnimation-0.0.11.tar.gz
+[2024-05-04 14:44:38] INFO root fetch - processPackages [mptradelib]: executing diffoscope
+[2024-05-04 14:44:38] INFO root fetch - processPackages [mptradelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mptradelib-0.3.6.tar.gz tmp/mptradelib-0.3.7.tar.gz --markdown 20240504/m/mptradelib/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-04 14:44:38] INFO root fetch - processPackages [TrainingAnimation]: executing diffoscope
+[2024-05-04 14:44:38] INFO root fetch - processPackages [TrainingAnimation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrainingAnimation-0.0.10.tar.gz tmp/TrainingAnimation-0.0.11.tar.gz --markdown 20240504/T/TrainingAnimation/0.0.10-0.0.11/README.md --exclude *.pyd
+[2024-05-04 14:44:38] INFO root fetch - processPackages [DrissionPage]: Downloading https://files.pythonhosted.org/packages/9d/f5/ef025d988ab04091ffbbe8f73491f01e59a564075bd77921ca75a467637c/DrissionPage-4.0.4.9.tar.gz
+[2024-05-04 14:44:38] INFO root fetch - processPackages [DrissionPage]: executing diffoscope
+[2024-05-04 14:44:38] INFO root fetch - processPackages [DrissionPage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DrissionPage-4.0.4.8.tar.gz tmp/DrissionPage-4.0.4.9.tar.gz --markdown 20240504/D/DrissionPage/4.0.4.8-4.0.4.9/README.md --exclude *.pyd
+[2024-05-04 14:44:38] INFO root fetch - processPackages [TrainingAnimation]: Remove: archive file [/home/abi/fetcher/tmp/TrainingAnimation-0.0.10.tar.gz]
+[2024-05-04 14:44:38] INFO root fetch - processPackages [TrainingAnimation]: Remove: archive file [/home/abi/fetcher/tmp/TrainingAnimation-0.0.11.tar.gz]
+[2024-05-04 14:44:38] INFO root fetch - main [MainThread]: End processing [TrainingAnimation]: success
+[2024-05-04 14:44:38] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.6.tar.gz]
+[2024-05-04 14:44:38] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.7.tar.gz]
+[2024-05-04 14:44:38] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
+[2024-05-04 14:44:39] INFO root fetch - processPackages [DrissionPage]: Remove: archive file [/home/abi/fetcher/tmp/DrissionPage-4.0.4.8.tar.gz]
+[2024-05-04 14:44:39] INFO root fetch - processPackages [DrissionPage]: Remove: archive file [/home/abi/fetcher/tmp/DrissionPage-4.0.4.9.tar.gz]
+[2024-05-04 14:44:39] INFO root fetch - main [MainThread]: End processing [DrissionPage]: success
+[2024-05-04 14:44:39] INFO root fetch - main [MainThread]: Store serial: [23058039]
