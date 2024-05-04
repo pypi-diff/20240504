@@ -9427,3 +9427,15 @@
 [2024-05-04 07:01:53] INFO root fetch - processPackages [zeblok-sdk]: Remove: archive file [/home/abi/fetcher/tmp/zeblok_sdk-1.1.0.tar.gz]
 [2024-05-04 07:01:53] INFO root fetch - main [MainThread]: End processing [zeblok-sdk]: success
 [2024-05-04 07:01:53] INFO root fetch - main [MainThread]: Store serial: [23055781]
+[2024-05-04 07:03:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055781]
+[2024-05-04 07:04:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 07:04:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fast-dev-cli
+[2024-05-04 07:04:02] INFO root fetch - processPackages [fast-dev-cli]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-04 07:04:02] INFO root fetch - processPackages [fast-dev-cli]: Downloading https://files.pythonhosted.org/packages/8e/30/1982cdcc4aa0c639fed4120b723a343987ac1db320183785da42330b209b/fast_dev_cli-0.7.0.tar.gz
+[2024-05-04 07:04:03] INFO root fetch - processPackages [fast-dev-cli]: Downloading https://files.pythonhosted.org/packages/3a/8f/8d6843a010c060557916aeff6cd816c4bdd23dba4febcf014bf065c428a3/fast_dev_cli-0.7.1.tar.gz
+[2024-05-04 07:04:03] INFO root fetch - processPackages [fast-dev-cli]: executing diffoscope
+[2024-05-04 07:04:03] INFO root fetch - processPackages [fast-dev-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_dev_cli-0.7.0.tar.gz tmp/fast_dev_cli-0.7.1.tar.gz --markdown 20240504/f/fast-dev-cli/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-04 07:04:03] INFO root fetch - processPackages [fast-dev-cli]: Remove: archive file [/home/abi/fetcher/tmp/fast_dev_cli-0.7.0.tar.gz]
+[2024-05-04 07:04:03] INFO root fetch - processPackages [fast-dev-cli]: Remove: archive file [/home/abi/fetcher/tmp/fast_dev_cli-0.7.1.tar.gz]
+[2024-05-04 07:04:03] INFO root fetch - main [MainThread]: End processing [fast-dev-cli]: success
+[2024-05-04 07:04:03] INFO root fetch - main [MainThread]: Store serial: [23055784]
