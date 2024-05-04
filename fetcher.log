@@ -14651,3 +14651,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:19:46] INFO root fetch - processPackages [SAMBA-ilum]: Remove: archive file [/home/abi/fetcher/tmp/SAMBA_ilum-1.0.0.8.tar.gz]
 [2024-05-04 15:19:46] INFO root fetch - main [MainThread]: End processing [SAMBA-ilum]: success
 [2024-05-04 15:19:46] INFO root fetch - main [MainThread]: Store serial: [23058123]
+[2024-05-04 15:21:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058123]
+[2024-05-04 15:21:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 15:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tapo
+[2024-05-04 15:21:55] INFO root fetch - processPackages [tapo]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-04 15:21:55] INFO root fetch - processPackages [tapo]: Downloading https://files.pythonhosted.org/packages/80/1b/185f880b25b70866b8efa16a2759d4e8c1b65f85afd9a7fafec55b88f157/tapo-0.2.1.tar.gz
+[2024-05-04 15:21:55] INFO root fetch - processPackages [tapo]: Downloading https://files.pythonhosted.org/packages/4b/5e/24f7708e050da49dae8b394498d71646598f4b265bb2110295a587b09d3b/tapo-0.3.0-pp39-pypy39_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl
+[2024-05-04 15:21:57] INFO root fetch - processPackages [tapo]: executing diffoscope
+[2024-05-04 15:21:57] INFO root fetch - processPackages [tapo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tapo-0.2.1.tar.gz tmp/tapo-0.3.0-pp39-pypy39_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip --markdown 20240504/t/tapo/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-04 15:21:58] INFO root fetch - processPackages [tapo]: Remove: archive file [/home/abi/fetcher/tmp/tapo-0.2.1.tar.gz]
+[2024-05-04 15:21:58] INFO root fetch - processPackages [tapo]: Remove: archive file [/home/abi/fetcher/tmp/tapo-0.3.0-pp39-pypy39_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
+[2024-05-04 15:21:58] INFO root fetch - main [MainThread]: End processing [tapo]: success
+[2024-05-04 15:21:58] INFO root fetch - main [MainThread]: Store serial: [23058165]
