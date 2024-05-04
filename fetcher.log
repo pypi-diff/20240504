@@ -17027,3 +17027,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:33:29] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.99.tar.gz]
 [2024-05-04 18:33:29] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
 [2024-05-04 18:33:29] INFO root fetch - main [MainThread]: Store serial: [23059298]
+[2024-05-04 18:35:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059298]
+[2024-05-04 18:35:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 18:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-dragonfly
+[2024-05-04 18:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-memoize
+[2024-05-04 18:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: linear-regression-model
+[2024-05-04 18:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: color-transfer-py
+[2024-05-04 18:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlclasses
+[2024-05-04 18:35:38] INFO root fetch - processPackages [color-transfer-py]: New version: [0.0.3] Old Version: [0.0.1]
+[2024-05-04 18:35:38] INFO root fetch - processPackages [py-memoize]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-04 18:35:38] INFO root fetch - processPackages [py-memoize]: Downloading https://files.pythonhosted.org/packages/17/96/e76250eac9aed2604080e07548b1e712aed75ae705b793a27aa9967eefff/py-memoize-1.2.1.tar.gz
+[2024-05-04 18:35:38] WARNING root fetch - processPackages [linear-regression-model]: Skipping, unable to determine old version
+[2024-05-04 18:35:38] INFO root fetch - main [MainThread]: End processing [linear-regression-model] error
+[2024-05-04 18:35:38] INFO root fetch - processPackages [sqlclasses]: New version: [1.1] Old Version: [1.0]
+[2024-05-04 18:35:38] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-05-04 18:35:38] INFO root fetch - processPackages [color-transfer-py]: Downloading https://files.pythonhosted.org/packages/f7/28/d45bd75c5b616a1ea4232c9e36b71c77c6faa8698211933eeecfa9aca55a/color_transfer_py-0.0.1.tar.gz
+[2024-05-04 18:35:38] INFO root fetch - processPackages [sqlclasses]: Downloading https://files.pythonhosted.org/packages/80/29/7057a9dde2890f26f36ac8d916070dbf1e18306394c9bcd6006adc795d1d/sqlclasses-1.0.tar.gz
+[2024-05-04 18:35:38] INFO root fetch - processPackages [py-memoize]: Downloading https://files.pythonhosted.org/packages/b7/07/9c5c284346e926a6bf184f52754147c8c12d934ffe68a78823f1411bf370/py-memoize-1.2.2.tar.gz
+[2024-05-04 18:35:38] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-05-04 18:35:39] INFO root fetch - processPackages [py-memoize]: executing diffoscope
+[2024-05-04 18:35:39] INFO root fetch - processPackages [py-memoize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-memoize-1.2.1.tar.gz tmp/py-memoize-1.2.2.tar.gz --markdown 20240504/p/py-memoize/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-04 18:35:39] INFO root fetch - processPackages [color-transfer-py]: Downloading https://files.pythonhosted.org/packages/8b/5f/6c45639848b9d48dd762b51ea791bb74dcd4b5e1ff3f8518bc21468a8796/color_transfer_py-0.0.3.tar.gz
+[2024-05-04 18:35:39] INFO root fetch - processPackages [color-transfer-py]: executing diffoscope
+[2024-05-04 18:35:39] INFO root fetch - processPackages [color-transfer-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/color_transfer_py-0.0.1.tar.gz tmp/color_transfer_py-0.0.3.tar.gz --markdown 20240504/c/color-transfer-py/0.0.1-0.0.3/README.md --exclude *.pyd
+[2024-05-04 18:35:39] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-05-04 18:35:39] INFO root fetch - processPackages [sqlclasses]: Downloading https://files.pythonhosted.org/packages/a0/9d/ccec46de6c3c46b35250cd848d3c959042db65bc963fb7a20aabbc320335/sqlclasses-1.1.tar.gz
+[2024-05-04 18:35:39] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-05-04 18:35:39] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240504/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-05-04 18:35:39] INFO root fetch - processPackages [py-memoize]: Remove: archive file [/home/abi/fetcher/tmp/py-memoize-1.2.1.tar.gz]
+[2024-05-04 18:35:39] INFO root fetch - processPackages [py-memoize]: Remove: archive file [/home/abi/fetcher/tmp/py-memoize-1.2.2.tar.gz]
+[2024-05-04 18:35:39] INFO root fetch - main [MainThread]: End processing [py-memoize]: success
+[2024-05-04 18:35:39] INFO root fetch - processPackages [color-transfer-py]: Remove: archive file [/home/abi/fetcher/tmp/color_transfer_py-0.0.1.tar.gz]
+[2024-05-04 18:35:39] INFO root fetch - processPackages [color-transfer-py]: Remove: archive file [/home/abi/fetcher/tmp/color_transfer_py-0.0.3.tar.gz]
+[2024-05-04 18:35:39] INFO root fetch - main [MainThread]: End processing [color-transfer-py]: success
+[2024-05-04 18:35:39] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-05-04 18:35:39] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-05-04 18:35:39] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-05-04 18:35:40] INFO root fetch - processPackages [sqlclasses]: executing diffoscope
+[2024-05-04 18:35:40] INFO root fetch - processPackages [sqlclasses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlclasses-1.0.tar.gz tmp/sqlclasses-1.1.tar.gz --markdown 20240504/s/sqlclasses/1.0-1.1/README.md --exclude *.pyd
+[2024-05-04 18:35:40] INFO root fetch - processPackages [sqlclasses]: Remove: archive file [/home/abi/fetcher/tmp/sqlclasses-1.0.tar.gz]
+[2024-05-04 18:35:40] INFO root fetch - processPackages [sqlclasses]: Remove: archive file [/home/abi/fetcher/tmp/sqlclasses-1.1.tar.gz]
+[2024-05-04 18:35:40] INFO root fetch - main [MainThread]: End processing [sqlclasses]: success
+[2024-05-04 18:35:40] INFO root fetch - main [MainThread]: Store serial: [23059311]
