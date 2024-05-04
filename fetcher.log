@@ -12553,3 +12553,12 @@
 [2024-05-04 11:50:56] INFO root fetch - processPackages [agentic_security]: Remove: archive file [/home/abi/fetcher/tmp/agentic_security-0.1.4.tar.gz]
 [2024-05-04 11:50:56] INFO root fetch - main [MainThread]: End processing [agentic_security]: success
 [2024-05-04 11:50:56] INFO root fetch - main [MainThread]: Store serial: [23057326]
+[2024-05-04 11:52:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057326]
+[2024-05-04 11:53:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 11:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soundstorm-superfeel
+[2024-05-04 11:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: soundstorm-superfeel
+[2024-05-04 11:53:05] WARNING root fetch - processPackages [soundstorm-superfeel]: Skipping, unable to determine old version
+[2024-05-04 11:53:05] INFO root fetch - main [MainThread]: End processing [soundstorm-superfeel] error
+[2024-05-04 11:53:05] WARNING root fetch - processPackages [soundstorm-superfeel]: Skipping, unable to determine old version
+[2024-05-04 11:53:05] INFO root fetch - main [MainThread]: End processing [soundstorm-superfeel] error
+[2024-05-04 11:53:05] INFO root fetch - main [MainThread]: Store serial: [23057338]
