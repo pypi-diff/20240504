@@ -14158,3 +14158,29 @@
 [2024-05-04 14:33:47] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.88.0.tar.gz]
 [2024-05-04 14:33:47] INFO root fetch - main [MainThread]: End processing [BioSAK]: success
 [2024-05-04 14:33:47] INFO root fetch - main [MainThread]: Store serial: [23057989]
+[2024-05-04 14:35:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057989]
+[2024-05-04 14:35:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 14:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openslide-bin
+[2024-05-04 14:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exciton
+[2024-05-04 14:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asyncAminoLab
+[2024-05-04 14:35:56] INFO root fetch - processPackages [exciton]: New version: [2.5.5] Old Version: [2.5.3]
+[2024-05-04 14:35:56] INFO root fetch - processPackages [asyncAminoLab]: New version: [1.2] Old Version: [1.1]
+[2024-05-04 14:35:56] INFO root fetch - processPackages [asyncAminoLab]: Downloading https://files.pythonhosted.org/packages/ca/b4/9110e9ed7ef271cd57ecb770fd9a6ba5c639661dd60896827b23641b8b3b/asyncAminoLab-1.1.tar.gz
+[2024-05-04 14:35:56] INFO root fetch - processPackages [openslide-bin]: New version: [4.0.0.3] Old Version: [4.0.0.2]
+[2024-05-04 14:35:56] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/0b/56/41df22f5177221d6dfe9f5c29c8da9fea1bc92e1553e6b1cb9d58eb740df/exciton-2.5.3-py3-none-any.whl
+[2024-05-04 14:35:56] INFO root fetch - processPackages [openslide-bin]: Downloading https://files.pythonhosted.org/packages/ad/6c/357203f7eb8042720b4b16e664236c1911f8a4beb1099af77b4f923f5300/openslide-bin-4.0.0.2.tar.gz
+[2024-05-04 14:35:56] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/31/30/4b0fe29a20b5f9b19e7ddda8d2cf563817ef11aa1f04b95366c8f667b52a/exciton-2.5.5-py3-none-any.whl
+[2024-05-04 14:35:56] INFO root fetch - processPackages [asyncAminoLab]: Downloading https://files.pythonhosted.org/packages/a4/91/f7761833494b9cca43e19afc274f06523cf6b53be1a18137cfb561b5e2e6/asyncAminoLab-1.2.tar.gz
+[2024-05-04 14:35:56] WARNING root fetch - processPackages [openslide-bin]: Skipping package: exceeds size limit 93369632>=10485760
+[2024-05-04 14:35:56] INFO root fetch - main [MainThread]: End processing [openslide-bin] error
+[2024-05-04 14:35:56] INFO root fetch - processPackages [exciton]: executing diffoscope
+[2024-05-04 14:35:56] INFO root fetch - processPackages [exciton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exciton-2.5.3-py3-none-any.whl.zip tmp/exciton-2.5.5-py3-none-any.whl.zip --markdown 20240504/e/exciton/2.5.3-2.5.5/README.md --exclude *.pyd
+[2024-05-04 14:35:57] INFO root fetch - processPackages [asyncAminoLab]: executing diffoscope
+[2024-05-04 14:35:57] INFO root fetch - processPackages [asyncAminoLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncAminoLab-1.1.tar.gz tmp/asyncAminoLab-1.2.tar.gz --markdown 20240504/a/asyncAminoLab/1.1-1.2/README.md --exclude *.pyd
+[2024-05-04 14:35:57] INFO root fetch - processPackages [asyncAminoLab]: Remove: archive file [/home/abi/fetcher/tmp/asyncAminoLab-1.1.tar.gz]
+[2024-05-04 14:35:57] INFO root fetch - processPackages [asyncAminoLab]: Remove: archive file [/home/abi/fetcher/tmp/asyncAminoLab-1.2.tar.gz]
+[2024-05-04 14:35:57] INFO root fetch - main [MainThread]: End processing [asyncAminoLab]: success
+[2024-05-04 14:35:57] INFO root fetch - processPackages [exciton]: Remove: archive file [/home/abi/fetcher/tmp/exciton-2.5.3-py3-none-any.whl.zip]
+[2024-05-04 14:35:57] INFO root fetch - processPackages [exciton]: Remove: archive file [/home/abi/fetcher/tmp/exciton-2.5.5-py3-none-any.whl.zip]
+[2024-05-04 14:35:57] INFO root fetch - main [MainThread]: End processing [exciton]: success
+[2024-05-04 14:35:57] INFO root fetch - main [MainThread]: Store serial: [23057999]
