@@ -17125,3 +17125,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:37:50] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.6.dev2.tar.gz]
 [2024-05-04 18:37:50] INFO root fetch - main [MainThread]: End processing [psyke]: success
 [2024-05-04 18:37:50] INFO root fetch - main [MainThread]: Store serial: [23059334]
+[2024-05-04 18:39:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059334]
+[2024-05-04 18:39:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 18:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-dragonfly
+[2024-05-04 18:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: name-generator-nicomp
+[2024-05-04 18:39:59] INFO root fetch - processPackages [name-generator-nicomp]: New version: [1.0.6] Old Version: [1.0.4]
+[2024-05-04 18:39:59] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-05-04 18:39:59] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/f8/c5/90a5c2ac6999527fa3a8efc8058e22ed84c94877277321d89078dcbc087c/name_generator_nicomp-1.0.4.tar.gz
+[2024-05-04 18:39:59] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-05-04 18:39:59] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-05-04 18:39:59] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-05-04 18:39:59] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240504/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-05-04 18:39:59] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/89/21/e52b15f9936776f948786826a91a19833842ee3b238b10555b90bc98547e/name_generator_nicomp-1.0.6.tar.gz
+[2024-05-04 18:39:59] INFO root fetch - processPackages [name-generator-nicomp]: executing diffoscope
+[2024-05-04 18:39:59] INFO root fetch - processPackages [name-generator-nicomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/name_generator_nicomp-1.0.4.tar.gz tmp/name_generator_nicomp-1.0.6.tar.gz --markdown 20240504/n/name-generator-nicomp/1.0.4-1.0.6/README.md --exclude *.pyd
+[2024-05-04 18:40:00] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-05-04 18:40:00] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-05-04 18:40:00] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-05-04 18:40:00] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.4.tar.gz]
+[2024-05-04 18:40:00] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.6.tar.gz]
+[2024-05-04 18:40:00] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp]: success
+[2024-05-04 18:40:00] INFO root fetch - main [MainThread]: Store serial: [23059341]
