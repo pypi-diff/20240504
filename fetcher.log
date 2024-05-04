@@ -16037,3 +16037,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:18:42] INFO root fetch - processPackages [nonebot-plugin-gpt]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-gpt-0.0.9.tar.gz]
 [2024-05-04 17:18:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-gpt]: success
 [2024-05-04 17:18:42] INFO root fetch - main [MainThread]: Store serial: [23058833]
+[2024-05-04 17:20:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058833]
+[2024-05-04 17:20:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 17:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: digitalarztools
+[2024-05-04 17:20:51] INFO root fetch - processPackages [digitalarztools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 17:20:51] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/b7/70/8b5b8aaee385637088cb6c095a922bf5f17957354ed8b60669d0d25a3811/digitalarztools-0.1.8.tar.gz
+[2024-05-04 17:20:52] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/8b/85/2a742b62f2427a45f092ea34127a93f724509fd219511c0838e61833a9a1/digitalarztools-0.1.9.tar.gz
+[2024-05-04 17:20:52] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2024-05-04 17:20:52] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.1.8.tar.gz tmp/digitalarztools-0.1.9.tar.gz --markdown 20240504/d/digitalarztools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 17:20:53] INFO root fetch - processPackages [digitalarztools]: Remove: archive file [/home/abi/fetcher/tmp/digitalarztools-0.1.8.tar.gz]
+[2024-05-04 17:20:53] INFO root fetch - processPackages [digitalarztools]: Remove: archive file [/home/abi/fetcher/tmp/digitalarztools-0.1.9.tar.gz]
+[2024-05-04 17:20:53] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2024-05-04 17:20:53] INFO root fetch - main [MainThread]: Store serial: [23058841]
