@@ -10362,3 +10362,11 @@
 [2024-05-04 08:18:05] INFO root fetch - processPackages [upowpy]: Remove: archive file [/home/abi/fetcher/tmp/upowpy-1.0.6.tar.gz]
 [2024-05-04 08:18:05] INFO root fetch - main [MainThread]: End processing [upowpy]: success
 [2024-05-04 08:18:05] INFO root fetch - main [MainThread]: Store serial: [23056154]
+[2024-05-04 08:20:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056154]
+[2024-05-04 08:20:13] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 08:22:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056155]
+[2024-05-04 08:22:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 08:22:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: filchatter
+[2024-05-04 08:22:19] WARNING root fetch - processPackages [filchatter]: Skipping, unable to determine old version
+[2024-05-04 08:22:19] INFO root fetch - main [MainThread]: End processing [filchatter] error
+[2024-05-04 08:22:19] INFO root fetch - main [MainThread]: Store serial: [23056157]
