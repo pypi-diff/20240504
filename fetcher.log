@@ -9268,3 +9268,12 @@
 [2024-05-04 06:46:43] WARNING root fetch - processPackages [genenet]: Skipping, unable to determine old version
 [2024-05-04 06:46:43] INFO root fetch - main [MainThread]: End processing [genenet] error
 [2024-05-04 06:46:43] INFO root fetch - main [MainThread]: Store serial: [23055686]
+[2024-05-04 06:48:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055686]
+[2024-05-04 06:48:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 06:48:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wheat-packager
+[2024-05-04 06:48:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyusb-tree
+[2024-05-04 06:48:52] WARNING root fetch - processPackages [pyusb-tree]: Skipping, unable to determine old version
+[2024-05-04 06:48:52] INFO root fetch - main [MainThread]: End processing [pyusb-tree] error
+[2024-05-04 06:48:52] WARNING root fetch - processPackages [wheat-packager]: Skipping, unable to determine old version
+[2024-05-04 06:48:52] INFO root fetch - main [MainThread]: End processing [wheat-packager] error
+[2024-05-04 06:48:52] INFO root fetch - main [MainThread]: Store serial: [23055697]
