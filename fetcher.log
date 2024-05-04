@@ -9184,3 +9184,36 @@
 [2024-05-04 06:38:03] WARNING root fetch - processPackages [sqlexecx]: Skipping, unable to determine old version
 [2024-05-04 06:38:03] INFO root fetch - main [MainThread]: End processing [sqlexecx] error
 [2024-05-04 06:38:03] INFO root fetch - main [MainThread]: Store serial: [23055650]
+[2024-05-04 06:40:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055650]
+[2024-05-04 06:40:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 06:40:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythonlt
+[2024-05-04 06:40:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-spread-grid
+[2024-05-04 06:40:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pdfplumber-aemc
+[2024-05-04 06:40:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tulona
+[2024-05-04 06:40:11] INFO root fetch - processPackages [pdfplumber-aemc]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-05-04 06:40:11] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 06:40:12] INFO root fetch - processPackages [tulona]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-05-04 06:40:12] WARNING root fetch - processPackages [pythonlt]: Skipping, unable to determine old version
+[2024-05-04 06:40:12] INFO root fetch - main [MainThread]: End processing [pythonlt] error
+[2024-05-04 06:40:12] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-05-04 06:40:12] INFO root fetch - processPackages [pdfplumber-aemc]: Downloading https://files.pythonhosted.org/packages/11/45/1db032d152258bc4c1d0b2176b7ad414892fa46620682b2074f65556277a/pdfplumber-aemc-0.7.6.tar.gz
+[2024-05-04 06:40:12] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/c6/6e/70ef48ea066eaa84d2ce9e8a4ccf35ad89ee4a987bc897ec419083765ca6/tulona-0.7.4.tar.gz
+[2024-05-04 06:40:12] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-05-04 06:40:12] INFO root fetch - processPackages [pdfplumber-aemc]: Downloading https://files.pythonhosted.org/packages/ba/14/2964c33d2c7dab9419585ac28f625e1068a1a5d8c9b30e359a9ddd8868a0/pdfplumber-aemc-0.7.7.tar.gz
+[2024-05-04 06:40:12] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-05-04 06:40:12] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240504/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 06:40:12] INFO root fetch - processPackages [pdfplumber-aemc]: executing diffoscope
+[2024-05-04 06:40:12] INFO root fetch - processPackages [pdfplumber-aemc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfplumber-aemc-0.7.6.tar.gz tmp/pdfplumber-aemc-0.7.7.tar.gz --markdown 20240504/p/pdfplumber-aemc/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-05-04 06:40:12] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/93/22/7aac1ba0aa9d1db53733fd78907035690cc362a6dcec02b3ede6f1fa03d1/tulona-0.7.5.tar.gz
+[2024-05-04 06:40:12] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-05-04 06:40:12] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.7.4.tar.gz tmp/tulona-0.7.5.tar.gz --markdown 20240504/t/tulona/0.7.4-0.7.5/README.md --exclude *.pyd
+[2024-05-04 06:40:13] INFO root fetch - processPackages [pdfplumber-aemc]: Remove: archive file [/home/abi/fetcher/tmp/pdfplumber-aemc-0.7.6.tar.gz]
+[2024-05-04 06:40:13] INFO root fetch - processPackages [pdfplumber-aemc]: Remove: archive file [/home/abi/fetcher/tmp/pdfplumber-aemc-0.7.7.tar.gz]
+[2024-05-04 06:40:13] INFO root fetch - main [MainThread]: End processing [pdfplumber-aemc]: success
+[2024-05-04 06:40:13] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.7.4.tar.gz]
+[2024-05-04 06:40:13] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.7.5.tar.gz]
+[2024-05-04 06:40:13] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-05-04 06:40:14] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-05-04 06:40:14] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-05-04 06:40:14] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-05-04 06:40:14] INFO root fetch - main [MainThread]: Store serial: [23055664]
