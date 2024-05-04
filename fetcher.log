@@ -9145,3 +9145,15 @@
 [2024-05-04 06:30:59] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.5.tar.gz]
 [2024-05-04 06:30:59] INFO root fetch - main [MainThread]: End processing [tkfontselector]: success
 [2024-05-04 06:30:59] INFO root fetch - main [MainThread]: Store serial: [23055638]
+[2024-05-04 06:33:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055638]
+[2024-05-04 06:33:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 06:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdfminer.aemc
+[2024-05-04 06:33:24] INFO root fetch - processPackages [pdfminer.aemc]: New version: [20231228] Old Version: [20221118]
+[2024-05-04 06:33:24] INFO root fetch - processPackages [pdfminer.aemc]: Downloading https://files.pythonhosted.org/packages/93/de/b40a97cded381fe9a4c76c98f9a120efa8f57d25ba388e29d873c4161d24/pdfminer.aemc-20221118.tar.gz
+[2024-05-04 06:33:25] INFO root fetch - processPackages [pdfminer.aemc]: Downloading https://files.pythonhosted.org/packages/31/ae/f4ce8b6439601249e165dd3ad7ab996902945dff388a7e5f5a191024c43b/pdfminer_aemc-20231228.tar.gz
+[2024-05-04 06:33:27] INFO root fetch - processPackages [pdfminer.aemc]: executing diffoscope
+[2024-05-04 06:33:27] INFO root fetch - processPackages [pdfminer.aemc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfminer.aemc-20221118.tar.gz tmp/pdfminer_aemc-20231228.tar.gz --markdown 20240504/p/pdfminer.aemc/20221118-20231228/README.md --exclude *.pyd
+[2024-05-04 06:33:29] INFO root fetch - processPackages [pdfminer.aemc]: Remove: archive file [/home/abi/fetcher/tmp/pdfminer.aemc-20221118.tar.gz]
+[2024-05-04 06:33:29] INFO root fetch - processPackages [pdfminer.aemc]: Remove: archive file [/home/abi/fetcher/tmp/pdfminer_aemc-20231228.tar.gz]
+[2024-05-04 06:33:29] INFO root fetch - main [MainThread]: End processing [pdfminer.aemc]: success
+[2024-05-04 06:33:29] INFO root fetch - main [MainThread]: Store serial: [23055641]
