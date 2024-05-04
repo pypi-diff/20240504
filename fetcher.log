@@ -11250,3 +11250,24 @@
 [2024-05-04 09:42:36] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.9.tar.gz]
 [2024-05-04 09:42:36] INFO root fetch - main [MainThread]: End processing [haskellian]: success
 [2024-05-04 09:42:36] INFO root fetch - main [MainThread]: Store serial: [23056631]
+[2024-05-04 09:44:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056631]
+[2024-05-04 09:44:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 09:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ul-api-utils
+[2024-05-04 09:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phono3py
+[2024-05-04 09:44:45] INFO root fetch - processPackages [ul-api-utils]: New version: [7.9.3] Old Version: [7.9.2]
+[2024-05-04 09:44:45] INFO root fetch - processPackages [phono3py]: New version: [3.0.3] Old Version: [3.0.2]
+[2024-05-04 09:44:45] INFO root fetch - processPackages [ul-api-utils]: Downloading https://files.pythonhosted.org/packages/cf/ab/7cda34b4572d26d1d08eeb2571834a8afe6ced5ad589c603cac01d3c55ce/ul-api-utils-7.9.2.tar.gz
+[2024-05-04 09:44:45] INFO root fetch - processPackages [phono3py]: Downloading https://files.pythonhosted.org/packages/a3/c8/e9fd20469b85f723703b7368ad23708b93e27fc4ee816d07022e27c9280c/phono3py-3.0.2.tar.gz
+[2024-05-04 09:44:45] INFO root fetch - processPackages [ul-api-utils]: Downloading https://files.pythonhosted.org/packages/1b/26/bc28db5039bc22a6221a8e40063cad7ac8e6d7dd8ece68fce4a1764ac247/ul-api-utils-7.9.3.tar.gz
+[2024-05-04 09:44:46] INFO root fetch - processPackages [ul-api-utils]: executing diffoscope
+[2024-05-04 09:44:46] INFO root fetch - processPackages [ul-api-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ul-api-utils-7.9.2.tar.gz tmp/ul-api-utils-7.9.3.tar.gz --markdown 20240504/u/ul-api-utils/7.9.2-7.9.3/README.md --exclude *.pyd
+[2024-05-04 09:44:46] INFO root fetch - processPackages [phono3py]: Downloading https://files.pythonhosted.org/packages/4a/5e/82390df77856328a6512afdc9b85babb495a83f6306ee5d7ff77ed67ad8c/phono3py-3.0.3.tar.gz
+[2024-05-04 09:44:46] INFO root fetch - processPackages [phono3py]: executing diffoscope
+[2024-05-04 09:44:46] INFO root fetch - processPackages [phono3py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phono3py-3.0.2.tar.gz tmp/phono3py-3.0.3.tar.gz --markdown 20240504/p/phono3py/3.0.2-3.0.3/README.md --exclude *.pyd
+[2024-05-04 09:44:47] INFO root fetch - processPackages [ul-api-utils]: Remove: archive file [/home/abi/fetcher/tmp/ul-api-utils-7.9.2.tar.gz]
+[2024-05-04 09:44:47] INFO root fetch - processPackages [ul-api-utils]: Remove: archive file [/home/abi/fetcher/tmp/ul-api-utils-7.9.3.tar.gz]
+[2024-05-04 09:44:47] INFO root fetch - main [MainThread]: End processing [ul-api-utils]: success
+[2024-05-04 09:44:48] INFO root fetch - processPackages [phono3py]: Remove: archive file [/home/abi/fetcher/tmp/phono3py-3.0.2.tar.gz]
+[2024-05-04 09:44:48] INFO root fetch - processPackages [phono3py]: Remove: archive file [/home/abi/fetcher/tmp/phono3py-3.0.3.tar.gz]
+[2024-05-04 09:44:48] INFO root fetch - main [MainThread]: End processing [phono3py]: success
+[2024-05-04 09:44:48] INFO root fetch - main [MainThread]: Store serial: [23056636]
