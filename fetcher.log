@@ -2415,3 +2415,20 @@
 [2024-05-04 02:35:03] INFO root fetch - processPackages [es-testbed]: Remove: archive file [/home/abi/fetcher/tmp/es_testbed-0.7.1.tar.gz]
 [2024-05-04 02:35:03] INFO root fetch - main [MainThread]: End processing [es-testbed]: success
 [2024-05-04 02:35:03] INFO root fetch - main [MainThread]: Store serial: [23053071]
+[2024-05-04 02:37:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053071]
+[2024-05-04 02:37:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 02:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rship-sdk
+[2024-05-04 02:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jax-metal
+[2024-05-04 02:37:12] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 02:37:12] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 02:37:12] INFO root fetch - processPackages [jax-metal]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-04 02:37:12] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 02:37:12] INFO root fetch - processPackages [jax-metal]: Downloading https://files.pythonhosted.org/packages/a3/72/a24f74df137562e5376f4c5561edba13888e8b88b5b82a37db75abc2004b/jax_metal-0.0.6-py3-none-macosx_13_0_arm64.whl
+[2024-05-04 02:37:12] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 02:37:12] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 02:37:12] WARNING root fetch - processPackages [jax-metal]: Skipping package: exceeds size limit 39706457>=10485760
+[2024-05-04 02:37:12] INFO root fetch - main [MainThread]: End processing [jax-metal] error
+[2024-05-04 02:37:12] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 02:37:12] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 02:37:12] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 02:37:12] INFO root fetch - main [MainThread]: Store serial: [23053080]
