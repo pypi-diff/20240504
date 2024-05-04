@@ -15758,3 +15758,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:53:21] INFO root fetch - processPackages [prodsys]: Remove: archive file [/home/abi/fetcher/tmp/prodsys-0.6.0.tar.gz]
 [2024-05-04 16:53:21] INFO root fetch - main [MainThread]: End processing [prodsys]: success
 [2024-05-04 16:53:21] INFO root fetch - main [MainThread]: Store serial: [23058611]
+[2024-05-04 16:55:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058611]
+[2024-05-04 16:55:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 16:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coverage
+[2024-05-04 16:55:30] INFO root fetch - processPackages [coverage]: New version: [7.5.1] Old Version: [7.5.0]
+[2024-05-04 16:55:30] INFO root fetch - processPackages [coverage]: Downloading https://files.pythonhosted.org/packages/52/d3/3ec80acdd57a0d6a1111b978ade388824f37126446fd6750d38bfaca949c/coverage-7.5.0.tar.gz
+[2024-05-04 16:55:31] INFO root fetch - processPackages [coverage]: Downloading https://files.pythonhosted.org/packages/9a/f6/ff238a4f49b5ad509b65f9cb20b0384f33c30dc3b8e2e17612851dec7a8c/coverage-7.5.1-cp310-cp310-win32.whl
+[2024-05-04 16:55:31] INFO root fetch - processPackages [coverage]: executing diffoscope
+[2024-05-04 16:55:31] INFO root fetch - processPackages [coverage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coverage-7.5.0.tar.gz tmp/coverage-7.5.1-cp310-cp310-win32.whl.zip --markdown 20240504/c/coverage/7.5.0-7.5.1/README.md --exclude *.pyd
+[2024-05-04 16:55:32] INFO root fetch - processPackages [coverage]: Remove: archive file [/home/abi/fetcher/tmp/coverage-7.5.0.tar.gz]
+[2024-05-04 16:55:32] INFO root fetch - processPackages [coverage]: Remove: archive file [/home/abi/fetcher/tmp/coverage-7.5.1-cp310-cp310-win32.whl.zip]
+[2024-05-04 16:55:32] INFO root fetch - main [MainThread]: End processing [coverage]: success
+[2024-05-04 16:55:32] INFO root fetch - main [MainThread]: Store serial: [23058625]
