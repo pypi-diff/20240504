@@ -12163,3 +12163,33 @@
 [2024-05-04 11:09:46] INFO root fetch - processPackages [libvslvm-python]: Remove: archive file [/home/abi/fetcher/tmp/libvslvm-python-20240504.tar.gz]
 [2024-05-04 11:09:46] INFO root fetch - main [MainThread]: End processing [libvslvm-python]: success
 [2024-05-04 11:09:46] INFO root fetch - main [MainThread]: Store serial: [23057178]
+[2024-05-04 11:11:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057178]
+[2024-05-04 11:11:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 11:11:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SMClib.py
+[2024-05-04 11:11:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: remarkable-update-fuse
+[2024-05-04 11:11:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uiautomator2
+[2024-05-04 11:11:55] INFO root fetch - processPackages [SMClib.py]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-04 11:11:55] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/16/44/e4783aae51490de2c150b41d6175071ba66955630b095aaf75555b505c7d/SMClib.py-1.0.3.tar.gz
+[2024-05-04 11:11:55] INFO root fetch - processPackages [remarkable-update-fuse]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-05-04 11:11:55] INFO root fetch - processPackages [uiautomator2]: New version: [3.0.9] Old Version: [3.0.8]
+[2024-05-04 11:11:55] INFO root fetch - processPackages [remarkable-update-fuse]: Downloading https://files.pythonhosted.org/packages/a1/f3/eadd81507b6806593b46b808db75190691b8e9413f6fb6d809086f8b5455/remarkable_update_fuse-1.0.7.tar.gz
+[2024-05-04 11:11:56] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/63/fc/c27061d5f8b00c4cea91cca1150e40d3bb4c1d997ad123ff74c36e7e09e7/SMClib.py-1.0.4.tar.gz
+[2024-05-04 11:11:56] INFO root fetch - processPackages [uiautomator2]: Downloading https://files.pythonhosted.org/packages/42/54/adb8c6f4d5981c3a567cc1019010a45e1432f363bd027a2be23dad7c32eb/uiautomator2-3.0.8.tar.gz
+[2024-05-04 11:11:56] INFO root fetch - processPackages [SMClib.py]: executing diffoscope
+[2024-05-04 11:11:56] INFO root fetch - processPackages [SMClib.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SMClib.py-1.0.3.tar.gz tmp/SMClib.py-1.0.4.tar.gz --markdown 20240504/S/SMClib.py/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-04 11:11:56] INFO root fetch - processPackages [remarkable-update-fuse]: Downloading https://files.pythonhosted.org/packages/ff/28/eae1000d409fa3c174e9c38558922d13e14757d674367ffc4daf4bff80ab/remarkable_update_fuse-1.0.8.tar.gz
+[2024-05-04 11:11:56] INFO root fetch - processPackages [remarkable-update-fuse]: executing diffoscope
+[2024-05-04 11:11:56] INFO root fetch - processPackages [remarkable-update-fuse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remarkable_update_fuse-1.0.7.tar.gz tmp/remarkable_update_fuse-1.0.8.tar.gz --markdown 20240504/r/remarkable-update-fuse/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-05-04 11:11:56] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.3.tar.gz]
+[2024-05-04 11:11:56] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.4.tar.gz]
+[2024-05-04 11:11:56] INFO root fetch - main [MainThread]: End processing [SMClib.py]: success
+[2024-05-04 11:11:57] INFO root fetch - processPackages [remarkable-update-fuse]: Remove: archive file [/home/abi/fetcher/tmp/remarkable_update_fuse-1.0.7.tar.gz]
+[2024-05-04 11:11:57] INFO root fetch - processPackages [remarkable-update-fuse]: Remove: archive file [/home/abi/fetcher/tmp/remarkable_update_fuse-1.0.8.tar.gz]
+[2024-05-04 11:11:57] INFO root fetch - main [MainThread]: End processing [remarkable-update-fuse]: success
+[2024-05-04 11:11:58] INFO root fetch - processPackages [uiautomator2]: Downloading https://files.pythonhosted.org/packages/45/e9/352ceaa7f871f2ff3b9c8cf661414f73c6857dffc42977c57b9a621b837c/uiautomator2-3.0.9.tar.gz
+[2024-05-04 11:11:58] INFO root fetch - processPackages [uiautomator2]: executing diffoscope
+[2024-05-04 11:11:58] INFO root fetch - processPackages [uiautomator2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uiautomator2-3.0.8.tar.gz tmp/uiautomator2-3.0.9.tar.gz --markdown 20240504/u/uiautomator2/3.0.8-3.0.9/README.md --exclude *.pyd
+[2024-05-04 11:12:00] INFO root fetch - processPackages [uiautomator2]: Remove: archive file [/home/abi/fetcher/tmp/uiautomator2-3.0.8.tar.gz]
+[2024-05-04 11:12:00] INFO root fetch - processPackages [uiautomator2]: Remove: archive file [/home/abi/fetcher/tmp/uiautomator2-3.0.9.tar.gz]
+[2024-05-04 11:12:00] INFO root fetch - main [MainThread]: End processing [uiautomator2]: success
+[2024-05-04 11:12:00] INFO root fetch - main [MainThread]: Store serial: [23057185]
