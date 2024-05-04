@@ -17699,3 +17699,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:27:50] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.4.1.tar.gz]
 [2024-05-04 19:27:50] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
 [2024-05-04 19:27:50] INFO root fetch - main [MainThread]: Store serial: [23059563]
+[2024-05-04 19:29:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059563]
+[2024-05-04 19:29:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 19:29:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tkfontselector
+[2024-05-04 19:29:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-axe
+[2024-05-04 19:29:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: runespreader
+[2024-05-04 19:29:59] WARNING root fetch - processPackages [runespreader]: Skipping, unable to determine old version
+[2024-05-04 19:29:59] INFO root fetch - main [MainThread]: End processing [runespreader] error
+[2024-05-04 19:29:59] INFO root fetch - processPackages [tkfontselector]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-04 19:29:59] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/5f/03/0451de72792cc57b860a67b838784f25a74025100985e506c43993ed9a88/tkfontselector-1.0.8.tar.gz
+[2024-05-04 19:29:59] INFO root fetch - processPackages [llm-axe]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-04 19:29:59] INFO root fetch - processPackages [llm-axe]: Downloading https://files.pythonhosted.org/packages/82/1f/95b594b28dc1030879f53de7efb88986700bc59c37173ed4e135aa78575d/llm_axe-1.0.6.tar.gz
+[2024-05-04 19:29:59] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/23/96/1af1db56b88482dd28c8da76722cfb043f31232348dcaf14d635626f3e59/tkfontselector-1.0.9.tar.gz
+[2024-05-04 19:29:59] INFO root fetch - processPackages [tkfontselector]: executing diffoscope
+[2024-05-04 19:29:59] INFO root fetch - processPackages [tkfontselector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkfontselector-1.0.8.tar.gz tmp/tkfontselector-1.0.9.tar.gz --markdown 20240504/t/tkfontselector/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-04 19:29:59] INFO root fetch - processPackages [llm-axe]: Downloading https://files.pythonhosted.org/packages/7a/01/9878234d4a37db17d7ba8f6e42463f31ab10be4c0be496e3a3adc44f91fc/llm_axe-1.0.7.tar.gz
+[2024-05-04 19:30:00] INFO root fetch - processPackages [llm-axe]: executing diffoscope
+[2024-05-04 19:30:00] INFO root fetch - processPackages [llm-axe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_axe-1.0.6.tar.gz tmp/llm_axe-1.0.7.tar.gz --markdown 20240504/l/llm-axe/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-04 19:30:00] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.8.tar.gz]
+[2024-05-04 19:30:00] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.9.tar.gz]
+[2024-05-04 19:30:00] INFO root fetch - main [MainThread]: End processing [tkfontselector]: success
+[2024-05-04 19:30:00] INFO root fetch - processPackages [llm-axe]: Remove: archive file [/home/abi/fetcher/tmp/llm_axe-1.0.6.tar.gz]
+[2024-05-04 19:30:00] INFO root fetch - processPackages [llm-axe]: Remove: archive file [/home/abi/fetcher/tmp/llm_axe-1.0.7.tar.gz]
+[2024-05-04 19:30:00] INFO root fetch - main [MainThread]: End processing [llm-axe]: success
+[2024-05-04 19:30:00] INFO root fetch - main [MainThread]: Store serial: [23059572]
