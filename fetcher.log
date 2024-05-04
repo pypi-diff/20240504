@@ -21097,3 +21097,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:30:41] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.0b11.tar.gz]
 [2024-05-04 23:30:41] INFO root fetch - main [MainThread]: End processing [notolog]: success
 [2024-05-04 23:30:41] INFO root fetch - main [MainThread]: Store serial: [23061134]
+[2024-05-04 23:32:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061134]
+[2024-05-04 23:32:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 23:32:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbb-api
+[2024-05-04 23:32:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysparkify
+[2024-05-04 23:32:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lytils
+[2024-05-04 23:32:50] INFO root fetch - processPackages [pysparkify]: New version: [0.26.5] Old Version: [0.26.4]
+[2024-05-04 23:32:50] INFO root fetch - processPackages [nbb-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 23:32:50] INFO root fetch - processPackages [lytils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 23:32:50] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/58/f5/de054d074f226994eaea803af6d01aecbfd85b94e1d6ef1fe6b483fdf39d/pysparkify-0.26.4.tar.gz
+[2024-05-04 23:32:50] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/e5/63/947a765769a040af108780166ef416734281e055d3577ce6f8ecd6dcff7b/lytils-0.1.8.tar.gz
+[2024-05-04 23:32:50] INFO root fetch - processPackages [nbb-api]: Downloading https://files.pythonhosted.org/packages/2c/aa/185febf5ad962f993e0b4f233dc0f7125457f9851057f25d9b14b0bbc2b6/nbb_api-0.1.8.tar.gz
+[2024-05-04 23:32:51] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/47/f2/15accaaf8b3ff3e0f0f877cb445d79db9dcd4614b25c36859a4bfd9c5c75/lytils-0.1.9.tar.gz
+[2024-05-04 23:32:51] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/51/82/e210fec2968932a1966783c9abbba9765d5b5b3a87e77d8ae44a62511e78/pysparkify-0.26.5.tar.gz
+[2024-05-04 23:32:51] INFO root fetch - processPackages [nbb-api]: Downloading https://files.pythonhosted.org/packages/0e/c5/b3538f1294ada9c6102e76f4c29cebbb35dcaad3a7f77c78e1c1e30aab30/nbb_api-0.1.9.tar.gz
+[2024-05-04 23:32:51] INFO root fetch - processPackages [lytils]: executing diffoscope
+[2024-05-04 23:32:51] INFO root fetch - processPackages [lytils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lytils-0.1.8.tar.gz tmp/lytils-0.1.9.tar.gz --markdown 20240504/l/lytils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 23:32:51] INFO root fetch - processPackages [nbb-api]: executing diffoscope
+[2024-05-04 23:32:51] INFO root fetch - processPackages [nbb-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbb_api-0.1.8.tar.gz tmp/nbb_api-0.1.9.tar.gz --markdown 20240504/n/nbb-api/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 23:32:51] INFO root fetch - processPackages [pysparkify]: executing diffoscope
+[2024-05-04 23:32:51] INFO root fetch - processPackages [pysparkify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkify-0.26.4.tar.gz tmp/pysparkify-0.26.5.tar.gz --markdown 20240504/p/pysparkify/0.26.4-0.26.5/README.md --exclude *.pyd
+[2024-05-04 23:32:51] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.8.tar.gz]
+[2024-05-04 23:32:51] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.9.tar.gz]
+[2024-05-04 23:32:51] INFO root fetch - main [MainThread]: End processing [lytils]: success
+[2024-05-04 23:32:51] INFO root fetch - processPackages [nbb-api]: Remove: archive file [/home/abi/fetcher/tmp/nbb_api-0.1.8.tar.gz]
+[2024-05-04 23:32:51] INFO root fetch - processPackages [nbb-api]: Remove: archive file [/home/abi/fetcher/tmp/nbb_api-0.1.9.tar.gz]
+[2024-05-04 23:32:51] INFO root fetch - main [MainThread]: End processing [nbb-api]: success
+[2024-05-04 23:32:51] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.4.tar.gz]
+[2024-05-04 23:32:51] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.5.tar.gz]
+[2024-05-04 23:32:51] INFO root fetch - main [MainThread]: End processing [pysparkify]: success
+[2024-05-04 23:32:51] INFO root fetch - main [MainThread]: Store serial: [23061143]
