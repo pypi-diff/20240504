@@ -16338,3 +16338,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:40:31] INFO root fetch - processPackages [queue-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/queue_pipelines-0.1.1.tar.gz]
 [2024-05-04 17:40:31] INFO root fetch - main [MainThread]: End processing [queue-pipelines]: success
 [2024-05-04 17:40:31] INFO root fetch - main [MainThread]: Store serial: [23058979]
+[2024-05-04 17:42:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058979]
+[2024-05-04 17:42:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 17:42:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: queue-pipelines
+[2024-05-04 17:42:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlx-llm
+[2024-05-04 17:42:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unsupervised-model-pipe
+[2024-05-04 17:42:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drawlib
+[2024-05-04 17:42:40] INFO root fetch - processPackages [queue-pipelines]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 17:42:40] INFO root fetch - processPackages [drawlib]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 17:42:40] WARNING root fetch - processPackages [unsupervised-model-pipe]: Skipping, unable to determine old version
+[2024-05-04 17:42:40] INFO root fetch - main [MainThread]: End processing [unsupervised-model-pipe] error
+[2024-05-04 17:42:40] INFO root fetch - processPackages [queue-pipelines]: Downloading https://files.pythonhosted.org/packages/22/90/0992ebd5a5add8b5eaf0409707bb487fc3a4624bf7aa8ed5fb480e46aa16/queue_pipelines-0.1.1.tar.gz
+[2024-05-04 17:42:40] INFO root fetch - processPackages [mlx-llm]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-04 17:42:40] INFO root fetch - processPackages [drawlib]: Downloading https://files.pythonhosted.org/packages/53/f9/49d45c8f109d653edb61ad1053ecfdcf628ea1736e1ba5c783228d9be6df/drawlib-0.1.1.tar.gz
+[2024-05-04 17:42:40] INFO root fetch - processPackages [mlx-llm]: Downloading https://files.pythonhosted.org/packages/e5/1c/d6602ab0e2c40aba8c430aec133330342d40133e29a39480eb8c4afb6564/mlx_llm-1.0.5.tar.gz
+[2024-05-04 17:42:40] INFO root fetch - processPackages [drawlib]: Downloading https://files.pythonhosted.org/packages/15/de/f28bdb1325bd6cf69d61deda3725e278aed49eff079fe08b86176b57e2fd/drawlib-0.1.2.tar.gz
+[2024-05-04 17:42:40] INFO root fetch - processPackages [queue-pipelines]: Downloading https://files.pythonhosted.org/packages/ef/e5/96f62a06114c10853f436fc3ffc86c445f4b11b26f3b32d164a6e9306852/queue_pipelines-0.1.2.tar.gz
+[2024-05-04 17:42:40] INFO root fetch - processPackages [drawlib]: executing diffoscope
+[2024-05-04 17:42:40] INFO root fetch - processPackages [drawlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawlib-0.1.1.tar.gz tmp/drawlib-0.1.2.tar.gz --markdown 20240504/d/drawlib/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 17:42:40] INFO root fetch - processPackages [queue-pipelines]: executing diffoscope
+[2024-05-04 17:42:40] INFO root fetch - processPackages [queue-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queue_pipelines-0.1.1.tar.gz tmp/queue_pipelines-0.1.2.tar.gz --markdown 20240504/q/queue-pipelines/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 17:42:40] INFO root fetch - processPackages [mlx-llm]: Downloading https://files.pythonhosted.org/packages/7d/f9/712a6da05c6ac3b07071e6f24a366b83940d133f67da96b703b648a62dd0/mlx_llm-1.0.6.tar.gz
+[2024-05-04 17:42:40] INFO root fetch - processPackages [mlx-llm]: executing diffoscope
+[2024-05-04 17:42:40] INFO root fetch - processPackages [mlx-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlx_llm-1.0.5.tar.gz tmp/mlx_llm-1.0.6.tar.gz --markdown 20240504/m/mlx-llm/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-04 17:42:41] INFO root fetch - processPackages [queue-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/queue_pipelines-0.1.1.tar.gz]
+[2024-05-04 17:42:41] INFO root fetch - processPackages [queue-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/queue_pipelines-0.1.2.tar.gz]
+[2024-05-04 17:42:41] INFO root fetch - main [MainThread]: End processing [queue-pipelines]: success
+[2024-05-04 17:42:41] INFO root fetch - processPackages [mlx-llm]: Remove: archive file [/home/abi/fetcher/tmp/mlx_llm-1.0.5.tar.gz]
+[2024-05-04 17:42:41] INFO root fetch - processPackages [mlx-llm]: Remove: archive file [/home/abi/fetcher/tmp/mlx_llm-1.0.6.tar.gz]
+[2024-05-04 17:42:41] INFO root fetch - main [MainThread]: End processing [mlx-llm]: success
+[2024-05-04 17:42:41] INFO root fetch - processPackages [drawlib]: Remove: archive file [/home/abi/fetcher/tmp/drawlib-0.1.1.tar.gz]
+[2024-05-04 17:42:41] INFO root fetch - processPackages [drawlib]: Remove: archive file [/home/abi/fetcher/tmp/drawlib-0.1.2.tar.gz]
+[2024-05-04 17:42:41] INFO root fetch - main [MainThread]: End processing [drawlib]: success
+[2024-05-04 17:42:41] INFO root fetch - main [MainThread]: Store serial: [23058993]
