@@ -18671,3 +18671,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:35:45] INFO root fetch - processPackages [constrainedlr]: Remove: archive file [/home/abi/fetcher/tmp/constrainedlr-0.1.5.tar.gz]
 [2024-05-04 20:35:45] INFO root fetch - main [MainThread]: End processing [constrainedlr]: success
 [2024-05-04 20:35:45] INFO root fetch - main [MainThread]: Store serial: [23060178]
+[2024-05-04 20:37:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060178]
+[2024-05-04 20:37:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 20:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: d20-securityLayer
+[2024-05-04 20:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vka
+[2024-05-04 20:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: github-backup
+[2024-05-04 20:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: JaxNRSur
+[2024-05-04 20:37:54] INFO root fetch - processPackages [vka]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-04 20:37:54] INFO root fetch - processPackages [d20-securityLayer]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2024-05-04 20:37:54] WARNING root fetch - processPackages [JaxNRSur]: Skipping, unable to determine old version
+[2024-05-04 20:37:54] INFO root fetch - main [MainThread]: End processing [JaxNRSur] error
+[2024-05-04 20:37:54] INFO root fetch - processPackages [github-backup]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-04 20:37:54] INFO root fetch - processPackages [vka]: Downloading https://files.pythonhosted.org/packages/b0/bb/9e2424da6ba6efb491947a984af904fdd3e896435bb6417a8e3666e0d748/vka-1.2.8.tar.gz
+[2024-05-04 20:37:54] INFO root fetch - processPackages [d20-securityLayer]: Downloading https://files.pythonhosted.org/packages/b5/7f/086f837981170217116052b05373bbf9ede287aa375d582b42e31e612cf5/d20-securityLayer-2.0.0a8.tar.gz
+[2024-05-04 20:37:54] INFO root fetch - processPackages [github-backup]: Downloading https://files.pythonhosted.org/packages/19/35/0df94042ffc570470c651e2d4c03da41732e7da4bc248534cacda506a708/github-backup-0.8.0.tar.gz
+[2024-05-04 20:37:54] INFO root fetch - processPackages [d20-securityLayer]: Downloading https://files.pythonhosted.org/packages/56/46/f3ba1d8980a81e7e0579b812ea29d2c68be9c442ea0e7168a51afcd8c79e/d20-securityLayer-2.0.0a9.tar.gz
+[2024-05-04 20:37:54] INFO root fetch - processPackages [vka]: Downloading https://files.pythonhosted.org/packages/8e/46/ab7a7c188e32f0b2c63ff472431c60a38a52687c4b854aa6783e469c1595/vka-1.2.9.tar.gz
+[2024-05-04 20:37:54] INFO root fetch - processPackages [d20-securityLayer]: executing diffoscope
+[2024-05-04 20:37:54] INFO root fetch - processPackages [d20-securityLayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-securityLayer-2.0.0a8.tar.gz tmp/d20-securityLayer-2.0.0a9.tar.gz --markdown 20240504/d/d20-securityLayer/2.0.0a8-2.0.0a9/README.md --exclude *.pyd
+[2024-05-04 20:37:54] INFO root fetch - processPackages [vka]: executing diffoscope
+[2024-05-04 20:37:54] INFO root fetch - processPackages [vka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vka-1.2.8.tar.gz tmp/vka-1.2.9.tar.gz --markdown 20240504/v/vka/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-04 20:37:55] INFO root fetch - processPackages [github-backup]: Downloading https://files.pythonhosted.org/packages/3d/c3/9934cf872e9de64ee706c7eaee1332041584cd8015280da90472411f29ec/github-backup-0.9.0.tar.gz
+[2024-05-04 20:37:55] INFO root fetch - processPackages [github-backup]: executing diffoscope
+[2024-05-04 20:37:55] INFO root fetch - processPackages [github-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github-backup-0.8.0.tar.gz tmp/github-backup-0.9.0.tar.gz --markdown 20240504/g/github-backup/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-04 20:37:55] INFO root fetch - processPackages [d20-securityLayer]: Remove: archive file [/home/abi/fetcher/tmp/d20-securityLayer-2.0.0a8.tar.gz]
+[2024-05-04 20:37:55] INFO root fetch - processPackages [d20-securityLayer]: Remove: archive file [/home/abi/fetcher/tmp/d20-securityLayer-2.0.0a9.tar.gz]
+[2024-05-04 20:37:55] INFO root fetch - main [MainThread]: End processing [d20-securityLayer]: success
+[2024-05-04 20:37:55] INFO root fetch - processPackages [vka]: Remove: archive file [/home/abi/fetcher/tmp/vka-1.2.8.tar.gz]
+[2024-05-04 20:37:55] INFO root fetch - processPackages [vka]: Remove: archive file [/home/abi/fetcher/tmp/vka-1.2.9.tar.gz]
+[2024-05-04 20:37:55] INFO root fetch - main [MainThread]: End processing [vka]: success
+[2024-05-04 20:37:55] INFO root fetch - processPackages [github-backup]: Remove: archive file [/home/abi/fetcher/tmp/github-backup-0.8.0.tar.gz]
+[2024-05-04 20:37:55] INFO root fetch - processPackages [github-backup]: Remove: archive file [/home/abi/fetcher/tmp/github-backup-0.9.0.tar.gz]
+[2024-05-04 20:37:55] INFO root fetch - main [MainThread]: End processing [github-backup]: success
+[2024-05-04 20:37:55] INFO root fetch - main [MainThread]: Store serial: [23060191]
