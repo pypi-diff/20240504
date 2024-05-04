@@ -17842,3 +17842,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:38:43] INFO root fetch - processPackages [mo-files]: Remove: archive file [/home/abi/fetcher/tmp/mo_files-6.619.24125.tar.gz]
 [2024-05-04 19:38:43] INFO root fetch - main [MainThread]: End processing [mo-files]: success
 [2024-05-04 19:38:43] INFO root fetch - main [MainThread]: Store serial: [23059633]
+[2024-05-04 19:40:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059633]
+[2024-05-04 19:40:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 19:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: haskellian
+[2024-05-04 19:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: query-test-lib
+[2024-05-04 19:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sapiopylib
+[2024-05-04 19:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sphinxcontrib-lightbox2
+[2024-05-04 19:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: surfkit
+[2024-05-04 19:40:52] INFO root fetch - processPackages [sapiopylib]: New version: [2024.5.4a191] Old Version: [2024.5.3rc190]
+[2024-05-04 19:40:52] INFO root fetch - processPackages [surfkit]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-04 19:40:52] INFO root fetch - processPackages [haskellian]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-04 19:40:52] WARNING root fetch - processPackages [sphinxcontrib-lightbox2]: Skipping, unable to determine old version
+[2024-05-04 19:40:52] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-lightbox2] error
+[2024-05-04 19:40:52] WARNING root fetch - processPackages [query-test-lib]: Skipping, unable to determine old version
+[2024-05-04 19:40:52] INFO root fetch - main [MainThread]: End processing [query-test-lib] error
+[2024-05-04 19:40:52] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/db/6c/0cdc593830d9100fe25525ec6686c93e0284c0c2dec1bd9a6f2756850f4c/haskellian-0.3.8.tar.gz
+[2024-05-04 19:40:52] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/d1/91/79a23306054739e0f3f618b284e90b38f0899a44c954a918355fddc999ec/sapiopylib-2024.5.3rc190.tar.gz
+[2024-05-04 19:40:52] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/c2/e4/d9d6efb4013a22047e07b2174dc8716a86fe2b3fe0652e6e1edddbde177b/surfkit-0.1.98.tar.gz
+[2024-05-04 19:40:52] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/03/2b/ba04bf61c6d93413248fa1d1286dad3fe5fa7835df534f02230b764ad6e3/haskellian-0.3.9.tar.gz
+[2024-05-04 19:40:52] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/65/a8/bfc822b58240522d18c4cf24a25a6f2476da037058406af11377393fa476/surfkit-0.1.99.tar.gz
+[2024-05-04 19:40:52] INFO root fetch - processPackages [haskellian]: executing diffoscope
+[2024-05-04 19:40:52] INFO root fetch - processPackages [haskellian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haskellian-0.3.8.tar.gz tmp/haskellian-0.3.9.tar.gz --markdown 20240504/h/haskellian/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-04 19:40:52] INFO root fetch - processPackages [surfkit]: executing diffoscope
+[2024-05-04 19:40:52] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/d2/44/a3ca54ac6e63f407c62702b925960a54aa5e586923d04c2cd16aae8dada7/sapiopylib-2024.5.4a191.tar.gz
+[2024-05-04 19:40:52] INFO root fetch - processPackages [surfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfkit-0.1.98.tar.gz tmp/surfkit-0.1.99.tar.gz --markdown 20240504/s/surfkit/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-04 19:40:52] INFO root fetch - processPackages [sapiopylib]: executing diffoscope
+[2024-05-04 19:40:52] INFO root fetch - processPackages [sapiopylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopylib-2024.5.3rc190.tar.gz tmp/sapiopylib-2024.5.4a191.tar.gz --markdown 20240504/s/sapiopylib/2024.5.3rc190-2024.5.4a191/README.md --exclude *.pyd
+[2024-05-04 19:40:53] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.98.tar.gz]
+[2024-05-04 19:40:53] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
+[2024-05-04 19:40:53] INFO root fetch - main [MainThread]: End processing [surfkit]: success
+[2024-05-04 19:40:53] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.8.tar.gz]
+[2024-05-04 19:40:53] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.9.tar.gz]
+[2024-05-04 19:40:53] INFO root fetch - main [MainThread]: End processing [haskellian]: success
+[2024-05-04 19:40:53] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.5.3rc190.tar.gz]
+[2024-05-04 19:40:53] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.5.4a191.tar.gz]
+[2024-05-04 19:40:53] INFO root fetch - main [MainThread]: End processing [sapiopylib]: success
+[2024-05-04 19:40:53] INFO root fetch - main [MainThread]: Store serial: [23059662]
