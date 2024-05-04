@@ -9645,3 +9645,24 @@
 [2024-05-04 07:17:10] INFO root fetch - processPackages [dfdatetime]: Remove: archive file [/home/abi/fetcher/tmp/dfdatetime-20240504.tar.gz]
 [2024-05-04 07:17:10] INFO root fetch - main [MainThread]: End processing [dfdatetime]: success
 [2024-05-04 07:17:10] INFO root fetch - main [MainThread]: Store serial: [23055855]
+[2024-05-04 07:19:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055855]
+[2024-05-04 07:19:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 07:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapidpe-rift-pipe
+[2024-05-04 07:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: multiconnect
+[2024-05-04 07:19:19] INFO root fetch - processPackages [multiconnect]: New version: [2.34.2] Old Version: [2.33.19]
+[2024-05-04 07:19:19] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.6.9.dev20240319] Old Version: [0.6.9.dev20240318]
+[2024-05-04 07:19:19] INFO root fetch - processPackages [multiconnect]: Downloading https://files.pythonhosted.org/packages/e4/0f/dee15a515312eeaa29911748064cd6d1ed9051cc680fec6d3f8bc6c82876/multiconnect-2.33.19.tar.gz
+[2024-05-04 07:19:19] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/e0/d8/d7b88a4aebe9c66f5be7749976ca4a5d90c4c1f76b8309b2528f7d696fc2/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz
+[2024-05-04 07:19:19] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/57/73/f8f8961db2f4ad6df9b52d6fc88b6fc134a86d378de28ab14ee4105baea4/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz
+[2024-05-04 07:19:20] INFO root fetch - processPackages [multiconnect]: Downloading https://files.pythonhosted.org/packages/3a/d3/1572893b0a71271efa68bec971ea218902ee366ea723efe1b237fcb5c101/multiconnect-2.34.2.tar.gz
+[2024-05-04 07:19:20] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2024-05-04 07:19:20] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz --markdown 20240504/r/rapidpe-rift-pipe/0.6.9.dev20240318-0.6.9.dev20240319/README.md --exclude *.pyd
+[2024-05-04 07:19:20] INFO root fetch - processPackages [multiconnect]: executing diffoscope
+[2024-05-04 07:19:20] INFO root fetch - processPackages [multiconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiconnect-2.33.19.tar.gz tmp/multiconnect-2.34.2.tar.gz --markdown 20240504/m/multiconnect/2.33.19-2.34.2/README.md --exclude *.pyd
+[2024-05-04 07:19:20] INFO root fetch - processPackages [multiconnect]: Remove: archive file [/home/abi/fetcher/tmp/multiconnect-2.33.19.tar.gz]
+[2024-05-04 07:19:20] INFO root fetch - processPackages [multiconnect]: Remove: archive file [/home/abi/fetcher/tmp/multiconnect-2.34.2.tar.gz]
+[2024-05-04 07:19:20] INFO root fetch - main [MainThread]: End processing [multiconnect]: success
+[2024-05-04 07:19:20] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz]
+[2024-05-04 07:19:20] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
+[2024-05-04 07:19:20] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2024-05-04 07:19:20] INFO root fetch - main [MainThread]: Store serial: [23055861]
