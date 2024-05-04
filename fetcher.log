@@ -15188,3 +15188,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:03:28] INFO root fetch - processPackages [kube-copilot]: Remove: archive file [/home/abi/fetcher/tmp/kube_copilot-0.1.9.tar.gz]
 [2024-05-04 16:03:28] INFO root fetch - main [MainThread]: End processing [kube-copilot]: success
 [2024-05-04 16:03:28] INFO root fetch - main [MainThread]: Store serial: [23058390]
+[2024-05-04 16:05:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058390]
+[2024-05-04 16:05:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 16:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dltrain
+[2024-05-04 16:05:37] INFO root fetch - processPackages [dltrain]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-04 16:05:37] INFO root fetch - processPackages [dltrain]: Downloading https://files.pythonhosted.org/packages/ce/5b/319639888431cb03e5c4e98d73482992cc3e3abf7dbf6539c33cf1125c8b/dltrain-0.0.3.tar.gz
+[2024-05-04 16:05:38] INFO root fetch - processPackages [dltrain]: Downloading https://files.pythonhosted.org/packages/e2/f6/6db0e2bb1272ae1ae883a270534ba9cf41160f8da6a28d048ac36d5138db/dltrain-0.0.4.tar.gz
+[2024-05-04 16:05:38] INFO root fetch - processPackages [dltrain]: executing diffoscope
+[2024-05-04 16:05:38] INFO root fetch - processPackages [dltrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dltrain-0.0.3.tar.gz tmp/dltrain-0.0.4.tar.gz --markdown 20240504/d/dltrain/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-04 16:05:38] INFO root fetch - processPackages [dltrain]: Remove: archive file [/home/abi/fetcher/tmp/dltrain-0.0.3.tar.gz]
+[2024-05-04 16:05:38] INFO root fetch - processPackages [dltrain]: Remove: archive file [/home/abi/fetcher/tmp/dltrain-0.0.4.tar.gz]
+[2024-05-04 16:05:38] INFO root fetch - main [MainThread]: End processing [dltrain]: success
+[2024-05-04 16:05:38] INFO root fetch - main [MainThread]: Store serial: [23058393]
