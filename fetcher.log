@@ -18916,3 +18916,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:51:16] INFO root fetch - processPackages [hexdoc]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc-1!0.1.0a9.tar.gz]
 [2024-05-04 20:51:16] INFO root fetch - main [MainThread]: End processing [hexdoc]: success
 [2024-05-04 20:51:16] INFO root fetch - main [MainThread]: Store serial: [23060264]
+[2024-05-04 20:53:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060264]
+[2024-05-04 20:53:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 20:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hopsy
+[2024-05-04 20:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bnlp-toolkit
+[2024-05-04 20:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hfutils
+[2024-05-04 20:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-bvk
+[2024-05-04 20:53:25] INFO root fetch - processPackages [bnlp-toolkit]: New version: [4.0.1] Old Version: [4.0.0.dev4]
+[2024-05-04 20:53:25] INFO root fetch - processPackages [hfutils]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-04 20:53:25] INFO root fetch - processPackages [python-bvk]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-04 20:53:25] INFO root fetch - processPackages [hopsy]: New version: [1.5.0] Old Version: [1.4.1]
+[2024-05-04 20:53:25] INFO root fetch - processPackages [bnlp-toolkit]: Downloading https://files.pythonhosted.org/packages/ec/13/ee72033a0e1bedacc8217a9e955cb26b9416dd2b5bd87b0b4809994e0dd2/bnlp_toolkit-4.0.0.dev4.tar.gz
+[2024-05-04 20:53:25] INFO root fetch - processPackages [hfutils]: Downloading https://files.pythonhosted.org/packages/db/63/6bd93f6c38d2e8090efb82fd2be7957944c09aad44e2af42e6d10f663c20/hfutils-0.2.3.tar.gz
+[2024-05-04 20:53:25] INFO root fetch - processPackages [python-bvk]: Downloading https://files.pythonhosted.org/packages/93/cf/e9d57cde31867a200e82e2cb9557fff31a88102003c6cee50956366924e1/python-bvk-0.3.0.tar.gz
+[2024-05-04 20:53:25] INFO root fetch - processPackages [hopsy]: Downloading https://files.pythonhosted.org/packages/36/49/b08947624ac920208a902e07143ff4fd5a334efcffeeccb38375b17d4887/hopsy-1.4.1.tar.gz
+[2024-05-04 20:53:25] WARNING root fetch - processPackages [hopsy]: Skipping package: exceeds size limit 11954597>=10485760
+[2024-05-04 20:53:25] INFO root fetch - main [MainThread]: End processing [hopsy] error
+[2024-05-04 20:53:25] INFO root fetch - processPackages [bnlp-toolkit]: Downloading https://files.pythonhosted.org/packages/d3/2b/808ef8459a6b118889f994392085f1e4cb447b2e6dabbbfa6232cef1d23a/bnlp_toolkit-4.0.1.tar.gz
+[2024-05-04 20:53:26] INFO root fetch - processPackages [hfutils]: Downloading https://files.pythonhosted.org/packages/97/84/110ba3504f63a058b913e91feb897dbd1adf6c50fc6ecbfdb81895099cfb/hfutils-0.2.4.tar.gz
+[2024-05-04 20:53:26] INFO root fetch - processPackages [bnlp-toolkit]: executing diffoscope
+[2024-05-04 20:53:26] INFO root fetch - processPackages [bnlp-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bnlp_toolkit-4.0.0.dev4.tar.gz tmp/bnlp_toolkit-4.0.1.tar.gz --markdown 20240504/b/bnlp-toolkit/4.0.0.dev4-4.0.1/README.md --exclude *.pyd
+[2024-05-04 20:53:26] INFO root fetch - processPackages [python-bvk]: Downloading https://files.pythonhosted.org/packages/8c/55/cc271d1c8e5ff492d5f344a13362c0c114f474e5e75fb4ee180c90933d1b/python-bvk-0.3.1.tar.gz
+[2024-05-04 20:53:26] INFO root fetch - processPackages [python-bvk]: executing diffoscope
+[2024-05-04 20:53:26] INFO root fetch - processPackages [python-bvk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-bvk-0.3.0.tar.gz tmp/python-bvk-0.3.1.tar.gz --markdown 20240504/p/python-bvk/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-04 20:53:26] INFO root fetch - processPackages [hfutils]: executing diffoscope
+[2024-05-04 20:53:26] INFO root fetch - processPackages [hfutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hfutils-0.2.3.tar.gz tmp/hfutils-0.2.4.tar.gz --markdown 20240504/h/hfutils/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-04 20:53:26] INFO root fetch - processPackages [bnlp-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/bnlp_toolkit-4.0.0.dev4.tar.gz]
+[2024-05-04 20:53:26] INFO root fetch - processPackages [bnlp-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/bnlp_toolkit-4.0.1.tar.gz]
+[2024-05-04 20:53:26] INFO root fetch - main [MainThread]: End processing [bnlp-toolkit]: success
+[2024-05-04 20:53:26] INFO root fetch - processPackages [python-bvk]: Remove: archive file [/home/abi/fetcher/tmp/python-bvk-0.3.0.tar.gz]
+[2024-05-04 20:53:26] INFO root fetch - processPackages [python-bvk]: Remove: archive file [/home/abi/fetcher/tmp/python-bvk-0.3.1.tar.gz]
+[2024-05-04 20:53:26] INFO root fetch - main [MainThread]: End processing [python-bvk]: success
+[2024-05-04 20:53:26] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.2.3.tar.gz]
+[2024-05-04 20:53:26] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.2.4.tar.gz]
+[2024-05-04 20:53:26] INFO root fetch - main [MainThread]: End processing [hfutils]: success
+[2024-05-04 20:53:26] INFO root fetch - main [MainThread]: Store serial: [23060290]
