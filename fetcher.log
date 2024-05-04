@@ -10573,3 +10573,24 @@
 [2024-05-04 08:43:48] INFO root fetch - processPackages [odoo-addons-oca-wms]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_wms-16.0.20240503.1-py3-none-any.whl.zip]
 [2024-05-04 08:43:48] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-wms]: success
 [2024-05-04 08:43:48] INFO root fetch - main [MainThread]: Store serial: [23056282]
+[2024-05-04 08:45:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056282]
+[2024-05-04 08:45:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 08:45:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: filchatter
+[2024-05-04 08:45:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-05-04 08:45:56] INFO root fetch - processPackages [filchatter]: New version: [1.2] Old Version: [1.1]
+[2024-05-04 08:45:56] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240504.329] Old Version: [0.44.20240504.328]
+[2024-05-04 08:45:56] INFO root fetch - processPackages [filchatter]: Downloading https://files.pythonhosted.org/packages/f0/f4/6fd4eafff5b45cc181009cada6aff075c397e6b0e56f03fea92cd9a0bf3a/filchatter-1.1.tar.gz
+[2024-05-04 08:45:57] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/34/b4/23912f330ec6cc1264e3e71118e1fbbcc2ca71c134c71c5d65869dbd8f82/pkscreener-0.44.20240504.328.tar.gz
+[2024-05-04 08:45:57] INFO root fetch - processPackages [filchatter]: Downloading https://files.pythonhosted.org/packages/4c/b4/6438bb8220a51b7283f2fe15fce3eb907a953d85aa4888bbedbefefd2ffa/filchatter-1.2.tar.gz
+[2024-05-04 08:45:57] INFO root fetch - processPackages [filchatter]: executing diffoscope
+[2024-05-04 08:45:57] INFO root fetch - processPackages [filchatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filchatter-1.1.tar.gz tmp/filchatter-1.2.tar.gz --markdown 20240504/f/filchatter/1.1-1.2/README.md --exclude *.pyd
+[2024-05-04 08:45:57] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/9d/c3/05875fbc9b005e8975334a1574c89890e0471e1a99d0adb92be29ba792d1/pkscreener-0.44.20240504.329.tar.gz
+[2024-05-04 08:45:57] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-04 08:45:57] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240504.328.tar.gz tmp/pkscreener-0.44.20240504.329.tar.gz --markdown 20240504/p/pkscreener/0.44.20240504.328-0.44.20240504.329/README.md --exclude *.pyd
+[2024-05-04 08:45:57] INFO root fetch - processPackages [filchatter]: Remove: archive file [/home/abi/fetcher/tmp/filchatter-1.1.tar.gz]
+[2024-05-04 08:45:57] INFO root fetch - processPackages [filchatter]: Remove: archive file [/home/abi/fetcher/tmp/filchatter-1.2.tar.gz]
+[2024-05-04 08:45:57] INFO root fetch - main [MainThread]: End processing [filchatter]: success
+[2024-05-04 08:45:58] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.328.tar.gz]
+[2024-05-04 08:45:58] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.329.tar.gz]
+[2024-05-04 08:45:58] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-04 08:45:58] INFO root fetch - main [MainThread]: Store serial: [23056287]
