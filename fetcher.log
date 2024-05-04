@@ -18273,3 +18273,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:07:21] INFO root fetch - processPackages [klayout]: Remove: archive file [/home/abi/fetcher/tmp/klayout-0.29.1.tar.gz]
 [2024-05-04 20:07:21] INFO root fetch - main [MainThread]: End processing [klayout]: success
 [2024-05-04 20:07:21] INFO root fetch - main [MainThread]: Store serial: [23060002]
+[2024-05-04 20:09:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060002]
+[2024-05-04 20:09:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 20:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kan-gpt
+[2024-05-04 20:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: brukeropus
+[2024-05-04 20:09:30] INFO root fetch - processPackages [kan-gpt]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-04 20:09:30] INFO root fetch - processPackages [kan-gpt]: Downloading https://files.pythonhosted.org/packages/e1/4f/d6e93bf22132280219a8545ee6f5c67022830841fb54631cb470781b6c74/kan_gpt-0.1.2.tar.gz
+[2024-05-04 20:09:30] INFO root fetch - processPackages [brukeropus]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 20:09:30] INFO root fetch - processPackages [brukeropus]: Downloading https://files.pythonhosted.org/packages/ae/65/537ff51be3a220b489bf9035b3801c383402681dbfdb39bbc756dac1b506/brukeropus-1.0.1.tar.gz
+[2024-05-04 20:09:30] INFO root fetch - processPackages [kan-gpt]: Downloading https://files.pythonhosted.org/packages/bd/fe/61477ee6dc38f0bc3d8fc9242f4de9ac912cfb70e8872464a71388de22cb/kan_gpt-0.1.3.tar.gz
+[2024-05-04 20:09:30] INFO root fetch - processPackages [kan-gpt]: executing diffoscope
+[2024-05-04 20:09:30] INFO root fetch - processPackages [kan-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kan_gpt-0.1.2.tar.gz tmp/kan_gpt-0.1.3.tar.gz --markdown 20240504/k/kan-gpt/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-04 20:09:30] INFO root fetch - processPackages [brukeropus]: Downloading https://files.pythonhosted.org/packages/c8/f8/b2faa347785753054c3c85eb55daaa5e551035ab7acff2ac96b4abde869a/brukeropus-1.0.2.tar.gz
+[2024-05-04 20:09:31] INFO root fetch - processPackages [brukeropus]: executing diffoscope
+[2024-05-04 20:09:31] INFO root fetch - processPackages [brukeropus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brukeropus-1.0.1.tar.gz tmp/brukeropus-1.0.2.tar.gz --markdown 20240504/b/brukeropus/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 20:09:31] INFO root fetch - processPackages [kan-gpt]: Remove: archive file [/home/abi/fetcher/tmp/kan_gpt-0.1.2.tar.gz]
+[2024-05-04 20:09:31] INFO root fetch - processPackages [kan-gpt]: Remove: archive file [/home/abi/fetcher/tmp/kan_gpt-0.1.3.tar.gz]
+[2024-05-04 20:09:31] INFO root fetch - main [MainThread]: End processing [kan-gpt]: success
+[2024-05-04 20:09:31] INFO root fetch - processPackages [brukeropus]: Remove: archive file [/home/abi/fetcher/tmp/brukeropus-1.0.1.tar.gz]
+[2024-05-04 20:09:31] INFO root fetch - processPackages [brukeropus]: Remove: archive file [/home/abi/fetcher/tmp/brukeropus-1.0.2.tar.gz]
+[2024-05-04 20:09:31] INFO root fetch - main [MainThread]: End processing [brukeropus]: success
+[2024-05-04 20:09:31] INFO root fetch - main [MainThread]: Store serial: [23060008]
