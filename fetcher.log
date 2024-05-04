@@ -17631,3 +17631,59 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:23:29] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
 [2024-05-04 19:23:29] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-04 19:23:29] INFO root fetch - main [MainThread]: Store serial: [23059540]
+[2024-05-04 19:25:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059540]
+[2024-05-04 19:25:37] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 19:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: entity-recognition-service
+[2024-05-04 19:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blankslate-python
+[2024-05-04 19:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ciostream
+[2024-05-04 19:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dash-spread-grid
+[2024-05-04 19:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tkfontselector
+[2024-05-04 19:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aiotx
+[2024-05-04 19:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: biolearn
+[2024-05-04 19:25:38] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 19:25:38] INFO root fetch - processPackages [tkfontselector]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-05-04 19:25:38] INFO root fetch - processPackages [entity-recognition-service]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 19:25:38] WARNING root fetch - processPackages [blankslate-python]: Skipping, unable to determine old version
+[2024-05-04 19:25:38] INFO root fetch - main [MainThread]: End processing [blankslate-python] error
+[2024-05-04 19:25:38] INFO root fetch - processPackages [aiotx]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-04 19:25:38] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-05-04 19:25:38] INFO root fetch - processPackages [ciostream]: New version: [0.0.1.post8952132004] Old Version: [0.0.1.post8125288576]
+[2024-05-04 19:25:38] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/20/17/7536ec053935a961df0c78a70f673579035c7f7ce1f8043a5a6dd9c58782/tkfontselector-1.0.7.tar.gz
+[2024-05-04 19:25:38] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/23/18/7145326a6ea0566c2c41ba0bf3822fffc6b4da314a426433179c4724bda3/entity_recognition_service-0.1.8.tar.gz
+[2024-05-04 19:25:38] INFO root fetch - processPackages [aiotx]: Downloading https://files.pythonhosted.org/packages/84/72/dc422596758dd86fa1323a1f1c587bff36bfb99570518aa640c7ec248d7a/aiotx-0.5.0.tar.gz
+[2024-05-04 19:25:38] INFO root fetch - processPackages [biolearn]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-04 19:25:38] INFO root fetch - processPackages [ciostream]: Downloading https://files.pythonhosted.org/packages/fa/c8/eb52efaa4b2c4342ed7e6fbb55f69c129691d6207e264a7c69663790cd8c/ciostream-0.0.1.post8125288576.tar.gz
+[2024-05-04 19:25:38] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-05-04 19:25:38] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/86/75/a994a9af22b16241a2b38cb3314e7d2457d9aaf73d35a5b70823d8c8ce18/entity_recognition_service-0.1.9.tar.gz
+[2024-05-04 19:25:38] INFO root fetch - processPackages [biolearn]: Downloading https://files.pythonhosted.org/packages/f3/36/bcf2e5542708c75791b975a7f0a7bfdf322e94711b5656559c7dde69e522/biolearn-0.4.1.tar.gz
+[2024-05-04 19:25:38] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/5f/03/0451de72792cc57b860a67b838784f25a74025100985e506c43993ed9a88/tkfontselector-1.0.8.tar.gz
+[2024-05-04 19:25:38] INFO root fetch - processPackages [aiotx]: Downloading https://files.pythonhosted.org/packages/a1/fa/82abf6f876eccc4793ceaa8163e4f72982359f41b818a208fef3d0abcf01/aiotx-0.5.1.tar.gz
+[2024-05-04 19:25:38] INFO root fetch - processPackages [entity-recognition-service]: executing diffoscope
+[2024-05-04 19:25:38] INFO root fetch - processPackages [entity-recognition-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entity_recognition_service-0.1.8.tar.gz tmp/entity_recognition_service-0.1.9.tar.gz --markdown 20240504/e/entity-recognition-service/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 19:25:38] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-05-04 19:25:38] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240504/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 19:25:38] INFO root fetch - processPackages [tkfontselector]: executing diffoscope
+[2024-05-04 19:25:38] INFO root fetch - processPackages [tkfontselector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkfontselector-1.0.7.tar.gz tmp/tkfontselector-1.0.8.tar.gz --markdown 20240504/t/tkfontselector/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-05-04 19:25:38] INFO root fetch - processPackages [aiotx]: executing diffoscope
+[2024-05-04 19:25:38] INFO root fetch - processPackages [aiotx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotx-0.5.0.tar.gz tmp/aiotx-0.5.1.tar.gz --markdown 20240504/a/aiotx/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-04 19:25:39] INFO root fetch - processPackages [ciostream]: Downloading https://files.pythonhosted.org/packages/7f/1d/117485a66506bf81822fb64e581a85dc7e845d911458cd3ee1f4f69bd4d9/ciostream-0.0.1.post8952132004.tar.gz
+[2024-05-04 19:25:39] INFO root fetch - processPackages [ciostream]: executing diffoscope
+[2024-05-04 19:25:39] INFO root fetch - processPackages [ciostream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ciostream-0.0.1.post8125288576.tar.gz tmp/ciostream-0.0.1.post8952132004.tar.gz --markdown 20240504/c/ciostream/0.0.1.post8125288576-0.0.1.post8952132004/README.md --exclude *.pyd
+[2024-05-04 19:25:39] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.7.tar.gz]
+[2024-05-04 19:25:39] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.8.tar.gz]
+[2024-05-04 19:25:39] INFO root fetch - main [MainThread]: End processing [tkfontselector]: success
+[2024-05-04 19:25:39] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.8.tar.gz]
+[2024-05-04 19:25:39] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.9.tar.gz]
+[2024-05-04 19:25:39] INFO root fetch - main [MainThread]: End processing [entity-recognition-service]: success
+[2024-05-04 19:25:39] WARNING root fetch - processPackages [biolearn]: Skipping package: exceeds size limit 13279847>=10485760
+[2024-05-04 19:25:39] INFO root fetch - main [MainThread]: End processing [biolearn] error
+[2024-05-04 19:25:39] INFO root fetch - processPackages [aiotx]: Remove: archive file [/home/abi/fetcher/tmp/aiotx-0.5.0.tar.gz]
+[2024-05-04 19:25:39] INFO root fetch - processPackages [aiotx]: Remove: archive file [/home/abi/fetcher/tmp/aiotx-0.5.1.tar.gz]
+[2024-05-04 19:25:39] INFO root fetch - main [MainThread]: End processing [aiotx]: success
+[2024-05-04 19:25:39] INFO root fetch - processPackages [ciostream]: Remove: archive file [/home/abi/fetcher/tmp/ciostream-0.0.1.post8125288576.tar.gz]
+[2024-05-04 19:25:39] INFO root fetch - processPackages [ciostream]: Remove: archive file [/home/abi/fetcher/tmp/ciostream-0.0.1.post8952132004.tar.gz]
+[2024-05-04 19:25:39] INFO root fetch - main [MainThread]: End processing [ciostream]: success
+[2024-05-04 19:25:40] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-05-04 19:25:40] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-05-04 19:25:40] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-05-04 19:25:40] INFO root fetch - main [MainThread]: Store serial: [23059560]
