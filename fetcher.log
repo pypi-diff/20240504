@@ -12328,3 +12328,24 @@
 [2024-05-04 11:22:53] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.5.2.tar.gz]
 [2024-05-04 11:22:53] INFO root fetch - main [MainThread]: End processing [cloudpy-org]: success
 [2024-05-04 11:22:53] INFO root fetch - main [MainThread]: Store serial: [23057243]
+[2024-05-04 11:24:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057243]
+[2024-05-04 11:25:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 11:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SMClib.py
+[2024-05-04 11:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RL-OM
+[2024-05-04 11:25:01] INFO root fetch - processPackages [SMClib.py]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-04 11:25:01] INFO root fetch - processPackages [RL-OM]: New version: [0.7.99] Old Version: [0.7.98]
+[2024-05-04 11:25:01] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/f3/a6/6f041767c2ca59b8f625a77ae37cf5e47e3732486adbeae4ae6bac70ffd7/SMClib.py-1.0.6.tar.gz
+[2024-05-04 11:25:01] INFO root fetch - processPackages [RL-OM]: Downloading https://files.pythonhosted.org/packages/54/0e/1e251f32e562634fc591242baccb565e0826397773457a2e7efb89e2b31e/RL_OM-0.7.98.tar.gz
+[2024-05-04 11:25:02] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/0a/4f/8a03b22dfa479551a779eb54c4defaafb274272cb9c4c83ea3ce5f787fe4/SMClib.py-1.0.7.tar.gz
+[2024-05-04 11:25:02] INFO root fetch - processPackages [RL-OM]: Downloading https://files.pythonhosted.org/packages/05/80/e201b178be17998f0db6391696dcf15f0c737015844fe222295cca5fc390/RL_OM-0.7.99.tar.gz
+[2024-05-04 11:25:02] INFO root fetch - processPackages [SMClib.py]: executing diffoscope
+[2024-05-04 11:25:02] INFO root fetch - processPackages [SMClib.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SMClib.py-1.0.6.tar.gz tmp/SMClib.py-1.0.7.tar.gz --markdown 20240504/S/SMClib.py/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-04 11:25:02] INFO root fetch - processPackages [RL-OM]: executing diffoscope
+[2024-05-04 11:25:02] INFO root fetch - processPackages [RL-OM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RL_OM-0.7.98.tar.gz tmp/RL_OM-0.7.99.tar.gz --markdown 20240504/R/RL-OM/0.7.98-0.7.99/README.md --exclude *.pyd
+[2024-05-04 11:25:02] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.6.tar.gz]
+[2024-05-04 11:25:02] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.7.tar.gz]
+[2024-05-04 11:25:02] INFO root fetch - main [MainThread]: End processing [SMClib.py]: success
+[2024-05-04 11:25:02] INFO root fetch - processPackages [RL-OM]: Remove: archive file [/home/abi/fetcher/tmp/RL_OM-0.7.98.tar.gz]
+[2024-05-04 11:25:02] INFO root fetch - processPackages [RL-OM]: Remove: archive file [/home/abi/fetcher/tmp/RL_OM-0.7.99.tar.gz]
+[2024-05-04 11:25:02] INFO root fetch - main [MainThread]: End processing [RL-OM]: success
+[2024-05-04 11:25:02] INFO root fetch - main [MainThread]: Store serial: [23057252]
