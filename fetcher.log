@@ -7125,3 +7125,9 @@
 [2024-05-04 03:58:05] INFO root fetch - processPackages [hbox]: Remove: archive file [/home/abi/fetcher/tmp/hbox-0.2.7.tar.gz]
 [2024-05-04 03:58:05] INFO root fetch - main [MainThread]: End processing [hbox]: success
 [2024-05-04 03:58:05] INFO root fetch - main [MainThread]: Store serial: [23054657]
+[2024-05-04 04:00:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054657]
+[2024-05-04 04:00:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 04:00:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MICView
+[2024-05-04 04:00:14] WARNING root fetch - processPackages [MICView]: Skipping, unable to determine old version
+[2024-05-04 04:00:14] INFO root fetch - main [MainThread]: End processing [MICView] error
+[2024-05-04 04:00:14] INFO root fetch - main [MainThread]: Store serial: [23054661]
