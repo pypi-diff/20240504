@@ -13097,3 +13097,24 @@
 [2024-05-04 12:45:18] ERROR root fetch - processPackages [IoTNetworkMalwareClassifier]: Unable to fetch info: No such project/version 'IoTNetworkMalwareClassifier' 0.0.18
 [2024-05-04 12:45:18] INFO root fetch - main [MainThread]: End processing [IoTNetworkMalwareClassifier] error
 [2024-05-04 12:45:18] INFO root fetch - main [MainThread]: Store serial: [23057553]
+[2024-05-04 12:47:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057553]
+[2024-05-04 12:47:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 12:47:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RPICommLink
+[2024-05-04 12:47:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: audiolm-superfeel
+[2024-05-04 12:47:27] INFO root fetch - processPackages [RPICommLink]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-04 12:47:27] INFO root fetch - processPackages [audiolm-superfeel]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-05-04 12:47:27] INFO root fetch - processPackages [audiolm-superfeel]: Downloading https://files.pythonhosted.org/packages/06/a4/b1fa32b40d842f41b52fd5a3aadcb5730334de07a8f6acfe2fb4d3edaee2/audiolm_superfeel-2.1.0.tar.gz
+[2024-05-04 12:47:27] INFO root fetch - processPackages [RPICommLink]: Downloading https://files.pythonhosted.org/packages/73/8d/bb0fcf1639611c01e8f00cd2e384347ae0741fdab4b17cdd2c1d96f5a7a0/RPICommLink-1.0.4.tar.gz
+[2024-05-04 12:47:27] INFO root fetch - processPackages [RPICommLink]: Downloading https://files.pythonhosted.org/packages/78/c3/89669c955f416d2a0fab214a14d0968400dea3cbaf67b2ca1ed2fa01221e/RPICommLink-1.0.5.tar.gz
+[2024-05-04 12:47:28] INFO root fetch - processPackages [audiolm-superfeel]: Downloading https://files.pythonhosted.org/packages/90/df/b826d0a493893027147a5e5a8b53b32782efa4dd8ba4097e86bede4816ee/audiolm_superfeel-2.1.1.tar.gz
+[2024-05-04 12:47:28] INFO root fetch - processPackages [RPICommLink]: executing diffoscope
+[2024-05-04 12:47:28] INFO root fetch - processPackages [RPICommLink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RPICommLink-1.0.4.tar.gz tmp/RPICommLink-1.0.5.tar.gz --markdown 20240504/R/RPICommLink/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-04 12:47:28] INFO root fetch - processPackages [audiolm-superfeel]: executing diffoscope
+[2024-05-04 12:47:28] INFO root fetch - processPackages [audiolm-superfeel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiolm_superfeel-2.1.0.tar.gz tmp/audiolm_superfeel-2.1.1.tar.gz --markdown 20240504/a/audiolm-superfeel/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-05-04 12:47:28] INFO root fetch - processPackages [RPICommLink]: Remove: archive file [/home/abi/fetcher/tmp/RPICommLink-1.0.4.tar.gz]
+[2024-05-04 12:47:28] INFO root fetch - processPackages [RPICommLink]: Remove: archive file [/home/abi/fetcher/tmp/RPICommLink-1.0.5.tar.gz]
+[2024-05-04 12:47:28] INFO root fetch - main [MainThread]: End processing [RPICommLink]: success
+[2024-05-04 12:47:28] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.1.0.tar.gz]
+[2024-05-04 12:47:28] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.1.1.tar.gz]
+[2024-05-04 12:47:28] INFO root fetch - main [MainThread]: End processing [audiolm-superfeel]: success
+[2024-05-04 12:47:28] INFO root fetch - main [MainThread]: Store serial: [23057559]
