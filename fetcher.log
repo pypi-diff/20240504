@@ -14504,3 +14504,15 @@
 [2024-05-04 15:13:16] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.4-cp38-cp38-manylinux2014_x86_64.whl.zip]
 [2024-05-04 15:13:16] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-05-04 15:13:16] INFO root fetch - main [MainThread]: Store serial: [23058102]
+[2024-05-04 15:15:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058102]
+[2024-05-04 15:15:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 15:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snapquery
+[2024-05-04 15:15:25] INFO root fetch - processPackages [snapquery]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-04 15:15:25] INFO root fetch - processPackages [snapquery]: Downloading https://files.pythonhosted.org/packages/3a/04/4685bc601abd81f22e3e495c6ddf13b777ec310f766146b55b39e534dd89/snapquery-0.0.2.tar.gz
+[2024-05-04 15:15:25] INFO root fetch - processPackages [snapquery]: Downloading https://files.pythonhosted.org/packages/24/1e/0d3a4e2ccb584ab7a52b3d416c6c7638aaf4d8f491b222ac7d27aa659536/snapquery-0.0.3.tar.gz
+[2024-05-04 15:15:25] INFO root fetch - processPackages [snapquery]: executing diffoscope
+[2024-05-04 15:15:25] INFO root fetch - processPackages [snapquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snapquery-0.0.2.tar.gz tmp/snapquery-0.0.3.tar.gz --markdown 20240504/s/snapquery/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-04 15:15:26] INFO root fetch - processPackages [snapquery]: Remove: archive file [/home/abi/fetcher/tmp/snapquery-0.0.2.tar.gz]
+[2024-05-04 15:15:26] INFO root fetch - processPackages [snapquery]: Remove: archive file [/home/abi/fetcher/tmp/snapquery-0.0.3.tar.gz]
+[2024-05-04 15:15:26] INFO root fetch - main [MainThread]: End processing [snapquery]: success
+[2024-05-04 15:15:26] INFO root fetch - main [MainThread]: Store serial: [23058108]
