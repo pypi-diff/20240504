@@ -6867,3 +6867,24 @@
 [2024-05-04 03:37:21] INFO root fetch - processPackages [enderchest]: Remove: archive file [/home/abi/fetcher/tmp/enderchest-0.1.6rc1.tar.gz]
 [2024-05-04 03:37:21] INFO root fetch - main [MainThread]: End processing [enderchest]: success
 [2024-05-04 03:37:21] INFO root fetch - main [MainThread]: Store serial: [23054565]
+[2024-05-04 03:39:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054565]
+[2024-05-04 03:39:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 03:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rship-sdk
+[2024-05-04 03:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiide
+[2024-05-04 03:39:30] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 03:39:30] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 03:39:30] INFO root fetch - processPackages [aiide]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-04 03:39:30] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 03:39:30] INFO root fetch - processPackages [aiide]: Downloading https://files.pythonhosted.org/packages/ed/f1/f910948855cc528e785457fcab66e13b37a03d4fd0d04c55582b8f7574bd/aiide-0.0.3.tar.gz
+[2024-05-04 03:39:30] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 03:39:30] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 03:39:30] INFO root fetch - processPackages [aiide]: Downloading https://files.pythonhosted.org/packages/3f/d1/b84ef655f7f6585ccb277bde1eb117cae00839a491c86c1c2b30dec97640/aiide-0.0.4.tar.gz
+[2024-05-04 03:39:30] INFO root fetch - processPackages [aiide]: executing diffoscope
+[2024-05-04 03:39:30] INFO root fetch - processPackages [aiide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiide-0.0.3.tar.gz tmp/aiide-0.0.4.tar.gz --markdown 20240504/a/aiide/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-04 03:39:31] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 03:39:31] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 03:39:31] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 03:39:31] INFO root fetch - processPackages [aiide]: Remove: archive file [/home/abi/fetcher/tmp/aiide-0.0.3.tar.gz]
+[2024-05-04 03:39:31] INFO root fetch - processPackages [aiide]: Remove: archive file [/home/abi/fetcher/tmp/aiide-0.0.4.tar.gz]
+[2024-05-04 03:39:31] INFO root fetch - main [MainThread]: End processing [aiide]: success
+[2024-05-04 03:39:31] INFO root fetch - main [MainThread]: Store serial: [23054571]
