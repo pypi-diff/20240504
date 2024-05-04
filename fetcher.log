@@ -10024,3 +10024,36 @@
 [2024-05-04 07:51:03] INFO root fetch - processPackages [aqtinstall]: Remove: archive file [/home/abi/fetcher/tmp/aqtinstall-3.1.9.tar.gz]
 [2024-05-04 07:51:03] INFO root fetch - main [MainThread]: End processing [aqtinstall]: success
 [2024-05-04 07:51:03] INFO root fetch - main [MainThread]: Store serial: [23056044]
+[2024-05-04 07:53:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056044]
+[2024-05-04 07:53:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 07:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-sale-automatic-workflow
+[2024-05-04 07:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bcut-asr-branch
+[2024-05-04 07:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ddr-analysis-tools
+[2024-05-04 07:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-dbchat
+[2024-05-04 07:53:12] INFO root fetch - processPackages [ddr-analysis-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 07:53:12] WARNING root fetch - processPackages [bcut-asr-branch]: Skipping, unable to determine old version
+[2024-05-04 07:53:12] INFO root fetch - processPackages [odoo-addon-sale-automatic-workflow]: New version: [16.0.1.1.0.1] Old Version: [16.0.1.1.0]
+[2024-05-04 07:53:12] INFO root fetch - main [MainThread]: End processing [bcut-asr-branch] error
+[2024-05-04 07:53:12] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc99.post1] Old Version: [0.0.2rc98.post1]
+[2024-05-04 07:53:12] INFO root fetch - processPackages [odoo-addon-sale-automatic-workflow]: Downloading https://files.pythonhosted.org/packages/ad/13/ee730ee43de5f301da85f381b893a4e55c9af336f489a3ec776a6e872155/odoo_addon_sale_automatic_workflow-16.0.1.1.0-py3-none-any.whl
+[2024-05-04 07:53:12] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/f6/18/1775d2217b34cf20972da457954b07826f8eee83addaf30cb9f9e56acda7/py_dbchat-0.0.2rc98.post1.tar.gz
+[2024-05-04 07:53:12] INFO root fetch - processPackages [ddr-analysis-tools]: Downloading https://files.pythonhosted.org/packages/7d/51/8d2fbb3c0cff3548c7b75292ce6a2109eed3c0a6759aaad40949c942060d/ddr_analysis_tools-0.0.8.tar.gz
+[2024-05-04 07:53:13] INFO root fetch - processPackages [odoo-addon-sale-automatic-workflow]: Downloading https://files.pythonhosted.org/packages/48/0a/051a0c1b9938013d1342a997dfe5fa1926e9f1f3e28d90056bbd978c6365/odoo_addon_sale_automatic_workflow-16.0.1.1.0.1-py3-none-any.whl
+[2024-05-04 07:53:13] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/73/d9/44b1e50b7a7349a8172af36226caa9ddf526c5c91c863ce32643ae416507/py_dbchat-0.0.2rc99.post1.tar.gz
+[2024-05-04 07:53:13] INFO root fetch - processPackages [odoo-addon-sale-automatic-workflow]: executing diffoscope
+[2024-05-04 07:53:13] INFO root fetch - processPackages [odoo-addon-sale-automatic-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_automatic_workflow-16.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_sale_automatic_workflow-16.0.1.1.0.1-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-sale-automatic-workflow/16.0.1.1.0-16.0.1.1.0.1/README.md --exclude *.pyd
+[2024-05-04 07:53:13] INFO root fetch - processPackages [ddr-analysis-tools]: Downloading https://files.pythonhosted.org/packages/63/ab/4ec7a53d2b0f217e850e03094f5e6a1d26d3be703297c0eff05a522fc32e/ddr_analysis_tools-0.0.9.tar.gz
+[2024-05-04 07:53:13] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-05-04 07:53:13] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc98.post1.tar.gz tmp/py_dbchat-0.0.2rc99.post1.tar.gz --markdown 20240504/p/py-dbchat/0.0.2rc98.post1-0.0.2rc99.post1/README.md --exclude *.pyd
+[2024-05-04 07:53:13] INFO root fetch - processPackages [ddr-analysis-tools]: executing diffoscope
+[2024-05-04 07:53:13] INFO root fetch - processPackages [ddr-analysis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddr_analysis_tools-0.0.8.tar.gz tmp/ddr_analysis_tools-0.0.9.tar.gz --markdown 20240504/d/ddr-analysis-tools/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 07:53:14] INFO root fetch - processPackages [ddr-analysis-tools]: Remove: archive file [/home/abi/fetcher/tmp/ddr_analysis_tools-0.0.8.tar.gz]
+[2024-05-04 07:53:14] INFO root fetch - processPackages [ddr-analysis-tools]: Remove: archive file [/home/abi/fetcher/tmp/ddr_analysis_tools-0.0.9.tar.gz]
+[2024-05-04 07:53:14] INFO root fetch - main [MainThread]: End processing [ddr-analysis-tools]: success
+[2024-05-04 07:53:14] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc98.post1.tar.gz]
+[2024-05-04 07:53:14] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc99.post1.tar.gz]
+[2024-05-04 07:53:14] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-05-04 07:53:14] INFO root fetch - processPackages [odoo-addon-sale-automatic-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_automatic_workflow-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-04 07:53:14] INFO root fetch - processPackages [odoo-addon-sale-automatic-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_automatic_workflow-16.0.1.1.0.1-py3-none-any.whl.zip]
+[2024-05-04 07:53:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-automatic-workflow]: success
+[2024-05-04 07:53:14] INFO root fetch - main [MainThread]: Store serial: [23056056]
