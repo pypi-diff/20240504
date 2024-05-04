@@ -10078,3 +10078,38 @@
 [2024-05-04 07:55:26] INFO root fetch - processPackages [panpipelines]: Remove: archive file [/home/abi/fetcher/tmp/panpipelines-1.0.0.tar.gz]
 [2024-05-04 07:55:26] INFO root fetch - main [MainThread]: End processing [panpipelines]: success
 [2024-05-04 07:55:26] INFO root fetch - main [MainThread]: Store serial: [23056062]
+[2024-05-04 07:57:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056062]
+[2024-05-04 07:57:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 07:59:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056062]
+[2024-05-04 07:59:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 07:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyusb-tree
+[2024-05-04 07:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-admin-extra-buttons
+[2024-05-04 07:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-extensions
+[2024-05-04 07:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: libvsgpt-python
+[2024-05-04 07:59:40] WARNING root fetch - processPackages [pyusb-tree]: Skipping, unable to determine old version
+[2024-05-04 07:59:40] INFO root fetch - main [MainThread]: End processing [pyusb-tree] error
+[2024-05-04 07:59:40] INFO root fetch - processPackages [django-admin-extra-buttons]: New version: [1.5.8] Old Version: [1.5.7]
+[2024-05-04 07:59:40] INFO root fetch - processPackages [libvsgpt-python]: New version: [20240504] Old Version: [20240228]
+[2024-05-04 07:59:40] INFO root fetch - processPackages [dash-extensions]: New version: [1.0.9] Old Version: [1.0.8rc2]
+[2024-05-04 07:59:41] INFO root fetch - processPackages [django-admin-extra-buttons]: Downloading https://files.pythonhosted.org/packages/1c/6c/eb3714aa38b4084123428f65ecafe7164142fad2886d9a7e803f7b17c053/django-admin-extra-buttons-1.5.7.tar.gz
+[2024-05-04 07:59:41] INFO root fetch - processPackages [libvsgpt-python]: Downloading https://files.pythonhosted.org/packages/65/51/64aa41e03927bc3726cc92f992a689673caffb79267398e2287da3f8696e/libvsgpt-python-20240228.tar.gz
+[2024-05-04 07:59:41] INFO root fetch - processPackages [dash-extensions]: Downloading https://files.pythonhosted.org/packages/90/bf/520c9147ab71abc1f0767745c2d2975c9d4d0642417c596ca28877805f25/dash_extensions-1.0.8rc2.tar.gz
+[2024-05-04 07:59:41] INFO root fetch - processPackages [django-admin-extra-buttons]: Downloading https://files.pythonhosted.org/packages/ea/81/1a590014b6d87b6544cfaf21d06a6c584cfbc84bb41e33acfc9fd3e5af7f/django_admin_extra_buttons-1.5.8.tar.gz
+[2024-05-04 07:59:41] INFO root fetch - processPackages [libvsgpt-python]: Downloading https://files.pythonhosted.org/packages/36/58/91a31cdffe4056682d88aca68ffbe135c8f07e7a1443853b5e89f93d251d/libvsgpt-python-20240504.tar.gz
+[2024-05-04 07:59:41] INFO root fetch - processPackages [dash-extensions]: Downloading https://files.pythonhosted.org/packages/7f/63/564061f316598022f17cdd48ab443dfc7d05ab959799a2a196f52b2921a1/dash_extensions-1.0.9.tar.gz
+[2024-05-04 07:59:41] INFO root fetch - processPackages [django-admin-extra-buttons]: executing diffoscope
+[2024-05-04 07:59:41] INFO root fetch - processPackages [django-admin-extra-buttons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-extra-buttons-1.5.7.tar.gz tmp/django_admin_extra_buttons-1.5.8.tar.gz --markdown 20240504/d/django-admin-extra-buttons/1.5.7-1.5.8/README.md --exclude *.pyd
+[2024-05-04 07:59:41] INFO root fetch - processPackages [dash-extensions]: executing diffoscope
+[2024-05-04 07:59:41] INFO root fetch - processPackages [dash-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_extensions-1.0.8rc2.tar.gz tmp/dash_extensions-1.0.9.tar.gz --markdown 20240504/d/dash-extensions/1.0.8rc2-1.0.9/README.md --exclude *.pyd
+[2024-05-04 07:59:41] INFO root fetch - processPackages [libvsgpt-python]: executing diffoscope
+[2024-05-04 07:59:41] INFO root fetch - processPackages [libvsgpt-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libvsgpt-python-20240228.tar.gz tmp/libvsgpt-python-20240504.tar.gz --markdown 20240504/l/libvsgpt-python/20240228-20240504/README.md --exclude *.pyd
+[2024-05-04 07:59:42] INFO root fetch - processPackages [django-admin-extra-buttons]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-extra-buttons-1.5.7.tar.gz]
+[2024-05-04 07:59:42] INFO root fetch - processPackages [django-admin-extra-buttons]: Remove: archive file [/home/abi/fetcher/tmp/django_admin_extra_buttons-1.5.8.tar.gz]
+[2024-05-04 07:59:42] INFO root fetch - main [MainThread]: End processing [django-admin-extra-buttons]: success
+[2024-05-04 07:59:46] INFO root fetch - processPackages [libvsgpt-python]: Remove: archive file [/home/abi/fetcher/tmp/libvsgpt-python-20240228.tar.gz]
+[2024-05-04 07:59:46] INFO root fetch - processPackages [libvsgpt-python]: Remove: archive file [/home/abi/fetcher/tmp/libvsgpt-python-20240504.tar.gz]
+[2024-05-04 07:59:46] INFO root fetch - main [MainThread]: End processing [libvsgpt-python]: success
+[2024-05-04 08:00:17] INFO root fetch - processPackages [dash-extensions]: Remove: archive file [/home/abi/fetcher/tmp/dash_extensions-1.0.8rc2.tar.gz]
+[2024-05-04 08:00:17] INFO root fetch - processPackages [dash-extensions]: Remove: archive file [/home/abi/fetcher/tmp/dash_extensions-1.0.9.tar.gz]
+[2024-05-04 08:00:17] INFO root fetch - main [MainThread]: End processing [dash-extensions]: success
+[2024-05-04 08:00:17] INFO root fetch - main [MainThread]: Store serial: [23056072]
