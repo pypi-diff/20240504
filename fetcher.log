@@ -20129,3 +20129,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:16:29] INFO root fetch - processPackages [qgridnext]: Remove: archive file [/home/abi/fetcher/tmp/qgridnext-2.0.1.tar.gz]
 [2024-05-04 22:16:29] INFO root fetch - main [MainThread]: End processing [qgridnext]: success
 [2024-05-04 22:16:29] INFO root fetch - main [MainThread]: Store serial: [23060739]
+[2024-05-04 22:18:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060739]
+[2024-05-04 22:18:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 22:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-json-config
+[2024-05-04 22:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: topt
+[2024-05-04 22:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bot-station
+[2024-05-04 22:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dektools
+[2024-05-04 22:18:38] INFO root fetch - processPackages [mo-json-config]: New version: [4.620.24125] Old Version: [4.619.24125]
+[2024-05-04 22:18:38] INFO root fetch - processPackages [dektools]: New version: [0.1.94] Old Version: [0.1.93]
+[2024-05-04 22:18:38] WARNING root fetch - processPackages [bot-station]: Skipping, unable to determine old version
+[2024-05-04 22:18:38] INFO root fetch - main [MainThread]: End processing [bot-station] error
+[2024-05-04 22:18:38] INFO root fetch - processPackages [topt]: New version: [0.0.3] Old Version: [0.0.1]
+[2024-05-04 22:18:38] INFO root fetch - processPackages [mo-json-config]: Downloading https://files.pythonhosted.org/packages/b0/e8/917b1032551c031f977fb916308f8103ce98c53597ea0c9c48a9117f6a90/mo_json_config-4.619.24125.tar.gz
+[2024-05-04 22:18:38] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/6b/0b/3c6fdc3ea44926f305f6b4f6b89b55b01361684808cbbf46580e4ece4c01/dektools-0.1.93.tar.gz
+[2024-05-04 22:18:38] INFO root fetch - processPackages [topt]: Downloading https://files.pythonhosted.org/packages/70/4b/d5842f5e4128be8bdd89cb18b64948c25cc65cd8897bf083ea0250b2ec18/topt-0.0.1.tar.gz
+[2024-05-04 22:18:38] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/99/51/ec4d170455c43d2b9c1e3a5395480e4eaff8fdcd9b4131ecc2297a95c7dd/dektools-0.1.94.tar.gz
+[2024-05-04 22:18:38] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-05-04 22:18:38] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.93.tar.gz tmp/dektools-0.1.94.tar.gz --markdown 20240504/d/dektools/0.1.93-0.1.94/README.md --exclude *.pyd
+[2024-05-04 22:18:38] INFO root fetch - processPackages [mo-json-config]: Downloading https://files.pythonhosted.org/packages/66/55/52f2f4ea2c8796a225630677dc34d3aabecdcb77e2da45d563b1f8fae5b7/mo_json_config-4.620.24125.tar.gz
+[2024-05-04 22:18:38] INFO root fetch - processPackages [topt]: Downloading https://files.pythonhosted.org/packages/39/87/2aeba4dc6d6888b3c98354ed976ab0ec9d277bf4770cc511dd9e498cec9e/topt-0.0.3.tar.gz
+[2024-05-04 22:18:39] INFO root fetch - processPackages [mo-json-config]: executing diffoscope
+[2024-05-04 22:18:39] INFO root fetch - processPackages [mo-json-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_json_config-4.619.24125.tar.gz tmp/mo_json_config-4.620.24125.tar.gz --markdown 20240504/m/mo-json-config/4.619.24125-4.620.24125/README.md --exclude *.pyd
+[2024-05-04 22:18:39] INFO root fetch - processPackages [topt]: executing diffoscope
+[2024-05-04 22:18:39] INFO root fetch - processPackages [topt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/topt-0.0.1.tar.gz tmp/topt-0.0.3.tar.gz --markdown 20240504/t/topt/0.0.1-0.0.3/README.md --exclude *.pyd
+[2024-05-04 22:18:39] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.93.tar.gz]
+[2024-05-04 22:18:39] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.94.tar.gz]
+[2024-05-04 22:18:39] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-05-04 22:18:39] INFO root fetch - processPackages [mo-json-config]: Remove: archive file [/home/abi/fetcher/tmp/mo_json_config-4.619.24125.tar.gz]
+[2024-05-04 22:18:39] INFO root fetch - processPackages [mo-json-config]: Remove: archive file [/home/abi/fetcher/tmp/mo_json_config-4.620.24125.tar.gz]
+[2024-05-04 22:18:39] INFO root fetch - main [MainThread]: End processing [mo-json-config]: success
+[2024-05-04 22:18:39] INFO root fetch - processPackages [topt]: Remove: archive file [/home/abi/fetcher/tmp/topt-0.0.1.tar.gz]
+[2024-05-04 22:18:39] INFO root fetch - processPackages [topt]: Remove: archive file [/home/abi/fetcher/tmp/topt-0.0.3.tar.gz]
+[2024-05-04 22:18:39] INFO root fetch - main [MainThread]: End processing [topt]: success
+[2024-05-04 22:18:39] INFO root fetch - main [MainThread]: Store serial: [23060759]
