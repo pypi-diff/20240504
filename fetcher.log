@@ -7148,3 +7148,33 @@
 [2024-05-04 04:04:30] INFO root fetch - processPackages [pygcc]: Remove: archive file [/home/abi/fetcher/tmp/pygcc-1.3.0.tar.gz]
 [2024-05-04 04:04:30] INFO root fetch - main [MainThread]: End processing [pygcc]: success
 [2024-05-04 04:04:30] INFO root fetch - main [MainThread]: Store serial: [23054668]
+[2024-05-04 04:06:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054668]
+[2024-05-04 04:06:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 04:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cmusic
+[2024-05-04 04:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tesseract-olap
+[2024-05-04 04:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hbox
+[2024-05-04 04:06:38] INFO root fetch - processPackages [cmusic]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 04:06:38] INFO root fetch - processPackages [hbox]: New version: [0.3.1] Old Version: [0.2.7]
+[2024-05-04 04:06:38] INFO root fetch - processPackages [hbox]: Downloading https://files.pythonhosted.org/packages/78/98/894eeddec0643abcf1e28c1cbc3a729aeff4d9908678fbde218c71a36352/hbox-0.2.7.tar.gz
+[2024-05-04 04:06:38] INFO root fetch - processPackages [tesseract-olap]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-04 04:06:38] INFO root fetch - processPackages [cmusic]: Downloading https://files.pythonhosted.org/packages/8c/37/90edaa2d65971d323c198072158b56cdcd430adab8667f97feb0ec8dd729/cmusic-1.0.0.tar.gz
+[2024-05-04 04:06:39] INFO root fetch - processPackages [tesseract-olap]: Downloading https://files.pythonhosted.org/packages/8a/36/12b0aae2ecd38770c1e67a8ebdb009ff5518ce627ca5fa610330d3b15e8c/tesseract_olap-0.9.4.tar.gz
+[2024-05-04 04:06:39] INFO root fetch - processPackages [hbox]: Downloading https://files.pythonhosted.org/packages/45/47/914dbfe3767325a4b1b0f1c71feceea31904fae6ae537c046bc21198f0fa/hbox-0.3.1.tar.gz
+[2024-05-04 04:06:39] INFO root fetch - processPackages [hbox]: executing diffoscope
+[2024-05-04 04:06:39] INFO root fetch - processPackages [hbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbox-0.2.7.tar.gz tmp/hbox-0.3.1.tar.gz --markdown 20240504/h/hbox/0.2.7-0.3.1/README.md --exclude *.pyd
+[2024-05-04 04:06:39] INFO root fetch - processPackages [cmusic]: Downloading https://files.pythonhosted.org/packages/0a/3c/9c89548f922965ce163359ab0597c814c7958fbec567be42c6615855ca7d/cmusic-1.0.1.tar.gz
+[2024-05-04 04:06:39] INFO root fetch - processPackages [cmusic]: executing diffoscope
+[2024-05-04 04:06:39] INFO root fetch - processPackages [cmusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmusic-1.0.0.tar.gz tmp/cmusic-1.0.1.tar.gz --markdown 20240504/c/cmusic/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 04:06:39] INFO root fetch - processPackages [tesseract-olap]: Downloading https://files.pythonhosted.org/packages/2e/7b/d0ab7413cc86111a5294cee2483e473f624503fe1d941ddc945ba2affc28/tesseract_olap-0.9.5.tar.gz
+[2024-05-04 04:06:39] INFO root fetch - processPackages [tesseract-olap]: executing diffoscope
+[2024-05-04 04:06:39] INFO root fetch - processPackages [tesseract-olap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tesseract_olap-0.9.4.tar.gz tmp/tesseract_olap-0.9.5.tar.gz --markdown 20240504/t/tesseract-olap/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-04 04:06:39] INFO root fetch - processPackages [hbox]: Remove: archive file [/home/abi/fetcher/tmp/hbox-0.2.7.tar.gz]
+[2024-05-04 04:06:39] INFO root fetch - processPackages [hbox]: Remove: archive file [/home/abi/fetcher/tmp/hbox-0.3.1.tar.gz]
+[2024-05-04 04:06:39] INFO root fetch - main [MainThread]: End processing [hbox]: success
+[2024-05-04 04:06:39] INFO root fetch - processPackages [cmusic]: Remove: archive file [/home/abi/fetcher/tmp/cmusic-1.0.0.tar.gz]
+[2024-05-04 04:06:39] INFO root fetch - processPackages [cmusic]: Remove: archive file [/home/abi/fetcher/tmp/cmusic-1.0.1.tar.gz]
+[2024-05-04 04:06:39] INFO root fetch - main [MainThread]: End processing [cmusic]: success
+[2024-05-04 04:06:40] INFO root fetch - processPackages [tesseract-olap]: Remove: archive file [/home/abi/fetcher/tmp/tesseract_olap-0.9.4.tar.gz]
+[2024-05-04 04:06:40] INFO root fetch - processPackages [tesseract-olap]: Remove: archive file [/home/abi/fetcher/tmp/tesseract_olap-0.9.5.tar.gz]
+[2024-05-04 04:06:40] INFO root fetch - main [MainThread]: End processing [tesseract-olap]: success
+[2024-05-04 04:06:40] INFO root fetch - main [MainThread]: Store serial: [23054680]
