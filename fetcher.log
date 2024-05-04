@@ -11836,3 +11836,36 @@
 [2024-05-04 10:43:26] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.1.dev1-cp312-cp312-macosx_11_0_arm64.whl.zip]
 [2024-05-04 10:43:26] INFO root fetch - main [MainThread]: End processing [kuzu]: success
 [2024-05-04 10:43:26] INFO root fetch - main [MainThread]: Store serial: [23056895]
+[2024-05-04 10:45:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056895]
+[2024-05-04 10:45:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 10:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fkq-test
+[2024-05-04 10:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openagents-grpc-proto
+[2024-05-04 10:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfp-nightly
+[2024-05-04 10:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RP2040Home
+[2024-05-04 10:45:35] INFO root fetch - processPackages [openagents-grpc-proto]: New version: [0.7.8] Old Version: [0.7.7]
+[2024-05-04 10:45:35] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-05-04 10:45:35] WARNING root fetch - processPackages [fkq-test]: Skipping, unable to determine old version
+[2024-05-04 10:45:35] INFO root fetch - main [MainThread]: End processing [fkq-test] error
+[2024-05-04 10:45:35] INFO root fetch - processPackages [RP2040Home]: New version: [0.1.4] Old Version: [0.1.0]
+[2024-05-04 10:45:35] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-05-04 10:45:35] INFO root fetch - processPackages [openagents-grpc-proto]: Downloading https://files.pythonhosted.org/packages/88/07/7f1711c9d5de7ba047894d2ec342e94e3a54340d0a9e73cd3fbcd93a1294/openagents_grpc_proto-0.7.7.tar.gz
+[2024-05-04 10:45:35] INFO root fetch - processPackages [RP2040Home]: Downloading https://files.pythonhosted.org/packages/a6/ea/8e3781c236e99427690d654642feadc1648b931fc4830de9f59a1abb46e7/rp2040home-0.1.0.tar.gz
+[2024-05-04 10:45:36] INFO root fetch - processPackages [openagents-grpc-proto]: Downloading https://files.pythonhosted.org/packages/df/cf/b1b79e364c4d04dd600c8b61731aa7b4d0b9689f82045e4c43fb99e4dd86/openagents_grpc_proto-0.7.8.tar.gz
+[2024-05-04 10:45:36] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-05-04 10:45:36] INFO root fetch - processPackages [openagents-grpc-proto]: executing diffoscope
+[2024-05-04 10:45:36] INFO root fetch - processPackages [openagents-grpc-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openagents_grpc_proto-0.7.7.tar.gz tmp/openagents_grpc_proto-0.7.8.tar.gz --markdown 20240504/o/openagents-grpc-proto/0.7.7-0.7.8/README.md --exclude *.pyd
+[2024-05-04 10:45:36] INFO root fetch - processPackages [RP2040Home]: Downloading https://files.pythonhosted.org/packages/f7/1a/306b8e9ffaa3919f739099a84f837601803e6c3c79fcc9d47422b1571b5e/rp2040home-0.1.4.tar.gz
+[2024-05-04 10:45:36] INFO root fetch - processPackages [RP2040Home]: executing diffoscope
+[2024-05-04 10:45:36] INFO root fetch - processPackages [RP2040Home]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rp2040home-0.1.0.tar.gz tmp/rp2040home-0.1.4.tar.gz --markdown 20240504/R/RP2040Home/0.1.0-0.1.4/README.md --exclude *.pyd
+[2024-05-04 10:45:36] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-05-04 10:45:36] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240504/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-05-04 10:45:36] INFO root fetch - processPackages [openagents-grpc-proto]: Remove: archive file [/home/abi/fetcher/tmp/openagents_grpc_proto-0.7.7.tar.gz]
+[2024-05-04 10:45:36] INFO root fetch - processPackages [openagents-grpc-proto]: Remove: archive file [/home/abi/fetcher/tmp/openagents_grpc_proto-0.7.8.tar.gz]
+[2024-05-04 10:45:36] INFO root fetch - main [MainThread]: End processing [openagents-grpc-proto]: success
+[2024-05-04 10:45:36] INFO root fetch - processPackages [RP2040Home]: Remove: archive file [/home/abi/fetcher/tmp/rp2040home-0.1.0.tar.gz]
+[2024-05-04 10:45:36] INFO root fetch - processPackages [RP2040Home]: Remove: archive file [/home/abi/fetcher/tmp/rp2040home-0.1.4.tar.gz]
+[2024-05-04 10:45:36] INFO root fetch - main [MainThread]: End processing [RP2040Home]: success
+[2024-05-04 10:45:39] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-05-04 10:45:39] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-05-04 10:45:39] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-05-04 10:45:39] INFO root fetch - main [MainThread]: Store serial: [23056927]
