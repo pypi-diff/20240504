@@ -9994,3 +9994,33 @@
 [2024-05-04 07:48:52] INFO root fetch - processPackages [asyncTwitterClient]: Remove: archive file [/home/abi/fetcher/tmp/asyncTwitterClient-1.0.0.tar.gz]
 [2024-05-04 07:48:52] INFO root fetch - main [MainThread]: End processing [asyncTwitterClient]: success
 [2024-05-04 07:48:52] INFO root fetch - main [MainThread]: Store serial: [23056033]
+[2024-05-04 07:50:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056033]
+[2024-05-04 07:51:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 07:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OZI.build
+[2024-05-04 07:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aqtinstall
+[2024-05-04 07:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-sale-manual-delivery
+[2024-05-04 07:51:00] INFO root fetch - processPackages [odoo-addon-sale-manual-delivery]: New version: [17.0.1.0.0.4] Old Version: [16.0.1.0.1]
+[2024-05-04 07:51:00] INFO root fetch - processPackages [OZI.build]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 07:51:01] INFO root fetch - processPackages [odoo-addon-sale-manual-delivery]: Downloading https://files.pythonhosted.org/packages/c5/e4/a8efea42bf633b432c96c2df98e6240424efd544ff4509697adc2b8e6b2c/odoo_addon_sale_manual_delivery-16.0.1.0.1-py3-none-any.whl
+[2024-05-04 07:51:01] INFO root fetch - processPackages [aqtinstall]: New version: [3.1.9] Old Version: [3.1.8]
+[2024-05-04 07:51:01] INFO root fetch - processPackages [OZI.build]: Downloading https://files.pythonhosted.org/packages/c2/68/445f96f8f6a7f7bc556936a301c80ff6e3b858eff7efa40c69e738b241fa/OZI.build-0.0.8.tar.gz
+[2024-05-04 07:51:01] INFO root fetch - processPackages [OZI.build]: Downloading https://files.pythonhosted.org/packages/b8/82/03697e429f995cc711a5f35ab319b525638b624dc6970aef7ef1879562c0/OZI.build-0.0.9.tar.gz
+[2024-05-04 07:51:01] INFO root fetch - processPackages [aqtinstall]: Downloading https://files.pythonhosted.org/packages/d7/fd/2689b4297335dc91f60a400820bf0e38074cfd2d6b4690304892bb73f163/aqtinstall-3.1.8.tar.gz
+[2024-05-04 07:51:01] INFO root fetch - processPackages [odoo-addon-sale-manual-delivery]: Downloading https://files.pythonhosted.org/packages/b3/2f/c7ced26c4c41e32fab5da4c03ed8fa46a9aa584032dfc5d9abdec2db6f74/odoo_addon_sale_manual_delivery-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-04 07:51:01] INFO root fetch - processPackages [OZI.build]: executing diffoscope
+[2024-05-04 07:51:01] INFO root fetch - processPackages [OZI.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI.build-0.0.8.tar.gz tmp/OZI.build-0.0.9.tar.gz --markdown 20240504/O/OZI.build/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 07:51:01] INFO root fetch - processPackages [odoo-addon-sale-manual-delivery]: executing diffoscope
+[2024-05-04 07:51:01] INFO root fetch - processPackages [odoo-addon-sale-manual-delivery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_manual_delivery-16.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_sale_manual_delivery-17.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-sale-manual-delivery/16.0.1.0.1-17.0.1.0.0.4/README.md --exclude *.pyd
+[2024-05-04 07:51:01] INFO root fetch - processPackages [aqtinstall]: Downloading https://files.pythonhosted.org/packages/0b/15/fcd6dc51d72f484eb6ca84d0708b33c4a20d03dc12ecb0365aa819c5d0eb/aqtinstall-3.1.9.tar.gz
+[2024-05-04 07:51:01] INFO root fetch - processPackages [OZI.build]: Remove: archive file [/home/abi/fetcher/tmp/OZI.build-0.0.8.tar.gz]
+[2024-05-04 07:51:01] INFO root fetch - processPackages [OZI.build]: Remove: archive file [/home/abi/fetcher/tmp/OZI.build-0.0.9.tar.gz]
+[2024-05-04 07:51:01] INFO root fetch - main [MainThread]: End processing [OZI.build]: success
+[2024-05-04 07:51:02] INFO root fetch - processPackages [odoo-addon-sale-manual-delivery]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_manual_delivery-16.0.1.0.1-py3-none-any.whl.zip]
+[2024-05-04 07:51:02] INFO root fetch - processPackages [odoo-addon-sale-manual-delivery]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_manual_delivery-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-04 07:51:02] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-manual-delivery]: success
+[2024-05-04 07:51:02] INFO root fetch - processPackages [aqtinstall]: executing diffoscope
+[2024-05-04 07:51:02] INFO root fetch - processPackages [aqtinstall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aqtinstall-3.1.8.tar.gz tmp/aqtinstall-3.1.9.tar.gz --markdown 20240504/a/aqtinstall/3.1.8-3.1.9/README.md --exclude *.pyd
+[2024-05-04 07:51:03] INFO root fetch - processPackages [aqtinstall]: Remove: archive file [/home/abi/fetcher/tmp/aqtinstall-3.1.8.tar.gz]
+[2024-05-04 07:51:03] INFO root fetch - processPackages [aqtinstall]: Remove: archive file [/home/abi/fetcher/tmp/aqtinstall-3.1.9.tar.gz]
+[2024-05-04 07:51:03] INFO root fetch - main [MainThread]: End processing [aqtinstall]: success
+[2024-05-04 07:51:03] INFO root fetch - main [MainThread]: Store serial: [23056044]
