@@ -15675,3 +15675,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:49:00] INFO root fetch - processPackages [bluetooth-adapters]: Remove: archive file [/home/abi/fetcher/tmp/bluetooth_adapters-0.9.0.tar.gz]
 [2024-05-04 16:49:00] INFO root fetch - main [MainThread]: End processing [bluetooth-adapters]: success
 [2024-05-04 16:49:00] INFO root fetch - main [MainThread]: Store serial: [23058570]
+[2024-05-04 16:51:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058570]
+[2024-05-04 16:51:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 16:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meta-reid
+[2024-05-04 16:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nl-matcher
+[2024-05-04 16:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: absbox
+[2024-05-04 16:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: meta-machina
+[2024-05-04 16:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clustering-algorithms-otis
+[2024-05-04 16:51:09] WARNING root fetch - processPackages [nl-matcher]: Skipping, unable to determine old version
+[2024-05-04 16:51:09] INFO root fetch - main [MainThread]: End processing [nl-matcher] error
+[2024-05-04 16:51:09] WARNING root fetch - processPackages [meta-machina]: Skipping, unable to determine old version
+[2024-05-04 16:51:09] INFO root fetch - main [MainThread]: End processing [meta-machina] error
+[2024-05-04 16:51:09] WARNING root fetch - processPackages [clustering-algorithms-otis]: Skipping, unable to determine old version
+[2024-05-04 16:51:09] INFO root fetch - main [MainThread]: End processing [clustering-algorithms-otis] error
+[2024-05-04 16:51:09] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-05-04 16:51:09] INFO root fetch - processPackages [meta-reid]: New version: [3.9.25] Old Version: [3.9.24]
+[2024-05-04 16:51:09] INFO root fetch - processPackages [meta-reid]: Downloading https://files.pythonhosted.org/packages/be/37/4bc2af82f7a6694d1d5f0412ef1c1d453e5f5b822d288dfc47369bcd5eed/meta-reid-3.9.24.tar.gz
+[2024-05-04 16:51:10] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-05-04 16:51:10] INFO root fetch - processPackages [meta-reid]: Downloading https://files.pythonhosted.org/packages/2e/0e/75c11e00e2da59379bb78632b3c8cc13c552ae28bbaeba905fce5a9c75c0/meta-reid-3.9.25.tar.gz
+[2024-05-04 16:51:10] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-05-04 16:51:10] INFO root fetch - processPackages [meta-reid]: executing diffoscope
+[2024-05-04 16:51:10] INFO root fetch - processPackages [meta-reid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta-reid-3.9.24.tar.gz tmp/meta-reid-3.9.25.tar.gz --markdown 20240504/m/meta-reid/3.9.24-3.9.25/README.md --exclude *.pyd
+[2024-05-04 16:51:10] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-05-04 16:51:10] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240504/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-05-04 16:51:10] INFO root fetch - processPackages [meta-reid]: Remove: archive file [/home/abi/fetcher/tmp/meta-reid-3.9.24.tar.gz]
+[2024-05-04 16:51:10] INFO root fetch - processPackages [meta-reid]: Remove: archive file [/home/abi/fetcher/tmp/meta-reid-3.9.25.tar.gz]
+[2024-05-04 16:51:10] INFO root fetch - main [MainThread]: End processing [meta-reid]: success
+[2024-05-04 16:51:11] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-05-04 16:51:11] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-05-04 16:51:11] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-05-04 16:51:11] INFO root fetch - main [MainThread]: Store serial: [23058589]
