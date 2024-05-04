@@ -7521,3 +7521,42 @@
 [2024-05-04 04:36:28] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.2.tar.gz]
 [2024-05-04 04:36:28] INFO root fetch - main [MainThread]: End processing [TreeSAK]: success
 [2024-05-04 04:36:28] INFO root fetch - main [MainThread]: Store serial: [23054887]
+[2024-05-04 04:38:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054887]
+[2024-05-04 04:38:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 04:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipyslides
+[2024-05-04 04:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TreeSAK
+[2024-05-04 04:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo12-addon-account-lock-date-update
+[2024-05-04 04:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bradford-white-connect-client
+[2024-05-04 04:38:47] INFO root fetch - processPackages [ipyslides]: New version: [3.7.5] Old Version: [3.7.4]
+[2024-05-04 04:38:47] INFO root fetch - processPackages [TreeSAK]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-04 04:38:47] INFO root fetch - processPackages [odoo12-addon-account-lock-date-update]: New version: [12.0.1.0.0.99.dev9] Old Version: [12.0.1.0.0.99.dev8]
+[2024-05-04 04:38:47] INFO root fetch - processPackages [bradford-white-connect-client]: New version: [0.0.9] Old Version: [0.0.6]
+[2024-05-04 04:38:47] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/1f/61/8f90681efb6d43fdd4f06dc3bd1e0086ff798e9d79adc00feb20833a786a/ipyslides-3.7.4.tar.gz
+[2024-05-04 04:38:47] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/33/3d/03ab6748b3aed0610812e461492b58278718c5c15236ce439a758aa3fc27/TreeSAK-1.9.1.tar.gz
+[2024-05-04 04:38:47] INFO root fetch - processPackages [odoo12-addon-account-lock-date-update]: Downloading https://files.pythonhosted.org/packages/35/e7/36d72f0f50f8b5f95a59d5e18b83f04dbccdaba7508dcb25cdbd04cb0ff9/odoo12_addon_account_lock_date_update-12.0.1.0.0.99.dev8-py3-none-any.whl
+[2024-05-04 04:38:47] INFO root fetch - processPackages [bradford-white-connect-client]: Downloading https://files.pythonhosted.org/packages/f9/ad/81f620c2bc16d04758393336e42f9892f6f4e70d0a79a94af92b616c7444/bradford_white_connect_client-0.0.6.tar.gz
+[2024-05-04 04:38:47] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/a3/02/2d6f0689915984f59d8b3a240f8578c6f14c9b81f32c56f93a03371bf496/ipyslides-3.7.5.tar.gz
+[2024-05-04 04:38:47] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/3d/18/0b0f8a2c565de5415024065f522c859677184cac283a7e4af0060f267891/TreeSAK-1.9.2.tar.gz
+[2024-05-04 04:38:47] INFO root fetch - processPackages [ipyslides]: executing diffoscope
+[2024-05-04 04:38:47] INFO root fetch - processPackages [ipyslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyslides-3.7.4.tar.gz tmp/ipyslides-3.7.5.tar.gz --markdown 20240504/i/ipyslides/3.7.4-3.7.5/README.md --exclude *.pyd
+[2024-05-04 04:38:47] INFO root fetch - processPackages [TreeSAK]: executing diffoscope
+[2024-05-04 04:38:47] INFO root fetch - processPackages [TreeSAK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TreeSAK-1.9.1.tar.gz tmp/TreeSAK-1.9.2.tar.gz --markdown 20240504/T/TreeSAK/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-04 04:38:47] INFO root fetch - processPackages [bradford-white-connect-client]: Downloading https://files.pythonhosted.org/packages/5b/3d/26729d0899abc0c8dbe06fbf31a65ad50a9223adbfdf0e51e15560ac0cdc/bradford_white_connect_client-0.0.9.tar.gz
+[2024-05-04 04:38:48] INFO root fetch - processPackages [odoo12-addon-account-lock-date-update]: Downloading https://files.pythonhosted.org/packages/47/51/96a72dde0fb097cd95658d4eeab4085e225b193bf7dd9f6360697750737b/odoo12_addon_account_lock_date_update-12.0.1.0.0.99.dev9-py3-none-any.whl
+[2024-05-04 04:38:48] INFO root fetch - processPackages [bradford-white-connect-client]: executing diffoscope
+[2024-05-04 04:38:48] INFO root fetch - processPackages [bradford-white-connect-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bradford_white_connect_client-0.0.6.tar.gz tmp/bradford_white_connect_client-0.0.9.tar.gz --markdown 20240504/b/bradford-white-connect-client/0.0.6-0.0.9/README.md --exclude *.pyd
+[2024-05-04 04:38:48] INFO root fetch - processPackages [odoo12-addon-account-lock-date-update]: executing diffoscope
+[2024-05-04 04:38:48] INFO root fetch - processPackages [odoo12-addon-account-lock-date-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_account_lock_date_update-12.0.1.0.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_account_lock_date_update-12.0.1.0.0.99.dev9-py3-none-any.whl.zip --markdown 20240504/o/odoo12-addon-account-lock-date-update/12.0.1.0.0.99.dev8-12.0.1.0.0.99.dev9/README.md --exclude *.pyd
+[2024-05-04 04:38:48] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.1.tar.gz]
+[2024-05-04 04:38:48] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.2.tar.gz]
+[2024-05-04 04:38:48] INFO root fetch - main [MainThread]: End processing [TreeSAK]: success
+[2024-05-04 04:38:48] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.7.4.tar.gz]
+[2024-05-04 04:38:48] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.7.5.tar.gz]
+[2024-05-04 04:38:48] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
+[2024-05-04 04:38:48] INFO root fetch - processPackages [bradford-white-connect-client]: Remove: archive file [/home/abi/fetcher/tmp/bradford_white_connect_client-0.0.6.tar.gz]
+[2024-05-04 04:38:48] INFO root fetch - processPackages [bradford-white-connect-client]: Remove: archive file [/home/abi/fetcher/tmp/bradford_white_connect_client-0.0.9.tar.gz]
+[2024-05-04 04:38:48] INFO root fetch - main [MainThread]: End processing [bradford-white-connect-client]: success
+[2024-05-04 04:38:49] INFO root fetch - processPackages [odoo12-addon-account-lock-date-update]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_lock_date_update-12.0.1.0.0.99.dev8-py3-none-any.whl.zip]
+[2024-05-04 04:38:49] INFO root fetch - processPackages [odoo12-addon-account-lock-date-update]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_lock_date_update-12.0.1.0.0.99.dev9-py3-none-any.whl.zip]
+[2024-05-04 04:38:49] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-lock-date-update]: success
+[2024-05-04 04:38:49] INFO root fetch - main [MainThread]: Store serial: [23054898]
