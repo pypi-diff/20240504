@@ -13283,3 +13283,33 @@
 [2024-05-04 13:04:47] WARNING root fetch - processPackages [juxtapose]: Skipping package: exceeds size limit 19361597>=10485760
 [2024-05-04 13:04:47] INFO root fetch - main [MainThread]: End processing [juxtapose] error
 [2024-05-04 13:04:47] INFO root fetch - main [MainThread]: Store serial: [23057621]
+[2024-05-04 13:06:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057621]
+[2024-05-04 13:06:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 13:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: acmecse-test
+[2024-05-04 13:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: audiolm-superfeel
+[2024-05-04 13:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cvehound
+[2024-05-04 13:06:56] INFO root fetch - processPackages [audiolm-superfeel]: New version: [2.1.3] Old Version: [2.1.2]
+[2024-05-04 13:06:56] INFO root fetch - processPackages [audiolm-superfeel]: Downloading https://files.pythonhosted.org/packages/6b/70/6ea4c6950dfbf0ca1a213e3d3d8d1a7a3dff1d311092a9da7af16a40b21d/audiolm_superfeel-2.1.2.tar.gz
+[2024-05-04 13:06:56] INFO root fetch - processPackages [cvehound]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-04 13:06:56] INFO root fetch - processPackages [acmecse-test]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-05-04 13:06:56] INFO root fetch - processPackages [acmecse-test]: Downloading https://files.pythonhosted.org/packages/83/c7/8079f1a0ff34e30ee02bc2b22b749824103789dd73e1354f4f728e7f6686/acmecse_test-2024.4.8-py3-none-any.whl
+[2024-05-04 13:06:56] INFO root fetch - processPackages [cvehound]: Downloading https://files.pythonhosted.org/packages/40/83/e86b132415dfca486ef0b71253f62679ecb6fc83ae80af8ac360943fc3ef/cvehound-1.2.0.tar.gz
+[2024-05-04 13:06:56] INFO root fetch - processPackages [audiolm-superfeel]: Downloading https://files.pythonhosted.org/packages/5a/c1/02523aef14be82979c1a31a314ef5d5228d0ddd314fb6cb924c380f4e2da/audiolm_superfeel-2.1.3.tar.gz
+[2024-05-04 13:06:56] INFO root fetch - processPackages [audiolm-superfeel]: executing diffoscope
+[2024-05-04 13:06:56] INFO root fetch - processPackages [audiolm-superfeel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiolm_superfeel-2.1.2.tar.gz tmp/audiolm_superfeel-2.1.3.tar.gz --markdown 20240504/a/audiolm-superfeel/2.1.2-2.1.3/README.md --exclude *.pyd
+[2024-05-04 13:06:56] INFO root fetch - processPackages [acmecse-test]: Downloading https://files.pythonhosted.org/packages/98/16/773da797873f8244cf7d50979913aea9c6125ce94e470fa94154f776bbc5/acmecse_test-2024.4.9-py3-none-any.whl
+[2024-05-04 13:06:56] INFO root fetch - processPackages [acmecse-test]: executing diffoscope
+[2024-05-04 13:06:56] INFO root fetch - processPackages [acmecse-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acmecse_test-2024.4.8-py3-none-any.whl.zip tmp/acmecse_test-2024.4.9-py3-none-any.whl.zip --markdown 20240504/a/acmecse-test/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-05-04 13:06:57] INFO root fetch - processPackages [cvehound]: Downloading https://files.pythonhosted.org/packages/e0/54/fdc7df3613ac9b2cd61597e00fb52ca0f10e089cf7ebe36a11026136fc11/cvehound-1.2.1.tar.gz
+[2024-05-04 13:06:57] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.1.2.tar.gz]
+[2024-05-04 13:06:57] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.1.3.tar.gz]
+[2024-05-04 13:06:57] INFO root fetch - main [MainThread]: End processing [audiolm-superfeel]: success
+[2024-05-04 13:06:57] INFO root fetch - processPackages [cvehound]: executing diffoscope
+[2024-05-04 13:06:57] INFO root fetch - processPackages [cvehound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvehound-1.2.0.tar.gz tmp/cvehound-1.2.1.tar.gz --markdown 20240504/c/cvehound/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-04 13:06:57] INFO root fetch - processPackages [acmecse-test]: Remove: archive file [/home/abi/fetcher/tmp/acmecse_test-2024.4.8-py3-none-any.whl.zip]
+[2024-05-04 13:06:57] INFO root fetch - processPackages [acmecse-test]: Remove: archive file [/home/abi/fetcher/tmp/acmecse_test-2024.4.9-py3-none-any.whl.zip]
+[2024-05-04 13:06:57] INFO root fetch - main [MainThread]: End processing [acmecse-test]: success
+[2024-05-04 13:06:59] INFO root fetch - processPackages [cvehound]: Remove: archive file [/home/abi/fetcher/tmp/cvehound-1.2.0.tar.gz]
+[2024-05-04 13:06:59] INFO root fetch - processPackages [cvehound]: Remove: archive file [/home/abi/fetcher/tmp/cvehound-1.2.1.tar.gz]
+[2024-05-04 13:06:59] INFO root fetch - main [MainThread]: End processing [cvehound]: success
+[2024-05-04 13:06:59] INFO root fetch - main [MainThread]: Store serial: [23057629]
