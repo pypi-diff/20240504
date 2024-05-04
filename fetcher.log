@@ -13864,3 +13864,9 @@
 [2024-05-04 14:01:14] INFO root fetch - processPackages [pybirdbuddy]: Remove: archive file [/home/abi/fetcher/tmp/pybirdbuddy-0.0.9-py3-none-any.whl.zip]
 [2024-05-04 14:01:14] INFO root fetch - main [MainThread]: End processing [pybirdbuddy]: success
 [2024-05-04 14:01:14] INFO root fetch - main [MainThread]: Store serial: [23057818]
+[2024-05-04 14:03:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057818]
+[2024-05-04 14:03:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 14:03:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NODE-deconvolution-scipy
+[2024-05-04 14:03:22] WARNING root fetch - processPackages [NODE-deconvolution-scipy]: Skipping, unable to determine old version
+[2024-05-04 14:03:22] INFO root fetch - main [MainThread]: End processing [NODE-deconvolution-scipy] error
+[2024-05-04 14:03:22] INFO root fetch - main [MainThread]: Store serial: [23057822]
