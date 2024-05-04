@@ -7457,3 +7457,15 @@
 [2024-05-04 04:24:46] INFO root fetch - processPackages [cerebras-appliance]: Remove: archive file [/home/abi/fetcher/tmp/cerebras_appliance-2.2.1-cp38-cp38-manylinux2014_x86_64.whl.zip]
 [2024-05-04 04:24:46] INFO root fetch - main [MainThread]: End processing [cerebras-appliance]: success
 [2024-05-04 04:24:46] INFO root fetch - main [MainThread]: Store serial: [23054847]
+[2024-05-04 04:26:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054847]
+[2024-05-04 04:27:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 04:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: music-assistant-frontend
+[2024-05-04 04:27:04] INFO root fetch - processPackages [music-assistant-frontend]: New version: [2.5.0] Old Version: [2.4.7]
+[2024-05-04 04:27:04] INFO root fetch - processPackages [music-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/96/00/a62387cfcc6e35bf92c37d5a5d23e0d290530d7b053b3039ebb32028e783/music-assistant-frontend-2.4.7.tar.gz
+[2024-05-04 04:27:04] INFO root fetch - processPackages [music-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/95/21/41abd2746f145b981f40ae7f8fca8a49101ba8b1dc8a4d2843ff97f73f8a/music-assistant-frontend-2.5.0.tar.gz
+[2024-05-04 04:27:05] INFO root fetch - processPackages [music-assistant-frontend]: executing diffoscope
+[2024-05-04 04:27:05] INFO root fetch - processPackages [music-assistant-frontend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/music-assistant-frontend-2.4.7.tar.gz tmp/music-assistant-frontend-2.5.0.tar.gz --markdown 20240504/m/music-assistant-frontend/2.4.7-2.5.0/README.md --exclude *.pyd
+[2024-05-04 04:27:22] INFO root fetch - processPackages [music-assistant-frontend]: Remove: archive file [/home/abi/fetcher/tmp/music-assistant-frontend-2.4.7.tar.gz]
+[2024-05-04 04:27:22] INFO root fetch - processPackages [music-assistant-frontend]: Remove: archive file [/home/abi/fetcher/tmp/music-assistant-frontend-2.5.0.tar.gz]
+[2024-05-04 04:27:22] INFO root fetch - main [MainThread]: End processing [music-assistant-frontend]: success
+[2024-05-04 04:27:22] INFO root fetch - main [MainThread]: Store serial: [23054850]
