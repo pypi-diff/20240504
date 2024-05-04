@@ -15650,3 +15650,11 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:44:41] INFO root fetch - processPackages [anstrip]: Remove: archive file [/home/abi/fetcher/tmp/anstrip-0.2.2.tar.gz]
 [2024-05-04 16:44:41] INFO root fetch - main [MainThread]: End processing [anstrip]: success
 [2024-05-04 16:44:41] INFO root fetch - main [MainThread]: Store serial: [23058561]
+[2024-05-04 16:46:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058561]
+[2024-05-04 16:46:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 16:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: juxtapose
+[2024-05-04 16:46:50] INFO root fetch - processPackages [juxtapose]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 16:46:50] INFO root fetch - processPackages [juxtapose]: Downloading https://files.pythonhosted.org/packages/61/ef/b8b96f6ca1edc65e2f9e7470c51e5294b5cbbabb55ca13a82f4456e37edc/juxtapose-0.0.8.tar.gz
+[2024-05-04 16:46:50] WARNING root fetch - processPackages [juxtapose]: Skipping package: exceeds size limit 19361597>=10485760
+[2024-05-04 16:46:50] INFO root fetch - main [MainThread]: End processing [juxtapose] error
+[2024-05-04 16:46:50] INFO root fetch - main [MainThread]: Store serial: [23058564]
