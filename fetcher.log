@@ -14386,3 +14386,24 @@
 [2024-05-04 14:53:16] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.88.0.tar.gz]
 [2024-05-04 14:53:16] INFO root fetch - main [MainThread]: End processing [BioSAK]: success
 [2024-05-04 14:53:16] INFO root fetch - main [MainThread]: Store serial: [23058067]
+[2024-05-04 14:55:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058067]
+[2024-05-04 14:55:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 14:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: copy-spotter
+[2024-05-04 14:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rcwa-tlv
+[2024-05-04 14:55:25] INFO root fetch - processPackages [rcwa-tlv]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-04 14:55:25] INFO root fetch - processPackages [copy-spotter]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-04 14:55:26] INFO root fetch - processPackages [rcwa-tlv]: Downloading https://files.pythonhosted.org/packages/1b/f2/523a9682c8b612f4bfb12b6b7460439a16f63304432210f28fa8cf921de5/rcwa_tlv-0.0.2.tar.gz
+[2024-05-04 14:55:26] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/4f/4b/d2d6b88a22222bca37cf3b23f443f2999e486555b38ab7a9729b835b8eb4/copy-spotter-0.1.4.tar.gz
+[2024-05-04 14:55:26] INFO root fetch - processPackages [rcwa-tlv]: Downloading https://files.pythonhosted.org/packages/f1/59/9142b087e54e541c6dded7ea111ca12bb97d988d31a62e29c7ce279497c8/rcwa_tlv-0.0.3.tar.gz
+[2024-05-04 14:55:26] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/98/61/763157cab60dc007d5159c988d02d32b2a0cfab7731d8ef3facd5620eaa3/copy-spotter-0.1.5.tar.gz
+[2024-05-04 14:55:26] INFO root fetch - processPackages [rcwa-tlv]: executing diffoscope
+[2024-05-04 14:55:26] INFO root fetch - processPackages [rcwa-tlv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcwa_tlv-0.0.2.tar.gz tmp/rcwa_tlv-0.0.3.tar.gz --markdown 20240504/r/rcwa-tlv/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-04 14:55:26] INFO root fetch - processPackages [copy-spotter]: executing diffoscope
+[2024-05-04 14:55:26] INFO root fetch - processPackages [copy-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copy-spotter-0.1.4.tar.gz tmp/copy-spotter-0.1.5.tar.gz --markdown 20240504/c/copy-spotter/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-04 14:55:27] INFO root fetch - processPackages [rcwa-tlv]: Remove: archive file [/home/abi/fetcher/tmp/rcwa_tlv-0.0.2.tar.gz]
+[2024-05-04 14:55:27] INFO root fetch - processPackages [rcwa-tlv]: Remove: archive file [/home/abi/fetcher/tmp/rcwa_tlv-0.0.3.tar.gz]
+[2024-05-04 14:55:27] INFO root fetch - main [MainThread]: End processing [rcwa-tlv]: success
+[2024-05-04 14:55:27] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.4.tar.gz]
+[2024-05-04 14:55:27] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.5.tar.gz]
+[2024-05-04 14:55:27] INFO root fetch - main [MainThread]: End processing [copy-spotter]: success
+[2024-05-04 14:55:27] INFO root fetch - main [MainThread]: Store serial: [23058073]
