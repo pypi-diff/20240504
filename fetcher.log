@@ -16886,3 +16886,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:24:49] WARNING root fetch - processPackages [datatransformation]: Skipping, unable to determine old version
 [2024-05-04 18:24:49] INFO root fetch - main [MainThread]: End processing [datatransformation] error
 [2024-05-04 18:24:49] INFO root fetch - main [MainThread]: Store serial: [23059249]
+[2024-05-04 18:26:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059249]
+[2024-05-04 18:26:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 18:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eidolon-ai-client
+[2024-05-04 18:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eidolon-ai-sdk
+[2024-05-04 18:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-vpc-toumoro-projen
+[2024-05-04 18:26:57] INFO root fetch - processPackages [eidolon-ai-sdk]: New version: [0.1.45] Old Version: [0.1.44]
+[2024-05-04 18:26:57] INFO root fetch - processPackages [eidolon-ai-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 18:26:58] INFO root fetch - processPackages [cdk-vpc-toumoro-projen]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 18:26:58] INFO root fetch - processPackages [eidolon-ai-sdk]: Downloading https://files.pythonhosted.org/packages/a0/bd/869f6baf08e0089fa5ad2058260ca2b291816576534b60bd06ce2572e046/eidolon_ai_sdk-0.1.44.tar.gz
+[2024-05-04 18:26:58] INFO root fetch - processPackages [eidolon-ai-client]: Downloading https://files.pythonhosted.org/packages/f0/61/6ca231006909006ba96753a764654d05e47de665b1bf7f42b131a6cdb841/eidolon_ai_client-0.1.8.tar.gz
+[2024-05-04 18:26:58] INFO root fetch - processPackages [cdk-vpc-toumoro-projen]: Downloading https://files.pythonhosted.org/packages/44/f7/621251e61ba078874f3de9f1107463a370ca3ba5442c3be0f01ab7f44ce6/cdk-vpc-toumoro-projen-0.0.8.tar.gz
+[2024-05-04 18:26:58] INFO root fetch - processPackages [eidolon-ai-client]: Downloading https://files.pythonhosted.org/packages/14/16/63be890da3058c38960189037563296eb56f3d69154718e4a35d80261950/eidolon_ai_client-0.1.9.tar.gz
+[2024-05-04 18:26:58] INFO root fetch - processPackages [eidolon-ai-sdk]: Downloading https://files.pythonhosted.org/packages/e7/5b/183a96c6a66f8532bf81cd261cea12f6488e927ff8ed59603d5644aa897b/eidolon_ai_sdk-0.1.45.tar.gz
+[2024-05-04 18:26:58] INFO root fetch - processPackages [eidolon-ai-client]: executing diffoscope
+[2024-05-04 18:26:58] INFO root fetch - processPackages [eidolon-ai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eidolon_ai_client-0.1.8.tar.gz tmp/eidolon_ai_client-0.1.9.tar.gz --markdown 20240504/e/eidolon-ai-client/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 18:26:58] INFO root fetch - processPackages [eidolon-ai-sdk]: executing diffoscope
+[2024-05-04 18:26:58] INFO root fetch - processPackages [eidolon-ai-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eidolon_ai_sdk-0.1.44.tar.gz tmp/eidolon_ai_sdk-0.1.45.tar.gz --markdown 20240504/e/eidolon-ai-sdk/0.1.44-0.1.45/README.md --exclude *.pyd
+[2024-05-04 18:26:58] INFO root fetch - processPackages [cdk-vpc-toumoro-projen]: Downloading https://files.pythonhosted.org/packages/b7/58/1abd4541a4f925bf51c15b8c0a29e771371d62e2ae99b80979094122ae0b/cdk-vpc-toumoro-projen-0.0.9.tar.gz
+[2024-05-04 18:26:58] INFO root fetch - processPackages [cdk-vpc-toumoro-projen]: executing diffoscope
+[2024-05-04 18:26:58] INFO root fetch - processPackages [cdk-vpc-toumoro-projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-vpc-toumoro-projen-0.0.8.tar.gz tmp/cdk-vpc-toumoro-projen-0.0.9.tar.gz --markdown 20240504/c/cdk-vpc-toumoro-projen/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 18:26:58] INFO root fetch - processPackages [eidolon-ai-client]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_client-0.1.8.tar.gz]
+[2024-05-04 18:26:58] INFO root fetch - processPackages [eidolon-ai-client]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_client-0.1.9.tar.gz]
+[2024-05-04 18:26:58] INFO root fetch - main [MainThread]: End processing [eidolon-ai-client]: success
+[2024-05-04 18:26:59] INFO root fetch - processPackages [cdk-vpc-toumoro-projen]: Remove: archive file [/home/abi/fetcher/tmp/cdk-vpc-toumoro-projen-0.0.8.tar.gz]
+[2024-05-04 18:26:59] INFO root fetch - processPackages [cdk-vpc-toumoro-projen]: Remove: archive file [/home/abi/fetcher/tmp/cdk-vpc-toumoro-projen-0.0.9.tar.gz]
+[2024-05-04 18:26:59] INFO root fetch - main [MainThread]: End processing [cdk-vpc-toumoro-projen]: success
+[2024-05-04 18:26:59] INFO root fetch - processPackages [eidolon-ai-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_sdk-0.1.44.tar.gz]
+[2024-05-04 18:26:59] INFO root fetch - processPackages [eidolon-ai-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_sdk-0.1.45.tar.gz]
+[2024-05-04 18:26:59] INFO root fetch - main [MainThread]: End processing [eidolon-ai-sdk]: success
+[2024-05-04 18:26:59] INFO root fetch - main [MainThread]: Store serial: [23059258]
