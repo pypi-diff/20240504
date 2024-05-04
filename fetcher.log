@@ -12772,3 +12772,57 @@
 [2024-05-04 12:21:18] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_elasticsearch-2.3.1.tar.gz]
 [2024-05-04 12:21:18] INFO root fetch - main [MainThread]: End processing [stac-fastapi.elasticsearch]: success
 [2024-05-04 12:21:18] INFO root fetch - main [MainThread]: Store serial: [23057418]
+[2024-05-04 12:23:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057418]
+[2024-05-04 12:23:26] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 12:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stac-fastapi.opensearch
+[2024-05-04 12:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: naskit
+[2024-05-04 12:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlglot
+[2024-05-04 12:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ArtificialVision
+[2024-05-04 12:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: audiolm-superfeel
+[2024-05-04 12:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jy_lib
+[2024-05-04 12:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-tgpt
+[2024-05-04 12:23:27] WARNING root fetch - processPackages [audiolm-superfeel]: Skipping, unable to determine old version
+[2024-05-04 12:23:27] INFO root fetch - main [MainThread]: End processing [audiolm-superfeel] error
+[2024-05-04 12:23:27] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-04 12:23:27] WARNING root fetch - processPackages [naskit]: Skipping, unable to determine old version
+[2024-05-04 12:23:27] INFO root fetch - main [MainThread]: End processing [naskit] error
+[2024-05-04 12:23:27] INFO root fetch - processPackages [stac-fastapi.opensearch]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-04 12:23:27] INFO root fetch - processPackages [jy_lib]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-05-04 12:23:27] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-04 12:23:27] INFO root fetch - processPackages [ArtificialVision]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-04 12:23:27] INFO root fetch - processPackages [python-tgpt]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-04 12:23:27] INFO root fetch - processPackages [stac-fastapi.opensearch]: Downloading https://files.pythonhosted.org/packages/92/c8/316bd41d4d61d1bf60dccd1b0bcfd1fbd296641e4ab119328d61496d4dee/stac_fastapi_opensearch-2.3.0.tar.gz
+[2024-05-04 12:23:27] INFO root fetch - processPackages [ArtificialVision]: Downloading https://files.pythonhosted.org/packages/ec/4a/9ed0415bb711ad903bd60f6b8b456968f9ba34c5c7f56f6293f36d31983b/ArtificialVision-0.1.2.tar.gz
+[2024-05-04 12:23:27] INFO root fetch - processPackages [jy_lib]: Downloading https://files.pythonhosted.org/packages/87/fa/b5ecc7c2ee9503218cecee615ad2883fda489440c2ad2172c9372ab2b230/jy_lib-0.7.2.tar.gz
+[2024-05-04 12:23:27] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-04 12:23:27] INFO root fetch - processPackages [python-tgpt]: Downloading https://files.pythonhosted.org/packages/8a/8a/c24f6e666a2b9ae192d875b9fef5390243b932203754f9e44fd8bd9049f0/python_tgpt-0.7.0.tar.gz
+[2024-05-04 12:23:27] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-04 12:23:27] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240504/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-04 12:23:27] INFO root fetch - processPackages [stac-fastapi.opensearch]: Downloading https://files.pythonhosted.org/packages/42/76/9eca41ec212f3bb3046c6effca4e2007282a020e543344666f942b043416/stac_fastapi_opensearch-2.3.1.tar.gz
+[2024-05-04 12:23:27] INFO root fetch - processPackages [jy_lib]: Downloading https://files.pythonhosted.org/packages/ec/86/924e211d3c4f212e2c64c2d7cf4188adfc5be41c437a85b7a171fbf3b32a/jy_lib-0.7.3.tar.gz
+[2024-05-04 12:23:27] INFO root fetch - processPackages [python-tgpt]: Downloading https://files.pythonhosted.org/packages/8e/26/d410aefccb663a7b4cb0d5ad05b6d9ae401c3041fa18cf365fb3da225f53/python_tgpt-0.7.1.tar.gz
+[2024-05-04 12:23:27] INFO root fetch - processPackages [ArtificialVision]: Downloading https://files.pythonhosted.org/packages/fa/72/acc20f67fec880f7498b4d0b17b5afd72e9313913c884491e9ba8eb18082/ArtificialVision-0.1.3-py3-none-any.whl
+[2024-05-04 12:23:27] INFO root fetch - processPackages [stac-fastapi.opensearch]: executing diffoscope
+[2024-05-04 12:23:27] INFO root fetch - processPackages [stac-fastapi.opensearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stac_fastapi_opensearch-2.3.0.tar.gz tmp/stac_fastapi_opensearch-2.3.1.tar.gz --markdown 20240504/s/stac-fastapi.opensearch/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-04 12:23:27] INFO root fetch - processPackages [jy_lib]: executing diffoscope
+[2024-05-04 12:23:27] INFO root fetch - processPackages [jy_lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jy_lib-0.7.2.tar.gz tmp/jy_lib-0.7.3.tar.gz --markdown 20240504/j/jy_lib/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-05-04 12:23:27] INFO root fetch - processPackages [ArtificialVision]: executing diffoscope
+[2024-05-04 12:23:27] INFO root fetch - processPackages [ArtificialVision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ArtificialVision-0.1.2.tar.gz tmp/ArtificialVision-0.1.3-py3-none-any.whl.zip --markdown 20240504/A/ArtificialVision/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-04 12:23:27] INFO root fetch - processPackages [python-tgpt]: executing diffoscope
+[2024-05-04 12:23:27] INFO root fetch - processPackages [python-tgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_tgpt-0.7.0.tar.gz tmp/python_tgpt-0.7.1.tar.gz --markdown 20240504/p/python-tgpt/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-04 12:23:28] INFO root fetch - processPackages [ArtificialVision]: Remove: archive file [/home/abi/fetcher/tmp/ArtificialVision-0.1.2.tar.gz]
+[2024-05-04 12:23:28] INFO root fetch - processPackages [ArtificialVision]: Remove: archive file [/home/abi/fetcher/tmp/ArtificialVision-0.1.3-py3-none-any.whl.zip]
+[2024-05-04 12:23:28] INFO root fetch - main [MainThread]: End processing [ArtificialVision]: success
+[2024-05-04 12:23:28] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-04 12:23:28] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-04 12:23:28] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-04 12:23:28] INFO root fetch - processPackages [jy_lib]: Remove: archive file [/home/abi/fetcher/tmp/jy_lib-0.7.2.tar.gz]
+[2024-05-04 12:23:28] INFO root fetch - processPackages [jy_lib]: Remove: archive file [/home/abi/fetcher/tmp/jy_lib-0.7.3.tar.gz]
+[2024-05-04 12:23:28] INFO root fetch - main [MainThread]: End processing [jy_lib]: success
+[2024-05-04 12:23:28] INFO root fetch - processPackages [stac-fastapi.opensearch]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_opensearch-2.3.0.tar.gz]
+[2024-05-04 12:23:28] INFO root fetch - processPackages [stac-fastapi.opensearch]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_opensearch-2.3.1.tar.gz]
+[2024-05-04 12:23:28] INFO root fetch - main [MainThread]: End processing [stac-fastapi.opensearch]: success
+[2024-05-04 12:23:28] INFO root fetch - processPackages [python-tgpt]: Remove: archive file [/home/abi/fetcher/tmp/python_tgpt-0.7.0.tar.gz]
+[2024-05-04 12:23:28] INFO root fetch - processPackages [python-tgpt]: Remove: archive file [/home/abi/fetcher/tmp/python_tgpt-0.7.1.tar.gz]
+[2024-05-04 12:23:28] INFO root fetch - main [MainThread]: End processing [python-tgpt]: success
+[2024-05-04 12:23:28] INFO root fetch - main [MainThread]: Store serial: [23057439]
