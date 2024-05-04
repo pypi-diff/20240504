@@ -20938,3 +20938,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:19:42] INFO root fetch - processPackages [slack-machine]: Remove: archive file [/home/abi/fetcher/tmp/slack-machine-0.9.tar.gz]
 [2024-05-04 23:19:42] INFO root fetch - main [MainThread]: End processing [slack-machine]: success
 [2024-05-04 23:19:42] INFO root fetch - main [MainThread]: Store serial: [23061077]
+[2024-05-04 23:21:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061077]
+[2024-05-04 23:21:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 23:21:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlglot
+[2024-05-04 23:21:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cupcake
+[2024-05-04 23:21:51] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-04 23:21:51] INFO root fetch - processPackages [cupcake]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 23:21:51] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-04 23:21:51] INFO root fetch - processPackages [cupcake]: Downloading https://files.pythonhosted.org/packages/10/ea/f5bb68143f6dbd56c8bb4d49d391df6384e194aa354233b03f457c5b2574/cupcake-1.0.1.tar.gz
+[2024-05-04 23:21:51] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-04 23:21:51] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-04 23:21:51] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240504/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-04 23:21:51] INFO root fetch - processPackages [cupcake]: Downloading https://files.pythonhosted.org/packages/25/4b/f3cbe7491824848fd632b2ccbe1ecfed0e672c2a2e4d75a3961d520859f2/cupcake-1.0.2.tar.gz
+[2024-05-04 23:21:51] INFO root fetch - processPackages [cupcake]: executing diffoscope
+[2024-05-04 23:21:51] INFO root fetch - processPackages [cupcake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cupcake-1.0.1.tar.gz tmp/cupcake-1.0.2.tar.gz --markdown 20240504/c/cupcake/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 23:21:52] INFO root fetch - processPackages [cupcake]: Remove: archive file [/home/abi/fetcher/tmp/cupcake-1.0.1.tar.gz]
+[2024-05-04 23:21:52] INFO root fetch - processPackages [cupcake]: Remove: archive file [/home/abi/fetcher/tmp/cupcake-1.0.2.tar.gz]
+[2024-05-04 23:21:52] INFO root fetch - main [MainThread]: End processing [cupcake]: success
+[2024-05-04 23:21:52] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-04 23:21:52] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-04 23:21:52] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-04 23:21:52] INFO root fetch - main [MainThread]: Store serial: [23061083]
