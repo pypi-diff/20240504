@@ -19751,3 +19751,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:54:07] INFO root fetch - processPackages [nbb-api]: Remove: archive file [/home/abi/fetcher/tmp/nbb_api-0.1.7.tar.gz]
 [2024-05-04 21:54:07] INFO root fetch - main [MainThread]: End processing [nbb-api]: success
 [2024-05-04 21:54:07] INFO root fetch - main [MainThread]: Store serial: [23060611]
+[2024-05-04 21:56:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060611]
+[2024-05-04 21:56:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 21:56:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-logs
+[2024-05-04 21:56:16] INFO root fetch - processPackages [mo-logs]: New version: [8.623.24125] Old Version: [8.622.24125]
+[2024-05-04 21:56:16] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/54/13/de51c2a8a3e58388778452ae4675381edddf8523dae3342bc92b7d0732f5/mo_logs-8.622.24125.tar.gz
+[2024-05-04 21:56:17] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/20/a2/1d74bc9226375039fdbc772133a8251b48b0430b0804c5c30cb8db98501e/mo_logs-8.623.24125.tar.gz
+[2024-05-04 21:56:17] INFO root fetch - processPackages [mo-logs]: executing diffoscope
+[2024-05-04 21:56:17] INFO root fetch - processPackages [mo-logs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_logs-8.622.24125.tar.gz tmp/mo_logs-8.623.24125.tar.gz --markdown 20240504/m/mo-logs/8.622.24125-8.623.24125/README.md --exclude *.pyd
+[2024-05-04 21:56:17] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.622.24125.tar.gz]
+[2024-05-04 21:56:17] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.623.24125.tar.gz]
+[2024-05-04 21:56:17] INFO root fetch - main [MainThread]: End processing [mo-logs]: success
+[2024-05-04 21:56:17] INFO root fetch - main [MainThread]: Store serial: [23060615]
