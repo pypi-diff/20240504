@@ -13236,3 +13236,42 @@
 [2024-05-04 13:00:28] INFO root fetch - processPackages [pywigxjpf]: Remove: archive file [/home/abi/fetcher/tmp/pywigxjpf-1.13.2.tar.gz]
 [2024-05-04 13:00:28] INFO root fetch - main [MainThread]: End processing [pywigxjpf]: success
 [2024-05-04 13:00:28] INFO root fetch - main [MainThread]: Store serial: [23057606]
+[2024-05-04 13:02:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057606]
+[2024-05-04 13:02:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 13:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiolm-superfeel
+[2024-05-04 13:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ACME-oneM2M-CSE
+[2024-05-04 13:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CustomTkinterTitlebar
+[2024-05-04 13:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ndispers
+[2024-05-04 13:02:37] INFO root fetch - processPackages [audiolm-superfeel]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-05-04 13:02:37] INFO root fetch - processPackages [audiolm-superfeel]: Downloading https://files.pythonhosted.org/packages/90/df/b826d0a493893027147a5e5a8b53b32782efa4dd8ba4097e86bede4816ee/audiolm_superfeel-2.1.1.tar.gz
+[2024-05-04 13:02:37] INFO root fetch - processPackages [ndispers]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-04 13:02:37] INFO root fetch - processPackages [CustomTkinterTitlebar]: New version: [1.0.8.3] Old Version: [1.0.8.2]
+[2024-05-04 13:02:37] INFO root fetch - processPackages [ACME-oneM2M-CSE]: New version: [2024.4.8] Old Version: [0.3.0]
+[2024-05-04 13:02:37] INFO root fetch - processPackages [CustomTkinterTitlebar]: Downloading https://files.pythonhosted.org/packages/4d/8f/1847c2a82a8bf65bf0b6013cd78d647af5b4c3da128ea7226ae3946180c2/CustomTkinterTitlebar-1.0.8.2.tar.gz
+[2024-05-04 13:02:37] INFO root fetch - processPackages [ACME-oneM2M-CSE]: Downloading https://files.pythonhosted.org/packages/9f/de/8a6ce3cddcb688dfaa2414210231bfd794a73e51dc041bcbc32254b81acc/ACME%20oneM2M%20CSE-0.3.0.tar.gz
+[2024-05-04 13:02:37] INFO root fetch - processPackages [ndispers]: Downloading https://files.pythonhosted.org/packages/c8/18/db5650c9c93d8682036267144ea0716f8192fae61365d65e165c8d297994/ndispers-0.2.7.tar.gz
+[2024-05-04 13:02:37] INFO root fetch - processPackages [audiolm-superfeel]: Downloading https://files.pythonhosted.org/packages/6b/70/6ea4c6950dfbf0ca1a213e3d3d8d1a7a3dff1d311092a9da7af16a40b21d/audiolm_superfeel-2.1.2.tar.gz
+[2024-05-04 13:02:37] INFO root fetch - processPackages [audiolm-superfeel]: executing diffoscope
+[2024-05-04 13:02:37] INFO root fetch - processPackages [audiolm-superfeel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiolm_superfeel-2.1.1.tar.gz tmp/audiolm_superfeel-2.1.2.tar.gz --markdown 20240504/a/audiolm-superfeel/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-05-04 13:02:37] INFO root fetch - processPackages [CustomTkinterTitlebar]: Downloading https://files.pythonhosted.org/packages/56/4c/b534c24667036924a10a1d0e4ddd84b6a75e64568bb9b1d73ef5b2cce789/customtkintertitlebar-1.0.8.3.tar.gz
+[2024-05-04 13:02:37] INFO root fetch - processPackages [ndispers]: Downloading https://files.pythonhosted.org/packages/8d/77/782f6092d3d4cfc0f8ce4f70295baa1b53bcfb721c35a7cc7a13c7439cde/ndispers-0.2.8.tar.gz
+[2024-05-04 13:02:37] INFO root fetch - processPackages [ACME-oneM2M-CSE]: Downloading https://files.pythonhosted.org/packages/5c/9e/8c56a11599e3ccbd72950a8f6ea81ec5b7249271e23b8908836c44fbc033/ACME_oneM2M_CSE-2024.4.8-py3-none-any.whl
+[2024-05-04 13:02:37] INFO root fetch - processPackages [CustomTkinterTitlebar]: executing diffoscope
+[2024-05-04 13:02:37] INFO root fetch - processPackages [CustomTkinterTitlebar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CustomTkinterTitlebar-1.0.8.2.tar.gz tmp/customtkintertitlebar-1.0.8.3.tar.gz --markdown 20240504/C/CustomTkinterTitlebar/1.0.8.2-1.0.8.3/README.md --exclude *.pyd
+[2024-05-04 13:02:37] INFO root fetch - processPackages [ACME-oneM2M-CSE]: executing diffoscope
+[2024-05-04 13:02:37] INFO root fetch - processPackages [ACME-oneM2M-CSE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ACME oneM2M CSE-0.3.0.tar.gz tmp/ACME_oneM2M_CSE-2024.4.8-py3-none-any.whl.zip --markdown 20240504/A/ACME-oneM2M-CSE/0.3.0-2024.4.8/README.md --exclude *.pyd
+[2024-05-04 13:02:38] INFO root fetch - processPackages [ndispers]: executing diffoscope
+[2024-05-04 13:02:38] INFO root fetch - processPackages [ndispers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ndispers-0.2.7.tar.gz tmp/ndispers-0.2.8.tar.gz --markdown 20240504/n/ndispers/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-04 13:02:38] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.1.1.tar.gz]
+[2024-05-04 13:02:38] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.1.2.tar.gz]
+[2024-05-04 13:02:38] INFO root fetch - main [MainThread]: End processing [audiolm-superfeel]: success
+[2024-05-04 13:02:38] INFO root fetch - processPackages [ACME-oneM2M-CSE]: Remove: archive file [/home/abi/fetcher/tmp/ACME oneM2M CSE-0.3.0.tar.gz]
+[2024-05-04 13:02:38] INFO root fetch - processPackages [ACME-oneM2M-CSE]: Remove: archive file [/home/abi/fetcher/tmp/ACME_oneM2M_CSE-2024.4.8-py3-none-any.whl.zip]
+[2024-05-04 13:02:38] INFO root fetch - main [MainThread]: End processing [ACME-oneM2M-CSE]: success
+[2024-05-04 13:02:38] INFO root fetch - processPackages [CustomTkinterTitlebar]: Remove: archive file [/home/abi/fetcher/tmp/CustomTkinterTitlebar-1.0.8.2.tar.gz]
+[2024-05-04 13:02:38] INFO root fetch - processPackages [CustomTkinterTitlebar]: Remove: archive file [/home/abi/fetcher/tmp/customtkintertitlebar-1.0.8.3.tar.gz]
+[2024-05-04 13:02:38] INFO root fetch - main [MainThread]: End processing [CustomTkinterTitlebar]: success
+[2024-05-04 13:02:38] INFO root fetch - processPackages [ndispers]: Remove: archive file [/home/abi/fetcher/tmp/ndispers-0.2.7.tar.gz]
+[2024-05-04 13:02:38] INFO root fetch - processPackages [ndispers]: Remove: archive file [/home/abi/fetcher/tmp/ndispers-0.2.8.tar.gz]
+[2024-05-04 13:02:38] INFO root fetch - main [MainThread]: End processing [ndispers]: success
+[2024-05-04 13:02:38] INFO root fetch - main [MainThread]: Store serial: [23057617]
