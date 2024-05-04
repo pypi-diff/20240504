@@ -14849,3 +14849,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:39:20] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-05-04 15:39:20] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-05-04 15:39:20] INFO root fetch - main [MainThread]: Store serial: [23058257]
+[2024-05-04 15:41:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058257]
+[2024-05-04 15:41:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 15:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parsee-core
+[2024-05-04 15:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-dots
+[2024-05-04 15:41:29] INFO root fetch - processPackages [parsee-core]: New version: [0.1.4.9] Old Version: [0.1.4.8]
+[2024-05-04 15:41:29] INFO root fetch - processPackages [parsee-core]: Downloading https://files.pythonhosted.org/packages/7a/50/254187550fba83da8e34776ce7e4c5844d1785b705b16a1ee835f8b7f74e/parsee_core-0.1.4.8.tar.gz
+[2024-05-04 15:41:29] INFO root fetch - processPackages [mo-dots]: New version: [9.606.24115] Old Version: [9.605.24115]
+[2024-05-04 15:41:29] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/c1/78/500bc80bd2febc9c1dd08390617553bf8eb583859830968121d99c41760a/mo_dots-9.605.24115.tar.gz
+[2024-05-04 15:41:29] INFO root fetch - processPackages [parsee-core]: Downloading https://files.pythonhosted.org/packages/87/4f/31752247b806b1f52883033ecb4efbcec34d8a58a18a3a051c733dd38686/parsee_core-0.1.4.9.tar.gz
+[2024-05-04 15:41:29] INFO root fetch - processPackages [parsee-core]: executing diffoscope
+[2024-05-04 15:41:29] INFO root fetch - processPackages [parsee-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsee_core-0.1.4.8.tar.gz tmp/parsee_core-0.1.4.9.tar.gz --markdown 20240504/p/parsee-core/0.1.4.8-0.1.4.9/README.md --exclude *.pyd
+[2024-05-04 15:41:29] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/62/60/27b3dbfd973f17e5e448be2a9a9d96cea0e25479810b1ba253056fa3f295/mo_dots-9.606.24115.tar.gz
+[2024-05-04 15:41:30] INFO root fetch - processPackages [mo-dots]: executing diffoscope
+[2024-05-04 15:41:30] INFO root fetch - processPackages [mo-dots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_dots-9.605.24115.tar.gz tmp/mo_dots-9.606.24115.tar.gz --markdown 20240504/m/mo-dots/9.605.24115-9.606.24115/README.md --exclude *.pyd
+[2024-05-04 15:41:30] INFO root fetch - processPackages [parsee-core]: Remove: archive file [/home/abi/fetcher/tmp/parsee_core-0.1.4.8.tar.gz]
+[2024-05-04 15:41:30] INFO root fetch - processPackages [parsee-core]: Remove: archive file [/home/abi/fetcher/tmp/parsee_core-0.1.4.9.tar.gz]
+[2024-05-04 15:41:30] INFO root fetch - main [MainThread]: End processing [parsee-core]: success
+[2024-05-04 15:41:30] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.605.24115.tar.gz]
+[2024-05-04 15:41:30] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.606.24115.tar.gz]
+[2024-05-04 15:41:30] INFO root fetch - main [MainThread]: End processing [mo-dots]: success
+[2024-05-04 15:41:30] INFO root fetch - main [MainThread]: Store serial: [23058265]
