@@ -18728,3 +18728,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:40:14] INFO root fetch - processPackages [rdltr]: Remove: archive file [/home/abi/fetcher/tmp/rdltr-0.1.9.tar.gz]
 [2024-05-04 20:40:14] INFO root fetch - main [MainThread]: End processing [rdltr]: success
 [2024-05-04 20:40:14] INFO root fetch - main [MainThread]: Store serial: [23060199]
+[2024-05-04 20:42:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060199]
+[2024-05-04 20:42:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rdltr
+[2024-05-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sibila
+[2024-05-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: groktest
+[2024-05-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wagtail-resume
+[2024-05-04 20:42:24] INFO root fetch - processPackages [rdltr]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 20:42:24] INFO root fetch - processPackages [rdltr]: Downloading https://files.pythonhosted.org/packages/ef/8f/c3fc4ac98878a827842eed416e584aae23b451abeea2e6da09ad707effd8/rdltr-0.1.8.tar.gz
+[2024-05-04 20:42:24] INFO root fetch - processPackages [groktest]: New version: [0.2.0] Old Version: [0.1.5]
+[2024-05-04 20:42:24] INFO root fetch - processPackages [sibila]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-04 20:42:24] INFO root fetch - processPackages [wagtail-resume]: New version: [2.9.0] Old Version: [2.8.0]
+[2024-05-04 20:42:24] INFO root fetch - processPackages [sibila]: Downloading https://files.pythonhosted.org/packages/a1/78/2c3874745e4b70bb3d5546ed18e68f7e01ca083ad95fcbf93941387eea57/sibila-0.4.1.tar.gz
+[2024-05-04 20:42:24] INFO root fetch - processPackages [groktest]: Downloading https://files.pythonhosted.org/packages/dd/04/00648acc12b57e841b1dd0c43c3625db8beaf2ca05b8ab162afcaf8f660d/groktest-0.1.5.tar.gz
+[2024-05-04 20:42:24] INFO root fetch - processPackages [wagtail-resume]: Downloading https://files.pythonhosted.org/packages/46/88/80e98101592735a4c03a72e93901d23faf6d3e8cebdc0c052bd42384f373/wagtail_resume-2.8.0.tar.gz
+[2024-05-04 20:42:24] INFO root fetch - processPackages [rdltr]: Downloading https://files.pythonhosted.org/packages/6d/7b/50443b0872dd48b95438074d395a69b7d425b5c6f3058125756450599b57/rdltr-0.1.9.tar.gz
+[2024-05-04 20:42:24] INFO root fetch - processPackages [rdltr]: executing diffoscope
+[2024-05-04 20:42:24] INFO root fetch - processPackages [rdltr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdltr-0.1.8.tar.gz tmp/rdltr-0.1.9.tar.gz --markdown 20240504/r/rdltr/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 20:42:24] INFO root fetch - processPackages [sibila]: Downloading https://files.pythonhosted.org/packages/fa/02/26f632e75403cfe3fd104e891905867b6247008dae6e71107343e90ce2a4/sibila-0.4.2.tar.gz
+[2024-05-04 20:42:24] INFO root fetch - processPackages [groktest]: Downloading https://files.pythonhosted.org/packages/0b/53/b1241082d89a9761dcd0d5c0e4db2d67ec016680e880e3928454066baf93/groktest-0.2.0.tar.gz
+[2024-05-04 20:42:24] INFO root fetch - processPackages [wagtail-resume]: Downloading https://files.pythonhosted.org/packages/7b/7a/fa5abf664fe4926fcc8bf416c3bf97f61d234992eb774ae3922e271d9291/wagtail_resume-2.9.0.tar.gz
+[2024-05-04 20:42:25] INFO root fetch - processPackages [sibila]: executing diffoscope
+[2024-05-04 20:42:25] INFO root fetch - processPackages [sibila]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sibila-0.4.1.tar.gz tmp/sibila-0.4.2.tar.gz --markdown 20240504/s/sibila/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-04 20:42:25] INFO root fetch - processPackages [groktest]: executing diffoscope
+[2024-05-04 20:42:25] INFO root fetch - processPackages [groktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/groktest-0.1.5.tar.gz tmp/groktest-0.2.0.tar.gz --markdown 20240504/g/groktest/0.1.5-0.2.0/README.md --exclude *.pyd
+[2024-05-04 20:42:25] INFO root fetch - processPackages [wagtail-resume]: executing diffoscope
+[2024-05-04 20:42:25] INFO root fetch - processPackages [wagtail-resume]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_resume-2.8.0.tar.gz tmp/wagtail_resume-2.9.0.tar.gz --markdown 20240504/w/wagtail-resume/2.8.0-2.9.0/README.md --exclude *.pyd
+[2024-05-04 20:42:25] INFO root fetch - processPackages [wagtail-resume]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_resume-2.8.0.tar.gz]
+[2024-05-04 20:42:25] INFO root fetch - processPackages [wagtail-resume]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_resume-2.9.0.tar.gz]
+[2024-05-04 20:42:25] INFO root fetch - main [MainThread]: End processing [wagtail-resume]: success
+[2024-05-04 20:42:25] INFO root fetch - processPackages [sibila]: Remove: archive file [/home/abi/fetcher/tmp/sibila-0.4.1.tar.gz]
+[2024-05-04 20:42:25] INFO root fetch - processPackages [sibila]: Remove: archive file [/home/abi/fetcher/tmp/sibila-0.4.2.tar.gz]
+[2024-05-04 20:42:25] INFO root fetch - main [MainThread]: End processing [sibila]: success
+[2024-05-04 20:42:25] INFO root fetch - processPackages [groktest]: Remove: archive file [/home/abi/fetcher/tmp/groktest-0.1.5.tar.gz]
+[2024-05-04 20:42:25] INFO root fetch - processPackages [groktest]: Remove: archive file [/home/abi/fetcher/tmp/groktest-0.2.0.tar.gz]
+[2024-05-04 20:42:25] INFO root fetch - main [MainThread]: End processing [groktest]: success
+[2024-05-04 20:42:34] INFO root fetch - processPackages [rdltr]: Remove: archive file [/home/abi/fetcher/tmp/rdltr-0.1.8.tar.gz]
+[2024-05-04 20:42:34] INFO root fetch - processPackages [rdltr]: Remove: archive file [/home/abi/fetcher/tmp/rdltr-0.1.9.tar.gz]
+[2024-05-04 20:42:34] INFO root fetch - main [MainThread]: End processing [rdltr]: success
+[2024-05-04 20:42:34] INFO root fetch - main [MainThread]: Store serial: [23060212]
