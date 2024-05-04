@@ -16392,3 +16392,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:44:51] INFO root fetch - processPackages [aioWiserHeatAPI]: Remove: archive file [/home/abi/fetcher/tmp/aioWiserHeatAPI-1.5.9.tar.gz]
 [2024-05-04 17:44:51] INFO root fetch - main [MainThread]: End processing [aioWiserHeatAPI]: success
 [2024-05-04 17:44:51] INFO root fetch - main [MainThread]: Store serial: [23058999]
+[2024-05-04 17:46:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058999]
+[2024-05-04 17:47:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 17:47:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-05-04 17:47:00] INFO root fetch - processPackages [freegenius]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-04 17:47:00] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/f9/77/272f2c0804a4165db6608b5912bdc8ba9798abe9e603b0e24fb3f4bffbd3/freegenius-0.2.5.tar.gz
+[2024-05-04 17:47:00] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/11/99/c7f538cfa2bb892ca2c3108eb8ac5d32a250d5d0b07e29b82b04a2173855/freegenius-0.2.6.tar.gz
+[2024-05-04 17:47:01] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-04 17:47:01] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.5.tar.gz tmp/freegenius-0.2.6.tar.gz --markdown 20240504/f/freegenius/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-04 17:47:02] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.5.tar.gz]
+[2024-05-04 17:47:02] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.6.tar.gz]
+[2024-05-04 17:47:02] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-04 17:47:02] INFO root fetch - main [MainThread]: Store serial: [23059002]
