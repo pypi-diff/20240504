@@ -14684,3 +14684,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:24:07] INFO root fetch - processPackages [leonranp]: Remove: archive file [/home/abi/fetcher/tmp/leonranp-0.1.5.tar.gz]
 [2024-05-04 15:24:07] INFO root fetch - main [MainThread]: End processing [leonranp]: success
 [2024-05-04 15:24:07] INFO root fetch - main [MainThread]: Store serial: [23058198]
+[2024-05-04 15:26:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058198]
+[2024-05-04 15:26:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 15:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-alchemy-kit
+[2024-05-04 15:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chord-reviews
+[2024-05-04 15:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PACMAN-charge
+[2024-05-04 15:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mmo-tools
+[2024-05-04 15:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NEMO-publications
+[2024-05-04 15:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: resmushit
+[2024-05-04 15:26:16] WARNING root fetch - processPackages [chord-reviews]: Skipping, unable to determine old version
+[2024-05-04 15:26:16] INFO root fetch - main [MainThread]: End processing [chord-reviews] error
+[2024-05-04 15:26:16] INFO root fetch - processPackages [PACMAN-charge]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-04 15:26:16] INFO root fetch - processPackages [mmo-tools]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-04 15:26:16] INFO root fetch - processPackages [pg-alchemy-kit]: New version: [0.9.1b0] Old Version: [0.9.19b0]
+[2024-05-04 15:26:16] INFO root fetch - processPackages [NEMO-publications]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-04 15:26:16] INFO root fetch - processPackages [resmushit]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 15:26:16] INFO root fetch - processPackages [PACMAN-charge]: Downloading https://files.pythonhosted.org/packages/6c/dc/224d74a7f1769f5c6323eea282d06c3283a4575dde1d7956d4b01a04378c/PACMAN-charge-0.1.2.tar.gz
+[2024-05-04 15:26:16] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/33/90/216a9048a8f6056e52f84580027a8890b504c207b48c217f2304eb55148f/mmo_tools-0.1.2.tar.gz
+[2024-05-04 15:26:16] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/3d/8c/00b399a4398b7e33077a2e883fae74e684d432c8a3c9ea8277b2264494e9/pg_alchemy_kit-0.9.19b0.tar.gz
+[2024-05-04 15:26:16] INFO root fetch - processPackages [NEMO-publications]: Downloading https://files.pythonhosted.org/packages/57/c0/c1f51e6cfeb290b5aab4cac8e88d67f7aca4803966d9d90adf956e9a57df/NEMO_publications-1.2.0-py3-none-any.whl
+[2024-05-04 15:26:16] INFO root fetch - processPackages [resmushit]: Downloading https://files.pythonhosted.org/packages/23/4a/6e595068c05235602bb130ec8595fc71aa0ff9944f1a6ecc2fb1aa1eacad/resmushit-1.0.0.tar.gz
+[2024-05-04 15:26:17] INFO root fetch - processPackages [PACMAN-charge]: Downloading https://files.pythonhosted.org/packages/74/8e/4de8b69026cc86bb1c884ede208eb51742d51dcf8c23c526ae9b1d02ded6/PACMAN-charge-0.1.3.tar.gz
+[2024-05-04 15:26:17] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/1f/39/d94b2c3f7960bb8bd66d5c843d23b5089072dbb20f2a447f308290c4b418/mmo_tools-0.1.3.tar.gz
+[2024-05-04 15:26:17] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/15/77/9606182a8ca268d744c73ee5fe74a3c2311f9ee66380afa1f220c118f43f/pg_alchemy_kit-0.9.1b0.tar.gz
+[2024-05-04 15:26:17] INFO root fetch - processPackages [NEMO-publications]: Downloading https://files.pythonhosted.org/packages/69/c8/8fc8f14a471c7c8c2a4c02066947b9db6ca1c38abf33029cc5e8a1f58ab7/NEMO_publications-1.2.1-py3-none-any.whl
+[2024-05-04 15:26:17] INFO root fetch - processPackages [resmushit]: Downloading https://files.pythonhosted.org/packages/9f/9c/2dc30cd32e26c03a34090238857f44fede44183c546a1f8af405b1f892f4/resmushit-1.0.1.tar.gz
+[2024-05-04 15:26:17] INFO root fetch - processPackages [PACMAN-charge]: executing diffoscope
+[2024-05-04 15:26:17] INFO root fetch - processPackages [PACMAN-charge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PACMAN-charge-0.1.2.tar.gz tmp/PACMAN-charge-0.1.3.tar.gz --markdown 20240504/P/PACMAN-charge/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-04 15:26:17] INFO root fetch - processPackages [mmo-tools]: executing diffoscope
+[2024-05-04 15:26:17] INFO root fetch - processPackages [mmo-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmo_tools-0.1.2.tar.gz tmp/mmo_tools-0.1.3.tar.gz --markdown 20240504/m/mmo-tools/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-04 15:26:17] INFO root fetch - processPackages [pg-alchemy-kit]: executing diffoscope
+[2024-05-04 15:26:17] INFO root fetch - processPackages [pg-alchemy-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_alchemy_kit-0.9.19b0.tar.gz tmp/pg_alchemy_kit-0.9.1b0.tar.gz --markdown 20240504/p/pg-alchemy-kit/0.9.19b0-0.9.1b0/README.md --exclude *.pyd
+[2024-05-04 15:26:17] INFO root fetch - processPackages [NEMO-publications]: executing diffoscope
+[2024-05-04 15:26:17] INFO root fetch - processPackages [NEMO-publications]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_publications-1.2.0-py3-none-any.whl.zip tmp/NEMO_publications-1.2.1-py3-none-any.whl.zip --markdown 20240504/N/NEMO-publications/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-04 15:26:17] INFO root fetch - processPackages [resmushit]: executing diffoscope
+[2024-05-04 15:26:17] INFO root fetch - processPackages [resmushit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resmushit-1.0.0.tar.gz tmp/resmushit-1.0.1.tar.gz --markdown 20240504/r/resmushit/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 15:26:18] INFO root fetch - processPackages [PACMAN-charge]: Remove: archive file [/home/abi/fetcher/tmp/PACMAN-charge-0.1.2.tar.gz]
+[2024-05-04 15:26:18] INFO root fetch - processPackages [PACMAN-charge]: Remove: archive file [/home/abi/fetcher/tmp/PACMAN-charge-0.1.3.tar.gz]
+[2024-05-04 15:26:18] INFO root fetch - main [MainThread]: End processing [PACMAN-charge]: success
+[2024-05-04 15:26:18] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.19b0.tar.gz]
+[2024-05-04 15:26:18] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.1b0.tar.gz]
+[2024-05-04 15:26:18] INFO root fetch - main [MainThread]: End processing [pg-alchemy-kit]: success
+[2024-05-04 15:26:18] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.1.2.tar.gz]
+[2024-05-04 15:26:18] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.1.3.tar.gz]
+[2024-05-04 15:26:18] INFO root fetch - main [MainThread]: End processing [mmo-tools]: success
+[2024-05-04 15:26:18] INFO root fetch - processPackages [NEMO-publications]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_publications-1.2.0-py3-none-any.whl.zip]
+[2024-05-04 15:26:18] INFO root fetch - processPackages [NEMO-publications]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_publications-1.2.1-py3-none-any.whl.zip]
+[2024-05-04 15:26:18] INFO root fetch - main [MainThread]: End processing [NEMO-publications]: success
+[2024-05-04 15:26:18] INFO root fetch - processPackages [resmushit]: Remove: archive file [/home/abi/fetcher/tmp/resmushit-1.0.0.tar.gz]
+[2024-05-04 15:26:18] INFO root fetch - processPackages [resmushit]: Remove: archive file [/home/abi/fetcher/tmp/resmushit-1.0.1.tar.gz]
+[2024-05-04 15:26:18] INFO root fetch - main [MainThread]: End processing [resmushit]: success
+[2024-05-04 15:26:18] INFO root fetch - main [MainThread]: Store serial: [23058216]
