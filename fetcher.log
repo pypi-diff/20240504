@@ -13965,3 +13965,36 @@
 [2024-05-04 14:12:05] INFO root fetch - processPackages [Python-Education-Tools]: Remove: archive file [/home/abi/fetcher/tmp/Python_Education_Tools-24.5.8-py3-none-any.whl.zip]
 [2024-05-04 14:12:05] INFO root fetch - main [MainThread]: End processing [Python-Education-Tools]: success
 [2024-05-04 14:12:05] INFO root fetch - main [MainThread]: Store serial: [23057905]
+[2024-05-04 14:14:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057905]
+[2024-05-04 14:14:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 14:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ChatGPTWeb
+[2024-05-04 14:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hdf-compass
+[2024-05-04 14:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: freeze-uuid
+[2024-05-04 14:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pybb-client
+[2024-05-04 14:14:13] INFO root fetch - processPackages [freeze-uuid]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-04 14:14:14] INFO root fetch - processPackages [freeze-uuid]: Downloading https://files.pythonhosted.org/packages/51/62/ae9c8a7d3554508cd2fcef7b94157a0f9149e1b075a33a0351ab6a43de7b/freeze_uuid-0.4.0.tar.gz
+[2024-05-04 14:14:14] WARNING root fetch - processPackages [pybb-client]: Skipping, unable to determine old version
+[2024-05-04 14:14:14] INFO root fetch - main [MainThread]: End processing [pybb-client] error
+[2024-05-04 14:14:14] INFO root fetch - processPackages [hdf-compass]: New version: [0.7b8] Old Version: [0.7b6]
+[2024-05-04 14:14:14] INFO root fetch - processPackages [ChatGPTWeb]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-04 14:14:14] INFO root fetch - processPackages [freeze-uuid]: Downloading https://files.pythonhosted.org/packages/bf/52/5bef5947740292727bcbec9b0227c6bab0861132b35ab67a8fcab3416a89/freeze_uuid-0.4.1.tar.gz
+[2024-05-04 14:14:14] INFO root fetch - processPackages [ChatGPTWeb]: Downloading https://files.pythonhosted.org/packages/82/0b/2f40072238e539ff3dafbd19d986e0824e96f181027997b032d565a7250f/ChatGPTWeb-0.2.8.tar.gz
+[2024-05-04 14:14:14] INFO root fetch - processPackages [hdf-compass]: Downloading https://files.pythonhosted.org/packages/b4/7e/bf7cafbc994a32d937bd81edfc79988524e259bc3dd2e840f3cbc01346d3/hdf_compass-0.7b6.tar.gz
+[2024-05-04 14:14:14] INFO root fetch - processPackages [freeze-uuid]: executing diffoscope
+[2024-05-04 14:14:14] INFO root fetch - processPackages [freeze-uuid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freeze_uuid-0.4.0.tar.gz tmp/freeze_uuid-0.4.1.tar.gz --markdown 20240504/f/freeze-uuid/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-04 14:14:14] INFO root fetch - processPackages [ChatGPTWeb]: Downloading https://files.pythonhosted.org/packages/c2/07/48a39963a051837ad1394281b0a7803bd8e57f7bd348e48ace95874fc0bb/ChatGPTWeb-0.2.9.tar.gz
+[2024-05-04 14:14:14] INFO root fetch - processPackages [ChatGPTWeb]: executing diffoscope
+[2024-05-04 14:14:14] INFO root fetch - processPackages [ChatGPTWeb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatGPTWeb-0.2.8.tar.gz tmp/ChatGPTWeb-0.2.9.tar.gz --markdown 20240504/C/ChatGPTWeb/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-04 14:14:14] INFO root fetch - processPackages [hdf-compass]: Downloading https://files.pythonhosted.org/packages/d8/8f/cd84fdac0f30eaaf41a641a9bb86e0aba118f4811fe1b92e2dac0667d231/hdf_compass-0.7b8.tar.gz
+[2024-05-04 14:14:14] INFO root fetch - processPackages [freeze-uuid]: Remove: archive file [/home/abi/fetcher/tmp/freeze_uuid-0.4.0.tar.gz]
+[2024-05-04 14:14:14] INFO root fetch - processPackages [freeze-uuid]: Remove: archive file [/home/abi/fetcher/tmp/freeze_uuid-0.4.1.tar.gz]
+[2024-05-04 14:14:14] INFO root fetch - main [MainThread]: End processing [freeze-uuid]: success
+[2024-05-04 14:14:15] INFO root fetch - processPackages [hdf-compass]: executing diffoscope
+[2024-05-04 14:14:15] INFO root fetch - processPackages [hdf-compass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdf_compass-0.7b6.tar.gz tmp/hdf_compass-0.7b8.tar.gz --markdown 20240504/h/hdf-compass/0.7b6-0.7b8/README.md --exclude *.pyd
+[2024-05-04 14:14:15] INFO root fetch - processPackages [ChatGPTWeb]: Remove: archive file [/home/abi/fetcher/tmp/ChatGPTWeb-0.2.8.tar.gz]
+[2024-05-04 14:14:15] INFO root fetch - processPackages [ChatGPTWeb]: Remove: archive file [/home/abi/fetcher/tmp/ChatGPTWeb-0.2.9.tar.gz]
+[2024-05-04 14:14:15] INFO root fetch - main [MainThread]: End processing [ChatGPTWeb]: success
+[2024-05-04 14:14:16] INFO root fetch - processPackages [hdf-compass]: Remove: archive file [/home/abi/fetcher/tmp/hdf_compass-0.7b6.tar.gz]
+[2024-05-04 14:14:16] INFO root fetch - processPackages [hdf-compass]: Remove: archive file [/home/abi/fetcher/tmp/hdf_compass-0.7b8.tar.gz]
+[2024-05-04 14:14:16] INFO root fetch - main [MainThread]: End processing [hdf-compass]: success
+[2024-05-04 14:14:16] INFO root fetch - main [MainThread]: Store serial: [23057921]
