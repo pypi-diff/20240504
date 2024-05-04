@@ -14129,3 +14129,15 @@
 [2024-05-04 14:29:26] INFO root fetch - processPackages [swh.objstorage]: Remove: archive file [/home/abi/fetcher/tmp/swh_objstorage-3.0.1.tar.gz]
 [2024-05-04 14:29:26] INFO root fetch - main [MainThread]: End processing [swh.objstorage]: success
 [2024-05-04 14:29:26] INFO root fetch - main [MainThread]: Store serial: [23057979]
+[2024-05-04 14:31:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057979]
+[2024-05-04 14:31:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 14:31:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mptradelib
+[2024-05-04 14:31:35] INFO root fetch - processPackages [mptradelib]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-05-04 14:31:35] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/6e/fd/6562784f5cb845aa32b6dcdde56b8534706ed1eac3d8db361a9c5e2f402e/mptradelib-0.3.5.tar.gz
+[2024-05-04 14:31:35] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/eb/7b/4c2e8c12a1eec8de1f0e064c4e8e71999596152bcc4c59d92d49ff45fa49/mptradelib-0.3.6.tar.gz
+[2024-05-04 14:31:35] INFO root fetch - processPackages [mptradelib]: executing diffoscope
+[2024-05-04 14:31:35] INFO root fetch - processPackages [mptradelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mptradelib-0.3.5.tar.gz tmp/mptradelib-0.3.6.tar.gz --markdown 20240504/m/mptradelib/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-05-04 14:31:36] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.5.tar.gz]
+[2024-05-04 14:31:36] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.6.tar.gz]
+[2024-05-04 14:31:36] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
+[2024-05-04 14:31:36] INFO root fetch - main [MainThread]: Store serial: [23057983]
