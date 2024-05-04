@@ -14451,3 +14451,18 @@
 [2024-05-04 15:01:55] INFO root fetch - processPackages [trailblazer]: Remove: archive file [/home/abi/fetcher/tmp/trailblazer-9.2.2.tar.gz]
 [2024-05-04 15:01:55] INFO root fetch - main [MainThread]: End processing [trailblazer]: success
 [2024-05-04 15:01:55] INFO root fetch - main [MainThread]: Store serial: [23058086]
+[2024-05-04 15:03:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058086]
+[2024-05-04 15:04:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 15:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyLauncherMPI
+[2024-05-04 15:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mmo-tools
+[2024-05-04 15:04:03] WARNING root fetch - processPackages [mmo-tools]: Skipping, unable to determine old version
+[2024-05-04 15:04:03] INFO root fetch - main [MainThread]: End processing [mmo-tools] error
+[2024-05-04 15:04:04] INFO root fetch - processPackages [PyLauncherMPI]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-04 15:04:04] INFO root fetch - processPackages [PyLauncherMPI]: Downloading https://files.pythonhosted.org/packages/37/a4/8c9fbd27165f79040e6d7f0c81c6ab776afc78a490caf3b84b6490dc881f/PyLauncherMPI-0.1.5.tar.gz
+[2024-05-04 15:04:04] INFO root fetch - processPackages [PyLauncherMPI]: Downloading https://files.pythonhosted.org/packages/6e/cc/966bfc20cc87c09cf7a2a695928eb9e78effd196f15f5cd160637e8a55f5/pylaunchermpi-0.1.6.tar.gz
+[2024-05-04 15:04:04] INFO root fetch - processPackages [PyLauncherMPI]: executing diffoscope
+[2024-05-04 15:04:04] INFO root fetch - processPackages [PyLauncherMPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyLauncherMPI-0.1.5.tar.gz tmp/pylaunchermpi-0.1.6.tar.gz --markdown 20240504/P/PyLauncherMPI/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-04 15:04:05] INFO root fetch - processPackages [PyLauncherMPI]: Remove: archive file [/home/abi/fetcher/tmp/PyLauncherMPI-0.1.5.tar.gz]
+[2024-05-04 15:04:05] INFO root fetch - processPackages [PyLauncherMPI]: Remove: archive file [/home/abi/fetcher/tmp/pylaunchermpi-0.1.6.tar.gz]
+[2024-05-04 15:04:05] INFO root fetch - main [MainThread]: End processing [PyLauncherMPI]: success
+[2024-05-04 15:04:05] INFO root fetch - main [MainThread]: Store serial: [23058091]
