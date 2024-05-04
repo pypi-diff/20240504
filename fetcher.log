@@ -17991,3 +17991,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:49:35] INFO root fetch - processPackages [valsai]: Remove: archive file [/home/abi/fetcher/tmp/valsai-0.0.34.tar.gz]
 [2024-05-04 19:49:35] INFO root fetch - main [MainThread]: End processing [valsai]: success
 [2024-05-04 19:49:35] INFO root fetch - main [MainThread]: Store serial: [23059704]
+[2024-05-04 19:51:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059704]
+[2024-05-04 19:51:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 19:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: valsai
+[2024-05-04 19:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-json-config
+[2024-05-04 19:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ezrest
+[2024-05-04 19:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyntcore
+[2024-05-04 19:51:43] INFO root fetch - processPackages [valsai]: New version: [0.0.34] Old Version: [0.0.33]
+[2024-05-04 19:51:43] INFO root fetch - processPackages [mo-json-config]: New version: [4.619.24125] Old Version: [4.609.24119]
+[2024-05-04 19:51:43] INFO root fetch - processPackages [valsai]: Downloading https://files.pythonhosted.org/packages/da/78/b330740c8e1609960309baa36934f39195379603fdf044ce7cccba2d4e60/valsai-0.0.33.tar.gz
+[2024-05-04 19:51:43] INFO root fetch - processPackages [ezrest]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-04 19:51:43] INFO root fetch - processPackages [mo-json-config]: Downloading https://files.pythonhosted.org/packages/0d/37/7ec1203dda835ee0bdde26763428bebefab1454c4f6fe4f2dcb8538dd25a/mo_json_config-4.609.24119.tar.gz
+[2024-05-04 19:51:43] INFO root fetch - processPackages [pyntcore]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:51:44] INFO root fetch - processPackages [ezrest]: Downloading https://files.pythonhosted.org/packages/9d/2d/de8e97b3e2bcfe155d909110b925abdc0339645fae84f15db190eaa477c9/ezrest-0.2.0.tar.gz
+[2024-05-04 19:51:44] INFO root fetch - processPackages [mo-json-config]: Downloading https://files.pythonhosted.org/packages/b0/e8/917b1032551c031f977fb916308f8103ce98c53597ea0c9c48a9117f6a90/mo_json_config-4.619.24125.tar.gz
+[2024-05-04 19:51:44] INFO root fetch - processPackages [valsai]: Downloading https://files.pythonhosted.org/packages/7d/ef/3b18ac67175c6c31678260ed16ad7080b0cd6cc999137bf9f67e8bbda2e0/valsai-0.0.34.tar.gz
+[2024-05-04 19:51:44] INFO root fetch - processPackages [pyntcore]: Downloading https://files.pythonhosted.org/packages/41/89/b71b1f9020b07ef31bb64f8ea63717164251e1d0f295afec70454b5c0fea/pyntcore-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:51:44] INFO root fetch - processPackages [valsai]: executing diffoscope
+[2024-05-04 19:51:44] INFO root fetch - processPackages [valsai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valsai-0.0.33.tar.gz tmp/valsai-0.0.34.tar.gz --markdown 20240504/v/valsai/0.0.33-0.0.34/README.md --exclude *.pyd
+[2024-05-04 19:51:44] INFO root fetch - processPackages [mo-json-config]: executing diffoscope
+[2024-05-04 19:51:44] INFO root fetch - processPackages [mo-json-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_json_config-4.609.24119.tar.gz tmp/mo_json_config-4.619.24125.tar.gz --markdown 20240504/m/mo-json-config/4.609.24119-4.619.24125/README.md --exclude *.pyd
+[2024-05-04 19:51:44] INFO root fetch - processPackages [ezrest]: Downloading https://files.pythonhosted.org/packages/1a/fb/953c2b0953f8cface7d280cf5ac82a589483770c52330b3621b840f4c844/ezrest-0.3.0.tar.gz
+[2024-05-04 19:51:44] INFO root fetch - processPackages [ezrest]: executing diffoscope
+[2024-05-04 19:51:44] INFO root fetch - processPackages [ezrest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezrest-0.2.0.tar.gz tmp/ezrest-0.3.0.tar.gz --markdown 20240504/e/ezrest/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-04 19:51:44] INFO root fetch - processPackages [valsai]: Remove: archive file [/home/abi/fetcher/tmp/valsai-0.0.33.tar.gz]
+[2024-05-04 19:51:44] INFO root fetch - processPackages [valsai]: Remove: archive file [/home/abi/fetcher/tmp/valsai-0.0.34.tar.gz]
+[2024-05-04 19:51:44] INFO root fetch - main [MainThread]: End processing [valsai]: success
+[2024-05-04 19:51:44] INFO root fetch - processPackages [mo-json-config]: Remove: archive file [/home/abi/fetcher/tmp/mo_json_config-4.609.24119.tar.gz]
+[2024-05-04 19:51:44] INFO root fetch - processPackages [mo-json-config]: Remove: archive file [/home/abi/fetcher/tmp/mo_json_config-4.619.24125.tar.gz]
+[2024-05-04 19:51:44] INFO root fetch - main [MainThread]: End processing [mo-json-config]: success
+[2024-05-04 19:51:45] INFO root fetch - processPackages [ezrest]: Remove: archive file [/home/abi/fetcher/tmp/ezrest-0.2.0.tar.gz]
+[2024-05-04 19:51:45] INFO root fetch - processPackages [ezrest]: Remove: archive file [/home/abi/fetcher/tmp/ezrest-0.3.0.tar.gz]
+[2024-05-04 19:51:45] INFO root fetch - main [MainThread]: End processing [ezrest]: success
+[2024-05-04 19:51:45] INFO root fetch - processPackages [pyntcore]: Downloading https://files.pythonhosted.org/packages/80/24/2dff886521987270e2abfa80a65727e0ba3be2e3dc8a32cc7e193889a0c9/pyntcore-2024.3.2.1-cp312-cp312-macosx_12_0_universal2.whl
+[2024-05-04 19:51:46] INFO root fetch - processPackages [pyntcore]: executing diffoscope
+[2024-05-04 19:51:46] INFO root fetch - processPackages [pyntcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyntcore-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/pyntcore-2024.3.2.1-cp312-cp312-macosx_12_0_universal2.whl.zip --markdown 20240504/p/pyntcore/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:51:48] INFO root fetch - processPackages [pyntcore]: Remove: archive file [/home/abi/fetcher/tmp/pyntcore-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:51:48] INFO root fetch - processPackages [pyntcore]: Remove: archive file [/home/abi/fetcher/tmp/pyntcore-2024.3.2.1-cp312-cp312-macosx_12_0_universal2.whl.zip]
+[2024-05-04 19:51:48] INFO root fetch - main [MainThread]: End processing [pyntcore]: success
+[2024-05-04 19:51:48] INFO root fetch - main [MainThread]: Store serial: [23059723]
