@@ -19047,3 +19047,65 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:57:47] INFO root fetch - processPackages [django-storages]: Remove: archive file [/home/abi/fetcher/tmp/django-storages-1.9.1.tar.gz]
 [2024-05-04 20:57:47] INFO root fetch - main [MainThread]: End processing [django-storages]: success
 [2024-05-04 20:57:47] INFO root fetch - main [MainThread]: Store serial: [23060319]
+[2024-05-04 20:59:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060319]
+[2024-05-04 20:59:56] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 21:01:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060320]
+[2024-05-04 21:02:01] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 21:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: applang
+[2024-05-04 21:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hat-juggler
+[2024-05-04 21:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: soda-svg
+[2024-05-04 21:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ReverseBox
+[2024-05-04 21:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llamascript
+[2024-05-04 21:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flatpack
+[2024-05-04 21:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mo-dots
+[2024-05-04 21:02:01] INFO root fetch - processPackages [llamascript]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-04 21:02:01] INFO root fetch - processPackages [ReverseBox]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-04 21:02:01] INFO root fetch - processPackages [mo-dots]: New version: [9.606.24115] Old Version: [9.605.24115]
+[2024-05-04 21:02:02] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-04 21:02:02] INFO root fetch - processPackages [soda-svg]: New version: [2.0.0] Old Version: [1.1.9]
+[2024-05-04 21:02:02] WARNING root fetch - processPackages [applang]: Skipping, unable to determine old version
+[2024-05-04 21:02:02] INFO root fetch - main [MainThread]: End processing [applang] error
+[2024-05-04 21:02:02] INFO root fetch - processPackages [hat-juggler]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-05-04 21:02:02] INFO root fetch - processPackages [llamascript]: Downloading https://files.pythonhosted.org/packages/83/15/5dfd7e32bd18bf8488a8e6c452845166f98a669524eedb8a2ef892c89847/llamascript-0.3.0.tar.gz
+[2024-05-04 21:02:02] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/c1/78/500bc80bd2febc9c1dd08390617553bf8eb583859830968121d99c41760a/mo_dots-9.605.24115.tar.gz
+[2024-05-04 21:02:02] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/74/cc/11091d3e16e8c16abc1b9c3eb04cb718cd0488d56153855d5f5e79e25846/ReverseBox-0.8.8.tar.gz
+[2024-05-04 21:02:02] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-04 21:02:02] INFO root fetch - processPackages [soda-svg]: Downloading https://files.pythonhosted.org/packages/bf/0a/4d4553a9758c8c894022cfa512b1237c74f0a561524a0655c8365f52e23c/soda_svg-1.1.9.tar.gz
+[2024-05-04 21:02:02] INFO root fetch - processPackages [hat-juggler]: Downloading https://files.pythonhosted.org/packages/b6/bc/e6bedc653fa494f7c67bebac5c6be63144e8576aee78837690f1c022f06a/hat_juggler-0.6.8-cp38.cp39.cp310-none-any.whl
+[2024-05-04 21:02:02] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/62/60/27b3dbfd973f17e5e448be2a9a9d96cea0e25479810b1ba253056fa3f295/mo_dots-9.606.24115.tar.gz
+[2024-05-04 21:02:02] INFO root fetch - processPackages [llamascript]: Downloading https://files.pythonhosted.org/packages/7e/e1/d6f4a441cf95df0b092951f5276fcaaa9267eeb063e7c902a1b1f8c07fcd/llamascript-0.3.1.tar.gz
+[2024-05-04 21:02:02] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-04 21:02:02] INFO root fetch - processPackages [mo-dots]: executing diffoscope
+[2024-05-04 21:02:02] INFO root fetch - processPackages [mo-dots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_dots-9.605.24115.tar.gz tmp/mo_dots-9.606.24115.tar.gz --markdown 20240504/m/mo-dots/9.605.24115-9.606.24115/README.md --exclude *.pyd
+[2024-05-04 21:02:02] INFO root fetch - processPackages [llamascript]: executing diffoscope
+[2024-05-04 21:02:02] INFO root fetch - processPackages [llamascript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llamascript-0.3.0.tar.gz tmp/llamascript-0.3.1.tar.gz --markdown 20240504/l/llamascript/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-04 21:02:02] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/d1/c3/6bc63d99438ad058c6caf3cd05d52bd03200ec6ceda9b935dc71447ab750/ReverseBox-0.8.9.tar.gz
+[2024-05-04 21:02:02] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-04 21:02:02] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240504/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-04 21:02:02] INFO root fetch - processPackages [hat-juggler]: Downloading https://files.pythonhosted.org/packages/88/f0/606d20d4b3770c9e7250511e52d30c9bdb4763dfbaaf9f64ca5f693e0b78/hat_juggler-0.6.9-cp38.cp39.cp310-none-any.whl
+[2024-05-04 21:02:02] INFO root fetch - processPackages [soda-svg]: Downloading https://files.pythonhosted.org/packages/b6/2d/553b0c101c110b1fe34a576e212c1f1389201a13c30325a96d667511c1bf/soda_svg-2.0.0.tar.gz
+[2024-05-04 21:02:02] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-04 21:02:02] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.8.8.tar.gz tmp/ReverseBox-0.8.9.tar.gz --markdown 20240504/R/ReverseBox/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-04 21:02:02] INFO root fetch - processPackages [hat-juggler]: executing diffoscope
+[2024-05-04 21:02:02] INFO root fetch - processPackages [hat-juggler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_juggler-0.6.8-cp38.cp39.cp310-none-any.whl.zip tmp/hat_juggler-0.6.9-cp38.cp39.cp310-none-any.whl.zip --markdown 20240504/h/hat-juggler/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-05-04 21:02:02] INFO root fetch - processPackages [soda-svg]: executing diffoscope
+[2024-05-04 21:02:02] INFO root fetch - processPackages [soda-svg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soda_svg-1.1.9.tar.gz tmp/soda_svg-2.0.0.tar.gz --markdown 20240504/s/soda-svg/1.1.9-2.0.0/README.md --exclude *.pyd
+[2024-05-04 21:02:03] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.605.24115.tar.gz]
+[2024-05-04 21:02:03] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.606.24115.tar.gz]
+[2024-05-04 21:02:03] INFO root fetch - main [MainThread]: End processing [mo-dots]: success
+[2024-05-04 21:02:03] INFO root fetch - processPackages [llamascript]: Remove: archive file [/home/abi/fetcher/tmp/llamascript-0.3.0.tar.gz]
+[2024-05-04 21:02:03] INFO root fetch - processPackages [llamascript]: Remove: archive file [/home/abi/fetcher/tmp/llamascript-0.3.1.tar.gz]
+[2024-05-04 21:02:03] INFO root fetch - main [MainThread]: End processing [llamascript]: success
+[2024-05-04 21:02:03] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-04 21:02:03] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-04 21:02:03] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-04 21:02:03] INFO root fetch - processPackages [hat-juggler]: Remove: archive file [/home/abi/fetcher/tmp/hat_juggler-0.6.8-cp38.cp39.cp310-none-any.whl.zip]
+[2024-05-04 21:02:03] INFO root fetch - processPackages [hat-juggler]: Remove: archive file [/home/abi/fetcher/tmp/hat_juggler-0.6.9-cp38.cp39.cp310-none-any.whl.zip]
+[2024-05-04 21:02:03] INFO root fetch - main [MainThread]: End processing [hat-juggler]: success
+[2024-05-04 21:02:03] INFO root fetch - processPackages [soda-svg]: Remove: archive file [/home/abi/fetcher/tmp/soda_svg-1.1.9.tar.gz]
+[2024-05-04 21:02:03] INFO root fetch - processPackages [soda-svg]: Remove: archive file [/home/abi/fetcher/tmp/soda_svg-2.0.0.tar.gz]
+[2024-05-04 21:02:03] INFO root fetch - main [MainThread]: End processing [soda-svg]: success
+[2024-05-04 21:02:03] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.8.tar.gz]
+[2024-05-04 21:02:03] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.9.tar.gz]
+[2024-05-04 21:02:03] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-04 21:02:03] INFO root fetch - main [MainThread]: Store serial: [23060342]
