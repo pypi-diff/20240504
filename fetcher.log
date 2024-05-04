@@ -15846,3 +15846,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:03:02] INFO root fetch - processPackages [gridworks-debug-cli]: Remove: archive file [/home/abi/fetcher/tmp/gridworks_debug_cli-0.2.9.tar.gz]
 [2024-05-04 17:03:02] INFO root fetch - main [MainThread]: End processing [gridworks-debug-cli]: success
 [2024-05-04 17:03:02] INFO root fetch - main [MainThread]: Store serial: [23058732]
+[2024-05-04 17:05:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058732]
+[2024-05-04 17:05:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 17:05:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: copy-spotter
+[2024-05-04 17:05:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: re-ircbot
+[2024-05-04 17:05:10] INFO root fetch - processPackages [copy-spotter]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-04 17:05:10] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/98/61/763157cab60dc007d5159c988d02d32b2a0cfab7731d8ef3facd5620eaa3/copy-spotter-0.1.5.tar.gz
+[2024-05-04 17:05:10] INFO root fetch - processPackages [re-ircbot]: New version: [2.0.0.dev0] Old Version: [1.7.0]
+[2024-05-04 17:05:10] INFO root fetch - processPackages [re-ircbot]: Downloading https://files.pythonhosted.org/packages/66/97/48371b9912192429b56d8c1c6491204757ffa1fb8b0ca5bfd9a458766839/re-ircbot-1.7.0.tar.gz
+[2024-05-04 17:05:10] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/5f/72/0e39331e5ee811ae7b0458db8d509ec74bbc50fdbf9569a3f3e66cc79db2/copy-spotter-0.1.6.tar.gz
+[2024-05-04 17:05:10] INFO root fetch - processPackages [copy-spotter]: executing diffoscope
+[2024-05-04 17:05:10] INFO root fetch - processPackages [copy-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copy-spotter-0.1.5.tar.gz tmp/copy-spotter-0.1.6.tar.gz --markdown 20240504/c/copy-spotter/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-04 17:05:11] INFO root fetch - processPackages [re-ircbot]: Downloading https://files.pythonhosted.org/packages/50/1b/cea1277983b0cce382ef7750494a4e8016017ad2084c81a8639c6a5ad09d/re_ircbot-2.0.0.dev0.tar.gz
+[2024-05-04 17:05:11] INFO root fetch - processPackages [re-ircbot]: executing diffoscope
+[2024-05-04 17:05:11] INFO root fetch - processPackages [re-ircbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/re-ircbot-1.7.0.tar.gz tmp/re_ircbot-2.0.0.dev0.tar.gz --markdown 20240504/r/re-ircbot/1.7.0-2.0.0.dev0/README.md --exclude *.pyd
+[2024-05-04 17:05:11] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.5.tar.gz]
+[2024-05-04 17:05:11] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.6.tar.gz]
+[2024-05-04 17:05:11] INFO root fetch - main [MainThread]: End processing [copy-spotter]: success
+[2024-05-04 17:05:11] INFO root fetch - processPackages [re-ircbot]: Remove: archive file [/home/abi/fetcher/tmp/re-ircbot-1.7.0.tar.gz]
+[2024-05-04 17:05:11] INFO root fetch - processPackages [re-ircbot]: Remove: archive file [/home/abi/fetcher/tmp/re_ircbot-2.0.0.dev0.tar.gz]
+[2024-05-04 17:05:11] INFO root fetch - main [MainThread]: End processing [re-ircbot]: success
+[2024-05-04 17:05:11] INFO root fetch - main [MainThread]: Store serial: [23058739]
