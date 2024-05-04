@@ -11618,3 +11618,24 @@
 [2024-05-04 10:21:42] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
 [2024-05-04 10:21:42] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-04 10:21:42] INFO root fetch - main [MainThread]: Store serial: [23056795]
+[2024-05-04 10:23:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056795]
+[2024-05-04 10:23:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 10:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlexecutorx
+[2024-05-04 10:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-04 10:23:51] INFO root fetch - processPackages [sqlexecutorx]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-04 10:23:51] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-04 10:23:51] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-04 10:23:52] INFO root fetch - processPackages [sqlexecutorx]: Downloading https://files.pythonhosted.org/packages/f1/6d/80a9ed9a752640906c650f5dd6d8d5b5243573b754a56ff93e82a457d45b/sqlexecutorx-0.0.2.tar.gz
+[2024-05-04 10:23:52] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-04 10:23:52] INFO root fetch - processPackages [sqlexecutorx]: Downloading https://files.pythonhosted.org/packages/77/63/cd03e5bd0ba609980a1325ef016b7eba07dea0f30a2259495ea4f05230aa/sqlexecutorx-0.0.3.tar.gz
+[2024-05-04 10:23:52] INFO root fetch - processPackages [sqlexecutorx]: executing diffoscope
+[2024-05-04 10:23:52] INFO root fetch - processPackages [sqlexecutorx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlexecutorx-0.0.2.tar.gz tmp/sqlexecutorx-0.0.3.tar.gz --markdown 20240504/s/sqlexecutorx/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-04 10:23:52] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-04 10:23:52] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240504/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-04 10:23:53] INFO root fetch - processPackages [sqlexecutorx]: Remove: archive file [/home/abi/fetcher/tmp/sqlexecutorx-0.0.2.tar.gz]
+[2024-05-04 10:23:53] INFO root fetch - processPackages [sqlexecutorx]: Remove: archive file [/home/abi/fetcher/tmp/sqlexecutorx-0.0.3.tar.gz]
+[2024-05-04 10:23:53] INFO root fetch - main [MainThread]: End processing [sqlexecutorx]: success
+[2024-05-04 10:23:53] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-04 10:23:53] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-04 10:23:53] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-04 10:23:53] INFO root fetch - main [MainThread]: Store serial: [23056801]
