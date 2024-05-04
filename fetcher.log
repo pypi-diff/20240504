@@ -2006,3 +2006,96 @@
 [2024-05-04 02:13:19] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
 [2024-05-04 02:13:19] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
 [2024-05-04 02:13:19] INFO root fetch - main [MainThread]: Store serial: [23052924]
+[2024-05-04 02:15:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052924]
+[2024-05-04 02:15:27] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-04 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytorch-ignite
+[2024-05-04 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdktf-gitlab-runner
+[2024-05-04 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-common
+[2024-05-04 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-skylight
+[2024-05-04 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rship-sdk
+[2024-05-04 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: easy-llama
+[2024-05-04 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-events-notify
+[2024-05-04 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: speakeasy-client-sdk-python
+[2024-05-04 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: colossalai-nightly
+[2024-05-04 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: MobileInventoryCLI
+[2024-05-04 02:15:28] INFO root fetch - processPackages [easy-llama]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-skylight]: New version: [1.1.99] Old Version: [1.1.98]
+[2024-05-04 02:15:28] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 02:15:28] INFO root fetch - processPackages [speakeasy-client-sdk-python]: New version: [5.7.0] Old Version: [5.6.9]
+[2024-05-04 02:15:28] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.83] Old Version: [0.4.82]
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdktf-gitlab-runner]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-04 02:15:28] INFO root fetch - processPackages [pytorch-ignite]: New version: [0.6.0.dev20240503] Old Version: [0.6.0.dev20240502]
+[2024-05-04 02:15:28] INFO root fetch - processPackages [colossalai-nightly]: New version: [2024.5.4] Old Version: [2024.3.9]
+[2024-05-04 02:15:28] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/ce/e9/39a06b9ce349625a5d6c7da00644a8cc7320112fb3ba2b2e54944d3a6135/easy_llama-0.1.8.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-skylight]: Downloading https://files.pythonhosted.org/packages/86/f2/01b58f6183b48ce1105016a7f5045925a49464b8c20408459bd101fe5f25/cdk-skylight-1.1.98.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [speakeasy-client-sdk-python]: Downloading https://files.pythonhosted.org/packages/01/54/7938caffd4c9a58fb606d95fba8ff4e66dd8b38724588964f4fa2d838dd6/speakeasy-client-sdk-python-5.6.9.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/70/f2/6a1fc26b23940d1cfa992c84a912efa90bbc65881047d43ea7de5690abb5/MobileInventoryCLI-0.4.82.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/45/0c/f8a2fe7b49b8bf09dcfa0fb92899526c96225c7922ad1238ba8ba1e58e29/pytorch-ignite-0.6.0.dev20240502.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/8a/6e/f1c520e407ce3adf90b51d2d1ca84d283a08c808fc00c9deeff4f4734d82/cdktf-gitlab-runner-0.0.98.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-04 02:15:28] INFO root fetch - processPackages [colossalai-nightly]: Downloading https://files.pythonhosted.org/packages/f8/c7/6b0e414d8d878fc0c4f15a252baeaf577cc7831683c1ee74be358732ccc5/colossalai-nightly-2024.3.9.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/98/5d/f5007368104957b81fc41c01c18234178e2875066cca25192bec1d846caf/easy_llama-0.1.9.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [speakeasy-client-sdk-python]: Downloading https://files.pythonhosted.org/packages/b4/6b/e1c272afbd840f9c9602c2fac63d135448d884d1a83342c5d9647802e233/speakeasy-client-sdk-python-5.7.0.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-skylight]: Downloading https://files.pythonhosted.org/packages/59/49/3e035cb98d5f97f79c174e211129a2dbe596df70c5df50ac701242fabea2/cdk-skylight-1.1.99.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/59/f2/0d7ab5ec05a2b43bd92c00fd237afddb1e2770c7edaf03b1f7ddef6c0793/cdktf-gitlab-runner-0.0.99.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/db/27/4cfdb72f7de5c77ed105b87b00be1a079da871884e593a4e1fda32b27062/pytorch-ignite-0.6.0.dev20240503.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [easy-llama]: executing diffoscope
+[2024-05-04 02:15:28] INFO root fetch - processPackages [easy-llama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_llama-0.1.8.tar.gz tmp/easy_llama-0.1.9.tar.gz --markdown 20240504/e/easy-llama/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 02:15:28] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 02:15:28] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 02:15:28] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/29/4c/6a7cf59683dd9a080198b9f350a612ba0b7bcdcac31509d80e1906e36a25/MobileInventoryCLI-0.4.83.tar.gz
+[2024-05-04 02:15:28] INFO root fetch - processPackages [speakeasy-client-sdk-python]: executing diffoscope
+[2024-05-04 02:15:28] INFO root fetch - processPackages [speakeasy-client-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speakeasy-client-sdk-python-5.6.9.tar.gz tmp/speakeasy-client-sdk-python-5.7.0.tar.gz --markdown 20240504/s/speakeasy-client-sdk-python/5.6.9-5.7.0/README.md --exclude *.pyd
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-skylight]: executing diffoscope
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-skylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-skylight-1.1.98.tar.gz tmp/cdk-skylight-1.1.99.tar.gz --markdown 20240504/c/cdk-skylight/1.1.98-1.1.99/README.md --exclude *.pyd
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240504/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdktf-gitlab-runner]: executing diffoscope
+[2024-05-04 02:15:28] INFO root fetch - processPackages [cdktf-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-gitlab-runner-0.0.98.tar.gz tmp/cdktf-gitlab-runner-0.0.99.tar.gz --markdown 20240504/c/cdktf-gitlab-runner/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-04 02:15:28] INFO root fetch - processPackages [pytorch-ignite]: executing diffoscope
+[2024-05-04 02:15:28] INFO root fetch - processPackages [pytorch-ignite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-ignite-0.6.0.dev20240502.tar.gz tmp/pytorch-ignite-0.6.0.dev20240503.tar.gz --markdown 20240504/p/pytorch-ignite/0.6.0.dev20240502-0.6.0.dev20240503/README.md --exclude *.pyd
+[2024-05-04 02:15:29] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-04 02:15:29] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.82.tar.gz tmp/MobileInventoryCLI-0.4.83.tar.gz --markdown 20240504/M/MobileInventoryCLI/0.4.82-0.4.83/README.md --exclude *.pyd
+[2024-05-04 02:15:29] INFO root fetch - processPackages [colossalai-nightly]: Downloading https://files.pythonhosted.org/packages/e6/44/486fd79264aea07659649b19981068e182adb8d2d334acb004f686b0dc55/colossalai-nightly-2024.5.4.tar.gz
+[2024-05-04 02:15:29] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-05-04 02:15:29] INFO root fetch - processPackages [colossalai-nightly]: executing diffoscope
+[2024-05-04 02:15:29] INFO root fetch - processPackages [colossalai-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colossalai-nightly-2024.3.9.tar.gz tmp/colossalai-nightly-2024.5.4.tar.gz --markdown 20240504/c/colossalai-nightly/2024.3.9-2024.5.4/README.md --exclude *.pyd
+[2024-05-04 02:15:29] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-05-04 02:15:29] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240504/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-04 02:15:29] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 02:15:29] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 02:15:29] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 02:15:29] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.98.tar.gz]
+[2024-05-04 02:15:29] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
+[2024-05-04 02:15:29] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-05-04 02:15:29] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.98.tar.gz]
+[2024-05-04 02:15:29] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.99.tar.gz]
+[2024-05-04 02:15:29] INFO root fetch - main [MainThread]: End processing [cdktf-gitlab-runner]: success
+[2024-05-04 02:15:29] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.8.tar.gz]
+[2024-05-04 02:15:29] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.9.tar.gz]
+[2024-05-04 02:15:29] INFO root fetch - main [MainThread]: End processing [easy-llama]: success
+[2024-05-04 02:15:30] INFO root fetch - processPackages [cdk-skylight]: Remove: archive file [/home/abi/fetcher/tmp/cdk-skylight-1.1.98.tar.gz]
+[2024-05-04 02:15:30] INFO root fetch - processPackages [cdk-skylight]: Remove: archive file [/home/abi/fetcher/tmp/cdk-skylight-1.1.99.tar.gz]
+[2024-05-04 02:15:30] INFO root fetch - main [MainThread]: End processing [cdk-skylight]: success
+[2024-05-04 02:15:30] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.82.tar.gz]
+[2024-05-04 02:15:30] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.83.tar.gz]
+[2024-05-04 02:15:30] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-04 02:15:30] INFO root fetch - processPackages [speakeasy-client-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/speakeasy-client-sdk-python-5.6.9.tar.gz]
+[2024-05-04 02:15:30] INFO root fetch - processPackages [speakeasy-client-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/speakeasy-client-sdk-python-5.7.0.tar.gz]
+[2024-05-04 02:15:30] INFO root fetch - main [MainThread]: End processing [speakeasy-client-sdk-python]: success
+[2024-05-04 02:15:30] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch-ignite-0.6.0.dev20240502.tar.gz]
+[2024-05-04 02:15:30] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch-ignite-0.6.0.dev20240503.tar.gz]
+[2024-05-04 02:15:30] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
+[2024-05-04 02:15:30] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-05-04 02:15:30] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-05-04 02:15:30] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-05-04 02:15:34] INFO root fetch - processPackages [colossalai-nightly]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-nightly-2024.3.9.tar.gz]
+[2024-05-04 02:15:34] INFO root fetch - processPackages [colossalai-nightly]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-nightly-2024.5.4.tar.gz]
+[2024-05-04 02:15:34] INFO root fetch - main [MainThread]: End processing [colossalai-nightly]: success
+[2024-05-04 02:15:34] INFO root fetch - main [MainThread]: Store serial: [23052955]
