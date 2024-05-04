@@ -14439,3 +14439,15 @@
 [2024-05-04 14:59:44] INFO root fetch - processPackages [antspymm]: Remove: archive file [/home/abi/fetcher/tmp/antspymm-1.3.4.tar.gz]
 [2024-05-04 14:59:44] INFO root fetch - main [MainThread]: End processing [antspymm]: success
 [2024-05-04 14:59:44] INFO root fetch - main [MainThread]: Store serial: [23058083]
+[2024-05-04 15:01:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058083]
+[2024-05-04 15:01:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 15:01:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trailblazer
+[2024-05-04 15:01:54] INFO root fetch - processPackages [trailblazer]: New version: [9.2.2] Old Version: [9.2.1]
+[2024-05-04 15:01:54] INFO root fetch - processPackages [trailblazer]: Downloading https://files.pythonhosted.org/packages/d5/6e/b1ace1dd396e103472872b5a579cdf682583add16afd612891012a111556/trailblazer-9.2.1.tar.gz
+[2024-05-04 15:01:54] INFO root fetch - processPackages [trailblazer]: Downloading https://files.pythonhosted.org/packages/62/26/4e5aaa2f489559d2215daf26b18ae4d84f0ec47ec57ba184df9e56b4eddc/trailblazer-9.2.2.tar.gz
+[2024-05-04 15:01:54] INFO root fetch - processPackages [trailblazer]: executing diffoscope
+[2024-05-04 15:01:54] INFO root fetch - processPackages [trailblazer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trailblazer-9.2.1.tar.gz tmp/trailblazer-9.2.2.tar.gz --markdown 20240504/t/trailblazer/9.2.1-9.2.2/README.md --exclude *.pyd
+[2024-05-04 15:01:55] INFO root fetch - processPackages [trailblazer]: Remove: archive file [/home/abi/fetcher/tmp/trailblazer-9.2.1.tar.gz]
+[2024-05-04 15:01:55] INFO root fetch - processPackages [trailblazer]: Remove: archive file [/home/abi/fetcher/tmp/trailblazer-9.2.2.tar.gz]
+[2024-05-04 15:01:55] INFO root fetch - main [MainThread]: End processing [trailblazer]: success
+[2024-05-04 15:01:55] INFO root fetch - main [MainThread]: Store serial: [23058086]
