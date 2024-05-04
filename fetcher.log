@@ -1717,3 +1717,54 @@
 [2024-05-04 01:57:58] INFO root fetch - processPackages [EnglishLanguageAPI]: Remove: archive file [/home/abi/fetcher/tmp/englishlanguageapi-1.0.0.tar.gz]
 [2024-05-04 01:57:58] INFO root fetch - main [MainThread]: End processing [EnglishLanguageAPI]: success
 [2024-05-04 01:57:58] INFO root fetch - main [MainThread]: Store serial: [23052815]
+[2024-05-04 02:00:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052815]
+[2024-05-04 02:00:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 02:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-kg
+[2024-05-04 02:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openadapt
+[2024-05-04 02:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: es-wait
+[2024-05-04 02:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llm-openrouter
+[2024-05-04 02:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: communex
+[2024-05-04 02:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: segmentation-skeleton-metrics
+[2024-05-04 02:00:10] INFO root fetch - processPackages [es-wait]: New version: [0.7.0] Old Version: [0.5.7]
+[2024-05-04 02:00:10] WARNING root fetch - processPackages [llama-kg]: Skipping, unable to determine old version
+[2024-05-04 02:00:10] INFO root fetch - main [MainThread]: End processing [llama-kg] error
+[2024-05-04 02:00:10] INFO root fetch - processPackages [llm-openrouter]: New version: [0.2] Old Version: [0.1]
+[2024-05-04 02:00:10] INFO root fetch - processPackages [es-wait]: Downloading https://files.pythonhosted.org/packages/72/53/d3df4304bc724fdc1ea61c4f3e386eb09b1efbef07aa22cd1326d4f83db7/es_wait-0.5.7.tar.gz
+[2024-05-04 02:00:10] INFO root fetch - processPackages [communex]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 02:00:10] INFO root fetch - processPackages [openadapt]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-04 02:00:10] INFO root fetch - processPackages [segmentation-skeleton-metrics]: New version: [4.1.5] Old Version: [4.1.4]
+[2024-05-04 02:00:10] INFO root fetch - processPackages [llm-openrouter]: Downloading https://files.pythonhosted.org/packages/d1/16/014add0f8f9d3aff28988786b82db6f6767e4108f8098517b11e316f6d2e/llm-openrouter-0.1.tar.gz
+[2024-05-04 02:00:10] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/77/67/00051570e40b098c12038ef6aed5be120d14bfafef5d08885df5a9714f91/communex-0.1.8.tar.gz
+[2024-05-04 02:00:10] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/79/02/9909659ccbba301efcb1ca065eb1d9413e5e760d2cefd4a01ba5e723511b/openadapt-0.8.1.tar.gz
+[2024-05-04 02:00:10] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Downloading https://files.pythonhosted.org/packages/ba/eb/492f34246beaacb76b40f1ac8c2f7d5f0c748362039a61f9e5d8a04dbffd/segmentation_skeleton_metrics-4.1.4.tar.gz
+[2024-05-04 02:00:10] INFO root fetch - processPackages [es-wait]: Downloading https://files.pythonhosted.org/packages/6d/9c/16e03a05290deeda9b783ad87bfef6cd116c5895abd18b708aa3de0695d9/es_wait-0.7.0.tar.gz
+[2024-05-04 02:00:10] INFO root fetch - processPackages [es-wait]: executing diffoscope
+[2024-05-04 02:00:10] INFO root fetch - processPackages [es-wait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/es_wait-0.5.7.tar.gz tmp/es_wait-0.7.0.tar.gz --markdown 20240504/e/es-wait/0.5.7-0.7.0/README.md --exclude *.pyd
+[2024-05-04 02:00:10] INFO root fetch - processPackages [llm-openrouter]: Downloading https://files.pythonhosted.org/packages/19/90/4d7ecb7848fbf21be3f715d8d218735ebd9586a2d2b760695e0fe9d34e6e/llm_openrouter-0.2.tar.gz
+[2024-05-04 02:00:10] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/51/79/c7d8079cf08c4dcf6ea1f984e64a67fe00acfd76303d2f7f6159f574d5da/communex-0.1.9.tar.gz
+[2024-05-04 02:00:11] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/b7/9c/6198cbb491bbd32347e3741b41ee70e6ad1916e573ef76ae3aeb9e0fc8ef/openadapt-0.9.0.tar.gz
+[2024-05-04 02:00:11] INFO root fetch - processPackages [llm-openrouter]: executing diffoscope
+[2024-05-04 02:00:11] INFO root fetch - processPackages [llm-openrouter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm-openrouter-0.1.tar.gz tmp/llm_openrouter-0.2.tar.gz --markdown 20240504/l/llm-openrouter/0.1-0.2/README.md --exclude *.pyd
+[2024-05-04 02:00:11] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Downloading https://files.pythonhosted.org/packages/aa/05/b6d98720f9a5c4e156f903dc2fc5fc63cd6c4c8a724b75da01f84e2c589e/segmentation_skeleton_metrics-4.1.5.tar.gz
+[2024-05-04 02:00:11] INFO root fetch - processPackages [communex]: executing diffoscope
+[2024-05-04 02:00:11] INFO root fetch - processPackages [communex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/communex-0.1.8.tar.gz tmp/communex-0.1.9.tar.gz --markdown 20240504/c/communex/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 02:00:11] INFO root fetch - processPackages [openadapt]: executing diffoscope
+[2024-05-04 02:00:11] INFO root fetch - processPackages [openadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openadapt-0.8.1.tar.gz tmp/openadapt-0.9.0.tar.gz --markdown 20240504/o/openadapt/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-04 02:00:11] INFO root fetch - processPackages [segmentation-skeleton-metrics]: executing diffoscope
+[2024-05-04 02:00:11] INFO root fetch - processPackages [segmentation-skeleton-metrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segmentation_skeleton_metrics-4.1.4.tar.gz tmp/segmentation_skeleton_metrics-4.1.5.tar.gz --markdown 20240504/s/segmentation-skeleton-metrics/4.1.4-4.1.5/README.md --exclude *.pyd
+[2024-05-04 02:00:11] INFO root fetch - processPackages [es-wait]: Remove: archive file [/home/abi/fetcher/tmp/es_wait-0.5.7.tar.gz]
+[2024-05-04 02:00:11] INFO root fetch - processPackages [es-wait]: Remove: archive file [/home/abi/fetcher/tmp/es_wait-0.7.0.tar.gz]
+[2024-05-04 02:00:11] INFO root fetch - main [MainThread]: End processing [es-wait]: success
+[2024-05-04 02:00:11] INFO root fetch - processPackages [llm-openrouter]: Remove: archive file [/home/abi/fetcher/tmp/llm-openrouter-0.1.tar.gz]
+[2024-05-04 02:00:11] INFO root fetch - processPackages [llm-openrouter]: Remove: archive file [/home/abi/fetcher/tmp/llm_openrouter-0.2.tar.gz]
+[2024-05-04 02:00:11] INFO root fetch - main [MainThread]: End processing [llm-openrouter]: success
+[2024-05-04 02:00:11] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.8.tar.gz]
+[2024-05-04 02:00:11] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.9.tar.gz]
+[2024-05-04 02:00:11] INFO root fetch - main [MainThread]: End processing [communex]: success
+[2024-05-04 02:00:11] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.8.1.tar.gz]
+[2024-05-04 02:00:11] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.9.0.tar.gz]
+[2024-05-04 02:00:11] INFO root fetch - main [MainThread]: End processing [openadapt]: success
+[2024-05-04 02:00:12] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Remove: archive file [/home/abi/fetcher/tmp/segmentation_skeleton_metrics-4.1.4.tar.gz]
+[2024-05-04 02:00:12] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Remove: archive file [/home/abi/fetcher/tmp/segmentation_skeleton_metrics-4.1.5.tar.gz]
+[2024-05-04 02:00:12] INFO root fetch - main [MainThread]: End processing [segmentation-skeleton-metrics]: success
+[2024-05-04 02:00:12] INFO root fetch - main [MainThread]: Store serial: [23052836]
