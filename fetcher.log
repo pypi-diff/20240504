@@ -12455,3 +12455,27 @@
 [2024-05-04 11:40:06] INFO root fetch - processPackages [fei-crypto]: Remove: archive file [/home/abi/fetcher/tmp/fei_crypto-0.2.6.tar.gz]
 [2024-05-04 11:40:06] INFO root fetch - main [MainThread]: End processing [fei-crypto]: success
 [2024-05-04 11:40:06] INFO root fetch - main [MainThread]: Store serial: [23057289]
+[2024-05-04 11:42:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057289]
+[2024-05-04 11:42:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 11:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: visualizing-training
+[2024-05-04 11:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cvutil
+[2024-05-04 11:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-automl-lib
+[2024-05-04 11:42:16] INFO root fetch - processPackages [py-automl-lib]: New version: [2.2.2] Old Version: [2.2.1]
+[2024-05-04 11:42:16] INFO root fetch - processPackages [cvutil]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-04 11:42:16] WARNING root fetch - processPackages [visualizing-training]: Skipping, unable to determine old version
+[2024-05-04 11:42:16] INFO root fetch - main [MainThread]: End processing [visualizing-training] error
+[2024-05-04 11:42:17] INFO root fetch - processPackages [py-automl-lib]: Downloading https://files.pythonhosted.org/packages/27/d1/12d787736a7c5e476d21929e5eca5f414b81a1eef70ba488896bbc0c45d1/py-automl-lib-2.2.1.tar.gz
+[2024-05-04 11:42:17] INFO root fetch - processPackages [cvutil]: Downloading https://files.pythonhosted.org/packages/29/f2/e0b580b5f740e3b0c6313efc4fceaf0f23cadedd29dc7eb842c0824aeaab/cvutil-0.0.3.tar.gz
+[2024-05-04 11:42:17] INFO root fetch - processPackages [cvutil]: Downloading https://files.pythonhosted.org/packages/54/d4/336315402c90a8fb10ffdef29d4af3dbdcb0d6e7526696402926ba3f87b7/cvutil-0.0.4.tar.gz
+[2024-05-04 11:42:17] INFO root fetch - processPackages [py-automl-lib]: Downloading https://files.pythonhosted.org/packages/22/39/c7f8efe2978e52ed87d34a555f844d97537c8f048a2da2bf1b4f6860eb53/py_automl_lib-2.2.2.tar.gz
+[2024-05-04 11:42:17] INFO root fetch - processPackages [cvutil]: executing diffoscope
+[2024-05-04 11:42:17] INFO root fetch - processPackages [cvutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvutil-0.0.3.tar.gz tmp/cvutil-0.0.4.tar.gz --markdown 20240504/c/cvutil/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-04 11:42:17] INFO root fetch - processPackages [py-automl-lib]: executing diffoscope
+[2024-05-04 11:42:17] INFO root fetch - processPackages [py-automl-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-automl-lib-2.2.1.tar.gz tmp/py_automl_lib-2.2.2.tar.gz --markdown 20240504/p/py-automl-lib/2.2.1-2.2.2/README.md --exclude *.pyd
+[2024-05-04 11:42:17] INFO root fetch - processPackages [cvutil]: Remove: archive file [/home/abi/fetcher/tmp/cvutil-0.0.3.tar.gz]
+[2024-05-04 11:42:17] INFO root fetch - processPackages [cvutil]: Remove: archive file [/home/abi/fetcher/tmp/cvutil-0.0.4.tar.gz]
+[2024-05-04 11:42:17] INFO root fetch - main [MainThread]: End processing [cvutil]: success
+[2024-05-04 11:42:18] INFO root fetch - processPackages [py-automl-lib]: Remove: archive file [/home/abi/fetcher/tmp/py-automl-lib-2.2.1.tar.gz]
+[2024-05-04 11:42:18] INFO root fetch - processPackages [py-automl-lib]: Remove: archive file [/home/abi/fetcher/tmp/py_automl_lib-2.2.2.tar.gz]
+[2024-05-04 11:42:18] INFO root fetch - main [MainThread]: End processing [py-automl-lib]: success
+[2024-05-04 11:42:18] INFO root fetch - main [MainThread]: Store serial: [23057300]
