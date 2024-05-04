@@ -20810,3 +20810,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:11:03] INFO root fetch - processPackages [jx-sqlite]: Remove: archive file [/home/abi/fetcher/tmp/jx_sqlite-5.626.24125.tar.gz]
 [2024-05-04 23:11:03] INFO root fetch - main [MainThread]: End processing [jx-sqlite]: success
 [2024-05-04 23:11:03] INFO root fetch - main [MainThread]: Store serial: [23061021]
+[2024-05-04 23:13:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061021]
+[2024-05-04 23:13:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 23:13:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blankslate-python
+[2024-05-04 23:13:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cocoon-data
+[2024-05-04 23:13:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpy-cross-v6
+[2024-05-04 23:13:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: geoseeq
+[2024-05-04 23:13:12] INFO root fetch - processPackages [blankslate-python]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-04 23:13:12] INFO root fetch - processPackages [geoseeq]: New version: [0.6.0] Old Version: [0.5.6a9]
+[2024-05-04 23:13:12] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 23:13:12] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/3a/40/8bc10c86586cfbb06c38dbaba508b667a23a2dfad6c6ea81b3bda1e5196b/blankslate_python-1.1.4.tar.gz
+[2024-05-04 23:13:12] INFO root fetch - processPackages [mpy-cross-v6]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 23:13:12] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-05-04 23:13:12] INFO root fetch - processPackages [geoseeq]: Downloading https://files.pythonhosted.org/packages/6a/22/f613efbeaf81d708bb8f92bd33cf0eb59dabb001aaf714523068d9308e2b/geoseeq-0.5.6a9.tar.gz
+[2024-05-04 23:13:12] INFO root fetch - processPackages [mpy-cross-v6]: Downloading https://files.pythonhosted.org/packages/e3/40/550a6ab94fde35fe1c3ffdc7cef8c889faa4a8b9bea4e8d25bb1ba2bc17a/mpy-cross-v6-1.0.1.tar.gz
+[2024-05-04 23:13:12] INFO root fetch - processPackages [geoseeq]: Downloading https://files.pythonhosted.org/packages/08/a7/ef1657096468ccc93d44a62307e18185c2893e7006315b76a38d8d667d90/geoseeq-0.6.0.tar.gz
+[2024-05-04 23:13:12] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-05-04 23:13:12] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/83/15/f7dee240aca1d2b0ed2fdf553ce9485fde69c01d839a0dcf159f2e532c4b/blankslate_python-1.1.5.tar.gz
+[2024-05-04 23:13:12] INFO root fetch - processPackages [geoseeq]: executing diffoscope
+[2024-05-04 23:13:12] INFO root fetch - processPackages [geoseeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoseeq-0.5.6a9.tar.gz tmp/geoseeq-0.6.0.tar.gz --markdown 20240504/g/geoseeq/0.5.6a9-0.6.0/README.md --exclude *.pyd
+[2024-05-04 23:13:12] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-05-04 23:13:12] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240504/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 23:13:12] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-04 23:13:12] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.1.4.tar.gz tmp/blankslate_python-1.1.5.tar.gz --markdown 20240504/b/blankslate-python/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-04 23:13:13] INFO root fetch - processPackages [mpy-cross-v6]: Downloading https://files.pythonhosted.org/packages/ac/e3/9c87be979d7854a80bbf9e20e38e8a3d25b91db705d6419945959ebc9324/mpy_cross_v6-1.0.2.tar.gz
+[2024-05-04 23:13:13] INFO root fetch - processPackages [mpy-cross-v6]: executing diffoscope
+[2024-05-04 23:13:13] INFO root fetch - processPackages [mpy-cross-v6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpy-cross-v6-1.0.1.tar.gz tmp/mpy_cross_v6-1.0.2.tar.gz --markdown 20240504/m/mpy-cross-v6/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 23:13:13] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-05-04 23:13:13] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-05-04 23:13:13] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-05-04 23:13:13] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.4.tar.gz]
+[2024-05-04 23:13:13] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.5.tar.gz]
+[2024-05-04 23:13:13] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-04 23:13:13] INFO root fetch - processPackages [geoseeq]: Remove: archive file [/home/abi/fetcher/tmp/geoseeq-0.5.6a9.tar.gz]
+[2024-05-04 23:13:13] INFO root fetch - processPackages [geoseeq]: Remove: archive file [/home/abi/fetcher/tmp/geoseeq-0.6.0.tar.gz]
+[2024-05-04 23:13:13] INFO root fetch - main [MainThread]: End processing [geoseeq]: success
+[2024-05-04 23:13:15] INFO root fetch - processPackages [mpy-cross-v6]: Remove: archive file [/home/abi/fetcher/tmp/mpy-cross-v6-1.0.1.tar.gz]
+[2024-05-04 23:13:15] INFO root fetch - processPackages [mpy-cross-v6]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross_v6-1.0.2.tar.gz]
+[2024-05-04 23:13:15] INFO root fetch - main [MainThread]: End processing [mpy-cross-v6]: success
+[2024-05-04 23:13:15] INFO root fetch - main [MainThread]: Store serial: [23061040]
