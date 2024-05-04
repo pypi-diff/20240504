@@ -13926,3 +13926,30 @@
 [2024-05-04 14:07:44] INFO root fetch - processPackages [unicorn-binance-websocket-api]: Remove: archive file [/home/abi/fetcher/tmp/unicorn_binance_websocket_api-2.5.0-pp38-pypy38_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip]
 [2024-05-04 14:07:44] INFO root fetch - main [MainThread]: End processing [unicorn-binance-websocket-api]: success
 [2024-05-04 14:07:44] INFO root fetch - main [MainThread]: Store serial: [23057886]
+[2024-05-04 14:09:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057886]
+[2024-05-04 14:09:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 14:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torcheval-nightly
+[2024-05-04 14:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-05-04 14:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-esimd-21
+[2024-05-04 14:09:53] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-04 14:09:53] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: New version: [2.5.0b20240504] Old Version: [2.5.0b20240503]
+[2024-05-04 14:09:53] INFO root fetch - processPackages [torcheval-nightly]: New version: [2024.5.4] Old Version: [2024.5.2]
+[2024-05-04 14:09:53] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-04 14:09:53] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/3e/71/fe5e74040619b088b4eea47b0e637489ff896ae0e6a2feb291970a4b5921/torcheval-nightly-2024.5.2.tar.gz
+[2024-05-04 14:09:53] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/91/29/0cc91a09e2d3f75ba4e4e402ce66c7692f1c4895bc82ab3d3d612476af4b/bigdl_core_xe_esimd_21-2.5.0b20240503-cp39-cp39-win_amd64.whl
+[2024-05-04 14:09:53] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-04 14:09:53] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-04 14:09:53] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240504/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-04 14:09:53] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/ef/af/21b1fdb006794e9e4cab18e28d28c8d24a6376dcdc5b18e4458a899b92da/torcheval-nightly-2024.5.4.tar.gz
+[2024-05-04 14:09:54] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2024-05-04 14:09:54] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2024.5.2.tar.gz tmp/torcheval-nightly-2024.5.4.tar.gz --markdown 20240504/t/torcheval-nightly/2024.5.2-2024.5.4/README.md --exclude *.pyd
+[2024-05-04 14:09:54] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/7e/5b/86cf74528bfbef3103e8187ac97883ecd45a31bba37414bf999fef291491/bigdl_core_xe_esimd_21-2.5.0b20240504-cp310-cp310-manylinux2010_x86_64.whl
+[2024-05-04 14:09:54] WARNING root fetch - processPackages [bigdl-core-xe-esimd-21]: Skipping package: exceeds size limit 46710742>=10485760
+[2024-05-04 14:09:54] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
+[2024-05-04 14:09:54] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-04 14:09:54] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-04 14:09:54] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-04 14:09:54] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.5.2.tar.gz]
+[2024-05-04 14:09:54] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.5.4.tar.gz]
+[2024-05-04 14:09:54] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2024-05-04 14:09:54] INFO root fetch - main [MainThread]: Store serial: [23057903]
