@@ -9864,3 +9864,24 @@
 [2024-05-04 07:35:01] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240502-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
 [2024-05-04 07:35:01] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2024-05-04 07:35:01] INFO root fetch - main [MainThread]: Store serial: [23055931]
+[2024-05-04 07:37:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055931]
+[2024-05-04 07:37:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 07:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CTDFjorder
+[2024-05-04 07:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sapiopycommons
+[2024-05-04 07:37:13] INFO root fetch - processPackages [CTDFjorder]: New version: [0.0.35] Old Version: [0.0.34]
+[2024-05-04 07:37:13] INFO root fetch - processPackages [sapiopycommons]: New version: [31.3.0.23.12.3] Old Version: [31.2.0.23.12.3]
+[2024-05-04 07:37:13] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/ef/4f/2d6b611489906b3dddd8f1de6a5ad05bea388985be03311f1e8567623b5a/ctdfjorder-0.0.34.tar.gz
+[2024-05-04 07:37:13] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/bb/8e/ffbfcdcdcdef085f3c02a0c0361d5f2b5c73f377a58d5055485920fd480d/sapiopycommons-31.2.0.23.12.3.tar.gz
+[2024-05-04 07:37:13] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/65/85/c26462638385d6921c9e6e2dd91d7bb1d0ce38c3a35ccf5becf78fea900d/sapiopycommons-31.3.0.23.12.3.tar.gz
+[2024-05-04 07:37:13] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/e5/3b/d6bcbf22d1222600f1dffb0a22a0bad784b0720b7e70e013dda0a62c94c0/ctdfjorder-0.0.35.tar.gz
+[2024-05-04 07:37:13] INFO root fetch - processPackages [sapiopycommons]: executing diffoscope
+[2024-05-04 07:37:13] INFO root fetch - processPackages [sapiopycommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopycommons-31.2.0.23.12.3.tar.gz tmp/sapiopycommons-31.3.0.23.12.3.tar.gz --markdown 20240504/s/sapiopycommons/31.2.0.23.12.3-31.3.0.23.12.3/README.md --exclude *.pyd
+[2024-05-04 07:37:14] INFO root fetch - processPackages [CTDFjorder]: executing diffoscope
+[2024-05-04 07:37:14] INFO root fetch - processPackages [CTDFjorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctdfjorder-0.0.34.tar.gz tmp/ctdfjorder-0.0.35.tar.gz --markdown 20240504/C/CTDFjorder/0.0.34-0.0.35/README.md --exclude *.pyd
+[2024-05-04 07:37:14] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.34.tar.gz]
+[2024-05-04 07:37:14] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.35.tar.gz]
+[2024-05-04 07:37:14] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
+[2024-05-04 07:37:14] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.2.0.23.12.3.tar.gz]
+[2024-05-04 07:37:14] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.3.0.23.12.3.tar.gz]
+[2024-05-04 07:37:14] INFO root fetch - main [MainThread]: End processing [sapiopycommons]: success
+[2024-05-04 07:37:14] INFO root fetch - main [MainThread]: Store serial: [23055937]
