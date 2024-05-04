@@ -19277,3 +19277,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:15:03] INFO root fetch - processPackages [specsy]: Remove: archive file [/home/abi/fetcher/tmp/specsy-0.2.3.tar.gz]
 [2024-05-04 21:15:03] INFO root fetch - main [MainThread]: End processing [specsy]: success
 [2024-05-04 21:15:03] INFO root fetch - main [MainThread]: Store serial: [23060401]
+[2024-05-04 21:17:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060401]
+[2024-05-04 21:17:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 21:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: request-tea-ok
+[2024-05-04 21:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dektools
+[2024-05-04 21:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hat-drivers
+[2024-05-04 21:17:13] WARNING root fetch - processPackages [request-tea-ok]: Skipping, unable to determine old version
+[2024-05-04 21:17:13] INFO root fetch - main [MainThread]: End processing [request-tea-ok] error
+[2024-05-04 21:17:13] INFO root fetch - processPackages [hat-drivers]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-04 21:17:13] INFO root fetch - processPackages [dektools]: New version: [0.1.94] Old Version: [0.1.93]
+[2024-05-04 21:17:13] INFO root fetch - processPackages [hat-drivers]: Downloading https://files.pythonhosted.org/packages/b3/bc/4bd8abe9bbe2f1719f380d396e7c4a85907a7b2dccdab085c8a507023217/hat_drivers-0.7.8-cp310.cp311-abi3-win_amd64.whl
+[2024-05-04 21:17:13] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/6b/0b/3c6fdc3ea44926f305f6b4f6b89b55b01361684808cbbf46580e4ece4c01/dektools-0.1.93.tar.gz
+[2024-05-04 21:17:13] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/99/51/ec4d170455c43d2b9c1e3a5395480e4eaff8fdcd9b4131ecc2297a95c7dd/dektools-0.1.94.tar.gz
+[2024-05-04 21:17:13] INFO root fetch - processPackages [hat-drivers]: Downloading https://files.pythonhosted.org/packages/c5/3f/c4911bebc1785e6fcac031135260ac0ab91e4fdcc09772b35d7472d00e84/hat_drivers-0.7.9-cp310.cp311-abi3-win_amd64.whl
+[2024-05-04 21:17:13] INFO root fetch - processPackages [hat-drivers]: executing diffoscope
+[2024-05-04 21:17:13] INFO root fetch - processPackages [hat-drivers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_drivers-0.7.8-cp310.cp311-abi3-win_amd64.whl.zip tmp/hat_drivers-0.7.9-cp310.cp311-abi3-win_amd64.whl.zip --markdown 20240504/h/hat-drivers/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-04 21:17:13] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-05-04 21:17:13] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.93.tar.gz tmp/dektools-0.1.94.tar.gz --markdown 20240504/d/dektools/0.1.93-0.1.94/README.md --exclude *.pyd
+[2024-05-04 21:17:14] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.93.tar.gz]
+[2024-05-04 21:17:14] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.94.tar.gz]
+[2024-05-04 21:17:14] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-05-04 21:17:14] INFO root fetch - processPackages [hat-drivers]: Remove: archive file [/home/abi/fetcher/tmp/hat_drivers-0.7.8-cp310.cp311-abi3-win_amd64.whl.zip]
+[2024-05-04 21:17:14] INFO root fetch - processPackages [hat-drivers]: Remove: archive file [/home/abi/fetcher/tmp/hat_drivers-0.7.9-cp310.cp311-abi3-win_amd64.whl.zip]
+[2024-05-04 21:17:14] INFO root fetch - main [MainThread]: End processing [hat-drivers]: success
+[2024-05-04 21:17:14] INFO root fetch - main [MainThread]: Store serial: [23060416]
