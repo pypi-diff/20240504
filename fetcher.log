@@ -15551,3 +15551,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:33:50] INFO root fetch - processPackages [nimbusagent]: Remove: archive file [/home/abi/fetcher/tmp/nimbusagent-0.6.1.tar.gz]
 [2024-05-04 16:33:50] INFO root fetch - main [MainThread]: End processing [nimbusagent]: success
 [2024-05-04 16:33:50] INFO root fetch - main [MainThread]: Store serial: [23058528]
+[2024-05-04 16:35:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058528]
+[2024-05-04 16:35:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libsrg
+[2024-05-04 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kodi-addon-checker
+[2024-05-04 16:35:59] INFO root fetch - processPackages [libsrg]: New version: [5.0.0] Old Version: [4.4.1]
+[2024-05-04 16:35:59] INFO root fetch - processPackages [kodi-addon-checker]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 16:35:59] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/d3/b6/dff0d33d5b32371bf1d8a71d1199cc072e1d7f17901d56b38ce86970b622/libsrg-4.4.1.tar.gz
+[2024-05-04 16:35:59] INFO root fetch - processPackages [kodi-addon-checker]: Downloading https://files.pythonhosted.org/packages/55/26/cb072d9961d437bfdd6ca8913a64448215fca344a8b8c1b268e8cb3445c9/kodi-addon-checker-0.0.8.tar.gz
+[2024-05-04 16:35:59] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/5f/66/90a61d05c2f678f6d8f68c9a76c19c7c59170af074be989f6251264f9b83/libsrg-5.0.0.tar.gz
+[2024-05-04 16:35:59] INFO root fetch - processPackages [kodi-addon-checker]: Downloading https://files.pythonhosted.org/packages/77/a9/dc30d985d7be3cd8307848196b0b027e8fb4fc5357560f8305a79512ba00/kodi-addon-checker-0.0.9.tar.gz
+[2024-05-04 16:35:59] INFO root fetch - processPackages [libsrg]: executing diffoscope
+[2024-05-04 16:35:59] INFO root fetch - processPackages [libsrg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsrg-4.4.1.tar.gz tmp/libsrg-5.0.0.tar.gz --markdown 20240504/l/libsrg/4.4.1-5.0.0/README.md --exclude *.pyd
+[2024-05-04 16:36:00] INFO root fetch - processPackages [kodi-addon-checker]: executing diffoscope
+[2024-05-04 16:36:00] INFO root fetch - processPackages [kodi-addon-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodi-addon-checker-0.0.8.tar.gz tmp/kodi-addon-checker-0.0.9.tar.gz --markdown 20240504/k/kodi-addon-checker/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 16:36:00] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-4.4.1.tar.gz]
+[2024-05-04 16:36:00] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-5.0.0.tar.gz]
+[2024-05-04 16:36:00] INFO root fetch - main [MainThread]: End processing [libsrg]: success
+[2024-05-04 16:36:00] INFO root fetch - processPackages [kodi-addon-checker]: Remove: archive file [/home/abi/fetcher/tmp/kodi-addon-checker-0.0.8.tar.gz]
+[2024-05-04 16:36:00] INFO root fetch - processPackages [kodi-addon-checker]: Remove: archive file [/home/abi/fetcher/tmp/kodi-addon-checker-0.0.9.tar.gz]
+[2024-05-04 16:36:00] INFO root fetch - main [MainThread]: End processing [kodi-addon-checker]: success
+[2024-05-04 16:36:00] INFO root fetch - main [MainThread]: Store serial: [23058534]
