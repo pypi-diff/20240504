@@ -21181,3 +21181,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:39:22] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.86.tar.gz]
 [2024-05-04 23:39:22] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-04 23:39:22] INFO root fetch - main [MainThread]: Store serial: [23061160]
+[2024-05-04 23:41:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061160]
+[2024-05-04 23:41:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 23:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-05-04 23:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blankslate-python
+[2024-05-04 23:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyfi-lpg
+[2024-05-04 23:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysparkify
+[2024-05-04 23:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: packaged
+[2024-05-04 23:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pref-voting
+[2024-05-04 23:41:31] INFO root fetch - processPackages [blankslate-python]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-05-04 23:41:31] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.86] Old Version: [0.4.85]
+[2024-05-04 23:41:31] INFO root fetch - processPackages [pysparkify]: New version: [0.26.6] Old Version: [0.26.5]
+[2024-05-04 23:41:31] WARNING root fetch - processPackages [hyfi-lpg]: Skipping, unable to determine old version
+[2024-05-04 23:41:31] INFO root fetch - main [MainThread]: End processing [hyfi-lpg] error
+[2024-05-04 23:41:31] WARNING root fetch - processPackages [packaged]: Skipping, unable to determine old version
+[2024-05-04 23:41:31] INFO root fetch - main [MainThread]: End processing [packaged] error
+[2024-05-04 23:41:31] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/fb/84/b017e8cbc20af41cd8630cf5f22d01ec0f541b5f46198ad4cdc3759036ad/blankslate_python-1.1.6.tar.gz
+[2024-05-04 23:41:31] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/16/ca/6c9e081877568fbeb11613af69905c59e4840166759d5845564fbc395dec/MobileInventoryCLI-0.4.85.tar.gz
+[2024-05-04 23:41:31] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/51/82/e210fec2968932a1966783c9abbba9765d5b5b3a87e77d8ae44a62511e78/pysparkify-0.26.5.tar.gz
+[2024-05-04 23:41:31] INFO root fetch - processPackages [pref-voting]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-05-04 23:41:31] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/0e/f5/f927220fd4589c5b1b9a54a356464569bd57914430b66766e0fff454dacd/pref_voting-1.2.0.tar.gz
+[2024-05-04 23:41:31] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/b0/42/306e252101c2afad57131ab82d7d94afae0e6f8f3d7980606e85dc76cd49/MobileInventoryCLI-0.4.86.tar.gz
+[2024-05-04 23:41:31] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/5b/1f/6b9b2bd9565c73ea517d2b83bf00c1f6cbfbd771783fbc363febeb36c8d2/pysparkify-0.26.6.tar.gz
+[2024-05-04 23:41:31] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/bb/98/8867b9bbb20d164b2b02ef4ce6de7dc61ae80d24fcf1e4cf3f1a78e696dd/blankslate_python-1.1.7.tar.gz
+[2024-05-04 23:41:32] INFO root fetch - processPackages [pysparkify]: executing diffoscope
+[2024-05-04 23:41:32] INFO root fetch - processPackages [pysparkify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkify-0.26.5.tar.gz tmp/pysparkify-0.26.6.tar.gz --markdown 20240504/p/pysparkify/0.26.5-0.26.6/README.md --exclude *.pyd
+[2024-05-04 23:41:32] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-04 23:41:32] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.1.6.tar.gz tmp/blankslate_python-1.1.7.tar.gz --markdown 20240504/b/blankslate-python/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-05-04 23:41:32] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-04 23:41:32] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.85.tar.gz tmp/MobileInventoryCLI-0.4.86.tar.gz --markdown 20240504/M/MobileInventoryCLI/0.4.85-0.4.86/README.md --exclude *.pyd
+[2024-05-04 23:41:32] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/dc/74/f2d9ee80f2cffbc8abc58c3ebc3adf7ad264f943d70dbed6a7cc9b0d841d/pref_voting-1.3.0.tar.gz
+[2024-05-04 23:41:32] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2024-05-04 23:41:32] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-1.2.0.tar.gz tmp/pref_voting-1.3.0.tar.gz --markdown 20240504/p/pref-voting/1.2.0-1.3.0/README.md --exclude *.pyd
+[2024-05-04 23:41:32] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.5.tar.gz]
+[2024-05-04 23:41:32] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.6.tar.gz]
+[2024-05-04 23:41:32] INFO root fetch - main [MainThread]: End processing [pysparkify]: success
+[2024-05-04 23:41:32] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.6.tar.gz]
+[2024-05-04 23:41:32] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.7.tar.gz]
+[2024-05-04 23:41:32] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-04 23:41:32] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.85.tar.gz]
+[2024-05-04 23:41:32] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.86.tar.gz]
+[2024-05-04 23:41:32] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-04 23:41:33] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.2.0.tar.gz]
+[2024-05-04 23:41:33] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.3.0.tar.gz]
+[2024-05-04 23:41:33] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
+[2024-05-04 23:41:33] INFO root fetch - main [MainThread]: Store serial: [23061182]
