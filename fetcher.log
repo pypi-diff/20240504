@@ -9072,3 +9072,15 @@
 [2024-05-04 06:23:41] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.2.tar.gz]
 [2024-05-04 06:23:41] INFO root fetch - main [MainThread]: End processing [TreeSAK]: success
 [2024-05-04 06:23:41] INFO root fetch - main [MainThread]: Store serial: [23055600]
+[2024-05-04 06:26:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055600]
+[2024-05-04 06:26:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 06:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-assets-management
+[2024-05-04 06:26:06] INFO root fetch - processPackages [odoo14-addon-assets-management]: New version: [14.0.1.5.1.dev2] Old Version: [14.0.1.5.1.dev1]
+[2024-05-04 06:26:06] INFO root fetch - processPackages [odoo14-addon-assets-management]: Downloading https://files.pythonhosted.org/packages/f2/cd/8d5ca6af714b2e35131272cc15e64f61074905eaf78336818ab44f1cef61/odoo14_addon_assets_management-14.0.1.5.1.dev1-py3-none-any.whl
+[2024-05-04 06:26:07] INFO root fetch - processPackages [odoo14-addon-assets-management]: Downloading https://files.pythonhosted.org/packages/de/b4/60daf3a325c94eca6b0311fca4d62e64eea6d2d51a63acaf80187cda57ed/odoo14_addon_assets_management-14.0.1.5.1.dev2-py3-none-any.whl
+[2024-05-04 06:26:07] INFO root fetch - processPackages [odoo14-addon-assets-management]: executing diffoscope
+[2024-05-04 06:26:07] INFO root fetch - processPackages [odoo14-addon-assets-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_assets_management-14.0.1.5.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_assets_management-14.0.1.5.1.dev2-py3-none-any.whl.zip --markdown 20240504/o/odoo14-addon-assets-management/14.0.1.5.1.dev1-14.0.1.5.1.dev2/README.md --exclude *.pyd
+[2024-05-04 06:26:07] INFO root fetch - processPackages [odoo14-addon-assets-management]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_assets_management-14.0.1.5.1.dev1-py3-none-any.whl.zip]
+[2024-05-04 06:26:07] INFO root fetch - processPackages [odoo14-addon-assets-management]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_assets_management-14.0.1.5.1.dev2-py3-none-any.whl.zip]
+[2024-05-04 06:26:07] INFO root fetch - main [MainThread]: End processing [odoo14-addon-assets-management]: success
+[2024-05-04 06:26:07] INFO root fetch - main [MainThread]: Store serial: [23055606]
