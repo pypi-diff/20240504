@@ -12527,3 +12527,29 @@
 [2024-05-04 11:46:39] INFO root fetch - processPackages [fmpxx]: Remove: archive file [/home/abi/fetcher/tmp/fmpxx-0.1.9.2.tar.gz]
 [2024-05-04 11:46:39] INFO root fetch - main [MainThread]: End processing [fmpxx]: success
 [2024-05-04 11:46:39] INFO root fetch - main [MainThread]: Store serial: [23057322]
+[2024-05-04 11:48:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057322]
+[2024-05-04 11:48:48] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 11:50:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057322]
+[2024-05-04 11:50:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 11:50:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amino.light.py
+[2024-05-04 11:50:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agentic_security
+[2024-05-04 11:50:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: soundstorm-superfeel
+[2024-05-04 11:50:54] INFO root fetch - processPackages [agentic_security]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-04 11:50:54] INFO root fetch - processPackages [amino.light.py]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 11:50:54] WARNING root fetch - processPackages [soundstorm-superfeel]: Skipping, unable to determine old version
+[2024-05-04 11:50:54] INFO root fetch - main [MainThread]: End processing [soundstorm-superfeel] error
+[2024-05-04 11:50:55] INFO root fetch - processPackages [agentic_security]: Downloading https://files.pythonhosted.org/packages/54/86/93be6d055773c63aa7a7a6e05fe86268972895d11cfd5a18b131842cfdc9/agentic_security-0.1.3.tar.gz
+[2024-05-04 11:50:55] INFO root fetch - processPackages [amino.light.py]: Downloading https://files.pythonhosted.org/packages/cb/c8/423f5303ab9146d291bccb0aba1f4495ba3a2a56f44e123ba94e65361cab/amino.light.py-0.1.8.tar.gz
+[2024-05-04 11:50:55] INFO root fetch - processPackages [agentic_security]: Downloading https://files.pythonhosted.org/packages/1f/0b/3fbd690bc7b077cc0359b4265cd0919ada31c2b7b5c2a4070603d34c7007/agentic_security-0.1.4.tar.gz
+[2024-05-04 11:50:55] INFO root fetch - processPackages [amino.light.py]: Downloading https://files.pythonhosted.org/packages/19/fa/35c6ee8e1d46741e56ec9b0fdbb5994cf778e615ec2bf1679c7ab15b8de5/amino.light.py-0.1.9.tar.gz
+[2024-05-04 11:50:55] INFO root fetch - processPackages [agentic_security]: executing diffoscope
+[2024-05-04 11:50:55] INFO root fetch - processPackages [agentic_security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentic_security-0.1.3.tar.gz tmp/agentic_security-0.1.4.tar.gz --markdown 20240504/a/agentic_security/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-04 11:50:55] INFO root fetch - processPackages [amino.light.py]: executing diffoscope
+[2024-05-04 11:50:55] INFO root fetch - processPackages [amino.light.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amino.light.py-0.1.8.tar.gz tmp/amino.light.py-0.1.9.tar.gz --markdown 20240504/a/amino.light.py/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 11:50:56] INFO root fetch - processPackages [amino.light.py]: Remove: archive file [/home/abi/fetcher/tmp/amino.light.py-0.1.8.tar.gz]
+[2024-05-04 11:50:56] INFO root fetch - processPackages [amino.light.py]: Remove: archive file [/home/abi/fetcher/tmp/amino.light.py-0.1.9.tar.gz]
+[2024-05-04 11:50:56] INFO root fetch - main [MainThread]: End processing [amino.light.py]: success
+[2024-05-04 11:50:56] INFO root fetch - processPackages [agentic_security]: Remove: archive file [/home/abi/fetcher/tmp/agentic_security-0.1.3.tar.gz]
+[2024-05-04 11:50:56] INFO root fetch - processPackages [agentic_security]: Remove: archive file [/home/abi/fetcher/tmp/agentic_security-0.1.4.tar.gz]
+[2024-05-04 11:50:56] INFO root fetch - main [MainThread]: End processing [agentic_security]: success
+[2024-05-04 11:50:56] INFO root fetch - main [MainThread]: Store serial: [23057326]
