@@ -12757,3 +12757,18 @@
 [2024-05-04 12:19:08] INFO root fetch - processPackages [etm-dgraham]: Remove: archive file [/home/abi/fetcher/tmp/etm-dgraham-6.1.9.tar.gz]
 [2024-05-04 12:19:08] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
 [2024-05-04 12:19:08] INFO root fetch - main [MainThread]: Store serial: [23057410]
+[2024-05-04 12:21:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057410]
+[2024-05-04 12:21:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 12:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stac-fastapi.elasticsearch
+[2024-05-04 12:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytilpack
+[2024-05-04 12:21:17] WARNING root fetch - processPackages [pytilpack]: Skipping, unable to determine old version
+[2024-05-04 12:21:17] INFO root fetch - main [MainThread]: End processing [pytilpack] error
+[2024-05-04 12:21:17] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-04 12:21:17] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Downloading https://files.pythonhosted.org/packages/c2/8a/23e5d7896da022665ef75537786a948785dabc30667e4cdcc3d8df18dd05/stac_fastapi_elasticsearch-2.3.0.tar.gz
+[2024-05-04 12:21:17] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Downloading https://files.pythonhosted.org/packages/f5/89/75b8c8ad4a1297ba9dc57f1a8559674dde4e37457601146fb839c79df505/stac_fastapi_elasticsearch-2.3.1.tar.gz
+[2024-05-04 12:21:17] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: executing diffoscope
+[2024-05-04 12:21:17] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stac_fastapi_elasticsearch-2.3.0.tar.gz tmp/stac_fastapi_elasticsearch-2.3.1.tar.gz --markdown 20240504/s/stac-fastapi.elasticsearch/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-04 12:21:18] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_elasticsearch-2.3.0.tar.gz]
+[2024-05-04 12:21:18] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_elasticsearch-2.3.1.tar.gz]
+[2024-05-04 12:21:18] INFO root fetch - main [MainThread]: End processing [stac-fastapi.elasticsearch]: success
+[2024-05-04 12:21:18] INFO root fetch - main [MainThread]: Store serial: [23057418]
