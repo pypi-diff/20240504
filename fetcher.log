@@ -17334,3 +17334,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:57:19] INFO root fetch - processPackages [soco]: Remove: archive file [/home/abi/fetcher/tmp/soco-0.9.tar.gz]
 [2024-05-04 18:57:19] INFO root fetch - main [MainThread]: End processing [soco]: success
 [2024-05-04 18:57:19] INFO root fetch - main [MainThread]: Store serial: [23059412]
+[2024-05-04 18:59:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059412]
+[2024-05-04 18:59:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 18:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jklib
+[2024-05-04 18:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-pyscript
+[2024-05-04 18:59:28] INFO root fetch - processPackages [jklib]: New version: [5.1.1] Old Version: [5.1.0]
+[2024-05-04 18:59:28] INFO root fetch - processPackages [mkdocs-pyscript]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-04 18:59:28] INFO root fetch - processPackages [jklib]: Downloading https://files.pythonhosted.org/packages/d4/58/1e95f7e7fe90e75ba3640a66beb87b23477e11be3d4f2d39d65ee2c0b072/jklib-5.1.0.tar.gz
+[2024-05-04 18:59:28] INFO root fetch - processPackages [mkdocs-pyscript]: Downloading https://files.pythonhosted.org/packages/ff/2e/7ba870a4ecb94e0b2e118cc7ddb14843f307b91b8f9aa49c952b0ae2a78c/mkdocs-pyscript-0.1.1.tar.gz
+[2024-05-04 18:59:29] INFO root fetch - processPackages [jklib]: Downloading https://files.pythonhosted.org/packages/75/6a/ad645c7b80044df18448046d21ea152862c51d8a977f79ee8298b90ec21e/jklib-5.1.1.tar.gz
+[2024-05-04 18:59:29] INFO root fetch - processPackages [mkdocs-pyscript]: Downloading https://files.pythonhosted.org/packages/99/4f/6022147aa01f1eed8efd8b1632abb0f3d5f72f0152a9de3ec9de6acf36fc/mkdocs_pyscript-0.2.0.tar.gz
+[2024-05-04 18:59:29] INFO root fetch - processPackages [jklib]: executing diffoscope
+[2024-05-04 18:59:29] INFO root fetch - processPackages [jklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jklib-5.1.0.tar.gz tmp/jklib-5.1.1.tar.gz --markdown 20240504/j/jklib/5.1.0-5.1.1/README.md --exclude *.pyd
+[2024-05-04 18:59:29] INFO root fetch - processPackages [mkdocs-pyscript]: executing diffoscope
+[2024-05-04 18:59:29] INFO root fetch - processPackages [mkdocs-pyscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-pyscript-0.1.1.tar.gz tmp/mkdocs_pyscript-0.2.0.tar.gz --markdown 20240504/m/mkdocs-pyscript/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-04 18:59:30] INFO root fetch - processPackages [mkdocs-pyscript]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-pyscript-0.1.1.tar.gz]
+[2024-05-04 18:59:30] INFO root fetch - processPackages [mkdocs-pyscript]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_pyscript-0.2.0.tar.gz]
+[2024-05-04 18:59:30] INFO root fetch - main [MainThread]: End processing [mkdocs-pyscript]: success
+[2024-05-04 18:59:30] INFO root fetch - processPackages [jklib]: Remove: archive file [/home/abi/fetcher/tmp/jklib-5.1.0.tar.gz]
+[2024-05-04 18:59:30] INFO root fetch - processPackages [jklib]: Remove: archive file [/home/abi/fetcher/tmp/jklib-5.1.1.tar.gz]
+[2024-05-04 18:59:30] INFO root fetch - main [MainThread]: End processing [jklib]: success
+[2024-05-04 18:59:30] INFO root fetch - main [MainThread]: Store serial: [23059418]
