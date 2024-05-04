@@ -18030,3 +18030,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:51:48] INFO root fetch - processPackages [pyntcore]: Remove: archive file [/home/abi/fetcher/tmp/pyntcore-2024.3.2.1-cp312-cp312-macosx_12_0_universal2.whl.zip]
 [2024-05-04 19:51:48] INFO root fetch - main [MainThread]: End processing [pyntcore]: success
 [2024-05-04 19:51:48] INFO root fetch - main [MainThread]: Store serial: [23059723]
+[2024-05-04 19:53:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059723]
+[2024-05-04 19:53:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 19:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robotpy-apriltag
+[2024-05-04 19:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reddit-motion
+[2024-05-04 19:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: robotpy-cscore
+[2024-05-04 19:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robotpy-hal
+[2024-05-04 19:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: super-rubik-cube
+[2024-05-04 19:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: robotpy-halsim-ds-socket
+[2024-05-04 19:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: robotpy-halsim-gui
+[2024-05-04 19:53:57] INFO root fetch - processPackages [super-rubik-cube]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 19:53:57] INFO root fetch - processPackages [super-rubik-cube]: Downloading https://files.pythonhosted.org/packages/b0/3c/f7773f2cf456e5c5cd119f351f58afb516821c10c52d7579715d1e61869d/super_rubik_cube-1.0.1.tar.gz
+[2024-05-04 19:53:57] WARNING root fetch - processPackages [reddit-motion]: Skipping, unable to determine old version
+[2024-05-04 19:53:57] INFO root fetch - main [MainThread]: End processing [reddit-motion] error
+[2024-05-04 19:53:57] INFO root fetch - processPackages [robotpy-apriltag]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:53:57] INFO root fetch - processPackages [robotpy-halsim-gui]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:53:57] INFO root fetch - processPackages [robotpy-cscore]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:53:57] INFO root fetch - processPackages [robotpy-hal]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:53:57] INFO root fetch - processPackages [robotpy-apriltag]: Downloading https://files.pythonhosted.org/packages/6a/3c/598512a7646586ae57040c6c850deb8603e564485a2ea8d73be0b94436ed/robotpy_apriltag-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:53:57] INFO root fetch - processPackages [robotpy-halsim-ds-socket]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:53:57] INFO root fetch - processPackages [robotpy-halsim-gui]: Downloading https://files.pythonhosted.org/packages/54/17/67b45abe239c3e987a86193cda34a872587137d9f77e4cee93ef0b658e14/robotpy_halsim_gui-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:53:57] INFO root fetch - processPackages [robotpy-hal]: Downloading https://files.pythonhosted.org/packages/bb/fc/a29c2bb579bea01ce1fa1e5acf1ef69c528d386e07e18f52c5b3b7b9d575/robotpy_hal-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:53:57] INFO root fetch - processPackages [robotpy-cscore]: Downloading https://files.pythonhosted.org/packages/2f/ea/f6b0df4836ac1e5213509ec4b65c537921609e68f54b63fa19bcc5691ecd/robotpy_cscore-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:53:58] INFO root fetch - processPackages [robotpy-halsim-ds-socket]: Downloading https://files.pythonhosted.org/packages/84/95/fcd22bcc4203bcf203d4063b9ad64eec6bf05c12d21a193258ecd3d5bc14/robotpy_halsim_ds_socket-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:53:58] INFO root fetch - processPackages [super-rubik-cube]: Downloading https://files.pythonhosted.org/packages/51/3a/de16c110576e1cf33c58d89cdd911353bf7e9e016fe206fa00749d300e97/super_rubik_cube-1.0.2.tar.gz
+[2024-05-04 19:53:58] INFO root fetch - processPackages [robotpy-hal]: Downloading https://files.pythonhosted.org/packages/a7/2d/c4ece273394df15b3e9657080fadc7c2e6ae07319e39ae845910a38ae71b/robotpy_hal-2024.3.2.1-cp39-cp39-win_amd64.whl
+[2024-05-04 19:53:58] INFO root fetch - processPackages [robotpy-halsim-ds-socket]: Downloading https://files.pythonhosted.org/packages/7d/52/a4bfb017ce76b340e832a8252342374134b81cc2e012bffea98012328ff2/robotpy_halsim_ds_socket-2024.3.2.1-cp39-cp39-win_amd64.whl
+[2024-05-04 19:53:58] INFO root fetch - processPackages [robotpy-apriltag]: Downloading https://files.pythonhosted.org/packages/4c/8d/a3a03f0ed910e4ce06afa0606d7cb19c14002f6ec424fa2aad77299287d1/robotpy_apriltag-2024.3.2.1-cp39-cp39-win_amd64.whl
+[2024-05-04 19:53:58] INFO root fetch - processPackages [super-rubik-cube]: executing diffoscope
+[2024-05-04 19:53:58] INFO root fetch - processPackages [super-rubik-cube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/super_rubik_cube-1.0.1.tar.gz tmp/super_rubik_cube-1.0.2.tar.gz --markdown 20240504/s/super-rubik-cube/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 19:53:58] INFO root fetch - processPackages [robotpy-halsim-ds-socket]: executing diffoscope
+[2024-05-04 19:53:58] INFO root fetch - processPackages [robotpy-halsim-ds-socket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy_halsim_ds_socket-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/robotpy_halsim_ds_socket-2024.3.2.1-cp39-cp39-win_amd64.whl.zip --markdown 20240504/r/robotpy-halsim-ds-socket/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:53:58] INFO root fetch - processPackages [robotpy-hal]: executing diffoscope
+[2024-05-04 19:53:58] INFO root fetch - processPackages [robotpy-hal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy_hal-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/robotpy_hal-2024.3.2.1-cp39-cp39-win_amd64.whl.zip --markdown 20240504/r/robotpy-hal/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:53:59] INFO root fetch - processPackages [robotpy-apriltag]: executing diffoscope
+[2024-05-04 19:53:59] INFO root fetch - processPackages [robotpy-apriltag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy_apriltag-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/robotpy_apriltag-2024.3.2.1-cp39-cp39-win_amd64.whl.zip --markdown 20240504/r/robotpy-apriltag/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:53:59] INFO root fetch - processPackages [robotpy-halsim-ds-socket]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_halsim_ds_socket-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:53:59] INFO root fetch - processPackages [robotpy-halsim-ds-socket]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_halsim_ds_socket-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:53:59] INFO root fetch - main [MainThread]: End processing [robotpy-halsim-ds-socket]: success
+[2024-05-04 19:53:59] INFO root fetch - processPackages [robotpy-hal]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_hal-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:53:59] INFO root fetch - processPackages [robotpy-hal]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_hal-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:53:59] INFO root fetch - main [MainThread]: End processing [robotpy-hal]: success
+[2024-05-04 19:53:59] INFO root fetch - processPackages [robotpy-halsim-gui]: Downloading https://files.pythonhosted.org/packages/f8/52/cc68439a25692872d579678db3950eabf62e11de76138702a7ef7f89383e/robotpy_halsim_gui-2024.3.2.1-cp38-cp38-manylinux_2_35_x86_64.whl
+[2024-05-04 19:53:59] INFO root fetch - processPackages [robotpy-apriltag]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_apriltag-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:53:59] INFO root fetch - processPackages [robotpy-apriltag]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_apriltag-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:53:59] INFO root fetch - main [MainThread]: End processing [robotpy-apriltag]: success
+[2024-05-04 19:54:00] INFO root fetch - processPackages [super-rubik-cube]: Remove: archive file [/home/abi/fetcher/tmp/super_rubik_cube-1.0.1.tar.gz]
+[2024-05-04 19:54:00] INFO root fetch - processPackages [super-rubik-cube]: Remove: archive file [/home/abi/fetcher/tmp/super_rubik_cube-1.0.2.tar.gz]
+[2024-05-04 19:54:00] INFO root fetch - main [MainThread]: End processing [super-rubik-cube]: success
+[2024-05-04 19:54:02] INFO root fetch - processPackages [robotpy-cscore]: Downloading https://files.pythonhosted.org/packages/14/bd/854e41a9b3f49a39727d35f864b8ad83dde102f12f3db0dfd6e12dad4719/robotpy_cscore-2024.3.2.1-cp39-cp39-win_amd64.whl
+[2024-05-04 19:54:02] INFO root fetch - processPackages [robotpy-cscore]: executing diffoscope
+[2024-05-04 19:54:02] INFO root fetch - processPackages [robotpy-cscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy_cscore-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/robotpy_cscore-2024.3.2.1-cp39-cp39-win_amd64.whl.zip --markdown 20240504/r/robotpy-cscore/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:54:03] INFO root fetch - processPackages [robotpy-cscore]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_cscore-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:54:03] INFO root fetch - processPackages [robotpy-cscore]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_cscore-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:54:03] INFO root fetch - main [MainThread]: End processing [robotpy-cscore]: success
+[2024-05-04 19:54:03] INFO root fetch - processPackages [robotpy-halsim-gui]: executing diffoscope
+[2024-05-04 19:54:03] INFO root fetch - processPackages [robotpy-halsim-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy_halsim_gui-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/robotpy_halsim_gui-2024.3.2.1-cp38-cp38-manylinux_2_35_x86_64.whl.zip --markdown 20240504/r/robotpy-halsim-gui/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:54:05] INFO root fetch - processPackages [robotpy-halsim-gui]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_halsim_gui-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:54:05] INFO root fetch - processPackages [robotpy-halsim-gui]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_halsim_gui-2024.3.2.1-cp38-cp38-manylinux_2_35_x86_64.whl.zip]
+[2024-05-04 19:54:05] INFO root fetch - main [MainThread]: End processing [robotpy-halsim-gui]: success
+[2024-05-04 19:54:05] INFO root fetch - main [MainThread]: Store serial: [23059814]
