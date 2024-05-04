@@ -11166,3 +11166,36 @@
 [2024-05-04 09:33:53] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
 [2024-05-04 09:33:53] INFO root fetch - main [MainThread]: End processing [lfg-llama]: success
 [2024-05-04 09:33:53] INFO root fetch - main [MainThread]: Store serial: [23056596]
+[2024-05-04 09:35:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056596]
+[2024-05-04 09:36:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 09:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kan-gpt
+[2024-05-04 09:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libstc-geck
+[2024-05-04 09:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rbfly
+[2024-05-04 09:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kfre
+[2024-05-04 09:36:02] INFO root fetch - processPackages [kan-gpt]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 09:36:02] INFO root fetch - processPackages [kfre]: New version: [0.1.2b2] Old Version: [0.1.2b0]
+[2024-05-04 09:36:02] WARNING root fetch - processPackages [libstc-geck]: Skipping, unable to determine old version
+[2024-05-04 09:36:02] INFO root fetch - main [MainThread]: End processing [libstc-geck] error
+[2024-05-04 09:36:02] INFO root fetch - processPackages [rbfly]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-05-04 09:36:02] INFO root fetch - processPackages [kan-gpt]: Downloading https://files.pythonhosted.org/packages/69/3f/d205dab313f11e7ee24a4b8029fd85cdcce61f028f973dd657e9b827d781/kan_gpt-0.1.0.tar.gz
+[2024-05-04 09:36:02] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/39/f2/3bd7ba3e67c6e44b771b7e85e94d81762eddcafa1f73e327ebe60ec42911/kfre-0.1.2b0.tar.gz
+[2024-05-04 09:36:02] INFO root fetch - processPackages [kan-gpt]: Downloading https://files.pythonhosted.org/packages/05/a9/9ba4d6c97097254f8113e00a4ee51cba9bd858b0e5c32e0f6d0e0addeceb/kan_gpt-0.1.1.tar.gz
+[2024-05-04 09:36:02] INFO root fetch - processPackages [rbfly]: Downloading https://files.pythonhosted.org/packages/3c/b7/1720ab27fec71e461595b9411a1544be7158f692a1f2da4e082d26772b83/rbfly-0.8.2.tar.gz
+[2024-05-04 09:36:02] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/50/1c/568127dd68aa26fbd9d35d7897a1b9f9201d0fe7d1f3dbcaa4292993326d/kfre-0.1.2b2.tar.gz
+[2024-05-04 09:36:02] INFO root fetch - processPackages [kan-gpt]: executing diffoscope
+[2024-05-04 09:36:02] INFO root fetch - processPackages [kan-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kan_gpt-0.1.0.tar.gz tmp/kan_gpt-0.1.1.tar.gz --markdown 20240504/k/kan-gpt/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 09:36:02] INFO root fetch - processPackages [kfre]: executing diffoscope
+[2024-05-04 09:36:02] INFO root fetch - processPackages [kfre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfre-0.1.2b0.tar.gz tmp/kfre-0.1.2b2.tar.gz --markdown 20240504/k/kfre/0.1.2b0-0.1.2b2/README.md --exclude *.pyd
+[2024-05-04 09:36:03] INFO root fetch - processPackages [rbfly]: Downloading https://files.pythonhosted.org/packages/6a/84/ec09546d182eda2dd9eec09df6b64f354634c40d01381f76fbb119161ac3/rbfly-0.8.3.tar.gz
+[2024-05-04 09:36:03] INFO root fetch - processPackages [rbfly]: executing diffoscope
+[2024-05-04 09:36:03] INFO root fetch - processPackages [rbfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rbfly-0.8.2.tar.gz tmp/rbfly-0.8.3.tar.gz --markdown 20240504/r/rbfly/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-05-04 09:36:03] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2b0.tar.gz]
+[2024-05-04 09:36:03] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2b2.tar.gz]
+[2024-05-04 09:36:03] INFO root fetch - main [MainThread]: End processing [kfre]: success
+[2024-05-04 09:36:03] INFO root fetch - processPackages [kan-gpt]: Remove: archive file [/home/abi/fetcher/tmp/kan_gpt-0.1.0.tar.gz]
+[2024-05-04 09:36:03] INFO root fetch - processPackages [kan-gpt]: Remove: archive file [/home/abi/fetcher/tmp/kan_gpt-0.1.1.tar.gz]
+[2024-05-04 09:36:03] INFO root fetch - main [MainThread]: End processing [kan-gpt]: success
+[2024-05-04 09:36:05] INFO root fetch - processPackages [rbfly]: Remove: archive file [/home/abi/fetcher/tmp/rbfly-0.8.2.tar.gz]
+[2024-05-04 09:36:05] INFO root fetch - processPackages [rbfly]: Remove: archive file [/home/abi/fetcher/tmp/rbfly-0.8.3.tar.gz]
+[2024-05-04 09:36:05] INFO root fetch - main [MainThread]: End processing [rbfly]: success
+[2024-05-04 09:36:05] INFO root fetch - main [MainThread]: Store serial: [23056609]
