@@ -8756,3 +8756,11 @@
 [2024-05-04 05:47:17] INFO root fetch - processPackages [citric]: Remove: archive file [/home/abi/fetcher/tmp/citric-1.0.1a2.tar.gz]
 [2024-05-04 05:47:17] INFO root fetch - main [MainThread]: End processing [citric]: success
 [2024-05-04 05:47:17] INFO root fetch - main [MainThread]: Store serial: [23055412]
+[2024-05-04 05:49:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055412]
+[2024-05-04 05:49:39] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 05:51:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055412]
+[2024-05-04 05:51:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 05:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: normal-position-combination
+[2024-05-04 05:51:44] WARNING root fetch - processPackages [normal-position-combination]: Skipping, unable to determine old version
+[2024-05-04 05:51:44] INFO root fetch - main [MainThread]: End processing [normal-position-combination] error
+[2024-05-04 05:51:44] INFO root fetch - main [MainThread]: Store serial: [23055419]
