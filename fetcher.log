@@ -16577,3 +16577,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:00:54] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo_times-5.617.24125.tar.gz]
 [2024-05-04 18:00:54] INFO root fetch - main [MainThread]: End processing [mo-times]: success
 [2024-05-04 18:00:54] INFO root fetch - main [MainThread]: Store serial: [23059125]
+[2024-05-04 18:02:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059125]
+[2024-05-04 18:03:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 18:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beam-client
+[2024-05-04 18:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tcia-utils
+[2024-05-04 18:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: name-generator-nicomp
+[2024-05-04 18:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mo-json
+[2024-05-04 18:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: otisnguyenclustering2024
+[2024-05-04 18:03:03] INFO root fetch - processPackages [name-generator-nicomp]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-04 18:03:03] INFO root fetch - processPackages [beam-client]: New version: [0.2.7] Old Version: [0.2.5]
+[2024-05-04 18:03:03] WARNING root fetch - processPackages [otisnguyenclustering2024]: Skipping, unable to determine old version
+[2024-05-04 18:03:03] INFO root fetch - main [MainThread]: End processing [otisnguyenclustering2024] error
+[2024-05-04 18:03:03] INFO root fetch - processPackages [tcia-utils]: New version: [2.1.6] Old Version: [2.1.5]
+[2024-05-04 18:03:03] INFO root fetch - processPackages [mo-json]: New version: [6.617.24125] Old Version: [6.609.24119]
+[2024-05-04 18:03:03] INFO root fetch - processPackages [beam-client]: Downloading https://files.pythonhosted.org/packages/f3/35/6bfabe03943f7ba52129048de25fec34ca8cdd7c623b006c92ccb14899b1/beam_client-0.2.5.tar.gz
+[2024-05-04 18:03:03] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/64/1a/65538accbbc9c263759d5aeda00eb8c218f311f86cab67415def214cb671/name_generator_nicomp-1.0.2.tar.gz
+[2024-05-04 18:03:03] INFO root fetch - processPackages [tcia-utils]: Downloading https://files.pythonhosted.org/packages/10/c8/bf5baf6d9386715bd6698585c2718eed36953da35c7f48b539c51afd9123/tcia_utils-2.1.5.tar.gz
+[2024-05-04 18:03:03] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/12/0a/0d03abcf9d9d4665d12137a5b7dd4b193782e05c3ba5cf1a6af8fc771441/mo_json-6.609.24119.tar.gz
+[2024-05-04 18:03:03] INFO root fetch - processPackages [beam-client]: Downloading https://files.pythonhosted.org/packages/f5/fd/8301574de8b99fdd87985df4c6acd82f18082338de517a9d888939e48198/beam_client-0.2.7.tar.gz
+[2024-05-04 18:03:03] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/74/ad/df93b39453015251ffe999792f1f2f989c310091622f31620988020b64ba/name_generator_nicomp-1.0.3.tar.gz
+[2024-05-04 18:03:03] INFO root fetch - processPackages [beam-client]: executing diffoscope
+[2024-05-04 18:03:03] INFO root fetch - processPackages [beam-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beam_client-0.2.5.tar.gz tmp/beam_client-0.2.7.tar.gz --markdown 20240504/b/beam-client/0.2.5-0.2.7/README.md --exclude *.pyd
+[2024-05-04 18:03:03] INFO root fetch - processPackages [name-generator-nicomp]: executing diffoscope
+[2024-05-04 18:03:03] INFO root fetch - processPackages [name-generator-nicomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/name_generator_nicomp-1.0.2.tar.gz tmp/name_generator_nicomp-1.0.3.tar.gz --markdown 20240504/n/name-generator-nicomp/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-04 18:03:03] INFO root fetch - processPackages [tcia-utils]: Downloading https://files.pythonhosted.org/packages/fe/99/14b34bf01daf95f4accb9022ebbc4f81dc5e485e26e5687bfeffd2ab6506/tcia_utils-2.1.6.tar.gz
+[2024-05-04 18:03:03] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/bf/5d/0e63bd0369329f9520130d624b28475d232776b819ad3f61f6c0cb25ba9d/mo_json-6.617.24125.tar.gz
+[2024-05-04 18:03:04] INFO root fetch - processPackages [tcia-utils]: executing diffoscope
+[2024-05-04 18:03:04] INFO root fetch - processPackages [tcia-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcia_utils-2.1.5.tar.gz tmp/tcia_utils-2.1.6.tar.gz --markdown 20240504/t/tcia-utils/2.1.5-2.1.6/README.md --exclude *.pyd
+[2024-05-04 18:03:04] INFO root fetch - processPackages [mo-json]: executing diffoscope
+[2024-05-04 18:03:04] INFO root fetch - processPackages [mo-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_json-6.609.24119.tar.gz tmp/mo_json-6.617.24125.tar.gz --markdown 20240504/m/mo-json/6.609.24119-6.617.24125/README.md --exclude *.pyd
+[2024-05-04 18:03:04] INFO root fetch - processPackages [beam-client]: Remove: archive file [/home/abi/fetcher/tmp/beam_client-0.2.5.tar.gz]
+[2024-05-04 18:03:04] INFO root fetch - processPackages [beam-client]: Remove: archive file [/home/abi/fetcher/tmp/beam_client-0.2.7.tar.gz]
+[2024-05-04 18:03:04] INFO root fetch - main [MainThread]: End processing [beam-client]: success
+[2024-05-04 18:03:04] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.2.tar.gz]
+[2024-05-04 18:03:04] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.3.tar.gz]
+[2024-05-04 18:03:04] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp]: success
+[2024-05-04 18:03:04] INFO root fetch - processPackages [tcia-utils]: Remove: archive file [/home/abi/fetcher/tmp/tcia_utils-2.1.5.tar.gz]
+[2024-05-04 18:03:04] INFO root fetch - processPackages [tcia-utils]: Remove: archive file [/home/abi/fetcher/tmp/tcia_utils-2.1.6.tar.gz]
+[2024-05-04 18:03:04] INFO root fetch - main [MainThread]: End processing [tcia-utils]: success
+[2024-05-04 18:03:04] INFO root fetch - processPackages [mo-json]: Remove: archive file [/home/abi/fetcher/tmp/mo_json-6.609.24119.tar.gz]
+[2024-05-04 18:03:04] INFO root fetch - processPackages [mo-json]: Remove: archive file [/home/abi/fetcher/tmp/mo_json-6.617.24125.tar.gz]
+[2024-05-04 18:03:04] INFO root fetch - main [MainThread]: End processing [mo-json]: success
+[2024-05-04 18:03:04] INFO root fetch - main [MainThread]: Store serial: [23059153]
