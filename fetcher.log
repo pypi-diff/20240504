@@ -16416,3 +16416,35 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:49:12] INFO root fetch - processPackages [stac-fastapi.mongo]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_mongo-3.2.0.tar.gz]
 [2024-05-04 17:49:12] INFO root fetch - main [MainThread]: End processing [stac-fastapi.mongo]: success
 [2024-05-04 17:49:12] INFO root fetch - main [MainThread]: Store serial: [23059005]
+[2024-05-04 17:51:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059005]
+[2024-05-04 17:51:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 17:51:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: digitalarztools
+[2024-05-04 17:51:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tkinter-gl
+[2024-05-04 17:51:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyftg-sound
+[2024-05-04 17:51:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: honeybee-schema
+[2024-05-04 17:51:21] INFO root fetch - processPackages [digitalarztools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 17:51:21] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/b7/70/8b5b8aaee385637088cb6c095a922bf5f17957354ed8b60669d0d25a3811/digitalarztools-0.1.8.tar.gz
+[2024-05-04 17:51:21] WARNING root fetch - processPackages [pyftg-sound]: Skipping, unable to determine old version
+[2024-05-04 17:51:21] INFO root fetch - main [MainThread]: End processing [pyftg-sound] error
+[2024-05-04 17:51:21] INFO root fetch - processPackages [tkinter-gl]: New version: [1.0a3] Old Version: [1.0a2]
+[2024-05-04 17:51:21] INFO root fetch - processPackages [honeybee-schema]: New version: [1.9.0] Old Version: [1.8.2]
+[2024-05-04 17:51:21] INFO root fetch - processPackages [tkinter-gl]: Downloading https://files.pythonhosted.org/packages/d1/a5/79fb9733386b211c178ede77d1f18ffa7b1a9648101e112eff5318322b7a/tkinter-gl-1.0a2.tar.gz
+[2024-05-04 17:51:21] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/8b/85/2a742b62f2427a45f092ea34127a93f724509fd219511c0838e61833a9a1/digitalarztools-0.1.9.tar.gz
+[2024-05-04 17:51:21] INFO root fetch - processPackages [honeybee-schema]: Downloading https://files.pythonhosted.org/packages/b6/d5/bf0be74dc6858ed71e31a0de0ea2ccd2088e3f14cb469f0983e6ed41ff8b/honeybee-schema-1.8.2.tar.gz
+[2024-05-04 17:51:21] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2024-05-04 17:51:21] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.1.8.tar.gz tmp/digitalarztools-0.1.9.tar.gz --markdown 20240504/d/digitalarztools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 17:51:22] INFO root fetch - processPackages [tkinter-gl]: Downloading https://files.pythonhosted.org/packages/89/2e/b772809f13d62f9f9031ba75ad61e808e10fbbf6ebaea255be7a902f6c19/tkinter_gl-1.0a3.tar.gz
+[2024-05-04 17:51:22] INFO root fetch - processPackages [tkinter-gl]: executing diffoscope
+[2024-05-04 17:51:22] INFO root fetch - processPackages [tkinter-gl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkinter-gl-1.0a2.tar.gz tmp/tkinter_gl-1.0a3.tar.gz --markdown 20240504/t/tkinter-gl/1.0a2-1.0a3/README.md --exclude *.pyd
+[2024-05-04 17:51:22] INFO root fetch - processPackages [honeybee-schema]: Downloading https://files.pythonhosted.org/packages/92/90/db8badad5360ad071d8b0ec05d97398810bfa812481842174c19e7edec4f/honeybee-schema-1.9.0.tar.gz
+[2024-05-04 17:51:22] INFO root fetch - processPackages [honeybee-schema]: executing diffoscope
+[2024-05-04 17:51:22] INFO root fetch - processPackages [honeybee-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-schema-1.8.2.tar.gz tmp/honeybee-schema-1.9.0.tar.gz --markdown 20240504/h/honeybee-schema/1.8.2-1.9.0/README.md --exclude *.pyd
+[2024-05-04 17:51:22] INFO root fetch - processPackages [digitalarztools]: Remove: archive file [/home/abi/fetcher/tmp/digitalarztools-0.1.8.tar.gz]
+[2024-05-04 17:51:22] INFO root fetch - processPackages [digitalarztools]: Remove: archive file [/home/abi/fetcher/tmp/digitalarztools-0.1.9.tar.gz]
+[2024-05-04 17:51:22] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2024-05-04 17:51:26] INFO root fetch - processPackages [tkinter-gl]: Remove: archive file [/home/abi/fetcher/tmp/tkinter-gl-1.0a2.tar.gz]
+[2024-05-04 17:51:26] INFO root fetch - processPackages [tkinter-gl]: Remove: archive file [/home/abi/fetcher/tmp/tkinter_gl-1.0a3.tar.gz]
+[2024-05-04 17:51:26] INFO root fetch - main [MainThread]: End processing [tkinter-gl]: success
+[2024-05-04 17:54:22] ERROR root fetch - processPackages [honeybee-schema]: Timeout during execution of pkgdiff
+[2024-05-04 17:54:22] INFO root fetch - main [MainThread]: End processing [honeybee-schema] error
+[2024-05-04 17:54:22] INFO root fetch - main [MainThread]: Store serial: [23059022]
