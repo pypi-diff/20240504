@@ -8279,3 +8279,42 @@
 [2024-05-04 05:11:55] INFO root fetch - processPackages [bihyung]: Remove: archive file [/home/abi/fetcher/tmp/bihyung-0.2.9.tar.gz]
 [2024-05-04 05:11:55] INFO root fetch - main [MainThread]: End processing [bihyung]: success
 [2024-05-04 05:11:55] INFO root fetch - main [MainThread]: Store serial: [23055248]
+[2024-05-04 05:14:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055248]
+[2024-05-04 05:14:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 05:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abstract-pandas
+[2024-05-04 05:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-chatglm-plus
+[2024-05-04 05:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lab-student-survey
+[2024-05-04 05:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-near
+[2024-05-04 05:14:15] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.7] Old Version: [0.0.0.6]
+[2024-05-04 05:14:15] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/fc/c3/ece30a86957c4e5ff8fb05c280187bdf0bd50d13332bd6b51607d60b3b96/abstract_pandas-0.0.0.6.tar.gz
+[2024-05-04 05:14:15] INFO root fetch - processPackages [nonebot-plugin-chatglm-plus]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 05:14:15] INFO root fetch - processPackages [lab-student-survey]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-04 05:14:15] INFO root fetch - processPackages [py-near]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-04 05:14:15] INFO root fetch - processPackages [nonebot-plugin-chatglm-plus]: Downloading https://files.pythonhosted.org/packages/5f/b1/5aeefd1c677f88fa7dfe740de7f5e6e9055adc332cfad03ce8dcf24aa699/nonebot_plugin_chatglm_plus-0.1.8-py3-none-any.whl
+[2024-05-04 05:14:15] INFO root fetch - processPackages [lab-student-survey]: Downloading https://files.pythonhosted.org/packages/6c/fa/c7cbe896797157c1ec0e9904ad570660cf1a1c21bfe9bffbeb7040deeef1/lab_student_survey-0.4.8.tar.gz
+[2024-05-04 05:14:15] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/a4/83/a352c139c7efa086265c62bba2ac128d4502a23572acdce4be199b6cfcc4/abstract_pandas-0.0.0.7.tar.gz
+[2024-05-04 05:14:15] INFO root fetch - processPackages [py-near]: Downloading https://files.pythonhosted.org/packages/aa/de/beface0702603924b5d0a916d15f1c6cc26697783b8191af8e33620e805d/py_near-1.1.8.tar.gz
+[2024-05-04 05:14:15] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-04 05:14:15] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.6.tar.gz tmp/abstract_pandas-0.0.0.7.tar.gz --markdown 20240504/a/abstract-pandas/0.0.0.6-0.0.0.7/README.md --exclude *.pyd
+[2024-05-04 05:14:16] INFO root fetch - processPackages [nonebot-plugin-chatglm-plus]: Downloading https://files.pythonhosted.org/packages/e2/8c/789419161ee68ae0ead98862afc064a7a5837c6fe269a718b91c1da64614/nonebot_plugin_chatglm_plus-0.1.9-py3-none-any.whl
+[2024-05-04 05:14:16] INFO root fetch - processPackages [nonebot-plugin-chatglm-plus]: executing diffoscope
+[2024-05-04 05:14:16] INFO root fetch - processPackages [nonebot-plugin-chatglm-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_chatglm_plus-0.1.8-py3-none-any.whl.zip tmp/nonebot_plugin_chatglm_plus-0.1.9-py3-none-any.whl.zip --markdown 20240504/n/nonebot-plugin-chatglm-plus/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 05:14:16] INFO root fetch - processPackages [py-near]: Downloading https://files.pythonhosted.org/packages/3e/73/28d02d95d66304797b8d5f4f59e2c20a6e393c56657b991e31c16ca77e9f/py_near-1.1.9.tar.gz
+[2024-05-04 05:14:16] INFO root fetch - processPackages [lab-student-survey]: Downloading https://files.pythonhosted.org/packages/2d/fb/2066ecd831599713981775ef7182586f69fcd58e54fb388234248ae70342/lab_student_survey-0.4.9.tar.gz
+[2024-05-04 05:14:16] INFO root fetch - processPackages [lab-student-survey]: executing diffoscope
+[2024-05-04 05:14:16] INFO root fetch - processPackages [lab-student-survey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lab_student_survey-0.4.8.tar.gz tmp/lab_student_survey-0.4.9.tar.gz --markdown 20240504/l/lab-student-survey/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-04 05:14:16] INFO root fetch - processPackages [py-near]: executing diffoscope
+[2024-05-04 05:14:16] INFO root fetch - processPackages [py-near]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_near-1.1.8.tar.gz tmp/py_near-1.1.9.tar.gz --markdown 20240504/p/py-near/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-04 05:14:16] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.6.tar.gz]
+[2024-05-04 05:14:16] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.7.tar.gz]
+[2024-05-04 05:14:16] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-04 05:14:16] INFO root fetch - processPackages [nonebot-plugin-chatglm-plus]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chatglm_plus-0.1.8-py3-none-any.whl.zip]
+[2024-05-04 05:14:16] INFO root fetch - processPackages [nonebot-plugin-chatglm-plus]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chatglm_plus-0.1.9-py3-none-any.whl.zip]
+[2024-05-04 05:14:16] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chatglm-plus]: success
+[2024-05-04 05:14:16] INFO root fetch - processPackages [lab-student-survey]: Remove: archive file [/home/abi/fetcher/tmp/lab_student_survey-0.4.8.tar.gz]
+[2024-05-04 05:14:16] INFO root fetch - processPackages [lab-student-survey]: Remove: archive file [/home/abi/fetcher/tmp/lab_student_survey-0.4.9.tar.gz]
+[2024-05-04 05:14:16] INFO root fetch - main [MainThread]: End processing [lab-student-survey]: success
+[2024-05-04 05:14:17] INFO root fetch - processPackages [py-near]: Remove: archive file [/home/abi/fetcher/tmp/py_near-1.1.8.tar.gz]
+[2024-05-04 05:14:17] INFO root fetch - processPackages [py-near]: Remove: archive file [/home/abi/fetcher/tmp/py_near-1.1.9.tar.gz]
+[2024-05-04 05:14:17] INFO root fetch - main [MainThread]: End processing [py-near]: success
+[2024-05-04 05:14:17] INFO root fetch - main [MainThread]: Store serial: [23055256]
