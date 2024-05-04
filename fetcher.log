@@ -14034,3 +14034,26 @@
 [2024-05-04 14:18:36] INFO root fetch - processPackages [hdf-compass]: Remove: archive file [/home/abi/fetcher/tmp/hdf_compass-0.7b8.tar.gz]
 [2024-05-04 14:18:36] INFO root fetch - main [MainThread]: End processing [hdf-compass]: success
 [2024-05-04 14:18:36] INFO root fetch - main [MainThread]: Store serial: [23057935]
+[2024-05-04 14:20:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057935]
+[2024-05-04 14:20:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 14:20:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: disposable-email-domains
+[2024-05-04 14:20:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TrainingAnimation
+[2024-05-04 14:20:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: juxtapose
+[2024-05-04 14:20:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openagents-node-sdk
+[2024-05-04 14:20:45] WARNING root fetch - processPackages [openagents-node-sdk]: Skipping, unable to determine old version
+[2024-05-04 14:20:45] INFO root fetch - main [MainThread]: End processing [openagents-node-sdk] error
+[2024-05-04 14:20:45] WARNING root fetch - processPackages [TrainingAnimation]: Skipping, unable to determine old version
+[2024-05-04 14:20:45] INFO root fetch - main [MainThread]: End processing [TrainingAnimation] error
+[2024-05-04 14:20:45] INFO root fetch - processPackages [juxtapose]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 14:20:45] INFO root fetch - processPackages [disposable-email-domains]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-04 14:20:45] INFO root fetch - processPackages [juxtapose]: Downloading https://files.pythonhosted.org/packages/61/ef/b8b96f6ca1edc65e2f9e7470c51e5294b5cbbabb55ca13a82f4456e37edc/juxtapose-0.0.8.tar.gz
+[2024-05-04 14:20:45] WARNING root fetch - processPackages [juxtapose]: Skipping package: exceeds size limit 19361597>=10485760
+[2024-05-04 14:20:45] INFO root fetch - main [MainThread]: End processing [juxtapose] error
+[2024-05-04 14:20:45] INFO root fetch - processPackages [disposable-email-domains]: Downloading https://files.pythonhosted.org/packages/4d/24/74930e418d9a40ac2b25cbae9c9c11ec44dc23132691e241c2adaf455430/disposable-email-domains-0.0.98.tar.gz
+[2024-05-04 14:20:45] INFO root fetch - processPackages [disposable-email-domains]: Downloading https://files.pythonhosted.org/packages/7f/4b/92f7d0b9e8f8b9aad4e9b5b72b72c68372376fcaa5cc1286cf807cdf3878/disposable-email-domains-0.0.99.tar.gz
+[2024-05-04 14:20:46] INFO root fetch - processPackages [disposable-email-domains]: executing diffoscope
+[2024-05-04 14:20:46] INFO root fetch - processPackages [disposable-email-domains]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/disposable-email-domains-0.0.98.tar.gz tmp/disposable-email-domains-0.0.99.tar.gz --markdown 20240504/d/disposable-email-domains/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-04 14:20:46] INFO root fetch - processPackages [disposable-email-domains]: Remove: archive file [/home/abi/fetcher/tmp/disposable-email-domains-0.0.98.tar.gz]
+[2024-05-04 14:20:46] INFO root fetch - processPackages [disposable-email-domains]: Remove: archive file [/home/abi/fetcher/tmp/disposable-email-domains-0.0.99.tar.gz]
+[2024-05-04 14:20:46] INFO root fetch - main [MainThread]: End processing [disposable-email-domains]: success
+[2024-05-04 14:20:46] INFO root fetch - main [MainThread]: Store serial: [23057949]
