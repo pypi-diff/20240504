@@ -15429,3 +15429,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:18:43] INFO root fetch - processPackages [nonebot-plugin-mystool]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mystool-2.4.0.tar.gz]
 [2024-05-04 16:18:43] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mystool]: success
 [2024-05-04 16:18:43] INFO root fetch - main [MainThread]: Store serial: [23058491]
+[2024-05-04 16:20:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058491]
+[2024-05-04 16:20:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 16:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notional
+[2024-05-04 16:20:52] INFO root fetch - processPackages [notional]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-05-04 16:20:52] INFO root fetch - processPackages [notional]: Downloading https://files.pythonhosted.org/packages/85/f8/6c991a19fa2e6373b103af0d46a286dd0292bbbc334a874f8a5ed786d352/notional-0.8.1.tar.gz
+[2024-05-04 16:20:53] INFO root fetch - processPackages [notional]: Downloading https://files.pythonhosted.org/packages/0d/fa/5ceaba7b85ea5533be2f03ef81844f4099bb1c8301dab8e6c403eadcb8fc/notional-0.8.2.tar.gz
+[2024-05-04 16:20:53] INFO root fetch - processPackages [notional]: executing diffoscope
+[2024-05-04 16:20:53] INFO root fetch - processPackages [notional]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notional-0.8.1.tar.gz tmp/notional-0.8.2.tar.gz --markdown 20240504/n/notional/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-05-04 16:20:53] INFO root fetch - processPackages [notional]: Remove: archive file [/home/abi/fetcher/tmp/notional-0.8.1.tar.gz]
+[2024-05-04 16:20:53] INFO root fetch - processPackages [notional]: Remove: archive file [/home/abi/fetcher/tmp/notional-0.8.2.tar.gz]
+[2024-05-04 16:20:53] INFO root fetch - main [MainThread]: End processing [notional]: success
+[2024-05-04 16:20:53] INFO root fetch - main [MainThread]: Store serial: [23058494]
