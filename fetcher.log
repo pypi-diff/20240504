@@ -8634,3 +8634,36 @@
 [2024-05-04 05:40:23] INFO root fetch - processPackages [kmds]: Remove: archive file [/home/abi/fetcher/tmp/kmds-0.2.9.tar.gz]
 [2024-05-04 05:40:23] INFO root fetch - main [MainThread]: End processing [kmds]: success
 [2024-05-04 05:40:23] INFO root fetch - main [MainThread]: Store serial: [23055373]
+[2024-05-04 05:42:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055373]
+[2024-05-04 05:42:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 05:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-05-04 05:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DawgsML
+[2024-05-04 05:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: freezefs
+[2024-05-04 05:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: NEMO-CE
+[2024-05-04 05:42:45] INFO root fetch - processPackages [freezefs]: New version: [2.3] Old Version: [2.2]
+[2024-05-04 05:42:45] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240504.326] Old Version: [0.44.20240503.325]
+[2024-05-04 05:42:45] WARNING root fetch - processPackages [DawgsML]: Skipping, unable to determine old version
+[2024-05-04 05:42:45] INFO root fetch - main [MainThread]: End processing [DawgsML] error
+[2024-05-04 05:42:45] INFO root fetch - processPackages [freezefs]: Downloading https://files.pythonhosted.org/packages/9f/67/3352f59d9d085f9317bba6909134dcbe08d902ef37bff4770e537a604832/freezefs-2.2.tar.gz
+[2024-05-04 05:42:45] INFO root fetch - processPackages [NEMO-CE]: New version: [2.5.2] Old Version: [2.5.1]
+[2024-05-04 05:42:45] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/d4/97/d9aed26a5717ae04881572bccabdaed856a16c1a36dbcc2fc3e70ed15b91/pkscreener-0.44.20240503.325.tar.gz
+[2024-05-04 05:42:45] INFO root fetch - processPackages [freezefs]: Downloading https://files.pythonhosted.org/packages/fe/70/a56215814b6cc436877edb8425bd81077f5175e89833b87e681335996a93/freezefs-2.3.tar.gz
+[2024-05-04 05:42:45] INFO root fetch - processPackages [NEMO-CE]: Downloading https://files.pythonhosted.org/packages/73/d8/27909eb12e7b56a964c28771687265698e9afd565ee503776edb2d504374/NEMO_CE-2.5.1-py3-none-any.whl
+[2024-05-04 05:42:46] INFO root fetch - processPackages [freezefs]: executing diffoscope
+[2024-05-04 05:42:46] INFO root fetch - processPackages [freezefs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freezefs-2.2.tar.gz tmp/freezefs-2.3.tar.gz --markdown 20240504/f/freezefs/2.2-2.3/README.md --exclude *.pyd
+[2024-05-04 05:42:46] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/3a/c7/9cdc944cb3ae4e7269d43678135da27a0f376ec609fbe95a25c7706c361c/pkscreener-0.44.20240504.326.tar.gz
+[2024-05-04 05:42:46] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-04 05:42:46] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240503.325.tar.gz tmp/pkscreener-0.44.20240504.326.tar.gz --markdown 20240504/p/pkscreener/0.44.20240503.325-0.44.20240504.326/README.md --exclude *.pyd
+[2024-05-04 05:42:46] INFO root fetch - processPackages [NEMO-CE]: Downloading https://files.pythonhosted.org/packages/55/97/369b2a4ff99254bf119eabd36cbbda2bd8bb47f99536ad80d25e6589125f/NEMO_CE-2.5.2-py3-none-any.whl
+[2024-05-04 05:42:46] INFO root fetch - processPackages [NEMO-CE]: executing diffoscope
+[2024-05-04 05:42:46] INFO root fetch - processPackages [NEMO-CE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_CE-2.5.1-py3-none-any.whl.zip tmp/NEMO_CE-2.5.2-py3-none-any.whl.zip --markdown 20240504/N/NEMO-CE/2.5.1-2.5.2/README.md --exclude *.pyd
+[2024-05-04 05:42:46] INFO root fetch - processPackages [freezefs]: Remove: archive file [/home/abi/fetcher/tmp/freezefs-2.2.tar.gz]
+[2024-05-04 05:42:46] INFO root fetch - processPackages [freezefs]: Remove: archive file [/home/abi/fetcher/tmp/freezefs-2.3.tar.gz]
+[2024-05-04 05:42:46] INFO root fetch - main [MainThread]: End processing [freezefs]: success
+[2024-05-04 05:42:46] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240503.325.tar.gz]
+[2024-05-04 05:42:46] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.326.tar.gz]
+[2024-05-04 05:42:46] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-04 05:42:48] INFO root fetch - processPackages [NEMO-CE]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_CE-2.5.1-py3-none-any.whl.zip]
+[2024-05-04 05:42:48] INFO root fetch - processPackages [NEMO-CE]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_CE-2.5.2-py3-none-any.whl.zip]
+[2024-05-04 05:42:48] INFO root fetch - main [MainThread]: End processing [NEMO-CE]: success
+[2024-05-04 05:42:48] INFO root fetch - main [MainThread]: Store serial: [23055386]
