@@ -6933,3 +6933,60 @@
 [2024-05-04 03:43:51] INFO root fetch - processPackages [edgegap-consul]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_consul-1.6.6.tar.gz]
 [2024-05-04 03:43:51] INFO root fetch - main [MainThread]: End processing [edgegap-consul]: success
 [2024-05-04 03:43:51] INFO root fetch - main [MainThread]: Store serial: [23054589]
+[2024-05-04 03:45:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054589]
+[2024-05-04 03:45:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 03:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aixblock-ml
+[2024-05-04 03:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edgegap-service
+[2024-05-04 03:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edgegap-database
+[2024-05-04 03:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edgegap-logging
+[2024-05-04 03:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MobileInventoryCLI
+[2024-05-04 03:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edgegap-api
+[2024-05-04 03:45:59] INFO root fetch - processPackages [aixblock-ml]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-database]: New version: [1.6.3] Old Version: [1.6.2]
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-service]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-logging]: New version: [1.6.5] Old Version: [1.6.4]
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-api]: New version: [1.6.5] Old Version: [1.6.4]
+[2024-05-04 03:46:00] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.832] Old Version: [0.4.831]
+[2024-05-04 03:46:00] INFO root fetch - processPackages [aixblock-ml]: Downloading https://files.pythonhosted.org/packages/50/c7/c3cfe6d56ffd5fe300ffc707a614344c2b6cc38e63e2c768c7d637a00100/aixblock_ml-0.1.1.tar.gz
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-database]: Downloading https://files.pythonhosted.org/packages/af/72/e730a0173e9f58b5d3563a6f0e8ba32b860821dfa5c9b78acb7c8eba0aa1/edgegap_database-1.6.2.tar.gz
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-service]: Downloading https://files.pythonhosted.org/packages/bc/95/3b771bc8eae4d0601e73ac4308d5ebe66d37d920289a0938820af76a1faf/edgegap_service-1.6.1.tar.gz
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-logging]: Downloading https://files.pythonhosted.org/packages/da/a9/a1c864ed8142cd6e42cd8e95bb1070d81fbe72e6fb093621e02fe335561d/edgegap_logging-1.6.4.tar.gz
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-api]: Downloading https://files.pythonhosted.org/packages/70/06/20077b2a19070e278a7dcdbf807060178e57cd84bdd3021268dc469fac4e/edgegap_api-1.6.4-py3-none-any.whl
+[2024-05-04 03:46:00] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/35/d9/c6d24acde1293cf921b5cd0afbb724b2a19f8fe5692dfbd69928d91d9e34/MobileInventoryCLI-0.4.831.tar.gz
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-logging]: Downloading https://files.pythonhosted.org/packages/38/c5/728270100f218c463f4655c27183d2e4a1e0bbea14675353b8b67689e7ce/edgegap_logging-1.6.5.tar.gz
+[2024-05-04 03:46:00] INFO root fetch - processPackages [aixblock-ml]: Downloading https://files.pythonhosted.org/packages/25/4e/9cc22c16a1810548e00ca9b58baac14ecf57e05531b05d47219df1409041/aixblock_ml-0.1.2.tar.gz
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-database]: Downloading https://files.pythonhosted.org/packages/42/35/f262cf569b5730eec9a6f0659bb0dfd80cca771e1cd6d3c2e40fee24050c/edgegap_database-1.6.3.tar.gz
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-api]: Downloading https://files.pythonhosted.org/packages/2d/e6/d4cb8733153046133b26b61339bff564ac3fdede6d4b09f9e77a5637426d/edgegap_api-1.6.5.tar.gz
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-service]: Downloading https://files.pythonhosted.org/packages/98/c7/43524932371575f94ed1577a7824be12e00078a0d1c2c1bbb540b64d9b5e/edgegap_service-1.6.2.tar.gz
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-logging]: executing diffoscope
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_logging-1.6.4.tar.gz tmp/edgegap_logging-1.6.5.tar.gz --markdown 20240504/e/edgegap-logging/1.6.4-1.6.5/README.md --exclude *.pyd
+[2024-05-04 03:46:00] INFO root fetch - processPackages [aixblock-ml]: executing diffoscope
+[2024-05-04 03:46:00] INFO root fetch - processPackages [aixblock-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixblock_ml-0.1.1.tar.gz tmp/aixblock_ml-0.1.2.tar.gz --markdown 20240504/a/aixblock-ml/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 03:46:00] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/e3/58/54a75b2e0c01632ee553e7cde443b722bd6801845f6562d6b51fa7261f27/MobileInventoryCLI-0.4.832.tar.gz
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-database]: executing diffoscope
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_database-1.6.2.tar.gz tmp/edgegap_database-1.6.3.tar.gz --markdown 20240504/e/edgegap-database/1.6.2-1.6.3/README.md --exclude *.pyd
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-api]: executing diffoscope
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_api-1.6.4-py3-none-any.whl.zip tmp/edgegap_api-1.6.5.tar.gz --markdown 20240504/e/edgegap-api/1.6.4-1.6.5/README.md --exclude *.pyd
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-service]: executing diffoscope
+[2024-05-04 03:46:00] INFO root fetch - processPackages [edgegap-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_service-1.6.1.tar.gz tmp/edgegap_service-1.6.2.tar.gz --markdown 20240504/e/edgegap-service/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-05-04 03:46:00] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-04 03:46:00] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.831.tar.gz tmp/MobileInventoryCLI-0.4.832.tar.gz --markdown 20240504/M/MobileInventoryCLI/0.4.831-0.4.832/README.md --exclude *.pyd
+[2024-05-04 03:46:01] INFO root fetch - processPackages [edgegap-logging]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_logging-1.6.4.tar.gz]
+[2024-05-04 03:46:01] INFO root fetch - processPackages [edgegap-logging]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_logging-1.6.5.tar.gz]
+[2024-05-04 03:46:01] INFO root fetch - main [MainThread]: End processing [edgegap-logging]: success
+[2024-05-04 03:46:01] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.4-py3-none-any.whl.zip]
+[2024-05-04 03:46:01] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.5.tar.gz]
+[2024-05-04 03:46:01] INFO root fetch - main [MainThread]: End processing [edgegap-api]: success
+[2024-05-04 03:46:01] INFO root fetch - processPackages [edgegap-database]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_database-1.6.2.tar.gz]
+[2024-05-04 03:46:01] INFO root fetch - processPackages [edgegap-database]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_database-1.6.3.tar.gz]
+[2024-05-04 03:46:01] INFO root fetch - main [MainThread]: End processing [edgegap-database]: success
+[2024-05-04 03:46:01] INFO root fetch - processPackages [aixblock-ml]: Remove: archive file [/home/abi/fetcher/tmp/aixblock_ml-0.1.1.tar.gz]
+[2024-05-04 03:46:01] INFO root fetch - processPackages [aixblock-ml]: Remove: archive file [/home/abi/fetcher/tmp/aixblock_ml-0.1.2.tar.gz]
+[2024-05-04 03:46:01] INFO root fetch - main [MainThread]: End processing [aixblock-ml]: success
+[2024-05-04 03:46:01] INFO root fetch - processPackages [edgegap-service]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_service-1.6.1.tar.gz]
+[2024-05-04 03:46:01] INFO root fetch - processPackages [edgegap-service]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_service-1.6.2.tar.gz]
+[2024-05-04 03:46:01] INFO root fetch - main [MainThread]: End processing [edgegap-service]: success
+[2024-05-04 03:46:01] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.831.tar.gz]
+[2024-05-04 03:46:01] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.832.tar.gz]
+[2024-05-04 03:46:01] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-04 03:46:01] INFO root fetch - main [MainThread]: Store serial: [23054606]
