@@ -17069,3 +17069,59 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:35:40] INFO root fetch - processPackages [sqlclasses]: Remove: archive file [/home/abi/fetcher/tmp/sqlclasses-1.1.tar.gz]
 [2024-05-04 18:35:40] INFO root fetch - main [MainThread]: End processing [sqlclasses]: success
 [2024-05-04 18:35:40] INFO root fetch - main [MainThread]: Store serial: [23059311]
+[2024-05-04 18:37:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059311]
+[2024-05-04 18:37:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 18:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlclasses
+[2024-05-04 18:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbt-dragonfly
+[2024-05-04 18:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: surfkit
+[2024-05-04 18:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lbt-honeybee
+[2024-05-04 18:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: timeseries-shaper
+[2024-05-04 18:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: psyke
+[2024-05-04 18:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: loco-mujoco
+[2024-05-04 18:37:49] WARNING root fetch - processPackages [timeseries-shaper]: Skipping, unable to determine old version
+[2024-05-04 18:37:49] INFO root fetch - main [MainThread]: End processing [timeseries-shaper] error
+[2024-05-04 18:37:49] INFO root fetch - processPackages [sqlclasses]: New version: [1.1] Old Version: [1.0]
+[2024-05-04 18:37:49] INFO root fetch - processPackages [surfkit]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-04 18:37:49] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-05-04 18:37:49] INFO root fetch - processPackages [psyke]: New version: [0.8.6.dev2] Old Version: [0.8.5.dev1]
+[2024-05-04 18:37:49] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-05-04 18:37:49] INFO root fetch - processPackages [loco-mujoco]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-04 18:37:49] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/c2/e4/d9d6efb4013a22047e07b2174dc8716a86fe2b3fe0652e6e1edddbde177b/surfkit-0.1.98.tar.gz
+[2024-05-04 18:37:49] INFO root fetch - processPackages [sqlclasses]: Downloading https://files.pythonhosted.org/packages/80/29/7057a9dde2890f26f36ac8d916070dbf1e18306394c9bcd6006adc795d1d/sqlclasses-1.0.tar.gz
+[2024-05-04 18:37:49] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-05-04 18:37:49] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/e1/42/f9c03b92c9ed4d22e16b86581b7249bf01babec6a13915deed6693a7559c/psyke-0.8.5.dev1.tar.gz
+[2024-05-04 18:37:49] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-05-04 18:37:49] INFO root fetch - processPackages [loco-mujoco]: Downloading https://files.pythonhosted.org/packages/d4/37/e63adfd5a66cdad4802585bd669cd6c0ebc9cfcf6705f2032aa30a5a243e/loco-mujoco-0.2.0.tar.gz
+[2024-05-04 18:37:49] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/65/a8/bfc822b58240522d18c4cf24a25a6f2476da037058406af11377393fa476/surfkit-0.1.99.tar.gz
+[2024-05-04 18:37:49] INFO root fetch - processPackages [sqlclasses]: Downloading https://files.pythonhosted.org/packages/a0/9d/ccec46de6c3c46b35250cd848d3c959042db65bc963fb7a20aabbc320335/sqlclasses-1.1.tar.gz
+[2024-05-04 18:37:49] WARNING root fetch - processPackages [loco-mujoco]: Skipping package: exceeds size limit 20541397>=10485760
+[2024-05-04 18:37:49] INFO root fetch - main [MainThread]: End processing [loco-mujoco] error
+[2024-05-04 18:37:49] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-05-04 18:37:49] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-05-04 18:37:49] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/d1/ff/44732017d50e5ea324bf5a9bae0ca6e06f72d6696ac7f82f3ea604cebb56/psyke-0.8.6.dev2.tar.gz
+[2024-05-04 18:37:49] INFO root fetch - processPackages [surfkit]: executing diffoscope
+[2024-05-04 18:37:49] INFO root fetch - processPackages [surfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfkit-0.1.98.tar.gz tmp/surfkit-0.1.99.tar.gz --markdown 20240504/s/surfkit/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-04 18:37:49] INFO root fetch - processPackages [sqlclasses]: executing diffoscope
+[2024-05-04 18:37:49] INFO root fetch - processPackages [sqlclasses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlclasses-1.0.tar.gz tmp/sqlclasses-1.1.tar.gz --markdown 20240504/s/sqlclasses/1.0-1.1/README.md --exclude *.pyd
+[2024-05-04 18:37:49] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-05-04 18:37:49] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240504/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-05-04 18:37:49] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-05-04 18:37:49] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240504/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-05-04 18:37:49] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2024-05-04 18:37:49] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.8.5.dev1.tar.gz tmp/psyke-0.8.6.dev2.tar.gz --markdown 20240504/p/psyke/0.8.5.dev1-0.8.6.dev2/README.md --exclude *.pyd
+[2024-05-04 18:37:50] INFO root fetch - processPackages [sqlclasses]: Remove: archive file [/home/abi/fetcher/tmp/sqlclasses-1.0.tar.gz]
+[2024-05-04 18:37:50] INFO root fetch - processPackages [sqlclasses]: Remove: archive file [/home/abi/fetcher/tmp/sqlclasses-1.1.tar.gz]
+[2024-05-04 18:37:50] INFO root fetch - main [MainThread]: End processing [sqlclasses]: success
+[2024-05-04 18:37:50] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.98.tar.gz]
+[2024-05-04 18:37:50] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
+[2024-05-04 18:37:50] INFO root fetch - main [MainThread]: End processing [surfkit]: success
+[2024-05-04 18:37:50] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-05-04 18:37:50] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-05-04 18:37:50] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-05-04 18:37:50] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-05-04 18:37:50] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-05-04 18:37:50] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-05-04 18:37:50] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.5.dev1.tar.gz]
+[2024-05-04 18:37:50] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.6.dev2.tar.gz]
+[2024-05-04 18:37:50] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2024-05-04 18:37:50] INFO root fetch - main [MainThread]: Store serial: [23059334]
