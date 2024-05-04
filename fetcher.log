@@ -2719,3 +2719,24 @@
 [2024-05-04 02:57:13] INFO root fetch - processPackages [django_herobiz_dental]: Remove: archive file [/home/abi/fetcher/tmp/django_herobiz_dental-1.0.7.tar.gz]
 [2024-05-04 02:57:13] INFO root fetch - main [MainThread]: End processing [django_herobiz_dental]: success
 [2024-05-04 02:57:13] INFO root fetch - main [MainThread]: Store serial: [23053176]
+[2024-05-04 02:59:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053176]
+[2024-05-04 02:59:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 02:59:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DynamicRoutingTask
+[2024-05-04 02:59:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tifffile
+[2024-05-04 02:59:22] INFO root fetch - processPackages [DynamicRoutingTask]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-04 02:59:22] INFO root fetch - processPackages [tifffile]: New version: [2024.5.3] Old Version: [2024.4.24]
+[2024-05-04 02:59:22] INFO root fetch - processPackages [DynamicRoutingTask]: Downloading https://files.pythonhosted.org/packages/d5/f6/71e77a694d644630e0a29c35bef674ba3cbb88e6a4ed475ca4ae174d6988/dynamicroutingtask-0.1.98.tar.gz
+[2024-05-04 02:59:22] INFO root fetch - processPackages [tifffile]: Downloading https://files.pythonhosted.org/packages/c7/98/baea0b0668945d5f3726cf19c5df7ecafdcff6eb874cbfb69fcbece5fcb8/tifffile-2024.4.24.tar.gz
+[2024-05-04 02:59:22] INFO root fetch - processPackages [DynamicRoutingTask]: Downloading https://files.pythonhosted.org/packages/41/cd/af17adf23abd1aaa5446c3635b69255049ec1317e69e2916acdc5a77e99e/dynamicroutingtask-0.1.99.tar.gz
+[2024-05-04 02:59:22] INFO root fetch - processPackages [tifffile]: Downloading https://files.pythonhosted.org/packages/ff/e6/c5d9db56a135a06295f11c24a615d430d37c018fc068f5fa62aa1ad939bc/tifffile-2024.5.3.tar.gz
+[2024-05-04 02:59:22] INFO root fetch - processPackages [DynamicRoutingTask]: executing diffoscope
+[2024-05-04 02:59:22] INFO root fetch - processPackages [DynamicRoutingTask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamicroutingtask-0.1.98.tar.gz tmp/dynamicroutingtask-0.1.99.tar.gz --markdown 20240504/D/DynamicRoutingTask/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-04 02:59:23] INFO root fetch - processPackages [tifffile]: executing diffoscope
+[2024-05-04 02:59:23] INFO root fetch - processPackages [tifffile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tifffile-2024.4.24.tar.gz tmp/tifffile-2024.5.3.tar.gz --markdown 20240504/t/tifffile/2024.4.24-2024.5.3/README.md --exclude *.pyd
+[2024-05-04 02:59:23] INFO root fetch - processPackages [DynamicRoutingTask]: Remove: archive file [/home/abi/fetcher/tmp/dynamicroutingtask-0.1.98.tar.gz]
+[2024-05-04 02:59:23] INFO root fetch - processPackages [DynamicRoutingTask]: Remove: archive file [/home/abi/fetcher/tmp/dynamicroutingtask-0.1.99.tar.gz]
+[2024-05-04 02:59:23] INFO root fetch - main [MainThread]: End processing [DynamicRoutingTask]: success
+[2024-05-04 02:59:24] INFO root fetch - processPackages [tifffile]: Remove: archive file [/home/abi/fetcher/tmp/tifffile-2024.4.24.tar.gz]
+[2024-05-04 02:59:24] INFO root fetch - processPackages [tifffile]: Remove: archive file [/home/abi/fetcher/tmp/tifffile-2024.5.3.tar.gz]
+[2024-05-04 02:59:24] INFO root fetch - main [MainThread]: End processing [tifffile]: success
+[2024-05-04 02:59:24] INFO root fetch - main [MainThread]: Store serial: [23053182]
