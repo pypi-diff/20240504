@@ -11044,3 +11044,12 @@
 [2024-05-04 09:23:04] INFO root fetch - processPackages [dslog]: Remove: archive file [/home/abi/fetcher/tmp/dslog-0.1.5.tar.gz]
 [2024-05-04 09:23:04] INFO root fetch - main [MainThread]: End processing [dslog]: success
 [2024-05-04 09:23:04] INFO root fetch - main [MainThread]: Store serial: [23056526]
+[2024-05-04 09:25:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056526]
+[2024-05-04 09:25:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 09:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hooto
+[2024-05-04 09:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sandowichi
+[2024-05-04 09:25:13] WARNING root fetch - processPackages [hooto]: Skipping, unable to determine old version
+[2024-05-04 09:25:13] INFO root fetch - main [MainThread]: End processing [hooto] error
+[2024-05-04 09:25:13] WARNING root fetch - processPackages [sandowichi]: Skipping, unable to determine old version
+[2024-05-04 09:25:13] INFO root fetch - main [MainThread]: End processing [sandowichi] error
+[2024-05-04 09:25:13] INFO root fetch - main [MainThread]: Store serial: [23056541]
