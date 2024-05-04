@@ -8604,3 +8604,33 @@
 [2024-05-04 05:37:55] INFO root fetch - processPackages [Cope]: Remove: archive file [/home/abi/fetcher/tmp/cope-2.5.2.tar.gz]
 [2024-05-04 05:37:55] INFO root fetch - main [MainThread]: End processing [Cope]: success
 [2024-05-04 05:37:55] INFO root fetch - main [MainThread]: Store serial: [23055364]
+[2024-05-04 05:40:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055364]
+[2024-05-04 05:40:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 05:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omnata-plugin-devkit
+[2024-05-04 05:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdktf-cdktf-provider-digitalocean
+[2024-05-04 05:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kmds
+[2024-05-04 05:40:17] INFO root fetch - processPackages [omnata-plugin-devkit]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-04 05:40:17] INFO root fetch - processPackages [kmds]: New version: [0.2.9] Old Version: [0.2.7]
+[2024-05-04 05:40:17] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: New version: [9.0.1] Old Version: [9.0.0]
+[2024-05-04 05:40:17] INFO root fetch - processPackages [omnata-plugin-devkit]: Downloading https://files.pythonhosted.org/packages/51/97/0ed66b947eb7371ed3f33d9501745d4bbc9b06a5cd25a6e7a6a6e7869fda/omnata_plugin_devkit-0.3.8.tar.gz
+[2024-05-04 05:40:17] INFO root fetch - processPackages [kmds]: Downloading https://files.pythonhosted.org/packages/7f/7c/8b734e9b77c935693ccf84497f24a5e64996e9c8e9addb85a17be9eaffa5/kmds-0.2.7.tar.gz
+[2024-05-04 05:40:17] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: Downloading https://files.pythonhosted.org/packages/2e/6c/a7df4c4ad7f38f74d32540e1217748e42244e347a42bae8c2279fbd344bd/cdktf-cdktf-provider-digitalocean-9.0.0.tar.gz
+[2024-05-04 05:40:17] INFO root fetch - processPackages [omnata-plugin-devkit]: Downloading https://files.pythonhosted.org/packages/05/26/00acb43f53fad72d614350962a4ab46ad393fce6583ee75c5dedc01385c8/omnata_plugin_devkit-0.3.9.tar.gz
+[2024-05-04 05:40:17] INFO root fetch - processPackages [omnata-plugin-devkit]: executing diffoscope
+[2024-05-04 05:40:17] INFO root fetch - processPackages [omnata-plugin-devkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnata_plugin_devkit-0.3.8.tar.gz tmp/omnata_plugin_devkit-0.3.9.tar.gz --markdown 20240504/o/omnata-plugin-devkit/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-04 05:40:18] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: Downloading https://files.pythonhosted.org/packages/37/54/0c54d24323faaeb7a81b959a3875d565f3f927309e36279e4db1165fee68/cdktf-cdktf-provider-digitalocean-9.0.1.tar.gz
+[2024-05-04 05:40:18] INFO root fetch - processPackages [omnata-plugin-devkit]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_devkit-0.3.8.tar.gz]
+[2024-05-04 05:40:18] INFO root fetch - processPackages [omnata-plugin-devkit]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_devkit-0.3.9.tar.gz]
+[2024-05-04 05:40:18] INFO root fetch - main [MainThread]: End processing [omnata-plugin-devkit]: success
+[2024-05-04 05:40:19] INFO root fetch - processPackages [kmds]: Downloading https://files.pythonhosted.org/packages/91/c0/164db4df4c881398cb5dddb4aecf8bfe0611811ae8f80dd7cd7ea0d63a99/kmds-0.2.9.tar.gz
+[2024-05-04 05:40:19] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: executing diffoscope
+[2024-05-04 05:40:19] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-digitalocean-9.0.0.tar.gz tmp/cdktf-cdktf-provider-digitalocean-9.0.1.tar.gz --markdown 20240504/c/cdktf-cdktf-provider-digitalocean/9.0.0-9.0.1/README.md --exclude *.pyd
+[2024-05-04 05:40:19] INFO root fetch - processPackages [kmds]: executing diffoscope
+[2024-05-04 05:40:19] INFO root fetch - processPackages [kmds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmds-0.2.7.tar.gz tmp/kmds-0.2.9.tar.gz --markdown 20240504/k/kmds/0.2.7-0.2.9/README.md --exclude *.pyd
+[2024-05-04 05:40:22] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-digitalocean-9.0.0.tar.gz]
+[2024-05-04 05:40:22] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-digitalocean-9.0.1.tar.gz]
+[2024-05-04 05:40:22] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-digitalocean]: success
+[2024-05-04 05:40:23] INFO root fetch - processPackages [kmds]: Remove: archive file [/home/abi/fetcher/tmp/kmds-0.2.7.tar.gz]
+[2024-05-04 05:40:23] INFO root fetch - processPackages [kmds]: Remove: archive file [/home/abi/fetcher/tmp/kmds-0.2.9.tar.gz]
+[2024-05-04 05:40:23] INFO root fetch - main [MainThread]: End processing [kmds]: success
+[2024-05-04 05:40:23] INFO root fetch - main [MainThread]: Store serial: [23055373]
