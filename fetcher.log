@@ -8222,3 +8222,18 @@
 [2024-05-04 05:07:13] INFO root fetch - processPackages [rollercoaster]: Remove: archive file [/home/abi/fetcher/tmp/rollercoaster-2.1.4.tar.gz]
 [2024-05-04 05:07:13] INFO root fetch - main [MainThread]: End processing [rollercoaster]: success
 [2024-05-04 05:07:13] INFO root fetch - main [MainThread]: Store serial: [23055200]
+[2024-05-04 05:09:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055200]
+[2024-05-04 05:09:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 05:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: huskypo
+[2024-05-04 05:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abstract-pandas
+[2024-05-04 05:09:33] WARNING root fetch - processPackages [huskypo]: Skipping, unable to determine old version
+[2024-05-04 05:09:33] INFO root fetch - main [MainThread]: End processing [huskypo] error
+[2024-05-04 05:09:33] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.5] Old Version: [0.0.0.4]
+[2024-05-04 05:09:33] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/03/b8/202f0dcea6b925b12f888fb1f2c73a6bd3229c9f1c0bd5e8d43f0ee4ebc4/abstract_pandas-0.0.0.4.tar.gz
+[2024-05-04 05:09:33] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/36/b7/465ce4439308ee6979d883cb85321e9b16831b589cab32d003181b94a325/abstract_pandas-0.0.0.5.tar.gz
+[2024-05-04 05:09:33] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-04 05:09:33] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.4.tar.gz tmp/abstract_pandas-0.0.0.5.tar.gz --markdown 20240504/a/abstract-pandas/0.0.0.4-0.0.0.5/README.md --exclude *.pyd
+[2024-05-04 05:09:34] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.4.tar.gz]
+[2024-05-04 05:09:34] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.5.tar.gz]
+[2024-05-04 05:09:34] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-04 05:09:34] INFO root fetch - main [MainThread]: Store serial: [23055219]
