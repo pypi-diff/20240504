@@ -12643,3 +12643,15 @@
 [2024-05-04 12:03:56] WARNING root fetch - processPackages [diwork]: Skipping, unable to determine old version
 [2024-05-04 12:03:56] INFO root fetch - main [MainThread]: End processing [diwork] error
 [2024-05-04 12:03:56] INFO root fetch - main [MainThread]: Store serial: [23057368]
+[2024-05-04 12:06:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057368]
+[2024-05-04 12:06:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 12:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytgpt-bot
+[2024-05-04 12:06:05] INFO root fetch - processPackages [pytgpt-bot]: New version: [0.1.7.4] Old Version: [0.1.7.3]
+[2024-05-04 12:06:05] INFO root fetch - processPackages [pytgpt-bot]: Downloading https://files.pythonhosted.org/packages/a8/bb/a9d45feea4464f436d816a76a36b2481596a32e7eb4cb1ebf4823de8acf4/pytgpt_bot-0.1.7.3.tar.gz
+[2024-05-04 12:06:05] INFO root fetch - processPackages [pytgpt-bot]: Downloading https://files.pythonhosted.org/packages/3f/c3/ef7fcc627a1bd7875afd895c1f5771ac3e56513a5d7f80c579b9632e8605/pytgpt_bot-0.1.7.4.tar.gz
+[2024-05-04 12:06:05] INFO root fetch - processPackages [pytgpt-bot]: executing diffoscope
+[2024-05-04 12:06:05] INFO root fetch - processPackages [pytgpt-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytgpt_bot-0.1.7.3.tar.gz tmp/pytgpt_bot-0.1.7.4.tar.gz --markdown 20240504/p/pytgpt-bot/0.1.7.3-0.1.7.4/README.md --exclude *.pyd
+[2024-05-04 12:06:06] INFO root fetch - processPackages [pytgpt-bot]: Remove: archive file [/home/abi/fetcher/tmp/pytgpt_bot-0.1.7.3.tar.gz]
+[2024-05-04 12:06:06] INFO root fetch - processPackages [pytgpt-bot]: Remove: archive file [/home/abi/fetcher/tmp/pytgpt_bot-0.1.7.4.tar.gz]
+[2024-05-04 12:06:06] INFO root fetch - main [MainThread]: End processing [pytgpt-bot]: success
+[2024-05-04 12:06:06] INFO root fetch - main [MainThread]: Store serial: [23057372]
