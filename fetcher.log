@@ -11017,3 +11017,30 @@
 [2024-05-04 09:20:53] INFO root fetch - processPackages [libevtx-python]: Remove: archive file [/home/abi/fetcher/tmp/libevtx-python-20240504.tar.gz]
 [2024-05-04 09:20:53] INFO root fetch - main [MainThread]: End processing [libevtx-python]: success
 [2024-05-04 09:20:53] INFO root fetch - main [MainThread]: Store serial: [23056499]
+[2024-05-04 09:22:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056499]
+[2024-05-04 09:23:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 09:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AGTEPyth
+[2024-05-04 09:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dslog
+[2024-05-04 09:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: epochrony
+[2024-05-04 09:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tabledetector
+[2024-05-04 09:23:03] WARNING root fetch - processPackages [AGTEPyth]: Skipping, unable to determine old version
+[2024-05-04 09:23:03] INFO root fetch - main [MainThread]: End processing [AGTEPyth] error
+[2024-05-04 09:23:03] WARNING root fetch - processPackages [epochrony]: Skipping, unable to determine old version
+[2024-05-04 09:23:03] INFO root fetch - main [MainThread]: End processing [epochrony] error
+[2024-05-04 09:23:03] INFO root fetch - processPackages [dslog]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-04 09:23:03] INFO root fetch - processPackages [tabledetector]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 09:23:03] INFO root fetch - processPackages [dslog]: Downloading https://files.pythonhosted.org/packages/c3/42/0f3b38cbd4ecbd0dfe8cebe504dd178b50e10c8f99d700ce51326f9c9c7f/dslog-0.1.4.tar.gz
+[2024-05-04 09:23:03] INFO root fetch - processPackages [tabledetector]: Downloading https://files.pythonhosted.org/packages/79/03/318e3be332cb220bcd1ab096f1e72d34dbd8c5c37255b4b9eb5a49074726/tabledetector-1.0.0.tar.gz
+[2024-05-04 09:23:03] INFO root fetch - processPackages [dslog]: Downloading https://files.pythonhosted.org/packages/b1/f3/b989d289100963951d2a0ef2343e2ea1c463ca9a33dcf46fd6360b3ec5e7/dslog-0.1.5.tar.gz
+[2024-05-04 09:23:03] INFO root fetch - processPackages [tabledetector]: Downloading https://files.pythonhosted.org/packages/db/52/d861ad6a82ce2bb067556f4f1ffb4287d9c1a669f54c1540bfad2f773414/tabledetector-1.0.1-py3-none-any.whl
+[2024-05-04 09:23:03] INFO root fetch - processPackages [dslog]: executing diffoscope
+[2024-05-04 09:23:03] INFO root fetch - processPackages [dslog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dslog-0.1.4.tar.gz tmp/dslog-0.1.5.tar.gz --markdown 20240504/d/dslog/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-04 09:23:03] INFO root fetch - processPackages [tabledetector]: executing diffoscope
+[2024-05-04 09:23:03] INFO root fetch - processPackages [tabledetector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabledetector-1.0.0.tar.gz tmp/tabledetector-1.0.1-py3-none-any.whl.zip --markdown 20240504/t/tabledetector/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 09:23:04] INFO root fetch - processPackages [tabledetector]: Remove: archive file [/home/abi/fetcher/tmp/tabledetector-1.0.0.tar.gz]
+[2024-05-04 09:23:04] INFO root fetch - processPackages [tabledetector]: Remove: archive file [/home/abi/fetcher/tmp/tabledetector-1.0.1-py3-none-any.whl.zip]
+[2024-05-04 09:23:04] INFO root fetch - main [MainThread]: End processing [tabledetector]: success
+[2024-05-04 09:23:04] INFO root fetch - processPackages [dslog]: Remove: archive file [/home/abi/fetcher/tmp/dslog-0.1.4.tar.gz]
+[2024-05-04 09:23:04] INFO root fetch - processPackages [dslog]: Remove: archive file [/home/abi/fetcher/tmp/dslog-0.1.5.tar.gz]
+[2024-05-04 09:23:04] INFO root fetch - main [MainThread]: End processing [dslog]: success
+[2024-05-04 09:23:04] INFO root fetch - main [MainThread]: Store serial: [23056526]
