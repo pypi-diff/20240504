@@ -17230,3 +17230,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:46:31] INFO root fetch - processPackages [xcom-proto]: Remove: archive file [/home/abi/fetcher/tmp/xcom_proto-0.3.6.tar.gz]
 [2024-05-04 18:46:31] INFO root fetch - main [MainThread]: End processing [xcom-proto]: success
 [2024-05-04 18:46:31] INFO root fetch - main [MainThread]: Store serial: [23059378]
+[2024-05-04 18:48:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059378]
+[2024-05-04 18:48:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 18:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pqsdk
+[2024-05-04 18:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: midi-abstraction
+[2024-05-04 18:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: super-rubik-cube
+[2024-05-04 18:48:40] INFO root fetch - processPackages [super-rubik-cube]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 18:48:40] INFO root fetch - processPackages [midi-abstraction]: New version: [2.0.0] Old Version: [1.0.6]
+[2024-05-04 18:48:40] INFO root fetch - processPackages [pqsdk]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-04 18:48:40] INFO root fetch - processPackages [midi-abstraction]: Downloading https://files.pythonhosted.org/packages/5f/9b/98f5b12403ba79ddeafe89f1c10588b322200d152391b4607f051936b88a/midi-abstraction-1.0.6.tar.gz
+[2024-05-04 18:48:40] INFO root fetch - processPackages [super-rubik-cube]: Downloading https://files.pythonhosted.org/packages/21/c1/a7285a4af153e72b03498cf5484276ed26a9f250f6c532411aeaf7bc9868/super_rubik_cube-1.0.0.tar.gz
+[2024-05-04 18:48:40] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/68/23/a06a2788a1f3a04cd1f68140021065e3ba83762c1ccdcef9df3605e6ce7a/pqsdk-0.0.3.tar.gz
+[2024-05-04 18:48:40] INFO root fetch - processPackages [midi-abstraction]: Downloading https://files.pythonhosted.org/packages/ec/13/33450c956c21c7e458bc9fde99fd4b67333d8f836acf892c2818b9a3f592/midi-abstraction-2.0.0.tar.gz
+[2024-05-04 18:48:40] INFO root fetch - processPackages [midi-abstraction]: executing diffoscope
+[2024-05-04 18:48:40] INFO root fetch - processPackages [midi-abstraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midi-abstraction-1.0.6.tar.gz tmp/midi-abstraction-2.0.0.tar.gz --markdown 20240504/m/midi-abstraction/1.0.6-2.0.0/README.md --exclude *.pyd
+[2024-05-04 18:48:40] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/f0/be/cce7e38680000ed5c60ea639833a6e72f16f7add7554d3e9093f4899bb3d/pqsdk-0.0.4.tar.gz
+[2024-05-04 18:48:40] INFO root fetch - processPackages [pqsdk]: executing diffoscope
+[2024-05-04 18:48:40] INFO root fetch - processPackages [pqsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqsdk-0.0.3.tar.gz tmp/pqsdk-0.0.4.tar.gz --markdown 20240504/p/pqsdk/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-04 18:48:40] INFO root fetch - processPackages [super-rubik-cube]: Downloading https://files.pythonhosted.org/packages/b0/3c/f7773f2cf456e5c5cd119f351f58afb516821c10c52d7579715d1e61869d/super_rubik_cube-1.0.1.tar.gz
+[2024-05-04 18:48:41] INFO root fetch - processPackages [midi-abstraction]: Remove: archive file [/home/abi/fetcher/tmp/midi-abstraction-1.0.6.tar.gz]
+[2024-05-04 18:48:41] INFO root fetch - processPackages [midi-abstraction]: Remove: archive file [/home/abi/fetcher/tmp/midi-abstraction-2.0.0.tar.gz]
+[2024-05-04 18:48:41] INFO root fetch - main [MainThread]: End processing [midi-abstraction]: success
+[2024-05-04 18:48:41] INFO root fetch - processPackages [super-rubik-cube]: executing diffoscope
+[2024-05-04 18:48:41] INFO root fetch - processPackages [super-rubik-cube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/super_rubik_cube-1.0.0.tar.gz tmp/super_rubik_cube-1.0.1.tar.gz --markdown 20240504/s/super-rubik-cube/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 18:48:41] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.3.tar.gz]
+[2024-05-04 18:48:41] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.4.tar.gz]
+[2024-05-04 18:48:41] INFO root fetch - main [MainThread]: End processing [pqsdk]: success
+[2024-05-04 18:48:43] INFO root fetch - processPackages [super-rubik-cube]: Remove: archive file [/home/abi/fetcher/tmp/super_rubik_cube-1.0.0.tar.gz]
+[2024-05-04 18:48:43] INFO root fetch - processPackages [super-rubik-cube]: Remove: archive file [/home/abi/fetcher/tmp/super_rubik_cube-1.0.1.tar.gz]
+[2024-05-04 18:48:43] INFO root fetch - main [MainThread]: End processing [super-rubik-cube]: success
+[2024-05-04 18:48:43] INFO root fetch - main [MainThread]: Store serial: [23059385]
