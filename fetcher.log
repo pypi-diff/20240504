@@ -19802,3 +19802,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:58:28] INFO root fetch - processPackages [specsy]: Remove: archive file [/home/abi/fetcher/tmp/specsy-0.2.4.tar.gz]
 [2024-05-04 21:58:28] INFO root fetch - main [MainThread]: End processing [specsy]: success
 [2024-05-04 21:58:28] INFO root fetch - main [MainThread]: Store serial: [23060624]
+[2024-05-04 22:00:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060624]
+[2024-05-04 22:00:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 22:00:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-times
+[2024-05-04 22:00:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyjinx
+[2024-05-04 22:00:36] INFO root fetch - processPackages [mo-times]: New version: [5.623.24125] Old Version: [5.619.24125]
+[2024-05-04 22:00:37] INFO root fetch - processPackages [mo-times]: Downloading https://files.pythonhosted.org/packages/0f/90/3839bad1227871d98a534d7b74a33e84bcd74fe3a093b8eb33c5893079d1/mo_times-5.619.24125.tar.gz
+[2024-05-04 22:00:37] INFO root fetch - processPackages [hyjinx]: New version: [0.28.9] Old Version: [0.28.8]
+[2024-05-04 22:00:37] INFO root fetch - processPackages [hyjinx]: Downloading https://files.pythonhosted.org/packages/91/d7/f43c88b522705449485448baaa61e2974a89e3213c2febabe170f4d144de/hyjinx-0.28.8.tar.gz
+[2024-05-04 22:00:37] INFO root fetch - processPackages [mo-times]: Downloading https://files.pythonhosted.org/packages/73/f9/02440131d320dce316fd990526ba7fd0904491b8f330af34e415e98e9850/mo_times-5.623.24125.tar.gz
+[2024-05-04 22:00:37] INFO root fetch - processPackages [mo-times]: executing diffoscope
+[2024-05-04 22:00:37] INFO root fetch - processPackages [mo-times]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_times-5.619.24125.tar.gz tmp/mo_times-5.623.24125.tar.gz --markdown 20240504/m/mo-times/5.619.24125-5.623.24125/README.md --exclude *.pyd
+[2024-05-04 22:00:37] INFO root fetch - processPackages [hyjinx]: Downloading https://files.pythonhosted.org/packages/bc/20/3bbc29f72f1b59cfe3f831ef05d6a0cf629676f050ac2fef0d527b7ae046/hyjinx-0.28.9.tar.gz
+[2024-05-04 22:00:37] INFO root fetch - processPackages [hyjinx]: executing diffoscope
+[2024-05-04 22:00:37] INFO root fetch - processPackages [hyjinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyjinx-0.28.8.tar.gz tmp/hyjinx-0.28.9.tar.gz --markdown 20240504/h/hyjinx/0.28.8-0.28.9/README.md --exclude *.pyd
+[2024-05-04 22:00:38] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo_times-5.619.24125.tar.gz]
+[2024-05-04 22:00:38] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo_times-5.623.24125.tar.gz]
+[2024-05-04 22:00:38] INFO root fetch - main [MainThread]: End processing [mo-times]: success
+[2024-05-04 22:00:38] INFO root fetch - processPackages [hyjinx]: Remove: archive file [/home/abi/fetcher/tmp/hyjinx-0.28.8.tar.gz]
+[2024-05-04 22:00:38] INFO root fetch - processPackages [hyjinx]: Remove: archive file [/home/abi/fetcher/tmp/hyjinx-0.28.9.tar.gz]
+[2024-05-04 22:00:38] INFO root fetch - main [MainThread]: End processing [hyjinx]: success
+[2024-05-04 22:00:38] INFO root fetch - main [MainThread]: Store serial: [23060630]
