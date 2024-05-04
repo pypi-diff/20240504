@@ -10747,3 +10747,27 @@
 [2024-05-04 08:56:52] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-2.1.1.tar.gz]
 [2024-05-04 08:56:52] INFO root fetch - main [MainThread]: End processing [whatshow-phy-mod-otfs]: success
 [2024-05-04 08:56:52] INFO root fetch - main [MainThread]: Store serial: [23056348]
+[2024-05-04 08:58:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056348]
+[2024-05-04 08:59:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 08:59:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: item-matching
+[2024-05-04 08:59:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tree-sitter-php
+[2024-05-04 08:59:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-l10n-es-aeat-mod190
+[2024-05-04 08:59:01] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod190]: New version: [16.0.1.3.0.1] Old Version: [16.0.1.2.0]
+[2024-05-04 08:59:01] INFO root fetch - processPackages [item-matching]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 08:59:01] WARNING root fetch - processPackages [tree-sitter-php]: Skipping, unable to determine old version
+[2024-05-04 08:59:01] INFO root fetch - main [MainThread]: End processing [tree-sitter-php] error
+[2024-05-04 08:59:01] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod190]: Downloading https://files.pythonhosted.org/packages/37/86/386ef5bf56429bb34effc9b450f21218da8b9b34974f41b55598ef925dd1/odoo_addon_l10n_es_aeat_mod190-16.0.1.2.0-py3-none-any.whl
+[2024-05-04 08:59:01] INFO root fetch - processPackages [item-matching]: Downloading https://files.pythonhosted.org/packages/c1/eb/6af9341e91340108c6bd813fdbaf99df20b024ef720ba95fd98f5f9b1e67/item_matching-0.0.8.tar.gz
+[2024-05-04 08:59:02] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod190]: Downloading https://files.pythonhosted.org/packages/7e/fc/e29db9ec6daa2ab0cc6619ca93e5f7eab099fc365ff97de0fa2e1802de51/odoo_addon_l10n_es_aeat_mod190-16.0.1.3.0.1-py3-none-any.whl
+[2024-05-04 08:59:02] INFO root fetch - processPackages [item-matching]: Downloading https://files.pythonhosted.org/packages/d6/27/06995957de9e3e2dc832d765e63268da03fc82c05f5e99df1fad645a8853/item_matching-0.0.9.tar.gz
+[2024-05-04 08:59:02] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod190]: executing diffoscope
+[2024-05-04 08:59:02] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod190]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_aeat_mod190-16.0.1.2.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_aeat_mod190-16.0.1.3.0.1-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-l10n-es-aeat-mod190/16.0.1.2.0-16.0.1.3.0.1/README.md --exclude *.pyd
+[2024-05-04 08:59:02] INFO root fetch - processPackages [item-matching]: executing diffoscope
+[2024-05-04 08:59:02] INFO root fetch - processPackages [item-matching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/item_matching-0.0.8.tar.gz tmp/item_matching-0.0.9.tar.gz --markdown 20240504/i/item-matching/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 08:59:03] INFO root fetch - processPackages [item-matching]: Remove: archive file [/home/abi/fetcher/tmp/item_matching-0.0.8.tar.gz]
+[2024-05-04 08:59:03] INFO root fetch - processPackages [item-matching]: Remove: archive file [/home/abi/fetcher/tmp/item_matching-0.0.9.tar.gz]
+[2024-05-04 08:59:03] INFO root fetch - main [MainThread]: End processing [item-matching]: success
+[2024-05-04 08:59:03] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod190]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat_mod190-16.0.1.2.0-py3-none-any.whl.zip]
+[2024-05-04 08:59:03] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod190]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat_mod190-16.0.1.3.0.1-py3-none-any.whl.zip]
+[2024-05-04 08:59:03] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat-mod190]: success
+[2024-05-04 08:59:03] INFO root fetch - main [MainThread]: Store serial: [23056364]
