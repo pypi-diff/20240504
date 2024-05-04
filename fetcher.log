@@ -15572,3 +15572,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:36:00] INFO root fetch - processPackages [kodi-addon-checker]: Remove: archive file [/home/abi/fetcher/tmp/kodi-addon-checker-0.0.9.tar.gz]
 [2024-05-04 16:36:00] INFO root fetch - main [MainThread]: End processing [kodi-addon-checker]: success
 [2024-05-04 16:36:00] INFO root fetch - main [MainThread]: Store serial: [23058534]
+[2024-05-04 16:38:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058534]
+[2024-05-04 16:38:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 16:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipfabric-snow
+[2024-05-04 16:38:09] INFO root fetch - processPackages [ipfabric-snow]: New version: [0.1.0b3] Old Version: [0.1.0b2]
+[2024-05-04 16:38:09] INFO root fetch - processPackages [ipfabric-snow]: Downloading https://files.pythonhosted.org/packages/57/3d/eae7de27eb0e0dce752b36c1e0eac9029af0041867564e3a420c497ecdc2/ipfabric_snow-0.1.0b2.tar.gz
+[2024-05-04 16:38:09] INFO root fetch - processPackages [ipfabric-snow]: Downloading https://files.pythonhosted.org/packages/d5/34/fc06a291f987b141704728a40be791a3edb29d161209473a4ab1c884fbae/ipfabric_snow-0.1.0b3.tar.gz
+[2024-05-04 16:38:10] INFO root fetch - processPackages [ipfabric-snow]: executing diffoscope
+[2024-05-04 16:38:10] INFO root fetch - processPackages [ipfabric-snow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipfabric_snow-0.1.0b2.tar.gz tmp/ipfabric_snow-0.1.0b3.tar.gz --markdown 20240504/i/ipfabric-snow/0.1.0b2-0.1.0b3/README.md --exclude *.pyd
+[2024-05-04 16:38:10] INFO root fetch - processPackages [ipfabric-snow]: Remove: archive file [/home/abi/fetcher/tmp/ipfabric_snow-0.1.0b2.tar.gz]
+[2024-05-04 16:38:10] INFO root fetch - processPackages [ipfabric-snow]: Remove: archive file [/home/abi/fetcher/tmp/ipfabric_snow-0.1.0b3.tar.gz]
+[2024-05-04 16:38:10] INFO root fetch - main [MainThread]: End processing [ipfabric-snow]: success
+[2024-05-04 16:38:10] INFO root fetch - main [MainThread]: Store serial: [23058537]
