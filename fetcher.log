@@ -12568,3 +12568,27 @@
 [2024-05-04 11:55:14] WARNING root fetch - processPackages [sqlormx-generator]: Skipping, unable to determine old version
 [2024-05-04 11:55:14] INFO root fetch - main [MainThread]: End processing [sqlormx-generator] error
 [2024-05-04 11:55:14] INFO root fetch - main [MainThread]: Store serial: [23057342]
+[2024-05-04 11:57:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057342]
+[2024-05-04 11:57:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 11:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mns-common
+[2024-05-04 11:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlormx-generator
+[2024-05-04 11:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-05-04 11:57:22] WARNING root fetch - processPackages [sqlormx-generator]: Skipping, unable to determine old version
+[2024-05-04 11:57:22] INFO root fetch - main [MainThread]: End processing [sqlormx-generator] error
+[2024-05-04 11:57:22] INFO root fetch - processPackages [mns-common]: New version: [1.0.7.8] Old Version: [1.0.7.7]
+[2024-05-04 11:57:22] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-04 11:57:23] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/e7/01/b50dc9194aa8a9c40e6bad930825f1f6aac6e33efe0370c3e1facfd8bab8/mns_common-1.0.7.7.tar.gz
+[2024-05-04 11:57:23] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-04 11:57:23] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/f0/b4/deb9aa8c9d261f156b8b3f1e302b0cf1195b95025b572ed4d28d867e8372/mns_common-1.0.7.8.tar.gz
+[2024-05-04 11:57:23] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-04 11:57:23] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-04 11:57:23] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240504/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-04 11:57:23] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-05-04 11:57:23] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.0.7.7.tar.gz tmp/mns_common-1.0.7.8.tar.gz --markdown 20240504/m/mns-common/1.0.7.7-1.0.7.8/README.md --exclude *.pyd
+[2024-05-04 11:57:24] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-04 11:57:24] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-04 11:57:24] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-04 11:57:24] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.7.tar.gz]
+[2024-05-04 11:57:24] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.8.tar.gz]
+[2024-05-04 11:57:24] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-05-04 11:57:24] INFO root fetch - main [MainThread]: Store serial: [23057350]
