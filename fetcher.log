@@ -6591,3 +6591,69 @@
 [2024-05-04 03:24:07] INFO root fetch - processPackages [koku-nise]: Remove: archive file [/home/abi/fetcher/tmp/koku-nise-4.4.9.tar.gz]
 [2024-05-04 03:24:07] INFO root fetch - main [MainThread]: End processing [koku-nise]: success
 [2024-05-04 03:24:07] INFO root fetch - main [MainThread]: Store serial: [23054196]
+[2024-05-04 03:26:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054196]
+[2024-05-04 03:26:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 03:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stable-ts-whisperless
+[2024-05-04 03:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edgegap-consul
+[2024-05-04 03:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edgegap-database
+[2024-05-04 03:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edgegap-time
+[2024-05-04 03:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ipyslides
+[2024-05-04 03:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onediff
+[2024-05-04 03:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: onediffx
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-consul]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-database]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-05-04 03:26:16] INFO root fetch - processPackages [onediffx]: New version: [1.0.0.dev202405030127] Old Version: [1.0.0.dev202405020126]
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-time]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-04 03:26:16] INFO root fetch - processPackages [stable-ts-whisperless]: New version: [2.17.1] Old Version: [2.17.0]
+[2024-05-04 03:26:16] INFO root fetch - processPackages [onediff]: New version: [1.0.0.dev202405030127] Old Version: [1.0.0.dev202405020126]
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-consul]: Downloading https://files.pythonhosted.org/packages/09/33/fa86efcad4e274be124796ba8af3fac3c2d8379b061b85bceb648c0c9ffb/edgegap_consul-1.6.1.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [ipyslides]: New version: [3.7.5] Old Version: [3.7.4]
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-time]: Downloading https://files.pythonhosted.org/packages/aa/cc/0ca6d1f3b2192fdabf1746ee596ec5308e2546857b9c90f503b17d45fd56/edgegap_time-1.1.0.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [stable-ts-whisperless]: Downloading https://files.pythonhosted.org/packages/a1/bb/54ed84ea6c3857495809b166385233da649e14a1ee22dee7c267becb0ff5/stable-ts-whisperless-2.17.0.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/a2/54/2dd8b04584af8c1b1e5eed3c1ee6c498bbf24ae453f1f3e1826ff91430d0/onediff-1.0.0.dev202405020126.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-database]: Downloading https://files.pythonhosted.org/packages/66/26/22030a509f046c0abe837510f0ab6d6a11af309f7a0a0c05d52687fcc476/edgegap_database-1.6.0.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/88/1f/ea4e121de44e9b74823e0cf48c56f21decf7e57f653442fe0880b6611abd/onediffx-1.0.0.dev202405020126.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/1f/61/8f90681efb6d43fdd4f06dc3bd1e0086ff798e9d79adc00feb20833a786a/ipyslides-3.7.4.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-consul]: Downloading https://files.pythonhosted.org/packages/31/68/71812bfd6fd929007fbf9c07188e663e9d5e8eda4de3fe6ed0dd28244c9a/edgegap_consul-1.6.2.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-time]: Downloading https://files.pythonhosted.org/packages/8f/38/d2685a5e9b1a938e20e6df98b49c19f1771421c7fab549ca05e4f6e63dc4/edgegap_time-1.1.1.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [stable-ts-whisperless]: Downloading https://files.pythonhosted.org/packages/69/0f/e81523dfcadada851967ac5d341dbf048ee91f86d1865b684767f2e017b6/stable-ts-whisperless-2.17.1.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-database]: Downloading https://files.pythonhosted.org/packages/a0/b5/b4809c37c6a396525f8d1d505034f51dc8a2702d3bad202706d0c3f1a36a/edgegap_database-1.6.1.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/fd/9c/cbf00a8ac449ad36aafea2dc14513ecb57d73988063d3d4cfc95b4790147/onediff-1.0.0.dev202405030127.tar.gz
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-consul]: executing diffoscope
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-consul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_consul-1.6.1.tar.gz tmp/edgegap_consul-1.6.2.tar.gz --markdown 20240504/e/edgegap-consul/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-time]: executing diffoscope
+[2024-05-04 03:26:16] INFO root fetch - processPackages [edgegap-time]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_time-1.1.0.tar.gz tmp/edgegap_time-1.1.1.tar.gz --markdown 20240504/e/edgegap-time/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-04 03:26:17] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/d9/70/3ca4cd73a03342ddd2d732188cafb59e4b80db41f3c6033bf508ee7455bb/onediffx-1.0.0.dev202405030127.tar.gz
+[2024-05-04 03:26:17] INFO root fetch - processPackages [edgegap-database]: executing diffoscope
+[2024-05-04 03:26:17] INFO root fetch - processPackages [edgegap-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_database-1.6.0.tar.gz tmp/edgegap_database-1.6.1.tar.gz --markdown 20240504/e/edgegap-database/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-05-04 03:26:17] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/a3/02/2d6f0689915984f59d8b3a240f8578c6f14c9b81f32c56f93a03371bf496/ipyslides-3.7.5.tar.gz
+[2024-05-04 03:26:17] INFO root fetch - processPackages [stable-ts-whisperless]: executing diffoscope
+[2024-05-04 03:26:17] INFO root fetch - processPackages [stable-ts-whisperless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stable-ts-whisperless-2.17.0.tar.gz tmp/stable-ts-whisperless-2.17.1.tar.gz --markdown 20240504/s/stable-ts-whisperless/2.17.0-2.17.1/README.md --exclude *.pyd
+[2024-05-04 03:26:17] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-05-04 03:26:17] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-1.0.0.dev202405020126.tar.gz tmp/onediff-1.0.0.dev202405030127.tar.gz --markdown 20240504/o/onediff/1.0.0.dev202405020126-1.0.0.dev202405030127/README.md --exclude *.pyd
+[2024-05-04 03:26:17] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-05-04 03:26:17] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.0.0.dev202405020126.tar.gz tmp/onediffx-1.0.0.dev202405030127.tar.gz --markdown 20240504/o/onediffx/1.0.0.dev202405020126-1.0.0.dev202405030127/README.md --exclude *.pyd
+[2024-05-04 03:26:17] INFO root fetch - processPackages [ipyslides]: executing diffoscope
+[2024-05-04 03:26:17] INFO root fetch - processPackages [ipyslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyslides-3.7.4.tar.gz tmp/ipyslides-3.7.5.tar.gz --markdown 20240504/i/ipyslides/3.7.4-3.7.5/README.md --exclude *.pyd
+[2024-05-04 03:26:17] INFO root fetch - processPackages [edgegap-time]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_time-1.1.0.tar.gz]
+[2024-05-04 03:26:17] INFO root fetch - processPackages [edgegap-time]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_time-1.1.1.tar.gz]
+[2024-05-04 03:26:17] INFO root fetch - main [MainThread]: End processing [edgegap-time]: success
+[2024-05-04 03:26:17] INFO root fetch - processPackages [edgegap-consul]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_consul-1.6.1.tar.gz]
+[2024-05-04 03:26:17] INFO root fetch - processPackages [edgegap-consul]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_consul-1.6.2.tar.gz]
+[2024-05-04 03:26:17] INFO root fetch - main [MainThread]: End processing [edgegap-consul]: success
+[2024-05-04 03:26:17] INFO root fetch - processPackages [edgegap-database]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_database-1.6.0.tar.gz]
+[2024-05-04 03:26:17] INFO root fetch - processPackages [edgegap-database]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_database-1.6.1.tar.gz]
+[2024-05-04 03:26:17] INFO root fetch - main [MainThread]: End processing [edgegap-database]: success
+[2024-05-04 03:26:17] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202405020126.tar.gz]
+[2024-05-04 03:26:17] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202405030127.tar.gz]
+[2024-05-04 03:26:17] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-05-04 03:26:17] INFO root fetch - processPackages [stable-ts-whisperless]: Remove: archive file [/home/abi/fetcher/tmp/stable-ts-whisperless-2.17.0.tar.gz]
+[2024-05-04 03:26:17] INFO root fetch - processPackages [stable-ts-whisperless]: Remove: archive file [/home/abi/fetcher/tmp/stable-ts-whisperless-2.17.1.tar.gz]
+[2024-05-04 03:26:17] INFO root fetch - main [MainThread]: End processing [stable-ts-whisperless]: success
+[2024-05-04 03:26:18] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202405020126.tar.gz]
+[2024-05-04 03:26:18] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202405030127.tar.gz]
+[2024-05-04 03:26:18] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-05-04 03:26:18] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.7.4.tar.gz]
+[2024-05-04 03:26:18] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.7.5.tar.gz]
+[2024-05-04 03:26:18] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
+[2024-05-04 03:26:18] INFO root fetch - main [MainThread]: Store serial: [23054270]
