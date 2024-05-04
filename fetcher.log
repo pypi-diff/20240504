@@ -8198,3 +8198,27 @@
 [2024-05-04 05:04:52] INFO root fetch - processPackages [fxn]: Remove: archive file [/home/abi/fetcher/tmp/fxn-0.0.9.tar.gz]
 [2024-05-04 05:04:52] INFO root fetch - main [MainThread]: End processing [fxn]: success
 [2024-05-04 05:04:52] INFO root fetch - main [MainThread]: Store serial: [23055184]
+[2024-05-04 05:07:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055184]
+[2024-05-04 05:07:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 05:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-product-fao-fishing
+[2024-05-04 05:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transactify
+[2024-05-04 05:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rollercoaster
+[2024-05-04 05:07:11] WARNING root fetch - processPackages [transactify]: Skipping, unable to determine old version
+[2024-05-04 05:07:11] INFO root fetch - main [MainThread]: End processing [transactify] error
+[2024-05-04 05:07:11] INFO root fetch - processPackages [rollercoaster]: New version: [2.1.4] Old Version: [2.1.3]
+[2024-05-04 05:07:11] INFO root fetch - processPackages [odoo-addon-product-fao-fishing]: New version: [17.0.1.0.0.4] Old Version: [17.0.1.0.0.2]
+[2024-05-04 05:07:11] INFO root fetch - processPackages [rollercoaster]: Downloading https://files.pythonhosted.org/packages/3d/4d/7656c5fa0b7649a43f44b1bb8a6c84bf88af782700549b94ae501b0d9c6f/rollercoaster-2.1.3.tar.gz
+[2024-05-04 05:07:11] INFO root fetch - processPackages [odoo-addon-product-fao-fishing]: Downloading https://files.pythonhosted.org/packages/f9/f8/2357e1e2d4d7a3ba418bc519bc2244f645ff1eec8229b5f5bf224216c329/odoo_addon_product_fao_fishing-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-04 05:07:11] INFO root fetch - processPackages [rollercoaster]: Downloading https://files.pythonhosted.org/packages/22/b3/2ade0c274065d5350a045e2e5b796356dc0a3e38f2bf25077d529659309a/rollercoaster-2.1.4.tar.gz
+[2024-05-04 05:07:11] INFO root fetch - processPackages [odoo-addon-product-fao-fishing]: Downloading https://files.pythonhosted.org/packages/96/26/a94b3909593c665d58d8b302cfb4ab3e91f0bf33f9268d6d531aea39d26c/odoo_addon_product_fao_fishing-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-04 05:07:11] INFO root fetch - processPackages [odoo-addon-product-fao-fishing]: executing diffoscope
+[2024-05-04 05:07:11] INFO root fetch - processPackages [odoo-addon-product-fao-fishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_fao_fishing-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_product_fao_fishing-17.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-product-fao-fishing/17.0.1.0.0.2-17.0.1.0.0.4/README.md --exclude *.pyd
+[2024-05-04 05:07:12] INFO root fetch - processPackages [rollercoaster]: executing diffoscope
+[2024-05-04 05:07:12] INFO root fetch - processPackages [rollercoaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rollercoaster-2.1.3.tar.gz tmp/rollercoaster-2.1.4.tar.gz --markdown 20240504/r/rollercoaster/2.1.3-2.1.4/README.md --exclude *.pyd
+[2024-05-04 05:07:12] INFO root fetch - processPackages [odoo-addon-product-fao-fishing]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_fao_fishing-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-04 05:07:12] INFO root fetch - processPackages [odoo-addon-product-fao-fishing]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_fao_fishing-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-04 05:07:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-fao-fishing]: success
+[2024-05-04 05:07:13] INFO root fetch - processPackages [rollercoaster]: Remove: archive file [/home/abi/fetcher/tmp/rollercoaster-2.1.3.tar.gz]
+[2024-05-04 05:07:13] INFO root fetch - processPackages [rollercoaster]: Remove: archive file [/home/abi/fetcher/tmp/rollercoaster-2.1.4.tar.gz]
+[2024-05-04 05:07:13] INFO root fetch - main [MainThread]: End processing [rollercoaster]: success
+[2024-05-04 05:07:13] INFO root fetch - main [MainThread]: Store serial: [23055200]
