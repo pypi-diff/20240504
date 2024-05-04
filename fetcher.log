@@ -9439,3 +9439,41 @@
 [2024-05-04 07:04:03] INFO root fetch - processPackages [fast-dev-cli]: Remove: archive file [/home/abi/fetcher/tmp/fast_dev_cli-0.7.1.tar.gz]
 [2024-05-04 07:04:03] INFO root fetch - main [MainThread]: End processing [fast-dev-cli]: success
 [2024-05-04 07:04:03] INFO root fetch - main [MainThread]: Store serial: [23055784]
+[2024-05-04 07:06:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055784]
+[2024-05-04 07:06:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 07:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xnippy
+[2024-05-04 07:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fs-attestation-safe-eth-py
+[2024-05-04 07:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-openupgrade-scripts
+[2024-05-04 07:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rapid-pe
+[2024-05-04 07:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-master
+[2024-05-04 07:06:12] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240503.18.20.562541] Old Version: [20240502.7.44.730492]
+[2024-05-04 07:06:12] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.2.dev20240503] Old Version: [0.1.2.dev20240502]
+[2024-05-04 07:06:12] INFO root fetch - processPackages [fs-attestation-safe-eth-py]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-04 07:06:12] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/ea/2c/8e8cc302ba3bda99879586a6a231d2f8458117f950f1779c4d45f9f1efe7/certora-cli-alpha-master-20240502.7.44.730492.tar.gz
+[2024-05-04 07:06:12] WARNING root fetch - processPackages [xnippy]: Skipping, unable to determine old version
+[2024-05-04 07:06:12] INFO root fetch - main [MainThread]: End processing [xnippy] error
+[2024-05-04 07:06:12] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: New version: [17.0.1.0.1.2] Old Version: [17.0.1.0.1.1]
+[2024-05-04 07:06:12] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/9a/a3/bcef222d66ba7b4173950fcc18d77396066c440e77cb0048fc7dcb237e09/rapid_pe-0.1.2.dev20240502.tar.gz
+[2024-05-04 07:06:12] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14545153>=10485760
+[2024-05-04 07:06:12] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-05-04 07:06:12] INFO root fetch - processPackages [fs-attestation-safe-eth-py]: Downloading https://files.pythonhosted.org/packages/27/b6/8a234d35ce97db65c90411be407cc3b4cb6881c26750d69dbcaa2577d598/fs-attestation-safe-eth-py-1.0.2.tar.gz
+[2024-05-04 07:06:12] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/db/05/04688d4f82370e4bae4a14ef6020e82e09ade6c98c3acef20837d8590431/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl
+[2024-05-04 07:06:13] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/6d/5d/b4649b94a48df4a5913d3e04e966f3d42117c9f350d5960ca7bc5ba8f2f9/rapid_pe-0.1.2.dev20240503.tar.gz
+[2024-05-04 07:06:13] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2024-05-04 07:06:13] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.2.dev20240502.tar.gz tmp/rapid_pe-0.1.2.dev20240503.tar.gz --markdown 20240504/r/rapid-pe/0.1.2.dev20240502-0.1.2.dev20240503/README.md --exclude *.pyd
+[2024-05-04 07:06:13] INFO root fetch - processPackages [fs-attestation-safe-eth-py]: Downloading https://files.pythonhosted.org/packages/b2/ab/e0ec909135dfc301356f12e97aee9903aa2049cfb9ac07f8ea89ad8e42ae/fs-attestation-safe-eth-py-1.0.3.tar.gz
+[2024-05-04 07:06:13] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/2e/07/cd2a4ed7796c54648aaa9877e518fbf9fbf32efb82f079e0a29a9bc2c6a8/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl
+[2024-05-04 07:06:13] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: executing diffoscope
+[2024-05-04 07:06:13] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-openupgrade-scripts/17.0.1.0.1.1-17.0.1.0.1.2/README.md --exclude *.pyd
+[2024-05-04 07:06:13] INFO root fetch - processPackages [fs-attestation-safe-eth-py]: executing diffoscope
+[2024-05-04 07:06:13] INFO root fetch - processPackages [fs-attestation-safe-eth-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fs-attestation-safe-eth-py-1.0.2.tar.gz tmp/fs-attestation-safe-eth-py-1.0.3.tar.gz --markdown 20240504/f/fs-attestation-safe-eth-py/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-04 07:06:13] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240502.tar.gz]
+[2024-05-04 07:06:13] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240503.tar.gz]
+[2024-05-04 07:06:13] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2024-05-04 07:06:14] INFO root fetch - processPackages [fs-attestation-safe-eth-py]: Remove: archive file [/home/abi/fetcher/tmp/fs-attestation-safe-eth-py-1.0.2.tar.gz]
+[2024-05-04 07:06:14] INFO root fetch - processPackages [fs-attestation-safe-eth-py]: Remove: archive file [/home/abi/fetcher/tmp/fs-attestation-safe-eth-py-1.0.3.tar.gz]
+[2024-05-04 07:06:14] INFO root fetch - main [MainThread]: End processing [fs-attestation-safe-eth-py]: success
+[2024-05-04 07:06:15] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip]
+[2024-05-04 07:06:15] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-05-04 07:06:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
+[2024-05-04 07:06:15] INFO root fetch - main [MainThread]: Store serial: [23055801]
