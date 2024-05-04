@@ -16700,3 +16700,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:09:36] INFO root fetch - processPackages [jarvis-tools]: Remove: archive file [/home/abi/fetcher/tmp/jarvis_tools-2024.4.20.tar.gz]
 [2024-05-04 18:09:36] INFO root fetch - main [MainThread]: End processing [jarvis-tools]: success
 [2024-05-04 18:09:36] INFO root fetch - main [MainThread]: Store serial: [23059177]
+[2024-05-04 18:11:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059177]
+[2024-05-04 18:11:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 18:11:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mikrotik-bt5
+[2024-05-04 18:11:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: copy-spotter
+[2024-05-04 18:11:44] INFO root fetch - processPackages [mikrotik-bt5]: New version: [0.0.2b3] Old Version: [0.0.2b2]
+[2024-05-04 18:11:44] INFO root fetch - processPackages [copy-spotter]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 18:11:45] INFO root fetch - processPackages [mikrotik-bt5]: Downloading https://files.pythonhosted.org/packages/84/3f/8625d0bd47c8546faa1680be9dc36f2c74e2f56529aa91599a3f0f7005e4/mikrotik-bt5-0.0.2b2.tar.gz
+[2024-05-04 18:11:45] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/f0/77/3e3348701a345eb7881da0ffa91811cd425cf43a95ab7dd9387a41301032/copy-spotter-0.1.8.tar.gz
+[2024-05-04 18:11:45] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/45/b3/c6846a1e8f941cc094cd908f537068e64c6e0c6ad32b6c4dec297eabcd13/copy-spotter-0.1.9.tar.gz
+[2024-05-04 18:11:45] INFO root fetch - processPackages [mikrotik-bt5]: Downloading https://files.pythonhosted.org/packages/87/96/d240cba02cb8a2d87923ddcbf5524f3ce8d126412f35b96cd80ceb918128/mikrotik-bt5-0.0.2b3.tar.gz
+[2024-05-04 18:11:45] INFO root fetch - processPackages [mikrotik-bt5]: executing diffoscope
+[2024-05-04 18:11:45] INFO root fetch - processPackages [mikrotik-bt5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mikrotik-bt5-0.0.2b2.tar.gz tmp/mikrotik-bt5-0.0.2b3.tar.gz --markdown 20240504/m/mikrotik-bt5/0.0.2b2-0.0.2b3/README.md --exclude *.pyd
+[2024-05-04 18:11:45] INFO root fetch - processPackages [copy-spotter]: executing diffoscope
+[2024-05-04 18:11:45] INFO root fetch - processPackages [copy-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copy-spotter-0.1.8.tar.gz tmp/copy-spotter-0.1.9.tar.gz --markdown 20240504/c/copy-spotter/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 18:11:46] INFO root fetch - processPackages [mikrotik-bt5]: Remove: archive file [/home/abi/fetcher/tmp/mikrotik-bt5-0.0.2b2.tar.gz]
+[2024-05-04 18:11:46] INFO root fetch - processPackages [mikrotik-bt5]: Remove: archive file [/home/abi/fetcher/tmp/mikrotik-bt5-0.0.2b3.tar.gz]
+[2024-05-04 18:11:46] INFO root fetch - main [MainThread]: End processing [mikrotik-bt5]: success
+[2024-05-04 18:11:46] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.8.tar.gz]
+[2024-05-04 18:11:46] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.9.tar.gz]
+[2024-05-04 18:11:46] INFO root fetch - main [MainThread]: End processing [copy-spotter]: success
+[2024-05-04 18:11:46] INFO root fetch - main [MainThread]: Store serial: [23059182]
