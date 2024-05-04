@@ -8921,3 +8921,17 @@
 [2024-05-04 06:06:10] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
 [2024-05-04 06:06:10] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
 [2024-05-04 06:06:10] INFO root fetch - main [MainThread]: Store serial: [23055492]
+[2024-05-04 06:08:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055492]
+[2024-05-04 06:08:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 06:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netron
+[2024-05-04 06:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gemini-code-generator
+[2024-05-04 06:08:33] INFO root fetch - processPackages [netron]: New version: [7.6.4] Old Version: [7.6.3]
+[2024-05-04 06:08:33] WARNING root fetch - processPackages [gemini-code-generator]: Skipping, unable to determine old version
+[2024-05-04 06:08:33] INFO root fetch - main [MainThread]: End processing [gemini-code-generator] error
+[2024-05-04 06:08:33] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/8a/a8/91746dc337d38fea527fc62c297e1aec498d12101acc9e2db4637cd5fc4b/netron-7.6.3-py3-none-any.whl
+[2024-05-04 06:08:34] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/92/13/1b53403785703c4d1fa3e7301d9116d330e7260d94c1f571f80b271f810b/netron-7.6.4-py3-none-any.whl
+[2024-05-04 06:08:34] INFO root fetch - processPackages [netron]: executing diffoscope
+[2024-05-04 06:08:34] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-7.6.3-py3-none-any.whl.zip tmp/netron-7.6.4-py3-none-any.whl.zip --markdown 20240504/n/netron/7.6.3-7.6.4/README.md --exclude *.pyd
+[2024-05-04 06:11:34] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2024-05-04 06:11:34] INFO root fetch - main [MainThread]: End processing [netron] error
+[2024-05-04 06:11:34] INFO root fetch - main [MainThread]: Store serial: [23055501]
