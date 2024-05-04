@@ -17355,3 +17355,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:59:30] INFO root fetch - processPackages [jklib]: Remove: archive file [/home/abi/fetcher/tmp/jklib-5.1.1.tar.gz]
 [2024-05-04 18:59:30] INFO root fetch - main [MainThread]: End processing [jklib]: success
 [2024-05-04 18:59:30] INFO root fetch - main [MainThread]: Store serial: [23059418]
+[2024-05-04 19:01:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059418]
+[2024-05-04 19:01:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 19:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aery
+[2024-05-04 19:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: miner-ai-beta
+[2024-05-04 19:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: name-generator-nicomp
+[2024-05-04 19:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: meta-reid
+[2024-05-04 19:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gcp-quick-utils
+[2024-05-04 19:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytest_playwright_async
+[2024-05-04 19:01:38] INFO root fetch - processPackages [name-generator-nicomp]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-04 19:01:38] INFO root fetch - processPackages [miner-ai-beta]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 19:01:38] INFO root fetch - processPackages [meta-reid]: New version: [3.9.25] Old Version: [3.9.24]
+[2024-05-04 19:01:38] WARNING root fetch - processPackages [gcp-quick-utils]: Skipping, unable to determine old version
+[2024-05-04 19:01:38] INFO root fetch - main [MainThread]: End processing [gcp-quick-utils] error
+[2024-05-04 19:01:38] WARNING root fetch - processPackages [aery]: Skipping, unable to determine old version
+[2024-05-04 19:01:38] INFO root fetch - main [MainThread]: End processing [aery] error
+[2024-05-04 19:01:38] INFO root fetch - processPackages [pytest_playwright_async]: New version: [0.2.0] Old Version: [0.12.0]
+[2024-05-04 19:01:38] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/e7/7d/7b558d8f7bb0ddfd215d7f3c3799d22620396a5b808d8adfd9ec24d58bd4/name_generator_nicomp-1.0.8.tar.gz
+[2024-05-04 19:01:38] INFO root fetch - processPackages [meta-reid]: Downloading https://files.pythonhosted.org/packages/be/37/4bc2af82f7a6694d1d5f0412ef1c1d453e5f5b822d288dfc47369bcd5eed/meta-reid-3.9.24.tar.gz
+[2024-05-04 19:01:38] INFO root fetch - processPackages [miner-ai-beta]: Downloading https://files.pythonhosted.org/packages/76/9c/6b92caea198ce3157966ed70b1a55ae8347e43fa1eea734115cb198b550e/miner_ai_beta-0.1.0.tar.gz
+[2024-05-04 19:01:38] INFO root fetch - processPackages [pytest_playwright_async]: Downloading https://files.pythonhosted.org/packages/00/da/37200764e9cc501dbff896cf3f636f49fa26bc33e3facd489fe989928415/pytest_playwright_async-0.12.0.tar.gz
+[2024-05-04 19:01:38] INFO root fetch - processPackages [meta-reid]: Downloading https://files.pythonhosted.org/packages/2e/0e/75c11e00e2da59379bb78632b3c8cc13c552ae28bbaeba905fce5a9c75c0/meta-reid-3.9.25.tar.gz
+[2024-05-04 19:01:39] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/37/85/e34da1024973a21b080add37a4c9904943e54217e4cef99b089d1fb07ba1/name_generator_nicomp-1.0.9.tar.gz
+[2024-05-04 19:01:39] INFO root fetch - processPackages [meta-reid]: executing diffoscope
+[2024-05-04 19:01:39] INFO root fetch - processPackages [meta-reid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta-reid-3.9.24.tar.gz tmp/meta-reid-3.9.25.tar.gz --markdown 20240504/m/meta-reid/3.9.24-3.9.25/README.md --exclude *.pyd
+[2024-05-04 19:01:39] INFO root fetch - processPackages [miner-ai-beta]: Downloading https://files.pythonhosted.org/packages/5e/86/8d8267baab63d10b926ee0324a9aff9a0edb9cba88a3e63da1abda6b6f93/miner_ai_beta-0.1.1.tar.gz
+[2024-05-04 19:01:39] INFO root fetch - processPackages [name-generator-nicomp]: executing diffoscope
+[2024-05-04 19:01:39] INFO root fetch - processPackages [name-generator-nicomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/name_generator_nicomp-1.0.8.tar.gz tmp/name_generator_nicomp-1.0.9.tar.gz --markdown 20240504/n/name-generator-nicomp/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-04 19:01:39] INFO root fetch - processPackages [miner-ai-beta]: executing diffoscope
+[2024-05-04 19:01:39] INFO root fetch - processPackages [miner-ai-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miner_ai_beta-0.1.0.tar.gz tmp/miner_ai_beta-0.1.1.tar.gz --markdown 20240504/m/miner-ai-beta/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 19:01:39] INFO root fetch - processPackages [pytest_playwright_async]: Downloading https://files.pythonhosted.org/packages/f4/51/6e51f1e694baa5d7fc0969e33841f63c1c72c855ed114e2d4ae43b8ac640/pytest-playwright-async-0.2.0.tar.gz
+[2024-05-04 19:01:39] INFO root fetch - processPackages [miner-ai-beta]: Remove: archive file [/home/abi/fetcher/tmp/miner_ai_beta-0.1.0.tar.gz]
+[2024-05-04 19:01:39] INFO root fetch - processPackages [miner-ai-beta]: Remove: archive file [/home/abi/fetcher/tmp/miner_ai_beta-0.1.1.tar.gz]
+[2024-05-04 19:01:39] INFO root fetch - main [MainThread]: End processing [miner-ai-beta]: success
+[2024-05-04 19:01:39] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.8.tar.gz]
+[2024-05-04 19:01:39] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.9.tar.gz]
+[2024-05-04 19:01:39] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp]: success
+[2024-05-04 19:01:39] INFO root fetch - processPackages [meta-reid]: Remove: archive file [/home/abi/fetcher/tmp/meta-reid-3.9.24.tar.gz]
+[2024-05-04 19:01:39] INFO root fetch - processPackages [meta-reid]: Remove: archive file [/home/abi/fetcher/tmp/meta-reid-3.9.25.tar.gz]
+[2024-05-04 19:01:39] INFO root fetch - main [MainThread]: End processing [meta-reid]: success
+[2024-05-04 19:01:39] INFO root fetch - processPackages [pytest_playwright_async]: executing diffoscope
+[2024-05-04 19:01:39] INFO root fetch - processPackages [pytest_playwright_async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_playwright_async-0.12.0.tar.gz tmp/pytest-playwright-async-0.2.0.tar.gz --markdown 20240504/p/pytest_playwright_async/0.12.0-0.2.0/README.md --exclude *.pyd
+[2024-05-04 19:01:40] INFO root fetch - processPackages [pytest_playwright_async]: Remove: archive file [/home/abi/fetcher/tmp/pytest_playwright_async-0.12.0.tar.gz]
+[2024-05-04 19:01:40] INFO root fetch - processPackages [pytest_playwright_async]: Remove: archive file [/home/abi/fetcher/tmp/pytest-playwright-async-0.2.0.tar.gz]
+[2024-05-04 19:01:40] INFO root fetch - main [MainThread]: End processing [pytest_playwright_async]: success
+[2024-05-04 19:01:40] INFO root fetch - main [MainThread]: Store serial: [23059443]
