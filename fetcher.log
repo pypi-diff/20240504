@@ -16619,3 +16619,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:03:04] INFO root fetch - processPackages [mo-json]: Remove: archive file [/home/abi/fetcher/tmp/mo_json-6.617.24125.tar.gz]
 [2024-05-04 18:03:04] INFO root fetch - main [MainThread]: End processing [mo-json]: success
 [2024-05-04 18:03:04] INFO root fetch - main [MainThread]: Store serial: [23059153]
+[2024-05-04 18:05:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059153]
+[2024-05-04 18:05:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 18:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: entity-recognition-service
+[2024-05-04 18:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dragonfly-schema
+[2024-05-04 18:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: honeybee-core
+[2024-05-04 18:05:13] INFO root fetch - processPackages [entity-recognition-service]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 18:05:13] INFO root fetch - processPackages [dragonfly-schema]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-05-04 18:05:13] INFO root fetch - processPackages [honeybee-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-05-04 18:05:13] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/23/18/7145326a6ea0566c2c41ba0bf3822fffc6b4da314a426433179c4724bda3/entity_recognition_service-0.1.8.tar.gz
+[2024-05-04 18:05:14] INFO root fetch - processPackages [honeybee-core]: Downloading https://files.pythonhosted.org/packages/25/88/7ed0aeb6b1cf0d4f003a3d3e96312cea0aff67017d50c5c9cd245c04f048/honeybee-core-1.8.1.tar.gz
+[2024-05-04 18:05:14] INFO root fetch - processPackages [dragonfly-schema]: Downloading https://files.pythonhosted.org/packages/aa/e2/bcac8ea300eeeb0279f6f2514a0acbac6333a1faf1455af1c2be2ef191a5/dragonfly-schema-1.9.8.tar.gz
+[2024-05-04 18:05:14] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/86/75/a994a9af22b16241a2b38cb3314e7d2457d9aaf73d35a5b70823d8c8ce18/entity_recognition_service-0.1.9.tar.gz
+[2024-05-04 18:05:14] INFO root fetch - processPackages [entity-recognition-service]: executing diffoscope
+[2024-05-04 18:05:14] INFO root fetch - processPackages [entity-recognition-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entity_recognition_service-0.1.8.tar.gz tmp/entity_recognition_service-0.1.9.tar.gz --markdown 20240504/e/entity-recognition-service/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 18:05:14] INFO root fetch - processPackages [honeybee-core]: Downloading https://files.pythonhosted.org/packages/d8/9b/f2a81f9cdf6c2556a083efabd9c0d69bdf3eb0acefed3b55c9d5ed1bcb15/honeybee-core-1.9.0.tar.gz
+[2024-05-04 18:05:14] INFO root fetch - processPackages [honeybee-core]: executing diffoscope
+[2024-05-04 18:05:14] INFO root fetch - processPackages [honeybee-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-core-1.8.1.tar.gz tmp/honeybee-core-1.9.0.tar.gz --markdown 20240504/h/honeybee-core/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-05-04 18:05:14] INFO root fetch - processPackages [dragonfly-schema]: Downloading https://files.pythonhosted.org/packages/9c/5f/ed2f74b91cc0705cb8b21da19bcd6de5277af21290a49695e0e464c4ef08/dragonfly-schema-1.9.9.tar.gz
+[2024-05-04 18:05:14] INFO root fetch - processPackages [dragonfly-schema]: executing diffoscope
+[2024-05-04 18:05:14] INFO root fetch - processPackages [dragonfly-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-schema-1.9.8.tar.gz tmp/dragonfly-schema-1.9.9.tar.gz --markdown 20240504/d/dragonfly-schema/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-05-04 18:05:14] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.8.tar.gz]
+[2024-05-04 18:05:14] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.9.tar.gz]
+[2024-05-04 18:05:14] INFO root fetch - main [MainThread]: End processing [entity-recognition-service]: success
+[2024-05-04 18:05:15] INFO root fetch - processPackages [honeybee-core]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-core-1.8.1.tar.gz]
+[2024-05-04 18:05:15] INFO root fetch - processPackages [honeybee-core]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-core-1.9.0.tar.gz]
+[2024-05-04 18:05:15] INFO root fetch - main [MainThread]: End processing [honeybee-core]: success
+[2024-05-04 18:05:15] INFO root fetch - processPackages [dragonfly-schema]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-schema-1.9.8.tar.gz]
+[2024-05-04 18:05:15] INFO root fetch - processPackages [dragonfly-schema]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-schema-1.9.9.tar.gz]
+[2024-05-04 18:05:15] INFO root fetch - main [MainThread]: End processing [dragonfly-schema]: success
+[2024-05-04 18:05:15] INFO root fetch - main [MainThread]: Store serial: [23059162]
