@@ -9769,3 +9769,56 @@
 [2024-05-04 07:28:08] INFO root fetch - processPackages [odoo14-addon-purchase-invoice-plan]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_purchase_invoice_plan-14.0.1.3.2.dev4-py3-none-any.whl.zip]
 [2024-05-04 07:28:08] INFO root fetch - main [MainThread]: End processing [odoo14-addon-purchase-invoice-plan]: success
 [2024-05-04 07:28:08] INFO root fetch - main [MainThread]: Store serial: [23055895]
+[2024-05-04 07:30:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055895]
+[2024-05-04 07:30:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 07:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feed2fedi
+[2024-05-04 07:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-purchase-stock-tier-validation
+[2024-05-04 07:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: capymoa
+[2024-05-04 07:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CTDFjorder
+[2024-05-04 07:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crazy-thursday
+[2024-05-04 07:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytilpack
+[2024-05-04 07:30:16] INFO root fetch - processPackages [pytilpack]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 07:30:16] INFO root fetch - processPackages [CTDFjorder]: New version: [0.0.34] Old Version: [0.0.33]
+[2024-05-04 07:30:16] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.4.0] Old Version: [2024.5.3.1]
+[2024-05-04 07:30:17] INFO root fetch - processPackages [odoo14-addon-purchase-stock-tier-validation]: New version: [14.0.1.0.1.dev4] Old Version: [14.0.1.0.1.dev3]
+[2024-05-04 07:30:17] INFO root fetch - processPackages [capymoa]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-04 07:30:17] INFO root fetch - processPackages [feed2fedi]: New version: [3.1.0] Old Version: [3.0.0]
+[2024-05-04 07:30:17] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/76/6e/3a25ec34b249961f6c53814b6a66dc10e32492b5176d7dbb93854dd7d871/crazy_thursday-2024.5.3.1.tar.gz
+[2024-05-04 07:30:17] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/e6/24/d846e6247be16b67cc5aecdcc1c198aef20297b4acebfcfd3734d6d1e366/ctdfjorder-0.0.33.tar.gz
+[2024-05-04 07:30:17] INFO root fetch - processPackages [pytilpack]: Downloading https://files.pythonhosted.org/packages/82/16/7154fb71f62a4b07f8e5d9411a42df1f8c855c041a3ce138067c0640662f/pytilpack-0.1.0.tar.gz
+[2024-05-04 07:30:17] INFO root fetch - processPackages [odoo14-addon-purchase-stock-tier-validation]: Downloading https://files.pythonhosted.org/packages/83/fd/4b900eaf214cf349af1546e833e2b2bf5626df03c10164ed3a6d0d9b28a4/odoo14_addon_purchase_stock_tier_validation-14.0.1.0.1.dev3-py3-none-any.whl
+[2024-05-04 07:30:17] INFO root fetch - processPackages [capymoa]: Downloading https://files.pythonhosted.org/packages/40/f1/f45f3591e8b589c89888f20dfac762d5167c50ffe23971b0c87ee0a3e412/capymoa-0.1.1.tar.gz
+[2024-05-04 07:30:17] INFO root fetch - processPackages [feed2fedi]: Downloading https://files.pythonhosted.org/packages/9c/86/25919990d0224c850d316815937c1c60abe4a06a4c83b4429e651b86e113/feed2fedi-3.0.0.tar.gz
+[2024-05-04 07:30:17] WARNING root fetch - processPackages [capymoa]: Skipping package: exceeds size limit 59957995>=10485760
+[2024-05-04 07:30:17] INFO root fetch - main [MainThread]: End processing [capymoa] error
+[2024-05-04 07:30:17] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/ef/4f/2d6b611489906b3dddd8f1de6a5ad05bea388985be03311f1e8567623b5a/ctdfjorder-0.0.34.tar.gz
+[2024-05-04 07:30:17] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/27/c9/ee1237883d0b02bfb12a1505bb3377fa23f803cfa692546d26f790f8e0b4/crazy_thursday-2024.5.4.0.tar.gz
+[2024-05-04 07:30:17] INFO root fetch - processPackages [pytilpack]: Downloading https://files.pythonhosted.org/packages/5a/a6/ea6f2c152aee339eea5bc2346a99d1e7da1a94cb516dff39ca234073fe74/pytilpack-0.1.1.tar.gz
+[2024-05-04 07:30:17] INFO root fetch - processPackages [CTDFjorder]: executing diffoscope
+[2024-05-04 07:30:17] INFO root fetch - processPackages [CTDFjorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctdfjorder-0.0.33.tar.gz tmp/ctdfjorder-0.0.34.tar.gz --markdown 20240504/C/CTDFjorder/0.0.33-0.0.34/README.md --exclude *.pyd
+[2024-05-04 07:30:17] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-04 07:30:17] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.3.1.tar.gz tmp/crazy_thursday-2024.5.4.0.tar.gz --markdown 20240504/c/crazy-thursday/2024.5.3.1-2024.5.4.0/README.md --exclude *.pyd
+[2024-05-04 07:30:17] INFO root fetch - processPackages [feed2fedi]: Downloading https://files.pythonhosted.org/packages/fd/ab/09b6edfa6c1d98aafc4603055b5b239a8ed03035edabc5b00b04c8f3bcd5/feed2fedi-3.1.0.tar.gz
+[2024-05-04 07:30:17] INFO root fetch - processPackages [odoo14-addon-purchase-stock-tier-validation]: Downloading https://files.pythonhosted.org/packages/c5/43/8820505a11b1a6b55895b425f64ab7532c3344632b85b020449ac7aab754/odoo14_addon_purchase_stock_tier_validation-14.0.1.0.1.dev4-py3-none-any.whl
+[2024-05-04 07:30:17] INFO root fetch - processPackages [pytilpack]: executing diffoscope
+[2024-05-04 07:30:17] INFO root fetch - processPackages [pytilpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytilpack-0.1.0.tar.gz tmp/pytilpack-0.1.1.tar.gz --markdown 20240504/p/pytilpack/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 07:30:17] INFO root fetch - processPackages [feed2fedi]: executing diffoscope
+[2024-05-04 07:30:17] INFO root fetch - processPackages [feed2fedi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feed2fedi-3.0.0.tar.gz tmp/feed2fedi-3.1.0.tar.gz --markdown 20240504/f/feed2fedi/3.0.0-3.1.0/README.md --exclude *.pyd
+[2024-05-04 07:30:17] INFO root fetch - processPackages [odoo14-addon-purchase-stock-tier-validation]: executing diffoscope
+[2024-05-04 07:30:17] INFO root fetch - processPackages [odoo14-addon-purchase-stock-tier-validation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_purchase_stock_tier_validation-14.0.1.0.1.dev3-py3-none-any.whl.zip tmp/odoo14_addon_purchase_stock_tier_validation-14.0.1.0.1.dev4-py3-none-any.whl.zip --markdown 20240504/o/odoo14-addon-purchase-stock-tier-validation/14.0.1.0.1.dev3-14.0.1.0.1.dev4/README.md --exclude *.pyd
+[2024-05-04 07:30:18] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.33.tar.gz]
+[2024-05-04 07:30:18] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.34.tar.gz]
+[2024-05-04 07:30:18] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
+[2024-05-04 07:30:18] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.1.0.tar.gz]
+[2024-05-04 07:30:18] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.1.1.tar.gz]
+[2024-05-04 07:30:18] INFO root fetch - main [MainThread]: End processing [pytilpack]: success
+[2024-05-04 07:30:18] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.3.1.tar.gz]
+[2024-05-04 07:30:18] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.4.0.tar.gz]
+[2024-05-04 07:30:18] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-04 07:30:18] INFO root fetch - processPackages [feed2fedi]: Remove: archive file [/home/abi/fetcher/tmp/feed2fedi-3.0.0.tar.gz]
+[2024-05-04 07:30:18] INFO root fetch - processPackages [feed2fedi]: Remove: archive file [/home/abi/fetcher/tmp/feed2fedi-3.1.0.tar.gz]
+[2024-05-04 07:30:18] INFO root fetch - main [MainThread]: End processing [feed2fedi]: success
+[2024-05-04 07:30:18] INFO root fetch - processPackages [odoo14-addon-purchase-stock-tier-validation]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_purchase_stock_tier_validation-14.0.1.0.1.dev3-py3-none-any.whl.zip]
+[2024-05-04 07:30:18] INFO root fetch - processPackages [odoo14-addon-purchase-stock-tier-validation]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_purchase_stock_tier_validation-14.0.1.0.1.dev4-py3-none-any.whl.zip]
+[2024-05-04 07:30:18] INFO root fetch - main [MainThread]: End processing [odoo14-addon-purchase-stock-tier-validation]: success
+[2024-05-04 07:30:18] INFO root fetch - main [MainThread]: Store serial: [23055912]
