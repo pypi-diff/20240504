@@ -13215,3 +13215,24 @@
 [2024-05-04 12:58:18] INFO root fetch - processPackages [schema]: Remove: archive file [/home/abi/fetcher/tmp/schema-0.7.7.tar.gz]
 [2024-05-04 12:58:18] INFO root fetch - main [MainThread]: End processing [schema]: success
 [2024-05-04 12:58:18] INFO root fetch - main [MainThread]: Store serial: [23057601]
+[2024-05-04 13:00:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057601]
+[2024-05-04 13:00:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 13:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywigxjpf
+[2024-05-04 13:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transaction-middleware
+[2024-05-04 13:00:26] INFO root fetch - processPackages [transaction-middleware]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-04 13:00:26] INFO root fetch - processPackages [pywigxjpf]: New version: [1.13.2] Old Version: [1.13.1]
+[2024-05-04 13:00:27] INFO root fetch - processPackages [pywigxjpf]: Downloading https://files.pythonhosted.org/packages/5e/5b/9a6df1c2f93f5eed0dae3d6978b3cfc026af0da9d440c101eac645f1bee2/pywigxjpf-1.13.1.tar.gz
+[2024-05-04 13:00:27] INFO root fetch - processPackages [transaction-middleware]: Downloading https://files.pythonhosted.org/packages/05/74/5cfa05b722d5566ba20a73566bc3450b791de1a3e4557bb01b624154a5f2/transaction_middleware-0.1.4.tar.gz
+[2024-05-04 13:00:27] INFO root fetch - processPackages [pywigxjpf]: Downloading https://files.pythonhosted.org/packages/71/d6/3d04b5b11e3d11f9643a2d73b26e908097ff91704bbc49726014b996d8cf/pywigxjpf-1.13.2.tar.gz
+[2024-05-04 13:00:27] INFO root fetch - processPackages [transaction-middleware]: Downloading https://files.pythonhosted.org/packages/d9/7a/af3f3789377952b09f360bcea6545caa9da8ada555acba7bc2650ae91800/transaction_middleware-0.1.5.tar.gz
+[2024-05-04 13:00:27] INFO root fetch - processPackages [pywigxjpf]: executing diffoscope
+[2024-05-04 13:00:27] INFO root fetch - processPackages [pywigxjpf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywigxjpf-1.13.1.tar.gz tmp/pywigxjpf-1.13.2.tar.gz --markdown 20240504/p/pywigxjpf/1.13.1-1.13.2/README.md --exclude *.pyd
+[2024-05-04 13:00:27] INFO root fetch - processPackages [transaction-middleware]: executing diffoscope
+[2024-05-04 13:00:27] INFO root fetch - processPackages [transaction-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transaction_middleware-0.1.4.tar.gz tmp/transaction_middleware-0.1.5.tar.gz --markdown 20240504/t/transaction-middleware/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-04 13:00:28] INFO root fetch - processPackages [transaction-middleware]: Remove: archive file [/home/abi/fetcher/tmp/transaction_middleware-0.1.4.tar.gz]
+[2024-05-04 13:00:28] INFO root fetch - processPackages [transaction-middleware]: Remove: archive file [/home/abi/fetcher/tmp/transaction_middleware-0.1.5.tar.gz]
+[2024-05-04 13:00:28] INFO root fetch - main [MainThread]: End processing [transaction-middleware]: success
+[2024-05-04 13:00:28] INFO root fetch - processPackages [pywigxjpf]: Remove: archive file [/home/abi/fetcher/tmp/pywigxjpf-1.13.1.tar.gz]
+[2024-05-04 13:00:28] INFO root fetch - processPackages [pywigxjpf]: Remove: archive file [/home/abi/fetcher/tmp/pywigxjpf-1.13.2.tar.gz]
+[2024-05-04 13:00:28] INFO root fetch - main [MainThread]: End processing [pywigxjpf]: success
+[2024-05-04 13:00:28] INFO root fetch - main [MainThread]: Store serial: [23057606]
