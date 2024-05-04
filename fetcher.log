@@ -10675,3 +10675,54 @@
 [2024-05-04 08:52:29] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_vat_book-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-05-04 08:52:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-vat-book]: success
 [2024-05-04 08:52:29] INFO root fetch - main [MainThread]: Store serial: [23056320]
+[2024-05-04 08:54:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056320]
+[2024-05-04 08:54:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 08:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: resszo
+[2024-05-04 08:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-bilichat
+[2024-05-04 08:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: image2grid
+[2024-05-04 08:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo13-addon-purchase-sale-inter-company
+[2024-05-04 08:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo13-addon-purchase-sale-stock-inter-company
+[2024-05-04 08:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: streamlit-nightly
+[2024-05-04 08:54:38] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.34.1.dev20240502] Old Version: [1.33.1.dev20240501]
+[2024-05-04 08:54:38] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [5.9.1] Old Version: [5.9.0]
+[2024-05-04 08:54:38] INFO root fetch - processPackages [resszo]: New version: [0.2] Old Version: [0.1]
+[2024-05-04 08:54:38] WARNING root fetch - processPackages [odoo13-addon-purchase-sale-stock-inter-company]: Skipping, unable to determine old version
+[2024-05-04 08:54:38] INFO root fetch - main [MainThread]: End processing [odoo13-addon-purchase-sale-stock-inter-company] error
+[2024-05-04 08:54:38] INFO root fetch - processPackages [image2grid]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 08:54:38] INFO root fetch - processPackages [odoo13-addon-purchase-sale-inter-company]: New version: [13.0.1.0.6.dev7] Old Version: [13.0.1.0.6.dev6]
+[2024-05-04 08:54:38] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/1e/1c/8e101d708bcfc41b5e691376968c03f7ee8b1feb03d808652a399878be1d/streamlit_nightly-1.33.1.dev20240501.tar.gz
+[2024-05-04 08:54:38] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/fe/30/188b796592f183f7416ee503839c5771a9467387c5e26467d8bacd218364/nonebot_plugin_bilichat-5.9.0.tar.gz
+[2024-05-04 08:54:38] INFO root fetch - processPackages [resszo]: Downloading https://files.pythonhosted.org/packages/bc/dc/a84db6e6eb7337c6786c99acdb0a30dbe231fd8c8802123ce65a5ac98585/resszo-0.1.tar.gz
+[2024-05-04 08:54:38] INFO root fetch - processPackages [image2grid]: Downloading https://files.pythonhosted.org/packages/ca/1f/99f9992dc67ead3078f42436846367ee4172ccb73ab8c2645cfc6b8e20bd/image2grid-0.1.0.tar.gz
+[2024-05-04 08:54:38] INFO root fetch - processPackages [odoo13-addon-purchase-sale-inter-company]: Downloading https://files.pythonhosted.org/packages/29/9f/bd43250ea62e10c520b1eea712325857e49b10d09b9291bb149c888f5e09/odoo13_addon_purchase_sale_inter_company-13.0.1.0.6.dev6-py3-none-any.whl
+[2024-05-04 08:54:39] INFO root fetch - processPackages [resszo]: Downloading https://files.pythonhosted.org/packages/9e/b7/e3716684c4d1b4ade10cb0f25cd4b666a01943d1478f05df0b428fffc201/resszo-0.2.tar.gz
+[2024-05-04 08:54:39] INFO root fetch - processPackages [image2grid]: Downloading https://files.pythonhosted.org/packages/35/3f/1154ac3de92f109ae1f6cd7003f0a81223f41be539b5d14f79fc207cc790/image2grid-0.1.1.tar.gz
+[2024-05-04 08:54:39] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/4a/0d/36dbe6105527adff66085c164f1843b14ed7cf16bfbd70e1b6b176653cd0/nonebot_plugin_bilichat-5.9.1.tar.gz
+[2024-05-04 08:54:39] INFO root fetch - processPackages [odoo13-addon-purchase-sale-inter-company]: Downloading https://files.pythonhosted.org/packages/99/61/6afc4a1dcb83c2ec3aefbaa2234af023bb364c0b456da1271a75455ac720/odoo13_addon_purchase_sale_inter_company-13.0.1.0.6.dev7-py3-none-any.whl
+[2024-05-04 08:54:39] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2024-05-04 08:54:39] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-5.9.0.tar.gz tmp/nonebot_plugin_bilichat-5.9.1.tar.gz --markdown 20240504/n/nonebot-plugin-bilichat/5.9.0-5.9.1/README.md --exclude *.pyd
+[2024-05-04 08:54:39] INFO root fetch - processPackages [resszo]: executing diffoscope
+[2024-05-04 08:54:39] INFO root fetch - processPackages [resszo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resszo-0.1.tar.gz tmp/resszo-0.2.tar.gz --markdown 20240504/r/resszo/0.1-0.2/README.md --exclude *.pyd
+[2024-05-04 08:54:39] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/9a/3a/fb0347b17a72cd8d47850db95771b7835885b92a6df0e9575f506d29ed8f/streamlit_nightly-1.34.1.dev20240502.tar.gz
+[2024-05-04 08:54:39] INFO root fetch - processPackages [image2grid]: executing diffoscope
+[2024-05-04 08:54:39] INFO root fetch - processPackages [image2grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image2grid-0.1.0.tar.gz tmp/image2grid-0.1.1.tar.gz --markdown 20240504/i/image2grid/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 08:54:39] INFO root fetch - processPackages [odoo13-addon-purchase-sale-inter-company]: executing diffoscope
+[2024-05-04 08:54:39] INFO root fetch - processPackages [odoo13-addon-purchase-sale-inter-company]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_purchase_sale_inter_company-13.0.1.0.6.dev6-py3-none-any.whl.zip tmp/odoo13_addon_purchase_sale_inter_company-13.0.1.0.6.dev7-py3-none-any.whl.zip --markdown 20240504/o/odoo13-addon-purchase-sale-inter-company/13.0.1.0.6.dev6-13.0.1.0.6.dev7/README.md --exclude *.pyd
+[2024-05-04 08:54:39] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2024-05-04 08:54:39] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_nightly-1.33.1.dev20240501.tar.gz tmp/streamlit_nightly-1.34.1.dev20240502.tar.gz --markdown 20240504/s/streamlit-nightly/1.33.1.dev20240501-1.34.1.dev20240502/README.md --exclude *.pyd
+[2024-05-04 08:54:39] INFO root fetch - processPackages [resszo]: Remove: archive file [/home/abi/fetcher/tmp/resszo-0.1.tar.gz]
+[2024-05-04 08:54:39] INFO root fetch - processPackages [resszo]: Remove: archive file [/home/abi/fetcher/tmp/resszo-0.2.tar.gz]
+[2024-05-04 08:54:39] INFO root fetch - main [MainThread]: End processing [resszo]: success
+[2024-05-04 08:54:40] INFO root fetch - processPackages [image2grid]: Remove: archive file [/home/abi/fetcher/tmp/image2grid-0.1.0.tar.gz]
+[2024-05-04 08:54:40] INFO root fetch - processPackages [image2grid]: Remove: archive file [/home/abi/fetcher/tmp/image2grid-0.1.1.tar.gz]
+[2024-05-04 08:54:40] INFO root fetch - main [MainThread]: End processing [image2grid]: success
+[2024-05-04 08:54:40] INFO root fetch - processPackages [odoo13-addon-purchase-sale-inter-company]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addon_purchase_sale_inter_company-13.0.1.0.6.dev6-py3-none-any.whl.zip]
+[2024-05-04 08:54:40] INFO root fetch - processPackages [odoo13-addon-purchase-sale-inter-company]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addon_purchase_sale_inter_company-13.0.1.0.6.dev7-py3-none-any.whl.zip]
+[2024-05-04 08:54:40] INFO root fetch - main [MainThread]: End processing [odoo13-addon-purchase-sale-inter-company]: success
+[2024-05-04 08:54:40] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bilichat-5.9.0.tar.gz]
+[2024-05-04 08:54:40] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bilichat-5.9.1.tar.gz]
+[2024-05-04 08:54:40] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
+[2024-05-04 08:54:43] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.33.1.dev20240501.tar.gz]
+[2024-05-04 08:54:43] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.34.1.dev20240502.tar.gz]
+[2024-05-04 08:54:43] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2024-05-04 08:54:43] INFO root fetch - main [MainThread]: Store serial: [23056342]
