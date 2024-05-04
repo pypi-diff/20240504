@@ -1789,3 +1789,45 @@
 [2024-05-04 02:02:22] INFO root fetch - processPackages [spleenseg]: Remove: archive file [/home/abi/fetcher/tmp/spleenseg-1.2.4.tar.gz]
 [2024-05-04 02:02:22] INFO root fetch - main [MainThread]: End processing [spleenseg]: success
 [2024-05-04 02:02:22] INFO root fetch - main [MainThread]: Store serial: [23052840]
+[2024-05-04 02:04:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052840]
+[2024-05-04 02:04:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 02:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SMClib.py
+[2024-05-04 02:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: used-addr-check
+[2024-05-04 02:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chalkpy
+[2024-05-04 02:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onnxscript
+[2024-05-04 02:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: EnglishLanguageAPI
+[2024-05-04 02:04:31] INFO root fetch - processPackages [SMClib.py]: New version: [1.0.3] Old Version: [1.0.1]
+[2024-05-04 02:04:31] INFO root fetch - processPackages [chalkpy]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-05-04 02:04:31] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240503] Old Version: [0.1.0.dev20240502]
+[2024-05-04 02:04:31] ERROR root fetch - processPackages [used-addr-check]: Unable to get metadata: No such project 'used-addr-check'
+[2024-05-04 02:04:31] INFO root fetch - main [MainThread]: End processing [used-addr-check] error
+[2024-05-04 02:04:31] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/f8/76/dbf1f79ab99442903792d150a87ce3f5fb66b08769b649b1c5b006fa03fc/SMClib.py-1.0.1.tar.gz
+[2024-05-04 02:04:31] INFO root fetch - processPackages [EnglishLanguageAPI]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 02:04:31] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/37/52/5c69a74a70d94d61d88e81cf17862496f7cd9ebd0725d75f357f252f3052/chalkpy-2.9.8.tar.gz
+[2024-05-04 02:04:31] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/d0/bb/9054befd847f2879690ca145a18a731df7a9f1c9ab6e5554e6ab185b5fc7/onnxscript-0.1.0.dev20240502.tar.gz
+[2024-05-04 02:04:31] INFO root fetch - processPackages [EnglishLanguageAPI]: Downloading https://files.pythonhosted.org/packages/3d/cb/31bb3cff1e0f30603d451424cf78a39a86c3cb8d5d79c3a7ec1680a68525/englishlanguageapi-1.0.0.tar.gz
+[2024-05-04 02:04:31] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/f1/ff/9cdb492bac7076766dffbc16bbff1773bfc5635cfb81b130f720883912c7/chalkpy-2.9.9.tar.gz
+[2024-05-04 02:04:31] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/16/44/e4783aae51490de2c150b41d6175071ba66955630b095aaf75555b505c7d/SMClib.py-1.0.3.tar.gz
+[2024-05-04 02:04:31] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2024-05-04 02:04:31] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.9.8.tar.gz tmp/chalkpy-2.9.9.tar.gz --markdown 20240504/c/chalkpy/2.9.8-2.9.9/README.md --exclude *.pyd
+[2024-05-04 02:04:31] INFO root fetch - processPackages [SMClib.py]: executing diffoscope
+[2024-05-04 02:04:31] INFO root fetch - processPackages [SMClib.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SMClib.py-1.0.1.tar.gz tmp/SMClib.py-1.0.3.tar.gz --markdown 20240504/S/SMClib.py/1.0.1-1.0.3/README.md --exclude *.pyd
+[2024-05-04 02:04:31] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/35/61/843035cbabb4b36ede6194a5a44aaf6609a54fb983a9465d0c0ae3f62ab5/onnxscript-0.1.0.dev20240503.tar.gz
+[2024-05-04 02:04:32] INFO root fetch - processPackages [EnglishLanguageAPI]: Downloading https://files.pythonhosted.org/packages/14/b9/4d1d64bb5476c753c3c58b8541dbb12d9a2daf7923bdef5a58799045a453/englishlanguageapi-1.0.1.tar.gz
+[2024-05-04 02:04:32] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-05-04 02:04:32] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240502.tar.gz tmp/onnxscript-0.1.0.dev20240503.tar.gz --markdown 20240504/o/onnxscript/0.1.0.dev20240502-0.1.0.dev20240503/README.md --exclude *.pyd
+[2024-05-04 02:04:32] INFO root fetch - processPackages [EnglishLanguageAPI]: executing diffoscope
+[2024-05-04 02:04:32] INFO root fetch - processPackages [EnglishLanguageAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/englishlanguageapi-1.0.0.tar.gz tmp/englishlanguageapi-1.0.1.tar.gz --markdown 20240504/E/EnglishLanguageAPI/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 02:04:32] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.1.tar.gz]
+[2024-05-04 02:04:32] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.3.tar.gz]
+[2024-05-04 02:04:32] INFO root fetch - main [MainThread]: End processing [SMClib.py]: success
+[2024-05-04 02:04:32] INFO root fetch - processPackages [EnglishLanguageAPI]: Remove: archive file [/home/abi/fetcher/tmp/englishlanguageapi-1.0.0.tar.gz]
+[2024-05-04 02:04:32] INFO root fetch - processPackages [EnglishLanguageAPI]: Remove: archive file [/home/abi/fetcher/tmp/englishlanguageapi-1.0.1.tar.gz]
+[2024-05-04 02:04:32] INFO root fetch - main [MainThread]: End processing [EnglishLanguageAPI]: success
+[2024-05-04 02:04:33] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240502.tar.gz]
+[2024-05-04 02:04:33] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240503.tar.gz]
+[2024-05-04 02:04:33] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-05-04 02:04:33] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.8.tar.gz]
+[2024-05-04 02:04:33] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.9.tar.gz]
+[2024-05-04 02:04:33] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2024-05-04 02:04:33] INFO root fetch - main [MainThread]: Store serial: [23052858]
