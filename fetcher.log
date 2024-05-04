@@ -15095,3 +15095,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:56:57] INFO root fetch - processPackages [gradio-image-annotation]: Remove: archive file [/home/abi/fetcher/tmp/gradio_image_annotation-0.0.6-py3-none-any.whl.zip]
 [2024-05-04 15:56:57] INFO root fetch - main [MainThread]: End processing [gradio-image-annotation]: success
 [2024-05-04 15:56:57] INFO root fetch - main [MainThread]: Store serial: [23058346]
+[2024-05-04 15:59:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058346]
+[2024-05-04 15:59:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 15:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gradio-image-annotation
+[2024-05-04 15:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datasette-gis-partial-path
+[2024-05-04 15:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flake8-commas-x
+[2024-05-04 15:59:06] INFO root fetch - processPackages [gradio-image-annotation]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-04 15:59:06] INFO root fetch - processPackages [gradio-image-annotation]: Downloading https://files.pythonhosted.org/packages/ce/df/8d8403de3405d1f0b92dcbd2c415b8a55057f210c9e47f2bb8384eedba5e/gradio_image_annotation-0.0.5.tar.gz
+[2024-05-04 15:59:06] WARNING root fetch - processPackages [datasette-gis-partial-path]: Skipping, unable to determine old version
+[2024-05-04 15:59:06] INFO root fetch - main [MainThread]: End processing [datasette-gis-partial-path] error
+[2024-05-04 15:59:06] INFO root fetch - processPackages [flake8-commas-x]: New version: [3.0.0.post1] Old Version: [3.0.0.dev2]
+[2024-05-04 15:59:06] INFO root fetch - processPackages [flake8-commas-x]: Downloading https://files.pythonhosted.org/packages/77/ef/fb28997769a7100e1dacd38202c69371d9ae72bc3e43e5baa480bb09af7b/flake8-commas-x-3.0.0.dev2.tar.gz
+[2024-05-04 15:59:06] INFO root fetch - processPackages [gradio-image-annotation]: Downloading https://files.pythonhosted.org/packages/f7/7a/ed915d6251af308d93741b81728e0bc4647862cbd9deb7501376682a7435/gradio_image_annotation-0.0.6-py3-none-any.whl
+[2024-05-04 15:59:07] INFO root fetch - processPackages [gradio-image-annotation]: executing diffoscope
+[2024-05-04 15:59:07] INFO root fetch - processPackages [gradio-image-annotation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_image_annotation-0.0.5.tar.gz tmp/gradio_image_annotation-0.0.6-py3-none-any.whl.zip --markdown 20240504/g/gradio-image-annotation/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-04 15:59:07] INFO root fetch - processPackages [flake8-commas-x]: Downloading https://files.pythonhosted.org/packages/6f/52/77c83c7368ea7eb8d652a7dd3a61e6b62f0fbb832d2fd07d7d9419074630/flake8_commas_x-3.0.0.post1.tar.gz
+[2024-05-04 15:59:07] INFO root fetch - processPackages [gradio-image-annotation]: Remove: archive file [/home/abi/fetcher/tmp/gradio_image_annotation-0.0.5.tar.gz]
+[2024-05-04 15:59:07] INFO root fetch - processPackages [gradio-image-annotation]: Remove: archive file [/home/abi/fetcher/tmp/gradio_image_annotation-0.0.6-py3-none-any.whl.zip]
+[2024-05-04 15:59:07] INFO root fetch - main [MainThread]: End processing [gradio-image-annotation]: success
+[2024-05-04 15:59:07] INFO root fetch - processPackages [flake8-commas-x]: executing diffoscope
+[2024-05-04 15:59:07] INFO root fetch - processPackages [flake8-commas-x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8-commas-x-3.0.0.dev2.tar.gz tmp/flake8_commas_x-3.0.0.post1.tar.gz --markdown 20240504/f/flake8-commas-x/3.0.0.dev2-3.0.0.post1/README.md --exclude *.pyd
+[2024-05-04 15:59:08] INFO root fetch - processPackages [flake8-commas-x]: Remove: archive file [/home/abi/fetcher/tmp/flake8-commas-x-3.0.0.dev2.tar.gz]
+[2024-05-04 15:59:08] INFO root fetch - processPackages [flake8-commas-x]: Remove: archive file [/home/abi/fetcher/tmp/flake8_commas_x-3.0.0.post1.tar.gz]
+[2024-05-04 15:59:08] INFO root fetch - main [MainThread]: End processing [flake8-commas-x]: success
+[2024-05-04 15:59:08] INFO root fetch - main [MainThread]: Store serial: [23058358]
