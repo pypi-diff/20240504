@@ -16195,3 +16195,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:29:38] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.9.tar.gz]
 [2024-05-04 17:29:38] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-05-04 17:29:38] INFO root fetch - main [MainThread]: Store serial: [23058900]
+[2024-05-04 17:31:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058900]
+[2024-05-04 17:31:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 17:31:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: UliEngineering
+[2024-05-04 17:31:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyvserv
+[2024-05-04 17:31:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-dots
+[2024-05-04 17:31:47] INFO root fetch - processPackages [mo-dots]: New version: [9.606.24115] Old Version: [9.605.24115]
+[2024-05-04 17:31:47] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/c1/78/500bc80bd2febc9c1dd08390617553bf8eb583859830968121d99c41760a/mo_dots-9.605.24115.tar.gz
+[2024-05-04 17:31:47] INFO root fetch - processPackages [UliEngineering]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-04 17:31:47] INFO root fetch - processPackages [pyvserv]: New version: [1.0.6] Old Version: [1.0.4]
+[2024-05-04 17:31:47] INFO root fetch - processPackages [UliEngineering]: Downloading https://files.pythonhosted.org/packages/04/3e/7cf454fd494a65a7d17d10ea75a21e96e2b7448faf69ba7b7f17c099fad9/UliEngineering-0.4.8.tar.gz
+[2024-05-04 17:31:47] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/62/60/27b3dbfd973f17e5e448be2a9a9d96cea0e25479810b1ba253056fa3f295/mo_dots-9.606.24115.tar.gz
+[2024-05-04 17:31:47] INFO root fetch - processPackages [pyvserv]: Downloading https://files.pythonhosted.org/packages/48/88/4692852b5e9b65095b6e392d6b0291fa8fba79bb681872209efcbc03e9b2/pyvserv-1.0.4.tar.gz
+[2024-05-04 17:31:47] INFO root fetch - processPackages [mo-dots]: executing diffoscope
+[2024-05-04 17:31:47] INFO root fetch - processPackages [mo-dots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_dots-9.605.24115.tar.gz tmp/mo_dots-9.606.24115.tar.gz --markdown 20240504/m/mo-dots/9.605.24115-9.606.24115/README.md --exclude *.pyd
+[2024-05-04 17:31:48] INFO root fetch - processPackages [UliEngineering]: Downloading https://files.pythonhosted.org/packages/81/97/8d7b772d8f2c4a875bc05168f48f5911374939404a063d69249463ad2d0d/UliEngineering-0.4.9.tar.gz
+[2024-05-04 17:31:48] INFO root fetch - processPackages [pyvserv]: Downloading https://files.pythonhosted.org/packages/04/9c/6322360a44a9bc14e813e76f9f04e59379ef43c71cce5197b283b4b85ae3/pyvserv-1.0.6.tar.gz
+[2024-05-04 17:31:48] INFO root fetch - processPackages [UliEngineering]: executing diffoscope
+[2024-05-04 17:31:48] INFO root fetch - processPackages [UliEngineering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UliEngineering-0.4.8.tar.gz tmp/UliEngineering-0.4.9.tar.gz --markdown 20240504/U/UliEngineering/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-04 17:31:48] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.605.24115.tar.gz]
+[2024-05-04 17:31:48] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.606.24115.tar.gz]
+[2024-05-04 17:31:48] INFO root fetch - main [MainThread]: End processing [mo-dots]: success
+[2024-05-04 17:31:48] INFO root fetch - processPackages [pyvserv]: executing diffoscope
+[2024-05-04 17:31:48] INFO root fetch - processPackages [pyvserv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvserv-1.0.4.tar.gz tmp/pyvserv-1.0.6.tar.gz --markdown 20240504/p/pyvserv/1.0.4-1.0.6/README.md --exclude *.pyd
+[2024-05-04 17:31:49] INFO root fetch - processPackages [UliEngineering]: Remove: archive file [/home/abi/fetcher/tmp/UliEngineering-0.4.8.tar.gz]
+[2024-05-04 17:31:49] INFO root fetch - processPackages [UliEngineering]: Remove: archive file [/home/abi/fetcher/tmp/UliEngineering-0.4.9.tar.gz]
+[2024-05-04 17:31:49] INFO root fetch - main [MainThread]: End processing [UliEngineering]: success
+[2024-05-04 17:31:49] INFO root fetch - processPackages [pyvserv]: Remove: archive file [/home/abi/fetcher/tmp/pyvserv-1.0.4.tar.gz]
+[2024-05-04 17:31:49] INFO root fetch - processPackages [pyvserv]: Remove: archive file [/home/abi/fetcher/tmp/pyvserv-1.0.6.tar.gz]
+[2024-05-04 17:31:49] INFO root fetch - main [MainThread]: End processing [pyvserv]: success
+[2024-05-04 17:31:49] INFO root fetch - main [MainThread]: Store serial: [23058909]
