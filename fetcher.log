@@ -7509,3 +7509,15 @@
 [2024-05-04 04:34:07] INFO root fetch - processPackages [dunamai]: Remove: archive file [/home/abi/fetcher/tmp/dunamai-1.9.0.tar.gz]
 [2024-05-04 04:34:07] INFO root fetch - main [MainThread]: End processing [dunamai]: success
 [2024-05-04 04:34:07] INFO root fetch - main [MainThread]: Store serial: [23054878]
+[2024-05-04 04:36:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054878]
+[2024-05-04 04:36:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 04:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TreeSAK
+[2024-05-04 04:36:26] INFO root fetch - processPackages [TreeSAK]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-04 04:36:27] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/33/3d/03ab6748b3aed0610812e461492b58278718c5c15236ce439a758aa3fc27/TreeSAK-1.9.1.tar.gz
+[2024-05-04 04:36:27] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/3d/18/0b0f8a2c565de5415024065f522c859677184cac283a7e4af0060f267891/TreeSAK-1.9.2.tar.gz
+[2024-05-04 04:36:27] INFO root fetch - processPackages [TreeSAK]: executing diffoscope
+[2024-05-04 04:36:27] INFO root fetch - processPackages [TreeSAK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TreeSAK-1.9.1.tar.gz tmp/TreeSAK-1.9.2.tar.gz --markdown 20240504/T/TreeSAK/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-04 04:36:28] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.1.tar.gz]
+[2024-05-04 04:36:28] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.2.tar.gz]
+[2024-05-04 04:36:28] INFO root fetch - main [MainThread]: End processing [TreeSAK]: success
+[2024-05-04 04:36:28] INFO root fetch - main [MainThread]: Store serial: [23054887]
