@@ -8396,3 +8396,18 @@
 [2024-05-04 05:23:41] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024050403.tar.gz]
 [2024-05-04 05:23:41] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-05-04 05:23:41] INFO root fetch - main [MainThread]: Store serial: [23055285]
+[2024-05-04 05:25:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055285]
+[2024-05-04 05:26:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 05:26:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlexecutorx
+[2024-05-04 05:26:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unstract-sdk
+[2024-05-04 05:26:00] WARNING root fetch - processPackages [sqlexecutorx]: Skipping, unable to determine old version
+[2024-05-04 05:26:00] INFO root fetch - main [MainThread]: End processing [sqlexecutorx] error
+[2024-05-04 05:26:00] INFO root fetch - processPackages [unstract-sdk]: New version: [0.9.0] Old Version: [0.24.1]
+[2024-05-04 05:26:01] INFO root fetch - processPackages [unstract-sdk]: Downloading https://files.pythonhosted.org/packages/79/b7/134611d468f07e0990b62794c08cd82ecb3e2fc6c50d6724a28eccc8846a/unstract_sdk-0.24.1.tar.gz
+[2024-05-04 05:26:01] INFO root fetch - processPackages [unstract-sdk]: Downloading https://files.pythonhosted.org/packages/22/1f/50c387a8927cd896566732d9181d7f9f7e3401ecd3b8958f546dd4dc605f/unstract_sdk-0.9.0.tar.gz
+[2024-05-04 05:26:01] INFO root fetch - processPackages [unstract-sdk]: executing diffoscope
+[2024-05-04 05:26:01] INFO root fetch - processPackages [unstract-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unstract_sdk-0.24.1.tar.gz tmp/unstract_sdk-0.9.0.tar.gz --markdown 20240504/u/unstract-sdk/0.24.1-0.9.0/README.md --exclude *.pyd
+[2024-05-04 05:26:02] INFO root fetch - processPackages [unstract-sdk]: Remove: archive file [/home/abi/fetcher/tmp/unstract_sdk-0.24.1.tar.gz]
+[2024-05-04 05:26:02] INFO root fetch - processPackages [unstract-sdk]: Remove: archive file [/home/abi/fetcher/tmp/unstract_sdk-0.9.0.tar.gz]
+[2024-05-04 05:26:02] INFO root fetch - main [MainThread]: End processing [unstract-sdk]: success
+[2024-05-04 05:26:02] INFO root fetch - main [MainThread]: Store serial: [23055291]
