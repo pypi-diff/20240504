@@ -13478,3 +13478,33 @@
 [2024-05-04 13:22:19] INFO root fetch - processPackages [exciton]: Remove: archive file [/home/abi/fetcher/tmp/exciton-2.5.5-py3-none-any.whl.zip]
 [2024-05-04 13:22:19] INFO root fetch - main [MainThread]: End processing [exciton]: success
 [2024-05-04 13:22:19] INFO root fetch - main [MainThread]: Store serial: [23057679]
+[2024-05-04 13:24:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057679]
+[2024-05-04 13:24:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 13:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: solidipy-mipt
+[2024-05-04 13:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bayesian-average
+[2024-05-04 13:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchrl-nightly
+[2024-05-04 13:24:28] INFO root fetch - processPackages [bayesian-average]: New version: [0.1.7] Old Version: [0.1.5]
+[2024-05-04 13:24:28] INFO root fetch - processPackages [solidipy-mipt]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-04 13:24:28] INFO root fetch - processPackages [torchrl-nightly]: New version: [2024.5.4] Old Version: [2024.5.3]
+[2024-05-04 13:24:28] INFO root fetch - processPackages [solidipy-mipt]: Downloading https://files.pythonhosted.org/packages/c0/87/8be890e14daafdcad797f74f3328124e2a44d1a0e923754d1ca321dfc97b/solidipy_mipt-1.2.2.tar.gz
+[2024-05-04 13:24:28] INFO root fetch - processPackages [bayesian-average]: Downloading https://files.pythonhosted.org/packages/fb/85/3474a9c6b1b21d7e22781817bee0e583d134932de64d366240676f85734d/bayesian_average-0.1.5.tar.gz
+[2024-05-04 13:24:28] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/60/30/e2abff851b9890fa243f3783830e29f1efed6f23b0572a2fcf1746babd8a/torchrl_nightly-2024.5.3-cp39-cp39-win_amd64.whl
+[2024-05-04 13:24:29] INFO root fetch - processPackages [solidipy-mipt]: Downloading https://files.pythonhosted.org/packages/a9/37/2e73bff88fff9b28d4529388ed73ba21bb8b2071d06cc26bb27d9dfaefd6/solidipy_mipt-1.2.3.tar.gz
+[2024-05-04 13:24:29] INFO root fetch - processPackages [bayesian-average]: Downloading https://files.pythonhosted.org/packages/15/17/f29628b792fda8bce1b5788f06f3abe241b8b3973dabf28e8ba9c8f429eb/bayesian_average-0.1.7.tar.gz
+[2024-05-04 13:24:29] INFO root fetch - processPackages [solidipy-mipt]: executing diffoscope
+[2024-05-04 13:24:29] INFO root fetch - processPackages [solidipy-mipt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solidipy_mipt-1.2.2.tar.gz tmp/solidipy_mipt-1.2.3.tar.gz --markdown 20240504/s/solidipy-mipt/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-04 13:24:29] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/65/8d/a3c7bdd240cb61fe60964f920ca37072b9763b278c842b742d5b176c8801/torchrl_nightly-2024.5.4-cp39-cp39-manylinux1_x86_64.whl
+[2024-05-04 13:24:29] INFO root fetch - processPackages [bayesian-average]: executing diffoscope
+[2024-05-04 13:24:29] INFO root fetch - processPackages [bayesian-average]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bayesian_average-0.1.5.tar.gz tmp/bayesian_average-0.1.7.tar.gz --markdown 20240504/b/bayesian-average/0.1.5-0.1.7/README.md --exclude *.pyd
+[2024-05-04 13:24:29] INFO root fetch - processPackages [solidipy-mipt]: Remove: archive file [/home/abi/fetcher/tmp/solidipy_mipt-1.2.2.tar.gz]
+[2024-05-04 13:24:29] INFO root fetch - processPackages [solidipy-mipt]: Remove: archive file [/home/abi/fetcher/tmp/solidipy_mipt-1.2.3.tar.gz]
+[2024-05-04 13:24:29] INFO root fetch - main [MainThread]: End processing [solidipy-mipt]: success
+[2024-05-04 13:24:29] INFO root fetch - processPackages [bayesian-average]: Remove: archive file [/home/abi/fetcher/tmp/bayesian_average-0.1.5.tar.gz]
+[2024-05-04 13:24:29] INFO root fetch - processPackages [bayesian-average]: Remove: archive file [/home/abi/fetcher/tmp/bayesian_average-0.1.7.tar.gz]
+[2024-05-04 13:24:29] INFO root fetch - main [MainThread]: End processing [bayesian-average]: success
+[2024-05-04 13:24:30] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2024-05-04 13:24:30] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2024.5.3-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2024.5.4-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20240504/t/torchrl-nightly/2024.5.3-2024.5.4/README.md --exclude *.pyd
+[2024-05-04 13:24:34] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.3-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 13:24:34] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.4-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-05-04 13:24:34] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2024-05-04 13:24:34] INFO root fetch - main [MainThread]: Store serial: [23057689]
