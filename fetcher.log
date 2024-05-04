@@ -12349,3 +12349,33 @@
 [2024-05-04 11:25:02] INFO root fetch - processPackages [RL-OM]: Remove: archive file [/home/abi/fetcher/tmp/RL_OM-0.7.99.tar.gz]
 [2024-05-04 11:25:02] INFO root fetch - main [MainThread]: End processing [RL-OM]: success
 [2024-05-04 11:25:02] INFO root fetch - main [MainThread]: Store serial: [23057252]
+[2024-05-04 11:27:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057252]
+[2024-05-04 11:27:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 11:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tbp-nightly
+[2024-05-04 11:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ssm-svg
+[2024-05-04 11:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SMClib.py
+[2024-05-04 11:27:12] INFO root fetch - processPackages [SMClib.py]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-05-04 11:27:12] INFO root fetch - processPackages [ssm-svg]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-04 11:27:13] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2024-05-04 11:27:13] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/0a/4f/8a03b22dfa479551a779eb54c4defaafb274272cb9c4c83ea3ce5f787fe4/SMClib.py-1.0.7.tar.gz
+[2024-05-04 11:27:13] INFO root fetch - processPackages [ssm-svg]: Downloading https://files.pythonhosted.org/packages/9e/fb/b1fb37353d8946cb158fe6774b20a8a83c2a283e49855f648810e0711e0a/ssm_svg-0.0.7.tar.gz
+[2024-05-04 11:27:13] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/b9/6c/43a589e5ab1d1b961e5780e41057576c7abd5bf16d3f871d8ef4ebdaf461/tbp-nightly-2.9.0a20221129.tar.gz
+[2024-05-04 11:27:13] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/28/a0/467e4c490a73dbe6bb2c4577b3bd5f680eda71c2a0a46b1741e886a27a2d/SMClib.py-1.0.8.tar.gz
+[2024-05-04 11:27:13] INFO root fetch - processPackages [ssm-svg]: Downloading https://files.pythonhosted.org/packages/cc/6b/7a270268527917b69f39c09de71bf41a9499d5b8f56f9bd72ca98a3c414b/ssm_svg-0.0.8.tar.gz
+[2024-05-04 11:27:13] INFO root fetch - processPackages [SMClib.py]: executing diffoscope
+[2024-05-04 11:27:13] INFO root fetch - processPackages [SMClib.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SMClib.py-1.0.7.tar.gz tmp/SMClib.py-1.0.8.tar.gz --markdown 20240504/S/SMClib.py/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-05-04 11:27:13] INFO root fetch - processPackages [ssm-svg]: executing diffoscope
+[2024-05-04 11:27:13] INFO root fetch - processPackages [ssm-svg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssm_svg-0.0.7.tar.gz tmp/ssm_svg-0.0.8.tar.gz --markdown 20240504/s/ssm-svg/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-04 11:27:13] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/2e/31/c611af28c0d42c7cbb86781523f94e57796654fd8b7a7049e8a6db2eecf3/tbp-nightly-2.9.0a20221130.tar.gz
+[2024-05-04 11:27:14] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2024-05-04 11:27:14] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20240504/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/README.md --exclude *.pyd
+[2024-05-04 11:27:14] INFO root fetch - processPackages [ssm-svg]: Remove: archive file [/home/abi/fetcher/tmp/ssm_svg-0.0.7.tar.gz]
+[2024-05-04 11:27:14] INFO root fetch - processPackages [ssm-svg]: Remove: archive file [/home/abi/fetcher/tmp/ssm_svg-0.0.8.tar.gz]
+[2024-05-04 11:27:14] INFO root fetch - main [MainThread]: End processing [ssm-svg]: success
+[2024-05-04 11:27:14] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.7.tar.gz]
+[2024-05-04 11:27:14] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.8.tar.gz]
+[2024-05-04 11:27:14] INFO root fetch - main [MainThread]: End processing [SMClib.py]: success
+[2024-05-04 11:27:15] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221129.tar.gz]
+[2024-05-04 11:27:15] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
+[2024-05-04 11:27:15] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2024-05-04 11:27:15] INFO root fetch - main [MainThread]: Store serial: [23057262]
