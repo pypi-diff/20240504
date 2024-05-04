@@ -10994,3 +10994,26 @@
 [2024-05-04 09:16:32] INFO root fetch - processPackages [jumeaux]: Remove: archive file [/home/abi/fetcher/tmp/jumeaux-5.0.1-py3-none-any.whl.zip]
 [2024-05-04 09:16:32] INFO root fetch - main [MainThread]: End processing [jumeaux]: success
 [2024-05-04 09:16:32] INFO root fetch - main [MainThread]: Store serial: [23056480]
+[2024-05-04 09:18:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056480]
+[2024-05-04 09:18:40] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 09:20:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056487]
+[2024-05-04 09:20:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 09:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libevtx-python
+[2024-05-04 09:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rate-control
+[2024-05-04 09:20:46] INFO root fetch - processPackages [libevtx-python]: New version: [20240504] Old Version: [20240427]
+[2024-05-04 09:20:46] INFO root fetch - processPackages [rate-control]: New version: [4.1.0] Old Version: [4.0.0]
+[2024-05-04 09:20:46] INFO root fetch - processPackages [libevtx-python]: Downloading https://files.pythonhosted.org/packages/a6/1f/b87bd7be1f8d19fb0dc6985fdac2773e581c343bded534db94c1647f8843/libevtx-python-20240427.tar.gz
+[2024-05-04 09:20:46] INFO root fetch - processPackages [rate-control]: Downloading https://files.pythonhosted.org/packages/4e/af/5bb8843179b8cab3ddd8674e2de71414c50aee6d183e00fdb22a6c29bca1/rate_control-4.0.0.tar.gz
+[2024-05-04 09:20:47] INFO root fetch - processPackages [rate-control]: Downloading https://files.pythonhosted.org/packages/76/ea/1db09e5651c3b8bf79d1ed546f3682c8c4e7e495054d8068e265802eeef6/rate_control-4.1.0.tar.gz
+[2024-05-04 09:20:47] INFO root fetch - processPackages [libevtx-python]: Downloading https://files.pythonhosted.org/packages/18/20/abee03309b4f06f6cf2a98e4b5368b38930439186a3f4da5f9bddc82cc7f/libevtx-python-20240504.tar.gz
+[2024-05-04 09:20:47] INFO root fetch - processPackages [rate-control]: executing diffoscope
+[2024-05-04 09:20:47] INFO root fetch - processPackages [rate-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rate_control-4.0.0.tar.gz tmp/rate_control-4.1.0.tar.gz --markdown 20240504/r/rate-control/4.0.0-4.1.0/README.md --exclude *.pyd
+[2024-05-04 09:20:47] INFO root fetch - processPackages [libevtx-python]: executing diffoscope
+[2024-05-04 09:20:47] INFO root fetch - processPackages [libevtx-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libevtx-python-20240427.tar.gz tmp/libevtx-python-20240504.tar.gz --markdown 20240504/l/libevtx-python/20240427-20240504/README.md --exclude *.pyd
+[2024-05-04 09:20:47] INFO root fetch - processPackages [rate-control]: Remove: archive file [/home/abi/fetcher/tmp/rate_control-4.0.0.tar.gz]
+[2024-05-04 09:20:47] INFO root fetch - processPackages [rate-control]: Remove: archive file [/home/abi/fetcher/tmp/rate_control-4.1.0.tar.gz]
+[2024-05-04 09:20:47] INFO root fetch - main [MainThread]: End processing [rate-control]: success
+[2024-05-04 09:20:53] INFO root fetch - processPackages [libevtx-python]: Remove: archive file [/home/abi/fetcher/tmp/libevtx-python-20240427.tar.gz]
+[2024-05-04 09:20:53] INFO root fetch - processPackages [libevtx-python]: Remove: archive file [/home/abi/fetcher/tmp/libevtx-python-20240504.tar.gz]
+[2024-05-04 09:20:53] INFO root fetch - main [MainThread]: End processing [libevtx-python]: success
+[2024-05-04 09:20:53] INFO root fetch - main [MainThread]: Store serial: [23056499]
