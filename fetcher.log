@@ -17439,3 +17439,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:03:59] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.87.tar.gz]
 [2024-05-04 19:03:59] INFO root fetch - main [MainThread]: End processing [model-explorer]: success
 [2024-05-04 19:03:59] INFO root fetch - main [MainThread]: Store serial: [23059464]
+[2024-05-04 19:06:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059464]
+[2024-05-04 19:06:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 19:06:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ok-script
+[2024-05-04 19:06:09] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 19:06:09] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-05-04 19:06:09] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-05-04 19:06:09] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-05-04 19:06:09] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240504/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 19:06:10] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-05-04 19:06:10] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-05-04 19:06:10] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-05-04 19:06:10] INFO root fetch - main [MainThread]: Store serial: [23059470]
