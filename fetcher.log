@@ -8411,3 +8411,91 @@
 [2024-05-04 05:26:02] INFO root fetch - processPackages [unstract-sdk]: Remove: archive file [/home/abi/fetcher/tmp/unstract_sdk-0.9.0.tar.gz]
 [2024-05-04 05:26:02] INFO root fetch - main [MainThread]: End processing [unstract-sdk]: success
 [2024-05-04 05:26:02] INFO root fetch - main [MainThread]: Store serial: [23055291]
+[2024-05-04 05:28:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055291]
+[2024-05-04 05:28:21] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-05-04 05:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytrivialsql
+[2024-05-04 05:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-delivery-carrier-info
+[2024-05-04 05:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: citric
+[2024-05-04 05:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: supadef
+[2024-05-04 05:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CTDFjorder-git
+[2024-05-04 05:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo12-addon-dms
+[2024-05-04 05:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: konfuzio-sdk
+[2024-05-04 05:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo13-addon-dms
+[2024-05-04 05:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdktf-cdktf-provider-databricks
+[2024-05-04 05:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dreams-core
+[2024-05-04 05:28:22] INFO root fetch - processPackages [dreams-core]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-04 05:28:22] INFO root fetch - processPackages [pytrivialsql]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 05:28:22] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.3.4.dev20240502164651] Old Version: [0.3.4.dev20240418152335]
+[2024-05-04 05:28:22] INFO root fetch - processPackages [odoo12-addon-dms]: New version: [12.0.8.0.3.99.dev5] Old Version: [12.0.8.0.3.99.dev4]
+[2024-05-04 05:28:22] INFO root fetch - processPackages [supadef]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 05:28:22] INFO root fetch - processPackages [dreams-core]: Downloading https://files.pythonhosted.org/packages/31/dd/2ddc40c1b6caf401e3e1558cb1968389ff2283ccec03f551744989884cde/dreams_core-0.0.4.tar.gz
+[2024-05-04 05:28:22] INFO root fetch - processPackages [pytrivialsql]: Downloading https://files.pythonhosted.org/packages/0f/36/9029731c957e26e235511d20fe80866be9db046d8dc730508479f1a26f69/pytrivialsql-0.1.1.tar.gz
+[2024-05-04 05:28:22] INFO root fetch - processPackages [odoo-addon-delivery-carrier-info]: New version: [17.0.1.0.0.4] Old Version: [17.0.1.0.0.2]
+[2024-05-04 05:28:22] WARNING root fetch - processPackages [CTDFjorder-git]: Skipping, unable to determine old version
+[2024-05-04 05:28:22] INFO root fetch - processPackages [CTDFjorder-git]: Start processing: tabletalk
+[2024-05-04 05:28:22] INFO root fetch - main [MainThread]: End processing [CTDFjorder-git] error
+[2024-05-04 05:28:22] INFO root fetch - processPackages [citric]: New version: [1.0.1a1] Old Version: [1.0.0]
+[2024-05-04 05:28:22] INFO root fetch - processPackages [odoo13-addon-dms]: New version: [13.0.8.5.3.dev9] Old Version: [13.0.8.5.3.dev7]
+[2024-05-04 05:28:22] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: New version: [9.0.3] Old Version: [9.0.2]
+[2024-05-04 05:28:22] INFO root fetch - processPackages [konfuzio-sdk]: Downloading https://files.pythonhosted.org/packages/91/d8/98e11c9fff50893643072c883a362cfd43c0ae95c0745b794798a29633ac/konfuzio_sdk-0.3.4.dev20240418152335.tar.gz
+[2024-05-04 05:28:22] INFO root fetch - processPackages [tabletalk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 05:28:22] INFO root fetch - processPackages [odoo12-addon-dms]: Downloading https://files.pythonhosted.org/packages/93/9d/9ba3ee7e259165ac3f8296992512710ce5d3b23889906722d544c3e33d98/odoo12_addon_dms-12.0.8.0.3.99.dev4-py3-none-any.whl
+[2024-05-04 05:28:22] INFO root fetch - processPackages [supadef]: Downloading https://files.pythonhosted.org/packages/e9/ed/03d17f0b315396c71c3e549f58018aa7fb73983977c87bc48b4746582463/supadef-0.0.8.tar.gz
+[2024-05-04 05:28:22] INFO root fetch - processPackages [odoo-addon-delivery-carrier-info]: Downloading https://files.pythonhosted.org/packages/86/3f/6b8d91e85abaeea114d5df23fa63ea33ae3e1e62ed514f1036d5c7c412c0/odoo_addon_delivery_carrier_info-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-04 05:28:22] INFO root fetch - processPackages [dreams-core]: Downloading https://files.pythonhosted.org/packages/ea/d0/095c41f71b76bffa26122f3edfea1f3c4a42e00ffbb25d02705f38feee02/dreams_core-0.0.5.tar.gz
+[2024-05-04 05:28:22] INFO root fetch - processPackages [citric]: Downloading https://files.pythonhosted.org/packages/39/59/3a57c7bd7de0fd5e2d7bdd7b0d4f1b7b295a390bde2ff497feeabbf1ba95/citric-1.0.0.tar.gz
+[2024-05-04 05:28:22] INFO root fetch - processPackages [odoo13-addon-dms]: Downloading https://files.pythonhosted.org/packages/e8/1a/2a7ec37413dd38e6c8be8b2092b401edc4dc5099f72ae99a95dddd368e1c/odoo13_addon_dms-13.0.8.5.3.dev7-py3-none-any.whl
+[2024-05-04 05:28:22] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: Downloading https://files.pythonhosted.org/packages/22/e6/a37602f6c892854f281c7bb4adc106276e2457550f978d3876eae5aff44f/cdktf-cdktf-provider-databricks-9.0.2.tar.gz
+[2024-05-04 05:28:22] WARNING root fetch - processPackages [odoo13-addon-dms]: Skipping package: exceeds size limit 15629475>=10485760
+[2024-05-04 05:28:22] INFO root fetch - main [MainThread]: End processing [odoo13-addon-dms] error
+[2024-05-04 05:28:22] INFO root fetch - processPackages [konfuzio-sdk]: Downloading https://files.pythonhosted.org/packages/72/6e/13cc09ea8bd9a955322a443bc6546ea4d359f5146b4adb08135baa6cf5e8/konfuzio_sdk-0.3.4.dev20240502164651.tar.gz
+[2024-05-04 05:28:22] INFO root fetch - processPackages [pytrivialsql]: Downloading https://files.pythonhosted.org/packages/59/a7/aa90696fc4a92d4aa6f5a2f0a45a5cbf40949844d2a6ecfb4fbbc6f88ceb/pytrivialsql-0.1.2.tar.gz
+[2024-05-04 05:28:22] INFO root fetch - processPackages [dreams-core]: executing diffoscope
+[2024-05-04 05:28:22] INFO root fetch - processPackages [dreams-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreams_core-0.0.4.tar.gz tmp/dreams_core-0.0.5.tar.gz --markdown 20240504/d/dreams-core/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-04 05:28:22] INFO root fetch - processPackages [tabletalk]: Downloading https://files.pythonhosted.org/packages/4d/e5/0f809470fee5c5c396130abd884348f6668d9493f501d4084ca0a33141ff/tabletalk-0.0.8.tar.gz
+[2024-05-04 05:28:22] WARNING root fetch - processPackages [odoo12-addon-dms]: Skipping package: exceeds size limit 16477055>=10485760
+[2024-05-04 05:28:22] INFO root fetch - main [MainThread]: End processing [odoo12-addon-dms] error
+[2024-05-04 05:28:22] INFO root fetch - processPackages [pytrivialsql]: executing diffoscope
+[2024-05-04 05:28:22] INFO root fetch - processPackages [pytrivialsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytrivialsql-0.1.1.tar.gz tmp/pytrivialsql-0.1.2.tar.gz --markdown 20240504/p/pytrivialsql/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 05:28:22] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2024-05-04 05:28:22] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.3.4.dev20240418152335.tar.gz tmp/konfuzio_sdk-0.3.4.dev20240502164651.tar.gz --markdown 20240504/k/konfuzio-sdk/0.3.4.dev20240418152335-0.3.4.dev20240502164651/README.md --exclude *.pyd
+[2024-05-04 05:28:22] INFO root fetch - processPackages [odoo-addon-delivery-carrier-info]: Downloading https://files.pythonhosted.org/packages/65/af/87fec94ce03d15f87009be886846a5d98a51d2193026e41b5fd503f61994/odoo_addon_delivery_carrier_info-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-04 05:28:22] INFO root fetch - processPackages [supadef]: Downloading https://files.pythonhosted.org/packages/77/b2/f8a7f034f03aa94cc404c5c66887a86068ea82d5b6cd6179cb9b656d8e3b/supadef-0.0.9.tar.gz
+[2024-05-04 05:28:22] INFO root fetch - processPackages [citric]: Downloading https://files.pythonhosted.org/packages/aa/0e/03447ec225069a1acf583e9d2cab67d2f27343172be82b786d48931a96ac/citric-1.0.1a1.tar.gz
+[2024-05-04 05:28:23] INFO root fetch - processPackages [odoo-addon-delivery-carrier-info]: executing diffoscope
+[2024-05-04 05:28:23] INFO root fetch - processPackages [odoo-addon-delivery-carrier-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_delivery_carrier_info-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_delivery_carrier_info-17.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-delivery-carrier-info/17.0.1.0.0.2-17.0.1.0.0.4/README.md --exclude *.pyd
+[2024-05-04 05:28:23] INFO root fetch - processPackages [supadef]: executing diffoscope
+[2024-05-04 05:28:23] INFO root fetch - processPackages [supadef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supadef-0.0.8.tar.gz tmp/supadef-0.0.9.tar.gz --markdown 20240504/s/supadef/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 05:28:23] INFO root fetch - processPackages [tabletalk]: Downloading https://files.pythonhosted.org/packages/05/60/011ae62b0b4c38b51ad546318c1c457959d8314fecafdf684b248ca24c53/tabletalk-0.0.9.tar.gz
+[2024-05-04 05:28:23] INFO root fetch - processPackages [citric]: executing diffoscope
+[2024-05-04 05:28:23] INFO root fetch - processPackages [citric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citric-1.0.0.tar.gz tmp/citric-1.0.1a1.tar.gz --markdown 20240504/c/citric/1.0.0-1.0.1a1/README.md --exclude *.pyd
+[2024-05-04 05:28:23] INFO root fetch - processPackages [tabletalk]: executing diffoscope
+[2024-05-04 05:28:23] INFO root fetch - processPackages [tabletalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabletalk-0.0.8.tar.gz tmp/tabletalk-0.0.9.tar.gz --markdown 20240504/t/tabletalk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 05:28:23] INFO root fetch - processPackages [dreams-core]: Remove: archive file [/home/abi/fetcher/tmp/dreams_core-0.0.4.tar.gz]
+[2024-05-04 05:28:23] INFO root fetch - processPackages [dreams-core]: Remove: archive file [/home/abi/fetcher/tmp/dreams_core-0.0.5.tar.gz]
+[2024-05-04 05:28:23] INFO root fetch - main [MainThread]: End processing [dreams-core]: success
+[2024-05-04 05:28:23] INFO root fetch - processPackages [pytrivialsql]: Remove: archive file [/home/abi/fetcher/tmp/pytrivialsql-0.1.1.tar.gz]
+[2024-05-04 05:28:23] INFO root fetch - processPackages [pytrivialsql]: Remove: archive file [/home/abi/fetcher/tmp/pytrivialsql-0.1.2.tar.gz]
+[2024-05-04 05:28:23] INFO root fetch - main [MainThread]: End processing [pytrivialsql]: success
+[2024-05-04 05:28:23] INFO root fetch - processPackages [odoo-addon-delivery-carrier-info]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_delivery_carrier_info-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-04 05:28:23] INFO root fetch - processPackages [odoo-addon-delivery-carrier-info]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_delivery_carrier_info-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-04 05:28:23] INFO root fetch - main [MainThread]: End processing [odoo-addon-delivery-carrier-info]: success
+[2024-05-04 05:28:23] INFO root fetch - processPackages [supadef]: Remove: archive file [/home/abi/fetcher/tmp/supadef-0.0.8.tar.gz]
+[2024-05-04 05:28:23] INFO root fetch - processPackages [supadef]: Remove: archive file [/home/abi/fetcher/tmp/supadef-0.0.9.tar.gz]
+[2024-05-04 05:28:23] INFO root fetch - main [MainThread]: End processing [supadef]: success
+[2024-05-04 05:28:23] INFO root fetch - processPackages [konfuzio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/konfuzio_sdk-0.3.4.dev20240418152335.tar.gz]
+[2024-05-04 05:28:23] INFO root fetch - processPackages [konfuzio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/konfuzio_sdk-0.3.4.dev20240502164651.tar.gz]
+[2024-05-04 05:28:23] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2024-05-04 05:28:23] INFO root fetch - processPackages [tabletalk]: Remove: archive file [/home/abi/fetcher/tmp/tabletalk-0.0.8.tar.gz]
+[2024-05-04 05:28:23] INFO root fetch - processPackages [tabletalk]: Remove: archive file [/home/abi/fetcher/tmp/tabletalk-0.0.9.tar.gz]
+[2024-05-04 05:28:23] INFO root fetch - main [MainThread]: End processing [tabletalk]: success
+[2024-05-04 05:28:24] INFO root fetch - processPackages [citric]: Remove: archive file [/home/abi/fetcher/tmp/citric-1.0.0.tar.gz]
+[2024-05-04 05:28:24] INFO root fetch - processPackages [citric]: Remove: archive file [/home/abi/fetcher/tmp/citric-1.0.1a1.tar.gz]
+[2024-05-04 05:28:24] INFO root fetch - main [MainThread]: End processing [citric]: success
+[2024-05-04 05:28:24] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: Downloading https://files.pythonhosted.org/packages/cc/3a/8e28dd4a45c0a00150d822d03862c508cb6c485bb959ef5ce80e1adb4448/cdktf-cdktf-provider-databricks-9.0.3.tar.gz
+[2024-05-04 05:28:25] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: executing diffoscope
+[2024-05-04 05:28:25] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-databricks-9.0.2.tar.gz tmp/cdktf-cdktf-provider-databricks-9.0.3.tar.gz --markdown 20240504/c/cdktf-cdktf-provider-databricks/9.0.2-9.0.3/README.md --exclude *.pyd
+[2024-05-04 05:28:29] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-databricks-9.0.2.tar.gz]
+[2024-05-04 05:28:29] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-databricks-9.0.3.tar.gz]
+[2024-05-04 05:28:29] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-databricks]: success
+[2024-05-04 05:28:29] INFO root fetch - main [MainThread]: Store serial: [23055323]
