@@ -15245,3 +15245,68 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:09:59] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.4.tar.gz]
 [2024-05-04 16:09:59] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-04 16:09:59] INFO root fetch - main [MainThread]: Store serial: [23058416]
+[2024-05-04 16:12:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058416]
+[2024-05-04 16:12:08] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-04 16:12:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: color-transfer-py
+[2024-05-04 16:12:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pystout
+[2024-05-04 16:12:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: great-expectations-cloud
+[2024-05-04 16:12:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chord-reviews
+[2024-05-04 16:12:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chord-reviews
+[2024-05-04 16:12:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tpds-application
+[2024-05-04 16:12:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rewardbench
+[2024-05-04 16:12:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-tetris-stats
+[2024-05-04 16:12:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tpds-extension-aes-message-encryption
+[2024-05-04 16:12:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tpds-extension-dspic33-support
+[2024-05-04 16:12:08] WARNING root fetch - processPackages [chord-reviews]: Skipping, unable to determine old version
+[2024-05-04 16:12:08] INFO root fetch - main [MainThread]: End processing [chord-reviews] error
+[2024-05-04 16:12:08] WARNING root fetch - processPackages [chord-reviews]: Skipping, unable to determine old version
+[2024-05-04 16:12:08] INFO root fetch - main [MainThread]: End processing [chord-reviews] error
+[2024-05-04 16:12:08] WARNING root fetch - processPackages [rewardbench]: Skipping, unable to determine old version
+[2024-05-04 16:12:08] INFO root fetch - main [MainThread]: End processing [rewardbench] error
+[2024-05-04 16:12:08] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: New version: [1.0.1] Old Version: [1.0.0a9]
+[2024-05-04 16:12:08] INFO root fetch - processPackages [great-expectations-cloud]: New version: [20240503.0.dev2] Old Version: [20240503.0.dev1]
+[2024-05-04 16:12:08] INFO root fetch - processPackages [pystout]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-04 16:12:08] WARNING root fetch - processPackages [color-transfer-py]: Skipping, unable to determine old version
+[2024-05-04 16:12:08] INFO root fetch - main [MainThread]: End processing [color-transfer-py] error
+[2024-05-04 16:12:08] INFO root fetch - processPackages [tpds-application]: New version: [2.3.9] Old Version: [2.3.7]
+[2024-05-04 16:12:08] INFO root fetch - processPackages [tpds-extension-aes-message-encryption]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 16:12:08] INFO root fetch - processPackages [tpds-extension-dspic33-support]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 16:12:08] INFO root fetch - processPackages [great-expectations-cloud]: Downloading https://files.pythonhosted.org/packages/78/af/5cf3847def3e9e43bf7a5f967058f51f645eda39b45df70158584e6c7a7d/great_expectations_cloud-20240503.0.dev1.tar.gz
+[2024-05-04 16:12:08] INFO root fetch - processPackages [nonebot-plugin-tetris-stats]: Downloading https://files.pythonhosted.org/packages/56/88/dc08fa0749da4d06e1fd838e6b51789d2a00a0c84dbb868e687e74fad638/nonebot_plugin_tetris_stats-1.0.1.tar.gz
+[2024-05-04 16:12:08] INFO root fetch - processPackages [pystout]: Downloading https://files.pythonhosted.org/packages/24/d3/bb9a924beec4bb9b0d83d4807ad20b0ffa987a7f94de5e633670ea909c39/pystout-0.0.7.tar.gz
+[2024-05-04 16:12:08] WARNING root fetch - processPackages [nonebot-plugin-tetris-stats]: Skipping package: exceeds size limit 15972229>=10485760
+[2024-05-04 16:12:08] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-tetris-stats] error
+[2024-05-04 16:12:08] INFO root fetch - processPackages [tpds-application]: Downloading https://files.pythonhosted.org/packages/80/67/3ce84bee32ea6ad0625a2decf6c52236a638171fc07c62aa9e5e7464592c/tpds_application-2.3.7-py3-none-any.whl
+[2024-05-04 16:12:08] INFO root fetch - processPackages [tpds-extension-aes-message-encryption]: Downloading https://files.pythonhosted.org/packages/26/70/b82e2fe745cf085f8743b767549fab94b8a10ca9a9e4a7486bf468713967/tpds_extension_aes_message_encryption-1.0.0-py3-none-any.whl
+[2024-05-04 16:12:08] INFO root fetch - processPackages [tpds-extension-dspic33-support]: Downloading https://files.pythonhosted.org/packages/13/05/adeda6d9921a2df2116a71aa726c9d8c2d0be3006d95835f6a575a9b6f84/tpds_extension_dspic33_support-1.0.0-py3-none-any.whl
+[2024-05-04 16:12:09] INFO root fetch - processPackages [great-expectations-cloud]: Downloading https://files.pythonhosted.org/packages/df/cb/2643c0c60af1554b3377e1835859b4149a4217a816560d1704769dc6067a/great_expectations_cloud-20240503.0.dev2.tar.gz
+[2024-05-04 16:12:09] INFO root fetch - processPackages [pystout]: Downloading https://files.pythonhosted.org/packages/a4/08/b5e95085f4f1616749578ca31215c25659f139abbe7f96b28564e5468f71/pystout-0.0.8.tar.gz
+[2024-05-04 16:12:09] INFO root fetch - processPackages [great-expectations-cloud]: executing diffoscope
+[2024-05-04 16:12:09] INFO root fetch - processPackages [great-expectations-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/great_expectations_cloud-20240503.0.dev1.tar.gz tmp/great_expectations_cloud-20240503.0.dev2.tar.gz --markdown 20240504/g/great-expectations-cloud/20240503.0.dev1-20240503.0.dev2/README.md --exclude *.pyd
+[2024-05-04 16:12:09] INFO root fetch - processPackages [pystout]: executing diffoscope
+[2024-05-04 16:12:09] INFO root fetch - processPackages [pystout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystout-0.0.7.tar.gz tmp/pystout-0.0.8.tar.gz --markdown 20240504/p/pystout/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-04 16:12:09] INFO root fetch - processPackages [tpds-extension-dspic33-support]: Downloading https://files.pythonhosted.org/packages/ac/1e/28638d5ff5da035ed76764cf8603d60f14694ecf00dcea3c0c831c1275dd/tpds_extension_dspic33_support-1.0.1-py3-none-any.whl
+[2024-05-04 16:12:09] INFO root fetch - processPackages [tpds-extension-dspic33-support]: executing diffoscope
+[2024-05-04 16:12:09] INFO root fetch - processPackages [tpds-extension-dspic33-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_extension_dspic33_support-1.0.0-py3-none-any.whl.zip tmp/tpds_extension_dspic33_support-1.0.1-py3-none-any.whl.zip --markdown 20240504/t/tpds-extension-dspic33-support/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 16:12:09] INFO root fetch - processPackages [tpds-extension-aes-message-encryption]: Downloading https://files.pythonhosted.org/packages/31/cc/0a073a901ec14042ecdea9277bc1c25cc3fc904e359cb9730ea49af0096e/tpds_extension_aes_message_encryption-1.0.1-py3-none-any.whl
+[2024-05-04 16:12:09] INFO root fetch - processPackages [tpds-application]: Downloading https://files.pythonhosted.org/packages/02/f7/27443b818f19e31278083f3f3f5d71518353974e2f423df68e74349e48ad/tpds_application-2.3.9-py3-none-any.whl
+[2024-05-04 16:12:09] INFO root fetch - processPackages [pystout]: Remove: archive file [/home/abi/fetcher/tmp/pystout-0.0.7.tar.gz]
+[2024-05-04 16:12:09] INFO root fetch - processPackages [pystout]: Remove: archive file [/home/abi/fetcher/tmp/pystout-0.0.8.tar.gz]
+[2024-05-04 16:12:09] INFO root fetch - main [MainThread]: End processing [pystout]: success
+[2024-05-04 16:12:09] INFO root fetch - processPackages [great-expectations-cloud]: Remove: archive file [/home/abi/fetcher/tmp/great_expectations_cloud-20240503.0.dev1.tar.gz]
+[2024-05-04 16:12:09] INFO root fetch - processPackages [great-expectations-cloud]: Remove: archive file [/home/abi/fetcher/tmp/great_expectations_cloud-20240503.0.dev2.tar.gz]
+[2024-05-04 16:12:09] INFO root fetch - main [MainThread]: End processing [great-expectations-cloud]: success
+[2024-05-04 16:12:10] INFO root fetch - processPackages [tpds-extension-aes-message-encryption]: executing diffoscope
+[2024-05-04 16:12:10] INFO root fetch - processPackages [tpds-extension-aes-message-encryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_extension_aes_message_encryption-1.0.0-py3-none-any.whl.zip tmp/tpds_extension_aes_message_encryption-1.0.1-py3-none-any.whl.zip --markdown 20240504/t/tpds-extension-aes-message-encryption/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 16:12:10] INFO root fetch - processPackages [tpds-extension-dspic33-support]: Remove: archive file [/home/abi/fetcher/tmp/tpds_extension_dspic33_support-1.0.0-py3-none-any.whl.zip]
+[2024-05-04 16:12:10] INFO root fetch - processPackages [tpds-extension-dspic33-support]: Remove: archive file [/home/abi/fetcher/tmp/tpds_extension_dspic33_support-1.0.1-py3-none-any.whl.zip]
+[2024-05-04 16:12:10] INFO root fetch - main [MainThread]: End processing [tpds-extension-dspic33-support]: success
+[2024-05-04 16:12:10] INFO root fetch - processPackages [tpds-application]: executing diffoscope
+[2024-05-04 16:12:10] INFO root fetch - processPackages [tpds-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_application-2.3.7-py3-none-any.whl.zip tmp/tpds_application-2.3.9-py3-none-any.whl.zip --markdown 20240504/t/tpds-application/2.3.7-2.3.9/README.md --exclude *.pyd
+[2024-05-04 16:12:11] INFO root fetch - processPackages [tpds-application]: Remove: archive file [/home/abi/fetcher/tmp/tpds_application-2.3.7-py3-none-any.whl.zip]
+[2024-05-04 16:12:11] INFO root fetch - processPackages [tpds-application]: Remove: archive file [/home/abi/fetcher/tmp/tpds_application-2.3.9-py3-none-any.whl.zip]
+[2024-05-04 16:12:11] INFO root fetch - main [MainThread]: End processing [tpds-application]: success
+[2024-05-04 16:12:11] INFO root fetch - processPackages [tpds-extension-aes-message-encryption]: Remove: archive file [/home/abi/fetcher/tmp/tpds_extension_aes_message_encryption-1.0.0-py3-none-any.whl.zip]
+[2024-05-04 16:12:11] INFO root fetch - processPackages [tpds-extension-aes-message-encryption]: Remove: archive file [/home/abi/fetcher/tmp/tpds_extension_aes_message_encryption-1.0.1-py3-none-any.whl.zip]
+[2024-05-04 16:12:11] INFO root fetch - main [MainThread]: End processing [tpds-extension-aes-message-encryption]: success
+[2024-05-04 16:12:11] INFO root fetch - main [MainThread]: Store serial: [23058445]
