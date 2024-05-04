@@ -7074,3 +7074,33 @@
 [2024-05-04 03:53:42] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
 [2024-05-04 03:53:42] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2024-05-04 03:53:42] INFO root fetch - main [MainThread]: Store serial: [23054640]
+[2024-05-04 03:55:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054640]
+[2024-05-04 03:55:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 03:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wedding
+[2024-05-04 03:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lytils
+[2024-05-04 03:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blastpipe
+[2024-05-04 03:55:53] INFO root fetch - processPackages [wedding]: New version: [1.0.0] Old Version: [0.0.1]
+[2024-05-04 03:55:53] INFO root fetch - processPackages [wedding]: Downloading https://files.pythonhosted.org/packages/86/e1/e4a8463a6d852c01706ac71a24780349780147e5aea6ffc197e3ae8e40a6/wedding-0.0.1.tar.gz
+[2024-05-04 03:55:53] INFO root fetch - processPackages [lytils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-04 03:55:53] INFO root fetch - processPackages [blastpipe]: New version: [2024.4.3] Old Version: [2024.4.2]
+[2024-05-04 03:55:53] INFO root fetch - processPackages [wedding]: Downloading https://files.pythonhosted.org/packages/d9/b0/eeaf9a757aca15f726038c09a3a034901d83ae6f08fa33d30f743fc66db7/wedding-1.0.0.tar.gz
+[2024-05-04 03:55:53] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/6e/79/5cd4f342f50738cbc5e1a311292daf9f217d9c13730121069eb724b612fc/lytils-0.1.7.tar.gz
+[2024-05-04 03:55:53] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/d7/b3/3fcb829919645b60c366eafad1a235ccf43f1579285200ecc089b778b2f9/blastpipe-2024.4.2.tar.gz
+[2024-05-04 03:55:54] INFO root fetch - processPackages [wedding]: executing diffoscope
+[2024-05-04 03:55:54] INFO root fetch - processPackages [wedding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wedding-0.0.1.tar.gz tmp/wedding-1.0.0.tar.gz --markdown 20240504/w/wedding/0.0.1-1.0.0/README.md --exclude *.pyd
+[2024-05-04 03:55:54] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/e5/63/947a765769a040af108780166ef416734281e055d3577ce6f8ecd6dcff7b/lytils-0.1.8.tar.gz
+[2024-05-04 03:55:54] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/e9/fa/b71090ffae8d4416559d53d6d136899314a472ee517185e9fff7be017fe7/blastpipe-2024.4.3.tar.gz
+[2024-05-04 03:55:54] INFO root fetch - processPackages [lytils]: executing diffoscope
+[2024-05-04 03:55:54] INFO root fetch - processPackages [lytils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lytils-0.1.7.tar.gz tmp/lytils-0.1.8.tar.gz --markdown 20240504/l/lytils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-04 03:55:54] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-05-04 03:55:54] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.4.2.tar.gz tmp/blastpipe-2024.4.3.tar.gz --markdown 20240504/b/blastpipe/2024.4.2-2024.4.3/README.md --exclude *.pyd
+[2024-05-04 03:55:54] INFO root fetch - processPackages [wedding]: Remove: archive file [/home/abi/fetcher/tmp/wedding-0.0.1.tar.gz]
+[2024-05-04 03:55:54] INFO root fetch - processPackages [wedding]: Remove: archive file [/home/abi/fetcher/tmp/wedding-1.0.0.tar.gz]
+[2024-05-04 03:55:54] INFO root fetch - main [MainThread]: End processing [wedding]: success
+[2024-05-04 03:55:54] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.7.tar.gz]
+[2024-05-04 03:55:54] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.8.tar.gz]
+[2024-05-04 03:55:54] INFO root fetch - main [MainThread]: End processing [lytils]: success
+[2024-05-04 03:55:55] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.2.tar.gz]
+[2024-05-04 03:55:55] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.3.tar.gz]
+[2024-05-04 03:55:55] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-05-04 03:55:55] INFO root fetch - main [MainThread]: Store serial: [23054651]
