@@ -12500,3 +12500,30 @@
 [2024-05-04 11:44:27] INFO root fetch - processPackages [mlforge]: Remove: archive file [/home/abi/fetcher/tmp/mlforge-0.1.4a0.tar.gz]
 [2024-05-04 11:44:27] INFO root fetch - main [MainThread]: End processing [mlforge]: success
 [2024-05-04 11:44:27] INFO root fetch - main [MainThread]: Store serial: [23057307]
+[2024-05-04 11:46:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057307]
+[2024-05-04 11:46:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 11:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlormx
+[2024-05-04 11:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cvutil3d
+[2024-05-04 11:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytilpack
+[2024-05-04 11:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fmpxx
+[2024-05-04 11:46:38] INFO root fetch - processPackages [pytilpack]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-04 11:46:38] INFO root fetch - processPackages [pytilpack]: Downloading https://files.pythonhosted.org/packages/34/2e/1edf8b5b0681183706212652723b1e60332d1864484af22558f9b62eaa6b/pytilpack-0.2.0.tar.gz
+[2024-05-04 11:46:38] WARNING root fetch - processPackages [cvutil3d]: Skipping, unable to determine old version
+[2024-05-04 11:46:38] INFO root fetch - main [MainThread]: End processing [cvutil3d] error
+[2024-05-04 11:46:38] WARNING root fetch - processPackages [sqlormx]: Skipping, unable to determine old version
+[2024-05-04 11:46:38] INFO root fetch - main [MainThread]: End processing [sqlormx] error
+[2024-05-04 11:46:38] INFO root fetch - processPackages [fmpxx]: New version: [0.1.9.2] Old Version: [0.1.9.1]
+[2024-05-04 11:46:38] INFO root fetch - processPackages [fmpxx]: Downloading https://files.pythonhosted.org/packages/d4/8f/8aecbad1ed8132d82bc3060c6fbfff9553a2c5e6a50deb820ff1c71e3100/fmpxx-0.1.9.1.tar.gz
+[2024-05-04 11:46:38] INFO root fetch - processPackages [pytilpack]: Downloading https://files.pythonhosted.org/packages/ac/49/69739af810c75045dd4fc4c2e9bc93e92fdc238e57d17f5c4c1cfe885996/pytilpack-0.2.1.tar.gz
+[2024-05-04 11:46:38] INFO root fetch - processPackages [pytilpack]: executing diffoscope
+[2024-05-04 11:46:38] INFO root fetch - processPackages [pytilpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytilpack-0.2.0.tar.gz tmp/pytilpack-0.2.1.tar.gz --markdown 20240504/p/pytilpack/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-04 11:46:38] INFO root fetch - processPackages [fmpxx]: Downloading https://files.pythonhosted.org/packages/cc/05/32ffbd4d52afc96e37d6e9d0ee521768d867144ef0c21cf9f7b4974acf53/fmpxx-0.1.9.2.tar.gz
+[2024-05-04 11:46:38] INFO root fetch - processPackages [fmpxx]: executing diffoscope
+[2024-05-04 11:46:38] INFO root fetch - processPackages [fmpxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmpxx-0.1.9.1.tar.gz tmp/fmpxx-0.1.9.2.tar.gz --markdown 20240504/f/fmpxx/0.1.9.1-0.1.9.2/README.md --exclude *.pyd
+[2024-05-04 11:46:39] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.2.0.tar.gz]
+[2024-05-04 11:46:39] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.2.1.tar.gz]
+[2024-05-04 11:46:39] INFO root fetch - main [MainThread]: End processing [pytilpack]: success
+[2024-05-04 11:46:39] INFO root fetch - processPackages [fmpxx]: Remove: archive file [/home/abi/fetcher/tmp/fmpxx-0.1.9.1.tar.gz]
+[2024-05-04 11:46:39] INFO root fetch - processPackages [fmpxx]: Remove: archive file [/home/abi/fetcher/tmp/fmpxx-0.1.9.2.tar.gz]
+[2024-05-04 11:46:39] INFO root fetch - main [MainThread]: End processing [fmpxx]: success
+[2024-05-04 11:46:39] INFO root fetch - main [MainThread]: Store serial: [23057322]
