@@ -13953,3 +13953,15 @@
 [2024-05-04 14:09:54] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.5.4.tar.gz]
 [2024-05-04 14:09:54] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
 [2024-05-04 14:09:54] INFO root fetch - main [MainThread]: Store serial: [23057903]
+[2024-05-04 14:11:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057903]
+[2024-05-04 14:12:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 14:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Python-Education-Tools
+[2024-05-04 14:12:03] INFO root fetch - processPackages [Python-Education-Tools]: New version: [24.5.8] Old Version: [24.5.3]
+[2024-05-04 14:12:03] INFO root fetch - processPackages [Python-Education-Tools]: Downloading https://files.pythonhosted.org/packages/f9/94/1a054bf5a1f5c7c4dcc779cd3e6a2beb54a735ddc01c6ea4684e814c46ba/Python_Education_Tools-24.5.3-py3-none-any.whl
+[2024-05-04 14:12:04] INFO root fetch - processPackages [Python-Education-Tools]: Downloading https://files.pythonhosted.org/packages/42/3c/1f2f6573ad9661f267e29c6b9dc46f6e0c80fa8555e8c52475fb718fd47d/Python_Education_Tools-24.5.8-py3-none-any.whl
+[2024-05-04 14:12:04] INFO root fetch - processPackages [Python-Education-Tools]: executing diffoscope
+[2024-05-04 14:12:04] INFO root fetch - processPackages [Python-Education-Tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Python_Education_Tools-24.5.3-py3-none-any.whl.zip tmp/Python_Education_Tools-24.5.8-py3-none-any.whl.zip --markdown 20240504/P/Python-Education-Tools/24.5.3-24.5.8/README.md --exclude *.pyd
+[2024-05-04 14:12:05] INFO root fetch - processPackages [Python-Education-Tools]: Remove: archive file [/home/abi/fetcher/tmp/Python_Education_Tools-24.5.3-py3-none-any.whl.zip]
+[2024-05-04 14:12:05] INFO root fetch - processPackages [Python-Education-Tools]: Remove: archive file [/home/abi/fetcher/tmp/Python_Education_Tools-24.5.8-py3-none-any.whl.zip]
+[2024-05-04 14:12:05] INFO root fetch - main [MainThread]: End processing [Python-Education-Tools]: success
+[2024-05-04 14:12:05] INFO root fetch - main [MainThread]: Store serial: [23057905]
