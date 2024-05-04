@@ -10890,3 +10890,33 @@
 [2024-05-04 09:09:54] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.330.tar.gz]
 [2024-05-04 09:09:54] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-04 09:09:54] INFO root fetch - main [MainThread]: Store serial: [23056413]
+[2024-05-04 09:11:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056413]
+[2024-05-04 09:12:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 09:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libvshadow-python
+[2024-05-04 09:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: calczx
+[2024-05-04 09:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: makefilemenu
+[2024-05-04 09:12:02] INFO root fetch - processPackages [makefilemenu]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-04 09:12:02] INFO root fetch - processPackages [calczx]: New version: [1.3] Old Version: [1.2]
+[2024-05-04 09:12:02] INFO root fetch - processPackages [libvshadow-python]: New version: [20240504] Old Version: [20240229]
+[2024-05-04 09:12:03] INFO root fetch - processPackages [makefilemenu]: Downloading https://files.pythonhosted.org/packages/59/f3/82d2163aeabeeb5e11671776b8be5286f84f15eb4752efa962e60dd3682e/makefilemenu-0.4.2.tar.gz
+[2024-05-04 09:12:03] INFO root fetch - processPackages [calczx]: Downloading https://files.pythonhosted.org/packages/07/ec/7c7349b414801d7522d90871f6b27b31cb7ce05688272185d0baf638fc38/calczx-1.2.tar.gz
+[2024-05-04 09:12:03] INFO root fetch - processPackages [libvshadow-python]: Downloading https://files.pythonhosted.org/packages/01/c2/f70380672deae5fbd9baf12fdd628940dce287f6814c7a9b585629df70a7/libvshadow-python-20240229.tar.gz
+[2024-05-04 09:12:03] INFO root fetch - processPackages [makefilemenu]: Downloading https://files.pythonhosted.org/packages/93/be/778b015e68cf9eab041cd9a976d0b1b8d8617d3336087b3128c38816aa0f/makefilemenu-0.4.3.tar.gz
+[2024-05-04 09:12:03] INFO root fetch - processPackages [calczx]: Downloading https://files.pythonhosted.org/packages/6d/97/e0d8f20a60eb8c3a656faba635410b8d4e41dd288e3bc9c730995b649352/calczx-1.3.tar.gz
+[2024-05-04 09:12:03] INFO root fetch - processPackages [makefilemenu]: executing diffoscope
+[2024-05-04 09:12:03] INFO root fetch - processPackages [makefilemenu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makefilemenu-0.4.2.tar.gz tmp/makefilemenu-0.4.3.tar.gz --markdown 20240504/m/makefilemenu/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-04 09:12:03] INFO root fetch - processPackages [calczx]: executing diffoscope
+[2024-05-04 09:12:03] INFO root fetch - processPackages [calczx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calczx-1.2.tar.gz tmp/calczx-1.3.tar.gz --markdown 20240504/c/calczx/1.2-1.3/README.md --exclude *.pyd
+[2024-05-04 09:12:03] INFO root fetch - processPackages [libvshadow-python]: Downloading https://files.pythonhosted.org/packages/3a/ed/7a50d49b16bd8025e7d307a0f0e66a5867add75240522aa43bef64ad981a/libvshadow-python-20240504.tar.gz
+[2024-05-04 09:12:03] INFO root fetch - processPackages [libvshadow-python]: executing diffoscope
+[2024-05-04 09:12:03] INFO root fetch - processPackages [libvshadow-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libvshadow-python-20240229.tar.gz tmp/libvshadow-python-20240504.tar.gz --markdown 20240504/l/libvshadow-python/20240229-20240504/README.md --exclude *.pyd
+[2024-05-04 09:12:04] INFO root fetch - processPackages [makefilemenu]: Remove: archive file [/home/abi/fetcher/tmp/makefilemenu-0.4.2.tar.gz]
+[2024-05-04 09:12:04] INFO root fetch - processPackages [makefilemenu]: Remove: archive file [/home/abi/fetcher/tmp/makefilemenu-0.4.3.tar.gz]
+[2024-05-04 09:12:04] INFO root fetch - main [MainThread]: End processing [makefilemenu]: success
+[2024-05-04 09:12:04] INFO root fetch - processPackages [calczx]: Remove: archive file [/home/abi/fetcher/tmp/calczx-1.2.tar.gz]
+[2024-05-04 09:12:04] INFO root fetch - processPackages [calczx]: Remove: archive file [/home/abi/fetcher/tmp/calczx-1.3.tar.gz]
+[2024-05-04 09:12:04] INFO root fetch - main [MainThread]: End processing [calczx]: success
+[2024-05-04 09:12:08] INFO root fetch - processPackages [libvshadow-python]: Remove: archive file [/home/abi/fetcher/tmp/libvshadow-python-20240229.tar.gz]
+[2024-05-04 09:12:08] INFO root fetch - processPackages [libvshadow-python]: Remove: archive file [/home/abi/fetcher/tmp/libvshadow-python-20240504.tar.gz]
+[2024-05-04 09:12:08] INFO root fetch - main [MainThread]: End processing [libvshadow-python]: success
+[2024-05-04 09:12:08] INFO root fetch - main [MainThread]: Store serial: [23056434]
