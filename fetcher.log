@@ -12913,3 +12913,56 @@
 [2024-05-04 12:32:15] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.0.9.tar.gz]
 [2024-05-04 12:32:15] INFO root fetch - main [MainThread]: End processing [audiolm-superfeel]: success
 [2024-05-04 12:32:15] INFO root fetch - main [MainThread]: Store serial: [23057484]
+[2024-05-04 12:34:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057484]
+[2024-05-04 12:34:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 12:34:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mysqlx
+[2024-05-04 12:34:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcspy
+[2024-05-04 12:34:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: khoj-assistant
+[2024-05-04 12:34:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: solidipy-mipt
+[2024-05-04 12:34:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: soundstorm-superfeel
+[2024-05-04 12:34:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ArtificialVision
+[2024-05-04 12:34:24] INFO root fetch - processPackages [solidipy-mipt]: New version: [1.2.0] Old Version: [1.1.3]
+[2024-05-04 12:34:24] INFO root fetch - processPackages [soundstorm-superfeel]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-04 12:34:24] INFO root fetch - processPackages [ArtificialVision]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-04 12:34:24] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-05-04 12:34:24] INFO root fetch - processPackages [solidipy-mipt]: Downloading https://files.pythonhosted.org/packages/4b/ae/3d1979d9bd07afd7f33573683e8294ee0771ac9f08b61385d2562d078611/solidipy_mipt-1.1.3.tar.gz
+[2024-05-04 12:34:24] INFO root fetch - processPackages [mysqlx]: New version: [2.2.0] Old Version: [2.1.4]
+[2024-05-04 12:34:24] INFO root fetch - processPackages [dcspy]: New version: [3.4.1] Old Version: [3.4.0]
+[2024-05-04 12:34:24] INFO root fetch - processPackages [soundstorm-superfeel]: Downloading https://files.pythonhosted.org/packages/7c/49/0fa26ad6c0e1e9ed7b698d0638f031ac2fb7d7f4dade03e6e33ee1a93d8e/soundstorm_superfeel-0.4.3.tar.gz
+[2024-05-04 12:34:24] INFO root fetch - processPackages [ArtificialVision]: Downloading https://files.pythonhosted.org/packages/ec/4a/9ed0415bb711ad903bd60f6b8b456968f9ba34c5c7f56f6293f36d31983b/ArtificialVision-0.1.2.tar.gz
+[2024-05-04 12:34:24] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-05-04 12:34:24] INFO root fetch - processPackages [mysqlx]: Downloading https://files.pythonhosted.org/packages/47/6a/f4bfb3b15d634fa58c5a087fc4da86f03fbe2f9bc26df407ace99f19d401/mysqlx-2.1.4.tar.gz
+[2024-05-04 12:34:24] INFO root fetch - processPackages [dcspy]: Downloading https://files.pythonhosted.org/packages/ea/00/b8ae24277ddb5fdd7ecc7198b2e4f372fe312dbefe534dc9326a4bf60e76/dcspy-3.4.0.tar.gz
+[2024-05-04 12:34:24] INFO root fetch - processPackages [solidipy-mipt]: Downloading https://files.pythonhosted.org/packages/37/19/56104fbf71115efcd768c66f370c50652ceded4cd6387b2d5d10979906c7/solidipy_mipt-1.2.0.tar.gz
+[2024-05-04 12:34:24] INFO root fetch - processPackages [ArtificialVision]: Downloading https://files.pythonhosted.org/packages/fa/72/acc20f67fec880f7498b4d0b17b5afd72e9313913c884491e9ba8eb18082/ArtificialVision-0.1.3-py3-none-any.whl
+[2024-05-04 12:34:24] WARNING root fetch - processPackages [dcspy]: Skipping package: exceeds size limit 14031117>=10485760
+[2024-05-04 12:34:24] INFO root fetch - main [MainThread]: End processing [dcspy] error
+[2024-05-04 12:34:24] INFO root fetch - processPackages [solidipy-mipt]: executing diffoscope
+[2024-05-04 12:34:24] INFO root fetch - processPackages [solidipy-mipt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solidipy_mipt-1.1.3.tar.gz tmp/solidipy_mipt-1.2.0.tar.gz --markdown 20240504/s/solidipy-mipt/1.1.3-1.2.0/README.md --exclude *.pyd
+[2024-05-04 12:34:24] INFO root fetch - processPackages [soundstorm-superfeel]: Downloading https://files.pythonhosted.org/packages/21/48/bd3467d8d26f901bfe9e4ce7fc5ee173c6b3f2b05dd2808e6b2bc1b7fae5/soundstorm_superfeel-0.4.4.tar.gz
+[2024-05-04 12:34:25] INFO root fetch - processPackages [ArtificialVision]: executing diffoscope
+[2024-05-04 12:34:25] INFO root fetch - processPackages [ArtificialVision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ArtificialVision-0.1.2.tar.gz tmp/ArtificialVision-0.1.3-py3-none-any.whl.zip --markdown 20240504/A/ArtificialVision/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-04 12:34:25] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-05-04 12:34:25] INFO root fetch - processPackages [soundstorm-superfeel]: executing diffoscope
+[2024-05-04 12:34:25] INFO root fetch - processPackages [soundstorm-superfeel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soundstorm_superfeel-0.4.3.tar.gz tmp/soundstorm_superfeel-0.4.4.tar.gz --markdown 20240504/s/soundstorm-superfeel/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-04 12:34:25] INFO root fetch - processPackages [mysqlx]: Downloading https://files.pythonhosted.org/packages/7f/d6/c8d38564986a9c681335905faa59c18f9fb7b9e299f381d3a9650729b24b/mysqlx-2.2.0.tar.gz
+[2024-05-04 12:34:25] INFO root fetch - processPackages [mysqlx]: executing diffoscope
+[2024-05-04 12:34:25] INFO root fetch - processPackages [mysqlx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mysqlx-2.1.4.tar.gz tmp/mysqlx-2.2.0.tar.gz --markdown 20240504/m/mysqlx/2.1.4-2.2.0/README.md --exclude *.pyd
+[2024-05-04 12:34:25] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-05-04 12:34:25] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240504/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-04 12:34:25] INFO root fetch - processPackages [ArtificialVision]: Remove: archive file [/home/abi/fetcher/tmp/ArtificialVision-0.1.2.tar.gz]
+[2024-05-04 12:34:25] INFO root fetch - processPackages [ArtificialVision]: Remove: archive file [/home/abi/fetcher/tmp/ArtificialVision-0.1.3-py3-none-any.whl.zip]
+[2024-05-04 12:34:25] INFO root fetch - main [MainThread]: End processing [ArtificialVision]: success
+[2024-05-04 12:34:25] INFO root fetch - processPackages [solidipy-mipt]: Remove: archive file [/home/abi/fetcher/tmp/solidipy_mipt-1.1.3.tar.gz]
+[2024-05-04 12:34:25] INFO root fetch - processPackages [solidipy-mipt]: Remove: archive file [/home/abi/fetcher/tmp/solidipy_mipt-1.2.0.tar.gz]
+[2024-05-04 12:34:25] INFO root fetch - main [MainThread]: End processing [solidipy-mipt]: success
+[2024-05-04 12:34:25] INFO root fetch - processPackages [soundstorm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/soundstorm_superfeel-0.4.3.tar.gz]
+[2024-05-04 12:34:25] INFO root fetch - processPackages [soundstorm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/soundstorm_superfeel-0.4.4.tar.gz]
+[2024-05-04 12:34:25] INFO root fetch - main [MainThread]: End processing [soundstorm-superfeel]: success
+[2024-05-04 12:34:25] INFO root fetch - processPackages [mysqlx]: Remove: archive file [/home/abi/fetcher/tmp/mysqlx-2.1.4.tar.gz]
+[2024-05-04 12:34:25] INFO root fetch - processPackages [mysqlx]: Remove: archive file [/home/abi/fetcher/tmp/mysqlx-2.2.0.tar.gz]
+[2024-05-04 12:34:25] INFO root fetch - main [MainThread]: End processing [mysqlx]: success
+[2024-05-04 12:34:26] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-05-04 12:34:26] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-05-04 12:34:26] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-05-04 12:34:26] INFO root fetch - main [MainThread]: Store serial: [23057500]
