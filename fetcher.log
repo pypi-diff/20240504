@@ -12709,3 +12709,15 @@
 [2024-05-04 12:14:47] INFO root fetch - processPackages [IoTNetworkMalwareClassifier]: Remove: archive file [/home/abi/fetcher/tmp/iotnetworkmalwareclassifier-0.0.16.tar.gz]
 [2024-05-04 12:14:47] INFO root fetch - main [MainThread]: End processing [IoTNetworkMalwareClassifier]: success
 [2024-05-04 12:14:47] INFO root fetch - main [MainThread]: Store serial: [23057394]
+[2024-05-04 12:16:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057394]
+[2024-05-04 12:16:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 12:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SimpleTKMessageBox
+[2024-05-04 12:16:56] INFO root fetch - processPackages [SimpleTKMessageBox]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-04 12:16:56] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/55/e1/89d168ea411b366fe0e660de63d285125cbf2d17021720fcdf799a894292/SimpleTKMessageBox-0.2.6.tar.gz
+[2024-05-04 12:16:56] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/a4/b6/86a04c1c0af724785aa3bd0910690f152429573afff18ba44b436fba85a3/SimpleTKMessageBox-0.2.7.tar.gz
+[2024-05-04 12:16:57] INFO root fetch - processPackages [SimpleTKMessageBox]: executing diffoscope
+[2024-05-04 12:16:57] INFO root fetch - processPackages [SimpleTKMessageBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleTKMessageBox-0.2.6.tar.gz tmp/SimpleTKMessageBox-0.2.7.tar.gz --markdown 20240504/S/SimpleTKMessageBox/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-04 12:16:57] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.6.tar.gz]
+[2024-05-04 12:16:57] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.7.tar.gz]
+[2024-05-04 12:16:57] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox]: success
+[2024-05-04 12:16:57] INFO root fetch - main [MainThread]: Store serial: [23057396]
