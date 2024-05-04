@@ -6538,3 +6538,56 @@
 [2024-05-04 03:21:53] INFO root fetch - processPackages [django_herobiz_dental]: Remove: archive file [/home/abi/fetcher/tmp/django_herobiz_dental-1.0.9.tar.gz]
 [2024-05-04 03:21:53] INFO root fetch - main [MainThread]: End processing [django_herobiz_dental]: success
 [2024-05-04 03:21:53] INFO root fetch - main [MainThread]: Store serial: [23054124]
+[2024-05-04 03:24:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054124]
+[2024-05-04 03:24:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 03:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2024-05-04 03:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stable-ts
+[2024-05-04 03:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: koku-nise
+[2024-05-04 03:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edgegap-logging
+[2024-05-04 03:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edgegap-api
+[2024-05-04 03:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stable-ts-whisperless
+[2024-05-04 03:24:05] INFO root fetch - processPackages [edgegap-logging]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-05-04 03:24:05] INFO root fetch - processPackages [stable-ts-whisperless]: New version: [2.17.0] Old Version: [2.16.0]
+[2024-05-04 03:24:05] INFO root fetch - processPackages [edgegap-api]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-05-04 03:24:05] INFO root fetch - processPackages [stable-ts]: New version: [2.9.0] Old Version: [2.8.1]
+[2024-05-04 03:24:05] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-05-04 03:24:05] INFO root fetch - processPackages [koku-nise]: New version: [4.4.9] Old Version: [4.4.8]
+[2024-05-04 03:24:05] INFO root fetch - processPackages [edgegap-logging]: Downloading https://files.pythonhosted.org/packages/16/8c/e751ac26a9635c8888901e7613a0ed5b362b4ff2bf39901e8fa2e8405dc7/edgegap_logging-1.6.0.tar.gz
+[2024-05-04 03:24:05] INFO root fetch - processPackages [edgegap-api]: Downloading https://files.pythonhosted.org/packages/d3/75/4613548ec932f83cff8762075c1d523f6c39856852d453d612940aae46d3/edgegap_api-1.6.0.tar.gz
+[2024-05-04 03:24:05] INFO root fetch - processPackages [stable-ts-whisperless]: Downloading https://files.pythonhosted.org/packages/e8/5b/89c68a469b909241c3efe3f5147b76be790ba10095d65a1b57bcc6cd8a66/stable-ts-whisperless-2.16.0.tar.gz
+[2024-05-04 03:24:05] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-05-04 03:24:05] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-05-04 03:24:05] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-05-04 03:24:05] INFO root fetch - processPackages [stable-ts]: Downloading https://files.pythonhosted.org/packages/b5/4e/230d64b0c72299e3c08c40e04a51172b8f39e267b1d237cf0897e3ae4599/stable-ts-2.8.1.tar.gz
+[2024-05-04 03:24:06] INFO root fetch - processPackages [koku-nise]: Downloading https://files.pythonhosted.org/packages/e0/1a/732436faa7e45e8fec38008bb6d291b88f38cdeca9027acb8edfd1475e16/koku-nise-4.4.8.tar.gz
+[2024-05-04 03:24:06] INFO root fetch - processPackages [edgegap-api]: Downloading https://files.pythonhosted.org/packages/00/d9/a2e176bc34d3f933666c0dfd50d79d7da2208b0f8cc2e0ff7cd351c70eb6/edgegap_api-1.6.1.tar.gz
+[2024-05-04 03:24:06] INFO root fetch - processPackages [stable-ts-whisperless]: Downloading https://files.pythonhosted.org/packages/a1/bb/54ed84ea6c3857495809b166385233da649e14a1ee22dee7c267becb0ff5/stable-ts-whisperless-2.17.0.tar.gz
+[2024-05-04 03:24:06] INFO root fetch - processPackages [edgegap-api]: executing diffoscope
+[2024-05-04 03:24:06] INFO root fetch - processPackages [edgegap-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_api-1.6.0.tar.gz tmp/edgegap_api-1.6.1.tar.gz --markdown 20240504/e/edgegap-api/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-05-04 03:24:06] INFO root fetch - processPackages [edgegap-logging]: Downloading https://files.pythonhosted.org/packages/ba/34/86cfffcec3494cc299a57e45379ff424f1a5fd849327543b057a0ab64025/edgegap_logging-1.6.1.tar.gz
+[2024-05-04 03:24:06] INFO root fetch - processPackages [stable-ts]: Downloading https://files.pythonhosted.org/packages/48/20/4e33cc411acc1eb3efa9decb3190a678dccd77cbe25fe1322a08fcdec691/stable-ts-2.9.0.tar.gz
+[2024-05-04 03:24:06] INFO root fetch - processPackages [stable-ts-whisperless]: executing diffoscope
+[2024-05-04 03:24:06] INFO root fetch - processPackages [stable-ts-whisperless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stable-ts-whisperless-2.16.0.tar.gz tmp/stable-ts-whisperless-2.17.0.tar.gz --markdown 20240504/s/stable-ts-whisperless/2.16.0-2.17.0/README.md --exclude *.pyd
+[2024-05-04 03:24:06] INFO root fetch - processPackages [edgegap-logging]: executing diffoscope
+[2024-05-04 03:24:06] INFO root fetch - processPackages [edgegap-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_logging-1.6.0.tar.gz tmp/edgegap_logging-1.6.1.tar.gz --markdown 20240504/e/edgegap-logging/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-05-04 03:24:06] INFO root fetch - processPackages [stable-ts]: executing diffoscope
+[2024-05-04 03:24:06] INFO root fetch - processPackages [stable-ts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stable-ts-2.8.1.tar.gz tmp/stable-ts-2.9.0.tar.gz --markdown 20240504/s/stable-ts/2.8.1-2.9.0/README.md --exclude *.pyd
+[2024-05-04 03:24:06] INFO root fetch - processPackages [koku-nise]: Downloading https://files.pythonhosted.org/packages/49/5c/c5755476a36fb6b500cbdac53e960461bcb7b8baa953a352d11fb6ded28b/koku-nise-4.4.9.tar.gz
+[2024-05-04 03:24:06] INFO root fetch - processPackages [koku-nise]: executing diffoscope
+[2024-05-04 03:24:06] INFO root fetch - processPackages [koku-nise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/koku-nise-4.4.8.tar.gz tmp/koku-nise-4.4.9.tar.gz --markdown 20240504/k/koku-nise/4.4.8-4.4.9/README.md --exclude *.pyd
+[2024-05-04 03:24:06] INFO root fetch - processPackages [edgegap-logging]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_logging-1.6.0.tar.gz]
+[2024-05-04 03:24:06] INFO root fetch - processPackages [edgegap-logging]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_logging-1.6.1.tar.gz]
+[2024-05-04 03:24:06] INFO root fetch - main [MainThread]: End processing [edgegap-logging]: success
+[2024-05-04 03:24:06] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.0.tar.gz]
+[2024-05-04 03:24:06] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.1.tar.gz]
+[2024-05-04 03:24:06] INFO root fetch - main [MainThread]: End processing [edgegap-api]: success
+[2024-05-04 03:24:06] INFO root fetch - processPackages [stable-ts]: Remove: archive file [/home/abi/fetcher/tmp/stable-ts-2.8.1.tar.gz]
+[2024-05-04 03:24:06] INFO root fetch - processPackages [stable-ts]: Remove: archive file [/home/abi/fetcher/tmp/stable-ts-2.9.0.tar.gz]
+[2024-05-04 03:24:06] INFO root fetch - main [MainThread]: End processing [stable-ts]: success
+[2024-05-04 03:24:07] INFO root fetch - processPackages [stable-ts-whisperless]: Remove: archive file [/home/abi/fetcher/tmp/stable-ts-whisperless-2.16.0.tar.gz]
+[2024-05-04 03:24:07] INFO root fetch - processPackages [stable-ts-whisperless]: Remove: archive file [/home/abi/fetcher/tmp/stable-ts-whisperless-2.17.0.tar.gz]
+[2024-05-04 03:24:07] INFO root fetch - main [MainThread]: End processing [stable-ts-whisperless]: success
+[2024-05-04 03:24:07] INFO root fetch - processPackages [koku-nise]: Remove: archive file [/home/abi/fetcher/tmp/koku-nise-4.4.8.tar.gz]
+[2024-05-04 03:24:07] INFO root fetch - processPackages [koku-nise]: Remove: archive file [/home/abi/fetcher/tmp/koku-nise-4.4.9.tar.gz]
+[2024-05-04 03:24:07] INFO root fetch - main [MainThread]: End processing [koku-nise]: success
+[2024-05-04 03:24:07] INFO root fetch - main [MainThread]: Store serial: [23054196]
