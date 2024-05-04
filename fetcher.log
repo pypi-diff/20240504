@@ -2650,3 +2650,42 @@
 [2024-05-04 02:52:51] WARNING root fetch - processPackages [coomer-favlink-generator]: Skipping, unable to determine old version
 [2024-05-04 02:52:51] INFO root fetch - main [MainThread]: End processing [coomer-favlink-generator] error
 [2024-05-04 02:52:51] INFO root fetch - main [MainThread]: Store serial: [23053155]
+[2024-05-04 02:54:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053155]
+[2024-05-04 02:55:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 02:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vllm-acc
+[2024-05-04 02:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dearpypixl
+[2024-05-04 02:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-layer-curl
+[2024-05-04 02:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nightingalejsonadapter
+[2024-05-04 02:55:00] INFO root fetch - processPackages [nightingalejsonadapter]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-05-04 02:55:00] INFO root fetch - processPackages [vllm-acc]: New version: [0.4.11714782966.854302] Old Version: [0.4.1]
+[2024-05-04 02:55:00] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-04 02:55:00] INFO root fetch - processPackages [nightingalejsonadapter]: Downloading https://files.pythonhosted.org/packages/ff/e3/209c15a61e37bb29893508720f4df241908b20f81a5ed77a1e5239bd7a9d/nightingalejsonadapter-2.1.0.tar.gz
+[2024-05-04 02:55:00] INFO root fetch - processPackages [vllm-acc]: Downloading https://files.pythonhosted.org/packages/1f/73/fd93835b8cf1e19dadc1a080585e0360e86de257b8af505fc0a4684b2d8b/vllm_acc-0.4.1.tar.gz
+[2024-05-04 02:55:00] INFO root fetch - processPackages [dearpypixl]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-05-04 02:55:00] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-05-04 02:55:00] INFO root fetch - processPackages [nightingalejsonadapter]: Downloading https://files.pythonhosted.org/packages/b9/33/fcbb68ebb0c7ad08bfe817ef1d51dc7821586f61d8885c8f6c4e06a0dda0/nightingalejsonadapter-2.2.0.tar.gz
+[2024-05-04 02:55:00] INFO root fetch - processPackages [dearpypixl]: Downloading https://files.pythonhosted.org/packages/5d/f7/3e0e1b15d90f32ce5d098fd82acbe1426ddcee35b69e431cf6beebc90e5f/dearpypixl-1.2.5.tar.gz
+[2024-05-04 02:55:00] INFO root fetch - processPackages [vllm-acc]: Downloading https://files.pythonhosted.org/packages/df/65/337333b473621b042eace50b4702c1c3107f4707a652b97496134568d657/vllm_acc-0.4.11714782966.854302.tar.gz
+[2024-05-04 02:55:00] INFO root fetch - processPackages [nightingalejsonadapter]: executing diffoscope
+[2024-05-04 02:55:00] INFO root fetch - processPackages [nightingalejsonadapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nightingalejsonadapter-2.1.0.tar.gz tmp/nightingalejsonadapter-2.2.0.tar.gz --markdown 20240504/n/nightingalejsonadapter/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-05-04 02:55:00] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-05-04 02:55:00] INFO root fetch - processPackages [vllm-acc]: executing diffoscope
+[2024-05-04 02:55:00] INFO root fetch - processPackages [vllm-acc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vllm_acc-0.4.1.tar.gz tmp/vllm_acc-0.4.11714782966.854302.tar.gz --markdown 20240504/v/vllm-acc/0.4.1-0.4.11714782966.854302/README.md --exclude *.pyd
+[2024-05-04 02:55:00] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-05-04 02:55:00] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240504/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-04 02:55:00] INFO root fetch - processPackages [dearpypixl]: Downloading https://files.pythonhosted.org/packages/ca/e2/97ecae3a72f6772f6c963233d32c23df31190dd8c98572ec00b8fe2db961/dearpypixl-1.2.6.tar.gz
+[2024-05-04 02:55:01] INFO root fetch - processPackages [nightingalejsonadapter]: Remove: archive file [/home/abi/fetcher/tmp/nightingalejsonadapter-2.1.0.tar.gz]
+[2024-05-04 02:55:01] INFO root fetch - processPackages [nightingalejsonadapter]: Remove: archive file [/home/abi/fetcher/tmp/nightingalejsonadapter-2.2.0.tar.gz]
+[2024-05-04 02:55:01] INFO root fetch - main [MainThread]: End processing [nightingalejsonadapter]: success
+[2024-05-04 02:55:01] INFO root fetch - processPackages [dearpypixl]: executing diffoscope
+[2024-05-04 02:55:01] INFO root fetch - processPackages [dearpypixl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dearpypixl-1.2.5.tar.gz tmp/dearpypixl-1.2.6.tar.gz --markdown 20240504/d/dearpypixl/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-05-04 02:55:01] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-05-04 02:55:01] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-05-04 02:55:01] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-05-04 02:55:01] INFO root fetch - processPackages [dearpypixl]: Remove: archive file [/home/abi/fetcher/tmp/dearpypixl-1.2.5.tar.gz]
+[2024-05-04 02:55:01] INFO root fetch - processPackages [dearpypixl]: Remove: archive file [/home/abi/fetcher/tmp/dearpypixl-1.2.6.tar.gz]
+[2024-05-04 02:55:01] INFO root fetch - main [MainThread]: End processing [dearpypixl]: success
+[2024-05-04 02:55:02] INFO root fetch - processPackages [vllm-acc]: Remove: archive file [/home/abi/fetcher/tmp/vllm_acc-0.4.1.tar.gz]
+[2024-05-04 02:55:02] INFO root fetch - processPackages [vllm-acc]: Remove: archive file [/home/abi/fetcher/tmp/vllm_acc-0.4.11714782966.854302.tar.gz]
+[2024-05-04 02:55:02] INFO root fetch - main [MainThread]: End processing [vllm-acc]: success
+[2024-05-04 02:55:02] INFO root fetch - main [MainThread]: Store serial: [23053167]
