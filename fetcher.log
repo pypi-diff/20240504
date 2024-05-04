@@ -9934,3 +9934,42 @@
 [2024-05-04 07:44:21] INFO root fetch - processPackages [onnxruntime-genai]: Remove: archive file [/home/abi/fetcher/tmp/onnxruntime_genai-0.2.0rc5-cp39-cp39-win_amd64.whl.zip]
 [2024-05-04 07:44:21] INFO root fetch - main [MainThread]: End processing [onnxruntime-genai]: success
 [2024-05-04 07:44:21] INFO root fetch - main [MainThread]: Store serial: [23056012]
+[2024-05-04 07:46:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056012]
+[2024-05-04 07:46:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 07:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ddr-davis-data
+[2024-05-04 07:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-sale-report-delivered-subtotal
+[2024-05-04 07:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quickstart-vdk
+[2024-05-04 07:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyPDFForm
+[2024-05-04 07:46:40] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-04 07:46:40] INFO root fetch - processPackages [odoo-addon-sale-report-delivered-subtotal]: New version: [16.0.1.0.1.3] Old Version: [16.0.1.0.1.2]
+[2024-05-04 07:46:41] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-04 07:46:41] INFO root fetch - processPackages [PyPDFForm]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-04 07:46:41] INFO root fetch - processPackages [ddr-davis-data]: New version: [0.1.25] Old Version: [0.1.23]
+[2024-05-04 07:46:41] INFO root fetch - processPackages [odoo-addon-sale-report-delivered-subtotal]: Downloading https://files.pythonhosted.org/packages/2e/64/1b38c1f0b15ea0a0e8b5078b704f0bfbd3d47e14d2dc600f008664f896c5/odoo_addon_sale_report_delivered_subtotal-16.0.1.0.1.2-py3-none-any.whl
+[2024-05-04 07:46:41] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/69/9f/2ae6600de9a7bcb149411374a44be0c0f9f2c9ce362f6374e578ec5a4e26/PyPDFForm-1.4.8.tar.gz
+[2024-05-04 07:46:41] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-04 07:46:41] INFO root fetch - processPackages [ddr-davis-data]: Downloading https://files.pythonhosted.org/packages/9f/74/02d184a15c63bfe84ad725799bfb7e20bb867d22f93ea5dccd75bde61333/ddr_davis_data-0.1.23.tar.gz
+[2024-05-04 07:46:41] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-04 07:46:41] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240504/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-04 07:46:41] INFO root fetch - processPackages [odoo-addon-sale-report-delivered-subtotal]: Downloading https://files.pythonhosted.org/packages/b8/4f/cf751a469bc5c80fec68c115401c6278a8c3912453327a2e7f3e048aa573/odoo_addon_sale_report_delivered_subtotal-16.0.1.0.1.3-py3-none-any.whl
+[2024-05-04 07:46:41] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/f0/86/8219b0802370fbdcae59e87d8b203196b52045c8375f1c043b5db3eb54ff/PyPDFForm-1.4.9.tar.gz
+[2024-05-04 07:46:41] INFO root fetch - processPackages [ddr-davis-data]: Downloading https://files.pythonhosted.org/packages/79/45/20a3f586541ca6ad751827f024ea988549c2b307f5284d637e6c99874c91/ddr_davis_data-0.1.25.tar.gz
+[2024-05-04 07:46:41] INFO root fetch - processPackages [odoo-addon-sale-report-delivered-subtotal]: executing diffoscope
+[2024-05-04 07:46:41] INFO root fetch - processPackages [odoo-addon-sale-report-delivered-subtotal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_report_delivered_subtotal-16.0.1.0.1.2-py3-none-any.whl.zip tmp/odoo_addon_sale_report_delivered_subtotal-16.0.1.0.1.3-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-sale-report-delivered-subtotal/16.0.1.0.1.2-16.0.1.0.1.3/README.md --exclude *.pyd
+[2024-05-04 07:46:41] INFO root fetch - processPackages [PyPDFForm]: executing diffoscope
+[2024-05-04 07:46:41] INFO root fetch - processPackages [PyPDFForm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPDFForm-1.4.8.tar.gz tmp/PyPDFForm-1.4.9.tar.gz --markdown 20240504/P/PyPDFForm/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-04 07:46:41] INFO root fetch - processPackages [ddr-davis-data]: executing diffoscope
+[2024-05-04 07:46:41] INFO root fetch - processPackages [ddr-davis-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddr_davis_data-0.1.23.tar.gz tmp/ddr_davis_data-0.1.25.tar.gz --markdown 20240504/d/ddr-davis-data/0.1.23-0.1.25/README.md --exclude *.pyd
+[2024-05-04 07:46:41] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-04 07:46:41] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-04 07:46:41] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-04 07:46:42] INFO root fetch - processPackages [ddr-davis-data]: Remove: archive file [/home/abi/fetcher/tmp/ddr_davis_data-0.1.23.tar.gz]
+[2024-05-04 07:46:42] INFO root fetch - processPackages [ddr-davis-data]: Remove: archive file [/home/abi/fetcher/tmp/ddr_davis_data-0.1.25.tar.gz]
+[2024-05-04 07:46:42] INFO root fetch - main [MainThread]: End processing [ddr-davis-data]: success
+[2024-05-04 07:46:42] INFO root fetch - processPackages [odoo-addon-sale-report-delivered-subtotal]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_report_delivered_subtotal-16.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-05-04 07:46:42] INFO root fetch - processPackages [odoo-addon-sale-report-delivered-subtotal]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_report_delivered_subtotal-16.0.1.0.1.3-py3-none-any.whl.zip]
+[2024-05-04 07:46:42] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-report-delivered-subtotal]: success
+[2024-05-04 07:46:42] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.8.tar.gz]
+[2024-05-04 07:46:42] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.9.tar.gz]
+[2024-05-04 07:46:42] INFO root fetch - main [MainThread]: End processing [PyPDFForm]: success
+[2024-05-04 07:46:42] INFO root fetch - main [MainThread]: Store serial: [23056025]
