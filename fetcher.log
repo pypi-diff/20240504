@@ -16296,3 +16296,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:36:11] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.2.tar.gz]
 [2024-05-04 17:36:11] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp]: success
 [2024-05-04 17:36:11] INFO root fetch - main [MainThread]: Store serial: [23058970]
+[2024-05-04 17:38:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058970]
+[2024-05-04 17:38:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 17:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: safe-ds-stubgen
+[2024-05-04 17:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-math
+[2024-05-04 17:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyauth0
+[2024-05-04 17:38:20] INFO root fetch - processPackages [pyauth0]: New version: [0.1.3a1] Old Version: [0.1.3a0]
+[2024-05-04 17:38:20] INFO root fetch - processPackages [mo-math]: New version: [7.614.24125] Old Version: [7.613.24121]
+[2024-05-04 17:38:20] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/33/01/ea605e427d5b6cfec30d0af9ce2143cf334c4bc6231a618cd0e0431da615/pyauth0-0.1.3a0.tar.gz
+[2024-05-04 17:38:20] INFO root fetch - processPackages [safe-ds-stubgen]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-04 17:38:20] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/a5/8a/e10be139de13f98c3d4ae01204812a52d101311289f0cc7ef49a52083c18/mo_math-7.613.24121.tar.gz
+[2024-05-04 17:38:20] INFO root fetch - processPackages [safe-ds-stubgen]: Downloading https://files.pythonhosted.org/packages/07/00/112b8e8651636d6d97e2c1c2fcb30f38ecff93c61a6f7877a2c3f0725f30/safe_ds_stubgen-0.2.0.tar.gz
+[2024-05-04 17:38:20] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/e6/87/566e1b158aed5fa9f1c97db3044249721d6aa6a11e53a5163dfc12053886/mo_math-7.614.24125.tar.gz
+[2024-05-04 17:38:20] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/e5/05/af69712866a86bd19d367eb25f87eb41517f37d989d54875394fb7a8365f/pyauth0-0.1.3a1.tar.gz
+[2024-05-04 17:38:20] INFO root fetch - processPackages [mo-math]: executing diffoscope
+[2024-05-04 17:38:20] INFO root fetch - processPackages [mo-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_math-7.613.24121.tar.gz tmp/mo_math-7.614.24125.tar.gz --markdown 20240504/m/mo-math/7.613.24121-7.614.24125/README.md --exclude *.pyd
+[2024-05-04 17:38:20] INFO root fetch - processPackages [pyauth0]: executing diffoscope
+[2024-05-04 17:38:20] INFO root fetch - processPackages [pyauth0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyauth0-0.1.3a0.tar.gz tmp/pyauth0-0.1.3a1.tar.gz --markdown 20240504/p/pyauth0/0.1.3a0-0.1.3a1/README.md --exclude *.pyd
+[2024-05-04 17:38:20] INFO root fetch - processPackages [safe-ds-stubgen]: Downloading https://files.pythonhosted.org/packages/6f/37/c36cd63a883b8ba08355fb22d54a03826ba921e64daa639be9ac7618840a/safe_ds_stubgen-0.3.0.tar.gz
+[2024-05-04 17:38:20] INFO root fetch - processPackages [safe-ds-stubgen]: executing diffoscope
+[2024-05-04 17:38:20] INFO root fetch - processPackages [safe-ds-stubgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safe_ds_stubgen-0.2.0.tar.gz tmp/safe_ds_stubgen-0.3.0.tar.gz --markdown 20240504/s/safe-ds-stubgen/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-04 17:38:21] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.3a0.tar.gz]
+[2024-05-04 17:38:21] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.3a1.tar.gz]
+[2024-05-04 17:38:21] INFO root fetch - main [MainThread]: End processing [pyauth0]: success
+[2024-05-04 17:38:21] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.613.24121.tar.gz]
+[2024-05-04 17:38:21] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.614.24125.tar.gz]
+[2024-05-04 17:38:21] INFO root fetch - main [MainThread]: End processing [mo-math]: success
+[2024-05-04 17:38:21] INFO root fetch - processPackages [safe-ds-stubgen]: Remove: archive file [/home/abi/fetcher/tmp/safe_ds_stubgen-0.2.0.tar.gz]
+[2024-05-04 17:38:21] INFO root fetch - processPackages [safe-ds-stubgen]: Remove: archive file [/home/abi/fetcher/tmp/safe_ds_stubgen-0.3.0.tar.gz]
+[2024-05-04 17:38:21] INFO root fetch - main [MainThread]: End processing [safe-ds-stubgen]: success
+[2024-05-04 17:38:21] INFO root fetch - main [MainThread]: Store serial: [23058979]
