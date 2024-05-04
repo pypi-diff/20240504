@@ -19484,3 +19484,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:36:44] WARNING root fetch - processPackages [drf-events]: Skipping, unable to determine old version
 [2024-05-04 21:36:44] INFO root fetch - main [MainThread]: End processing [drf-events] error
 [2024-05-04 21:36:44] INFO root fetch - main [MainThread]: Store serial: [23060494]
+[2024-05-04 21:38:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060494]
+[2024-05-04 21:38:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 21:38:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bufferq
+[2024-05-04 21:38:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geoseeq
+[2024-05-04 21:38:53] INFO root fetch - processPackages [bufferq]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 21:38:53] INFO root fetch - processPackages [geoseeq]: New version: [0.6.0] Old Version: [0.5.6a9]
+[2024-05-04 21:38:53] INFO root fetch - processPackages [geoseeq]: Downloading https://files.pythonhosted.org/packages/6a/22/f613efbeaf81d708bb8f92bd33cf0eb59dabb001aaf714523068d9308e2b/geoseeq-0.5.6a9.tar.gz
+[2024-05-04 21:38:53] INFO root fetch - processPackages [bufferq]: Downloading https://files.pythonhosted.org/packages/ba/fe/a2b905693f42b541ea55b5ee5a6731687974bd1762480756c0095c2ccf71/bufferq-0.1.1.tar.gz
+[2024-05-04 21:38:53] INFO root fetch - processPackages [bufferq]: Downloading https://files.pythonhosted.org/packages/c7/94/69900848b9850d5c22335dc7cb23b4e5fa1f2df8a1ae747e807debf57b25/bufferq-0.1.2.tar.gz
+[2024-05-04 21:38:53] INFO root fetch - processPackages [bufferq]: executing diffoscope
+[2024-05-04 21:38:53] INFO root fetch - processPackages [bufferq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bufferq-0.1.1.tar.gz tmp/bufferq-0.1.2.tar.gz --markdown 20240504/b/bufferq/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 21:38:53] INFO root fetch - processPackages [geoseeq]: Downloading https://files.pythonhosted.org/packages/08/a7/ef1657096468ccc93d44a62307e18185c2893e7006315b76a38d8d667d90/geoseeq-0.6.0.tar.gz
+[2024-05-04 21:38:53] INFO root fetch - processPackages [geoseeq]: executing diffoscope
+[2024-05-04 21:38:53] INFO root fetch - processPackages [geoseeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoseeq-0.5.6a9.tar.gz tmp/geoseeq-0.6.0.tar.gz --markdown 20240504/g/geoseeq/0.5.6a9-0.6.0/README.md --exclude *.pyd
+[2024-05-04 21:38:54] INFO root fetch - processPackages [bufferq]: Remove: archive file [/home/abi/fetcher/tmp/bufferq-0.1.1.tar.gz]
+[2024-05-04 21:38:54] INFO root fetch - processPackages [bufferq]: Remove: archive file [/home/abi/fetcher/tmp/bufferq-0.1.2.tar.gz]
+[2024-05-04 21:38:54] INFO root fetch - main [MainThread]: End processing [bufferq]: success
+[2024-05-04 21:38:54] INFO root fetch - processPackages [geoseeq]: Remove: archive file [/home/abi/fetcher/tmp/geoseeq-0.5.6a9.tar.gz]
+[2024-05-04 21:38:54] INFO root fetch - processPackages [geoseeq]: Remove: archive file [/home/abi/fetcher/tmp/geoseeq-0.6.0.tar.gz]
+[2024-05-04 21:38:54] INFO root fetch - main [MainThread]: End processing [geoseeq]: success
+[2024-05-04 21:38:54] INFO root fetch - main [MainThread]: Store serial: [23060501]
