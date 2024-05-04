@@ -21139,3 +21139,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:35:01] INFO root fetch - processPackages [ovos-workshop]: Remove: archive file [/home/abi/fetcher/tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip]
 [2024-05-04 23:35:01] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
 [2024-05-04 23:35:01] INFO root fetch - main [MainThread]: Store serial: [23061152]
+[2024-05-04 23:37:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061152]
+[2024-05-04 23:37:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 23:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vital-ai-aimp
+[2024-05-04 23:37:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: conda-project
+[2024-05-04 23:37:10] INFO root fetch - processPackages [vital-ai-aimp]: New version: [0.1.3] Old Version: [0.1.1]
+[2024-05-04 23:37:10] INFO root fetch - processPackages [conda-project]: New version: [0.4.1] Old Version: [0.3.2]
+[2024-05-04 23:37:10] INFO root fetch - processPackages [vital-ai-aimp]: Downloading https://files.pythonhosted.org/packages/f0/88/d5447695edb3817dbaf211bb0f4b533bd3121d7e579dfb87c7696b59db82/vital-ai-aimp-0.1.1.tar.gz
+[2024-05-04 23:37:10] INFO root fetch - processPackages [conda-project]: Downloading https://files.pythonhosted.org/packages/ec/1a/fc8975d5ea17757c4d3339e0ca4561d466e6eb84e36e71a71d76698ac5eb/conda_project-0.3.2.tar.gz
+[2024-05-04 23:37:10] INFO root fetch - processPackages [vital-ai-aimp]: Downloading https://files.pythonhosted.org/packages/bc/68/276a0c76a5ec0fcd44ef3ee2cdee04c0a405f9869e1a69316e7c00ff53d4/vital-ai-aimp-0.1.3.tar.gz
+[2024-05-04 23:37:10] INFO root fetch - processPackages [conda-project]: Downloading https://files.pythonhosted.org/packages/fc/02/b7e9ef0405045ebe2406d9a77d155b4b67c27a6b14bdb806df5c3c7a5607/conda_project-0.4.1-py3-none-any.whl
+[2024-05-04 23:37:10] INFO root fetch - processPackages [conda-project]: executing diffoscope
+[2024-05-04 23:37:10] INFO root fetch - processPackages [conda-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conda_project-0.3.2.tar.gz tmp/conda_project-0.4.1-py3-none-any.whl.zip --markdown 20240504/c/conda-project/0.3.2-0.4.1/README.md --exclude *.pyd
+[2024-05-04 23:37:10] INFO root fetch - processPackages [vital-ai-aimp]: executing diffoscope
+[2024-05-04 23:37:10] INFO root fetch - processPackages [vital-ai-aimp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vital-ai-aimp-0.1.1.tar.gz tmp/vital-ai-aimp-0.1.3.tar.gz --markdown 20240504/v/vital-ai-aimp/0.1.1-0.1.3/README.md --exclude *.pyd
+[2024-05-04 23:37:11] INFO root fetch - processPackages [conda-project]: Remove: archive file [/home/abi/fetcher/tmp/conda_project-0.3.2.tar.gz]
+[2024-05-04 23:37:11] INFO root fetch - processPackages [conda-project]: Remove: archive file [/home/abi/fetcher/tmp/conda_project-0.4.1-py3-none-any.whl.zip]
+[2024-05-04 23:37:11] INFO root fetch - main [MainThread]: End processing [conda-project]: success
+[2024-05-04 23:37:11] INFO root fetch - processPackages [vital-ai-aimp]: Remove: archive file [/home/abi/fetcher/tmp/vital-ai-aimp-0.1.1.tar.gz]
+[2024-05-04 23:37:11] INFO root fetch - processPackages [vital-ai-aimp]: Remove: archive file [/home/abi/fetcher/tmp/vital-ai-aimp-0.1.3.tar.gz]
+[2024-05-04 23:37:11] INFO root fetch - main [MainThread]: End processing [vital-ai-aimp]: success
+[2024-05-04 23:37:11] INFO root fetch - main [MainThread]: Store serial: [23061157]
