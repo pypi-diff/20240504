@@ -14184,3 +14184,24 @@
 [2024-05-04 14:35:57] INFO root fetch - processPackages [exciton]: Remove: archive file [/home/abi/fetcher/tmp/exciton-2.5.5-py3-none-any.whl.zip]
 [2024-05-04 14:35:57] INFO root fetch - main [MainThread]: End processing [exciton]: success
 [2024-05-04 14:35:57] INFO root fetch - main [MainThread]: Store serial: [23057999]
+[2024-05-04 14:38:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057999]
+[2024-05-04 14:38:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 14:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PYield
+[2024-05-04 14:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: luamb
+[2024-05-04 14:38:06] INFO root fetch - processPackages [luamb]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-04 14:38:06] INFO root fetch - processPackages [PYield]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-04 14:38:06] INFO root fetch - processPackages [luamb]: Downloading https://files.pythonhosted.org/packages/c0/b0/c8d43e9532e11a41fa1c79d6a7402a1d7196753fa1bd3e97e6dad04c62c7/luamb-0.4.0.tar.gz
+[2024-05-04 14:38:06] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/1a/60/0d2049b104e622ea2ed79c836b372b39b45cf2619c748d692ac2bf2ed73a/pyield-0.7.8.tar.gz
+[2024-05-04 14:38:06] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/1a/e8/7b2a379be5f3cd8e3737eec71c69fe195b963e13fc0dcd0275abc00a5c30/pyield-0.7.9.tar.gz
+[2024-05-04 14:38:07] INFO root fetch - processPackages [luamb]: Downloading https://files.pythonhosted.org/packages/c5/44/0da67820cf60110597f216499b54f7eb51d25e58ae1b38eca1039964203c/luamb-0.5.0.tar.gz
+[2024-05-04 14:38:07] INFO root fetch - processPackages [PYield]: executing diffoscope
+[2024-05-04 14:38:07] INFO root fetch - processPackages [PYield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyield-0.7.8.tar.gz tmp/pyield-0.7.9.tar.gz --markdown 20240504/P/PYield/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-04 14:38:07] INFO root fetch - processPackages [luamb]: executing diffoscope
+[2024-05-04 14:38:07] INFO root fetch - processPackages [luamb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luamb-0.4.0.tar.gz tmp/luamb-0.5.0.tar.gz --markdown 20240504/l/luamb/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-04 14:38:07] INFO root fetch - processPackages [luamb]: Remove: archive file [/home/abi/fetcher/tmp/luamb-0.4.0.tar.gz]
+[2024-05-04 14:38:07] INFO root fetch - processPackages [luamb]: Remove: archive file [/home/abi/fetcher/tmp/luamb-0.5.0.tar.gz]
+[2024-05-04 14:38:07] INFO root fetch - main [MainThread]: End processing [luamb]: success
+[2024-05-04 14:38:07] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.7.8.tar.gz]
+[2024-05-04 14:38:07] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.7.9.tar.gz]
+[2024-05-04 14:38:07] INFO root fetch - main [MainThread]: End processing [PYield]: success
+[2024-05-04 14:38:07] INFO root fetch - main [MainThread]: Store serial: [23058006]
