@@ -13313,3 +13313,9 @@
 [2024-05-04 13:06:59] INFO root fetch - processPackages [cvehound]: Remove: archive file [/home/abi/fetcher/tmp/cvehound-1.2.1.tar.gz]
 [2024-05-04 13:06:59] INFO root fetch - main [MainThread]: End processing [cvehound]: success
 [2024-05-04 13:06:59] INFO root fetch - main [MainThread]: Store serial: [23057629]
+[2024-05-04 13:09:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057629]
+[2024-05-04 13:09:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 13:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: league-tools
+[2024-05-04 13:09:08] WARNING root fetch - processPackages [league-tools]: Skipping, unable to determine old version
+[2024-05-04 13:09:08] INFO root fetch - main [MainThread]: End processing [league-tools] error
+[2024-05-04 13:09:08] INFO root fetch - main [MainThread]: Store serial: [23057634]
