@@ -12419,3 +12419,27 @@
 [2024-05-04 11:35:46] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-1.3.9.tar.gz]
 [2024-05-04 11:35:46] INFO root fetch - main [MainThread]: End processing [profitpulse]: success
 [2024-05-04 11:35:46] INFO root fetch - main [MainThread]: Store serial: [23057276]
+[2024-05-04 11:37:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057276]
+[2024-05-04 11:37:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 11:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spok
+[2024-05-04 11:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nvfuser-cu118
+[2024-05-04 11:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nvfuser-cu121
+[2024-05-04 11:37:55] WARNING root fetch - processPackages [spok]: Skipping, unable to determine old version
+[2024-05-04 11:37:55] INFO root fetch - main [MainThread]: End processing [spok] error
+[2024-05-04 11:37:55] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.3.dev20240504] Old Version: [0.2.3.dev20240503]
+[2024-05-04 11:37:55] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.3.dev20240504] Old Version: [0.2.3.dev20240503]
+[2024-05-04 11:37:55] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/f1/5b/92a8ea74eadf839770086dbd383ab17e0f7cbd51a143ee9ae57e5064ca87/nvfuser_cu118-0.2.3.dev20240503.tar.gz
+[2024-05-04 11:37:55] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/3f/9f/94f151a992583f7cb9ed05146e2afb02d727f9384306435e81b657031810/nvfuser_cu121-0.2.3.dev20240503.tar.gz
+[2024-05-04 11:37:55] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/a1/30/a942e4032cf70d5a607874604d930468362395f4f92740004331be7bbcd7/nvfuser_cu118-0.2.3.dev20240504.tar.gz
+[2024-05-04 11:37:55] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/8f/6c/3bcb12f708eb7265af150728564bd21a5948767f8f62c1604a8616963e0d/nvfuser_cu121-0.2.3.dev20240504.tar.gz
+[2024-05-04 11:37:55] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-05-04 11:37:55] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.3.dev20240503.tar.gz tmp/nvfuser_cu118-0.2.3.dev20240504.tar.gz --markdown 20240504/n/nvfuser-cu118/0.2.3.dev20240503-0.2.3.dev20240504/README.md --exclude *.pyd
+[2024-05-04 11:37:55] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-05-04 11:37:55] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.3.dev20240503.tar.gz tmp/nvfuser_cu121-0.2.3.dev20240504.tar.gz --markdown 20240504/n/nvfuser-cu121/0.2.3.dev20240503-0.2.3.dev20240504/README.md --exclude *.pyd
+[2024-05-04 11:37:56] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.3.dev20240503.tar.gz]
+[2024-05-04 11:37:56] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.3.dev20240504.tar.gz]
+[2024-05-04 11:37:56] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-05-04 11:37:56] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240503.tar.gz]
+[2024-05-04 11:37:56] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240504.tar.gz]
+[2024-05-04 11:37:56] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-05-04 11:37:56] INFO root fetch - main [MainThread]: Store serial: [23057286]
