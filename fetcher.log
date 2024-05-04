@@ -2385,3 +2385,33 @@
 [2024-05-04 02:32:52] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 44660166>=10485760
 [2024-05-04 02:32:52] INFO root fetch - main [MainThread]: End processing [NikGapps] error
 [2024-05-04 02:32:52] INFO root fetch - main [MainThread]: Store serial: [23053061]
+[2024-05-04 02:34:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053061]
+[2024-05-04 02:35:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 02:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rship-sdk
+[2024-05-04 02:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: es-testbed
+[2024-05-04 02:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: markdown-aafigure
+[2024-05-04 02:35:01] INFO root fetch - processPackages [es-testbed]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-04 02:35:01] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 02:35:01] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 02:35:01] INFO root fetch - processPackages [es-testbed]: Downloading https://files.pythonhosted.org/packages/5b/25/9dea7ded5666bd08b7233fe211ef273995dc626482a70304795f166272bf/es_testbed-0.7.0.tar.gz
+[2024-05-04 02:35:01] INFO root fetch - processPackages [markdown-aafigure]: New version: [202405.1012] Old Version: [202104.1011]
+[2024-05-04 02:35:01] INFO root fetch - processPackages [markdown-aafigure]: Downloading https://files.pythonhosted.org/packages/6a/5e/52b0d13261fe659074a71a9d7016928847258975f46cb304045d335fb5c3/markdown_aafigure-202104.1011.tar.gz
+[2024-05-04 02:35:01] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 02:35:01] INFO root fetch - processPackages [es-testbed]: Downloading https://files.pythonhosted.org/packages/e9/b3/2b41bd033c7e8ef8c8c51577a5e4ae940b8ce76657aab35f560a842c0e9a/es_testbed-0.7.1.tar.gz
+[2024-05-04 02:35:01] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 02:35:01] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 02:35:01] INFO root fetch - processPackages [es-testbed]: executing diffoscope
+[2024-05-04 02:35:01] INFO root fetch - processPackages [es-testbed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/es_testbed-0.7.0.tar.gz tmp/es_testbed-0.7.1.tar.gz --markdown 20240504/e/es-testbed/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-04 02:35:02] INFO root fetch - processPackages [markdown-aafigure]: Downloading https://files.pythonhosted.org/packages/a5/e0/4712ea484cf42cf7ae126d7669bcae259fa51edccb6a6b51ff5e4de63328/markdown_aafigure-202405.1012.tar.gz
+[2024-05-04 02:35:02] INFO root fetch - processPackages [markdown-aafigure]: executing diffoscope
+[2024-05-04 02:35:02] INFO root fetch - processPackages [markdown-aafigure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markdown_aafigure-202104.1011.tar.gz tmp/markdown_aafigure-202405.1012.tar.gz --markdown 20240504/m/markdown-aafigure/202104.1011-202405.1012/README.md --exclude *.pyd
+[2024-05-04 02:35:02] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 02:35:02] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 02:35:02] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 02:35:02] INFO root fetch - processPackages [markdown-aafigure]: Remove: archive file [/home/abi/fetcher/tmp/markdown_aafigure-202104.1011.tar.gz]
+[2024-05-04 02:35:02] INFO root fetch - processPackages [markdown-aafigure]: Remove: archive file [/home/abi/fetcher/tmp/markdown_aafigure-202405.1012.tar.gz]
+[2024-05-04 02:35:02] INFO root fetch - main [MainThread]: End processing [markdown-aafigure]: success
+[2024-05-04 02:35:03] INFO root fetch - processPackages [es-testbed]: Remove: archive file [/home/abi/fetcher/tmp/es_testbed-0.7.0.tar.gz]
+[2024-05-04 02:35:03] INFO root fetch - processPackages [es-testbed]: Remove: archive file [/home/abi/fetcher/tmp/es_testbed-0.7.1.tar.gz]
+[2024-05-04 02:35:03] INFO root fetch - main [MainThread]: End processing [es-testbed]: success
+[2024-05-04 02:35:03] INFO root fetch - main [MainThread]: Store serial: [23053071]
