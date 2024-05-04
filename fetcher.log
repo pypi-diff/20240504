@@ -13168,3 +13168,29 @@
 [2024-05-04 12:53:58] INFO root fetch - processPackages [solidipy-mipt]: Remove: archive file [/home/abi/fetcher/tmp/solidipy_mipt-1.2.1.tar.gz]
 [2024-05-04 12:53:58] INFO root fetch - main [MainThread]: End processing [solidipy-mipt]: success
 [2024-05-04 12:53:58] INFO root fetch - main [MainThread]: Store serial: [23057587]
+[2024-05-04 12:56:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057587]
+[2024-05-04 12:56:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 12:56:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: solidipy-mipt
+[2024-05-04 12:56:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: juxtapose
+[2024-05-04 12:56:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pywigxjpf
+[2024-05-04 12:56:07] INFO root fetch - processPackages [solidipy-mipt]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-04 12:56:07] INFO root fetch - processPackages [pywigxjpf]: New version: [1.13.1] Old Version: [1.13]
+[2024-05-04 12:56:07] INFO root fetch - processPackages [solidipy-mipt]: Downloading https://files.pythonhosted.org/packages/b8/c3/d0efadd75ee12a976b7b127d11fc1dff15a1676a5b56e77d35489d8ba2eb/solidipy_mipt-1.2.1.tar.gz
+[2024-05-04 12:56:07] INFO root fetch - processPackages [juxtapose]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 12:56:07] INFO root fetch - processPackages [pywigxjpf]: Downloading https://files.pythonhosted.org/packages/78/df/133155d21627da829e240d0ef0ae2b68f8b4f455c4ece48864d9f27ac741/pywigxjpf-1.13.tar.gz
+[2024-05-04 12:56:07] INFO root fetch - processPackages [juxtapose]: Downloading https://files.pythonhosted.org/packages/61/ef/b8b96f6ca1edc65e2f9e7470c51e5294b5cbbabb55ca13a82f4456e37edc/juxtapose-0.0.8.tar.gz
+[2024-05-04 12:56:07] INFO root fetch - processPackages [solidipy-mipt]: Downloading https://files.pythonhosted.org/packages/c0/87/8be890e14daafdcad797f74f3328124e2a44d1a0e923754d1ca321dfc97b/solidipy_mipt-1.2.2.tar.gz
+[2024-05-04 12:56:07] WARNING root fetch - processPackages [juxtapose]: Skipping package: exceeds size limit 19361597>=10485760
+[2024-05-04 12:56:07] INFO root fetch - main [MainThread]: End processing [juxtapose] error
+[2024-05-04 12:56:07] INFO root fetch - processPackages [pywigxjpf]: Downloading https://files.pythonhosted.org/packages/5e/5b/9a6df1c2f93f5eed0dae3d6978b3cfc026af0da9d440c101eac645f1bee2/pywigxjpf-1.13.1.tar.gz
+[2024-05-04 12:56:07] INFO root fetch - processPackages [solidipy-mipt]: executing diffoscope
+[2024-05-04 12:56:07] INFO root fetch - processPackages [solidipy-mipt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solidipy_mipt-1.2.1.tar.gz tmp/solidipy_mipt-1.2.2.tar.gz --markdown 20240504/s/solidipy-mipt/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-04 12:56:07] INFO root fetch - processPackages [pywigxjpf]: executing diffoscope
+[2024-05-04 12:56:07] INFO root fetch - processPackages [pywigxjpf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywigxjpf-1.13.tar.gz tmp/pywigxjpf-1.13.1.tar.gz --markdown 20240504/p/pywigxjpf/1.13-1.13.1/README.md --exclude *.pyd
+[2024-05-04 12:56:08] INFO root fetch - processPackages [solidipy-mipt]: Remove: archive file [/home/abi/fetcher/tmp/solidipy_mipt-1.2.1.tar.gz]
+[2024-05-04 12:56:08] INFO root fetch - processPackages [solidipy-mipt]: Remove: archive file [/home/abi/fetcher/tmp/solidipy_mipt-1.2.2.tar.gz]
+[2024-05-04 12:56:08] INFO root fetch - main [MainThread]: End processing [solidipy-mipt]: success
+[2024-05-04 12:56:08] INFO root fetch - processPackages [pywigxjpf]: Remove: archive file [/home/abi/fetcher/tmp/pywigxjpf-1.13.tar.gz]
+[2024-05-04 12:56:08] INFO root fetch - processPackages [pywigxjpf]: Remove: archive file [/home/abi/fetcher/tmp/pywigxjpf-1.13.1.tar.gz]
+[2024-05-04 12:56:08] INFO root fetch - main [MainThread]: End processing [pywigxjpf]: success
+[2024-05-04 12:56:08] INFO root fetch - main [MainThread]: Store serial: [23057595]
