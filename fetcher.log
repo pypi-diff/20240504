@@ -12400,3 +12400,22 @@
 [2024-05-04 11:29:26] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.2.1.tar.gz]
 [2024-05-04 11:29:26] INFO root fetch - main [MainThread]: End processing [pytilpack]: success
 [2024-05-04 11:29:26] INFO root fetch - main [MainThread]: Store serial: [23057268]
+[2024-05-04 11:31:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057268]
+[2024-05-04 11:31:34] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 11:33:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057268]
+[2024-05-04 11:33:39] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 11:35:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057270]
+[2024-05-04 11:35:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 11:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlexecx
+[2024-05-04 11:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: profitpulse
+[2024-05-04 11:35:45] WARNING root fetch - processPackages [sqlexecx]: Skipping, unable to determine old version
+[2024-05-04 11:35:45] INFO root fetch - main [MainThread]: End processing [sqlexecx] error
+[2024-05-04 11:35:45] INFO root fetch - processPackages [profitpulse]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-04 11:35:45] INFO root fetch - processPackages [profitpulse]: Downloading https://files.pythonhosted.org/packages/2a/8a/53272cc57b4568e028d5132210f888b0356ef7e7bb15f32a38bfe8270b6d/profitpulse-1.3.8.tar.gz
+[2024-05-04 11:35:45] INFO root fetch - processPackages [profitpulse]: Downloading https://files.pythonhosted.org/packages/b8/43/551412e2a48a8b45a9245079bccb08276331d92f11aa9d4c719a83eade68/profitpulse-1.3.9.tar.gz
+[2024-05-04 11:35:45] INFO root fetch - processPackages [profitpulse]: executing diffoscope
+[2024-05-04 11:35:45] INFO root fetch - processPackages [profitpulse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profitpulse-1.3.8.tar.gz tmp/profitpulse-1.3.9.tar.gz --markdown 20240504/p/profitpulse/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-04 11:35:46] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-1.3.8.tar.gz]
+[2024-05-04 11:35:46] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-1.3.9.tar.gz]
+[2024-05-04 11:35:46] INFO root fetch - main [MainThread]: End processing [profitpulse]: success
+[2024-05-04 11:35:46] INFO root fetch - main [MainThread]: Store serial: [23057276]
