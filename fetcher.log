@@ -19718,3 +19718,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:51:57] INFO root fetch - processPackages [uiwiz]: Remove: archive file [/home/abi/fetcher/tmp/uiwiz-0.1.9.tar.gz]
 [2024-05-04 21:51:57] INFO root fetch - main [MainThread]: End processing [uiwiz]: success
 [2024-05-04 21:51:57] INFO root fetch - main [MainThread]: Store serial: [23060599]
+[2024-05-04 21:54:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060599]
+[2024-05-04 21:54:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 21:54:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbb-api
+[2024-05-04 21:54:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-math
+[2024-05-04 21:54:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: open-constructs-aws-cdk
+[2024-05-04 21:54:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blankslate-python
+[2024-05-04 21:54:06] INFO root fetch - processPackages [nbb-api]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-04 21:54:06] INFO root fetch - processPackages [blankslate-python]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-04 21:54:06] INFO root fetch - processPackages [mo-math]: New version: [7.622.24125] Old Version: [7.621.24125]
+[2024-05-04 21:54:06] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/9b/2a/6ce3acd87b1af6fbffa83736542156b35ccd881a2ba0993180f2f4cc7d9a/blankslate_python-1.1.1.tar.gz
+[2024-05-04 21:54:06] INFO root fetch - processPackages [nbb-api]: Downloading https://files.pythonhosted.org/packages/1a/9b/e6aea38dac7cf7a80d0bdd3800be93821af09b8685b37093dd2633098162/nbb_api-0.1.6.tar.gz
+[2024-05-04 21:54:06] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/d6/15/95ca967936ad4166f12277fc8cf1997296f7670287d244cf4110616af960/mo_math-7.621.24125.tar.gz
+[2024-05-04 21:54:06] WARNING root fetch - processPackages [open-constructs-aws-cdk]: Skipping, unable to determine old version
+[2024-05-04 21:54:06] INFO root fetch - main [MainThread]: End processing [open-constructs-aws-cdk] error
+[2024-05-04 21:54:06] INFO root fetch - processPackages [nbb-api]: Downloading https://files.pythonhosted.org/packages/fd/f0/2c527de07413fcd63d74b0a4f1ec1c9ec845501695c3a4b3f4fdf86f7eff/nbb_api-0.1.7.tar.gz
+[2024-05-04 21:54:06] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/ac/bd/971a98b99eeefa9ba99385703bc6c62667726c0d954197a35ff0f347ac37/mo_math-7.622.24125.tar.gz
+[2024-05-04 21:54:06] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/e0/ac/4fb5f44151286065a483ed88079238c3b3f4fc7b325a682cae6f17e3b34b/blankslate_python-1.1.2.tar.gz
+[2024-05-04 21:54:06] INFO root fetch - processPackages [nbb-api]: executing diffoscope
+[2024-05-04 21:54:06] INFO root fetch - processPackages [nbb-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbb_api-0.1.6.tar.gz tmp/nbb_api-0.1.7.tar.gz --markdown 20240504/n/nbb-api/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-04 21:54:06] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-04 21:54:06] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.1.1.tar.gz tmp/blankslate_python-1.1.2.tar.gz --markdown 20240504/b/blankslate-python/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-04 21:54:06] INFO root fetch - processPackages [mo-math]: executing diffoscope
+[2024-05-04 21:54:06] INFO root fetch - processPackages [mo-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_math-7.621.24125.tar.gz tmp/mo_math-7.622.24125.tar.gz --markdown 20240504/m/mo-math/7.621.24125-7.622.24125/README.md --exclude *.pyd
+[2024-05-04 21:54:07] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.1.tar.gz]
+[2024-05-04 21:54:07] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.2.tar.gz]
+[2024-05-04 21:54:07] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-04 21:54:07] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.621.24125.tar.gz]
+[2024-05-04 21:54:07] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.622.24125.tar.gz]
+[2024-05-04 21:54:07] INFO root fetch - main [MainThread]: End processing [mo-math]: success
+[2024-05-04 21:54:07] INFO root fetch - processPackages [nbb-api]: Remove: archive file [/home/abi/fetcher/tmp/nbb_api-0.1.6.tar.gz]
+[2024-05-04 21:54:07] INFO root fetch - processPackages [nbb-api]: Remove: archive file [/home/abi/fetcher/tmp/nbb_api-0.1.7.tar.gz]
+[2024-05-04 21:54:07] INFO root fetch - main [MainThread]: End processing [nbb-api]: success
+[2024-05-04 21:54:07] INFO root fetch - main [MainThread]: Store serial: [23060611]
