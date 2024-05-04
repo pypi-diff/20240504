@@ -9822,3 +9822,15 @@
 [2024-05-04 07:30:18] INFO root fetch - processPackages [odoo14-addon-purchase-stock-tier-validation]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_purchase_stock_tier_validation-14.0.1.0.1.dev4-py3-none-any.whl.zip]
 [2024-05-04 07:30:18] INFO root fetch - main [MainThread]: End processing [odoo14-addon-purchase-stock-tier-validation]: success
 [2024-05-04 07:30:18] INFO root fetch - main [MainThread]: Store serial: [23055912]
+[2024-05-04 07:32:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055912]
+[2024-05-04 07:32:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 07:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: helios-client
+[2024-05-04 07:32:27] INFO root fetch - processPackages [helios-client]: New version: [0.4.20240503.post1] Old Version: [0.4.20240424.post1]
+[2024-05-04 07:32:27] INFO root fetch - processPackages [helios-client]: Downloading https://files.pythonhosted.org/packages/c9/ab/9eaa02a2e52cae5e5f8dea84f8d6b572a992ff15dc74c5093a6cdc79b8ef/helios-client-0.4.20240424.post1.tar.gz
+[2024-05-04 07:32:27] INFO root fetch - processPackages [helios-client]: Downloading https://files.pythonhosted.org/packages/60/73/b32f76c960818b7bea1a63b5ebc5165fd273abf8b219ed8e942641ff797a/helios-client-0.4.20240503.post1.tar.gz
+[2024-05-04 07:32:27] INFO root fetch - processPackages [helios-client]: executing diffoscope
+[2024-05-04 07:32:27] INFO root fetch - processPackages [helios-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helios-client-0.4.20240424.post1.tar.gz tmp/helios-client-0.4.20240503.post1.tar.gz --markdown 20240504/h/helios-client/0.4.20240424.post1-0.4.20240503.post1/README.md --exclude *.pyd
+[2024-05-04 07:32:28] INFO root fetch - processPackages [helios-client]: Remove: archive file [/home/abi/fetcher/tmp/helios-client-0.4.20240424.post1.tar.gz]
+[2024-05-04 07:32:28] INFO root fetch - processPackages [helios-client]: Remove: archive file [/home/abi/fetcher/tmp/helios-client-0.4.20240503.post1.tar.gz]
+[2024-05-04 07:32:28] INFO root fetch - main [MainThread]: End processing [helios-client]: success
+[2024-05-04 07:32:28] INFO root fetch - main [MainThread]: Store serial: [23055916]
