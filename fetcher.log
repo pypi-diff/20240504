@@ -15506,3 +15506,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:29:29] INFO root fetch - processPackages [Test19991021]: Remove: archive file [/home/abi/fetcher/tmp/Test19991021-1.4.0.tar.gz]
 [2024-05-04 16:29:29] INFO root fetch - main [MainThread]: End processing [Test19991021]: success
 [2024-05-04 16:29:29] INFO root fetch - main [MainThread]: Store serial: [23058511]
+[2024-05-04 16:31:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058511]
+[2024-05-04 16:31:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 16:31:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pt-pump-up
+[2024-05-04 16:31:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iinfer
+[2024-05-04 16:31:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kube-copilot
+[2024-05-04 16:31:37] INFO root fetch - processPackages [kube-copilot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 16:31:37] INFO root fetch - processPackages [kube-copilot]: Downloading https://files.pythonhosted.org/packages/92/ed/ae22c3eb11fd91f9bc01dbdcba0f4a7c22cef980bf8f5fef46caec814480/kube_copilot-0.1.8.tar.gz
+[2024-05-04 16:31:37] INFO root fetch - processPackages [pt-pump-up]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 16:31:37] INFO root fetch - processPackages [iinfer]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-05-04 16:31:37] INFO root fetch - processPackages [iinfer]: Downloading https://files.pythonhosted.org/packages/09/fc/ee48c30715da598966c936a39d9bafb426e1880b7c053c32ea8e79c41c59/iinfer-0.7.1.tar.gz
+[2024-05-04 16:31:37] INFO root fetch - processPackages [kube-copilot]: Downloading https://files.pythonhosted.org/packages/fd/35/3e18869b47a41c295ac800019e28347fde14879ede6506f97393faade562/kube_copilot-0.1.9.tar.gz
+[2024-05-04 16:31:37] INFO root fetch - processPackages [pt-pump-up]: Downloading https://files.pythonhosted.org/packages/53/0a/12caeb36fd9d48eb30e4e02e45850a47ba3731192f71e0b5efc006e3f6c0/pt_pump_up-0.0.8.tar.gz
+[2024-05-04 16:31:38] INFO root fetch - processPackages [kube-copilot]: executing diffoscope
+[2024-05-04 16:31:38] INFO root fetch - processPackages [kube-copilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kube_copilot-0.1.8.tar.gz tmp/kube_copilot-0.1.9.tar.gz --markdown 20240504/k/kube-copilot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 16:31:38] INFO root fetch - processPackages [pt-pump-up]: Downloading https://files.pythonhosted.org/packages/20/16/f20f31518f04498a94a81890f4759380fe8e7df45d1abe5271636efac9e6/pt_pump_up-0.0.9.tar.gz
+[2024-05-04 16:31:38] INFO root fetch - processPackages [iinfer]: Downloading https://files.pythonhosted.org/packages/85/a2/80b1344df17e86dc9c09f8f4ca6a4e129161d9c13391ff3d52e45ea8624d/iinfer-0.7.2.tar.gz
+[2024-05-04 16:31:38] INFO root fetch - processPackages [pt-pump-up]: executing diffoscope
+[2024-05-04 16:31:38] INFO root fetch - processPackages [pt-pump-up]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pt_pump_up-0.0.8.tar.gz tmp/pt_pump_up-0.0.9.tar.gz --markdown 20240504/p/pt-pump-up/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 16:31:38] INFO root fetch - processPackages [iinfer]: executing diffoscope
+[2024-05-04 16:31:38] INFO root fetch - processPackages [iinfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iinfer-0.7.1.tar.gz tmp/iinfer-0.7.2.tar.gz --markdown 20240504/i/iinfer/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-05-04 16:31:38] INFO root fetch - processPackages [kube-copilot]: Remove: archive file [/home/abi/fetcher/tmp/kube_copilot-0.1.8.tar.gz]
+[2024-05-04 16:31:38] INFO root fetch - processPackages [kube-copilot]: Remove: archive file [/home/abi/fetcher/tmp/kube_copilot-0.1.9.tar.gz]
+[2024-05-04 16:31:38] INFO root fetch - main [MainThread]: End processing [kube-copilot]: success
+[2024-05-04 16:31:38] INFO root fetch - processPackages [pt-pump-up]: Remove: archive file [/home/abi/fetcher/tmp/pt_pump_up-0.0.8.tar.gz]
+[2024-05-04 16:31:38] INFO root fetch - processPackages [pt-pump-up]: Remove: archive file [/home/abi/fetcher/tmp/pt_pump_up-0.0.9.tar.gz]
+[2024-05-04 16:31:38] INFO root fetch - main [MainThread]: End processing [pt-pump-up]: success
+[2024-05-04 16:31:39] INFO root fetch - processPackages [iinfer]: Remove: archive file [/home/abi/fetcher/tmp/iinfer-0.7.1.tar.gz]
+[2024-05-04 16:31:39] INFO root fetch - processPackages [iinfer]: Remove: archive file [/home/abi/fetcher/tmp/iinfer-0.7.2.tar.gz]
+[2024-05-04 16:31:39] INFO root fetch - main [MainThread]: End processing [iinfer]: success
+[2024-05-04 16:31:39] INFO root fetch - main [MainThread]: Store serial: [23058520]
