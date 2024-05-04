@@ -13065,3 +13065,27 @@
 [2024-05-04 12:40:59] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
 [2024-05-04 12:40:59] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
 [2024-05-04 12:40:59] INFO root fetch - main [MainThread]: Store serial: [23057527]
+[2024-05-04 12:43:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057527]
+[2024-05-04 12:43:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiotx
+[2024-05-04 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: viessmann-gridbox-connector
+[2024-05-04 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpmaps
+[2024-05-04 12:43:07] INFO root fetch - processPackages [aiotx]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-04 12:43:07] INFO root fetch - processPackages [aiotx]: Downloading https://files.pythonhosted.org/packages/32/da/c3baa4f5856654644245db595069a0ff6f472e6233260794ae2b9138f0af/aiotx-0.4.0.tar.gz
+[2024-05-04 12:43:07] INFO root fetch - processPackages [viessmann-gridbox-connector]: New version: [1.3.7] Old Version: [1.2.0]
+[2024-05-04 12:43:07] WARNING root fetch - processPackages [mpmaps]: Skipping, unable to determine old version
+[2024-05-04 12:43:07] INFO root fetch - main [MainThread]: End processing [mpmaps] error
+[2024-05-04 12:43:07] INFO root fetch - processPackages [viessmann-gridbox-connector]: Downloading https://files.pythonhosted.org/packages/96/66/8d1ebe7bb6ab9a2bf5a97d3c396bbeff00e863ae803a4ec5c9f7878a63e4/viessmann_gridbox_connector-1.2.0.tar.gz
+[2024-05-04 12:43:08] INFO root fetch - processPackages [aiotx]: Downloading https://files.pythonhosted.org/packages/84/72/dc422596758dd86fa1323a1f1c587bff36bfb99570518aa640c7ec248d7a/aiotx-0.5.0.tar.gz
+[2024-05-04 12:43:08] INFO root fetch - processPackages [aiotx]: executing diffoscope
+[2024-05-04 12:43:08] INFO root fetch - processPackages [aiotx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotx-0.4.0.tar.gz tmp/aiotx-0.5.0.tar.gz --markdown 20240504/a/aiotx/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-04 12:43:08] INFO root fetch - processPackages [viessmann-gridbox-connector]: Downloading https://files.pythonhosted.org/packages/2b/b4/bde54235ca19b1e022b5e835318dacb58797a979ffe22bc122fce048ba30/viessmann_gridbox_connector-1.3.7.tar.gz
+[2024-05-04 12:43:08] INFO root fetch - processPackages [viessmann-gridbox-connector]: executing diffoscope
+[2024-05-04 12:43:08] INFO root fetch - processPackages [viessmann-gridbox-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viessmann_gridbox_connector-1.2.0.tar.gz tmp/viessmann_gridbox_connector-1.3.7.tar.gz --markdown 20240504/v/viessmann-gridbox-connector/1.2.0-1.3.7/README.md --exclude *.pyd
+[2024-05-04 12:43:09] INFO root fetch - processPackages [aiotx]: Remove: archive file [/home/abi/fetcher/tmp/aiotx-0.4.0.tar.gz]
+[2024-05-04 12:43:09] INFO root fetch - processPackages [aiotx]: Remove: archive file [/home/abi/fetcher/tmp/aiotx-0.5.0.tar.gz]
+[2024-05-04 12:43:09] INFO root fetch - main [MainThread]: End processing [aiotx]: success
+[2024-05-04 12:43:09] INFO root fetch - processPackages [viessmann-gridbox-connector]: Remove: archive file [/home/abi/fetcher/tmp/viessmann_gridbox_connector-1.2.0.tar.gz]
+[2024-05-04 12:43:09] INFO root fetch - processPackages [viessmann-gridbox-connector]: Remove: archive file [/home/abi/fetcher/tmp/viessmann_gridbox_connector-1.3.7.tar.gz]
+[2024-05-04 12:43:09] INFO root fetch - main [MainThread]: End processing [viessmann-gridbox-connector]: success
+[2024-05-04 12:43:09] INFO root fetch - main [MainThread]: Store serial: [23057546]
