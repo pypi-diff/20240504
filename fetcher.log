@@ -18659,3 +18659,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:33:35] INFO root fetch - processPackages [bloqade]: Remove: archive file [/home/abi/fetcher/tmp/bloqade-0.9.0.tar.gz]
 [2024-05-04 20:33:35] INFO root fetch - main [MainThread]: End processing [bloqade]: success
 [2024-05-04 20:33:35] INFO root fetch - main [MainThread]: Store serial: [23060175]
+[2024-05-04 20:35:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060175]
+[2024-05-04 20:35:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 20:35:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: constrainedlr
+[2024-05-04 20:35:44] INFO root fetch - processPackages [constrainedlr]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-04 20:35:44] INFO root fetch - processPackages [constrainedlr]: Downloading https://files.pythonhosted.org/packages/1e/4a/2d4f069322282acc513f9d80683e7fd63d132c51fe24bb2b5c4ea66615cc/constrainedlr-0.1.4.tar.gz
+[2024-05-04 20:35:45] INFO root fetch - processPackages [constrainedlr]: Downloading https://files.pythonhosted.org/packages/bf/3a/78e16acedc5134fc5345d824a985561359fbd1f0935e41152df5ed4d0db2/constrainedlr-0.1.5.tar.gz
+[2024-05-04 20:35:45] INFO root fetch - processPackages [constrainedlr]: executing diffoscope
+[2024-05-04 20:35:45] INFO root fetch - processPackages [constrainedlr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constrainedlr-0.1.4.tar.gz tmp/constrainedlr-0.1.5.tar.gz --markdown 20240504/c/constrainedlr/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-04 20:35:45] INFO root fetch - processPackages [constrainedlr]: Remove: archive file [/home/abi/fetcher/tmp/constrainedlr-0.1.4.tar.gz]
+[2024-05-04 20:35:45] INFO root fetch - processPackages [constrainedlr]: Remove: archive file [/home/abi/fetcher/tmp/constrainedlr-0.1.5.tar.gz]
+[2024-05-04 20:35:45] INFO root fetch - main [MainThread]: End processing [constrainedlr]: success
+[2024-05-04 20:35:45] INFO root fetch - main [MainThread]: Store serial: [23060178]
