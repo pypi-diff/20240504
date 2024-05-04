@@ -12145,3 +12145,21 @@
 [2024-05-04 11:07:30] INFO root fetch - processPackages [easy-fossy]: Remove: archive file [/home/abi/fetcher/tmp/easy_fossy-2.3.1.tar.gz]
 [2024-05-04 11:07:30] INFO root fetch - main [MainThread]: End processing [easy-fossy]: success
 [2024-05-04 11:07:30] INFO root fetch - main [MainThread]: Store serial: [23057167]
+[2024-05-04 11:09:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057167]
+[2024-05-04 11:09:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 11:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libvslvm-python
+[2024-05-04 11:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyo2.abc2
+[2024-05-04 11:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulses
+[2024-05-04 11:09:40] WARNING root fetch - processPackages [hyo2.abc2]: Skipping, unable to determine old version
+[2024-05-04 11:09:40] INFO root fetch - main [MainThread]: End processing [hyo2.abc2] error
+[2024-05-04 11:09:40] WARNING root fetch - processPackages [pulses]: Skipping, unable to determine old version
+[2024-05-04 11:09:40] INFO root fetch - main [MainThread]: End processing [pulses] error
+[2024-05-04 11:09:40] INFO root fetch - processPackages [libvslvm-python]: New version: [20240504] Old Version: [20240301]
+[2024-05-04 11:09:40] INFO root fetch - processPackages [libvslvm-python]: Downloading https://files.pythonhosted.org/packages/f4/d4/02bf957b92167ed3a96c4430da1f9ab7313f42e32de39c313085c9b2614e/libvslvm-python-20240301.tar.gz
+[2024-05-04 11:09:41] INFO root fetch - processPackages [libvslvm-python]: Downloading https://files.pythonhosted.org/packages/cb/88/65fae9c5ea1b54ae836af7a7f2d2ec11e5d48c5fa4d0c53fca14a8f59e5d/libvslvm-python-20240504.tar.gz
+[2024-05-04 11:09:41] INFO root fetch - processPackages [libvslvm-python]: executing diffoscope
+[2024-05-04 11:09:41] INFO root fetch - processPackages [libvslvm-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libvslvm-python-20240301.tar.gz tmp/libvslvm-python-20240504.tar.gz --markdown 20240504/l/libvslvm-python/20240301-20240504/README.md --exclude *.pyd
+[2024-05-04 11:09:46] INFO root fetch - processPackages [libvslvm-python]: Remove: archive file [/home/abi/fetcher/tmp/libvslvm-python-20240301.tar.gz]
+[2024-05-04 11:09:46] INFO root fetch - processPackages [libvslvm-python]: Remove: archive file [/home/abi/fetcher/tmp/libvslvm-python-20240504.tar.gz]
+[2024-05-04 11:09:46] INFO root fetch - main [MainThread]: End processing [libvslvm-python]: success
+[2024-05-04 11:09:46] INFO root fetch - main [MainThread]: Store serial: [23057178]
