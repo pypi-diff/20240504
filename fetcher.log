@@ -18378,3 +18378,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:13:55] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.9.tar.gz]
 [2024-05-04 20:13:55] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2024-05-04 20:13:55] INFO root fetch - main [MainThread]: Store serial: [23060040]
+[2024-05-04 20:15:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060040]
+[2024-05-04 20:16:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 20:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgarquery
+[2024-05-04 20:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.ecs-codedeploy
+[2024-05-04 20:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: formulations
+[2024-05-04 20:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: copy-spotter
+[2024-05-04 20:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mo-logs
+[2024-05-04 20:16:04] INFO root fetch - processPackages [copy-spotter]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 20:16:04] INFO root fetch - processPackages [mo-logs]: New version: [8.618.24125] Old Version: [8.617.24125]
+[2024-05-04 20:16:04] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/f0/77/3e3348701a345eb7881da0ffa91811cd425cf43a95ab7dd9387a41301032/copy-spotter-0.1.8.tar.gz
+[2024-05-04 20:16:04] INFO root fetch - processPackages [edgarquery]: New version: [0.0.60] Old Version: [0.0.59]
+[2024-05-04 20:16:04] INFO root fetch - processPackages [formulations]: New version: [1.2] Old Version: [1.0]
+[2024-05-04 20:16:04] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-04 20:16:04] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/a6/b6/a3a6ecf69184d93e39fcda7a960da5bb5c048378eeb8a297289e5b82454f/mo_logs-8.617.24125.tar.gz
+[2024-05-04 20:16:05] INFO root fetch - processPackages [edgarquery]: Downloading https://files.pythonhosted.org/packages/10/85/aa01235916182b6da7696b3ced04fb0ce20f627c1ed1e4e2762f7ea483f9/edgarquery-0.0.59.tar.gz
+[2024-05-04 20:16:05] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/45/b3/c6846a1e8f941cc094cd908f537068e64c6e0c6ad32b6c4dec297eabcd13/copy-spotter-0.1.9.tar.gz
+[2024-05-04 20:16:05] INFO root fetch - processPackages [formulations]: Downloading https://files.pythonhosted.org/packages/5d/0d/8c60fa5f5ef179dd95376414dd33c5b3c8a2bcaae2e3b50e2107f33b12f8/formulations-1.0.tar.gz
+[2024-05-04 20:16:05] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: Downloading https://files.pythonhosted.org/packages/c6/34/cef791c667d067a7923df4169adb57934467590c903d5f58c9e5be5a7759/cdklabs.ecs-codedeploy-0.0.98.tar.gz
+[2024-05-04 20:16:05] INFO root fetch - processPackages [copy-spotter]: executing diffoscope
+[2024-05-04 20:16:05] INFO root fetch - processPackages [copy-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copy-spotter-0.1.8.tar.gz tmp/copy-spotter-0.1.9.tar.gz --markdown 20240504/c/copy-spotter/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 20:16:05] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/00/0b/5a2e2aa36af6ebd9b947ad27f866288bd1d9ac515205859a92ef353ff66d/mo_logs-8.618.24125.tar.gz
+[2024-05-04 20:16:05] INFO root fetch - processPackages [mo-logs]: executing diffoscope
+[2024-05-04 20:16:05] INFO root fetch - processPackages [mo-logs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_logs-8.617.24125.tar.gz tmp/mo_logs-8.618.24125.tar.gz --markdown 20240504/m/mo-logs/8.617.24125-8.618.24125/README.md --exclude *.pyd
+[2024-05-04 20:16:05] INFO root fetch - processPackages [formulations]: Downloading https://files.pythonhosted.org/packages/1e/4c/76a1dbb3971dc1459eeddfc0f4481b761cf76dbf40e6a19ab53e90bb1756/formulations-1.2.tar.gz
+[2024-05-04 20:16:05] INFO root fetch - processPackages [edgarquery]: Downloading https://files.pythonhosted.org/packages/0b/68/0c0b3ca595febb4e3a2b5ff21e9230f8418a0b3038d644eabc6ea555df04/edgarquery-0.0.60.tar.gz
+[2024-05-04 20:16:05] INFO root fetch - processPackages [formulations]: executing diffoscope
+[2024-05-04 20:16:05] INFO root fetch - processPackages [formulations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formulations-1.0.tar.gz tmp/formulations-1.2.tar.gz --markdown 20240504/f/formulations/1.0-1.2/README.md --exclude *.pyd
+[2024-05-04 20:16:05] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: Downloading https://files.pythonhosted.org/packages/32/d6/43cc31093e5335204bbb8629fe11154ff7ebd2508f020ee399403b503b2c/cdklabs.ecs-codedeploy-0.0.99.tar.gz
+[2024-05-04 20:16:05] INFO root fetch - processPackages [edgarquery]: executing diffoscope
+[2024-05-04 20:16:05] INFO root fetch - processPackages [edgarquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgarquery-0.0.59.tar.gz tmp/edgarquery-0.0.60.tar.gz --markdown 20240504/e/edgarquery/0.0.59-0.0.60/README.md --exclude *.pyd
+[2024-05-04 20:16:05] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: executing diffoscope
+[2024-05-04 20:16:05] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.ecs-codedeploy-0.0.98.tar.gz tmp/cdklabs.ecs-codedeploy-0.0.99.tar.gz --markdown 20240504/c/cdklabs.ecs-codedeploy/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-04 20:16:05] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.8.tar.gz]
+[2024-05-04 20:16:05] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.9.tar.gz]
+[2024-05-04 20:16:05] INFO root fetch - main [MainThread]: End processing [copy-spotter]: success
+[2024-05-04 20:16:06] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.617.24125.tar.gz]
+[2024-05-04 20:16:06] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.618.24125.tar.gz]
+[2024-05-04 20:16:06] INFO root fetch - main [MainThread]: End processing [mo-logs]: success
+[2024-05-04 20:16:06] INFO root fetch - processPackages [formulations]: Remove: archive file [/home/abi/fetcher/tmp/formulations-1.0.tar.gz]
+[2024-05-04 20:16:06] INFO root fetch - processPackages [formulations]: Remove: archive file [/home/abi/fetcher/tmp/formulations-1.2.tar.gz]
+[2024-05-04 20:16:06] INFO root fetch - main [MainThread]: End processing [formulations]: success
+[2024-05-04 20:16:06] INFO root fetch - processPackages [edgarquery]: Remove: archive file [/home/abi/fetcher/tmp/edgarquery-0.0.59.tar.gz]
+[2024-05-04 20:16:06] INFO root fetch - processPackages [edgarquery]: Remove: archive file [/home/abi/fetcher/tmp/edgarquery-0.0.60.tar.gz]
+[2024-05-04 20:16:06] INFO root fetch - main [MainThread]: End processing [edgarquery]: success
+[2024-05-04 20:16:06] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.ecs-codedeploy-0.0.98.tar.gz]
+[2024-05-04 20:16:06] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.ecs-codedeploy-0.0.99.tar.gz]
+[2024-05-04 20:16:06] INFO root fetch - main [MainThread]: End processing [cdklabs.ecs-codedeploy]: success
+[2024-05-04 20:16:06] INFO root fetch - main [MainThread]: Store serial: [23060055]
