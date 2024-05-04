@@ -18951,3 +18951,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:53:26] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.2.4.tar.gz]
 [2024-05-04 20:53:26] INFO root fetch - main [MainThread]: End processing [hfutils]: success
 [2024-05-04 20:53:26] INFO root fetch - main [MainThread]: Store serial: [23060290]
+[2024-05-04 20:55:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060290]
+[2024-05-04 20:55:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 20:55:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hat-asn1
+[2024-05-04 20:55:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exper
+[2024-05-04 20:55:35] INFO root fetch - processPackages [exper]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-05-04 20:55:35] INFO root fetch - processPackages [hat-asn1]: New version: [0.6.7] Old Version: [0.6.6]
+[2024-05-04 20:55:35] INFO root fetch - processPackages [exper]: Downloading https://files.pythonhosted.org/packages/c9/5e/acaebd2650ae0f6a6b84e7639b8778617ac4175ac3b34ac6946a5b5c4bb3/exper-0.1.4.tar.gz
+[2024-05-04 20:55:35] INFO root fetch - processPackages [hat-asn1]: Downloading https://files.pythonhosted.org/packages/2a/97/b5c46df07f1d5c51ff85c42a63b5a1a3869d7c09493585f38c5ce5543a78/hat_asn1-0.6.6-cp310.cp311-none-any.whl
+[2024-05-04 20:55:36] INFO root fetch - processPackages [exper]: Downloading https://files.pythonhosted.org/packages/31/7f/f18d7abdba7bad2eba5ca4bcbdc1f5f4fb5bf292a9bc9a689c7a21529d47/exper-0.2.0.tar.gz
+[2024-05-04 20:55:36] INFO root fetch - processPackages [hat-asn1]: Downloading https://files.pythonhosted.org/packages/66/72/64a1d992357ceb2cdc5bf33eecfea9a8dfa1d9eb92d78889b6437baca71c/hat_asn1-0.6.7-cp310.cp311.cp312-none-any.whl
+[2024-05-04 20:55:36] INFO root fetch - processPackages [exper]: executing diffoscope
+[2024-05-04 20:55:36] INFO root fetch - processPackages [exper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exper-0.1.4.tar.gz tmp/exper-0.2.0.tar.gz --markdown 20240504/e/exper/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-05-04 20:55:36] INFO root fetch - processPackages [hat-asn1]: executing diffoscope
+[2024-05-04 20:55:36] INFO root fetch - processPackages [hat-asn1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_asn1-0.6.6-cp310.cp311-none-any.whl.zip tmp/hat_asn1-0.6.7-cp310.cp311.cp312-none-any.whl.zip --markdown 20240504/h/hat-asn1/0.6.6-0.6.7/README.md --exclude *.pyd
+[2024-05-04 20:55:36] INFO root fetch - processPackages [hat-asn1]: Remove: archive file [/home/abi/fetcher/tmp/hat_asn1-0.6.6-cp310.cp311-none-any.whl.zip]
+[2024-05-04 20:55:36] INFO root fetch - processPackages [hat-asn1]: Remove: archive file [/home/abi/fetcher/tmp/hat_asn1-0.6.7-cp310.cp311.cp312-none-any.whl.zip]
+[2024-05-04 20:55:36] INFO root fetch - main [MainThread]: End processing [hat-asn1]: success
+[2024-05-04 20:55:37] INFO root fetch - processPackages [exper]: Remove: archive file [/home/abi/fetcher/tmp/exper-0.1.4.tar.gz]
+[2024-05-04 20:55:37] INFO root fetch - processPackages [exper]: Remove: archive file [/home/abi/fetcher/tmp/exper-0.2.0.tar.gz]
+[2024-05-04 20:55:37] INFO root fetch - main [MainThread]: End processing [exper]: success
+[2024-05-04 20:55:37] INFO root fetch - main [MainThread]: Store serial: [23060296]
