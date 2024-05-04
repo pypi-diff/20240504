@@ -9561,3 +9561,33 @@
 [2024-05-04 07:12:49] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.33.tar.gz]
 [2024-05-04 07:12:49] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
 [2024-05-04 07:12:49] INFO root fetch - main [MainThread]: Store serial: [23055827]
+[2024-05-04 07:14:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055827]
+[2024-05-04 07:14:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 07:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: litellm
+[2024-05-04 07:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-pos-remove-pos-category
+[2024-05-04 07:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neonize
+[2024-05-04 07:14:57] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-05-04 07:14:58] INFO root fetch - processPackages [neonize]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 07:14:58] INFO root fetch - processPackages [odoo12-addon-pos-remove-pos-category]: New version: [12.0.2.0.1.99.dev7] Old Version: [12.0.2.0.1.99.dev6]
+[2024-05-04 07:14:58] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-05-04 07:14:58] INFO root fetch - processPackages [odoo12-addon-pos-remove-pos-category]: Downloading https://files.pythonhosted.org/packages/36/eb/39ca40c6ac63ad742449765750fb8570b1e3ef2295ff9fef8269c10f8d36/odoo12_addon_pos_remove_pos_category-12.0.2.0.1.99.dev6-py3-none-any.whl
+[2024-05-04 07:14:58] INFO root fetch - processPackages [neonize]: Downloading https://files.pythonhosted.org/packages/dc/8e/5f09c75f3e8deb54b2544918415199596079637429be7758246e79dab2cf/neonize-0.0.8.tar.gz
+[2024-05-04 07:14:58] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-05-04 07:14:58] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-05-04 07:14:58] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240504/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-05-04 07:14:58] INFO root fetch - processPackages [neonize]: Downloading https://files.pythonhosted.org/packages/ef/f8/3dea4193164cfeb541b14dd609b22659cfe82ed64ac42d6b2a5a8d865ca6/neonize-0.0.9.tar.gz
+[2024-05-04 07:14:58] INFO root fetch - processPackages [odoo12-addon-pos-remove-pos-category]: Downloading https://files.pythonhosted.org/packages/4b/93/54e0c3e9a535acfebd09542ce8bcd48e7ef6efc2bab6ab5278265970e03e/odoo12_addon_pos_remove_pos_category-12.0.2.0.1.99.dev7-py3-none-any.whl
+[2024-05-04 07:14:58] INFO root fetch - processPackages [neonize]: executing diffoscope
+[2024-05-04 07:14:58] INFO root fetch - processPackages [neonize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neonize-0.0.8.tar.gz tmp/neonize-0.0.9.tar.gz --markdown 20240504/n/neonize/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 07:14:58] INFO root fetch - processPackages [odoo12-addon-pos-remove-pos-category]: executing diffoscope
+[2024-05-04 07:14:58] INFO root fetch - processPackages [odoo12-addon-pos-remove-pos-category]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_pos_remove_pos_category-12.0.2.0.1.99.dev6-py3-none-any.whl.zip tmp/odoo12_addon_pos_remove_pos_category-12.0.2.0.1.99.dev7-py3-none-any.whl.zip --markdown 20240504/o/odoo12-addon-pos-remove-pos-category/12.0.2.0.1.99.dev6-12.0.2.0.1.99.dev7/README.md --exclude *.pyd
+[2024-05-04 07:14:59] INFO root fetch - processPackages [odoo12-addon-pos-remove-pos-category]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_pos_remove_pos_category-12.0.2.0.1.99.dev6-py3-none-any.whl.zip]
+[2024-05-04 07:14:59] INFO root fetch - processPackages [odoo12-addon-pos-remove-pos-category]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_pos_remove_pos_category-12.0.2.0.1.99.dev7-py3-none-any.whl.zip]
+[2024-05-04 07:14:59] INFO root fetch - main [MainThread]: End processing [odoo12-addon-pos-remove-pos-category]: success
+[2024-05-04 07:14:59] INFO root fetch - processPackages [neonize]: Remove: archive file [/home/abi/fetcher/tmp/neonize-0.0.8.tar.gz]
+[2024-05-04 07:14:59] INFO root fetch - processPackages [neonize]: Remove: archive file [/home/abi/fetcher/tmp/neonize-0.0.9.tar.gz]
+[2024-05-04 07:14:59] INFO root fetch - main [MainThread]: End processing [neonize]: success
+[2024-05-04 07:14:59] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-05-04 07:14:59] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-05-04 07:14:59] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-05-04 07:14:59] INFO root fetch - main [MainThread]: Store serial: [23055835]
