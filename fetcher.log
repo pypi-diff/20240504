@@ -8764,3 +8764,9 @@
 [2024-05-04 05:51:44] WARNING root fetch - processPackages [normal-position-combination]: Skipping, unable to determine old version
 [2024-05-04 05:51:44] INFO root fetch - main [MainThread]: End processing [normal-position-combination] error
 [2024-05-04 05:51:44] INFO root fetch - main [MainThread]: Store serial: [23055419]
+[2024-05-04 05:54:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055419]
+[2024-05-04 05:54:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 05:54:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deb-pack
+[2024-05-04 05:54:06] WARNING root fetch - processPackages [deb-pack]: Skipping, unable to determine old version
+[2024-05-04 05:54:06] INFO root fetch - main [MainThread]: End processing [deb-pack] error
+[2024-05-04 05:54:06] INFO root fetch - main [MainThread]: Store serial: [23055424]
