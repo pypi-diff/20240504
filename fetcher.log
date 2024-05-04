@@ -2587,3 +2587,60 @@
 [2024-05-04 02:48:14] INFO root fetch - processPackages [d20-securityLayer]: Remove: archive file [/home/abi/fetcher/tmp/d20-securityLayer-2.0.0a9.tar.gz]
 [2024-05-04 02:48:14] INFO root fetch - main [MainThread]: End processing [d20-securityLayer]: success
 [2024-05-04 02:48:14] INFO root fetch - main [MainThread]: Store serial: [23053133]
+[2024-05-04 02:50:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053133]
+[2024-05-04 02:50:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 02:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioversions
+[2024-05-04 02:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wedap
+[2024-05-04 02:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-sns-notify
+[2024-05-04 02:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plaid-python
+[2024-05-04 02:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyoload
+[2024-05-04 02:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rship-sdk
+[2024-05-04 02:50:23] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 02:50:23] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-05-04 02:50:23] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-04 02:50:23] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 02:50:23] INFO root fetch - processPackages [wedap]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 02:50:23] INFO root fetch - processPackages [pyoload]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 02:50:23] INFO root fetch - processPackages [plaid-python]: New version: [9.9.0] Old Version: [9.8.0]
+[2024-05-04 02:50:23] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/e6/34/7c40209c13edc9fe7c611a00fd4b0d6e59d501613427ed6713ad6398b655/bioversions-0.5.98.tar.gz
+[2024-05-04 02:50:23] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/63/7d/ec62f3b7c0e08e1437b2036911a0d42b75ee30ea2cbb819399bdf8b55111/cdk-sns-notify-0.0.98.tar.gz
+[2024-05-04 02:50:23] INFO root fetch - processPackages [wedap]: Downloading https://files.pythonhosted.org/packages/8a/92/a7a7024f57ae34ea4f18c7b186230c4f266711c9a72e1b9ddf282137c497/wedap-1.0.1.tar.gz
+[2024-05-04 02:50:23] INFO root fetch - processPackages [pyoload]: Downloading https://files.pythonhosted.org/packages/96/32/e14ad7e4c4a0f67ef951b640fe371ebee51717a9f332e48cd44da169677c/pyoload-1.0.0.tar.gz
+[2024-05-04 02:50:23] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 02:50:23] INFO root fetch - processPackages [plaid-python]: Downloading https://files.pythonhosted.org/packages/28/e4/50f6c63d4bdca16ae7556462bac3c36fe05191a2d2c5d288a171d1284ec1/plaid-python-9.8.0.tar.gz
+[2024-05-04 02:50:23] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/0d/f5/5956eccd9643084cc5f7aba6325ec9de1ed3a2bb3568a8ee7ab88d0eac77/bioversions-0.5.99.tar.gz
+[2024-05-04 02:50:23] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/18/81/3593e022c53913815c1207f0d20763efc2764992a13c81d641f3a01edf7d/cdk-sns-notify-0.0.99.tar.gz
+[2024-05-04 02:50:23] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 02:50:23] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 02:50:23] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2024-05-04 02:50:23] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20240504/b/bioversions/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-05-04 02:50:23] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2024-05-04 02:50:23] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20240504/c/cdk-sns-notify/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-04 02:50:23] INFO root fetch - processPackages [wedap]: Downloading https://files.pythonhosted.org/packages/4a/4e/d2965f71c2c616a51bb83601aec2955a5d15b7bae09c6445d9512ade79fc/wedap-1.0.2.tar.gz
+[2024-05-04 02:50:23] INFO root fetch - processPackages [pyoload]: Downloading https://files.pythonhosted.org/packages/89/44/080a9ae9df17e1264779552706e90cf77f8c270944f5bf695acaa575cb2c/pyoload-1.0.1.tar.gz
+[2024-05-04 02:50:23] INFO root fetch - processPackages [wedap]: executing diffoscope
+[2024-05-04 02:50:23] INFO root fetch - processPackages [wedap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wedap-1.0.1.tar.gz tmp/wedap-1.0.2.tar.gz --markdown 20240504/w/wedap/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 02:50:24] INFO root fetch - processPackages [plaid-python]: Downloading https://files.pythonhosted.org/packages/46/6b/fe3a5d709d398108f2f29d60802967bb5be57a563e9f7420a27ccd3da756/plaid-python-9.9.0.tar.gz
+[2024-05-04 02:50:24] INFO root fetch - processPackages [pyoload]: executing diffoscope
+[2024-05-04 02:50:24] INFO root fetch - processPackages [pyoload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyoload-1.0.0.tar.gz tmp/pyoload-1.0.1.tar.gz --markdown 20240504/p/pyoload/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 02:50:24] INFO root fetch - processPackages [plaid-python]: executing diffoscope
+[2024-05-04 02:50:24] INFO root fetch - processPackages [plaid-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plaid-python-9.8.0.tar.gz tmp/plaid-python-9.9.0.tar.gz --markdown 20240504/p/plaid-python/9.8.0-9.9.0/README.md --exclude *.pyd
+[2024-05-04 02:50:24] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 02:50:24] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 02:50:24] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 02:50:24] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.98.tar.gz]
+[2024-05-04 02:50:24] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.99.tar.gz]
+[2024-05-04 02:50:24] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2024-05-04 02:50:24] INFO root fetch - processPackages [pyoload]: Remove: archive file [/home/abi/fetcher/tmp/pyoload-1.0.0.tar.gz]
+[2024-05-04 02:50:24] INFO root fetch - processPackages [pyoload]: Remove: archive file [/home/abi/fetcher/tmp/pyoload-1.0.1.tar.gz]
+[2024-05-04 02:50:24] INFO root fetch - main [MainThread]: End processing [pyoload]: success
+[2024-05-04 02:50:24] INFO root fetch - processPackages [wedap]: Remove: archive file [/home/abi/fetcher/tmp/wedap-1.0.1.tar.gz]
+[2024-05-04 02:50:24] INFO root fetch - processPackages [wedap]: Remove: archive file [/home/abi/fetcher/tmp/wedap-1.0.2.tar.gz]
+[2024-05-04 02:50:24] INFO root fetch - main [MainThread]: End processing [wedap]: success
+[2024-05-04 02:50:28] INFO root fetch - processPackages [plaid-python]: Remove: archive file [/home/abi/fetcher/tmp/plaid-python-9.8.0.tar.gz]
+[2024-05-04 02:50:28] INFO root fetch - processPackages [plaid-python]: Remove: archive file [/home/abi/fetcher/tmp/plaid-python-9.9.0.tar.gz]
+[2024-05-04 02:50:28] INFO root fetch - main [MainThread]: End processing [plaid-python]: success
+[2024-05-04 02:50:42] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.98.tar.gz]
+[2024-05-04 02:50:42] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
+[2024-05-04 02:50:42] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2024-05-04 02:50:42] INFO root fetch - main [MainThread]: Store serial: [23053151]
