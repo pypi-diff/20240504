@@ -18180,3 +18180,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:58:31] INFO root fetch - processPackages [wpilib]: Remove: archive file [/home/abi/fetcher/tmp/wpilib-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
 [2024-05-04 19:58:31] INFO root fetch - main [MainThread]: End processing [wpilib]: success
 [2024-05-04 19:58:31] INFO root fetch - main [MainThread]: Store serial: [23059944]
+[2024-05-04 20:00:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059944]
+[2024-05-04 20:00:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 20:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-tpu
+[2024-05-04 20:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ssebowa
+[2024-05-04 20:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: runespreader
+[2024-05-04 20:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mo-streams
+[2024-05-04 20:00:41] WARNING root fetch - processPackages [image-tpu]: Skipping, unable to determine old version
+[2024-05-04 20:00:41] INFO root fetch - main [MainThread]: End processing [image-tpu] error
+[2024-05-04 20:00:41] INFO root fetch - processPackages [runespreader]: New version: [0.1.2] Old Version: [0.1.13]
+[2024-05-04 20:00:41] WARNING root fetch - processPackages [ssebowa]: Skipping, unable to determine old version
+[2024-05-04 20:00:41] INFO root fetch - main [MainThread]: End processing [ssebowa] error
+[2024-05-04 20:00:41] INFO root fetch - processPackages [mo-streams]: New version: [1.620.24125] Old Version: [1.606.24115]
+[2024-05-04 20:00:41] INFO root fetch - processPackages [runespreader]: Downloading https://files.pythonhosted.org/packages/53/00/3de455cf454def7fde0cb20da5637e554bc13bb19e7f2b6c11f7b9dac715/runespreader-0.1.13.tar.gz
+[2024-05-04 20:00:41] INFO root fetch - processPackages [mo-streams]: Downloading https://files.pythonhosted.org/packages/88/50/fb31e33762e58e83d4b3870cef7ce257929edea30f93d58dd71afc3699c4/mo_streams-1.606.24115.tar.gz
+[2024-05-04 20:00:42] INFO root fetch - processPackages [runespreader]: Downloading https://files.pythonhosted.org/packages/7d/01/b1d3cf542a5c3c07d1987e323f9ffababb156c30ad8b8d0f5ec0a9be68a4/runespreader-0.1.2.tar.gz
+[2024-05-04 20:00:42] INFO root fetch - processPackages [runespreader]: executing diffoscope
+[2024-05-04 20:00:42] INFO root fetch - processPackages [runespreader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runespreader-0.1.13.tar.gz tmp/runespreader-0.1.2.tar.gz --markdown 20240504/r/runespreader/0.1.13-0.1.2/README.md --exclude *.pyd
+[2024-05-04 20:00:42] INFO root fetch - processPackages [mo-streams]: Downloading https://files.pythonhosted.org/packages/bd/d6/73f8ea5bfa0239d46b1838ffbe8c0a338755e32807a8239828167a353b63/mo_streams-1.620.24125.tar.gz
+[2024-05-04 20:00:42] INFO root fetch - processPackages [mo-streams]: executing diffoscope
+[2024-05-04 20:00:42] INFO root fetch - processPackages [mo-streams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_streams-1.606.24115.tar.gz tmp/mo_streams-1.620.24125.tar.gz --markdown 20240504/m/mo-streams/1.606.24115-1.620.24125/README.md --exclude *.pyd
+[2024-05-04 20:00:42] INFO root fetch - processPackages [runespreader]: Remove: archive file [/home/abi/fetcher/tmp/runespreader-0.1.13.tar.gz]
+[2024-05-04 20:00:42] INFO root fetch - processPackages [runespreader]: Remove: archive file [/home/abi/fetcher/tmp/runespreader-0.1.2.tar.gz]
+[2024-05-04 20:00:42] INFO root fetch - main [MainThread]: End processing [runespreader]: success
+[2024-05-04 20:00:43] INFO root fetch - processPackages [mo-streams]: Remove: archive file [/home/abi/fetcher/tmp/mo_streams-1.606.24115.tar.gz]
+[2024-05-04 20:00:43] INFO root fetch - processPackages [mo-streams]: Remove: archive file [/home/abi/fetcher/tmp/mo_streams-1.620.24125.tar.gz]
+[2024-05-04 20:00:43] INFO root fetch - main [MainThread]: End processing [mo-streams]: success
+[2024-05-04 20:00:43] INFO root fetch - main [MainThread]: Store serial: [23059955]
