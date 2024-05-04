@@ -20998,3 +20998,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:24:05] INFO root fetch - processPackages [inspect-ai]: Remove: archive file [/home/abi/fetcher/tmp/inspect_ai-0.3.5.tar.gz]
 [2024-05-04 23:24:05] INFO root fetch - main [MainThread]: End processing [inspect-ai]: success
 [2024-05-04 23:24:05] INFO root fetch - main [MainThread]: Store serial: [23061095]
+[2024-05-04 23:26:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061095]
+[2024-05-04 23:26:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 23:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-04 23:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysparkify
+[2024-05-04 23:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vital-ai-nlp
+[2024-05-04 23:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiohttp-fast-zlib
+[2024-05-04 23:26:14] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-04 23:26:14] ERROR root fetch - processPackages [aiohttp-fast-zlib]: Unable to get metadata: No such project 'aiohttp-fast-zlib'
+[2024-05-04 23:26:14] WARNING root fetch - processPackages [vital-ai-nlp]: Skipping, unable to determine old version
+[2024-05-04 23:26:14] INFO root fetch - main [MainThread]: End processing [aiohttp-fast-zlib] error
+[2024-05-04 23:26:14] INFO root fetch - main [MainThread]: End processing [vital-ai-nlp] error
+[2024-05-04 23:26:14] INFO root fetch - processPackages [pysparkify]: New version: [0.26.5] Old Version: [0.26.4]
+[2024-05-04 23:26:14] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-04 23:26:14] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/58/f5/de054d074f226994eaea803af6d01aecbfd85b94e1d6ef1fe6b483fdf39d/pysparkify-0.26.4.tar.gz
+[2024-05-04 23:26:14] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-04 23:26:14] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/51/82/e210fec2968932a1966783c9abbba9765d5b5b3a87e77d8ae44a62511e78/pysparkify-0.26.5.tar.gz
+[2024-05-04 23:26:14] INFO root fetch - processPackages [pysparkify]: executing diffoscope
+[2024-05-04 23:26:14] INFO root fetch - processPackages [pysparkify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkify-0.26.4.tar.gz tmp/pysparkify-0.26.5.tar.gz --markdown 20240504/p/pysparkify/0.26.4-0.26.5/README.md --exclude *.pyd
+[2024-05-04 23:26:15] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-04 23:26:15] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240504/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-04 23:26:15] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.4.tar.gz]
+[2024-05-04 23:26:15] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.5.tar.gz]
+[2024-05-04 23:26:15] INFO root fetch - main [MainThread]: End processing [pysparkify]: success
+[2024-05-04 23:26:15] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-04 23:26:15] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-04 23:26:15] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-04 23:26:15] INFO root fetch - main [MainThread]: Store serial: [23061111]
