@@ -11420,3 +11420,18 @@
 [2024-05-04 09:59:59] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240504-cp39-cp39-win_amd64.whl.zip]
 [2024-05-04 09:59:59] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
 [2024-05-04 09:59:59] INFO root fetch - main [MainThread]: Store serial: [23056689]
+[2024-05-04 10:02:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056689]
+[2024-05-04 10:02:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 10:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twikit
+[2024-05-04 10:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tree-sitter-html
+[2024-05-04 10:02:08] INFO root fetch - processPackages [twikit]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-05-04 10:02:08] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/5a/5d/49cd1119fe89852c4069a412e10e120a2ed1bf53a7640c1ebc9acc4a8b0b/twikit-1.6.0.tar.gz
+[2024-05-04 10:02:08] WARNING root fetch - processPackages [tree-sitter-html]: Skipping, unable to determine old version
+[2024-05-04 10:02:08] INFO root fetch - main [MainThread]: End processing [tree-sitter-html] error
+[2024-05-04 10:02:08] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/3f/5e/88ca37e85dcead606f3f5868f18e0e81858638e624a87be58cc0e202778a/twikit-1.6.1.tar.gz
+[2024-05-04 10:02:08] INFO root fetch - processPackages [twikit]: executing diffoscope
+[2024-05-04 10:02:08] INFO root fetch - processPackages [twikit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twikit-1.6.0.tar.gz tmp/twikit-1.6.1.tar.gz --markdown 20240504/t/twikit/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-05-04 10:02:09] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.6.0.tar.gz]
+[2024-05-04 10:02:09] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.6.1.tar.gz]
+[2024-05-04 10:02:09] INFO root fetch - main [MainThread]: End processing [twikit]: success
+[2024-05-04 10:02:09] INFO root fetch - main [MainThread]: Store serial: [23056703]
