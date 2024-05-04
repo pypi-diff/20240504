@@ -21325,3 +21325,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:50:15] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.9.tar.gz]
 [2024-05-04 23:50:15] INFO root fetch - main [MainThread]: End processing [lytils]: success
 [2024-05-04 23:50:15] INFO root fetch - main [MainThread]: Store serial: [23061236]
+[2024-05-04 23:52:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061236]
+[2024-05-04 23:52:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 23:52:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: domdiv
+[2024-05-04 23:52:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meds-etl
+[2024-05-04 23:52:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-04 23:52:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-filmaffinity-fork
+[2024-05-04 23:52:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wamp.py
+[2024-05-04 23:52:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: blankslate-python
+[2024-05-04 23:52:24] INFO root fetch - processPackages [blankslate-python]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-05-04 23:52:24] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-04 23:52:24] WARNING root fetch - processPackages [wamp.py]: Skipping, unable to determine old version
+[2024-05-04 23:52:24] INFO root fetch - main [MainThread]: End processing [wamp.py] error
+[2024-05-04 23:52:24] INFO root fetch - processPackages [meds-etl]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-04 23:52:24] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/bb/98/8867b9bbb20d164b2b02ef4ce6de7dc61ae80d24fcf1e4cf3f1a78e696dd/blankslate_python-1.1.7.tar.gz
+[2024-05-04 23:52:24] WARNING root fetch - processPackages [python-filmaffinity-fork]: Skipping, unable to determine old version
+[2024-05-04 23:52:24] INFO root fetch - main [MainThread]: End processing [python-filmaffinity-fork] error
+[2024-05-04 23:52:24] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-04 23:52:24] INFO root fetch - processPackages [domdiv]: New version: [4.6.0] Old Version: [4.5.2]
+[2024-05-04 23:52:24] INFO root fetch - processPackages [meds-etl]: Downloading https://files.pythonhosted.org/packages/0d/2a/5a0e829d1bf7fb5677767f92b685a7782f876370583391bfa8ebba9ce4e3/meds_etl-0.1.1.tar.gz
+[2024-05-04 23:52:24] INFO root fetch - processPackages [domdiv]: Downloading https://files.pythonhosted.org/packages/f7/85/58250808450a02325d2f7e4a2ad9e352b55a4425c98a32c9a573efcda4ad/domdiv-4.5.2.tar.gz
+[2024-05-04 23:52:24] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-04 23:52:24] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/5b/b8/fc06fa3ca3a853b695501929e6323de22be10f94778cd880225750d8be25/blankslate_python-1.1.8.tar.gz
+[2024-05-04 23:52:24] WARNING root fetch - processPackages [domdiv]: Skipping package: exceeds size limit 25969744>=10485760
+[2024-05-04 23:52:24] INFO root fetch - main [MainThread]: End processing [domdiv] error
+[2024-05-04 23:52:25] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-04 23:52:25] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240504/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-04 23:52:25] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-04 23:52:25] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.1.7.tar.gz tmp/blankslate_python-1.1.8.tar.gz --markdown 20240504/b/blankslate-python/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-05-04 23:52:25] INFO root fetch - processPackages [meds-etl]: Downloading https://files.pythonhosted.org/packages/39/59/8a77ae611bb4da3dc4ec821d070ac931f875e92706d3a948a58f53b54141/meds_etl-0.2.0.tar.gz
+[2024-05-04 23:52:25] INFO root fetch - processPackages [meds-etl]: executing diffoscope
+[2024-05-04 23:52:25] INFO root fetch - processPackages [meds-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meds_etl-0.1.1.tar.gz tmp/meds_etl-0.2.0.tar.gz --markdown 20240504/m/meds-etl/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-04 23:52:25] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.7.tar.gz]
+[2024-05-04 23:52:25] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.8.tar.gz]
+[2024-05-04 23:52:25] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-04 23:52:25] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-04 23:52:25] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-04 23:52:25] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-04 23:52:25] INFO root fetch - processPackages [meds-etl]: Remove: archive file [/home/abi/fetcher/tmp/meds_etl-0.1.1.tar.gz]
+[2024-05-04 23:52:25] INFO root fetch - processPackages [meds-etl]: Remove: archive file [/home/abi/fetcher/tmp/meds_etl-0.2.0.tar.gz]
+[2024-05-04 23:52:25] INFO root fetch - main [MainThread]: End processing [meds-etl]: success
+[2024-05-04 23:52:25] INFO root fetch - main [MainThread]: Store serial: [23061257]
