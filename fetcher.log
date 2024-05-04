@@ -20624,3 +20624,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:55:48] WARNING root fetch - processPackages [libdescriptor]: Skipping package: exceeds size limit 14426699>=10485760
 [2024-05-04 22:55:48] INFO root fetch - main [MainThread]: End processing [libdescriptor] error
 [2024-05-04 22:55:48] INFO root fetch - main [MainThread]: Store serial: [23060919]
+[2024-05-04 22:57:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060919]
+[2024-05-04 22:57:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 22:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libop
+[2024-05-04 22:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: verifia
+[2024-05-04 22:57:58] INFO root fetch - processPackages [libop]: New version: [5] Old Version: [32]
+[2024-05-04 22:57:58] WARNING root fetch - processPackages [verifia]: Skipping, unable to determine old version
+[2024-05-04 22:57:58] INFO root fetch - main [MainThread]: End processing [verifia] error
+[2024-05-04 22:57:58] INFO root fetch - processPackages [libop]: Downloading https://files.pythonhosted.org/packages/cb/88/d15b591700f27e5406fc16dfc0f8015406f48f6785bf159936aef515a603/libop-32.tar.gz
+[2024-05-04 22:57:58] INFO root fetch - processPackages [libop]: Downloading https://files.pythonhosted.org/packages/d4/d3/b8f93be2936e27dc71b4d55c10009adaad2ae7f0b20b7ea27aecd7ab5688/libop-5.tar.gz
+[2024-05-04 22:57:58] INFO root fetch - processPackages [libop]: executing diffoscope
+[2024-05-04 22:57:58] INFO root fetch - processPackages [libop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libop-32.tar.gz tmp/libop-5.tar.gz --markdown 20240504/l/libop/32-5/README.md --exclude *.pyd
+[2024-05-04 22:57:59] INFO root fetch - processPackages [libop]: Remove: archive file [/home/abi/fetcher/tmp/libop-32.tar.gz]
+[2024-05-04 22:57:59] INFO root fetch - processPackages [libop]: Remove: archive file [/home/abi/fetcher/tmp/libop-5.tar.gz]
+[2024-05-04 22:57:59] INFO root fetch - main [MainThread]: End processing [libop]: success
+[2024-05-04 22:57:59] INFO root fetch - main [MainThread]: Store serial: [23060928]
