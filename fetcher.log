@@ -20849,3 +20849,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:13:15] INFO root fetch - processPackages [mpy-cross-v6]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross_v6-1.0.2.tar.gz]
 [2024-05-04 23:13:15] INFO root fetch - main [MainThread]: End processing [mpy-cross-v6]: success
 [2024-05-04 23:13:15] INFO root fetch - main [MainThread]: Store serial: [23061040]
+[2024-05-04 23:15:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061040]
+[2024-05-04 23:15:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 23:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: finlearn
+[2024-05-04 23:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpy-cross-v5
+[2024-05-04 23:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MobileInventoryCLI
+[2024-05-04 23:15:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mayan-importer
+[2024-05-04 23:15:23] INFO root fetch - processPackages [finlearn]: New version: [0.0.43] Old Version: [0.0.42]
+[2024-05-04 23:15:23] INFO root fetch - processPackages [mayan-importer]: New version: [3.2] Old Version: [3.1.1]
+[2024-05-04 23:15:24] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.85] Old Version: [0.4.84]
+[2024-05-04 23:15:24] INFO root fetch - processPackages [mpy-cross-v5]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 23:15:24] INFO root fetch - processPackages [mayan-importer]: Downloading https://files.pythonhosted.org/packages/17/81/0ed766e0ad595c155ba436f0a4f7dbd732a464c4408397afe60039d81831/mayan-importer-3.1.1.tar.gz
+[2024-05-04 23:15:24] INFO root fetch - processPackages [finlearn]: Downloading https://files.pythonhosted.org/packages/2a/5f/10a8a89894d64842a9c35bb21c67d767a9a3ac671d4b0f685d1ed219786a/finlearn-0.0.42.tar.gz
+[2024-05-04 23:15:24] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/01/61/4cd59d757cc0ada6d99752770efe26015f5371aa94b4bf954a87549494f1/MobileInventoryCLI-0.4.84.tar.gz
+[2024-05-04 23:15:24] INFO root fetch - processPackages [mpy-cross-v5]: Downloading https://files.pythonhosted.org/packages/f2/09/b1edd7840dc6ae4cfc7ed7bc07cbf8062d0ed5643ff92a229e3012314d9f/mpy-cross-v5-1.0.1.tar.gz
+[2024-05-04 23:15:24] INFO root fetch - processPackages [finlearn]: Downloading https://files.pythonhosted.org/packages/02/ab/11b32eaac04826853c1cda729d1aa2d96077f2309a4d45390cdc6f371477/finlearn-0.0.43.tar.gz
+[2024-05-04 23:15:24] INFO root fetch - processPackages [finlearn]: executing diffoscope
+[2024-05-04 23:15:24] INFO root fetch - processPackages [finlearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finlearn-0.0.42.tar.gz tmp/finlearn-0.0.43.tar.gz --markdown 20240504/f/finlearn/0.0.42-0.0.43/README.md --exclude *.pyd
+[2024-05-04 23:15:24] INFO root fetch - processPackages [mayan-importer]: Downloading https://files.pythonhosted.org/packages/0d/25/85e7c5672f47a14c92f4544a8952908cdacfda31771ca98115cb98388b84/mayan-importer-3.2.tar.gz
+[2024-05-04 23:15:24] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/16/ca/6c9e081877568fbeb11613af69905c59e4840166759d5845564fbc395dec/MobileInventoryCLI-0.4.85.tar.gz
+[2024-05-04 23:15:24] INFO root fetch - processPackages [mayan-importer]: executing diffoscope
+[2024-05-04 23:15:24] INFO root fetch - processPackages [mayan-importer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mayan-importer-3.1.1.tar.gz tmp/mayan-importer-3.2.tar.gz --markdown 20240504/m/mayan-importer/3.1.1-3.2/README.md --exclude *.pyd
+[2024-05-04 23:15:24] INFO root fetch - processPackages [mpy-cross-v5]: Downloading https://files.pythonhosted.org/packages/c8/26/ce6be0eaf0e8f8e8027c7a0f8c5a26ba08150ecbbad92e4a9d9c67a4ddab/mpy_cross_v5-1.0.2.tar.gz
+[2024-05-04 23:15:24] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-04 23:15:24] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.84.tar.gz tmp/MobileInventoryCLI-0.4.85.tar.gz --markdown 20240504/M/MobileInventoryCLI/0.4.84-0.4.85/README.md --exclude *.pyd
+[2024-05-04 23:15:24] INFO root fetch - processPackages [mpy-cross-v5]: executing diffoscope
+[2024-05-04 23:15:24] INFO root fetch - processPackages [mpy-cross-v5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpy-cross-v5-1.0.1.tar.gz tmp/mpy_cross_v5-1.0.2.tar.gz --markdown 20240504/m/mpy-cross-v5/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 23:15:25] INFO root fetch - processPackages [finlearn]: Remove: archive file [/home/abi/fetcher/tmp/finlearn-0.0.42.tar.gz]
+[2024-05-04 23:15:25] INFO root fetch - processPackages [finlearn]: Remove: archive file [/home/abi/fetcher/tmp/finlearn-0.0.43.tar.gz]
+[2024-05-04 23:15:25] INFO root fetch - main [MainThread]: End processing [finlearn]: success
+[2024-05-04 23:15:25] INFO root fetch - processPackages [mayan-importer]: Remove: archive file [/home/abi/fetcher/tmp/mayan-importer-3.1.1.tar.gz]
+[2024-05-04 23:15:25] INFO root fetch - processPackages [mayan-importer]: Remove: archive file [/home/abi/fetcher/tmp/mayan-importer-3.2.tar.gz]
+[2024-05-04 23:15:25] INFO root fetch - main [MainThread]: End processing [mayan-importer]: success
+[2024-05-04 23:15:25] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.84.tar.gz]
+[2024-05-04 23:15:25] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.85.tar.gz]
+[2024-05-04 23:15:25] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-04 23:15:26] INFO root fetch - processPackages [mpy-cross-v5]: Remove: archive file [/home/abi/fetcher/tmp/mpy-cross-v5-1.0.1.tar.gz]
+[2024-05-04 23:15:26] INFO root fetch - processPackages [mpy-cross-v5]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross_v5-1.0.2.tar.gz]
+[2024-05-04 23:15:26] INFO root fetch - main [MainThread]: End processing [mpy-cross-v5]: success
+[2024-05-04 23:15:26] INFO root fetch - main [MainThread]: Store serial: [23061059]
