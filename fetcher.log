@@ -13629,3 +13629,33 @@
 [2024-05-04 13:37:30] INFO root fetch - processPackages [ytmusicapi]: Remove: archive file [/home/abi/fetcher/tmp/ytmusicapi-1.7.0.tar.gz]
 [2024-05-04 13:37:30] INFO root fetch - main [MainThread]: End processing [ytmusicapi]: success
 [2024-05-04 13:37:30] INFO root fetch - main [MainThread]: Store serial: [23057737]
+[2024-05-04 13:39:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057737]
+[2024-05-04 13:39:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 13:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-cyberfurry
+[2024-05-04 13:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: srai-core
+[2024-05-04 13:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vka
+[2024-05-04 13:39:40] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: New version: [1.6] Old Version: [1.5]
+[2024-05-04 13:39:40] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Downloading https://files.pythonhosted.org/packages/e8/7b/7792da537305a35a66891fcc1c5c954d29f03029699edd636a4dd223daef/nonebot_plugin_cyberfurry-1.5.tar.gz
+[2024-05-04 13:39:40] INFO root fetch - processPackages [srai-core]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-04 13:39:40] INFO root fetch - processPackages [vka]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-04 13:39:40] INFO root fetch - processPackages [srai-core]: Downloading https://files.pythonhosted.org/packages/7a/d3/3b82b90f2e2fe5027c1ec2ed55445d212c0acefd1e99e3244f19564fe1fa/srai-core-0.9.1.tar.gz
+[2024-05-04 13:39:40] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Downloading https://files.pythonhosted.org/packages/a8/87/149d45e7003395c30ac090c81c4fe6d2a8c2989edd2796aacc37c07eedd2/nonebot_plugin_cyberfurry-1.6.tar.gz
+[2024-05-04 13:39:40] INFO root fetch - processPackages [vka]: Downloading https://files.pythonhosted.org/packages/b0/bb/9e2424da6ba6efb491947a984af904fdd3e896435bb6417a8e3666e0d748/vka-1.2.8.tar.gz
+[2024-05-04 13:39:40] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: executing diffoscope
+[2024-05-04 13:39:40] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_cyberfurry-1.5.tar.gz tmp/nonebot_plugin_cyberfurry-1.6.tar.gz --markdown 20240504/n/nonebot-plugin-cyberfurry/1.5-1.6/README.md --exclude *.pyd
+[2024-05-04 13:39:40] INFO root fetch - processPackages [vka]: Downloading https://files.pythonhosted.org/packages/8e/46/ab7a7c188e32f0b2c63ff472431c60a38a52687c4b854aa6783e469c1595/vka-1.2.9.tar.gz
+[2024-05-04 13:39:40] INFO root fetch - processPackages [srai-core]: Downloading https://files.pythonhosted.org/packages/87/bd/d7a2ea748a2b7256beff8e2e5c6d97565a79ddfdfd47aa5bd786483cc113/srai-core-0.9.2.tar.gz
+[2024-05-04 13:39:41] INFO root fetch - processPackages [srai-core]: executing diffoscope
+[2024-05-04 13:39:41] INFO root fetch - processPackages [srai-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srai-core-0.9.1.tar.gz tmp/srai-core-0.9.2.tar.gz --markdown 20240504/s/srai-core/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-04 13:39:41] INFO root fetch - processPackages [vka]: executing diffoscope
+[2024-05-04 13:39:41] INFO root fetch - processPackages [vka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vka-1.2.8.tar.gz tmp/vka-1.2.9.tar.gz --markdown 20240504/v/vka/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-04 13:39:41] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_cyberfurry-1.5.tar.gz]
+[2024-05-04 13:39:41] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_cyberfurry-1.6.tar.gz]
+[2024-05-04 13:39:41] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-cyberfurry]: success
+[2024-05-04 13:39:41] INFO root fetch - processPackages [srai-core]: Remove: archive file [/home/abi/fetcher/tmp/srai-core-0.9.1.tar.gz]
+[2024-05-04 13:39:41] INFO root fetch - processPackages [srai-core]: Remove: archive file [/home/abi/fetcher/tmp/srai-core-0.9.2.tar.gz]
+[2024-05-04 13:39:41] INFO root fetch - main [MainThread]: End processing [srai-core]: success
+[2024-05-04 13:39:41] INFO root fetch - processPackages [vka]: Remove: archive file [/home/abi/fetcher/tmp/vka-1.2.8.tar.gz]
+[2024-05-04 13:39:41] INFO root fetch - processPackages [vka]: Remove: archive file [/home/abi/fetcher/tmp/vka-1.2.9.tar.gz]
+[2024-05-04 13:39:41] INFO root fetch - main [MainThread]: End processing [vka]: success
+[2024-05-04 13:39:41] INFO root fetch - main [MainThread]: Store serial: [23057745]
