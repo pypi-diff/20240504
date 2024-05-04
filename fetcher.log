@@ -13891,3 +13891,38 @@
 [2024-05-04 14:05:32] INFO root fetch - processPackages [esentity]: Remove: archive file [/home/abi/fetcher/tmp/esentity-0.2.99.tar.gz]
 [2024-05-04 14:05:32] INFO root fetch - main [MainThread]: End processing [esentity]: success
 [2024-05-04 14:05:32] INFO root fetch - main [MainThread]: Store serial: [23057830]
+[2024-05-04 14:07:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057830]
+[2024-05-04 14:07:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 14:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unicorn-binance-websocket-api
+[2024-05-04 14:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nmk
+[2024-05-04 14:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-esimd
+[2024-05-04 14:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flatpack
+[2024-05-04 14:07:41] INFO root fetch - processPackages [nmk]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-04 14:07:41] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-04 14:07:41] INFO root fetch - processPackages [nmk]: Downloading https://files.pythonhosted.org/packages/b6/26/41c5170a519ad51c3700a4a4e1e533b64a5d14d2f1deb61e0d8b99dc9775/nmk-0.9.1.tar.gz
+[2024-05-04 14:07:41] INFO root fetch - processPackages [bigdl-core-xe-esimd]: New version: [2.5.0b20240504] Old Version: [2.5.0b20240503]
+[2024-05-04 14:07:41] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-04 14:07:41] INFO root fetch - processPackages [unicorn-binance-websocket-api]: New version: [2.5.0] Old Version: [2.4.0]
+[2024-05-04 14:07:41] INFO root fetch - processPackages [nmk]: Downloading https://files.pythonhosted.org/packages/09/71/272fc94b043838e80e8b8fda8305969b60e958fb5afb80aa5e4eb7602033/nmk-0.9.2.tar.gz
+[2024-05-04 14:07:41] INFO root fetch - processPackages [bigdl-core-xe-esimd]: Downloading https://files.pythonhosted.org/packages/8e/29/388144a6ca6bfad6e67338752e1cef1ff2a3fc49006f0c1e303900009c95/bigdl_core_xe_esimd-2.5.0b20240503-cp39-cp39-manylinux2010_x86_64.whl
+[2024-05-04 14:07:41] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-04 14:07:41] WARNING root fetch - processPackages [bigdl-core-xe-esimd]: Skipping package: exceeds size limit 61871661>=10485760
+[2024-05-04 14:07:41] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd] error
+[2024-05-04 14:07:41] INFO root fetch - processPackages [nmk]: executing diffoscope
+[2024-05-04 14:07:41] INFO root fetch - processPackages [nmk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmk-0.9.1.tar.gz tmp/nmk-0.9.2.tar.gz --markdown 20240504/n/nmk/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-04 14:07:41] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-04 14:07:41] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240504/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-04 14:07:41] INFO root fetch - processPackages [unicorn-binance-websocket-api]: Downloading https://files.pythonhosted.org/packages/9e/dd/69e9537cf0a5ed8e99cbec3596edbba908052b642b2e4384f72b9d218327/unicorn-binance-websocket-api-2.4.0.tar.gz
+[2024-05-04 14:07:42] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-04 14:07:42] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-04 14:07:42] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-04 14:07:42] INFO root fetch - processPackages [nmk]: Remove: archive file [/home/abi/fetcher/tmp/nmk-0.9.1.tar.gz]
+[2024-05-04 14:07:42] INFO root fetch - processPackages [nmk]: Remove: archive file [/home/abi/fetcher/tmp/nmk-0.9.2.tar.gz]
+[2024-05-04 14:07:42] INFO root fetch - main [MainThread]: End processing [nmk]: success
+[2024-05-04 14:07:42] INFO root fetch - processPackages [unicorn-binance-websocket-api]: Downloading https://files.pythonhosted.org/packages/1f/af/b72ad8efd116b9c07ce26b81ff7f9bba8dde8280002328304a0cf95bae32/unicorn_binance_websocket_api-2.5.0-pp38-pypy38_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-05-04 14:07:43] INFO root fetch - processPackages [unicorn-binance-websocket-api]: executing diffoscope
+[2024-05-04 14:07:43] INFO root fetch - processPackages [unicorn-binance-websocket-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicorn-binance-websocket-api-2.4.0.tar.gz tmp/unicorn_binance_websocket_api-2.5.0-pp38-pypy38_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240504/u/unicorn-binance-websocket-api/2.4.0-2.5.0/README.md --exclude *.pyd
+[2024-05-04 14:07:44] INFO root fetch - processPackages [unicorn-binance-websocket-api]: Remove: archive file [/home/abi/fetcher/tmp/unicorn-binance-websocket-api-2.4.0.tar.gz]
+[2024-05-04 14:07:44] INFO root fetch - processPackages [unicorn-binance-websocket-api]: Remove: archive file [/home/abi/fetcher/tmp/unicorn_binance_websocket_api-2.5.0-pp38-pypy38_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-05-04 14:07:44] INFO root fetch - main [MainThread]: End processing [unicorn-binance-websocket-api]: success
+[2024-05-04 14:07:44] INFO root fetch - main [MainThread]: Store serial: [23057886]
