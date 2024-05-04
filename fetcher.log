@@ -1918,3 +1918,49 @@
 [2024-05-04 02:08:56] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
 [2024-05-04 02:08:56] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2024-05-04 02:08:56] INFO root fetch - main [MainThread]: Store serial: [23052886]
+[2024-05-04 02:10:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052886]
+[2024-05-04 02:11:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 02:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nmfspalettepy
+[2024-05-04 02:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psyke
+[2024-05-04 02:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openbb-nightly
+[2024-05-04 02:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nmfspalettepy
+[2024-05-04 02:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mct-quantizers-nightly
+[2024-05-04 02:11:04] INFO root fetch - processPackages [nmfspalettepy]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-04 02:11:04] INFO root fetch - processPackages [nmfspalettepy]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-04 02:11:04] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240503.post1051] Old Version: [1.5.0.20240502.post1037]
+[2024-05-04 02:11:04] INFO root fetch - processPackages [openbb-nightly]: New version: [4.1.7.dev202405030009] Old Version: [4.1.7.dev202405020009]
+[2024-05-04 02:11:04] INFO root fetch - processPackages [nmfspalettepy]: Downloading https://files.pythonhosted.org/packages/eb/0c/968f6552c77683a739df63beb850d32ce5f530c94fbddd2e9e9247717e7f/nmfspalettepy-0.1.5.tar.gz
+[2024-05-04 02:11:04] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/13/8b/177a0be7c82f0972f11fc988020299e7979f9faf61581313d2a6e2495e53/mct-quantizers-nightly-1.5.0.20240502.post1037.tar.gz
+[2024-05-04 02:11:04] INFO root fetch - processPackages [psyke]: New version: [0.8.6.dev2] Old Version: [0.8.5.dev1]
+[2024-05-04 02:11:04] INFO root fetch - processPackages [nmfspalettepy]: Downloading https://files.pythonhosted.org/packages/eb/0c/968f6552c77683a739df63beb850d32ce5f530c94fbddd2e9e9247717e7f/nmfspalettepy-0.1.5.tar.gz
+[2024-05-04 02:11:04] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/82/fc/b4e514ccfae6e2f82e6293f793fdbb8656dc041c0bc534d0226622b5a55e/openbb_nightly-4.1.7.dev202405020009.tar.gz
+[2024-05-04 02:11:05] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/e1/42/f9c03b92c9ed4d22e16b86581b7249bf01babec6a13915deed6693a7559c/psyke-0.8.5.dev1.tar.gz
+[2024-05-04 02:11:05] INFO root fetch - processPackages [nmfspalettepy]: Downloading https://files.pythonhosted.org/packages/1e/ce/1ff944ba73e1ecb9d4b069a4e0dbec437c1bc6bfb37eb99b2252e4446b78/nmfspalettepy-0.1.6.tar.gz
+[2024-05-04 02:11:05] INFO root fetch - processPackages [nmfspalettepy]: Downloading https://files.pythonhosted.org/packages/1e/ce/1ff944ba73e1ecb9d4b069a4e0dbec437c1bc6bfb37eb99b2252e4446b78/nmfspalettepy-0.1.6.tar.gz
+[2024-05-04 02:11:05] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/80/ae/022ff84f6df373e5a8fee1a2145d6c90c6f0123e7adf5e4a8460062a18be/mct-quantizers-nightly-1.5.0.20240503.post1051.tar.gz
+[2024-05-04 02:11:05] INFO root fetch - processPackages [nmfspalettepy]: executing diffoscope
+[2024-05-04 02:11:05] INFO root fetch - processPackages [nmfspalettepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmfspalettepy-0.1.5.tar.gz tmp/nmfspalettepy-0.1.6.tar.gz --markdown 20240504/n/nmfspalettepy/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-04 02:11:05] INFO root fetch - processPackages [nmfspalettepy]: executing diffoscope
+[2024-05-04 02:11:05] INFO root fetch - processPackages [nmfspalettepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmfspalettepy-0.1.5.tar.gz tmp/nmfspalettepy-0.1.6.tar.gz --markdown 20240504/n/nmfspalettepy/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-04 02:11:05] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-05-04 02:11:05] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240502.post1037.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240503.post1051.tar.gz --markdown 20240504/m/mct-quantizers-nightly/1.5.0.20240502.post1037-1.5.0.20240503.post1051/README.md --exclude *.pyd
+[2024-05-04 02:11:05] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/d1/ff/44732017d50e5ea324bf5a9bae0ca6e06f72d6696ac7f82f3ea604cebb56/psyke-0.8.6.dev2.tar.gz
+[2024-05-04 02:11:05] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/3e/11/42b5ba86a238d8ee97739d8df9e74f4d428979aa61660c43ea10a31bcc44/openbb_nightly-4.1.7.dev202405030009.tar.gz
+[2024-05-04 02:11:05] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2024-05-04 02:11:05] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.8.5.dev1.tar.gz tmp/psyke-0.8.6.dev2.tar.gz --markdown 20240504/p/psyke/0.8.5.dev1-0.8.6.dev2/README.md --exclude *.pyd
+[2024-05-04 02:11:05] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2024-05-04 02:11:05] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-4.1.7.dev202405020009.tar.gz tmp/openbb_nightly-4.1.7.dev202405030009.tar.gz --markdown 20240504/o/openbb-nightly/4.1.7.dev202405020009-4.1.7.dev202405030009/README.md --exclude *.pyd
+[2024-05-04 02:11:05] INFO root fetch - processPackages [nmfspalettepy]: Remove: archive file [/home/abi/fetcher/tmp/nmfspalettepy-0.1.5.tar.gz]
+[2024-05-04 02:11:05] INFO root fetch - processPackages [nmfspalettepy]: Remove: archive file [/home/abi/fetcher/tmp/nmfspalettepy-0.1.6.tar.gz]
+[2024-05-04 02:11:05] INFO root fetch - main [MainThread]: End processing [nmfspalettepy]: success
+[2024-05-04 02:11:05] INFO root fetch - main [MainThread]: End processing [nmfspalettepy]: success
+[2024-05-04 02:11:06] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240502.post1037.tar.gz]
+[2024-05-04 02:11:06] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240503.post1051.tar.gz]
+[2024-05-04 02:11:06] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-05-04 02:11:06] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.5.dev1.tar.gz]
+[2024-05-04 02:11:06] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.6.dev2.tar.gz]
+[2024-05-04 02:11:06] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2024-05-04 02:11:09] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202405020009.tar.gz]
+[2024-05-04 02:11:09] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202405030009.tar.gz]
+[2024-05-04 02:11:09] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2024-05-04 02:11:09] INFO root fetch - main [MainThread]: Store serial: [23052908]
