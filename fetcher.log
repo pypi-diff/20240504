@@ -14298,3 +14298,24 @@
 [2024-05-04 14:44:39] INFO root fetch - processPackages [DrissionPage]: Remove: archive file [/home/abi/fetcher/tmp/DrissionPage-4.0.4.9.tar.gz]
 [2024-05-04 14:44:39] INFO root fetch - main [MainThread]: End processing [DrissionPage]: success
 [2024-05-04 14:44:39] INFO root fetch - main [MainThread]: Store serial: [23058039]
+[2024-05-04 14:46:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058039]
+[2024-05-04 14:46:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 14:46:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: musical_games
+[2024-05-04 14:46:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tightwrap
+[2024-05-04 14:46:48] INFO root fetch - processPackages [musical_games]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-05-04 14:46:48] INFO root fetch - processPackages [tightwrap]: New version: [24.2.0] Old Version: [24.1.0]
+[2024-05-04 14:46:48] INFO root fetch - processPackages [tightwrap]: Downloading https://files.pythonhosted.org/packages/a0/71/8d8285de133b959eb033425de775e5195a200f603f8443e21f0ce5bd2600/tightwrap-24.1.0.tar.gz
+[2024-05-04 14:46:48] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/6d/d7/206db90826d8342538d0ed679693607ab88c362f2adbfcbedd9ac7f38bd4/musical_games-0.8.1.tar.gz
+[2024-05-04 14:46:48] INFO root fetch - processPackages [tightwrap]: Downloading https://files.pythonhosted.org/packages/4b/9c/40062d31d4e46e3c18199ceb2564ea844015fba1f691c2e5c3f8e1d99d39/tightwrap-24.2.0.tar.gz
+[2024-05-04 14:46:48] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/c9/b0/bf2afd6383941c1964dc0641d08c11f5ce39994ac61efe48798ae6530d47/musical_games-0.8.2.tar.gz
+[2024-05-04 14:46:48] INFO root fetch - processPackages [tightwrap]: executing diffoscope
+[2024-05-04 14:46:48] INFO root fetch - processPackages [tightwrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tightwrap-24.1.0.tar.gz tmp/tightwrap-24.2.0.tar.gz --markdown 20240504/t/tightwrap/24.1.0-24.2.0/README.md --exclude *.pyd
+[2024-05-04 14:46:48] INFO root fetch - processPackages [musical_games]: executing diffoscope
+[2024-05-04 14:46:48] INFO root fetch - processPackages [musical_games]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musical_games-0.8.1.tar.gz tmp/musical_games-0.8.2.tar.gz --markdown 20240504/m/musical_games/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-05-04 14:46:49] INFO root fetch - processPackages [tightwrap]: Remove: archive file [/home/abi/fetcher/tmp/tightwrap-24.1.0.tar.gz]
+[2024-05-04 14:46:49] INFO root fetch - processPackages [tightwrap]: Remove: archive file [/home/abi/fetcher/tmp/tightwrap-24.2.0.tar.gz]
+[2024-05-04 14:46:49] INFO root fetch - main [MainThread]: End processing [tightwrap]: success
+[2024-05-04 14:46:49] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.1.tar.gz]
+[2024-05-04 14:46:49] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.2.tar.gz]
+[2024-05-04 14:46:49] INFO root fetch - main [MainThread]: End processing [musical_games]: success
+[2024-05-04 14:46:49] INFO root fetch - main [MainThread]: Store serial: [23058045]
