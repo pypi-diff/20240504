@@ -21423,3 +21423,12 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:56:47] INFO root fetch - processPackages [league-tools]: Remove: archive file [/home/abi/fetcher/tmp/league_tools-0.1.0.dev1.tar.gz]
 [2024-05-04 23:56:47] INFO root fetch - main [MainThread]: End processing [league-tools]: success
 [2024-05-04 23:56:47] INFO root fetch - main [MainThread]: Store serial: [23061281]
+[2024-05-04 23:58:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061281]
+[2024-05-04 23:58:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 23:58:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: instatest
+[2024-05-04 23:58:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cccodes
+[2024-05-04 23:58:56] WARNING root fetch - processPackages [instatest]: Skipping, unable to determine old version
+[2024-05-04 23:58:56] INFO root fetch - main [MainThread]: End processing [instatest] error
+[2024-05-04 23:58:56] WARNING root fetch - processPackages [cccodes]: Skipping, unable to determine old version
+[2024-05-04 23:58:56] INFO root fetch - main [MainThread]: End processing [cccodes] error
+[2024-05-04 23:58:56] INFO root fetch - main [MainThread]: Store serial: [23061293]
