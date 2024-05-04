@@ -6783,3 +6783,87 @@
 [2024-05-04 03:35:10] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.1.tar.gz]
 [2024-05-04 03:35:10] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2024-05-04 03:35:10] INFO root fetch - main [MainThread]: Store serial: [23054538]
+[2024-05-04 03:37:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054538]
+[2024-05-04 03:37:18] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-04 03:37:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgegap-service
+[2024-05-04 03:37:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edgegap-settings
+[2024-05-04 03:37:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edgegap-logging
+[2024-05-04 03:37:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edgegap-database
+[2024-05-04 03:37:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edgegap-consul
+[2024-05-04 03:37:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rship-sdk
+[2024-05-04 03:37:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: edgegap-time
+[2024-05-04 03:37:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: edgegap-migrate
+[2024-05-04 03:37:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: enderchest
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-database]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-settings]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-service]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-migrate]: New version: [1.6.0] Old Version: [1.5.4]
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-consul]: New version: [1.6.5] Old Version: [1.6.4]
+[2024-05-04 03:37:19] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-database]: Downloading https://files.pythonhosted.org/packages/a0/b5/b4809c37c6a396525f8d1d505034f51dc8a2702d3bad202706d0c3f1a36a/edgegap_database-1.6.1.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [enderchest]: New version: [0.1.6rc1] Old Version: [0.1.6b1]
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-time]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-logging]: New version: [1.6.5] Old Version: [1.6.4]
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-settings]: Downloading https://files.pythonhosted.org/packages/e2/55/158c66dfec103189701685554d38b165c6501ff406c755b3788bb1d9a4c7/edgegap_settings-1.6.0.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-service]: Downloading https://files.pythonhosted.org/packages/57/bc/fc2d85562b803e55b86cfc8f765728deffc07a211459610cb26c300a1467/edgegap_service-1.6.0.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-migrate]: Downloading https://files.pythonhosted.org/packages/2f/c7/53d9f06c8c71b42d91b29ab9bbf1c0f2b373b058c889ec79e3347633ae08/edgegap_migrate-1.5.4.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-consul]: Downloading https://files.pythonhosted.org/packages/be/00/8b0d18489e2b579b62649dc137936ce9440be108f214d910279a179f3db9/edgegap_consul-1.6.4.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-time]: Downloading https://files.pythonhosted.org/packages/0a/7f/0081a11ea8f7cb818fd711696b2c7a5bdab12ebc37b0b5b2bd772e4c6be4/edgegap_time-1.1.4.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-logging]: Downloading https://files.pythonhosted.org/packages/da/a9/a1c864ed8142cd6e42cd8e95bb1070d81fbe72e6fb093621e02fe335561d/edgegap_logging-1.6.4.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [enderchest]: Downloading https://files.pythonhosted.org/packages/14/9e/963185860a0e1fd283619db135018d1c9a05e201571050a22afa5c5fb804/enderchest-0.1.6b1.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-database]: Downloading https://files.pythonhosted.org/packages/af/72/e730a0173e9f58b5d3563a6f0e8ba32b860821dfa5c9b78acb7c8eba0aa1/edgegap_database-1.6.2.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-service]: Downloading https://files.pythonhosted.org/packages/bc/95/3b771bc8eae4d0601e73ac4308d5ebe66d37d920289a0938820af76a1faf/edgegap_service-1.6.1.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-settings]: Downloading https://files.pythonhosted.org/packages/ed/ec/a3a731bcdf94a9849d61311971dfad5b9b45294c96004524ea67e6d5a664/edgegap_settings-1.6.1.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-consul]: Downloading https://files.pythonhosted.org/packages/ca/0c/ddb071d922b7ab98a006f8f19cb69d9014a6abc0452638d2efaa949689bb/edgegap_consul-1.6.5.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-migrate]: Downloading https://files.pythonhosted.org/packages/06/03/bc9bee137f377aa155932bcd8ff2fc254d672c57009675610789170356e7/edgegap_migrate-1.6.0.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 03:37:19] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-time]: Downloading https://files.pythonhosted.org/packages/90/8f/ba409a3ab2cbfe4bacf2bfc078b9a7fc93e9f7fb69a8cce999340ec20f33/edgegap_time-1.1.5.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-database]: executing diffoscope
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_database-1.6.1.tar.gz tmp/edgegap_database-1.6.2.tar.gz --markdown 20240504/e/edgegap-database/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-logging]: Downloading https://files.pythonhosted.org/packages/38/c5/728270100f218c463f4655c27183d2e4a1e0bbea14675353b8b67689e7ce/edgegap_logging-1.6.5.tar.gz
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-settings]: executing diffoscope
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-settings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_settings-1.6.0.tar.gz tmp/edgegap_settings-1.6.1.tar.gz --markdown 20240504/e/edgegap-settings/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-service]: executing diffoscope
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_service-1.6.0.tar.gz tmp/edgegap_service-1.6.1.tar.gz --markdown 20240504/e/edgegap-service/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-consul]: executing diffoscope
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-consul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_consul-1.6.4.tar.gz tmp/edgegap_consul-1.6.5.tar.gz --markdown 20240504/e/edgegap-consul/1.6.4-1.6.5/README.md --exclude *.pyd
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-migrate]: executing diffoscope
+[2024-05-04 03:37:19] INFO root fetch - processPackages [edgegap-migrate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_migrate-1.5.4.tar.gz tmp/edgegap_migrate-1.6.0.tar.gz --markdown 20240504/e/edgegap-migrate/1.5.4-1.6.0/README.md --exclude *.pyd
+[2024-05-04 03:37:20] INFO root fetch - processPackages [enderchest]: Downloading https://files.pythonhosted.org/packages/05/eb/adfe8c77f0dd3d6f410b2d69c31142bab7e2c68cdbb41793cacca37a44c3/enderchest-0.1.6rc1.tar.gz
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-time]: executing diffoscope
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-time]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_time-1.1.4.tar.gz tmp/edgegap_time-1.1.5.tar.gz --markdown 20240504/e/edgegap-time/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-logging]: executing diffoscope
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_logging-1.6.4.tar.gz tmp/edgegap_logging-1.6.5.tar.gz --markdown 20240504/e/edgegap-logging/1.6.4-1.6.5/README.md --exclude *.pyd
+[2024-05-04 03:37:20] INFO root fetch - processPackages [enderchest]: executing diffoscope
+[2024-05-04 03:37:20] INFO root fetch - processPackages [enderchest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enderchest-0.1.6b1.tar.gz tmp/enderchest-0.1.6rc1.tar.gz --markdown 20240504/e/enderchest/0.1.6b1-0.1.6rc1/README.md --exclude *.pyd
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-settings]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_settings-1.6.0.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-settings]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_settings-1.6.1.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - main [MainThread]: End processing [edgegap-settings]: success
+[2024-05-04 03:37:20] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-service]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_service-1.6.0.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-service]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_service-1.6.1.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - main [MainThread]: End processing [edgegap-service]: success
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-database]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_database-1.6.1.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-database]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_database-1.6.2.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - main [MainThread]: End processing [edgegap-database]: success
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-time]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_time-1.1.4.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-time]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_time-1.1.5.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - main [MainThread]: End processing [edgegap-time]: success
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-migrate]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_migrate-1.5.4.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-migrate]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_migrate-1.6.0.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - main [MainThread]: End processing [edgegap-migrate]: success
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-consul]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_consul-1.6.4.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-consul]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_consul-1.6.5.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - main [MainThread]: End processing [edgegap-consul]: success
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-logging]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_logging-1.6.4.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - processPackages [edgegap-logging]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_logging-1.6.5.tar.gz]
+[2024-05-04 03:37:20] INFO root fetch - main [MainThread]: End processing [edgegap-logging]: success
+[2024-05-04 03:37:21] INFO root fetch - processPackages [enderchest]: Remove: archive file [/home/abi/fetcher/tmp/enderchest-0.1.6b1.tar.gz]
+[2024-05-04 03:37:21] INFO root fetch - processPackages [enderchest]: Remove: archive file [/home/abi/fetcher/tmp/enderchest-0.1.6rc1.tar.gz]
+[2024-05-04 03:37:21] INFO root fetch - main [MainThread]: End processing [enderchest]: success
+[2024-05-04 03:37:21] INFO root fetch - main [MainThread]: Store serial: [23054565]
