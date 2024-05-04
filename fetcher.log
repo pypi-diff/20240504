@@ -16760,3 +16760,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:13:57] INFO root fetch - processPackages [vkdispatch]: Remove: archive file [/home/abi/fetcher/tmp/vkdispatch-0.0.4.tar.gz]
 [2024-05-04 18:13:57] INFO root fetch - main [MainThread]: End processing [vkdispatch]: success
 [2024-05-04 18:13:57] INFO root fetch - main [MainThread]: Store serial: [23059196]
+[2024-05-04 18:16:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059196]
+[2024-05-04 18:16:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 18:16:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: memmpy
+[2024-05-04 18:16:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: name-generator-nicomp
+[2024-05-04 18:16:05] INFO root fetch - processPackages [memmpy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 18:16:05] INFO root fetch - processPackages [name-generator-nicomp]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-04 18:16:05] INFO root fetch - processPackages [memmpy]: Downloading https://files.pythonhosted.org/packages/7d/61/3001e104674f6a062feaec2ed6eedba210d044a1393543b7fbba09d33e50/memmpy-0.1.8.tar.gz
+[2024-05-04 18:16:05] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/74/ad/df93b39453015251ffe999792f1f2f989c310091622f31620988020b64ba/name_generator_nicomp-1.0.3.tar.gz
+[2024-05-04 18:16:06] INFO root fetch - processPackages [memmpy]: Downloading https://files.pythonhosted.org/packages/f2/0c/e56ee3b7b12ad916121a72854a1e1bd4b6b8430f8654a1c9345e17b72c64/memmpy-0.1.9.tar.gz
+[2024-05-04 18:16:06] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/f8/c5/90a5c2ac6999527fa3a8efc8058e22ed84c94877277321d89078dcbc087c/name_generator_nicomp-1.0.4.tar.gz
+[2024-05-04 18:16:06] INFO root fetch - processPackages [memmpy]: executing diffoscope
+[2024-05-04 18:16:06] INFO root fetch - processPackages [memmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memmpy-0.1.8.tar.gz tmp/memmpy-0.1.9.tar.gz --markdown 20240504/m/memmpy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 18:16:06] INFO root fetch - processPackages [name-generator-nicomp]: executing diffoscope
+[2024-05-04 18:16:06] INFO root fetch - processPackages [name-generator-nicomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/name_generator_nicomp-1.0.3.tar.gz tmp/name_generator_nicomp-1.0.4.tar.gz --markdown 20240504/n/name-generator-nicomp/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-04 18:16:06] INFO root fetch - processPackages [memmpy]: Remove: archive file [/home/abi/fetcher/tmp/memmpy-0.1.8.tar.gz]
+[2024-05-04 18:16:06] INFO root fetch - processPackages [memmpy]: Remove: archive file [/home/abi/fetcher/tmp/memmpy-0.1.9.tar.gz]
+[2024-05-04 18:16:06] INFO root fetch - main [MainThread]: End processing [memmpy]: success
+[2024-05-04 18:16:06] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.3.tar.gz]
+[2024-05-04 18:16:06] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.4.tar.gz]
+[2024-05-04 18:16:06] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp]: success
+[2024-05-04 18:16:06] INFO root fetch - main [MainThread]: Store serial: [23059202]
