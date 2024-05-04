@@ -7401,3 +7401,24 @@
 [2024-05-04 04:18:54] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240503.tar.gz]
 [2024-05-04 04:18:54] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2024-05-04 04:18:54] INFO root fetch - main [MainThread]: Store serial: [23054800]
+[2024-05-04 04:21:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054800]
+[2024-05-04 04:21:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 04:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soundtools
+[2024-05-04 04:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyAgrum-nightly
+[2024-05-04 04:21:11] INFO root fetch - processPackages [soundtools]: New version: [0.2.1.0] Old Version: [0.2.0.6]
+[2024-05-04 04:21:11] INFO root fetch - processPackages [pyAgrum-nightly]: New version: [1.9.0.9.dev202310191697564854] Old Version: [1.9.0.9.dev202310181697564854]
+[2024-05-04 04:21:11] INFO root fetch - processPackages [soundtools]: Downloading https://files.pythonhosted.org/packages/22/15/2732c4d785159081a6579d10274bcee403dc7493408c8d2e03e3a85d907d/soundtools-0.2.0.6.tar.gz
+[2024-05-04 04:21:11] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/64/23/4308469c4be3abcfc53ec2ccbd7dcca1618077035522cae4b364a9c6cc56/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl
+[2024-05-04 04:21:12] INFO root fetch - processPackages [soundtools]: Downloading https://files.pythonhosted.org/packages/4e/14/71a547ffa95c4d7b48f74f37c448ade53383dabfe9b98bd6d6d9b40adb6d/soundtools-0.2.1.0.tar.gz
+[2024-05-04 04:21:12] INFO root fetch - processPackages [soundtools]: executing diffoscope
+[2024-05-04 04:21:12] INFO root fetch - processPackages [soundtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soundtools-0.2.0.6.tar.gz tmp/soundtools-0.2.1.0.tar.gz --markdown 20240504/s/soundtools/0.2.0.6-0.2.1.0/README.md --exclude *.pyd
+[2024-05-04 04:21:12] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/84/cc/6d2d3b13a2080cfbfa9792321774075d119b4fa37902c5a9d93d8eccf13d/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl
+[2024-05-04 04:21:12] INFO root fetch - processPackages [pyAgrum-nightly]: executing diffoscope
+[2024-05-04 04:21:12] INFO root fetch - processPackages [pyAgrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip --markdown 20240504/p/pyAgrum-nightly/1.9.0.9.dev202310181697564854-1.9.0.9.dev202310191697564854/README.md --exclude *.pyd
+[2024-05-04 04:21:12] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.2.0.6.tar.gz]
+[2024-05-04 04:21:12] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.2.1.0.tar.gz]
+[2024-05-04 04:21:12] INFO root fetch - main [MainThread]: End processing [soundtools]: success
+[2024-05-04 04:21:12] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 04:21:12] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 04:21:12] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
+[2024-05-04 04:21:13] INFO root fetch - main [MainThread]: Store serial: [23054822]
