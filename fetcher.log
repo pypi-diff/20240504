@@ -6900,3 +6900,36 @@
 [2024-05-04 03:41:41] INFO root fetch - processPackages [aixblock-ml]: Remove: archive file [/home/abi/fetcher/tmp/aixblock_ml-0.1.1.tar.gz]
 [2024-05-04 03:41:41] INFO root fetch - main [MainThread]: End processing [aixblock-ml]: success
 [2024-05-04 03:41:41] INFO root fetch - main [MainThread]: Store serial: [23054575]
+[2024-05-04 03:43:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054575]
+[2024-05-04 03:43:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 03:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rship-sdk
+[2024-05-04 03:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cmusic
+[2024-05-04 03:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edgegap-consul
+[2024-05-04 03:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edgegap-time
+[2024-05-04 03:43:49] INFO root fetch - processPackages [edgegap-time]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-04 03:43:49] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 03:43:49] INFO root fetch - processPackages [edgegap-consul]: New version: [1.6.6] Old Version: [1.6.5]
+[2024-05-04 03:43:50] WARNING root fetch - processPackages [cmusic]: Skipping, unable to determine old version
+[2024-05-04 03:43:50] INFO root fetch - main [MainThread]: End processing [cmusic] error
+[2024-05-04 03:43:50] INFO root fetch - processPackages [edgegap-time]: Downloading https://files.pythonhosted.org/packages/0a/7f/0081a11ea8f7cb818fd711696b2c7a5bdab12ebc37b0b5b2bd772e4c6be4/edgegap_time-1.1.4.tar.gz
+[2024-05-04 03:43:50] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 03:43:50] INFO root fetch - processPackages [edgegap-consul]: Downloading https://files.pythonhosted.org/packages/ca/0c/ddb071d922b7ab98a006f8f19cb69d9014a6abc0452638d2efaa949689bb/edgegap_consul-1.6.5.tar.gz
+[2024-05-04 03:43:50] INFO root fetch - processPackages [edgegap-time]: Downloading https://files.pythonhosted.org/packages/90/8f/ba409a3ab2cbfe4bacf2bfc078b9a7fc93e9f7fb69a8cce999340ec20f33/edgegap_time-1.1.5.tar.gz
+[2024-05-04 03:43:50] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 03:43:50] INFO root fetch - processPackages [edgegap-time]: executing diffoscope
+[2024-05-04 03:43:50] INFO root fetch - processPackages [edgegap-time]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_time-1.1.4.tar.gz tmp/edgegap_time-1.1.5.tar.gz --markdown 20240504/e/edgegap-time/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-04 03:43:50] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 03:43:50] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 03:43:50] INFO root fetch - processPackages [edgegap-consul]: Downloading https://files.pythonhosted.org/packages/5a/ab/7597238a9a70cb06772cfa604f29f8412e35e7fde11c832bdd4ba63fe945/edgegap_consul-1.6.6.tar.gz
+[2024-05-04 03:43:50] INFO root fetch - processPackages [edgegap-consul]: executing diffoscope
+[2024-05-04 03:43:50] INFO root fetch - processPackages [edgegap-consul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_consul-1.6.5.tar.gz tmp/edgegap_consul-1.6.6.tar.gz --markdown 20240504/e/edgegap-consul/1.6.5-1.6.6/README.md --exclude *.pyd
+[2024-05-04 03:43:51] INFO root fetch - processPackages [edgegap-time]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_time-1.1.4.tar.gz]
+[2024-05-04 03:43:51] INFO root fetch - processPackages [edgegap-time]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_time-1.1.5.tar.gz]
+[2024-05-04 03:43:51] INFO root fetch - main [MainThread]: End processing [edgegap-time]: success
+[2024-05-04 03:43:51] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 03:43:51] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 03:43:51] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 03:43:51] INFO root fetch - processPackages [edgegap-consul]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_consul-1.6.5.tar.gz]
+[2024-05-04 03:43:51] INFO root fetch - processPackages [edgegap-consul]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_consul-1.6.6.tar.gz]
+[2024-05-04 03:43:51] INFO root fetch - main [MainThread]: End processing [edgegap-consul]: success
+[2024-05-04 03:43:51] INFO root fetch - main [MainThread]: Store serial: [23054589]
