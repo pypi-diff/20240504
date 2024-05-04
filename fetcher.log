@@ -16547,3 +16547,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:58:44] INFO root fetch - processPackages [Bottleneck]: Remove: archive file [/home/abi/fetcher/tmp/bottleneck-1.4.0rc4.tar.gz]
 [2024-05-04 17:58:44] INFO root fetch - main [MainThread]: End processing [Bottleneck]: success
 [2024-05-04 17:58:44] INFO root fetch - main [MainThread]: Store serial: [23059100]
+[2024-05-04 18:00:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059100]
+[2024-05-04 18:00:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 18:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bellek
+[2024-05-04 18:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-times
+[2024-05-04 18:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cocorum
+[2024-05-04 18:00:53] INFO root fetch - processPackages [cocorum]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-05-04 18:00:53] INFO root fetch - processPackages [bellek]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-05-04 18:00:53] INFO root fetch - processPackages [cocorum]: Downloading https://files.pythonhosted.org/packages/6d/2b/2cde1a5a9ed7bd6949400eb027786e1ddf220e1ca22f33ac7b791a201699/cocorum-0.5.2.tar.gz
+[2024-05-04 18:00:53] INFO root fetch - processPackages [mo-times]: New version: [5.617.24125] Old Version: [5.609.24119]
+[2024-05-04 18:00:53] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/26/4a/fccdc0d1ab493a2f8ff61dc7887c3dfae74cbb14da793a33c1372d57e126/bellek-0.98.0.tar.gz
+[2024-05-04 18:00:53] INFO root fetch - processPackages [mo-times]: Downloading https://files.pythonhosted.org/packages/c0/b2/2a9734dadc967722a0eea8e8994b8891ace160e9ef17335a6c5e2b39caa0/mo_times-5.609.24119.tar.gz
+[2024-05-04 18:00:53] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/1a/2c/d10c9a7db975b462d348e242a313e4d15e3c11363d764f5a1f40176b3e42/bellek-0.99.0.tar.gz
+[2024-05-04 18:00:53] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-05-04 18:00:53] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.98.0.tar.gz tmp/bellek-0.99.0.tar.gz --markdown 20240504/b/bellek/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-05-04 18:00:53] INFO root fetch - processPackages [cocorum]: Downloading https://files.pythonhosted.org/packages/9e/dc/54e5b62116e4852ddf338b458b36dd667098dd179162df1161a57a2f7bc4/cocorum-0.5.3.tar.gz
+[2024-05-04 18:00:54] INFO root fetch - processPackages [mo-times]: Downloading https://files.pythonhosted.org/packages/16/69/508e59057bd7aee21c007568c208d9dd94d7b5e50a7e89b0c13276535d90/mo_times-5.617.24125.tar.gz
+[2024-05-04 18:00:54] INFO root fetch - processPackages [cocorum]: executing diffoscope
+[2024-05-04 18:00:54] INFO root fetch - processPackages [cocorum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocorum-0.5.2.tar.gz tmp/cocorum-0.5.3.tar.gz --markdown 20240504/c/cocorum/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-05-04 18:00:54] INFO root fetch - processPackages [mo-times]: executing diffoscope
+[2024-05-04 18:00:54] INFO root fetch - processPackages [mo-times]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_times-5.609.24119.tar.gz tmp/mo_times-5.617.24125.tar.gz --markdown 20240504/m/mo-times/5.609.24119-5.617.24125/README.md --exclude *.pyd
+[2024-05-04 18:00:54] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.98.0.tar.gz]
+[2024-05-04 18:00:54] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.99.0.tar.gz]
+[2024-05-04 18:00:54] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-05-04 18:00:54] INFO root fetch - processPackages [cocorum]: Remove: archive file [/home/abi/fetcher/tmp/cocorum-0.5.2.tar.gz]
+[2024-05-04 18:00:54] INFO root fetch - processPackages [cocorum]: Remove: archive file [/home/abi/fetcher/tmp/cocorum-0.5.3.tar.gz]
+[2024-05-04 18:00:54] INFO root fetch - main [MainThread]: End processing [cocorum]: success
+[2024-05-04 18:00:54] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo_times-5.609.24119.tar.gz]
+[2024-05-04 18:00:54] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo_times-5.617.24125.tar.gz]
+[2024-05-04 18:00:54] INFO root fetch - main [MainThread]: End processing [mo-times]: success
+[2024-05-04 18:00:54] INFO root fetch - main [MainThread]: Store serial: [23059125]
