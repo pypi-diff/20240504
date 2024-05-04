@@ -6990,3 +6990,15 @@
 [2024-05-04 03:46:01] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.832.tar.gz]
 [2024-05-04 03:46:01] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-04 03:46:01] INFO root fetch - main [MainThread]: Store serial: [23054606]
+[2024-05-04 03:48:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054606]
+[2024-05-04 03:48:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 03:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aixblock-ml
+[2024-05-04 03:48:10] INFO root fetch - processPackages [aixblock-ml]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-04 03:48:10] INFO root fetch - processPackages [aixblock-ml]: Downloading https://files.pythonhosted.org/packages/25/4e/9cc22c16a1810548e00ca9b58baac14ecf57e05531b05d47219df1409041/aixblock_ml-0.1.2.tar.gz
+[2024-05-04 03:48:11] INFO root fetch - processPackages [aixblock-ml]: Downloading https://files.pythonhosted.org/packages/6e/25/902ea29f357b4f839ad8f853c4e3d24eb1751e75d055f1f4e750bf7f0e97/aixblock_ml-0.1.3.tar.gz
+[2024-05-04 03:48:11] INFO root fetch - processPackages [aixblock-ml]: executing diffoscope
+[2024-05-04 03:48:11] INFO root fetch - processPackages [aixblock-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixblock_ml-0.1.2.tar.gz tmp/aixblock_ml-0.1.3.tar.gz --markdown 20240504/a/aixblock-ml/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-04 03:48:11] INFO root fetch - processPackages [aixblock-ml]: Remove: archive file [/home/abi/fetcher/tmp/aixblock_ml-0.1.2.tar.gz]
+[2024-05-04 03:48:11] INFO root fetch - processPackages [aixblock-ml]: Remove: archive file [/home/abi/fetcher/tmp/aixblock_ml-0.1.3.tar.gz]
+[2024-05-04 03:48:11] INFO root fetch - main [MainThread]: End processing [aixblock-ml]: success
+[2024-05-04 03:48:11] INFO root fetch - main [MainThread]: Store serial: [23054609]
