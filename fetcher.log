@@ -13780,3 +13780,24 @@
 [2024-05-04 13:52:33] INFO root fetch - processPackages [setux-plus]: Remove: archive file [/home/abi/fetcher/tmp/setux_plus-0.2418.0.tar.gz]
 [2024-05-04 13:52:33] INFO root fetch - main [MainThread]: End processing [setux-plus]: success
 [2024-05-04 13:52:33] INFO root fetch - main [MainThread]: Store serial: [23057786]
+[2024-05-04 13:54:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057786]
+[2024-05-04 13:54:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 13:54:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: setux-repl
+[2024-05-04 13:54:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: diwork
+[2024-05-04 13:54:42] INFO root fetch - processPackages [diwork]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-04 13:54:42] INFO root fetch - processPackages [diwork]: Downloading https://files.pythonhosted.org/packages/fa/5b/fb84bfd893ed549b5a5648a6b5229c68eb6178e0fd1ef4ee4e5792791238/diwork-1.1.0.tar.gz
+[2024-05-04 13:54:42] INFO root fetch - processPackages [setux-repl]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-04 13:54:42] INFO root fetch - processPackages [setux-repl]: Downloading https://files.pythonhosted.org/packages/5d/cd/ab20c109706b5e841ed90d69aed21311194df6c32ee366ef3c2bc2f3c3ab/setux_repl-0.4.1.tar.gz
+[2024-05-04 13:54:42] INFO root fetch - processPackages [diwork]: Downloading https://files.pythonhosted.org/packages/15/5e/9f0aded83a6a9053a6d85a37a2bd47e8bee38593db27861a4f10cb025a24/diwork-1.2.0.tar.gz
+[2024-05-04 13:54:43] INFO root fetch - processPackages [diwork]: executing diffoscope
+[2024-05-04 13:54:43] INFO root fetch - processPackages [diwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diwork-1.1.0.tar.gz tmp/diwork-1.2.0.tar.gz --markdown 20240504/d/diwork/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-04 13:54:43] INFO root fetch - processPackages [setux-repl]: Downloading https://files.pythonhosted.org/packages/10/25/acf2c3b8d98821178c83eff6a87690bb7944b2f69490f9cddc15424a42ba/setux_repl-0.4.2.tar.gz
+[2024-05-04 13:54:43] INFO root fetch - processPackages [setux-repl]: executing diffoscope
+[2024-05-04 13:54:43] INFO root fetch - processPackages [setux-repl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux_repl-0.4.1.tar.gz tmp/setux_repl-0.4.2.tar.gz --markdown 20240504/s/setux-repl/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-04 13:54:43] INFO root fetch - processPackages [diwork]: Remove: archive file [/home/abi/fetcher/tmp/diwork-1.1.0.tar.gz]
+[2024-05-04 13:54:43] INFO root fetch - processPackages [diwork]: Remove: archive file [/home/abi/fetcher/tmp/diwork-1.2.0.tar.gz]
+[2024-05-04 13:54:43] INFO root fetch - main [MainThread]: End processing [diwork]: success
+[2024-05-04 13:54:43] INFO root fetch - processPackages [setux-repl]: Remove: archive file [/home/abi/fetcher/tmp/setux_repl-0.4.1.tar.gz]
+[2024-05-04 13:54:43] INFO root fetch - processPackages [setux-repl]: Remove: archive file [/home/abi/fetcher/tmp/setux_repl-0.4.2.tar.gz]
+[2024-05-04 13:54:43] INFO root fetch - main [MainThread]: End processing [setux-repl]: success
+[2024-05-04 13:54:43] INFO root fetch - main [MainThread]: Store serial: [23057793]
