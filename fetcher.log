@@ -16649,3 +16649,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:05:15] INFO root fetch - processPackages [dragonfly-schema]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-schema-1.9.9.tar.gz]
 [2024-05-04 18:05:15] INFO root fetch - main [MainThread]: End processing [dragonfly-schema]: success
 [2024-05-04 18:05:15] INFO root fetch - main [MainThread]: Store serial: [23059162]
+[2024-05-04 18:07:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059162]
+[2024-05-04 18:07:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 18:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-logs
+[2024-05-04 18:07:24] INFO root fetch - processPackages [mo-logs]: New version: [8.617.24125] Old Version: [8.608.24119]
+[2024-05-04 18:07:24] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/14/b6/92412b034c6f9927c873c366218339ceee49421b6cf59fb97315f80f8d55/mo_logs-8.608.24119.tar.gz
+[2024-05-04 18:07:24] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/a6/b6/a3a6ecf69184d93e39fcda7a960da5bb5c048378eeb8a297289e5b82454f/mo_logs-8.617.24125.tar.gz
+[2024-05-04 18:07:24] INFO root fetch - processPackages [mo-logs]: executing diffoscope
+[2024-05-04 18:07:24] INFO root fetch - processPackages [mo-logs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_logs-8.608.24119.tar.gz tmp/mo_logs-8.617.24125.tar.gz --markdown 20240504/m/mo-logs/8.608.24119-8.617.24125/README.md --exclude *.pyd
+[2024-05-04 18:07:25] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.608.24119.tar.gz]
+[2024-05-04 18:07:25] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.617.24125.tar.gz]
+[2024-05-04 18:07:25] INFO root fetch - main [MainThread]: End processing [mo-logs]: success
+[2024-05-04 18:07:25] INFO root fetch - main [MainThread]: Store serial: [23059165]
