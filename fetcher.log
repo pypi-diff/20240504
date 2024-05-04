@@ -20345,3 +20345,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:33:52] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.1.1.tar.gz]
 [2024-05-04 22:33:52] INFO root fetch - main [MainThread]: End processing [llama-cpp-agent]: success
 [2024-05-04 22:33:52] INFO root fetch - main [MainThread]: Store serial: [23060819]
+[2024-05-04 22:35:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060819]
+[2024-05-04 22:36:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 22:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlglot
+[2024-05-04 22:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sapiopycommons
+[2024-05-04 22:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kfre
+[2024-05-04 22:36:01] INFO root fetch - processPackages [kfre]: New version: [0.1.4] Old Version: [0.1.2b5]
+[2024-05-04 22:36:01] INFO root fetch - processPackages [sapiopycommons]: New version: [31.3.0.23.12.3] Old Version: [31.2.0.23.12.3]
+[2024-05-04 22:36:01] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-04 22:36:01] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/bb/8e/ffbfcdcdcdef085f3c02a0c0361d5f2b5c73f377a58d5055485920fd480d/sapiopycommons-31.2.0.23.12.3.tar.gz
+[2024-05-04 22:36:01] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/dc/8a/995866f0e7c7916b75f3c45d3e6500ae500f3fc2c0090022fce98202d562/kfre-0.1.2b5.tar.gz
+[2024-05-04 22:36:01] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-04 22:36:02] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/65/85/c26462638385d6921c9e6e2dd91d7bb1d0ce38c3a35ccf5becf78fea900d/sapiopycommons-31.3.0.23.12.3.tar.gz
+[2024-05-04 22:36:02] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-04 22:36:02] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/f1/60/c7ee40bcd66a21f6cb803d82468a303fa4dc11e9bf5ea68e81d24c0d9e17/kfre-0.1.4.tar.gz
+[2024-05-04 22:36:02] INFO root fetch - processPackages [sapiopycommons]: executing diffoscope
+[2024-05-04 22:36:02] INFO root fetch - processPackages [sapiopycommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopycommons-31.2.0.23.12.3.tar.gz tmp/sapiopycommons-31.3.0.23.12.3.tar.gz --markdown 20240504/s/sapiopycommons/31.2.0.23.12.3-31.3.0.23.12.3/README.md --exclude *.pyd
+[2024-05-04 22:36:02] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-04 22:36:02] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240504/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-04 22:36:02] INFO root fetch - processPackages [kfre]: executing diffoscope
+[2024-05-04 22:36:02] INFO root fetch - processPackages [kfre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfre-0.1.2b5.tar.gz tmp/kfre-0.1.4.tar.gz --markdown 20240504/k/kfre/0.1.2b5-0.1.4/README.md --exclude *.pyd
+[2024-05-04 22:36:02] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2b5.tar.gz]
+[2024-05-04 22:36:02] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.4.tar.gz]
+[2024-05-04 22:36:02] INFO root fetch - main [MainThread]: End processing [kfre]: success
+[2024-05-04 22:36:02] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.2.0.23.12.3.tar.gz]
+[2024-05-04 22:36:02] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.3.0.23.12.3.tar.gz]
+[2024-05-04 22:36:02] INFO root fetch - main [MainThread]: End processing [sapiopycommons]: success
+[2024-05-04 22:36:03] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-04 22:36:03] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-04 22:36:03] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-04 22:36:03] INFO root fetch - main [MainThread]: Store serial: [23060828]
