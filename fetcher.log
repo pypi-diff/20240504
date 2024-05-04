@@ -9262,3 +9262,9 @@
 [2024-05-04 06:44:34] INFO root fetch - processPackages [napalm-srl]: Remove: archive file [/home/abi/fetcher/tmp/napalm_srl-1.0.5.tar.gz]
 [2024-05-04 06:44:34] INFO root fetch - main [MainThread]: End processing [napalm-srl]: success
 [2024-05-04 06:44:34] INFO root fetch - main [MainThread]: Store serial: [23055679]
+[2024-05-04 06:46:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055679]
+[2024-05-04 06:46:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 06:46:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: genenet
+[2024-05-04 06:46:43] WARNING root fetch - processPackages [genenet]: Skipping, unable to determine old version
+[2024-05-04 06:46:43] INFO root fetch - main [MainThread]: End processing [genenet] error
+[2024-05-04 06:46:43] INFO root fetch - main [MainThread]: Store serial: [23055686]
