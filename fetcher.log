@@ -18489,3 +18489,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:22:37] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.9.tar.gz]
 [2024-05-04 20:22:37] INFO root fetch - main [MainThread]: End processing [entity-recognition-service]: success
 [2024-05-04 20:22:37] INFO root fetch - main [MainThread]: Store serial: [23060099]
+[2024-05-04 20:24:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060099]
+[2024-05-04 20:24:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 20:24:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: effector
+[2024-05-04 20:24:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: corvic-engine
+[2024-05-04 20:24:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rutificador
+[2024-05-04 20:24:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: habitat-suitability
+[2024-05-04 20:24:46] INFO root fetch - processPackages [rutificador]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-04 20:24:46] WARNING root fetch - processPackages [habitat-suitability]: Skipping, unable to determine old version
+[2024-05-04 20:24:46] INFO root fetch - main [MainThread]: End processing [habitat-suitability] error
+[2024-05-04 20:24:46] INFO root fetch - processPackages [corvic-engine]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 20:24:46] INFO root fetch - processPackages [rutificador]: Downloading https://files.pythonhosted.org/packages/ff/d7/291406561bebbf9d20553762b3e4e90193c68ca880453d5afcff4bc6de5d/rutificador-0.2.4.tar.gz
+[2024-05-04 20:24:46] INFO root fetch - processPackages [effector]: New version: [0.0.271] Old Version: [0.0.270]
+[2024-05-04 20:24:46] INFO root fetch - processPackages [corvic-engine]: Downloading https://files.pythonhosted.org/packages/28/81/73d66a8b87408209ecb35a7c2bc6678eed7152cd47281836f38fe9d103aa/corvic_engine-0.1.8.tar.gz
+[2024-05-04 20:24:46] INFO root fetch - processPackages [effector]: Downloading https://files.pythonhosted.org/packages/69/af/ceced709553048da34290493377f4d1adc7f83d395078502af0b5cdb0586/effector-0.0.270.tar.gz
+[2024-05-04 20:24:47] INFO root fetch - processPackages [corvic-engine]: Downloading https://files.pythonhosted.org/packages/09/86/d913022f7e6621ce441c8b834aa1f7c0a01a99f249b2e74671b9da6c2acc/corvic_engine-0.1.9.tar.gz
+[2024-05-04 20:24:47] INFO root fetch - processPackages [rutificador]: Downloading https://files.pythonhosted.org/packages/4b/9a/e7d2138525e76c7573fb50b874a8ea83b318e295deaecd125b7d153f149f/rutificador-0.2.5.tar.gz
+[2024-05-04 20:24:47] INFO root fetch - processPackages [corvic-engine]: executing diffoscope
+[2024-05-04 20:24:47] INFO root fetch - processPackages [corvic-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corvic_engine-0.1.8.tar.gz tmp/corvic_engine-0.1.9.tar.gz --markdown 20240504/c/corvic-engine/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 20:24:47] INFO root fetch - processPackages [rutificador]: executing diffoscope
+[2024-05-04 20:24:47] INFO root fetch - processPackages [rutificador]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rutificador-0.2.4.tar.gz tmp/rutificador-0.2.5.tar.gz --markdown 20240504/r/rutificador/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-04 20:24:47] INFO root fetch - processPackages [rutificador]: Remove: archive file [/home/abi/fetcher/tmp/rutificador-0.2.4.tar.gz]
+[2024-05-04 20:24:47] INFO root fetch - processPackages [rutificador]: Remove: archive file [/home/abi/fetcher/tmp/rutificador-0.2.5.tar.gz]
+[2024-05-04 20:24:47] INFO root fetch - main [MainThread]: End processing [rutificador]: success
+[2024-05-04 20:24:48] INFO root fetch - processPackages [corvic-engine]: Remove: archive file [/home/abi/fetcher/tmp/corvic_engine-0.1.8.tar.gz]
+[2024-05-04 20:24:48] INFO root fetch - processPackages [corvic-engine]: Remove: archive file [/home/abi/fetcher/tmp/corvic_engine-0.1.9.tar.gz]
+[2024-05-04 20:24:48] INFO root fetch - main [MainThread]: End processing [corvic-engine]: success
+[2024-05-04 20:24:48] INFO root fetch - processPackages [effector]: Downloading https://files.pythonhosted.org/packages/21/37/49377fe784465350afb2e7776a076bb78dae34a4f06b8c271e06c142105c/effector-0.0.271.tar.gz
+[2024-05-04 20:24:49] INFO root fetch - processPackages [effector]: executing diffoscope
+[2024-05-04 20:24:49] INFO root fetch - processPackages [effector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/effector-0.0.270.tar.gz tmp/effector-0.0.271.tar.gz --markdown 20240504/e/effector/0.0.270-0.0.271/README.md --exclude *.pyd
+[2024-05-04 20:24:51] INFO root fetch - processPackages [effector]: Remove: archive file [/home/abi/fetcher/tmp/effector-0.0.270.tar.gz]
+[2024-05-04 20:24:51] INFO root fetch - processPackages [effector]: Remove: archive file [/home/abi/fetcher/tmp/effector-0.0.271.tar.gz]
+[2024-05-04 20:24:51] INFO root fetch - main [MainThread]: End processing [effector]: success
+[2024-05-04 20:24:51] INFO root fetch - main [MainThread]: Store serial: [23060116]
