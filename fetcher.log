@@ -9477,3 +9477,42 @@
 [2024-05-04 07:06:15] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl.zip]
 [2024-05-04 07:06:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
 [2024-05-04 07:06:15] INFO root fetch - main [MainThread]: Store serial: [23055801]
+[2024-05-04 07:08:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055801]
+[2024-05-04 07:08:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 07:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-homeassistant-custom-component
+[2024-05-04 07:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: munet
+[2024-05-04 07:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-spread-grid
+[2024-05-04 07:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: libfwevt-python
+[2024-05-04 07:08:23] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 07:08:24] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-05-04 07:08:24] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-04 07:08:24] INFO root fetch - processPackages [libfwevt-python]: New version: [20240504] Old Version: [20240427]
+[2024-05-04 07:08:24] INFO root fetch - processPackages [munet]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-04 07:08:24] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/8a/3b/b76075872ac35edad46a4fd3401c3faebda7af874b306526a1d7e1a4336a/pytest-homeassistant-custom-component-0.9.8.tar.gz
+[2024-05-04 07:08:24] INFO root fetch - processPackages [munet]: Downloading https://files.pythonhosted.org/packages/ab/ab/50abc3289545adb952eebcb12b5d75cd68c3deddb2ead102309f6b23b3fd/munet-0.9.8.tar.gz
+[2024-05-04 07:08:24] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-05-04 07:08:24] INFO root fetch - processPackages [libfwevt-python]: Downloading https://files.pythonhosted.org/packages/63/71/f6efd4d453c7449d6b1cb9a6f44d540d0f34d839b563a818116fbfb992c2/libfwevt-python-20240427.tar.gz
+[2024-05-04 07:08:24] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-05-04 07:08:24] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240504/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 07:08:24] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/60/4e/ba1174db4b883610c2a5afba7a30857178ada41a2368936b2e3d764bfe6a/pytest-homeassistant-custom-component-0.9.9.tar.gz
+[2024-05-04 07:08:24] INFO root fetch - processPackages [munet]: Downloading https://files.pythonhosted.org/packages/e9/a7/16aef984464ad235996a4918e7377bd5e40cd015eb9b5cae381b237aeba4/munet-0.9.9.tar.gz
+[2024-05-04 07:08:24] INFO root fetch - processPackages [munet]: executing diffoscope
+[2024-05-04 07:08:24] INFO root fetch - processPackages [munet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/munet-0.9.8.tar.gz tmp/munet-0.9.9.tar.gz --markdown 20240504/m/munet/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-04 07:08:24] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: executing diffoscope
+[2024-05-04 07:08:24] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz --markdown 20240504/p/pytest-homeassistant-custom-component/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-04 07:08:24] INFO root fetch - processPackages [libfwevt-python]: Downloading https://files.pythonhosted.org/packages/38/fb/42f47601a66c30e2aae8c6fc8cb11894eca3d9b38c87285960fca52f6770/libfwevt-python-20240504.tar.gz
+[2024-05-04 07:08:25] INFO root fetch - processPackages [libfwevt-python]: executing diffoscope
+[2024-05-04 07:08:25] INFO root fetch - processPackages [libfwevt-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libfwevt-python-20240427.tar.gz tmp/libfwevt-python-20240504.tar.gz --markdown 20240504/l/libfwevt-python/20240427-20240504/README.md --exclude *.pyd
+[2024-05-04 07:08:25] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz]
+[2024-05-04 07:08:25] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz]
+[2024-05-04 07:08:25] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
+[2024-05-04 07:08:25] INFO root fetch - processPackages [munet]: Remove: archive file [/home/abi/fetcher/tmp/munet-0.9.8.tar.gz]
+[2024-05-04 07:08:25] INFO root fetch - processPackages [munet]: Remove: archive file [/home/abi/fetcher/tmp/munet-0.9.9.tar.gz]
+[2024-05-04 07:08:25] INFO root fetch - main [MainThread]: End processing [munet]: success
+[2024-05-04 07:08:26] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-05-04 07:08:26] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-05-04 07:08:26] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-05-04 07:08:29] INFO root fetch - processPackages [libfwevt-python]: Remove: archive file [/home/abi/fetcher/tmp/libfwevt-python-20240427.tar.gz]
+[2024-05-04 07:08:29] INFO root fetch - processPackages [libfwevt-python]: Remove: archive file [/home/abi/fetcher/tmp/libfwevt-python-20240504.tar.gz]
+[2024-05-04 07:08:29] INFO root fetch - main [MainThread]: End processing [libfwevt-python]: success
+[2024-05-04 07:08:29] INFO root fetch - main [MainThread]: Store serial: [23055812]
