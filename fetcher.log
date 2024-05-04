@@ -19655,3 +19655,66 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:49:46] INFO root fetch - processPackages [Flask-Cors]: Remove: archive file [/home/abi/fetcher/tmp/flask_cors-4.0.1.tar.gz]
 [2024-05-04 21:49:46] INFO root fetch - main [MainThread]: End processing [Flask-Cors]: success
 [2024-05-04 21:49:46] INFO root fetch - main [MainThread]: Store serial: [23060566]
+[2024-05-04 21:51:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060566]
+[2024-05-04 21:51:55] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-04 21:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Flask-Cors
+[2024-05-04 21:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: teo
+[2024-05-04 21:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uiwiz
+[2024-05-04 21:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: got-cli
+[2024-05-04 21:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: drf-events
+[2024-05-04 21:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mo-kwargs
+[2024-05-04 21:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: meta-machina
+[2024-05-04 21:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: soda-svg
+[2024-05-04 21:51:55] INFO root fetch - processPackages [Flask-Cors]: New version: [4.0.1] Old Version: [4.0.0a0]
+[2024-05-04 21:51:55] INFO root fetch - processPackages [mo-kwargs]: New version: [7.622.24125] Old Version: [7.621.24125]
+[2024-05-04 21:51:55] INFO root fetch - processPackages [Flask-Cors]: Downloading https://files.pythonhosted.org/packages/fa/93/b52ee1819053ec169fd9f94ae5bcd2adf24e6c609a3d05507abf55595907/Flask-Cors-4.0.0a0.tar.gz
+[2024-05-04 21:51:55] WARNING root fetch - processPackages [drf-events]: Skipping, unable to determine old version
+[2024-05-04 21:51:55] INFO root fetch - main [MainThread]: End processing [drf-events] error
+[2024-05-04 21:51:55] INFO root fetch - processPackages [uiwiz]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 21:51:55] WARNING root fetch - processPackages [got-cli]: Skipping, unable to determine old version
+[2024-05-04 21:51:55] INFO root fetch - main [MainThread]: End processing [got-cli] error
+[2024-05-04 21:51:55] INFO root fetch - processPackages [meta-machina]: New version: [0.0.8] Old Version: [0.0.1]
+[2024-05-04 21:51:55] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/c4/42/ed4e81ae188bdefae2b5cde5499afe26d641d7b357389ce9507b10a6a65e/mo_kwargs-7.621.24125.tar.gz
+[2024-05-04 21:51:55] INFO root fetch - processPackages [soda-svg]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-04 21:51:55] INFO root fetch - processPackages [teo]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-04 21:51:55] INFO root fetch - processPackages [uiwiz]: Downloading https://files.pythonhosted.org/packages/f9/1b/a2556dcb967f524d4e5269ca9d80e5aae3437b663c7a843da443d59f61ae/uiwiz-0.1.8.tar.gz
+[2024-05-04 21:51:55] INFO root fetch - processPackages [teo]: Downloading https://files.pythonhosted.org/packages/b1/e9/d6c6c71d9ba363284528d0085e2537ab5241ca9c41177346095254276a2c/teo-0.2.8.tar.gz
+[2024-05-04 21:51:55] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/65/df/9daf5f7ae14b1be379af6d0abbcc008fce659e74ef100b792b38f5b10584/mo_kwargs-7.622.24125.tar.gz
+[2024-05-04 21:51:55] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/e3/f9/cc5ca80975b8ce89c862e5e3353b85f652076f40ed358869acd3129ae442/meta_machina-0.0.1.tar.gz
+[2024-05-04 21:51:55] INFO root fetch - processPackages [soda-svg]: Downloading https://files.pythonhosted.org/packages/9f/9b/45da249ee949e7cd71ec5341339d6abfcc99713592697365af458fcee04a/soda_svg-2.0.1.tar.gz
+[2024-05-04 21:51:55] INFO root fetch - processPackages [Flask-Cors]: Downloading https://files.pythonhosted.org/packages/40/6a/a8d56d60bcfa1ec3e4fdad81b45aafd508c3bd5c244a16526fa29139d7d4/flask_cors-4.0.1.tar.gz
+[2024-05-04 21:51:55] INFO root fetch - processPackages [mo-kwargs]: executing diffoscope
+[2024-05-04 21:51:55] INFO root fetch - processPackages [mo-kwargs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_kwargs-7.621.24125.tar.gz tmp/mo_kwargs-7.622.24125.tar.gz --markdown 20240504/m/mo-kwargs/7.621.24125-7.622.24125/README.md --exclude *.pyd
+[2024-05-04 21:51:55] INFO root fetch - processPackages [Flask-Cors]: executing diffoscope
+[2024-05-04 21:51:55] INFO root fetch - processPackages [Flask-Cors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-Cors-4.0.0a0.tar.gz tmp/flask_cors-4.0.1.tar.gz --markdown 20240504/F/Flask-Cors/4.0.0a0-4.0.1/README.md --exclude *.pyd
+[2024-05-04 21:51:56] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/db/31/1f6444ea9c687c8b47687235c2e8c7621ae27ef2c3661c42e84477a42631/meta_machina-0.0.8.tar.gz
+[2024-05-04 21:51:56] INFO root fetch - processPackages [teo]: Downloading https://files.pythonhosted.org/packages/1a/6e/79fac05caa23b6f8d6325ce41b4c00733012f08b4aee6cd1b1d45c11bd0a/teo-0.2.9.tar.gz
+[2024-05-04 21:51:56] INFO root fetch - processPackages [soda-svg]: Downloading https://files.pythonhosted.org/packages/1e/37/732b89fd7645947df805101e8714ffc99014d72288461c3d6743f8b3bd1e/soda_svg-2.0.2.tar.gz
+[2024-05-04 21:51:56] INFO root fetch - processPackages [uiwiz]: Downloading https://files.pythonhosted.org/packages/e2/e3/6a6256344409c0025490aabb1d165f05d506ac52557e4a2c0b843de15f81/uiwiz-0.1.9.tar.gz
+[2024-05-04 21:51:56] INFO root fetch - processPackages [meta-machina]: executing diffoscope
+[2024-05-04 21:51:56] INFO root fetch - processPackages [meta-machina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta_machina-0.0.1.tar.gz tmp/meta_machina-0.0.8.tar.gz --markdown 20240504/m/meta-machina/0.0.1-0.0.8/README.md --exclude *.pyd
+[2024-05-04 21:51:56] INFO root fetch - processPackages [teo]: executing diffoscope
+[2024-05-04 21:51:56] INFO root fetch - processPackages [teo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teo-0.2.8.tar.gz tmp/teo-0.2.9.tar.gz --markdown 20240504/t/teo/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-04 21:51:56] INFO root fetch - processPackages [soda-svg]: executing diffoscope
+[2024-05-04 21:51:56] INFO root fetch - processPackages [soda-svg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soda_svg-2.0.1.tar.gz tmp/soda_svg-2.0.2.tar.gz --markdown 20240504/s/soda-svg/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-04 21:51:56] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.621.24125.tar.gz]
+[2024-05-04 21:51:56] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.622.24125.tar.gz]
+[2024-05-04 21:51:56] INFO root fetch - main [MainThread]: End processing [mo-kwargs]: success
+[2024-05-04 21:51:56] INFO root fetch - processPackages [uiwiz]: executing diffoscope
+[2024-05-04 21:51:56] INFO root fetch - processPackages [uiwiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uiwiz-0.1.8.tar.gz tmp/uiwiz-0.1.9.tar.gz --markdown 20240504/u/uiwiz/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 21:51:56] INFO root fetch - processPackages [Flask-Cors]: Remove: archive file [/home/abi/fetcher/tmp/Flask-Cors-4.0.0a0.tar.gz]
+[2024-05-04 21:51:56] INFO root fetch - processPackages [Flask-Cors]: Remove: archive file [/home/abi/fetcher/tmp/flask_cors-4.0.1.tar.gz]
+[2024-05-04 21:51:56] INFO root fetch - main [MainThread]: End processing [Flask-Cors]: success
+[2024-05-04 21:51:56] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.1.tar.gz]
+[2024-05-04 21:51:56] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.8.tar.gz]
+[2024-05-04 21:51:56] INFO root fetch - main [MainThread]: End processing [meta-machina]: success
+[2024-05-04 21:51:56] INFO root fetch - processPackages [teo]: Remove: archive file [/home/abi/fetcher/tmp/teo-0.2.8.tar.gz]
+[2024-05-04 21:51:56] INFO root fetch - processPackages [teo]: Remove: archive file [/home/abi/fetcher/tmp/teo-0.2.9.tar.gz]
+[2024-05-04 21:51:57] INFO root fetch - main [MainThread]: End processing [teo]: success
+[2024-05-04 21:51:57] INFO root fetch - processPackages [soda-svg]: Remove: archive file [/home/abi/fetcher/tmp/soda_svg-2.0.1.tar.gz]
+[2024-05-04 21:51:57] INFO root fetch - processPackages [soda-svg]: Remove: archive file [/home/abi/fetcher/tmp/soda_svg-2.0.2.tar.gz]
+[2024-05-04 21:51:57] INFO root fetch - main [MainThread]: End processing [soda-svg]: success
+[2024-05-04 21:51:57] INFO root fetch - processPackages [uiwiz]: Remove: archive file [/home/abi/fetcher/tmp/uiwiz-0.1.8.tar.gz]
+[2024-05-04 21:51:57] INFO root fetch - processPackages [uiwiz]: Remove: archive file [/home/abi/fetcher/tmp/uiwiz-0.1.9.tar.gz]
+[2024-05-04 21:51:57] INFO root fetch - main [MainThread]: End processing [uiwiz]: success
+[2024-05-04 21:51:57] INFO root fetch - main [MainThread]: Store serial: [23060599]
