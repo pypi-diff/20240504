@@ -13194,3 +13194,24 @@
 [2024-05-04 12:56:08] INFO root fetch - processPackages [pywigxjpf]: Remove: archive file [/home/abi/fetcher/tmp/pywigxjpf-1.13.1.tar.gz]
 [2024-05-04 12:56:08] INFO root fetch - main [MainThread]: End processing [pywigxjpf]: success
 [2024-05-04 12:56:08] INFO root fetch - main [MainThread]: Store serial: [23057595]
+[2024-05-04 12:58:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057595]
+[2024-05-04 12:58:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 12:58:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schema
+[2024-05-04 12:58:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chapa
+[2024-05-04 12:58:16] INFO root fetch - processPackages [chapa]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 12:58:17] INFO root fetch - processPackages [schema]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-05-04 12:58:17] INFO root fetch - processPackages [chapa]: Downloading https://files.pythonhosted.org/packages/a1/ce/b916aa5a9625fead949fa15a193f2fcc4eb902d6f67740e8127cac1681be/chapa-0.1.0.tar.gz
+[2024-05-04 12:58:17] INFO root fetch - processPackages [schema]: Downloading https://files.pythonhosted.org/packages/13/3b/5e03a1fa7b895a57f3cf496f9a9c7daf9bc3cc67029ccf80bb8bf145102d/schema-0.7.6.tar.gz
+[2024-05-04 12:58:17] INFO root fetch - processPackages [chapa]: Downloading https://files.pythonhosted.org/packages/d9/3b/a192ea9c4687cd291830b27a973a7734370d01cc1aacf37ce7958547c7d5/chapa-0.1.1.tar.gz
+[2024-05-04 12:58:17] INFO root fetch - processPackages [schema]: Downloading https://files.pythonhosted.org/packages/d4/01/0ea2e66bad2f13271e93b729c653747614784d3ebde219679e41ccdceecd/schema-0.7.7.tar.gz
+[2024-05-04 12:58:17] INFO root fetch - processPackages [chapa]: executing diffoscope
+[2024-05-04 12:58:17] INFO root fetch - processPackages [chapa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chapa-0.1.0.tar.gz tmp/chapa-0.1.1.tar.gz --markdown 20240504/c/chapa/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 12:58:17] INFO root fetch - processPackages [schema]: executing diffoscope
+[2024-05-04 12:58:17] INFO root fetch - processPackages [schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schema-0.7.6.tar.gz tmp/schema-0.7.7.tar.gz --markdown 20240504/s/schema/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-05-04 12:58:18] INFO root fetch - processPackages [chapa]: Remove: archive file [/home/abi/fetcher/tmp/chapa-0.1.0.tar.gz]
+[2024-05-04 12:58:18] INFO root fetch - processPackages [chapa]: Remove: archive file [/home/abi/fetcher/tmp/chapa-0.1.1.tar.gz]
+[2024-05-04 12:58:18] INFO root fetch - main [MainThread]: End processing [chapa]: success
+[2024-05-04 12:58:18] INFO root fetch - processPackages [schema]: Remove: archive file [/home/abi/fetcher/tmp/schema-0.7.6.tar.gz]
+[2024-05-04 12:58:18] INFO root fetch - processPackages [schema]: Remove: archive file [/home/abi/fetcher/tmp/schema-0.7.7.tar.gz]
+[2024-05-04 12:58:18] INFO root fetch - main [MainThread]: End processing [schema]: success
+[2024-05-04 12:58:18] INFO root fetch - main [MainThread]: Store serial: [23057601]
