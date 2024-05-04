@@ -11905,3 +11905,15 @@
 [2024-05-04 10:50:00] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240504-cp39-cp39-win_amd64.whl.zip]
 [2024-05-04 10:50:00] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
 [2024-05-04 10:50:00] INFO root fetch - main [MainThread]: Store serial: [23056947]
+[2024-05-04 10:52:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056947]
+[2024-05-04 10:52:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 10:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kitab
+[2024-05-04 10:52:08] INFO root fetch - processPackages [kitab]: New version: [0.0.24] Old Version: [0.0.23]
+[2024-05-04 10:52:08] INFO root fetch - processPackages [kitab]: Downloading https://files.pythonhosted.org/packages/de/b0/5bcfc3c4f5aac254535c437244068c981cab448cad0f76037baff14de5cc/kitab-0.0.23.tar.gz
+[2024-05-04 10:52:09] INFO root fetch - processPackages [kitab]: Downloading https://files.pythonhosted.org/packages/40/1f/42729934ba76a952469d1c65114cb1eb2041cf202338c2d3d9834f940f5d/kitab-0.0.24.tar.gz
+[2024-05-04 10:52:09] INFO root fetch - processPackages [kitab]: executing diffoscope
+[2024-05-04 10:52:09] INFO root fetch - processPackages [kitab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kitab-0.0.23.tar.gz tmp/kitab-0.0.24.tar.gz --markdown 20240504/k/kitab/0.0.23-0.0.24/README.md --exclude *.pyd
+[2024-05-04 10:52:10] INFO root fetch - processPackages [kitab]: Remove: archive file [/home/abi/fetcher/tmp/kitab-0.0.23.tar.gz]
+[2024-05-04 10:52:10] INFO root fetch - processPackages [kitab]: Remove: archive file [/home/abi/fetcher/tmp/kitab-0.0.24.tar.gz]
+[2024-05-04 10:52:10] INFO root fetch - main [MainThread]: End processing [kitab]: success
+[2024-05-04 10:52:10] INFO root fetch - main [MainThread]: Store serial: [23056950]
