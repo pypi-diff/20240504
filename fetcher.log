@@ -10783,3 +10783,47 @@
 [2024-05-04 09:01:13] INFO root fetch - processPackages [graphemy]: Remove: archive file [/home/abi/fetcher/tmp/graphemy-1.0.0rc4.tar.gz]
 [2024-05-04 09:01:13] INFO root fetch - main [MainThread]: End processing [graphemy]: success
 [2024-05-04 09:01:13] INFO root fetch - main [MainThread]: Store serial: [23056367]
+[2024-05-04 09:03:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056367]
+[2024-05-04 09:03:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 09:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: magentic
+[2024-05-04 09:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seqio-nightly
+[2024-05-04 09:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CTDFjorder
+[2024-05-04 09:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openmc-data
+[2024-05-04 09:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smemo
+[2024-05-04 09:03:21] INFO root fetch - processPackages [CTDFjorder]: New version: [0.0.37] Old Version: [0.0.36]
+[2024-05-04 09:03:21] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2024-05-04 09:03:21] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/3d/3c/59643cb6bdfc748e4825620d495339b62ef5b12ba381723a2cf84cff6edb/ctdfjorder-0.0.36.tar.gz
+[2024-05-04 09:03:21] INFO root fetch - processPackages [openmc-data]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-05-04 09:03:21] INFO root fetch - processPackages [smemo]: New version: [0.6.1] Old Version: [0.6]
+[2024-05-04 09:03:21] INFO root fetch - processPackages [magentic]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-04 09:03:21] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/43/a0/f60ad514b6f8534fa5ba8cc5fcc2a8f2e32e7d06d2dbfd43b12c2cb29931/seqio-nightly-0.0.8.dev20220906.tar.gz
+[2024-05-04 09:03:22] INFO root fetch - processPackages [smemo]: Downloading https://files.pythonhosted.org/packages/c4/f5/0be6fb42c4e4a7b7dfa110a6448f1c3cc18c20da931744aab6d9e1ee4cdb/smemo-0.6.tar.gz
+[2024-05-04 09:03:22] INFO root fetch - processPackages [magentic]: Downloading https://files.pythonhosted.org/packages/b1/4c/c92b3a38ac6e6e9e2715083d4b0cd75ceb0e3bcbd7f805d25522283b4708/magentic-0.9.0.tar.gz
+[2024-05-04 09:03:22] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/32/90/56b5ad75be806569a9dc98eb3ccc00bfe6fc674c4587590562bca678873a/ctdfjorder-0.0.37.tar.gz
+[2024-05-04 09:03:22] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/2a/76/25f4c7602cdd724deac948a914e454756abfad2119a525c06d9ce341b918/seqio-nightly-0.0.8.dev20220907.tar.gz
+[2024-05-04 09:03:22] INFO root fetch - processPackages [CTDFjorder]: executing diffoscope
+[2024-05-04 09:03:22] INFO root fetch - processPackages [CTDFjorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctdfjorder-0.0.36.tar.gz tmp/ctdfjorder-0.0.37.tar.gz --markdown 20240504/C/CTDFjorder/0.0.36-0.0.37/README.md --exclude *.pyd
+[2024-05-04 09:03:22] INFO root fetch - processPackages [openmc-data]: Downloading https://files.pythonhosted.org/packages/55/48/492c06fc27506cae91b8eb4104aef39d63a495a2e09d125ab006da31920a/openmc_data-2.2.8.tar.gz
+[2024-05-04 09:03:22] INFO root fetch - processPackages [smemo]: Downloading https://files.pythonhosted.org/packages/02/09/fbd6a73b8c1bb43ab5b057e5c5387f2184d6cdc4c63b23cb41b44232afb3/smemo-0.6.1.tar.gz
+[2024-05-04 09:03:22] INFO root fetch - processPackages [magentic]: Downloading https://files.pythonhosted.org/packages/14/4d/5c6c2464c5abac2cf0a83ac11e48dd90edf9b6d646f6825ce23b0bfe99bf/magentic-0.9.1.tar.gz
+[2024-05-04 09:03:22] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2024-05-04 09:03:22] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20240504/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/README.md --exclude *.pyd
+[2024-05-04 09:03:22] INFO root fetch - processPackages [smemo]: executing diffoscope
+[2024-05-04 09:03:22] INFO root fetch - processPackages [smemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smemo-0.6.tar.gz tmp/smemo-0.6.1.tar.gz --markdown 20240504/s/smemo/0.6-0.6.1/README.md --exclude *.pyd
+[2024-05-04 09:03:22] INFO root fetch - processPackages [magentic]: executing diffoscope
+[2024-05-04 09:03:22] INFO root fetch - processPackages [magentic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magentic-0.9.0.tar.gz tmp/magentic-0.9.1.tar.gz --markdown 20240504/m/magentic/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-04 09:03:22] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.36.tar.gz]
+[2024-05-04 09:03:22] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.37.tar.gz]
+[2024-05-04 09:03:22] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
+[2024-05-04 09:03:23] INFO root fetch - processPackages [smemo]: Remove: archive file [/home/abi/fetcher/tmp/smemo-0.6.tar.gz]
+[2024-05-04 09:03:23] INFO root fetch - processPackages [smemo]: Remove: archive file [/home/abi/fetcher/tmp/smemo-0.6.1.tar.gz]
+[2024-05-04 09:03:23] INFO root fetch - main [MainThread]: End processing [smemo]: success
+[2024-05-04 09:03:23] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220906.tar.gz]
+[2024-05-04 09:03:23] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
+[2024-05-04 09:03:23] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2024-05-04 09:03:23] INFO root fetch - processPackages [magentic]: Remove: archive file [/home/abi/fetcher/tmp/magentic-0.9.0.tar.gz]
+[2024-05-04 09:03:23] INFO root fetch - processPackages [magentic]: Remove: archive file [/home/abi/fetcher/tmp/magentic-0.9.1.tar.gz]
+[2024-05-04 09:03:23] INFO root fetch - main [MainThread]: End processing [magentic]: success
+[2024-05-04 09:03:23] WARNING root fetch - processPackages [openmc-data]: Skipping package: exceeds size limit 58039444>=10485760
+[2024-05-04 09:03:23] INFO root fetch - main [MainThread]: End processing [openmc-data] error
+[2024-05-04 09:03:23] INFO root fetch - main [MainThread]: Store serial: [23056385]
