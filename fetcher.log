@@ -8357,3 +8357,15 @@
 [2024-05-04 05:16:38] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
 [2024-05-04 05:16:38] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
 [2024-05-04 05:16:38] INFO root fetch - main [MainThread]: Store serial: [23055269]
+[2024-05-04 05:18:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055269]
+[2024-05-04 05:18:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 05:18:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: huskypo
+[2024-05-04 05:18:57] INFO root fetch - processPackages [huskypo]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 05:18:57] INFO root fetch - processPackages [huskypo]: Downloading https://files.pythonhosted.org/packages/4f/95/b00a776851ad7bfec6d9e51b4f7e5400d7b997b2b79cbc3a27e4e5ec1a2b/huskypo-1.0.0.tar.gz
+[2024-05-04 05:18:57] INFO root fetch - processPackages [huskypo]: Downloading https://files.pythonhosted.org/packages/5c/9f/f78ccb709b41c257be51a26edeefd50308e02021ce74a9f64ee690674536/huskypo-1.0.1.tar.gz
+[2024-05-04 05:18:58] INFO root fetch - processPackages [huskypo]: executing diffoscope
+[2024-05-04 05:18:58] INFO root fetch - processPackages [huskypo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huskypo-1.0.0.tar.gz tmp/huskypo-1.0.1.tar.gz --markdown 20240504/h/huskypo/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 05:18:58] INFO root fetch - processPackages [huskypo]: Remove: archive file [/home/abi/fetcher/tmp/huskypo-1.0.0.tar.gz]
+[2024-05-04 05:18:58] INFO root fetch - processPackages [huskypo]: Remove: archive file [/home/abi/fetcher/tmp/huskypo-1.0.1.tar.gz]
+[2024-05-04 05:18:58] INFO root fetch - main [MainThread]: End processing [huskypo]: success
+[2024-05-04 05:18:58] INFO root fetch - main [MainThread]: Store serial: [23055274]
