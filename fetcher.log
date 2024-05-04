@@ -18474,3 +18474,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:20:27] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.8.tar.gz]
 [2024-05-04 20:20:28] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
 [2024-05-04 20:20:28] INFO root fetch - main [MainThread]: Store serial: [23060091]
+[2024-05-04 20:22:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060091]
+[2024-05-04 20:22:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 20:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hedge-lab-ctc
+[2024-05-04 20:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: entity-recognition-service
+[2024-05-04 20:22:36] INFO root fetch - processPackages [entity-recognition-service]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 20:22:36] WARNING root fetch - processPackages [hedge-lab-ctc]: Skipping, unable to determine old version
+[2024-05-04 20:22:36] INFO root fetch - main [MainThread]: End processing [hedge-lab-ctc] error
+[2024-05-04 20:22:36] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/23/18/7145326a6ea0566c2c41ba0bf3822fffc6b4da314a426433179c4724bda3/entity_recognition_service-0.1.8.tar.gz
+[2024-05-04 20:22:37] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/86/75/a994a9af22b16241a2b38cb3314e7d2457d9aaf73d35a5b70823d8c8ce18/entity_recognition_service-0.1.9.tar.gz
+[2024-05-04 20:22:37] INFO root fetch - processPackages [entity-recognition-service]: executing diffoscope
+[2024-05-04 20:22:37] INFO root fetch - processPackages [entity-recognition-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entity_recognition_service-0.1.8.tar.gz tmp/entity_recognition_service-0.1.9.tar.gz --markdown 20240504/e/entity-recognition-service/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 20:22:37] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.8.tar.gz]
+[2024-05-04 20:22:37] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.9.tar.gz]
+[2024-05-04 20:22:37] INFO root fetch - main [MainThread]: End processing [entity-recognition-service]: success
+[2024-05-04 20:22:37] INFO root fetch - main [MainThread]: Store serial: [23060099]
