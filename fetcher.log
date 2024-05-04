@@ -20405,3 +20405,34 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:38:13] INFO root fetch - processPackages [jx-python]: Remove: archive file [/home/abi/fetcher/tmp/jx_python-4.625.24125.tar.gz]
 [2024-05-04 22:38:13] INFO root fetch - main [MainThread]: End processing [jx-python]: success
 [2024-05-04 22:38:13] INFO root fetch - main [MainThread]: Store serial: [23060837]
+[2024-05-04 22:40:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060837]
+[2024-05-04 22:40:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 22:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: got-cli
+[2024-05-04 22:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: got-cli
+[2024-05-04 22:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-watsonx
+[2024-05-04 22:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mobspy
+[2024-05-04 22:40:22] WARNING root fetch - processPackages [llm-watsonx]: Skipping, unable to determine old version
+[2024-05-04 22:40:22] INFO root fetch - main [MainThread]: End processing [llm-watsonx] error
+[2024-05-04 22:40:22] INFO root fetch - processPackages [got-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 22:40:22] INFO root fetch - processPackages [got-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 22:40:22] INFO root fetch - processPackages [mobspy]: New version: [2.3.5] Old Version: [2.3.4]
+[2024-05-04 22:40:22] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ad/36/96dc93e2cf9589ae7ec404cd565245871fad176e727d6faa4f86f6c228cb/got-cli-0.0.8.tar.gz
+[2024-05-04 22:40:22] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ad/36/96dc93e2cf9589ae7ec404cd565245871fad176e727d6faa4f86f6c228cb/got-cli-0.0.8.tar.gz
+[2024-05-04 22:40:22] INFO root fetch - processPackages [mobspy]: Downloading https://files.pythonhosted.org/packages/cf/df/9853d52e615d56ab73711a49d95ac42a19839d7d59bcf09f37cd6bd05138/mobspy-2.3.4.tar.gz
+[2024-05-04 22:40:22] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ff/71/b812197f03da05996c430c7f17e87e82c77018fd2b7686e747ea5f779c1e/got-cli-0.0.9.tar.gz
+[2024-05-04 22:40:22] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ff/71/b812197f03da05996c430c7f17e87e82c77018fd2b7686e747ea5f779c1e/got-cli-0.0.9.tar.gz
+[2024-05-04 22:40:22] INFO root fetch - processPackages [got-cli]: executing diffoscope
+[2024-05-04 22:40:22] INFO root fetch - processPackages [got-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/got-cli-0.0.8.tar.gz tmp/got-cli-0.0.9.tar.gz --markdown 20240504/g/got-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 22:40:22] INFO root fetch - processPackages [got-cli]: executing diffoscope
+[2024-05-04 22:40:22] INFO root fetch - processPackages [got-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/got-cli-0.0.8.tar.gz tmp/got-cli-0.0.9.tar.gz --markdown 20240504/g/got-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 22:40:23] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.8.tar.gz]
+[2024-05-04 22:40:23] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.9.tar.gz]
+[2024-05-04 22:40:23] INFO root fetch - main [MainThread]: End processing [got-cli]: success
+[2024-05-04 22:40:23] INFO root fetch - main [MainThread]: End processing [got-cli]: success
+[2024-05-04 22:40:24] INFO root fetch - processPackages [mobspy]: Downloading https://files.pythonhosted.org/packages/94/59/d58373eb3bc152705cb045f1b502494a01873a54756db85a729ef8098d86/mobspy-2.3.5.tar.gz
+[2024-05-04 22:40:25] INFO root fetch - processPackages [mobspy]: executing diffoscope
+[2024-05-04 22:40:25] INFO root fetch - processPackages [mobspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mobspy-2.3.4.tar.gz tmp/mobspy-2.3.5.tar.gz --markdown 20240504/m/mobspy/2.3.4-2.3.5/README.md --exclude *.pyd
+[2024-05-04 22:40:27] INFO root fetch - processPackages [mobspy]: Remove: archive file [/home/abi/fetcher/tmp/mobspy-2.3.4.tar.gz]
+[2024-05-04 22:40:27] INFO root fetch - processPackages [mobspy]: Remove: archive file [/home/abi/fetcher/tmp/mobspy-2.3.5.tar.gz]
+[2024-05-04 22:40:27] INFO root fetch - main [MainThread]: End processing [mobspy]: success
+[2024-05-04 22:40:27] INFO root fetch - main [MainThread]: Store serial: [23060848]
