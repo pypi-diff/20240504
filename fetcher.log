@@ -11459,3 +11459,9 @@
 [2024-05-04 10:04:20] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240503.tar.gz]
 [2024-05-04 10:04:20] INFO root fetch - main [MainThread]: End processing [langfun]: success
 [2024-05-04 10:04:20] INFO root fetch - main [MainThread]: Store serial: [23056720]
+[2024-05-04 10:06:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056720]
+[2024-05-04 10:06:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 10:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepstack-ai
+[2024-05-04 10:06:28] WARNING root fetch - processPackages [deepstack-ai]: Skipping, unable to determine old version
+[2024-05-04 10:06:28] INFO root fetch - main [MainThread]: End processing [deepstack-ai] error
+[2024-05-04 10:06:28] INFO root fetch - main [MainThread]: Store serial: [23056725]
