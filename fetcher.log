@@ -15776,3 +15776,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:57:41] WARNING root fetch - processPackages [RandomPlusPlus]: Skipping, unable to determine old version
 [2024-05-04 16:57:41] INFO root fetch - main [MainThread]: End processing [RandomPlusPlus] error
 [2024-05-04 16:57:41] INFO root fetch - main [MainThread]: Store serial: [23058677]
+[2024-05-04 16:59:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058677]
+[2024-05-04 16:59:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 16:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spark-on-k8s
+[2024-05-04 16:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spam-detector-ai
+[2024-05-04 16:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: breez-sdk
+[2024-05-04 16:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: color-transfer-py
+[2024-05-04 16:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nl-matcher
+[2024-05-04 16:59:49] INFO root fetch - processPackages [spark-on-k8s]: New version: [0.6.0rc1] Old Version: [0.5.2]
+[2024-05-04 16:59:49] WARNING root fetch - processPackages [color-transfer-py]: Skipping, unable to determine old version
+[2024-05-04 16:59:49] INFO root fetch - main [MainThread]: End processing [color-transfer-py] error
+[2024-05-04 16:59:49] INFO root fetch - processPackages [nl-matcher]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-04 16:59:49] INFO root fetch - processPackages [spark-on-k8s]: Downloading https://files.pythonhosted.org/packages/d2/3a/60270e0f6030343b00d3ae0dc5dc8ecc7d3c943cfae5a66905d99486f4f2/spark_on_k8s-0.5.2.tar.gz
+[2024-05-04 16:59:49] INFO root fetch - processPackages [spam-detector-ai]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-05-04 16:59:49] INFO root fetch - processPackages [breez-sdk]: New version: [0.4.0rc5] Old Version: [0.4.0rc2]
+[2024-05-04 16:59:50] INFO root fetch - processPackages [nl-matcher]: Downloading https://files.pythonhosted.org/packages/f0/81/582ed31279c2e75513f151096f0407bad8012a8fd795eb3c4c0d508dad1e/nl_matcher-0.0.1.tar.gz
+[2024-05-04 16:59:50] INFO root fetch - processPackages [spam-detector-ai]: Downloading https://files.pythonhosted.org/packages/18/f2/fbda9cc3b4d1d99e44ab0da3266ef8f57aac4efcc9115e60fbb1d8caa179/spam-detector-ai-2.1.8.tar.gz
+[2024-05-04 16:59:50] INFO root fetch - processPackages [spark-on-k8s]: Downloading https://files.pythonhosted.org/packages/49/17/bcaecc0e112a4a6a2889fa59309fa1b1fcf1b0e84f7504e48230f99c6182/spark_on_k8s-0.6.0rc1.tar.gz
+[2024-05-04 16:59:50] INFO root fetch - processPackages [spark-on-k8s]: executing diffoscope
+[2024-05-04 16:59:50] INFO root fetch - processPackages [spark-on-k8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spark_on_k8s-0.5.2.tar.gz tmp/spark_on_k8s-0.6.0rc1.tar.gz --markdown 20240504/s/spark-on-k8s/0.5.2-0.6.0rc1/README.md --exclude *.pyd
+[2024-05-04 16:59:50] INFO root fetch - processPackages [breez-sdk]: Downloading https://files.pythonhosted.org/packages/83/e2/64c15e195d818a717c1a0c353b19742b17c9a50a3274ce5ee0556ba661b9/breez_sdk-0.4.0rc5-cp39-cp39-win_amd64.whl
+[2024-05-04 16:59:50] WARNING root fetch - processPackages [spam-detector-ai]: Skipping package: exceeds size limit 13165115>=10485760
+[2024-05-04 16:59:50] INFO root fetch - main [MainThread]: End processing [spam-detector-ai] error
+[2024-05-04 16:59:50] INFO root fetch - processPackages [nl-matcher]: Downloading https://files.pythonhosted.org/packages/27/6f/bf808185fc66cf04f9430351c9d668b7e7344ea402d257ecb319b60fee4d/nl_matcher-0.0.2.tar.gz
+[2024-05-04 16:59:50] INFO root fetch - processPackages [nl-matcher]: executing diffoscope
+[2024-05-04 16:59:50] INFO root fetch - processPackages [nl-matcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nl_matcher-0.0.1.tar.gz tmp/nl_matcher-0.0.2.tar.gz --markdown 20240504/n/nl-matcher/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-04 16:59:50] INFO root fetch - processPackages [spark-on-k8s]: Remove: archive file [/home/abi/fetcher/tmp/spark_on_k8s-0.5.2.tar.gz]
+[2024-05-04 16:59:50] INFO root fetch - processPackages [spark-on-k8s]: Remove: archive file [/home/abi/fetcher/tmp/spark_on_k8s-0.6.0rc1.tar.gz]
+[2024-05-04 16:59:50] INFO root fetch - main [MainThread]: End processing [spark-on-k8s]: success
+[2024-05-04 16:59:51] INFO root fetch - processPackages [nl-matcher]: Remove: archive file [/home/abi/fetcher/tmp/nl_matcher-0.0.1.tar.gz]
+[2024-05-04 16:59:51] INFO root fetch - processPackages [nl-matcher]: Remove: archive file [/home/abi/fetcher/tmp/nl_matcher-0.0.2.tar.gz]
+[2024-05-04 16:59:51] INFO root fetch - main [MainThread]: End processing [nl-matcher]: success
+[2024-05-04 16:59:51] INFO root fetch - processPackages [breez-sdk]: executing diffoscope
+[2024-05-04 16:59:51] INFO root fetch - processPackages [breez-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/breez_sdk-0.4.0rc2-cp39-cp39-win_amd64.whl.zip tmp/breez_sdk-0.4.0rc5-cp39-cp39-win_amd64.whl.zip --markdown 20240504/b/breez-sdk/0.4.0rc2-0.4.0rc5/README.md --exclude *.pyd
+[2024-05-04 17:00:36] INFO root fetch - processPackages [breez-sdk]: Remove: archive file [/home/abi/fetcher/tmp/breez_sdk-0.4.0rc2-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 17:00:36] INFO root fetch - processPackages [breez-sdk]: Remove: archive file [/home/abi/fetcher/tmp/breez_sdk-0.4.0rc5-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 17:00:36] INFO root fetch - main [MainThread]: End processing [breez-sdk]: success
+[2024-05-04 17:00:36] INFO root fetch - main [MainThread]: Store serial: [23058711]
