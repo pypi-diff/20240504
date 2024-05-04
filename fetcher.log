@@ -19529,3 +19529,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:41:04] INFO root fetch - processPackages [request-tea-ok]: Remove: archive file [/home/abi/fetcher/tmp/request_tea_ok-1.0.1.tar.gz]
 [2024-05-04 21:41:04] INFO root fetch - main [MainThread]: End processing [request-tea-ok]: success
 [2024-05-04 21:41:04] INFO root fetch - main [MainThread]: Store serial: [23060515]
+[2024-05-04 21:43:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060515]
+[2024-05-04 21:43:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 21:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SimplerLLM
+[2024-05-04 21:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: repurpose
+[2024-05-04 21:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbb-api
+[2024-05-04 21:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sievedata
+[2024-05-04 21:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mojo-credentials
+[2024-05-04 21:43:13] INFO root fetch - processPackages [nbb-api]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-04 21:43:13] INFO root fetch - processPackages [mojo-credentials]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-04 21:43:13] INFO root fetch - processPackages [SimplerLLM]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-04 21:43:13] INFO root fetch - processPackages [nbb-api]: Downloading https://files.pythonhosted.org/packages/87/c1/b17e1a2069d9059834332927361862c2ef2c982333595eba75003912031c/nbb_api-0.1.5.tar.gz
+[2024-05-04 21:43:13] INFO root fetch - processPackages [mojo-credentials]: Downloading https://files.pythonhosted.org/packages/50/69/7f893c36c930aeea1bb68de3684bb0e7c7428b219c28d1f9f09f1d5105dd/mojo_credentials-1.3.8.tar.gz
+[2024-05-04 21:43:13] INFO root fetch - processPackages [sievedata]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-04 21:43:13] INFO root fetch - processPackages [repurpose]: New version: [0.9] Old Version: [0.8]
+[2024-05-04 21:43:13] INFO root fetch - processPackages [SimplerLLM]: Downloading https://files.pythonhosted.org/packages/d7/06/5df764a4b8825bf1ee81f3535c61845ae0a3335ada44f26a7df5d8d6ac2c/SimplerLLM-0.2.0.tar.gz
+[2024-05-04 21:43:14] INFO root fetch - processPackages [repurpose]: Downloading https://files.pythonhosted.org/packages/45/1f/e3ee634bd244159df2290e831b55b6978c3d888fbe0216e86744a6baddf8/repurpose-0.8.tar.gz
+[2024-05-04 21:43:14] INFO root fetch - processPackages [mojo-credentials]: Downloading https://files.pythonhosted.org/packages/2a/22/ceb9d6bb07cfaecb6fc7a0f84c857f7005f2dbfa87123e6bd668e934bfd3/mojo_credentials-1.3.9.tar.gz
+[2024-05-04 21:43:14] INFO root fetch - processPackages [sievedata]: Downloading https://files.pythonhosted.org/packages/77/95/81d873c48eab504969a2f4a4f592d75ea9d000bd3befca5ad2ca00168f0c/sievedata-1.0.8-py3-none-any.whl
+[2024-05-04 21:43:14] INFO root fetch - processPackages [nbb-api]: Downloading https://files.pythonhosted.org/packages/1a/9b/e6aea38dac7cf7a80d0bdd3800be93821af09b8685b37093dd2633098162/nbb_api-0.1.6.tar.gz
+[2024-05-04 21:43:14] INFO root fetch - processPackages [nbb-api]: executing diffoscope
+[2024-05-04 21:43:14] INFO root fetch - processPackages [nbb-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbb_api-0.1.5.tar.gz tmp/nbb_api-0.1.6.tar.gz --markdown 20240504/n/nbb-api/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-04 21:43:14] INFO root fetch - processPackages [mojo-credentials]: executing diffoscope
+[2024-05-04 21:43:14] INFO root fetch - processPackages [mojo-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_credentials-1.3.8.tar.gz tmp/mojo_credentials-1.3.9.tar.gz --markdown 20240504/m/mojo-credentials/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-04 21:43:14] INFO root fetch - processPackages [repurpose]: Downloading https://files.pythonhosted.org/packages/f2/20/d1f465cdce34582ce03cf5ab049c33b417b1e701e64da683ce567eb12365/repurpose-0.9.tar.gz
+[2024-05-04 21:43:14] INFO root fetch - processPackages [SimplerLLM]: Downloading https://files.pythonhosted.org/packages/3a/4a/f538806c48110ae86023e202c6c18a64365f8ea28d1b1f2a87d51c8fd5de/simplerllm-0.2.1.tar.gz
+[2024-05-04 21:43:14] INFO root fetch - processPackages [sievedata]: Downloading https://files.pythonhosted.org/packages/8a/81/20861347ef8b1783e03c20206a281854cb818fc401a040f544a1fe0b6f35/sievedata-1.0.9-py3-none-any.whl
+[2024-05-04 21:43:14] INFO root fetch - processPackages [SimplerLLM]: executing diffoscope
+[2024-05-04 21:43:14] INFO root fetch - processPackages [SimplerLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimplerLLM-0.2.0.tar.gz tmp/simplerllm-0.2.1.tar.gz --markdown 20240504/S/SimplerLLM/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-04 21:43:14] INFO root fetch - processPackages [repurpose]: executing diffoscope
+[2024-05-04 21:43:14] INFO root fetch - processPackages [repurpose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/repurpose-0.8.tar.gz tmp/repurpose-0.9.tar.gz --markdown 20240504/r/repurpose/0.8-0.9/README.md --exclude *.pyd
+[2024-05-04 21:43:14] INFO root fetch - processPackages [sievedata]: executing diffoscope
+[2024-05-04 21:43:14] INFO root fetch - processPackages [sievedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sievedata-1.0.8-py3-none-any.whl.zip tmp/sievedata-1.0.9-py3-none-any.whl.zip --markdown 20240504/s/sievedata/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-04 21:43:14] INFO root fetch - processPackages [mojo-credentials]: Remove: archive file [/home/abi/fetcher/tmp/mojo_credentials-1.3.8.tar.gz]
+[2024-05-04 21:43:14] INFO root fetch - processPackages [mojo-credentials]: Remove: archive file [/home/abi/fetcher/tmp/mojo_credentials-1.3.9.tar.gz]
+[2024-05-04 21:43:14] INFO root fetch - main [MainThread]: End processing [mojo-credentials]: success
+[2024-05-04 21:43:14] INFO root fetch - processPackages [nbb-api]: Remove: archive file [/home/abi/fetcher/tmp/nbb_api-0.1.5.tar.gz]
+[2024-05-04 21:43:14] INFO root fetch - processPackages [nbb-api]: Remove: archive file [/home/abi/fetcher/tmp/nbb_api-0.1.6.tar.gz]
+[2024-05-04 21:43:14] INFO root fetch - main [MainThread]: End processing [nbb-api]: success
+[2024-05-04 21:43:15] INFO root fetch - processPackages [SimplerLLM]: Remove: archive file [/home/abi/fetcher/tmp/SimplerLLM-0.2.0.tar.gz]
+[2024-05-04 21:43:15] INFO root fetch - processPackages [SimplerLLM]: Remove: archive file [/home/abi/fetcher/tmp/simplerllm-0.2.1.tar.gz]
+[2024-05-04 21:43:15] INFO root fetch - main [MainThread]: End processing [SimplerLLM]: success
+[2024-05-04 21:43:15] INFO root fetch - processPackages [repurpose]: Remove: archive file [/home/abi/fetcher/tmp/repurpose-0.8.tar.gz]
+[2024-05-04 21:43:15] INFO root fetch - processPackages [repurpose]: Remove: archive file [/home/abi/fetcher/tmp/repurpose-0.9.tar.gz]
+[2024-05-04 21:43:15] INFO root fetch - main [MainThread]: End processing [repurpose]: success
+[2024-05-04 21:43:15] INFO root fetch - processPackages [sievedata]: Remove: archive file [/home/abi/fetcher/tmp/sievedata-1.0.8-py3-none-any.whl.zip]
+[2024-05-04 21:43:15] INFO root fetch - processPackages [sievedata]: Remove: archive file [/home/abi/fetcher/tmp/sievedata-1.0.9-py3-none-any.whl.zip]
+[2024-05-04 21:43:15] INFO root fetch - main [MainThread]: End processing [sievedata]: success
+[2024-05-04 21:43:15] INFO root fetch - main [MainThread]: Store serial: [23060532]
