@@ -14927,3 +14927,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:43:52] INFO root fetch - processPackages [Pygments]: Remove: archive file [/home/abi/fetcher/tmp/Pygments-2.9.0.tar.gz]
 [2024-05-04 15:43:52] INFO root fetch - main [MainThread]: End processing [Pygments]: success
 [2024-05-04 15:43:52] INFO root fetch - main [MainThread]: Store serial: [23058285]
+[2024-05-04 15:45:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058285]
+[2024-05-04 15:46:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 15:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Flask-Caching
+[2024-05-04 15:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrutinydebugger
+[2024-05-04 15:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PACMAN-charge
+[2024-05-04 15:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whisperplus
+[2024-05-04 15:46:01] INFO root fetch - processPackages [PACMAN-charge]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-04 15:46:01] INFO root fetch - processPackages [PACMAN-charge]: Downloading https://files.pythonhosted.org/packages/74/8e/4de8b69026cc86bb1c884ede208eb51742d51dcf8c23c526ae9b1d02ded6/PACMAN-charge-0.1.3.tar.gz
+[2024-05-04 15:46:01] INFO root fetch - processPackages [Flask-Caching]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-05-04 15:46:01] INFO root fetch - processPackages [scrutinydebugger]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-04 15:46:01] INFO root fetch - processPackages [whisperplus]: New version: [0.2.8.1] Old Version: [0.2.8]
+[2024-05-04 15:46:02] INFO root fetch - processPackages [whisperplus]: Downloading https://files.pythonhosted.org/packages/9a/49/42da8dc1dfaa872ba8d15a9a2f7786964130a99fd933dae9f35c17cae8f2/whisperplus-0.2.8.tar.gz
+[2024-05-04 15:46:02] INFO root fetch - processPackages [scrutinydebugger]: Downloading https://files.pythonhosted.org/packages/4f/77/91708c9a9404539ce455d87e519f4e40123c3256fa9ffa925c959ba48ea1/scrutinydebugger-0.1.0.tar.gz
+[2024-05-04 15:46:02] INFO root fetch - processPackages [Flask-Caching]: Downloading https://files.pythonhosted.org/packages/3b/03/d643dee9286ac4700b786e71e87184b1418e6887405b31c47efd6fe2ce9f/flask_caching-2.2.0.tar.gz
+[2024-05-04 15:46:02] INFO root fetch - processPackages [PACMAN-charge]: Downloading https://files.pythonhosted.org/packages/a0/a1/333df807906530086f83883e79c9e77bc21488a5f0a83962413f1667eafa/PACMAN-charge-0.1.4.tar.gz
+[2024-05-04 15:46:02] INFO root fetch - processPackages [PACMAN-charge]: executing diffoscope
+[2024-05-04 15:46:02] INFO root fetch - processPackages [PACMAN-charge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PACMAN-charge-0.1.3.tar.gz tmp/PACMAN-charge-0.1.4.tar.gz --markdown 20240504/P/PACMAN-charge/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-04 15:46:02] INFO root fetch - processPackages [whisperplus]: Downloading https://files.pythonhosted.org/packages/0a/e0/694e685f11b131302ed805979ac86cfe1eedd9bb780820aa5afe702e0483/whisperplus-0.2.8.1.tar.gz
+[2024-05-04 15:46:02] INFO root fetch - processPackages [Flask-Caching]: Downloading https://files.pythonhosted.org/packages/ba/33/cfaac045b5e3b39cbeee075f52b69932a47b24cc4e6d123457bc9961be76/flask_caching-2.3.0.tar.gz
+[2024-05-04 15:46:02] INFO root fetch - processPackages [scrutinydebugger]: Downloading https://files.pythonhosted.org/packages/6a/7e/f34dc7314fa59b9db76cdf2bdd488c89af18da5d2a09ac8840eedcff2039/scrutinydebugger-0.2.0.tar.gz
+[2024-05-04 15:46:02] INFO root fetch - processPackages [whisperplus]: executing diffoscope
+[2024-05-04 15:46:02] INFO root fetch - processPackages [whisperplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisperplus-0.2.8.tar.gz tmp/whisperplus-0.2.8.1.tar.gz --markdown 20240504/w/whisperplus/0.2.8-0.2.8.1/README.md --exclude *.pyd
+[2024-05-04 15:46:02] INFO root fetch - processPackages [Flask-Caching]: executing diffoscope
+[2024-05-04 15:46:02] INFO root fetch - processPackages [Flask-Caching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_caching-2.2.0.tar.gz tmp/flask_caching-2.3.0.tar.gz --markdown 20240504/F/Flask-Caching/2.2.0-2.3.0/README.md --exclude *.pyd
+[2024-05-04 15:46:02] INFO root fetch - processPackages [scrutinydebugger]: executing diffoscope
+[2024-05-04 15:46:02] INFO root fetch - processPackages [scrutinydebugger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrutinydebugger-0.1.0.tar.gz tmp/scrutinydebugger-0.2.0.tar.gz --markdown 20240504/s/scrutinydebugger/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-04 15:46:02] INFO root fetch - processPackages [PACMAN-charge]: Remove: archive file [/home/abi/fetcher/tmp/PACMAN-charge-0.1.3.tar.gz]
+[2024-05-04 15:46:02] INFO root fetch - processPackages [PACMAN-charge]: Remove: archive file [/home/abi/fetcher/tmp/PACMAN-charge-0.1.4.tar.gz]
+[2024-05-04 15:46:02] INFO root fetch - main [MainThread]: End processing [PACMAN-charge]: success
+[2024-05-04 15:46:03] INFO root fetch - processPackages [whisperplus]: Remove: archive file [/home/abi/fetcher/tmp/whisperplus-0.2.8.tar.gz]
+[2024-05-04 15:46:03] INFO root fetch - processPackages [whisperplus]: Remove: archive file [/home/abi/fetcher/tmp/whisperplus-0.2.8.1.tar.gz]
+[2024-05-04 15:46:03] INFO root fetch - main [MainThread]: End processing [whisperplus]: success
+[2024-05-04 15:46:03] INFO root fetch - processPackages [Flask-Caching]: Remove: archive file [/home/abi/fetcher/tmp/flask_caching-2.2.0.tar.gz]
+[2024-05-04 15:46:03] INFO root fetch - processPackages [Flask-Caching]: Remove: archive file [/home/abi/fetcher/tmp/flask_caching-2.3.0.tar.gz]
+[2024-05-04 15:46:03] INFO root fetch - main [MainThread]: End processing [Flask-Caching]: success
+[2024-05-04 15:46:03] INFO root fetch - processPackages [scrutinydebugger]: Remove: archive file [/home/abi/fetcher/tmp/scrutinydebugger-0.1.0.tar.gz]
+[2024-05-04 15:46:03] INFO root fetch - processPackages [scrutinydebugger]: Remove: archive file [/home/abi/fetcher/tmp/scrutinydebugger-0.2.0.tar.gz]
+[2024-05-04 15:46:03] INFO root fetch - main [MainThread]: End processing [scrutinydebugger]: success
+[2024-05-04 15:46:03] INFO root fetch - main [MainThread]: Store serial: [23058298]
