@@ -11285,3 +11285,27 @@
 [2024-05-04 09:49:06] INFO root fetch - processPackages [pyvista]: Remove: archive file [/home/abi/fetcher/tmp/pyvista-0.44.dev0.tar.gz]
 [2024-05-04 09:49:06] INFO root fetch - main [MainThread]: End processing [pyvista]: success
 [2024-05-04 09:49:06] INFO root fetch - main [MainThread]: Store serial: [23056639]
+[2024-05-04 09:51:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056639]
+[2024-05-04 09:51:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 09:51:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discorudo
+[2024-05-04 09:51:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mayan-importer
+[2024-05-04 09:51:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: statistical-tests
+[2024-05-04 09:51:15] INFO root fetch - processPackages [mayan-importer]: New version: [3.1] Old Version: [3.0.3]
+[2024-05-04 09:51:15] INFO root fetch - processPackages [discorudo]: New version: [1.2] Old Version: [1.1]
+[2024-05-04 09:51:15] WARNING root fetch - processPackages [statistical-tests]: Skipping, unable to determine old version
+[2024-05-04 09:51:15] INFO root fetch - main [MainThread]: End processing [statistical-tests] error
+[2024-05-04 09:51:15] INFO root fetch - processPackages [mayan-importer]: Downloading https://files.pythonhosted.org/packages/df/04/bd90529cf49f10f51809978343af44b997bdff79a4361a4e653c41d36dd1/mayan-importer-3.0.3.tar.gz
+[2024-05-04 09:51:15] INFO root fetch - processPackages [discorudo]: Downloading https://files.pythonhosted.org/packages/20/cd/725552a3fd9c32414ce2166bac8c17bf9a10786ed66d5e6f1e1e7746eeb5/discorudo-1.1.tar.gz
+[2024-05-04 09:51:15] INFO root fetch - processPackages [mayan-importer]: Downloading https://files.pythonhosted.org/packages/c6/d7/1ada4f3a48e7702108360f62c80e1dd87624b55830e8b597fbe2b8df2523/mayan-importer-3.1.tar.gz
+[2024-05-04 09:51:15] INFO root fetch - processPackages [mayan-importer]: executing diffoscope
+[2024-05-04 09:51:15] INFO root fetch - processPackages [mayan-importer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mayan-importer-3.0.3.tar.gz tmp/mayan-importer-3.1.tar.gz --markdown 20240504/m/mayan-importer/3.0.3-3.1/README.md --exclude *.pyd
+[2024-05-04 09:51:15] INFO root fetch - processPackages [discorudo]: Downloading https://files.pythonhosted.org/packages/8d/48/488bb25049289cb0c2990053157a8c2f0a9155350ff253d6bab6a0dce02d/discorudo-1.2.tar.gz
+[2024-05-04 09:51:16] INFO root fetch - processPackages [discorudo]: executing diffoscope
+[2024-05-04 09:51:16] INFO root fetch - processPackages [discorudo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discorudo-1.1.tar.gz tmp/discorudo-1.2.tar.gz --markdown 20240504/d/discorudo/1.1-1.2/README.md --exclude *.pyd
+[2024-05-04 09:51:16] INFO root fetch - processPackages [mayan-importer]: Remove: archive file [/home/abi/fetcher/tmp/mayan-importer-3.0.3.tar.gz]
+[2024-05-04 09:51:16] INFO root fetch - processPackages [mayan-importer]: Remove: archive file [/home/abi/fetcher/tmp/mayan-importer-3.1.tar.gz]
+[2024-05-04 09:51:16] INFO root fetch - main [MainThread]: End processing [mayan-importer]: success
+[2024-05-04 09:51:16] INFO root fetch - processPackages [discorudo]: Remove: archive file [/home/abi/fetcher/tmp/discorudo-1.1.tar.gz]
+[2024-05-04 09:51:16] INFO root fetch - processPackages [discorudo]: Remove: archive file [/home/abi/fetcher/tmp/discorudo-1.2.tar.gz]
+[2024-05-04 09:51:16] INFO root fetch - main [MainThread]: End processing [discorudo]: success
+[2024-05-04 09:51:16] INFO root fetch - main [MainThread]: Store serial: [23056649]
