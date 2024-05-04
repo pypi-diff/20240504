@@ -13834,3 +13834,33 @@
 [2024-05-04 13:59:03] INFO root fetch - processPackages [pyhwpx]: Remove: archive file [/home/abi/fetcher/tmp/pyhwpx-0.9.9-py3-none-any.whl.zip]
 [2024-05-04 13:59:03] INFO root fetch - main [MainThread]: End processing [pyhwpx]: success
 [2024-05-04 13:59:03] INFO root fetch - main [MainThread]: Store serial: [23057810]
+[2024-05-04 14:01:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057810]
+[2024-05-04 14:01:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 14:01:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybirdbuddy
+[2024-05-04 14:01:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfancytranslator
+[2024-05-04 14:01:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: setux-core
+[2024-05-04 14:01:12] INFO root fetch - processPackages [pyfancytranslator]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 14:01:12] INFO root fetch - processPackages [setux-core]: New version: [0.4.0] Old Version: [0.3.5]
+[2024-05-04 14:01:12] INFO root fetch - processPackages [setux-core]: Downloading https://files.pythonhosted.org/packages/07/0a/b0f125d0ea0fb024a5a25895fb9ec8cbd58d601a9544621a3b97e8ea5651/setux_core-0.3.5.tar.gz
+[2024-05-04 14:01:12] INFO root fetch - processPackages [pybirdbuddy]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 14:01:12] INFO root fetch - processPackages [pyfancytranslator]: Downloading https://files.pythonhosted.org/packages/2f/b4/39b6d4f087eb87879fb7c799682c6b7ac099f952e54228ee2ba222b8e075/pyfancytranslator-1.0.0.tar.gz
+[2024-05-04 14:01:12] INFO root fetch - processPackages [pybirdbuddy]: Downloading https://files.pythonhosted.org/packages/d1/02/942e7f7c2ec344a7ccd21c05a18ebcb1e24cf81a74036675dfda049c3e97/pybirdbuddy-0.0.8-py3-none-any.whl
+[2024-05-04 14:01:13] INFO root fetch - processPackages [setux-core]: Downloading https://files.pythonhosted.org/packages/ed/77/65720bbda554ab48f737d9ea9e1bf46b03caba7bea3fc61056ef42ecce6a/setux_core-0.4.0.tar.gz
+[2024-05-04 14:01:13] INFO root fetch - processPackages [setux-core]: executing diffoscope
+[2024-05-04 14:01:13] INFO root fetch - processPackages [setux-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux_core-0.3.5.tar.gz tmp/setux_core-0.4.0.tar.gz --markdown 20240504/s/setux-core/0.3.5-0.4.0/README.md --exclude *.pyd
+[2024-05-04 14:01:13] INFO root fetch - processPackages [pyfancytranslator]: Downloading https://files.pythonhosted.org/packages/63/59/b778f2573b69993c5a39acbb85a1a440b615886fcf871c19ed4ac3b06b40/pyfancytranslator-1.0.1.tar.gz
+[2024-05-04 14:01:13] INFO root fetch - processPackages [pybirdbuddy]: Downloading https://files.pythonhosted.org/packages/2e/d6/d1eec4973469da14739ca417580056a2b47478c1bba34924d5ec70754a0a/pybirdbuddy-0.0.9-py3-none-any.whl
+[2024-05-04 14:01:13] INFO root fetch - processPackages [pyfancytranslator]: executing diffoscope
+[2024-05-04 14:01:13] INFO root fetch - processPackages [pyfancytranslator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfancytranslator-1.0.0.tar.gz tmp/pyfancytranslator-1.0.1.tar.gz --markdown 20240504/p/pyfancytranslator/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 14:01:13] INFO root fetch - processPackages [pybirdbuddy]: executing diffoscope
+[2024-05-04 14:01:13] INFO root fetch - processPackages [pybirdbuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybirdbuddy-0.0.8-py3-none-any.whl.zip tmp/pybirdbuddy-0.0.9-py3-none-any.whl.zip --markdown 20240504/p/pybirdbuddy/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 14:01:13] INFO root fetch - processPackages [setux-core]: Remove: archive file [/home/abi/fetcher/tmp/setux_core-0.3.5.tar.gz]
+[2024-05-04 14:01:13] INFO root fetch - processPackages [setux-core]: Remove: archive file [/home/abi/fetcher/tmp/setux_core-0.4.0.tar.gz]
+[2024-05-04 14:01:13] INFO root fetch - main [MainThread]: End processing [setux-core]: success
+[2024-05-04 14:01:13] INFO root fetch - processPackages [pyfancytranslator]: Remove: archive file [/home/abi/fetcher/tmp/pyfancytranslator-1.0.0.tar.gz]
+[2024-05-04 14:01:13] INFO root fetch - processPackages [pyfancytranslator]: Remove: archive file [/home/abi/fetcher/tmp/pyfancytranslator-1.0.1.tar.gz]
+[2024-05-04 14:01:13] INFO root fetch - main [MainThread]: End processing [pyfancytranslator]: success
+[2024-05-04 14:01:14] INFO root fetch - processPackages [pybirdbuddy]: Remove: archive file [/home/abi/fetcher/tmp/pybirdbuddy-0.0.8-py3-none-any.whl.zip]
+[2024-05-04 14:01:14] INFO root fetch - processPackages [pybirdbuddy]: Remove: archive file [/home/abi/fetcher/tmp/pybirdbuddy-0.0.9-py3-none-any.whl.zip]
+[2024-05-04 14:01:14] INFO root fetch - main [MainThread]: End processing [pybirdbuddy]: success
+[2024-05-04 14:01:14] INFO root fetch - main [MainThread]: Store serial: [23057818]
