@@ -17511,3 +17511,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:10:31] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
 [2024-05-04 19:10:31] INFO root fetch - main [MainThread]: End processing [surfkit]: success
 [2024-05-04 19:10:31] INFO root fetch - main [MainThread]: Store serial: [23059500]
+[2024-05-04 19:12:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059500]
+[2024-05-04 19:12:40] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 19:14:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059500]
+[2024-05-04 19:14:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 19:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-05-04 19:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-04 19:14:46] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-04 19:14:46] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-04 19:14:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-04 19:14:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-04 19:14:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-04 19:14:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-04 19:14:47] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-04 19:14:47] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240504/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-04 19:14:47] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-04 19:14:47] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240504/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-04 19:14:47] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-04 19:14:47] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-04 19:14:47] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-04 19:14:47] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-04 19:14:47] INFO root fetch - main [MainThread]: Store serial: [23059504]
