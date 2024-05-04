@@ -11651,3 +11651,15 @@
 [2024-05-04 10:26:04] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.3.tar.gz]
 [2024-05-04 10:26:04] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-04 10:26:04] INFO root fetch - main [MainThread]: Store serial: [23056804]
+[2024-05-04 10:28:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056804]
+[2024-05-04 10:28:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 10:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kitab
+[2024-05-04 10:28:13] INFO root fetch - processPackages [kitab]: New version: [0.0.23] Old Version: [0.0.22]
+[2024-05-04 10:28:13] INFO root fetch - processPackages [kitab]: Downloading https://files.pythonhosted.org/packages/16/d5/7d83edc69f586056597af1030e2b1b234716cf4749ccd11c08c0eeb18577/kitab-0.0.22.tar.gz
+[2024-05-04 10:28:14] INFO root fetch - processPackages [kitab]: Downloading https://files.pythonhosted.org/packages/de/b0/5bcfc3c4f5aac254535c437244068c981cab448cad0f76037baff14de5cc/kitab-0.0.23.tar.gz
+[2024-05-04 10:28:14] INFO root fetch - processPackages [kitab]: executing diffoscope
+[2024-05-04 10:28:14] INFO root fetch - processPackages [kitab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kitab-0.0.22.tar.gz tmp/kitab-0.0.23.tar.gz --markdown 20240504/k/kitab/0.0.22-0.0.23/README.md --exclude *.pyd
+[2024-05-04 10:28:14] INFO root fetch - processPackages [kitab]: Remove: archive file [/home/abi/fetcher/tmp/kitab-0.0.22.tar.gz]
+[2024-05-04 10:28:14] INFO root fetch - processPackages [kitab]: Remove: archive file [/home/abi/fetcher/tmp/kitab-0.0.23.tar.gz]
+[2024-05-04 10:28:14] INFO root fetch - main [MainThread]: End processing [kitab]: success
+[2024-05-04 10:28:14] INFO root fetch - main [MainThread]: Store serial: [23056807]
