@@ -10594,3 +10594,27 @@
 [2024-05-04 08:45:58] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.329.tar.gz]
 [2024-05-04 08:45:58] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-04 08:45:58] INFO root fetch - main [MainThread]: Store serial: [23056287]
+[2024-05-04 08:48:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056287]
+[2024-05-04 08:48:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 08:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-mgmtsystem-action
+[2024-05-04 08:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kfre
+[2024-05-04 08:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-batch
+[2024-05-04 08:48:07] WARNING root fetch - processPackages [gpt-batch]: Skipping, unable to determine old version
+[2024-05-04 08:48:07] INFO root fetch - main [MainThread]: End processing [gpt-batch] error
+[2024-05-04 08:48:07] INFO root fetch - processPackages [kfre]: New version: [0.1.2b0] Old Version: [0.1.2]
+[2024-05-04 08:48:07] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/38/73/d79fdb36afe1cd02411ecff822a23d039e48dfe7e16d524a4c08f3f2c488/kfre-0.1.2.tar.gz
+[2024-05-04 08:48:07] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2024-05-04 08:48:07] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: Downloading https://files.pythonhosted.org/packages/6a/96/990d5210de3a98ef04eae6553d5dd1064e8dfbac520714a7f44180498851/odoo_addon_mgmtsystem_action-16.0.1.0.0.8-py3-none-any.whl
+[2024-05-04 08:48:07] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/39/f2/3bd7ba3e67c6e44b771b7e85e94d81762eddcafa1f73e327ebe60ec42911/kfre-0.1.2b0.tar.gz
+[2024-05-04 08:48:07] INFO root fetch - processPackages [kfre]: executing diffoscope
+[2024-05-04 08:48:07] INFO root fetch - processPackages [kfre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfre-0.1.2.tar.gz tmp/kfre-0.1.2b0.tar.gz --markdown 20240504/k/kfre/0.1.2-0.1.2b0/README.md --exclude *.pyd
+[2024-05-04 08:48:07] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: Downloading https://files.pythonhosted.org/packages/e5/51/821ef1761b6f5dc3ddc5b1e461230517c8d26d392d910ef4daa141159a1f/odoo_addon_mgmtsystem_action-16.0.1.0.0.9-py3-none-any.whl
+[2024-05-04 08:48:07] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: executing diffoscope
+[2024-05-04 08:48:07] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mgmtsystem_action-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_mgmtsystem_action-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-mgmtsystem-action/16.0.1.0.0.8-16.0.1.0.0.9/README.md --exclude *.pyd
+[2024-05-04 08:48:08] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2.tar.gz]
+[2024-05-04 08:48:08] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2b0.tar.gz]
+[2024-05-04 08:48:08] INFO root fetch - main [MainThread]: End processing [kfre]: success
+[2024-05-04 08:48:08] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mgmtsystem_action-16.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-05-04 08:48:08] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mgmtsystem_action-16.0.1.0.0.9-py3-none-any.whl.zip]
+[2024-05-04 08:48:08] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-action]: success
+[2024-05-04 08:48:08] INFO root fetch - main [MainThread]: Store serial: [23056296]
