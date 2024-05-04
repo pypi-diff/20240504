@@ -15912,3 +15912,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:09:32] INFO root fetch - processPackages [spotlight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/spotlight-sdk-0.0.9.tar.gz]
 [2024-05-04 17:09:32] INFO root fetch - main [MainThread]: End processing [spotlight-sdk]: success
 [2024-05-04 17:09:32] INFO root fetch - main [MainThread]: Store serial: [23058755]
+[2024-05-04 17:11:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058755]
+[2024-05-04 17:11:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 17:11:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: miner-ai-beta
+[2024-05-04 17:11:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipex-llm
+[2024-05-04 17:11:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tiny-dag
+[2024-05-04 17:11:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: try-pub-pypi
+[2024-05-04 17:11:41] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240503] Old Version: [2.1.0b20240502]
+[2024-05-04 17:11:41] WARNING root fetch - processPackages [miner-ai-beta]: Skipping, unable to determine old version
+[2024-05-04 17:11:41] INFO root fetch - main [MainThread]: End processing [miner-ai-beta] error
+[2024-05-04 17:11:41] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/74/4d/c2c36b6867e9ff19b5d477480a90cf416e3bae15d5f1cdde6b18e2aaa340/ipex_llm-2.1.0b20240502-py3-none-win_amd64.whl
+[2024-05-04 17:11:41] INFO root fetch - processPackages [tiny-dag]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 17:11:41] WARNING root fetch - processPackages [try-pub-pypi]: Skipping, unable to determine old version
+[2024-05-04 17:11:41] INFO root fetch - main [MainThread]: End processing [try-pub-pypi] error
+[2024-05-04 17:11:41] INFO root fetch - processPackages [tiny-dag]: Downloading https://files.pythonhosted.org/packages/0b/8f/7ed4579b2871c6e935763bae678d4e60f2a47897c8193b85a132772b15d9/tiny_dag-0.0.8.tar.gz
+[2024-05-04 17:11:41] INFO root fetch - processPackages [tiny-dag]: Downloading https://files.pythonhosted.org/packages/b6/d8/d44ad3be9eece0a03a7fa09328f5544307f770a41c704197e9e2cfbe8c20/tiny_dag-0.0.9.tar.gz
+[2024-05-04 17:11:41] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/5c/56/ba3604688c4afa5e99db6478ce8f544e8004f5f02ef5c39a972319c2724f/ipex_llm-2.1.0b20240503-py3-none-win_amd64.whl
+[2024-05-04 17:11:41] INFO root fetch - processPackages [tiny-dag]: executing diffoscope
+[2024-05-04 17:11:41] INFO root fetch - processPackages [tiny-dag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiny_dag-0.0.8.tar.gz tmp/tiny_dag-0.0.9.tar.gz --markdown 20240504/t/tiny-dag/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 17:11:42] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-05-04 17:11:42] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240502-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240503-py3-none-win_amd64.whl.zip --markdown 20240504/i/ipex-llm/2.1.0b20240502-2.1.0b20240503/README.md --exclude *.pyd
+[2024-05-04 17:11:42] INFO root fetch - processPackages [tiny-dag]: Remove: archive file [/home/abi/fetcher/tmp/tiny_dag-0.0.8.tar.gz]
+[2024-05-04 17:11:42] INFO root fetch - processPackages [tiny-dag]: Remove: archive file [/home/abi/fetcher/tmp/tiny_dag-0.0.9.tar.gz]
+[2024-05-04 17:11:42] INFO root fetch - main [MainThread]: End processing [tiny-dag]: success
+[2024-05-04 17:12:10] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240502-py3-none-win_amd64.whl.zip]
+[2024-05-04 17:12:10] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240503-py3-none-win_amd64.whl.zip]
+[2024-05-04 17:12:10] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-05-04 17:12:10] INFO root fetch - main [MainThread]: Store serial: [23058776]
