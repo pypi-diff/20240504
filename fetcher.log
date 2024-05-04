@@ -20294,3 +20294,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:29:31] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.9.tar.gz]
 [2024-05-04 22:29:31] INFO root fetch - main [MainThread]: End processing [dekvenv]: success
 [2024-05-04 22:29:31] INFO root fetch - main [MainThread]: Store serial: [23060805]
+[2024-05-04 22:31:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060805]
+[2024-05-04 22:31:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 22:31:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: JustDeepIt
+[2024-05-04 22:31:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gramps-webapi
+[2024-05-04 22:31:40] INFO root fetch - processPackages [JustDeepIt]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-04 22:31:40] INFO root fetch - processPackages [gramps-webapi]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-04 22:31:40] INFO root fetch - processPackages [JustDeepIt]: Downloading https://files.pythonhosted.org/packages/76/34/3a4c4759aec3aa12fb8ff1d029f391d8cd6c31ec736bee2cd7e5a455516c/justdeepit-0.2.0.tar.gz
+[2024-05-04 22:31:40] INFO root fetch - processPackages [gramps-webapi]: Downloading https://files.pythonhosted.org/packages/8e/9c/4632882ea07088b7bd5ec1d70f981ab9f6d0c533bc7ecf46234d1e2d72a5/gramps_webapi-2.3.0.tar.gz
+[2024-05-04 22:31:40] INFO root fetch - processPackages [gramps-webapi]: Downloading https://files.pythonhosted.org/packages/1e/aa/be102a64fab58ccd9abff78558f51c78a3974d383322e3c9b84342aed8b7/gramps_webapi-2.3.1.tar.gz
+[2024-05-04 22:31:40] INFO root fetch - processPackages [JustDeepIt]: Downloading https://files.pythonhosted.org/packages/b2/19/ec4d4fe09e9d827fc04cc5084e60aee3325c7041443d758656a3af6cae4d/JustDeepIt-0.2.1.tar.gz
+[2024-05-04 22:31:40] INFO root fetch - processPackages [gramps-webapi]: executing diffoscope
+[2024-05-04 22:31:40] INFO root fetch - processPackages [gramps-webapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gramps_webapi-2.3.0.tar.gz tmp/gramps_webapi-2.3.1.tar.gz --markdown 20240504/g/gramps-webapi/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-04 22:31:41] INFO root fetch - processPackages [JustDeepIt]: executing diffoscope
+[2024-05-04 22:31:41] INFO root fetch - processPackages [JustDeepIt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/justdeepit-0.2.0.tar.gz tmp/JustDeepIt-0.2.1.tar.gz --markdown 20240504/J/JustDeepIt/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-04 22:31:41] INFO root fetch - processPackages [JustDeepIt]: Remove: archive file [/home/abi/fetcher/tmp/justdeepit-0.2.0.tar.gz]
+[2024-05-04 22:31:41] INFO root fetch - processPackages [JustDeepIt]: Remove: archive file [/home/abi/fetcher/tmp/JustDeepIt-0.2.1.tar.gz]
+[2024-05-04 22:31:41] INFO root fetch - main [MainThread]: End processing [JustDeepIt]: success
+[2024-05-04 22:31:42] INFO root fetch - processPackages [gramps-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gramps_webapi-2.3.0.tar.gz]
+[2024-05-04 22:31:42] INFO root fetch - processPackages [gramps-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gramps_webapi-2.3.1.tar.gz]
+[2024-05-04 22:31:42] INFO root fetch - main [MainThread]: End processing [gramps-webapi]: success
+[2024-05-04 22:31:42] INFO root fetch - main [MainThread]: Store serial: [23060810]
