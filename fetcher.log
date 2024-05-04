@@ -17451,3 +17451,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:06:10] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
 [2024-05-04 19:06:10] INFO root fetch - main [MainThread]: End processing [ok-script]: success
 [2024-05-04 19:06:10] INFO root fetch - main [MainThread]: Store serial: [23059470]
+[2024-05-04 19:08:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059470]
+[2024-05-04 19:08:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 19:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastbzip2-lib
+[2024-05-04 19:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mteb
+[2024-05-04 19:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapegraphai
+[2024-05-04 19:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyauth0
+[2024-05-04 19:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bdffont
+[2024-05-04 19:08:19] INFO root fetch - processPackages [scrapegraphai]: New version: [0.8.0b1] Old Version: [0.8.0]
+[2024-05-04 19:08:19] INFO root fetch - processPackages [pyauth0]: New version: [0.1.3a2] Old Version: [0.1.3a1]
+[2024-05-04 19:08:19] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/e5/05/af69712866a86bd19d367eb25f87eb41517f37d989d54875394fb7a8365f/pyauth0-0.1.3a1.tar.gz
+[2024-05-04 19:08:19] WARNING root fetch - processPackages [fastbzip2-lib]: Skipping, unable to determine old version
+[2024-05-04 19:08:19] INFO root fetch - main [MainThread]: End processing [fastbzip2-lib] error
+[2024-05-04 19:08:19] INFO root fetch - processPackages [bdffont]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 19:08:19] INFO root fetch - processPackages [mteb]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-05-04 19:08:19] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/04/33/094ead8987ac750396b45cacfc7bb5098380d5eccb1ae8492d4e88b89c86/scrapegraphai-0.8.0.tar.gz
+[2024-05-04 19:08:19] INFO root fetch - processPackages [bdffont]: Downloading https://files.pythonhosted.org/packages/9f/78/c824af9f0c4c22da3a7b211d6acf4fcf5cc3738dae57d6eb3d860af0f5e6/bdffont-0.0.8.tar.gz
+[2024-05-04 19:08:19] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/b5/e7/1ffcd000a118bd6a4b183610de5d0891ab9c767ccabb6c7e3f63ba9edb45/mteb-1.7.8.tar.gz
+[2024-05-04 19:08:19] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/f9/b2/8bdf82185c887bd561953d1ba3ab3f9e4595bbcb9f60fc363b990a6e2c38/pyauth0-0.1.3a2.tar.gz
+[2024-05-04 19:08:19] INFO root fetch - processPackages [pyauth0]: executing diffoscope
+[2024-05-04 19:08:19] INFO root fetch - processPackages [pyauth0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyauth0-0.1.3a1.tar.gz tmp/pyauth0-0.1.3a2.tar.gz --markdown 20240504/p/pyauth0/0.1.3a1-0.1.3a2/README.md --exclude *.pyd
+[2024-05-04 19:08:19] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/fd/c7/59a6f31a5e1a2de9b47ccdf75bc8bdb8c6fc8fa7ce072a25c1ca5b834b63/scrapegraphai-0.8.0b1.tar.gz
+[2024-05-04 19:08:19] INFO root fetch - processPackages [bdffont]: Downloading https://files.pythonhosted.org/packages/cb/1d/a43b84db5c4d3d9bdecfbaa4cbf25995eedcd5543266587876372fb4e338/bdffont-0.0.9.tar.gz
+[2024-05-04 19:08:19] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-04 19:08:19] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.8.0.tar.gz tmp/scrapegraphai-0.8.0b1.tar.gz --markdown 20240504/s/scrapegraphai/0.8.0-0.8.0b1/README.md --exclude *.pyd
+[2024-05-04 19:08:19] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/eb/d9/b925270f0a2467b3204b0f467cc702668d24bd9a8e876306ea7e3da17507/mteb-1.7.9.tar.gz
+[2024-05-04 19:08:19] INFO root fetch - processPackages [bdffont]: executing diffoscope
+[2024-05-04 19:08:19] INFO root fetch - processPackages [bdffont]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdffont-0.0.8.tar.gz tmp/bdffont-0.0.9.tar.gz --markdown 20240504/b/bdffont/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 19:08:19] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-04 19:08:19] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.8.tar.gz tmp/mteb-1.7.9.tar.gz --markdown 20240504/m/mteb/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-05-04 19:08:20] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.3a1.tar.gz]
+[2024-05-04 19:08:20] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.3a2.tar.gz]
+[2024-05-04 19:08:20] INFO root fetch - main [MainThread]: End processing [pyauth0]: success
+[2024-05-04 19:08:20] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.8.0.tar.gz]
+[2024-05-04 19:08:20] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.8.0b1.tar.gz]
+[2024-05-04 19:08:20] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-04 19:08:20] INFO root fetch - processPackages [bdffont]: Remove: archive file [/home/abi/fetcher/tmp/bdffont-0.0.8.tar.gz]
+[2024-05-04 19:08:20] INFO root fetch - processPackages [bdffont]: Remove: archive file [/home/abi/fetcher/tmp/bdffont-0.0.9.tar.gz]
+[2024-05-04 19:08:20] INFO root fetch - main [MainThread]: End processing [bdffont]: success
+[2024-05-04 19:08:21] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.8.tar.gz]
+[2024-05-04 19:08:21] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
+[2024-05-04 19:08:21] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-04 19:08:21] INFO root fetch - main [MainThread]: Store serial: [23059489]
