@@ -13712,3 +13712,17 @@
 [2024-05-04 13:43:57] INFO root fetch - processPackages [netbox-contract]: Remove: archive file [/home/abi/fetcher/tmp/netbox-contract-2.0.9.tar.gz]
 [2024-05-04 13:43:57] INFO root fetch - main [MainThread]: End processing [netbox-contract]: success
 [2024-05-04 13:43:57] INFO root fetch - main [MainThread]: Store serial: [23057763]
+[2024-05-04 13:46:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057763]
+[2024-05-04 13:46:06] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 13:48:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057764]
+[2024-05-04 13:48:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 13:48:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: calldict
+[2024-05-04 13:48:11] INFO root fetch - processPackages [calldict]: New version: [0.7] Old Version: [0.6]
+[2024-05-04 13:48:12] INFO root fetch - processPackages [calldict]: Downloading https://files.pythonhosted.org/packages/0d/7b/4b9cbd8b85b4220772a650e3f9796431a283b581b606c0c2b9280724c7f3/calldict-0.6.tar.gz
+[2024-05-04 13:48:12] INFO root fetch - processPackages [calldict]: Downloading https://files.pythonhosted.org/packages/4a/ab/70db7c724daaee4674cbaa7af0de257ab23ca0e6dede2f5692db6eebf00e/calldict-0.7.tar.gz
+[2024-05-04 13:48:12] INFO root fetch - processPackages [calldict]: executing diffoscope
+[2024-05-04 13:48:12] INFO root fetch - processPackages [calldict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calldict-0.6.tar.gz tmp/calldict-0.7.tar.gz --markdown 20240504/c/calldict/0.6-0.7/README.md --exclude *.pyd
+[2024-05-04 13:48:12] INFO root fetch - processPackages [calldict]: Remove: archive file [/home/abi/fetcher/tmp/calldict-0.6.tar.gz]
+[2024-05-04 13:48:12] INFO root fetch - processPackages [calldict]: Remove: archive file [/home/abi/fetcher/tmp/calldict-0.7.tar.gz]
+[2024-05-04 13:48:12] INFO root fetch - main [MainThread]: End processing [calldict]: success
+[2024-05-04 13:48:12] INFO root fetch - main [MainThread]: Store serial: [23057766]
