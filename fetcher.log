@@ -15065,3 +15065,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:54:46] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.4-cp38-cp38-manylinux1_x86_64.whl.zip]
 [2024-05-04 15:54:46] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
 [2024-05-04 15:54:46] INFO root fetch - main [MainThread]: Store serial: [23058331]
+[2024-05-04 15:56:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058331]
+[2024-05-04 15:56:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 15:56:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: archspec
+[2024-05-04 15:56:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbtof
+[2024-05-04 15:56:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gradio-image-annotation
+[2024-05-04 15:56:56] INFO root fetch - processPackages [nbtof]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-04 15:56:56] INFO root fetch - processPackages [archspec]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-04 15:56:56] INFO root fetch - processPackages [gradio-image-annotation]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-04 15:56:56] INFO root fetch - processPackages [nbtof]: Downloading https://files.pythonhosted.org/packages/d8/28/91dcaef10f05e5e2522ade06ae713355d1de96b9e57b1788c162c06b48dd/nbtof-0.0.6.tar.gz
+[2024-05-04 15:56:56] INFO root fetch - processPackages [gradio-image-annotation]: Downloading https://files.pythonhosted.org/packages/ce/df/8d8403de3405d1f0b92dcbd2c415b8a55057f210c9e47f2bb8384eedba5e/gradio_image_annotation-0.0.5.tar.gz
+[2024-05-04 15:56:56] INFO root fetch - processPackages [archspec]: Downloading https://files.pythonhosted.org/packages/15/5f/1c1692a3c6fa58f8d6cfb99c703be21190d26889eae71385b53e899c95c3/archspec-0.2.3.tar.gz
+[2024-05-04 15:56:56] INFO root fetch - processPackages [nbtof]: Downloading https://files.pythonhosted.org/packages/12/4d/ba1c15fa6a956c8b19fa31a1b009e8d43f340d3826f078699a0a312db0e5/nbtof-0.0.7.tar.gz
+[2024-05-04 15:56:56] INFO root fetch - processPackages [archspec]: Downloading https://files.pythonhosted.org/packages/a2/47/31f9bdf4570734d9e1c6dd10dd5a2ee0bab658b799b9e6ac2a4b61b181a1/archspec-0.2.4.tar.gz
+[2024-05-04 15:56:57] INFO root fetch - processPackages [gradio-image-annotation]: Downloading https://files.pythonhosted.org/packages/f7/7a/ed915d6251af308d93741b81728e0bc4647862cbd9deb7501376682a7435/gradio_image_annotation-0.0.6-py3-none-any.whl
+[2024-05-04 15:56:57] INFO root fetch - processPackages [nbtof]: executing diffoscope
+[2024-05-04 15:56:57] INFO root fetch - processPackages [nbtof]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbtof-0.0.6.tar.gz tmp/nbtof-0.0.7.tar.gz --markdown 20240504/n/nbtof/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-04 15:56:57] INFO root fetch - processPackages [archspec]: executing diffoscope
+[2024-05-04 15:56:57] INFO root fetch - processPackages [archspec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archspec-0.2.3.tar.gz tmp/archspec-0.2.4.tar.gz --markdown 20240504/a/archspec/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-04 15:56:57] INFO root fetch - processPackages [gradio-image-annotation]: executing diffoscope
+[2024-05-04 15:56:57] INFO root fetch - processPackages [gradio-image-annotation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_image_annotation-0.0.5.tar.gz tmp/gradio_image_annotation-0.0.6-py3-none-any.whl.zip --markdown 20240504/g/gradio-image-annotation/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-04 15:56:57] INFO root fetch - processPackages [nbtof]: Remove: archive file [/home/abi/fetcher/tmp/nbtof-0.0.6.tar.gz]
+[2024-05-04 15:56:57] INFO root fetch - processPackages [nbtof]: Remove: archive file [/home/abi/fetcher/tmp/nbtof-0.0.7.tar.gz]
+[2024-05-04 15:56:57] INFO root fetch - main [MainThread]: End processing [nbtof]: success
+[2024-05-04 15:56:57] INFO root fetch - processPackages [archspec]: Remove: archive file [/home/abi/fetcher/tmp/archspec-0.2.3.tar.gz]
+[2024-05-04 15:56:57] INFO root fetch - processPackages [archspec]: Remove: archive file [/home/abi/fetcher/tmp/archspec-0.2.4.tar.gz]
+[2024-05-04 15:56:57] INFO root fetch - main [MainThread]: End processing [archspec]: success
+[2024-05-04 15:56:57] INFO root fetch - processPackages [gradio-image-annotation]: Remove: archive file [/home/abi/fetcher/tmp/gradio_image_annotation-0.0.5.tar.gz]
+[2024-05-04 15:56:57] INFO root fetch - processPackages [gradio-image-annotation]: Remove: archive file [/home/abi/fetcher/tmp/gradio_image_annotation-0.0.6-py3-none-any.whl.zip]
+[2024-05-04 15:56:57] INFO root fetch - main [MainThread]: End processing [gradio-image-annotation]: success
+[2024-05-04 15:56:57] INFO root fetch - main [MainThread]: Store serial: [23058346]
