@@ -9406,3 +9406,24 @@
 [2024-05-04 06:59:43] WARNING root fetch - processPackages [opendp]: Skipping package: exceeds size limit 36048210>=10485760
 [2024-05-04 06:59:43] INFO root fetch - main [MainThread]: End processing [opendp] error
 [2024-05-04 06:59:43] INFO root fetch - main [MainThread]: Store serial: [23055762]
+[2024-05-04 07:01:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055762]
+[2024-05-04 07:01:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 07:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pc-perf
+[2024-05-04 07:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zeblok-sdk
+[2024-05-04 07:01:52] INFO root fetch - processPackages [zeblok-sdk]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-04 07:01:52] INFO root fetch - processPackages [pc-perf]: New version: [1.2.0] Old Version: [1.1.6]
+[2024-05-04 07:01:52] INFO root fetch - processPackages [pc-perf]: Downloading https://files.pythonhosted.org/packages/c1/72/453deddf40b193d2935557544a7a1ce8c82e7fdfb87e70eb0742800a71ec/pc-perf-1.1.6.tar.gz
+[2024-05-04 07:01:52] INFO root fetch - processPackages [zeblok-sdk]: Downloading https://files.pythonhosted.org/packages/4d/0f/20fc8bcd1f84e8954e652b10444a3b9ed35c0fcf5fa7d86a1f24408a8316/zeblok-sdk-1.0.0.tar.gz
+[2024-05-04 07:01:52] INFO root fetch - processPackages [pc-perf]: Downloading https://files.pythonhosted.org/packages/aa/ff/75ea5da5999772295109a158e51e7d15fc0d623f7a5dd85bbb55572d1c72/pc-perf-1.2.0.tar.gz
+[2024-05-04 07:01:52] INFO root fetch - processPackages [zeblok-sdk]: Downloading https://files.pythonhosted.org/packages/94/53/fe8c2eaa07000a7520d1cab28cd1a4d431d2d3bc26b3f847b212a764cb83/zeblok_sdk-1.1.0.tar.gz
+[2024-05-04 07:01:52] INFO root fetch - processPackages [pc-perf]: executing diffoscope
+[2024-05-04 07:01:52] INFO root fetch - processPackages [pc-perf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pc-perf-1.1.6.tar.gz tmp/pc-perf-1.2.0.tar.gz --markdown 20240504/p/pc-perf/1.1.6-1.2.0/README.md --exclude *.pyd
+[2024-05-04 07:01:53] INFO root fetch - processPackages [zeblok-sdk]: executing diffoscope
+[2024-05-04 07:01:53] INFO root fetch - processPackages [zeblok-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zeblok-sdk-1.0.0.tar.gz tmp/zeblok_sdk-1.1.0.tar.gz --markdown 20240504/z/zeblok-sdk/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-04 07:01:53] INFO root fetch - processPackages [pc-perf]: Remove: archive file [/home/abi/fetcher/tmp/pc-perf-1.1.6.tar.gz]
+[2024-05-04 07:01:53] INFO root fetch - processPackages [pc-perf]: Remove: archive file [/home/abi/fetcher/tmp/pc-perf-1.2.0.tar.gz]
+[2024-05-04 07:01:53] INFO root fetch - main [MainThread]: End processing [pc-perf]: success
+[2024-05-04 07:01:53] INFO root fetch - processPackages [zeblok-sdk]: Remove: archive file [/home/abi/fetcher/tmp/zeblok-sdk-1.0.0.tar.gz]
+[2024-05-04 07:01:53] INFO root fetch - processPackages [zeblok-sdk]: Remove: archive file [/home/abi/fetcher/tmp/zeblok_sdk-1.1.0.tar.gz]
+[2024-05-04 07:01:53] INFO root fetch - main [MainThread]: End processing [zeblok-sdk]: success
+[2024-05-04 07:01:53] INFO root fetch - main [MainThread]: Store serial: [23055781]
