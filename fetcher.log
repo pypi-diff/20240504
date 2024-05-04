@@ -16856,3 +16856,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:20:29] INFO root fetch - processPackages [EAP]: Remove: archive file [/home/abi/fetcher/tmp/EAP-1.1.9.tar.gz]
 [2024-05-04 18:20:29] INFO root fetch - main [MainThread]: End processing [EAP]: success
 [2024-05-04 18:20:29] INFO root fetch - main [MainThread]: Store serial: [23059233]
+[2024-05-04 18:22:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059233]
+[2024-05-04 18:22:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 18:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vkdispatch
+[2024-05-04 18:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: surfkit
+[2024-05-04 18:22:38] INFO root fetch - processPackages [vkdispatch]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-04 18:22:38] INFO root fetch - processPackages [surfkit]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-04 18:22:38] INFO root fetch - processPackages [vkdispatch]: Downloading https://files.pythonhosted.org/packages/7e/91/037f65e6cf338e284da9b78630ef07f95373f3961d863f9a6e9b0dabc1b2/vkdispatch-0.0.3.tar.gz
+[2024-05-04 18:22:39] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/c2/e4/d9d6efb4013a22047e07b2174dc8716a86fe2b3fe0652e6e1edddbde177b/surfkit-0.1.98.tar.gz
+[2024-05-04 18:22:39] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/65/a8/bfc822b58240522d18c4cf24a25a6f2476da037058406af11377393fa476/surfkit-0.1.99.tar.gz
+[2024-05-04 18:22:39] INFO root fetch - processPackages [vkdispatch]: Downloading https://files.pythonhosted.org/packages/1f/03/41a95b6151e542b3b5aa69d66c32a4602992496f40477fb98747d29826b7/vkdispatch-0.0.4.tar.gz
+[2024-05-04 18:22:39] INFO root fetch - processPackages [surfkit]: executing diffoscope
+[2024-05-04 18:22:39] INFO root fetch - processPackages [surfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfkit-0.1.98.tar.gz tmp/surfkit-0.1.99.tar.gz --markdown 20240504/s/surfkit/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-04 18:22:39] INFO root fetch - processPackages [vkdispatch]: executing diffoscope
+[2024-05-04 18:22:39] INFO root fetch - processPackages [vkdispatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vkdispatch-0.0.3.tar.gz tmp/vkdispatch-0.0.4.tar.gz --markdown 20240504/v/vkdispatch/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-04 18:22:39] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.98.tar.gz]
+[2024-05-04 18:22:39] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
+[2024-05-04 18:22:39] INFO root fetch - main [MainThread]: End processing [surfkit]: success
+[2024-05-04 18:22:40] INFO root fetch - processPackages [vkdispatch]: Remove: archive file [/home/abi/fetcher/tmp/vkdispatch-0.0.3.tar.gz]
+[2024-05-04 18:22:40] INFO root fetch - processPackages [vkdispatch]: Remove: archive file [/home/abi/fetcher/tmp/vkdispatch-0.0.4.tar.gz]
+[2024-05-04 18:22:40] INFO root fetch - main [MainThread]: End processing [vkdispatch]: success
+[2024-05-04 18:22:40] INFO root fetch - main [MainThread]: Store serial: [23059238]
