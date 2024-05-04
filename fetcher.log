@@ -9516,3 +9516,33 @@
 [2024-05-04 07:08:29] INFO root fetch - processPackages [libfwevt-python]: Remove: archive file [/home/abi/fetcher/tmp/libfwevt-python-20240504.tar.gz]
 [2024-05-04 07:08:29] INFO root fetch - main [MainThread]: End processing [libfwevt-python]: success
 [2024-05-04 07:08:29] INFO root fetch - main [MainThread]: Store serial: [23055812]
+[2024-05-04 07:10:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055812]
+[2024-05-04 07:10:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 07:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multiconnect
+[2024-05-04 07:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graph-judge
+[2024-05-04 07:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: genmax
+[2024-05-04 07:10:38] INFO root fetch - processPackages [multiconnect]: New version: [2.33.19] Old Version: [2.33.18]
+[2024-05-04 07:10:38] INFO root fetch - processPackages [graph-judge]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-04 07:10:38] INFO root fetch - processPackages [genmax]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-04 07:10:38] INFO root fetch - processPackages [multiconnect]: Downloading https://files.pythonhosted.org/packages/81/32/97fcd19b7129dc620a407ef09dd5742fdb7739a13f4f74f01f080a2967a1/multiconnect-2.33.18.tar.gz
+[2024-05-04 07:10:38] INFO root fetch - processPackages [graph-judge]: Downloading https://files.pythonhosted.org/packages/8a/b9/4204c9a5012997a5ca7769e91ac19c4d136f9eb5691c2f87efbe770ac513/graph_judge-0.0.5.tar.gz
+[2024-05-04 07:10:38] INFO root fetch - processPackages [genmax]: Downloading https://files.pythonhosted.org/packages/7f/cf/b7c665f4f4df38bf60eada93ee32c287c3385b4fc437f117163aae14e808/genmax-0.1.6.tar.gz
+[2024-05-04 07:10:38] INFO root fetch - processPackages [multiconnect]: Downloading https://files.pythonhosted.org/packages/e4/0f/dee15a515312eeaa29911748064cd6d1ed9051cc680fec6d3f8bc6c82876/multiconnect-2.33.19.tar.gz
+[2024-05-04 07:10:38] INFO root fetch - processPackages [graph-judge]: Downloading https://files.pythonhosted.org/packages/3a/a7/8c19c54c2f8d9263df27bfc91423d39860c2d6b49a8afc4e68ecd5427a83/graph_judge-0.0.6.tar.gz
+[2024-05-04 07:10:38] INFO root fetch - processPackages [genmax]: Downloading https://files.pythonhosted.org/packages/d6/ed/a12f28cbcd5dc2c3ff45680f61c64afe55de43c772262ba71182a114aaf7/genmax-0.1.7.tar.gz
+[2024-05-04 07:10:38] INFO root fetch - processPackages [multiconnect]: executing diffoscope
+[2024-05-04 07:10:38] INFO root fetch - processPackages [multiconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiconnect-2.33.18.tar.gz tmp/multiconnect-2.33.19.tar.gz --markdown 20240504/m/multiconnect/2.33.18-2.33.19/README.md --exclude *.pyd
+[2024-05-04 07:10:38] INFO root fetch - processPackages [graph-judge]: executing diffoscope
+[2024-05-04 07:10:38] INFO root fetch - processPackages [graph-judge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph_judge-0.0.5.tar.gz tmp/graph_judge-0.0.6.tar.gz --markdown 20240504/g/graph-judge/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-04 07:10:38] INFO root fetch - processPackages [genmax]: executing diffoscope
+[2024-05-04 07:10:38] INFO root fetch - processPackages [genmax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genmax-0.1.6.tar.gz tmp/genmax-0.1.7.tar.gz --markdown 20240504/g/genmax/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-04 07:10:39] INFO root fetch - processPackages [multiconnect]: Remove: archive file [/home/abi/fetcher/tmp/multiconnect-2.33.18.tar.gz]
+[2024-05-04 07:10:39] INFO root fetch - processPackages [multiconnect]: Remove: archive file [/home/abi/fetcher/tmp/multiconnect-2.33.19.tar.gz]
+[2024-05-04 07:10:39] INFO root fetch - main [MainThread]: End processing [multiconnect]: success
+[2024-05-04 07:10:39] INFO root fetch - processPackages [graph-judge]: Remove: archive file [/home/abi/fetcher/tmp/graph_judge-0.0.5.tar.gz]
+[2024-05-04 07:10:39] INFO root fetch - processPackages [graph-judge]: Remove: archive file [/home/abi/fetcher/tmp/graph_judge-0.0.6.tar.gz]
+[2024-05-04 07:10:39] INFO root fetch - main [MainThread]: End processing [graph-judge]: success
+[2024-05-04 07:10:39] INFO root fetch - processPackages [genmax]: Remove: archive file [/home/abi/fetcher/tmp/genmax-0.1.6.tar.gz]
+[2024-05-04 07:10:39] INFO root fetch - processPackages [genmax]: Remove: archive file [/home/abi/fetcher/tmp/genmax-0.1.7.tar.gz]
+[2024-05-04 07:10:39] INFO root fetch - main [MainThread]: End processing [genmax]: success
+[2024-05-04 07:10:39] INFO root fetch - main [MainThread]: Store serial: [23055820]
