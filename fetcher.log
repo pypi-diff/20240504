@@ -21259,3 +21259,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:43:44] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.0b11.tar.gz]
 [2024-05-04 23:43:44] INFO root fetch - main [MainThread]: End processing [notolog]: success
 [2024-05-04 23:43:44] INFO root fetch - main [MainThread]: Store serial: [23061196]
+[2024-05-04 23:45:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061196]
+[2024-05-04 23:45:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 23:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-04 23:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mdreftidy
+[2024-05-04 23:45:53] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-04 23:45:53] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-04 23:45:53] INFO root fetch - processPackages [mdreftidy]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-04 23:45:53] INFO root fetch - processPackages [mdreftidy]: Downloading https://files.pythonhosted.org/packages/17/5f/f503e41574d934567838904659be6329aefdab611d238a1ac9cf7fa6f60d/mdreftidy-0.2.0.tar.gz
+[2024-05-04 23:45:54] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-04 23:45:54] INFO root fetch - processPackages [mdreftidy]: Downloading https://files.pythonhosted.org/packages/d6/dc/3ce83b4beef38cabde0abccfea21677cb98572a17ed9f354996f49f5a17e/mdreftidy-0.3.0.tar.gz
+[2024-05-04 23:45:54] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-04 23:45:54] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240504/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-04 23:45:54] INFO root fetch - processPackages [mdreftidy]: executing diffoscope
+[2024-05-04 23:45:54] INFO root fetch - processPackages [mdreftidy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdreftidy-0.2.0.tar.gz tmp/mdreftidy-0.3.0.tar.gz --markdown 20240504/m/mdreftidy/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-04 23:45:55] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-04 23:45:55] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-04 23:45:55] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-04 23:45:55] INFO root fetch - processPackages [mdreftidy]: Remove: archive file [/home/abi/fetcher/tmp/mdreftidy-0.2.0.tar.gz]
+[2024-05-04 23:45:55] INFO root fetch - processPackages [mdreftidy]: Remove: archive file [/home/abi/fetcher/tmp/mdreftidy-0.3.0.tar.gz]
+[2024-05-04 23:45:55] INFO root fetch - main [MainThread]: End processing [mdreftidy]: success
+[2024-05-04 23:45:55] INFO root fetch - main [MainThread]: Store serial: [23061202]
