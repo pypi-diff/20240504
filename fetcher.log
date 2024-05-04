@@ -8174,3 +8174,27 @@
 [2024-05-04 05:02:30] INFO root fetch - processPackages [odoo-addon-resource-booking]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_resource_booking-16.0.1.0.0.8-py3-none-any.whl.zip]
 [2024-05-04 05:02:30] INFO root fetch - main [MainThread]: End processing [odoo-addon-resource-booking]: success
 [2024-05-04 05:02:30] INFO root fetch - main [MainThread]: Store serial: [23055174]
+[2024-05-04 05:04:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055174]
+[2024-05-04 05:04:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 05:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transactify
+[2024-05-04 05:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fxn
+[2024-05-04 05:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-base-unece
+[2024-05-04 05:04:50] INFO root fetch - processPackages [odoo-addon-base-unece]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.3]
+[2024-05-04 05:04:50] WARNING root fetch - processPackages [transactify]: Skipping, unable to determine old version
+[2024-05-04 05:04:50] INFO root fetch - main [MainThread]: End processing [transactify] error
+[2024-05-04 05:04:50] INFO root fetch - processPackages [fxn]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 05:04:50] INFO root fetch - processPackages [odoo-addon-base-unece]: Downloading https://files.pythonhosted.org/packages/3d/1a/4e6ac9a87c388e6744aa00aa053219a5020e27e55079e426f8adb42eae93/odoo_addon_base_unece-17.0.1.0.0.3-py3-none-any.whl
+[2024-05-04 05:04:50] INFO root fetch - processPackages [fxn]: Downloading https://files.pythonhosted.org/packages/f6/d0/830118db59d210c9a93b7883d7c6298116681c31c394a877e93bc951cd8b/fxn-0.0.8.tar.gz
+[2024-05-04 05:04:51] INFO root fetch - processPackages [fxn]: Downloading https://files.pythonhosted.org/packages/83/0a/476760db9cac6b1baac6f1d0b7736e79d64d8a18e9dea83ec6b9eb32d820/fxn-0.0.9.tar.gz
+[2024-05-04 05:04:51] INFO root fetch - processPackages [odoo-addon-base-unece]: Downloading https://files.pythonhosted.org/packages/7e/2e/ce85c7647dc6cf21ebb45bb5024624b6be3a12c214ed43e3998d8c9384c5/odoo_addon_base_unece-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-04 05:04:51] INFO root fetch - processPackages [odoo-addon-base-unece]: executing diffoscope
+[2024-05-04 05:04:51] INFO root fetch - processPackages [odoo-addon-base-unece]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_unece-17.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_base_unece-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-base-unece/17.0.1.0.0.3-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-04 05:04:51] INFO root fetch - processPackages [fxn]: executing diffoscope
+[2024-05-04 05:04:51] INFO root fetch - processPackages [fxn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fxn-0.0.8.tar.gz tmp/fxn-0.0.9.tar.gz --markdown 20240504/f/fxn/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 05:04:52] INFO root fetch - processPackages [odoo-addon-base-unece]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_unece-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-04 05:04:52] INFO root fetch - processPackages [odoo-addon-base-unece]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_unece-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-04 05:04:52] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-unece]: success
+[2024-05-04 05:04:52] INFO root fetch - processPackages [fxn]: Remove: archive file [/home/abi/fetcher/tmp/fxn-0.0.8.tar.gz]
+[2024-05-04 05:04:52] INFO root fetch - processPackages [fxn]: Remove: archive file [/home/abi/fetcher/tmp/fxn-0.0.9.tar.gz]
+[2024-05-04 05:04:52] INFO root fetch - main [MainThread]: End processing [fxn]: success
+[2024-05-04 05:04:52] INFO root fetch - main [MainThread]: Store serial: [23055184]
