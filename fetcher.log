@@ -15969,3 +15969,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:14:21] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.5.tar.gz]
 [2024-05-04 17:14:21] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-04 17:14:21] INFO root fetch - main [MainThread]: Store serial: [23058790]
+[2024-05-04 17:16:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058790]
+[2024-05-04 17:16:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 17:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: timeseries-shaper
+[2024-05-04 17:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MaaFw
+[2024-05-04 17:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pt-pump-up
+[2024-05-04 17:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easy-llama
+[2024-05-04 17:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygazpar
+[2024-05-04 17:16:30] INFO root fetch - processPackages [pt-pump-up]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 17:16:30] INFO root fetch - processPackages [easy-llama]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 17:16:30] INFO root fetch - processPackages [pt-pump-up]: Downloading https://files.pythonhosted.org/packages/53/0a/12caeb36fd9d48eb30e4e02e45850a47ba3731192f71e0b5efc006e3f6c0/pt_pump_up-0.0.8.tar.gz
+[2024-05-04 17:16:30] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/ce/e9/39a06b9ce349625a5d6c7da00644a8cc7320112fb3ba2b2e54944d3a6135/easy_llama-0.1.8.tar.gz
+[2024-05-04 17:16:30] WARNING root fetch - processPackages [timeseries-shaper]: Skipping, unable to determine old version
+[2024-05-04 17:16:30] INFO root fetch - main [MainThread]: End processing [timeseries-shaper] error
+[2024-05-04 17:16:30] INFO root fetch - processPackages [MaaFw]: New version: [1.7.0b2] Old Version: [1.7.0]
+[2024-05-04 17:16:30] INFO root fetch - processPackages [pygazpar]: New version: [1.3.0a6] Old Version: [1.3.0a2]
+[2024-05-04 17:16:30] INFO root fetch - processPackages [pt-pump-up]: Downloading https://files.pythonhosted.org/packages/20/16/f20f31518f04498a94a81890f4759380fe8e7df45d1abe5271636efac9e6/pt_pump_up-0.0.9.tar.gz
+[2024-05-04 17:16:30] INFO root fetch - processPackages [MaaFw]: Downloading https://files.pythonhosted.org/packages/7f/69/de74181e67dac105e1c32e8f6194a726bf43f939020e858f2052911f595a/MaaFw-1.7.0-py3-none-win_arm64.whl
+[2024-05-04 17:16:30] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/98/5d/f5007368104957b81fc41c01c18234178e2875066cca25192bec1d846caf/easy_llama-0.1.9.tar.gz
+[2024-05-04 17:16:30] INFO root fetch - processPackages [pt-pump-up]: executing diffoscope
+[2024-05-04 17:16:30] INFO root fetch - processPackages [pt-pump-up]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pt_pump_up-0.0.8.tar.gz tmp/pt_pump_up-0.0.9.tar.gz --markdown 20240504/p/pt-pump-up/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 17:16:30] INFO root fetch - processPackages [easy-llama]: executing diffoscope
+[2024-05-04 17:16:30] INFO root fetch - processPackages [easy-llama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_llama-0.1.8.tar.gz tmp/easy_llama-0.1.9.tar.gz --markdown 20240504/e/easy-llama/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 17:16:30] INFO root fetch - processPackages [pygazpar]: Downloading https://files.pythonhosted.org/packages/47/80/fdd5f7ed7a3a522cc8c14df58b218befffffb884afb81da64c57fbf3598d/pygazpar-1.3.0a2.tar.gz
+[2024-05-04 17:16:30] WARNING root fetch - processPackages [MaaFw]: Skipping package: exceeds size limit 12026241>=10485760
+[2024-05-04 17:16:30] INFO root fetch - main [MainThread]: End processing [MaaFw] error
+[2024-05-04 17:16:31] INFO root fetch - processPackages [pygazpar]: Downloading https://files.pythonhosted.org/packages/ce/78/12ed7a31b919760c06984806b24af7dcb5696bac8748e6d1bd03d86c1943/pygazpar-1.3.0a6.tar.gz
+[2024-05-04 17:16:31] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.8.tar.gz]
+[2024-05-04 17:16:31] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.9.tar.gz]
+[2024-05-04 17:16:31] INFO root fetch - main [MainThread]: End processing [easy-llama]: success
+[2024-05-04 17:16:31] INFO root fetch - processPackages [pt-pump-up]: Remove: archive file [/home/abi/fetcher/tmp/pt_pump_up-0.0.8.tar.gz]
+[2024-05-04 17:16:31] INFO root fetch - processPackages [pt-pump-up]: Remove: archive file [/home/abi/fetcher/tmp/pt_pump_up-0.0.9.tar.gz]
+[2024-05-04 17:16:31] INFO root fetch - main [MainThread]: End processing [pt-pump-up]: success
+[2024-05-04 17:16:31] INFO root fetch - processPackages [pygazpar]: executing diffoscope
+[2024-05-04 17:16:31] INFO root fetch - processPackages [pygazpar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygazpar-1.3.0a2.tar.gz tmp/pygazpar-1.3.0a6.tar.gz --markdown 20240504/p/pygazpar/1.3.0a2-1.3.0a6/README.md --exclude *.pyd
+[2024-05-04 17:16:32] INFO root fetch - processPackages [pygazpar]: Remove: archive file [/home/abi/fetcher/tmp/pygazpar-1.3.0a2.tar.gz]
+[2024-05-04 17:16:32] INFO root fetch - processPackages [pygazpar]: Remove: archive file [/home/abi/fetcher/tmp/pygazpar-1.3.0a6.tar.gz]
+[2024-05-04 17:16:32] INFO root fetch - main [MainThread]: End processing [pygazpar]: success
+[2024-05-04 17:16:32] INFO root fetch - main [MainThread]: Store serial: [23058816]
