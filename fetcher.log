@@ -9591,3 +9591,57 @@
 [2024-05-04 07:14:59] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-05-04 07:14:59] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-05-04 07:14:59] INFO root fetch - main [MainThread]: Store serial: [23055835]
+[2024-05-04 07:17:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055835]
+[2024-05-04 07:17:08] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 07:17:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mvector
+[2024-05-04 07:17:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: labelling-quality-check
+[2024-05-04 07:17:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cached-historical-data-fetcher
+[2024-05-04 07:17:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytilpack
+[2024-05-04 07:17:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: foundation-cancer-image-biomarker
+[2024-05-04 07:17:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: napalm-sros
+[2024-05-04 07:17:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dfdatetime
+[2024-05-04 07:17:09] WARNING root fetch - processPackages [pytilpack]: Skipping, unable to determine old version
+[2024-05-04 07:17:09] INFO root fetch - main [MainThread]: End processing [pytilpack] error
+[2024-05-04 07:17:09] INFO root fetch - processPackages [mvector]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-04 07:17:09] WARNING root fetch - processPackages [labelling-quality-check]: Skipping, unable to determine old version
+[2024-05-04 07:17:09] INFO root fetch - main [MainThread]: End processing [labelling-quality-check] error
+[2024-05-04 07:17:09] INFO root fetch - processPackages [napalm-sros]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 07:17:09] INFO root fetch - processPackages [dfdatetime]: New version: [20240504] Old Version: [20240330]
+[2024-05-04 07:17:09] INFO root fetch - processPackages [foundation-cancer-image-biomarker]: New version: [1.0.1a1] Old Version: [1.0.1a0]
+[2024-05-04 07:17:09] INFO root fetch - processPackages [cached-historical-data-fetcher]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-04 07:17:09] INFO root fetch - processPackages [mvector]: Downloading https://files.pythonhosted.org/packages/18/46/315cd927093238e3a7688dbaf455a31f34fdef7e1673d1de1f09dc030d10/mvector-1.0.3-py3-none-any.whl
+[2024-05-04 07:17:09] INFO root fetch - processPackages [napalm-sros]: Downloading https://files.pythonhosted.org/packages/f3/95/11ecce3414730f80774e65a7dad7a6d66f63af38e0e528ce0c2b51a0549e/napalm-sros-1.0.1.tar.gz
+[2024-05-04 07:17:09] INFO root fetch - processPackages [cached-historical-data-fetcher]: Downloading https://files.pythonhosted.org/packages/33/2d/e50ca247a3e2a25a44a1ef83e74df7aafdd5e657f68e88dde77e33887de7/cached_historical_data_fetcher-0.2.8.tar.gz
+[2024-05-04 07:17:09] INFO root fetch - processPackages [foundation-cancer-image-biomarker]: Downloading https://files.pythonhosted.org/packages/2e/ec/ee31626439d4100869eedee9d77ed71f8bce897d28c1c1ba232519008d94/foundation_cancer_image_biomarker-1.0.1a0.tar.gz
+[2024-05-04 07:17:09] INFO root fetch - processPackages [dfdatetime]: Downloading https://files.pythonhosted.org/packages/9e/9b/8a5e3c04283099e5a7e765c266b1b4ab9c82f85d5fad56d6217cfcca62d5/dfdatetime-20240330.tar.gz
+[2024-05-04 07:17:09] INFO root fetch - processPackages [mvector]: Downloading https://files.pythonhosted.org/packages/79/bc/1b8aa0bae856dc9335cb6727d8af2ef8cd2d0cef1d537365e34bfd7f78e4/mvector-1.0.4-py3-none-any.whl
+[2024-05-04 07:17:09] INFO root fetch - processPackages [napalm-sros]: Downloading https://files.pythonhosted.org/packages/c0/32/9842cfa6043f8dd682872df7bade5f14809c9ee2746cc840a13570fe58fe/napalm_sros-1.0.2.tar.gz
+[2024-05-04 07:17:09] INFO root fetch - processPackages [dfdatetime]: Downloading https://files.pythonhosted.org/packages/0b/55/b12b1181defa8fcc16228f9991dd7b1e9b307045564e3cce236633c830b8/dfdatetime-20240504.tar.gz
+[2024-05-04 07:17:09] INFO root fetch - processPackages [foundation-cancer-image-biomarker]: Downloading https://files.pythonhosted.org/packages/f8/3b/426e8446476c73fa4b11e3a3a3ea3c4758cb84a2707b50eacf0599355fbc/foundation_cancer_image_biomarker-1.0.1a1.tar.gz
+[2024-05-04 07:17:09] INFO root fetch - processPackages [cached-historical-data-fetcher]: Downloading https://files.pythonhosted.org/packages/81/ee/15a4e2107ab9022713daf8b8e078e523460f63ca0ba4dda2473e644962dd/cached_historical_data_fetcher-0.2.9.tar.gz
+[2024-05-04 07:17:09] INFO root fetch - processPackages [mvector]: executing diffoscope
+[2024-05-04 07:17:09] INFO root fetch - processPackages [mvector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mvector-1.0.3-py3-none-any.whl.zip tmp/mvector-1.0.4-py3-none-any.whl.zip --markdown 20240504/m/mvector/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-04 07:17:09] INFO root fetch - processPackages [napalm-sros]: executing diffoscope
+[2024-05-04 07:17:09] INFO root fetch - processPackages [napalm-sros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napalm-sros-1.0.1.tar.gz tmp/napalm_sros-1.0.2.tar.gz --markdown 20240504/n/napalm-sros/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 07:17:09] INFO root fetch - processPackages [dfdatetime]: executing diffoscope
+[2024-05-04 07:17:09] INFO root fetch - processPackages [dfdatetime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfdatetime-20240330.tar.gz tmp/dfdatetime-20240504.tar.gz --markdown 20240504/d/dfdatetime/20240330-20240504/README.md --exclude *.pyd
+[2024-05-04 07:17:09] INFO root fetch - processPackages [foundation-cancer-image-biomarker]: executing diffoscope
+[2024-05-04 07:17:09] INFO root fetch - processPackages [foundation-cancer-image-biomarker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foundation_cancer_image_biomarker-1.0.1a0.tar.gz tmp/foundation_cancer_image_biomarker-1.0.1a1.tar.gz --markdown 20240504/f/foundation-cancer-image-biomarker/1.0.1a0-1.0.1a1/README.md --exclude *.pyd
+[2024-05-04 07:17:09] INFO root fetch - processPackages [cached-historical-data-fetcher]: executing diffoscope
+[2024-05-04 07:17:09] INFO root fetch - processPackages [cached-historical-data-fetcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cached_historical_data_fetcher-0.2.8.tar.gz tmp/cached_historical_data_fetcher-0.2.9.tar.gz --markdown 20240504/c/cached-historical-data-fetcher/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-04 07:17:10] INFO root fetch - processPackages [cached-historical-data-fetcher]: Remove: archive file [/home/abi/fetcher/tmp/cached_historical_data_fetcher-0.2.8.tar.gz]
+[2024-05-04 07:17:10] INFO root fetch - processPackages [cached-historical-data-fetcher]: Remove: archive file [/home/abi/fetcher/tmp/cached_historical_data_fetcher-0.2.9.tar.gz]
+[2024-05-04 07:17:10] INFO root fetch - main [MainThread]: End processing [cached-historical-data-fetcher]: success
+[2024-05-04 07:17:10] INFO root fetch - processPackages [napalm-sros]: Remove: archive file [/home/abi/fetcher/tmp/napalm-sros-1.0.1.tar.gz]
+[2024-05-04 07:17:10] INFO root fetch - processPackages [napalm-sros]: Remove: archive file [/home/abi/fetcher/tmp/napalm_sros-1.0.2.tar.gz]
+[2024-05-04 07:17:10] INFO root fetch - main [MainThread]: End processing [napalm-sros]: success
+[2024-05-04 07:17:10] INFO root fetch - processPackages [mvector]: Remove: archive file [/home/abi/fetcher/tmp/mvector-1.0.3-py3-none-any.whl.zip]
+[2024-05-04 07:17:10] INFO root fetch - processPackages [mvector]: Remove: archive file [/home/abi/fetcher/tmp/mvector-1.0.4-py3-none-any.whl.zip]
+[2024-05-04 07:17:10] INFO root fetch - main [MainThread]: End processing [mvector]: success
+[2024-05-04 07:17:10] INFO root fetch - processPackages [foundation-cancer-image-biomarker]: Remove: archive file [/home/abi/fetcher/tmp/foundation_cancer_image_biomarker-1.0.1a0.tar.gz]
+[2024-05-04 07:17:10] INFO root fetch - processPackages [foundation-cancer-image-biomarker]: Remove: archive file [/home/abi/fetcher/tmp/foundation_cancer_image_biomarker-1.0.1a1.tar.gz]
+[2024-05-04 07:17:10] INFO root fetch - main [MainThread]: End processing [foundation-cancer-image-biomarker]: success
+[2024-05-04 07:17:10] INFO root fetch - processPackages [dfdatetime]: Remove: archive file [/home/abi/fetcher/tmp/dfdatetime-20240330.tar.gz]
+[2024-05-04 07:17:10] INFO root fetch - processPackages [dfdatetime]: Remove: archive file [/home/abi/fetcher/tmp/dfdatetime-20240504.tar.gz]
+[2024-05-04 07:17:10] INFO root fetch - main [MainThread]: End processing [dfdatetime]: success
+[2024-05-04 07:17:10] INFO root fetch - main [MainThread]: Store serial: [23055855]
