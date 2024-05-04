@@ -19589,3 +19589,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:45:25] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_lightbox2-0.1.1.tar.gz]
 [2024-05-04 21:45:25] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-lightbox2]: success
 [2024-05-04 21:45:25] INFO root fetch - main [MainThread]: Store serial: [23060535]
+[2024-05-04 21:47:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060535]
+[2024-05-04 21:47:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 21:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: resamp
+[2024-05-04 21:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: atlas-db
+[2024-05-04 21:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blankslate-python
+[2024-05-04 21:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cccodes
+[2024-05-04 21:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MobileInventoryCLI
+[2024-05-04 21:47:34] INFO root fetch - processPackages [atlas-db]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-04 21:47:34] INFO root fetch - processPackages [blankslate-python]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-04 21:47:34] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.84] Old Version: [0.4.832]
+[2024-05-04 21:47:34] WARNING root fetch - processPackages [cccodes]: Skipping, unable to determine old version
+[2024-05-04 21:47:34] INFO root fetch - main [MainThread]: End processing [cccodes] error
+[2024-05-04 21:47:34] INFO root fetch - processPackages [resamp]: New version: [1.7] Old Version: [1.6.8]
+[2024-05-04 21:47:34] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/89/8e/bc83908644e66a48f99d35536e1614d19f484fc7d7b1dc53c5a2d1569d72/blankslate_python-1.1.0.tar.gz
+[2024-05-04 21:47:34] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/e3/58/54a75b2e0c01632ee553e7cde443b722bd6801845f6562d6b51fa7261f27/MobileInventoryCLI-0.4.832.tar.gz
+[2024-05-04 21:47:34] INFO root fetch - processPackages [atlas-db]: Downloading https://files.pythonhosted.org/packages/c0/84/cac98faafde5dfecf90231da9b2f9a944eb9488b567a72adf2b7567f99cc/atlas_db-0.2.8.tar.gz
+[2024-05-04 21:47:34] INFO root fetch - processPackages [resamp]: Downloading https://files.pythonhosted.org/packages/1e/91/dec7edb65cf4c14277f4afb15d48bc745e460402bfbbd2e8f31aedbcb574/resamp-1.6.8.tar.gz
+[2024-05-04 21:47:34] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/9b/2a/6ce3acd87b1af6fbffa83736542156b35ccd881a2ba0993180f2f4cc7d9a/blankslate_python-1.1.1.tar.gz
+[2024-05-04 21:47:34] INFO root fetch - processPackages [atlas-db]: Downloading https://files.pythonhosted.org/packages/ec/3e/034ebe03b3836177510d3278700b70a32ac29533a0f8b5f04615ab2ce8e8/atlas_db-0.2.9.tar.gz
+[2024-05-04 21:47:34] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/01/61/4cd59d757cc0ada6d99752770efe26015f5371aa94b4bf954a87549494f1/MobileInventoryCLI-0.4.84.tar.gz
+[2024-05-04 21:47:34] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-04 21:47:34] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.1.0.tar.gz tmp/blankslate_python-1.1.1.tar.gz --markdown 20240504/b/blankslate-python/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-04 21:47:34] INFO root fetch - processPackages [atlas-db]: executing diffoscope
+[2024-05-04 21:47:34] INFO root fetch - processPackages [atlas-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlas_db-0.2.8.tar.gz tmp/atlas_db-0.2.9.tar.gz --markdown 20240504/a/atlas-db/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-04 21:47:34] INFO root fetch - processPackages [resamp]: Downloading https://files.pythonhosted.org/packages/e2/17/fbd42a8f2c78c7217f021db495ceb46db78fedce13fdda530b91d470e190/resamp-1.7.tar.gz
+[2024-05-04 21:47:34] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-04 21:47:34] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.832.tar.gz tmp/MobileInventoryCLI-0.4.84.tar.gz --markdown 20240504/M/MobileInventoryCLI/0.4.832-0.4.84/README.md --exclude *.pyd
+[2024-05-04 21:47:35] INFO root fetch - processPackages [resamp]: executing diffoscope
+[2024-05-04 21:47:35] INFO root fetch - processPackages [resamp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resamp-1.6.8.tar.gz tmp/resamp-1.7.tar.gz --markdown 20240504/r/resamp/1.6.8-1.7/README.md --exclude *.pyd
+[2024-05-04 21:47:35] INFO root fetch - processPackages [atlas-db]: Remove: archive file [/home/abi/fetcher/tmp/atlas_db-0.2.8.tar.gz]
+[2024-05-04 21:47:35] INFO root fetch - processPackages [atlas-db]: Remove: archive file [/home/abi/fetcher/tmp/atlas_db-0.2.9.tar.gz]
+[2024-05-04 21:47:35] INFO root fetch - main [MainThread]: End processing [atlas-db]: success
+[2024-05-04 21:47:35] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.0.tar.gz]
+[2024-05-04 21:47:35] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.1.tar.gz]
+[2024-05-04 21:47:35] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-04 21:47:35] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.832.tar.gz]
+[2024-05-04 21:47:35] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.84.tar.gz]
+[2024-05-04 21:47:35] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-04 21:47:35] INFO root fetch - processPackages [resamp]: Remove: archive file [/home/abi/fetcher/tmp/resamp-1.6.8.tar.gz]
+[2024-05-04 21:47:35] INFO root fetch - processPackages [resamp]: Remove: archive file [/home/abi/fetcher/tmp/resamp-1.7.tar.gz]
+[2024-05-04 21:47:35] INFO root fetch - main [MainThread]: End processing [resamp]: success
+[2024-05-04 21:47:35] INFO root fetch - main [MainThread]: Store serial: [23060559]
