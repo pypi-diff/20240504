@@ -14490,3 +14490,17 @@
 [2024-05-04 15:08:24] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.1.tar.gz]
 [2024-05-04 15:08:24] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp]: success
 [2024-05-04 15:08:24] INFO root fetch - main [MainThread]: Store serial: [23058098]
+[2024-05-04 15:10:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058098]
+[2024-05-04 15:10:32] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 15:12:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058098]
+[2024-05-04 15:12:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 15:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fbgemm-gpu-nightly-cpu
+[2024-05-04 15:12:38] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2024.5.4] Old Version: [2024.5.3]
+[2024-05-04 15:12:38] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/10/61/b4e93c417651439cf5e87c44e7c45e472073d31fb152c79196dbc30c329e/fbgemm_gpu_nightly_cpu-2024.5.3-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-04 15:12:39] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/be/6a/5a5a0645eeb0b7a971f650c224d3f191d4d93ceebaf8b7c41e32792516e2/fbgemm_gpu_nightly_cpu-2024.5.4-cp38-cp38-manylinux2014_x86_64.whl
+[2024-05-04 15:12:39] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2024-05-04 15:12:39] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2024.5.3-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2024.5.4-cp38-cp38-manylinux2014_x86_64.whl.zip --markdown 20240504/f/fbgemm-gpu-nightly-cpu/2024.5.3-2024.5.4/README.md --exclude *.pyd
+[2024-05-04 15:13:16] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.3-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-04 15:13:16] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.4-cp38-cp38-manylinux2014_x86_64.whl.zip]
+[2024-05-04 15:13:16] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2024-05-04 15:13:16] INFO root fetch - main [MainThread]: Store serial: [23058102]
