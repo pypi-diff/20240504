@@ -19328,3 +19328,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:21:35] INFO root fetch - processPackages [pyinfra]: Remove: archive file [/home/abi/fetcher/tmp/pyinfra-3.0b1.tar.gz]
 [2024-05-04 21:21:35] INFO root fetch - main [MainThread]: End processing [pyinfra]: success
 [2024-05-04 21:21:35] INFO root fetch - main [MainThread]: Store serial: [23060427]
+[2024-05-04 21:23:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060427]
+[2024-05-04 21:23:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 21:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapegraphai
+[2024-05-04 21:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mltu
+[2024-05-04 21:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: soda-svg
+[2024-05-04 21:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: textmancy
+[2024-05-04 21:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: papers-dl
+[2024-05-04 21:23:44] INFO root fetch - processPackages [soda-svg]: New version: [2.0.0] Old Version: [1.1.9]
+[2024-05-04 21:23:44] INFO root fetch - processPackages [scrapegraphai]: New version: [0.8.0b2] Old Version: [0.8.0b1]
+[2024-05-04 21:23:44] WARNING root fetch - processPackages [textmancy]: Skipping, unable to determine old version
+[2024-05-04 21:23:44] INFO root fetch - main [MainThread]: End processing [textmancy] error
+[2024-05-04 21:23:44] INFO root fetch - processPackages [mltu]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-05-04 21:23:44] INFO root fetch - processPackages [soda-svg]: Downloading https://files.pythonhosted.org/packages/bf/0a/4d4553a9758c8c894022cfa512b1237c74f0a561524a0655c8365f52e23c/soda_svg-1.1.9.tar.gz
+[2024-05-04 21:23:44] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/fd/c7/59a6f31a5e1a2de9b47ccdf75bc8bdb8c6fc8fa7ce072a25c1ca5b834b63/scrapegraphai-0.8.0b1.tar.gz
+[2024-05-04 21:23:44] INFO root fetch - processPackages [papers-dl]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-04 21:23:44] INFO root fetch - processPackages [mltu]: Downloading https://files.pythonhosted.org/packages/a5/b8/7d51544ba261dc70d5bec72886e790bd901bfedb1fd892e6cbecba46c1d7/mltu-1.2.4.tar.gz
+[2024-05-04 21:23:44] INFO root fetch - processPackages [soda-svg]: Downloading https://files.pythonhosted.org/packages/b6/2d/553b0c101c110b1fe34a576e212c1f1389201a13c30325a96d667511c1bf/soda_svg-2.0.0.tar.gz
+[2024-05-04 21:23:44] INFO root fetch - processPackages [papers-dl]: Downloading https://files.pythonhosted.org/packages/a7/81/3a3955271d54a07cb0237054587d57dcc76dfa02efba4ddaf805c125af24/papers_dl-0.0.3.tar.gz
+[2024-05-04 21:23:44] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/cc/f6/cfe4f815b606405527e13b7ac72db4fc5f092f9d324d617d164e0b4c580b/scrapegraphai-0.8.0b2.tar.gz
+[2024-05-04 21:23:44] INFO root fetch - processPackages [soda-svg]: executing diffoscope
+[2024-05-04 21:23:44] INFO root fetch - processPackages [soda-svg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soda_svg-1.1.9.tar.gz tmp/soda_svg-2.0.0.tar.gz --markdown 20240504/s/soda-svg/1.1.9-2.0.0/README.md --exclude *.pyd
+[2024-05-04 21:23:44] INFO root fetch - processPackages [mltu]: Downloading https://files.pythonhosted.org/packages/b1/e2/e7b29a5099e306ba5dbcefeea18ae982f5d4a14057380783c6febcfd83c2/mltu-1.2.5.tar.gz
+[2024-05-04 21:23:44] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-04 21:23:44] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.8.0b1.tar.gz tmp/scrapegraphai-0.8.0b2.tar.gz --markdown 20240504/s/scrapegraphai/0.8.0b1-0.8.0b2/README.md --exclude *.pyd
+[2024-05-04 21:23:45] INFO root fetch - processPackages [mltu]: executing diffoscope
+[2024-05-04 21:23:45] INFO root fetch - processPackages [mltu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mltu-1.2.4.tar.gz tmp/mltu-1.2.5.tar.gz --markdown 20240504/m/mltu/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-05-04 21:23:45] INFO root fetch - processPackages [papers-dl]: Downloading https://files.pythonhosted.org/packages/6a/7a/f436ce82d8152724f4ee9a863671d91654564817d73bf66dd714b4f539ba/papers_dl-0.0.4.tar.gz
+[2024-05-04 21:23:45] INFO root fetch - processPackages [papers-dl]: executing diffoscope
+[2024-05-04 21:23:45] INFO root fetch - processPackages [papers-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/papers_dl-0.0.3.tar.gz tmp/papers_dl-0.0.4.tar.gz --markdown 20240504/p/papers-dl/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-04 21:23:45] INFO root fetch - processPackages [soda-svg]: Remove: archive file [/home/abi/fetcher/tmp/soda_svg-1.1.9.tar.gz]
+[2024-05-04 21:23:45] INFO root fetch - processPackages [soda-svg]: Remove: archive file [/home/abi/fetcher/tmp/soda_svg-2.0.0.tar.gz]
+[2024-05-04 21:23:45] INFO root fetch - main [MainThread]: End processing [soda-svg]: success
+[2024-05-04 21:23:45] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.8.0b1.tar.gz]
+[2024-05-04 21:23:45] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.8.0b2.tar.gz]
+[2024-05-04 21:23:45] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-04 21:23:45] INFO root fetch - processPackages [mltu]: Remove: archive file [/home/abi/fetcher/tmp/mltu-1.2.4.tar.gz]
+[2024-05-04 21:23:45] INFO root fetch - processPackages [mltu]: Remove: archive file [/home/abi/fetcher/tmp/mltu-1.2.5.tar.gz]
+[2024-05-04 21:23:45] INFO root fetch - main [MainThread]: End processing [mltu]: success
+[2024-05-04 21:23:45] INFO root fetch - processPackages [papers-dl]: Remove: archive file [/home/abi/fetcher/tmp/papers_dl-0.0.3.tar.gz]
+[2024-05-04 21:23:45] INFO root fetch - processPackages [papers-dl]: Remove: archive file [/home/abi/fetcher/tmp/papers_dl-0.0.4.tar.gz]
+[2024-05-04 21:23:45] INFO root fetch - main [MainThread]: End processing [papers-dl]: success
+[2024-05-04 21:23:45] INFO root fetch - main [MainThread]: Store serial: [23060442]
