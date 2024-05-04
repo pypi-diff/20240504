@@ -2099,3 +2099,51 @@
 [2024-05-04 02:15:34] INFO root fetch - processPackages [colossalai-nightly]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-nightly-2024.5.4.tar.gz]
 [2024-05-04 02:15:34] INFO root fetch - main [MainThread]: End processing [colossalai-nightly]: success
 [2024-05-04 02:15:34] INFO root fetch - main [MainThread]: Store serial: [23052955]
+[2024-05-04 02:17:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052955]
+[2024-05-04 02:17:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 02:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2024-05-04 02:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langsmith
+[2024-05-04 02:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-05-04 02:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdklabs.appsync-utils
+[2024-05-04 02:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MobileInventoryCLI
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-04 02:17:43] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.831] Old Version: [0.4.83]
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdklabs.appsync-utils]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-05-04 02:17:43] INFO root fetch - processPackages [langsmith]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/c2/b6/9921880127918975163ef796466fd100a8f3a6246436ca4993eafae4915d/cdklabs.appsync-utils-0.0.98.tar.gz
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/9b/c8/ddb4d2575b42b36bf1ebf5daccec9c3c53a9ac9cadaeffb66bed93dc3bab/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz
+[2024-05-04 02:17:43] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/29/4c/6a7cf59683dd9a080198b9f350a612ba0b7bcdcac31509d80e1906e36a25/MobileInventoryCLI-0.4.83.tar.gz
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-05-04 02:17:43] INFO root fetch - processPackages [langsmith]: Downloading https://files.pythonhosted.org/packages/3f/01/93a91da2527bbaa6155f9398417eeff6507ddada0f417560a67e20801455/langsmith-0.1.8.tar.gz
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/fe/2c/3a8605fe934a0a120041c6190f384b00350c8036420ee8d53ac0b0906f74/cdklabs.appsync-utils-0.0.99.tar.gz
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/56/40/cbf52f4213018f2d82f0aad0f2fa90e69c2923704c1905bd7e090d3accf2/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240504/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdklabs.appsync-utils]: executing diffoscope
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdklabs.appsync-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.appsync-utils-0.0.98.tar.gz tmp/cdklabs.appsync-utils-0.0.99.tar.gz --markdown 20240504/c/cdklabs.appsync-utils/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-04 02:17:43] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/35/d9/c6d24acde1293cf921b5cd0afbb724b2a19f8fe5692dfbd69928d91d9e34/MobileInventoryCLI-0.4.831.tar.gz
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2024-05-04 02:17:43] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20240504/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-05-04 02:17:43] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-04 02:17:43] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.83.tar.gz tmp/MobileInventoryCLI-0.4.831.tar.gz --markdown 20240504/M/MobileInventoryCLI/0.4.83-0.4.831/README.md --exclude *.pyd
+[2024-05-04 02:17:43] INFO root fetch - processPackages [langsmith]: Downloading https://files.pythonhosted.org/packages/2f/bd/ae357eeb7736dd31ff704bfdb05c856cd78d6ebcb126b850c2bcdb5830ae/langsmith-0.1.9.tar.gz
+[2024-05-04 02:17:44] INFO root fetch - processPackages [langsmith]: executing diffoscope
+[2024-05-04 02:17:44] INFO root fetch - processPackages [langsmith]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langsmith-0.1.8.tar.gz tmp/langsmith-0.1.9.tar.gz --markdown 20240504/l/langsmith/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 02:17:44] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz]
+[2024-05-04 02:17:44] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz]
+[2024-05-04 02:17:44] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2024-05-04 02:17:44] INFO root fetch - processPackages [cdklabs.appsync-utils]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.appsync-utils-0.0.98.tar.gz]
+[2024-05-04 02:17:44] INFO root fetch - processPackages [cdklabs.appsync-utils]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.appsync-utils-0.0.99.tar.gz]
+[2024-05-04 02:17:44] INFO root fetch - main [MainThread]: End processing [cdklabs.appsync-utils]: success
+[2024-05-04 02:17:44] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-05-04 02:17:44] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-05-04 02:17:44] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-05-04 02:17:44] INFO root fetch - processPackages [langsmith]: Remove: archive file [/home/abi/fetcher/tmp/langsmith-0.1.8.tar.gz]
+[2024-05-04 02:17:44] INFO root fetch - processPackages [langsmith]: Remove: archive file [/home/abi/fetcher/tmp/langsmith-0.1.9.tar.gz]
+[2024-05-04 02:17:44] INFO root fetch - main [MainThread]: End processing [langsmith]: success
+[2024-05-04 02:17:44] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.83.tar.gz]
+[2024-05-04 02:17:44] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.831.tar.gz]
+[2024-05-04 02:17:44] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-04 02:17:44] INFO root fetch - main [MainThread]: Store serial: [23052970]
