@@ -2453,3 +2453,33 @@
 [2024-05-04 02:39:24] INFO root fetch - processPackages [vllm-acc]: Remove: archive file [/home/abi/fetcher/tmp/vllm_acc-0.4.11714782966.854302.tar.gz]
 [2024-05-04 02:39:24] INFO root fetch - main [MainThread]: End processing [vllm-acc]: success
 [2024-05-04 02:39:24] INFO root fetch - main [MainThread]: Store serial: [23053087]
+[2024-05-04 02:41:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053087]
+[2024-05-04 02:41:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 02:41:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rship-sdk
+[2024-05-04 02:41:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: linkml
+[2024-05-04 02:41:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: isolate
+[2024-05-04 02:41:32] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 02:41:32] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 02:41:32] INFO root fetch - processPackages [isolate]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-04 02:41:32] INFO root fetch - processPackages [linkml]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-05-04 02:41:32] INFO root fetch - processPackages [isolate]: Downloading https://files.pythonhosted.org/packages/64/32/211fe725a3bf7449d63f5b9210aed9bebdc93f360ec91a4e8804c891e5dd/isolate-0.9.2.tar.gz
+[2024-05-04 02:41:32] INFO root fetch - processPackages [linkml]: Downloading https://files.pythonhosted.org/packages/4a/c3/231c6d74db97c219fbfd523419bd7c82bbeee6ea9e6d055f8ca0cd945923/linkml-1.7.8.tar.gz
+[2024-05-04 02:41:33] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 02:41:33] INFO root fetch - processPackages [isolate]: Downloading https://files.pythonhosted.org/packages/93/d5/1ab6e68b9f2f196a9982c5cab3879975f19e872887debadb439227f3e01b/isolate-0.9.3.tar.gz
+[2024-05-04 02:41:34] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 02:41:34] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 02:41:34] INFO root fetch - processPackages [linkml]: Downloading https://files.pythonhosted.org/packages/82/57/65f9c60d84553b1eeedc0f4d4f4bd8a3cfdfa56e78696c848a5a59a05b99/linkml-1.7.9.tar.gz
+[2024-05-04 02:41:34] INFO root fetch - processPackages [isolate]: executing diffoscope
+[2024-05-04 02:41:34] INFO root fetch - processPackages [isolate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isolate-0.9.2.tar.gz tmp/isolate-0.9.3.tar.gz --markdown 20240504/i/isolate/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-04 02:41:34] INFO root fetch - processPackages [linkml]: executing diffoscope
+[2024-05-04 02:41:34] INFO root fetch - processPackages [linkml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkml-1.7.8.tar.gz tmp/linkml-1.7.9.tar.gz --markdown 20240504/l/linkml/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-05-04 02:41:34] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 02:41:34] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 02:41:34] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 02:41:34] INFO root fetch - processPackages [isolate]: Remove: archive file [/home/abi/fetcher/tmp/isolate-0.9.2.tar.gz]
+[2024-05-04 02:41:34] INFO root fetch - processPackages [isolate]: Remove: archive file [/home/abi/fetcher/tmp/isolate-0.9.3.tar.gz]
+[2024-05-04 02:41:34] INFO root fetch - main [MainThread]: End processing [isolate]: success
+[2024-05-04 02:41:35] INFO root fetch - processPackages [linkml]: Remove: archive file [/home/abi/fetcher/tmp/linkml-1.7.8.tar.gz]
+[2024-05-04 02:41:35] INFO root fetch - processPackages [linkml]: Remove: archive file [/home/abi/fetcher/tmp/linkml-1.7.9.tar.gz]
+[2024-05-04 02:41:35] INFO root fetch - main [MainThread]: End processing [linkml]: success
+[2024-05-04 02:41:35] INFO root fetch - main [MainThread]: Store serial: [23053098]
