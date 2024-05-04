@@ -6714,3 +6714,33 @@
 [2024-05-04 03:30:37] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.3.tar.gz]
 [2024-05-04 03:30:37] INFO root fetch - main [MainThread]: End processing [edgegap-api]: success
 [2024-05-04 03:30:37] INFO root fetch - main [MainThread]: Store serial: [23054411]
+[2024-05-04 03:32:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054411]
+[2024-05-04 03:32:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 03:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: decision-utils
+[2024-05-04 03:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: communex
+[2024-05-04 03:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edgegap-time
+[2024-05-04 03:32:46] INFO root fetch - processPackages [edgegap-time]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-04 03:32:46] INFO root fetch - processPackages [communex]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 03:32:46] INFO root fetch - processPackages [edgegap-time]: Downloading https://files.pythonhosted.org/packages/a3/00/8e471a467aad0a5aa79981cfd67e0fc957a9e15aa30642717ec961febf37/edgegap_time-1.1.2.tar.gz
+[2024-05-04 03:32:46] INFO root fetch - processPackages [decision-utils]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-04 03:32:46] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/77/67/00051570e40b098c12038ef6aed5be120d14bfafef5d08885df5a9714f91/communex-0.1.8.tar.gz
+[2024-05-04 03:32:47] INFO root fetch - processPackages [edgegap-time]: Downloading https://files.pythonhosted.org/packages/8f/67/e1e6021dd6993b43626f45dc54f16db4ec7d0860788177bc4e34d0e8e811/edgegap_time-1.1.3.tar.gz
+[2024-05-04 03:32:47] INFO root fetch - processPackages [decision-utils]: Downloading https://files.pythonhosted.org/packages/a3/6d/8b832ca8cbbe23a8015787e6eba9ad04e1890ba6837f9d2893313b799052/decision-utils-0.0.5.tar.gz
+[2024-05-04 03:32:47] INFO root fetch - processPackages [edgegap-time]: executing diffoscope
+[2024-05-04 03:32:47] INFO root fetch - processPackages [edgegap-time]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_time-1.1.2.tar.gz tmp/edgegap_time-1.1.3.tar.gz --markdown 20240504/e/edgegap-time/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-04 03:32:47] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/51/79/c7d8079cf08c4dcf6ea1f984e64a67fe00acfd76303d2f7f6159f574d5da/communex-0.1.9.tar.gz
+[2024-05-04 03:32:47] INFO root fetch - processPackages [communex]: executing diffoscope
+[2024-05-04 03:32:47] INFO root fetch - processPackages [communex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/communex-0.1.8.tar.gz tmp/communex-0.1.9.tar.gz --markdown 20240504/c/communex/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 03:32:47] INFO root fetch - processPackages [decision-utils]: Downloading https://files.pythonhosted.org/packages/35/71/6296862e51295102390b40b567fbcda4cf4ceadfc2d73ccc501962d9ec7d/decision_utils-0.0.6.tar.gz
+[2024-05-04 03:32:47] INFO root fetch - processPackages [decision-utils]: executing diffoscope
+[2024-05-04 03:32:47] INFO root fetch - processPackages [decision-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decision-utils-0.0.5.tar.gz tmp/decision_utils-0.0.6.tar.gz --markdown 20240504/d/decision-utils/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-04 03:32:47] INFO root fetch - processPackages [edgegap-time]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_time-1.1.2.tar.gz]
+[2024-05-04 03:32:47] INFO root fetch - processPackages [edgegap-time]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_time-1.1.3.tar.gz]
+[2024-05-04 03:32:47] INFO root fetch - main [MainThread]: End processing [edgegap-time]: success
+[2024-05-04 03:32:47] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.8.tar.gz]
+[2024-05-04 03:32:47] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.9.tar.gz]
+[2024-05-04 03:32:47] INFO root fetch - main [MainThread]: End processing [communex]: success
+[2024-05-04 03:32:48] INFO root fetch - processPackages [decision-utils]: Remove: archive file [/home/abi/fetcher/tmp/decision-utils-0.0.5.tar.gz]
+[2024-05-04 03:32:48] INFO root fetch - processPackages [decision-utils]: Remove: archive file [/home/abi/fetcher/tmp/decision_utils-0.0.6.tar.gz]
+[2024-05-04 03:32:48] INFO root fetch - main [MainThread]: End processing [decision-utils]: success
+[2024-05-04 03:32:48] INFO root fetch - main [MainThread]: Store serial: [23054475]
