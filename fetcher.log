@@ -10465,3 +10465,40 @@
 [2024-05-04 08:28:49] INFO root fetch - processPackages [midi-abstraction]: Remove: archive file [/home/abi/fetcher/tmp/midi-abstraction-2.0.0.tar.gz]
 [2024-05-04 08:28:49] INFO root fetch - main [MainThread]: End processing [midi-abstraction]: success
 [2024-05-04 08:28:49] INFO root fetch - main [MainThread]: Store serial: [23056183]
+[2024-05-04 08:30:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056183]
+[2024-05-04 08:30:57] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 08:32:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056183]
+[2024-05-04 08:33:03] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 08:35:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056183]
+[2024-05-04 08:35:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 08:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: filchatter
+[2024-05-04 08:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pc-perf
+[2024-05-04 08:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multiconnect
+[2024-05-04 08:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cronrepo
+[2024-05-04 08:35:08] INFO root fetch - processPackages [filchatter]: New version: [1.1] Old Version: [1.0]
+[2024-05-04 08:35:08] INFO root fetch - processPackages [pc-perf]: New version: [1.2.1] Old Version: [1.1.6]
+[2024-05-04 08:35:08] INFO root fetch - processPackages [pc-perf]: Downloading https://files.pythonhosted.org/packages/c1/72/453deddf40b193d2935557544a7a1ce8c82e7fdfb87e70eb0742800a71ec/pc-perf-1.1.6.tar.gz
+[2024-05-04 08:35:08] WARNING root fetch - processPackages [multiconnect]: Skipping, unable to determine old version
+[2024-05-04 08:35:08] INFO root fetch - main [MainThread]: End processing [multiconnect] error
+[2024-05-04 08:35:08] INFO root fetch - processPackages [cronrepo]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-04 08:35:08] INFO root fetch - processPackages [filchatter]: Downloading https://files.pythonhosted.org/packages/52/33/46b7cf6f934886d15c707dba156dc36bc434de5ab25c65670b4c0cf8808d/filchatter-1.0.tar.gz
+[2024-05-04 08:35:08] INFO root fetch - processPackages [cronrepo]: Downloading https://files.pythonhosted.org/packages/ea/98/e9f762e3abf219b1bb58934652bce8ee8c4b89a1b39d00a6789d2f89447e/cronrepo-0.3.3.tar.gz
+[2024-05-04 08:35:08] INFO root fetch - processPackages [pc-perf]: Downloading https://files.pythonhosted.org/packages/29/64/f10d18b29b759d6e5ea28abfa9bde934676ec65e0caeef3ae3fe1da28249/pc-perf-1.2.1.tar.gz
+[2024-05-04 08:35:08] INFO root fetch - processPackages [filchatter]: Downloading https://files.pythonhosted.org/packages/f0/f4/6fd4eafff5b45cc181009cada6aff075c397e6b0e56f03fea92cd9a0bf3a/filchatter-1.1.tar.gz
+[2024-05-04 08:35:09] INFO root fetch - processPackages [filchatter]: executing diffoscope
+[2024-05-04 08:35:09] INFO root fetch - processPackages [filchatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filchatter-1.0.tar.gz tmp/filchatter-1.1.tar.gz --markdown 20240504/f/filchatter/1.0-1.1/README.md --exclude *.pyd
+[2024-05-04 08:35:09] INFO root fetch - processPackages [pc-perf]: executing diffoscope
+[2024-05-04 08:35:09] INFO root fetch - processPackages [pc-perf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pc-perf-1.1.6.tar.gz tmp/pc-perf-1.2.1.tar.gz --markdown 20240504/p/pc-perf/1.1.6-1.2.1/README.md --exclude *.pyd
+[2024-05-04 08:35:09] INFO root fetch - processPackages [cronrepo]: Downloading https://files.pythonhosted.org/packages/1e/48/551f22c3167b3737f293679b52856984b6eb5fd2e3c3f5e2841ce043e7b5/cronrepo-0.3.4.tar.gz
+[2024-05-04 08:35:09] INFO root fetch - processPackages [cronrepo]: executing diffoscope
+[2024-05-04 08:35:09] INFO root fetch - processPackages [cronrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cronrepo-0.3.3.tar.gz tmp/cronrepo-0.3.4.tar.gz --markdown 20240504/c/cronrepo/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-04 08:35:09] INFO root fetch - processPackages [filchatter]: Remove: archive file [/home/abi/fetcher/tmp/filchatter-1.0.tar.gz]
+[2024-05-04 08:35:09] INFO root fetch - processPackages [filchatter]: Remove: archive file [/home/abi/fetcher/tmp/filchatter-1.1.tar.gz]
+[2024-05-04 08:35:09] INFO root fetch - main [MainThread]: End processing [filchatter]: success
+[2024-05-04 08:35:09] INFO root fetch - processPackages [pc-perf]: Remove: archive file [/home/abi/fetcher/tmp/pc-perf-1.1.6.tar.gz]
+[2024-05-04 08:35:09] INFO root fetch - processPackages [pc-perf]: Remove: archive file [/home/abi/fetcher/tmp/pc-perf-1.2.1.tar.gz]
+[2024-05-04 08:35:09] INFO root fetch - main [MainThread]: End processing [pc-perf]: success
+[2024-05-04 08:35:09] INFO root fetch - processPackages [cronrepo]: Remove: archive file [/home/abi/fetcher/tmp/cronrepo-0.3.3.tar.gz]
+[2024-05-04 08:35:09] INFO root fetch - processPackages [cronrepo]: Remove: archive file [/home/abi/fetcher/tmp/cronrepo-0.3.4.tar.gz]
+[2024-05-04 08:35:09] INFO root fetch - main [MainThread]: End processing [cronrepo]: success
+[2024-05-04 08:35:09] INFO root fetch - main [MainThread]: Store serial: [23056195]
