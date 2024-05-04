@@ -8974,3 +8974,33 @@
 [2024-05-04 06:14:00] INFO root fetch - processPackages [gemini-ai-app-downloader]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ai_app_downloader-1.5.tar.gz]
 [2024-05-04 06:14:00] INFO root fetch - main [MainThread]: End processing [gemini-ai-app-downloader]: success
 [2024-05-04 06:14:00] INFO root fetch - main [MainThread]: Store serial: [23055548]
+[2024-05-04 06:16:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055548]
+[2024-05-04 06:16:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 06:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polymind
+[2024-05-04 06:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: npc_lims
+[2024-05-04 06:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: czsc
+[2024-05-04 06:16:23] INFO root fetch - processPackages [npc_lims]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-04 06:16:23] INFO root fetch - processPackages [polymind]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-04 06:16:23] INFO root fetch - processPackages [npc_lims]: Downloading https://files.pythonhosted.org/packages/eb/a3/a72478dcef25d9b46c35b7730c5c9a426e07354369fb652045cc1befbe7e/npc_lims-0.1.98.tar.gz
+[2024-05-04 06:16:23] INFO root fetch - processPackages [czsc]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-04 06:16:23] INFO root fetch - processPackages [polymind]: Downloading https://files.pythonhosted.org/packages/0e/aa/52a8f77530064a4a31bc4aa8116debc14a08e851bf5d42cd670dc896ca1c/polymind-0.0.6.tar.gz
+[2024-05-04 06:16:23] INFO root fetch - processPackages [npc_lims]: Downloading https://files.pythonhosted.org/packages/20/8f/2a3ef0e71c09fd01ba3685a9f92c448766eab8a9e83f1e03e62e90091e0a/npc_lims-0.1.99.tar.gz
+[2024-05-04 06:16:23] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/ff/64/49e6809b474049632717e96f3a51bcdab728d63517d8ec0eb228e09ad52d/czsc-0.9.8.tar.gz
+[2024-05-04 06:16:23] INFO root fetch - processPackages [npc_lims]: executing diffoscope
+[2024-05-04 06:16:23] INFO root fetch - processPackages [npc_lims]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npc_lims-0.1.98.tar.gz tmp/npc_lims-0.1.99.tar.gz --markdown 20240504/n/npc_lims/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-04 06:16:23] INFO root fetch - processPackages [polymind]: Downloading https://files.pythonhosted.org/packages/6b/5d/85efcce46e16627c7bdb1ca311cf5e79cf132fa11e00070c1ef96f3e1aab/polymind-0.0.7.tar.gz
+[2024-05-04 06:16:23] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/65/2a/c6b0017939d88546e65732fc499326433b075adecda347c5aca412e4fe77/czsc-0.9.9.tar.gz
+[2024-05-04 06:16:23] INFO root fetch - processPackages [polymind]: executing diffoscope
+[2024-05-04 06:16:23] INFO root fetch - processPackages [polymind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polymind-0.0.6.tar.gz tmp/polymind-0.0.7.tar.gz --markdown 20240504/p/polymind/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-04 06:16:24] INFO root fetch - processPackages [czsc]: executing diffoscope
+[2024-05-04 06:16:24] INFO root fetch - processPackages [czsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czsc-0.9.8.tar.gz tmp/czsc-0.9.9.tar.gz --markdown 20240504/c/czsc/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-04 06:16:24] INFO root fetch - processPackages [npc_lims]: Remove: archive file [/home/abi/fetcher/tmp/npc_lims-0.1.98.tar.gz]
+[2024-05-04 06:16:24] INFO root fetch - processPackages [npc_lims]: Remove: archive file [/home/abi/fetcher/tmp/npc_lims-0.1.99.tar.gz]
+[2024-05-04 06:16:24] INFO root fetch - main [MainThread]: End processing [npc_lims]: success
+[2024-05-04 06:16:24] INFO root fetch - processPackages [polymind]: Remove: archive file [/home/abi/fetcher/tmp/polymind-0.0.6.tar.gz]
+[2024-05-04 06:16:24] INFO root fetch - processPackages [polymind]: Remove: archive file [/home/abi/fetcher/tmp/polymind-0.0.7.tar.gz]
+[2024-05-04 06:16:24] INFO root fetch - main [MainThread]: End processing [polymind]: success
+[2024-05-04 06:16:24] INFO root fetch - processPackages [czsc]: Remove: archive file [/home/abi/fetcher/tmp/czsc-0.9.8.tar.gz]
+[2024-05-04 06:16:24] INFO root fetch - processPackages [czsc]: Remove: archive file [/home/abi/fetcher/tmp/czsc-0.9.9.tar.gz]
+[2024-05-04 06:16:24] INFO root fetch - main [MainThread]: End processing [czsc]: success
+[2024-05-04 06:16:24] INFO root fetch - main [MainThread]: Store serial: [23055560]
