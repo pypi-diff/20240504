@@ -17400,3 +17400,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:01:40] INFO root fetch - processPackages [pytest_playwright_async]: Remove: archive file [/home/abi/fetcher/tmp/pytest-playwright-async-0.2.0.tar.gz]
 [2024-05-04 19:01:40] INFO root fetch - main [MainThread]: End processing [pytest_playwright_async]: success
 [2024-05-04 19:01:40] INFO root fetch - main [MainThread]: Store serial: [23059443]
+[2024-05-04 19:03:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059443]
+[2024-05-04 19:03:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 19:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arcticdb
+[2024-05-04 19:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TensorFlowASR
+[2024-05-04 19:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: model-explorer
+[2024-05-04 19:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastapi-debug-toolbar
+[2024-05-04 19:03:49] INFO root fetch - processPackages [model-explorer]: New version: [0.0.87] Old Version: [0.0.86]
+[2024-05-04 19:03:49] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/3c/d4/f4577e3ef0f04e6576ed5a821c93123277fd260fc83daee45a2a0507d55f/model_explorer-0.0.86.tar.gz
+[2024-05-04 19:03:49] INFO root fetch - processPackages [fastapi-debug-toolbar]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-05-04 19:03:49] INFO root fetch - processPackages [TensorFlowASR]: New version: [2.0.0] Old Version: [1.0.3]
+[2024-05-04 19:03:49] INFO root fetch - processPackages [arcticdb]: New version: [4.4.2rc0] Old Version: [4.4.1]
+[2024-05-04 19:03:49] INFO root fetch - processPackages [TensorFlowASR]: Downloading https://files.pythonhosted.org/packages/89/e3/3bd44a5ebd93eb4c604ecfbbf603b7a5efd5d20ea595f216c4005045f2d5/TensorFlowASR-1.0.3.tar.gz
+[2024-05-04 19:03:49] INFO root fetch - processPackages [fastapi-debug-toolbar]: Downloading https://files.pythonhosted.org/packages/13/f0/d229abd9ad9bdf11ef7fba49e880b457dc2ad99c9ddb1c9ad74fc24f00d4/fastapi_debug_toolbar-0.6.2.tar.gz
+[2024-05-04 19:03:49] INFO root fetch - processPackages [arcticdb]: Downloading https://files.pythonhosted.org/packages/df/f0/35bfdab59bcc301422b15bbc68608113f8a62c4826cc3ba30d07f08959de/arcticdb-4.4.1-cp39-cp39-win_amd64.whl
+[2024-05-04 19:03:49] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/2c/18/1f374199807a42c573f6ee141a564f86921da987456c2dbbe23861f357f5/model_explorer-0.0.87.tar.gz
+[2024-05-04 19:03:49] INFO root fetch - processPackages [TensorFlowASR]: Downloading https://files.pythonhosted.org/packages/8c/ba/75c7d38a4dec17d63cb9a62d1ee2313f3f6138979438fbc2f267e051471d/TensorFlowASR-2.0.0.tar.gz
+[2024-05-04 19:03:49] INFO root fetch - processPackages [fastapi-debug-toolbar]: Downloading https://files.pythonhosted.org/packages/ac/e6/c228493e929eeb2b9e61806a63e78c3c0bec4e22ddee99f321ffba4fa64a/fastapi_debug_toolbar-0.6.3.tar.gz
+[2024-05-04 19:03:49] INFO root fetch - processPackages [TensorFlowASR]: executing diffoscope
+[2024-05-04 19:03:49] INFO root fetch - processPackages [TensorFlowASR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TensorFlowASR-1.0.3.tar.gz tmp/TensorFlowASR-2.0.0.tar.gz --markdown 20240504/T/TensorFlowASR/1.0.3-2.0.0/README.md --exclude *.pyd
+[2024-05-04 19:03:49] INFO root fetch - processPackages [fastapi-debug-toolbar]: executing diffoscope
+[2024-05-04 19:03:49] INFO root fetch - processPackages [fastapi-debug-toolbar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_debug_toolbar-0.6.2.tar.gz tmp/fastapi_debug_toolbar-0.6.3.tar.gz --markdown 20240504/f/fastapi-debug-toolbar/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-05-04 19:03:49] INFO root fetch - processPackages [model-explorer]: executing diffoscope
+[2024-05-04 19:03:49] INFO root fetch - processPackages [model-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer-0.0.86.tar.gz tmp/model_explorer-0.0.87.tar.gz --markdown 20240504/m/model-explorer/0.0.86-0.0.87/README.md --exclude *.pyd
+[2024-05-04 19:03:50] INFO root fetch - processPackages [arcticdb]: Downloading https://files.pythonhosted.org/packages/34/32/d0139154af7194827498c7a9ceffb55e70e14cfed5d46fde22442d7bfac1/arcticdb-4.4.2rc0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:03:50] INFO root fetch - processPackages [fastapi-debug-toolbar]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_debug_toolbar-0.6.2.tar.gz]
+[2024-05-04 19:03:50] INFO root fetch - processPackages [fastapi-debug-toolbar]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_debug_toolbar-0.6.3.tar.gz]
+[2024-05-04 19:03:50] INFO root fetch - main [MainThread]: End processing [fastapi-debug-toolbar]: success
+[2024-05-04 19:03:50] INFO root fetch - processPackages [TensorFlowASR]: Remove: archive file [/home/abi/fetcher/tmp/TensorFlowASR-1.0.3.tar.gz]
+[2024-05-04 19:03:50] INFO root fetch - processPackages [TensorFlowASR]: Remove: archive file [/home/abi/fetcher/tmp/TensorFlowASR-2.0.0.tar.gz]
+[2024-05-04 19:03:50] INFO root fetch - main [MainThread]: End processing [TensorFlowASR]: success
+[2024-05-04 19:03:51] INFO root fetch - processPackages [arcticdb]: executing diffoscope
+[2024-05-04 19:03:51] INFO root fetch - processPackages [arcticdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcticdb-4.4.1-cp39-cp39-win_amd64.whl.zip tmp/arcticdb-4.4.2rc0-cp39-cp39-win_amd64.whl.zip --markdown 20240504/a/arcticdb/4.4.1-4.4.2rc0/README.md --exclude *.pyd
+[2024-05-04 19:03:52] INFO root fetch - processPackages [arcticdb]: Remove: archive file [/home/abi/fetcher/tmp/arcticdb-4.4.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:03:52] INFO root fetch - processPackages [arcticdb]: Remove: archive file [/home/abi/fetcher/tmp/arcticdb-4.4.2rc0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:03:52] INFO root fetch - main [MainThread]: End processing [arcticdb]: success
+[2024-05-04 19:03:59] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.86.tar.gz]
+[2024-05-04 19:03:59] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.87.tar.gz]
+[2024-05-04 19:03:59] INFO root fetch - main [MainThread]: End processing [model-explorer]: success
+[2024-05-04 19:03:59] INFO root fetch - main [MainThread]: Store serial: [23059464]
