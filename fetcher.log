@@ -7131,3 +7131,20 @@
 [2024-05-04 04:00:14] WARNING root fetch - processPackages [MICView]: Skipping, unable to determine old version
 [2024-05-04 04:00:14] INFO root fetch - main [MainThread]: End processing [MICView] error
 [2024-05-04 04:00:14] INFO root fetch - main [MainThread]: Store serial: [23054661]
+[2024-05-04 04:02:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054661]
+[2024-05-04 04:02:22] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 04:04:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054661]
+[2024-05-04 04:04:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 04:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygcc
+[2024-05-04 04:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cmusic
+[2024-05-04 04:04:28] WARNING root fetch - processPackages [cmusic]: Skipping, unable to determine old version
+[2024-05-04 04:04:28] INFO root fetch - main [MainThread]: End processing [cmusic] error
+[2024-05-04 04:04:28] INFO root fetch - processPackages [pygcc]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-05-04 04:04:28] INFO root fetch - processPackages [pygcc]: Downloading https://files.pythonhosted.org/packages/9b/2e/f92c58292a02b4f349ca4e243f73fe4026c3489e4c9339475fff12a9b6b6/pygcc-1.2.0.tar.gz
+[2024-05-04 04:04:29] INFO root fetch - processPackages [pygcc]: Downloading https://files.pythonhosted.org/packages/b2/d9/7e271cd979cb05cc789ae5d7c39be5cc797ac916bafd48b1b288de302b99/pygcc-1.3.0.tar.gz
+[2024-05-04 04:04:29] INFO root fetch - processPackages [pygcc]: executing diffoscope
+[2024-05-04 04:04:29] INFO root fetch - processPackages [pygcc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygcc-1.2.0.tar.gz tmp/pygcc-1.3.0.tar.gz --markdown 20240504/p/pygcc/1.2.0-1.3.0/README.md --exclude *.pyd
+[2024-05-04 04:04:30] INFO root fetch - processPackages [pygcc]: Remove: archive file [/home/abi/fetcher/tmp/pygcc-1.2.0.tar.gz]
+[2024-05-04 04:04:30] INFO root fetch - processPackages [pygcc]: Remove: archive file [/home/abi/fetcher/tmp/pygcc-1.3.0.tar.gz]
+[2024-05-04 04:04:30] INFO root fetch - main [MainThread]: End processing [pygcc]: success
+[2024-05-04 04:04:30] INFO root fetch - main [MainThread]: Store serial: [23054668]
