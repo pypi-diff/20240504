@@ -11271,3 +11271,17 @@
 [2024-05-04 09:44:48] INFO root fetch - processPackages [phono3py]: Remove: archive file [/home/abi/fetcher/tmp/phono3py-3.0.3.tar.gz]
 [2024-05-04 09:44:48] INFO root fetch - main [MainThread]: End processing [phono3py]: success
 [2024-05-04 09:44:48] INFO root fetch - main [MainThread]: Store serial: [23056636]
+[2024-05-04 09:46:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056636]
+[2024-05-04 09:46:57] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 09:48:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056636]
+[2024-05-04 09:49:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 09:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyvista
+[2024-05-04 09:49:03] INFO root fetch - processPackages [pyvista]: New version: [0.44.dev0] Old Version: [0.43.7]
+[2024-05-04 09:49:03] INFO root fetch - processPackages [pyvista]: Downloading https://files.pythonhosted.org/packages/b8/c4/614bd42266cfe91302a7367bf6791cf8a1b987dc755de50a1c1b99423c21/pyvista-0.43.7.tar.gz
+[2024-05-04 09:49:04] INFO root fetch - processPackages [pyvista]: Downloading https://files.pythonhosted.org/packages/65/e0/c0a9c27d38de6b868bc098c7f24f30fd42fe78e84e1c1ab993aa33619ed8/pyvista-0.44.dev0.tar.gz
+[2024-05-04 09:49:04] INFO root fetch - processPackages [pyvista]: executing diffoscope
+[2024-05-04 09:49:04] INFO root fetch - processPackages [pyvista]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvista-0.43.7.tar.gz tmp/pyvista-0.44.dev0.tar.gz --markdown 20240504/p/pyvista/0.43.7-0.44.dev0/README.md --exclude *.pyd
+[2024-05-04 09:49:06] INFO root fetch - processPackages [pyvista]: Remove: archive file [/home/abi/fetcher/tmp/pyvista-0.43.7.tar.gz]
+[2024-05-04 09:49:06] INFO root fetch - processPackages [pyvista]: Remove: archive file [/home/abi/fetcher/tmp/pyvista-0.44.dev0.tar.gz]
+[2024-05-04 09:49:06] INFO root fetch - main [MainThread]: End processing [pyvista]: success
+[2024-05-04 09:49:06] INFO root fetch - main [MainThread]: Store serial: [23056639]
