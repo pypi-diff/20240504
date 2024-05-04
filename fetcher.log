@@ -19915,3 +19915,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:07:14] INFO root fetch - processPackages [torahcodes]: Remove: archive file [/home/abi/fetcher/tmp/torahcodes-1.0.9.tar.gz]
 [2024-05-04 22:07:14] INFO root fetch - main [MainThread]: End processing [torahcodes]: success
 [2024-05-04 22:07:14] INFO root fetch - main [MainThread]: Store serial: [23060659]
+[2024-05-04 22:09:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060659]
+[2024-05-04 22:09:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 22:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-json
+[2024-05-04 22:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: specsy
+[2024-05-04 22:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymmcore-plus
+[2024-05-04 22:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aim
+[2024-05-04 22:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jubtools
+[2024-05-04 22:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rumchat-actor
+[2024-05-04 22:09:23] INFO root fetch - processPackages [specsy]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-04 22:09:23] INFO root fetch - processPackages [rumchat-actor]: New version: [1.0.0] Old Version: [0.1.0]
+[2024-05-04 22:09:23] INFO root fetch - processPackages [jubtools]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-04 22:09:23] INFO root fetch - processPackages [mo-json]: New version: [6.619.24125] Old Version: [6.617.24125]
+[2024-05-04 22:09:23] INFO root fetch - processPackages [rumchat-actor]: Downloading https://files.pythonhosted.org/packages/3e/6e/8de5964367292f86a08a855df506cdece99b7de138a8ec2ad7d3b561f5fc/rumchat_actor-0.1.0.tar.gz
+[2024-05-04 22:09:23] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-05-04 22:09:23] INFO root fetch - processPackages [pymmcore-plus]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-04 22:09:23] INFO root fetch - processPackages [specsy]: Downloading https://files.pythonhosted.org/packages/51/1b/011df88c64f07db4e784a6d7908614fb3eff6a4999abb3be3c9a0434d3a2/specsy-0.2.4.tar.gz
+[2024-05-04 22:09:23] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/bf/5d/0e63bd0369329f9520130d624b28475d232776b819ad3f61f6c0cb25ba9d/mo_json-6.617.24125.tar.gz
+[2024-05-04 22:09:23] INFO root fetch - processPackages [jubtools]: Downloading https://files.pythonhosted.org/packages/77/6e/585f30af09f6747a09172e3b7669e6f8df4991f389a385d89dafe4d2d074/jubtools-0.4.0.tar.gz
+[2024-05-04 22:09:23] INFO root fetch - processPackages [rumchat-actor]: Downloading https://files.pythonhosted.org/packages/e2/c8/0f0dfb5c8b3a6ebc226f11c47d882b1a007fd40b51eacd5e71e38e8723b7/rumchat_actor-1.0.0.tar.gz
+[2024-05-04 22:09:23] INFO root fetch - processPackages [pymmcore-plus]: Downloading https://files.pythonhosted.org/packages/bb/a1/569e6ea7ed7f4f98db48522a677c86b037be7a00ce8171a802a3f8502e84/pymmcore_plus-0.9.4.tar.gz
+[2024-05-04 22:09:23] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-05-04 22:09:23] INFO root fetch - processPackages [jubtools]: Downloading https://files.pythonhosted.org/packages/c1/a2/b6318accc5fb3a66544776b4027053713066685b8c9521f2fb2720eb51cd/jubtools-0.5.0.tar.gz
+[2024-05-04 22:09:23] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/15/98/18bf0b4c6eb5fbbc1fc8eadb248e7e68ccd5b97c13d0578cae78737909e3/mo_json-6.619.24125.tar.gz
+[2024-05-04 22:09:23] INFO root fetch - processPackages [rumchat-actor]: executing diffoscope
+[2024-05-04 22:09:23] INFO root fetch - processPackages [rumchat-actor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rumchat_actor-0.1.0.tar.gz tmp/rumchat_actor-1.0.0.tar.gz --markdown 20240504/r/rumchat-actor/0.1.0-1.0.0/README.md --exclude *.pyd
+[2024-05-04 22:09:23] INFO root fetch - processPackages [specsy]: Downloading https://files.pythonhosted.org/packages/ca/42/127b0b5401776056413802d93e2764f2bc79ec3c645105257b032d51cdad/specsy-0.2.5.tar.gz
+[2024-05-04 22:09:23] INFO root fetch - processPackages [jubtools]: executing diffoscope
+[2024-05-04 22:09:23] INFO root fetch - processPackages [jubtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jubtools-0.4.0.tar.gz tmp/jubtools-0.5.0.tar.gz --markdown 20240504/j/jubtools/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-04 22:09:23] INFO root fetch - processPackages [mo-json]: executing diffoscope
+[2024-05-04 22:09:23] INFO root fetch - processPackages [mo-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_json-6.617.24125.tar.gz tmp/mo_json-6.619.24125.tar.gz --markdown 20240504/m/mo-json/6.617.24125-6.619.24125/README.md --exclude *.pyd
+[2024-05-04 22:09:23] INFO root fetch - processPackages [specsy]: executing diffoscope
+[2024-05-04 22:09:23] INFO root fetch - processPackages [specsy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/specsy-0.2.4.tar.gz tmp/specsy-0.2.5.tar.gz --markdown 20240504/s/specsy/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-04 22:09:23] INFO root fetch - processPackages [pymmcore-plus]: Downloading https://files.pythonhosted.org/packages/cd/ee/693d7a723af6cbd1c57675205bb4325a9811ee625e62b6cfabe4ed3d8fef/pymmcore_plus-0.9.5.tar.gz
+[2024-05-04 22:09:23] INFO root fetch - processPackages [pymmcore-plus]: executing diffoscope
+[2024-05-04 22:09:23] INFO root fetch - processPackages [pymmcore-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymmcore_plus-0.9.4.tar.gz tmp/pymmcore_plus-0.9.5.tar.gz --markdown 20240504/p/pymmcore-plus/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-04 22:09:24] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-05-04 22:09:24] INFO root fetch - processPackages [rumchat-actor]: Remove: archive file [/home/abi/fetcher/tmp/rumchat_actor-0.1.0.tar.gz]
+[2024-05-04 22:09:24] INFO root fetch - processPackages [rumchat-actor]: Remove: archive file [/home/abi/fetcher/tmp/rumchat_actor-1.0.0.tar.gz]
+[2024-05-04 22:09:24] INFO root fetch - main [MainThread]: End processing [rumchat-actor]: success
+[2024-05-04 22:09:24] INFO root fetch - processPackages [jubtools]: Remove: archive file [/home/abi/fetcher/tmp/jubtools-0.4.0.tar.gz]
+[2024-05-04 22:09:24] INFO root fetch - processPackages [jubtools]: Remove: archive file [/home/abi/fetcher/tmp/jubtools-0.5.0.tar.gz]
+[2024-05-04 22:09:24] INFO root fetch - main [MainThread]: End processing [jubtools]: success
+[2024-05-04 22:09:24] INFO root fetch - processPackages [mo-json]: Remove: archive file [/home/abi/fetcher/tmp/mo_json-6.617.24125.tar.gz]
+[2024-05-04 22:09:24] INFO root fetch - processPackages [mo-json]: Remove: archive file [/home/abi/fetcher/tmp/mo_json-6.619.24125.tar.gz]
+[2024-05-04 22:09:24] INFO root fetch - main [MainThread]: End processing [mo-json]: success
+[2024-05-04 22:09:24] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-05-04 22:09:24] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240504/a/aim/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-05-04 22:09:24] INFO root fetch - processPackages [specsy]: Remove: archive file [/home/abi/fetcher/tmp/specsy-0.2.4.tar.gz]
+[2024-05-04 22:09:24] INFO root fetch - processPackages [specsy]: Remove: archive file [/home/abi/fetcher/tmp/specsy-0.2.5.tar.gz]
+[2024-05-04 22:09:24] INFO root fetch - main [MainThread]: End processing [specsy]: success
+[2024-05-04 22:09:24] INFO root fetch - processPackages [pymmcore-plus]: Remove: archive file [/home/abi/fetcher/tmp/pymmcore_plus-0.9.4.tar.gz]
+[2024-05-04 22:09:24] INFO root fetch - processPackages [pymmcore-plus]: Remove: archive file [/home/abi/fetcher/tmp/pymmcore_plus-0.9.5.tar.gz]
+[2024-05-04 22:09:24] INFO root fetch - main [MainThread]: End processing [pymmcore-plus]: success
+[2024-05-04 22:09:29] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-05-04 22:09:29] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-05-04 22:09:29] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-05-04 22:09:29] INFO root fetch - main [MainThread]: Store serial: [23060678]
