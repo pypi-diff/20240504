@@ -20162,3 +20162,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:18:39] INFO root fetch - processPackages [topt]: Remove: archive file [/home/abi/fetcher/tmp/topt-0.0.3.tar.gz]
 [2024-05-04 22:18:39] INFO root fetch - main [MainThread]: End processing [topt]: success
 [2024-05-04 22:18:39] INFO root fetch - main [MainThread]: Store serial: [23060759]
+[2024-05-04 22:20:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060759]
+[2024-05-04 22:20:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 22:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-streams
+[2024-05-04 22:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: got-cli
+[2024-05-04 22:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RealTimeTTS
+[2024-05-04 22:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kfre
+[2024-05-04 22:20:48] INFO root fetch - processPackages [got-cli]: New version: [0.0.7] Old Version: [0.0.3]
+[2024-05-04 22:20:48] INFO root fetch - processPackages [mo-streams]: New version: [1.620.24125] Old Version: [1.606.24115]
+[2024-05-04 22:20:48] INFO root fetch - processPackages [kfre]: New version: [0.1.2b5] Old Version: [0.1.2b4]
+[2024-05-04 22:20:48] INFO root fetch - processPackages [RealTimeTTS]: New version: [0.3.45] Old Version: [0.3.44]
+[2024-05-04 22:20:48] INFO root fetch - processPackages [mo-streams]: Downloading https://files.pythonhosted.org/packages/88/50/fb31e33762e58e83d4b3870cef7ce257929edea30f93d58dd71afc3699c4/mo_streams-1.606.24115.tar.gz
+[2024-05-04 22:20:48] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/b6/38/f1580bd11753e524cfe9545e7fcf0821dd421847634d108dbb7358b7b78c/kfre-0.1.2b4.tar.gz
+[2024-05-04 22:20:48] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/c5/21/723d006e0faa448b56bc2fb01a5c4e134f996f7b8ed9fe54bbd4e4d071a5/got-cli-0.0.3.tar.gz
+[2024-05-04 22:20:48] INFO root fetch - processPackages [RealTimeTTS]: Downloading https://files.pythonhosted.org/packages/ae/0d/5d5bf4e03a44f0ffae4eee39622646343adf6ab0c8f27b52c489fa95cdec/RealTimeTTS-0.3.44.tar.gz
+[2024-05-04 22:20:48] INFO root fetch - processPackages [mo-streams]: Downloading https://files.pythonhosted.org/packages/bd/d6/73f8ea5bfa0239d46b1838ffbe8c0a338755e32807a8239828167a353b63/mo_streams-1.620.24125.tar.gz
+[2024-05-04 22:20:48] INFO root fetch - processPackages [mo-streams]: executing diffoscope
+[2024-05-04 22:20:48] INFO root fetch - processPackages [mo-streams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_streams-1.606.24115.tar.gz tmp/mo_streams-1.620.24125.tar.gz --markdown 20240504/m/mo-streams/1.606.24115-1.620.24125/README.md --exclude *.pyd
+[2024-05-04 22:20:48] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/dc/8a/995866f0e7c7916b75f3c45d3e6500ae500f3fc2c0090022fce98202d562/kfre-0.1.2b5.tar.gz
+[2024-05-04 22:20:48] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/95/b5/d7a8f2245a5e0fa45f2829e6dcbe85b71abaaac427665daa70385ba32ef4/got-cli-0.0.7.tar.gz
+[2024-05-04 22:20:49] INFO root fetch - processPackages [kfre]: executing diffoscope
+[2024-05-04 22:20:49] INFO root fetch - processPackages [kfre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfre-0.1.2b4.tar.gz tmp/kfre-0.1.2b5.tar.gz --markdown 20240504/k/kfre/0.1.2b4-0.1.2b5/README.md --exclude *.pyd
+[2024-05-04 22:20:49] INFO root fetch - processPackages [got-cli]: executing diffoscope
+[2024-05-04 22:20:49] INFO root fetch - processPackages [got-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/got-cli-0.0.3.tar.gz tmp/got-cli-0.0.7.tar.gz --markdown 20240504/g/got-cli/0.0.3-0.0.7/README.md --exclude *.pyd
+[2024-05-04 22:20:49] INFO root fetch - processPackages [RealTimeTTS]: Downloading https://files.pythonhosted.org/packages/07/f8/fb489853f7500afeff1c3d7466e98d69ac3e21bb780910ba2df643a721f0/RealTimeTTS-0.3.45.tar.gz
+[2024-05-04 22:20:49] INFO root fetch - processPackages [RealTimeTTS]: executing diffoscope
+[2024-05-04 22:20:49] INFO root fetch - processPackages [RealTimeTTS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RealTimeTTS-0.3.44.tar.gz tmp/RealTimeTTS-0.3.45.tar.gz --markdown 20240504/R/RealTimeTTS/0.3.44-0.3.45/README.md --exclude *.pyd
+[2024-05-04 22:20:49] INFO root fetch - processPackages [mo-streams]: Remove: archive file [/home/abi/fetcher/tmp/mo_streams-1.606.24115.tar.gz]
+[2024-05-04 22:20:49] INFO root fetch - processPackages [mo-streams]: Remove: archive file [/home/abi/fetcher/tmp/mo_streams-1.620.24125.tar.gz]
+[2024-05-04 22:20:49] INFO root fetch - main [MainThread]: End processing [mo-streams]: success
+[2024-05-04 22:20:49] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.3.tar.gz]
+[2024-05-04 22:20:49] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.7.tar.gz]
+[2024-05-04 22:20:49] INFO root fetch - main [MainThread]: End processing [got-cli]: success
+[2024-05-04 22:20:49] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2b4.tar.gz]
+[2024-05-04 22:20:49] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2b5.tar.gz]
+[2024-05-04 22:20:49] INFO root fetch - main [MainThread]: End processing [kfre]: success
+[2024-05-04 22:20:50] INFO root fetch - processPackages [RealTimeTTS]: Remove: archive file [/home/abi/fetcher/tmp/RealTimeTTS-0.3.44.tar.gz]
+[2024-05-04 22:20:50] INFO root fetch - processPackages [RealTimeTTS]: Remove: archive file [/home/abi/fetcher/tmp/RealTimeTTS-0.3.45.tar.gz]
+[2024-05-04 22:20:50] INFO root fetch - main [MainThread]: End processing [RealTimeTTS]: success
+[2024-05-04 22:20:50] INFO root fetch - main [MainThread]: Store serial: [23060776]
