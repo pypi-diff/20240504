@@ -16275,3 +16275,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:34:01] INFO root fetch - processPackages [cryptography]: Remove: archive file [/home/abi/fetcher/tmp/cryptography-42.0.5.tar.gz]
 [2024-05-04 17:34:01] INFO root fetch - main [MainThread]: End processing [cryptography]: success
 [2024-05-04 17:34:01] INFO root fetch - main [MainThread]: Store serial: [23058952]
+[2024-05-04 17:36:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058952]
+[2024-05-04 17:36:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 17:36:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepview-datasets
+[2024-05-04 17:36:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: name-generator-nicomp
+[2024-05-04 17:36:10] INFO root fetch - processPackages [name-generator-nicomp]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 17:36:10] INFO root fetch - processPackages [deepview-datasets]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-04 17:36:10] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/9a/55/ec394d28059b2b5187b7f1788d66a62bbc323126410056840a08afd6c830/name_generator_nicomp-1.0.1.tar.gz
+[2024-05-04 17:36:10] INFO root fetch - processPackages [deepview-datasets]: Downloading https://files.pythonhosted.org/packages/e6/b6/3653e13e128eeb6384db4b24face848935cd7da5c97e268748505ddccae4/deepview_datasets-0.3.3.tar.gz
+[2024-05-04 17:36:10] INFO root fetch - processPackages [deepview-datasets]: Downloading https://files.pythonhosted.org/packages/2f/25/cf188a434159ca81b75c7e7c6a485e7300ecb92061c5c6f1fb1fcecee248/deepview_datasets-0.3.4.tar.gz
+[2024-05-04 17:36:10] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/64/1a/65538accbbc9c263759d5aeda00eb8c218f311f86cab67415def214cb671/name_generator_nicomp-1.0.2.tar.gz
+[2024-05-04 17:36:10] INFO root fetch - processPackages [deepview-datasets]: executing diffoscope
+[2024-05-04 17:36:10] INFO root fetch - processPackages [deepview-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepview_datasets-0.3.3.tar.gz tmp/deepview_datasets-0.3.4.tar.gz --markdown 20240504/d/deepview-datasets/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-04 17:36:10] INFO root fetch - processPackages [name-generator-nicomp]: executing diffoscope
+[2024-05-04 17:36:10] INFO root fetch - processPackages [name-generator-nicomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/name_generator_nicomp-1.0.1.tar.gz tmp/name_generator_nicomp-1.0.2.tar.gz --markdown 20240504/n/name-generator-nicomp/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 17:36:11] INFO root fetch - processPackages [deepview-datasets]: Remove: archive file [/home/abi/fetcher/tmp/deepview_datasets-0.3.3.tar.gz]
+[2024-05-04 17:36:11] INFO root fetch - processPackages [deepview-datasets]: Remove: archive file [/home/abi/fetcher/tmp/deepview_datasets-0.3.4.tar.gz]
+[2024-05-04 17:36:11] INFO root fetch - main [MainThread]: End processing [deepview-datasets]: success
+[2024-05-04 17:36:11] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.1.tar.gz]
+[2024-05-04 17:36:11] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.2.tar.gz]
+[2024-05-04 17:36:11] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp]: success
+[2024-05-04 17:36:11] INFO root fetch - main [MainThread]: Store serial: [23058970]
