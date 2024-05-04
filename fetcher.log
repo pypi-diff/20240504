@@ -7318,3 +7318,51 @@
 [2024-05-04 04:14:07] INFO root fetch - processPackages [onnxruntime-genai]: Remove: archive file [/home/abi/fetcher/tmp/onnxruntime_genai-0.2.0rc5-cp39-cp39-win_amd64.whl.zip]
 [2024-05-04 04:14:07] INFO root fetch - main [MainThread]: End processing [onnxruntime-genai]: success
 [2024-05-04 04:14:07] INFO root fetch - main [MainThread]: Store serial: [23054741]
+[2024-05-04 04:16:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054741]
+[2024-05-04 04:16:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 04:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hbox
+[2024-05-04 04:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wj-google
+[2024-05-04 04:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cocorum
+[2024-05-04 04:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gr1336-toolbox
+[2024-05-04 04:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: types-beautifulsoup4
+[2024-05-04 04:16:30] INFO root fetch - processPackages [hbox]: New version: [0.3.3] Old Version: [0.3.1]
+[2024-05-04 04:16:30] INFO root fetch - processPackages [gr1336-toolbox]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-04 04:16:30] INFO root fetch - processPackages [cocorum]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-04 04:16:30] INFO root fetch - processPackages [types-beautifulsoup4]: New version: [4.9.4] Old Version: [4.9.3]
+[2024-05-04 04:16:30] INFO root fetch - processPackages [wj-google]: New version: [0.1.4] Old Version: [0.1.2]
+[2024-05-04 04:16:30] INFO root fetch - processPackages [gr1336-toolbox]: Downloading https://files.pythonhosted.org/packages/f2/c4/306b8029b0ef02dda63fb3490ce64dc170494cb806eb6a90ef13a8fcd414/gr1336_toolbox-0.0.4.tar.gz
+[2024-05-04 04:16:30] INFO root fetch - processPackages [hbox]: Downloading https://files.pythonhosted.org/packages/45/47/914dbfe3767325a4b1b0f1c71feceea31904fae6ae537c046bc21198f0fa/hbox-0.3.1.tar.gz
+[2024-05-04 04:16:30] INFO root fetch - processPackages [cocorum]: Downloading https://files.pythonhosted.org/packages/f6/37/d28bd3c1e5fc12932dd69f1f22cf84cc8327a0740ab0a08b352cec9974bf/cocorum-0.5.1.tar.gz
+[2024-05-04 04:16:30] INFO root fetch - processPackages [types-beautifulsoup4]: Downloading https://files.pythonhosted.org/packages/15/f8/3da169b5dd53dd9d049f73571650290670edcf2e1d8ee7bbf0fa6997dad5/types-beautifulsoup4-4.9.3.tar.gz
+[2024-05-04 04:16:30] INFO root fetch - processPackages [wj-google]: Downloading https://files.pythonhosted.org/packages/ed/7e/2dad1310fe8c53cf086e78aa0dd9089a53ca4677fc188e54d0a93a7fb992/wj_google-0.1.2.tar.gz
+[2024-05-04 04:16:30] INFO root fetch - processPackages [cocorum]: Downloading https://files.pythonhosted.org/packages/6d/2b/2cde1a5a9ed7bd6949400eb027786e1ddf220e1ca22f33ac7b791a201699/cocorum-0.5.2.tar.gz
+[2024-05-04 04:16:30] INFO root fetch - processPackages [hbox]: Downloading https://files.pythonhosted.org/packages/14/29/000b06b78eb17140794494976493ff51e7c9d689d99eeda4fcead29608ab/hbox-0.3.3.tar.gz
+[2024-05-04 04:16:30] INFO root fetch - processPackages [gr1336-toolbox]: Downloading https://files.pythonhosted.org/packages/81/12/2713d84586f7a6846156c1c9810c31721bfab8974b96c9dee2cf3dfce5e7/gr1336_toolbox-0.0.5.tar.gz
+[2024-05-04 04:16:31] INFO root fetch - processPackages [hbox]: executing diffoscope
+[2024-05-04 04:16:31] INFO root fetch - processPackages [hbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbox-0.3.1.tar.gz tmp/hbox-0.3.3.tar.gz --markdown 20240504/h/hbox/0.3.1-0.3.3/README.md --exclude *.pyd
+[2024-05-04 04:16:31] INFO root fetch - processPackages [cocorum]: executing diffoscope
+[2024-05-04 04:16:31] INFO root fetch - processPackages [cocorum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocorum-0.5.1.tar.gz tmp/cocorum-0.5.2.tar.gz --markdown 20240504/c/cocorum/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-04 04:16:31] INFO root fetch - processPackages [gr1336-toolbox]: executing diffoscope
+[2024-05-04 04:16:31] INFO root fetch - processPackages [gr1336-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gr1336_toolbox-0.0.4.tar.gz tmp/gr1336_toolbox-0.0.5.tar.gz --markdown 20240504/g/gr1336-toolbox/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-04 04:16:31] INFO root fetch - processPackages [wj-google]: Downloading https://files.pythonhosted.org/packages/d4/59/4d3eab6ece556e4933e73ce270098d857a583fb21a5c3a6dfd8bf31bbb9e/wj_google-0.1.4.tar.gz
+[2024-05-04 04:16:31] INFO root fetch - processPackages [types-beautifulsoup4]: Downloading https://files.pythonhosted.org/packages/df/c7/11c3c1c5b6d81abb604ab3c208e797821b60876c14633ecbcffc6a3da730/types-beautifulsoup4-4.9.4.tar.gz
+[2024-05-04 04:16:31] INFO root fetch - processPackages [wj-google]: executing diffoscope
+[2024-05-04 04:16:31] INFO root fetch - processPackages [wj-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wj_google-0.1.2.tar.gz tmp/wj_google-0.1.4.tar.gz --markdown 20240504/w/wj-google/0.1.2-0.1.4/README.md --exclude *.pyd
+[2024-05-04 04:16:31] INFO root fetch - processPackages [types-beautifulsoup4]: executing diffoscope
+[2024-05-04 04:16:31] INFO root fetch - processPackages [types-beautifulsoup4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-beautifulsoup4-4.9.3.tar.gz tmp/types-beautifulsoup4-4.9.4.tar.gz --markdown 20240504/t/types-beautifulsoup4/4.9.3-4.9.4/README.md --exclude *.pyd
+[2024-05-04 04:16:31] INFO root fetch - processPackages [gr1336-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/gr1336_toolbox-0.0.4.tar.gz]
+[2024-05-04 04:16:31] INFO root fetch - processPackages [gr1336-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/gr1336_toolbox-0.0.5.tar.gz]
+[2024-05-04 04:16:31] INFO root fetch - main [MainThread]: End processing [gr1336-toolbox]: success
+[2024-05-04 04:16:31] INFO root fetch - processPackages [cocorum]: Remove: archive file [/home/abi/fetcher/tmp/cocorum-0.5.1.tar.gz]
+[2024-05-04 04:16:31] INFO root fetch - processPackages [cocorum]: Remove: archive file [/home/abi/fetcher/tmp/cocorum-0.5.2.tar.gz]
+[2024-05-04 04:16:31] INFO root fetch - main [MainThread]: End processing [cocorum]: success
+[2024-05-04 04:16:31] INFO root fetch - processPackages [hbox]: Remove: archive file [/home/abi/fetcher/tmp/hbox-0.3.1.tar.gz]
+[2024-05-04 04:16:31] INFO root fetch - processPackages [hbox]: Remove: archive file [/home/abi/fetcher/tmp/hbox-0.3.3.tar.gz]
+[2024-05-04 04:16:31] INFO root fetch - main [MainThread]: End processing [hbox]: success
+[2024-05-04 04:16:31] INFO root fetch - processPackages [wj-google]: Remove: archive file [/home/abi/fetcher/tmp/wj_google-0.1.2.tar.gz]
+[2024-05-04 04:16:31] INFO root fetch - processPackages [wj-google]: Remove: archive file [/home/abi/fetcher/tmp/wj_google-0.1.4.tar.gz]
+[2024-05-04 04:16:31] INFO root fetch - main [MainThread]: End processing [wj-google]: success
+[2024-05-04 04:16:31] INFO root fetch - processPackages [types-beautifulsoup4]: Remove: archive file [/home/abi/fetcher/tmp/types-beautifulsoup4-4.9.3.tar.gz]
+[2024-05-04 04:16:31] INFO root fetch - processPackages [types-beautifulsoup4]: Remove: archive file [/home/abi/fetcher/tmp/types-beautifulsoup4-4.9.4.tar.gz]
+[2024-05-04 04:16:31] INFO root fetch - main [MainThread]: End processing [types-beautifulsoup4]: success
+[2024-05-04 04:16:31] INFO root fetch - main [MainThread]: Store serial: [23054771]
