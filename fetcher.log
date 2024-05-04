@@ -10251,3 +10251,63 @@
 [2024-05-04 08:11:10] INFO root fetch - processPackages [odoo-addon-stock-available]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_available-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-05-04 08:11:10] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-available]: success
 [2024-05-04 08:11:10] INFO root fetch - main [MainThread]: Store serial: [23056117]
+[2024-05-04 08:13:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056117]
+[2024-05-04 08:13:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 08:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cpac
+[2024-05-04 08:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-memoize
+[2024-05-04 08:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk8s-awscdk-resolver
+[2024-05-04 08:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docugami-langchain
+[2024-05-04 08:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pretext
+[2024-05-04 08:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-shipment-advice
+[2024-05-04 08:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gpt-batch
+[2024-05-04 08:13:19] INFO root fetch - processPackages [py-memoize]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-04 08:13:19] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: New version: [14.0.2.3.0] Old Version: [14.0.2.2.0]
+[2024-05-04 08:13:19] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: New version: [0.0.95] Old Version: [0.0.94]
+[2024-05-04 08:13:19] WARNING root fetch - processPackages [gpt-batch]: Skipping, unable to determine old version
+[2024-05-04 08:13:19] INFO root fetch - main [MainThread]: End processing [gpt-batch] error
+[2024-05-04 08:13:19] INFO root fetch - processPackages [py-memoize]: Downloading https://files.pythonhosted.org/packages/8d/8d/24e153abc9ddc03361744a5d1e4e596cb5023c08980134ccbde9ec868490/py-memoize-1.1.4.tar.gz
+[2024-05-04 08:13:19] INFO root fetch - processPackages [cpac]: New version: [1.8.7] Old Version: [1.8.6.post1.dev1]
+[2024-05-04 08:13:19] INFO root fetch - processPackages [docugami-langchain]: New version: [0.0.8] Old Version: [0.0.7rc9]
+[2024-05-04 08:13:19] INFO root fetch - processPackages [pretext]: New version: [2.4.1.dev20240504] Old Version: [2.4.1.dev20240502]
+[2024-05-04 08:13:19] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: Downloading https://files.pythonhosted.org/packages/f7/f0/520b0be49e6bbef899e9da4847126248ff1ed14a59dc419c44c330097d18/odoo14_addon_shipment_advice-14.0.2.2.0-py3-none-any.whl
+[2024-05-04 08:13:19] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Downloading https://files.pythonhosted.org/packages/cd/c6/2b2770089e36d2640ab4231e4b0545d693db3981d91a4030b3390dacc246/cdk8s-awscdk-resolver-0.0.94.tar.gz
+[2024-05-04 08:13:20] INFO root fetch - processPackages [py-memoize]: Downloading https://files.pythonhosted.org/packages/6f/36/797df9b551cf1775cf8502b754b6496502e2dcee8960773716fc6fece2ea/py-memoize-1.1.5.tar.gz
+[2024-05-04 08:13:20] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/34/67/80f457f39c8d5cbd0a0a85e3f818d5d31cd6a760a7f1f96d7fe891039316/pretext-2.4.1.dev20240502.tar.gz
+[2024-05-04 08:13:20] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: Downloading https://files.pythonhosted.org/packages/fe/40/714630a71f6c61b918f2fe386cafbcae194f8115a4f8635e30a5b8ca8bd8/odoo14_addon_shipment_advice-14.0.2.3.0-py3-none-any.whl
+[2024-05-04 08:13:20] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/d3/dc/ebfc94d3428173a7827916947f5e84317c665bab439e99dd9fd634dcc60f/docugami_langchain-0.0.7rc9.tar.gz
+[2024-05-04 08:13:20] INFO root fetch - processPackages [cpac]: Downloading https://files.pythonhosted.org/packages/6b/d2/b181fb56742f1f1fe8209b9083ccb9c130c85a096062d93ac6975f854020/cpac-1.8.6.post1.dev1.tar.gz
+[2024-05-04 08:13:20] INFO root fetch - processPackages [py-memoize]: executing diffoscope
+[2024-05-04 08:13:20] INFO root fetch - processPackages [py-memoize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-memoize-1.1.4.tar.gz tmp/py-memoize-1.1.5.tar.gz --markdown 20240504/p/py-memoize/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-04 08:13:20] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: executing diffoscope
+[2024-05-04 08:13:20] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shipment_advice-14.0.2.2.0-py3-none-any.whl.zip tmp/odoo14_addon_shipment_advice-14.0.2.3.0-py3-none-any.whl.zip --markdown 20240504/o/odoo14-addon-shipment-advice/14.0.2.2.0-14.0.2.3.0/README.md --exclude *.pyd
+[2024-05-04 08:13:20] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Downloading https://files.pythonhosted.org/packages/08/f3/cc80c66ef114675354966ce5526bfb5b63f1aa1a7e403007dd8f5b539bd4/cdk8s-awscdk-resolver-0.0.95.tar.gz
+[2024-05-04 08:13:20] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/8d/0b/ae1fe258216f8b2e73a618a89bc6846a034ddb62e8091880532de6351902/docugami_langchain-0.0.8.tar.gz
+[2024-05-04 08:13:20] INFO root fetch - processPackages [cpac]: Downloading https://files.pythonhosted.org/packages/1e/d4/061ac332fd0378e87f7d4b584f64c26447e652e138b2d95477807b0e3f57/cpac-1.8.7.tar.gz
+[2024-05-04 08:13:20] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: executing diffoscope
+[2024-05-04 08:13:20] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-awscdk-resolver-0.0.94.tar.gz tmp/cdk8s-awscdk-resolver-0.0.95.tar.gz --markdown 20240504/c/cdk8s-awscdk-resolver/0.0.94-0.0.95/README.md --exclude *.pyd
+[2024-05-04 08:13:20] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/8a/60/57ca9aab7214bb71a744b6065a707db9b21967fe3fa34daa70e9a2c6f9b5/pretext-2.4.1.dev20240504.tar.gz
+[2024-05-04 08:13:20] INFO root fetch - processPackages [docugami-langchain]: executing diffoscope
+[2024-05-04 08:13:20] INFO root fetch - processPackages [docugami-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugami_langchain-0.0.7rc9.tar.gz tmp/docugami_langchain-0.0.8.tar.gz --markdown 20240504/d/docugami-langchain/0.0.7rc9-0.0.8/README.md --exclude *.pyd
+[2024-05-04 08:13:20] INFO root fetch - processPackages [cpac]: executing diffoscope
+[2024-05-04 08:13:20] INFO root fetch - processPackages [cpac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpac-1.8.6.post1.dev1.tar.gz tmp/cpac-1.8.7.tar.gz --markdown 20240504/c/cpac/1.8.6.post1.dev1-1.8.7/README.md --exclude *.pyd
+[2024-05-04 08:13:20] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2024-05-04 08:13:20] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-2.4.1.dev20240502.tar.gz tmp/pretext-2.4.1.dev20240504.tar.gz --markdown 20240504/p/pretext/2.4.1.dev20240502-2.4.1.dev20240504/README.md --exclude *.pyd
+[2024-05-04 08:13:21] INFO root fetch - processPackages [py-memoize]: Remove: archive file [/home/abi/fetcher/tmp/py-memoize-1.1.4.tar.gz]
+[2024-05-04 08:13:21] INFO root fetch - processPackages [py-memoize]: Remove: archive file [/home/abi/fetcher/tmp/py-memoize-1.1.5.tar.gz]
+[2024-05-04 08:13:21] INFO root fetch - main [MainThread]: End processing [py-memoize]: success
+[2024-05-04 08:13:21] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_shipment_advice-14.0.2.2.0-py3-none-any.whl.zip]
+[2024-05-04 08:13:21] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_shipment_advice-14.0.2.3.0-py3-none-any.whl.zip]
+[2024-05-04 08:13:21] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shipment-advice]: success
+[2024-05-04 08:13:21] INFO root fetch - processPackages [cpac]: Remove: archive file [/home/abi/fetcher/tmp/cpac-1.8.6.post1.dev1.tar.gz]
+[2024-05-04 08:13:21] INFO root fetch - processPackages [cpac]: Remove: archive file [/home/abi/fetcher/tmp/cpac-1.8.7.tar.gz]
+[2024-05-04 08:13:21] INFO root fetch - main [MainThread]: End processing [cpac]: success
+[2024-05-04 08:13:21] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.7rc9.tar.gz]
+[2024-05-04 08:13:21] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.8.tar.gz]
+[2024-05-04 08:13:21] INFO root fetch - main [MainThread]: End processing [docugami-langchain]: success
+[2024-05-04 08:13:23] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.4.1.dev20240502.tar.gz]
+[2024-05-04 08:13:23] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.4.1.dev20240504.tar.gz]
+[2024-05-04 08:13:23] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2024-05-04 08:13:27] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-awscdk-resolver-0.0.94.tar.gz]
+[2024-05-04 08:13:27] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-awscdk-resolver-0.0.95.tar.gz]
+[2024-05-04 08:13:27] INFO root fetch - main [MainThread]: End processing [cdk8s-awscdk-resolver]: success
+[2024-05-04 08:13:27] INFO root fetch - main [MainThread]: Store serial: [23056139]
