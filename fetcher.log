@@ -9917,3 +9917,20 @@
 [2024-05-04 07:41:35] INFO root fetch - processPackages [tach]: Remove: archive file [/home/abi/fetcher/tmp/tach-0.1.6.tar.gz]
 [2024-05-04 07:41:35] INFO root fetch - main [MainThread]: End processing [tach]: success
 [2024-05-04 07:41:35] INFO root fetch - main [MainThread]: Store serial: [23055971]
+[2024-05-04 07:43:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055971]
+[2024-05-04 07:43:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 07:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnxruntime-genai
+[2024-05-04 07:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onnxruntime-genai-directml
+[2024-05-04 07:43:44] INFO root fetch - processPackages [onnxruntime-genai-directml]: New version: [0.2.0rc5] Old Version: [0.2.0rc4]
+[2024-05-04 07:43:44] INFO root fetch - processPackages [onnxruntime-genai]: New version: [0.2.0rc5] Old Version: [0.2.0rc4]
+[2024-05-04 07:43:44] INFO root fetch - processPackages [onnxruntime-genai-directml]: Downloading https://files.pythonhosted.org/packages/d0/bb/9b3c898733275d630f76dafc3a4c75e54b2c1609429ae899440881286a23/onnxruntime_genai_directml-0.2.0rc4-cp39-cp39-win_amd64.whl
+[2024-05-04 07:43:44] INFO root fetch - processPackages [onnxruntime-genai]: Downloading https://files.pythonhosted.org/packages/5c/6a/db8c088ac883c4d8e5ac048056fcd802a64584e89762df802c16259298bf/onnxruntime_genai-0.2.0rc4-cp39-cp39-win_amd64.whl
+[2024-05-04 07:43:44] WARNING root fetch - processPackages [onnxruntime-genai-directml]: Skipping package: exceeds size limit 15423721>=10485760
+[2024-05-04 07:43:44] INFO root fetch - main [MainThread]: End processing [onnxruntime-genai-directml] error
+[2024-05-04 07:43:44] INFO root fetch - processPackages [onnxruntime-genai]: Downloading https://files.pythonhosted.org/packages/18/f8/e95ecb5798f401c8a0def130c9a7aeba7f9d24f1253889b8ea1984a91b14/onnxruntime_genai-0.2.0rc5-cp39-cp39-win_amd64.whl
+[2024-05-04 07:43:45] INFO root fetch - processPackages [onnxruntime-genai]: executing diffoscope
+[2024-05-04 07:43:45] INFO root fetch - processPackages [onnxruntime-genai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxruntime_genai-0.2.0rc4-cp39-cp39-win_amd64.whl.zip tmp/onnxruntime_genai-0.2.0rc5-cp39-cp39-win_amd64.whl.zip --markdown 20240504/o/onnxruntime-genai/0.2.0rc4-0.2.0rc5/README.md --exclude *.pyd
+[2024-05-04 07:44:21] INFO root fetch - processPackages [onnxruntime-genai]: Remove: archive file [/home/abi/fetcher/tmp/onnxruntime_genai-0.2.0rc4-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 07:44:21] INFO root fetch - processPackages [onnxruntime-genai]: Remove: archive file [/home/abi/fetcher/tmp/onnxruntime_genai-0.2.0rc5-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 07:44:21] INFO root fetch - main [MainThread]: End processing [onnxruntime-genai]: success
+[2024-05-04 07:44:21] INFO root fetch - main [MainThread]: Store serial: [23056012]
