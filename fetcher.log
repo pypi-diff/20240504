@@ -20213,3 +20213,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:23:00] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.8.tar.gz]
 [2024-05-04 22:23:00] INFO root fetch - main [MainThread]: End processing [got-cli]: success
 [2024-05-04 22:23:00] INFO root fetch - main [MainThread]: Store serial: [23060779]
+[2024-05-04 22:25:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060779]
+[2024-05-04 22:25:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 22:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypomes-db
+[2024-05-04 22:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: got-cli
+[2024-05-04 22:25:09] INFO root fetch - processPackages [got-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 22:25:09] INFO root fetch - processPackages [pypomes-db]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-05-04 22:25:09] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ad/36/96dc93e2cf9589ae7ec404cd565245871fad176e727d6faa4f86f6c228cb/got-cli-0.0.8.tar.gz
+[2024-05-04 22:25:09] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/36/cc/1d89021e3dde8dec9a232188a02c9f8ea93f30366281b4b54161e98f00f6/pypomes_db-0.3.9.tar.gz
+[2024-05-04 22:25:09] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/f8/a4/4e24e47cc520c91b1a392b39d4ca52aaec577b5d8bddad7e7fef91379eb9/pypomes_db-0.4.0.tar.gz
+[2024-05-04 22:25:09] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ff/71/b812197f03da05996c430c7f17e87e82c77018fd2b7686e747ea5f779c1e/got-cli-0.0.9.tar.gz
+[2024-05-04 22:25:09] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-04 22:25:09] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.3.9.tar.gz tmp/pypomes_db-0.4.0.tar.gz --markdown 20240504/p/pypomes-db/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-05-04 22:25:09] INFO root fetch - processPackages [got-cli]: executing diffoscope
+[2024-05-04 22:25:09] INFO root fetch - processPackages [got-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/got-cli-0.0.8.tar.gz tmp/got-cli-0.0.9.tar.gz --markdown 20240504/g/got-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 22:25:10] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.3.9.tar.gz]
+[2024-05-04 22:25:10] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.0.tar.gz]
+[2024-05-04 22:25:10] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-04 22:25:10] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.8.tar.gz]
+[2024-05-04 22:25:10] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.9.tar.gz]
+[2024-05-04 22:25:10] INFO root fetch - main [MainThread]: End processing [got-cli]: success
+[2024-05-04 22:25:10] INFO root fetch - main [MainThread]: Store serial: [23060785]
