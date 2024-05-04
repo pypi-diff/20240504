@@ -8882,3 +8882,42 @@
 [2024-05-04 06:03:29] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-spotinst-9.0.9.tar.gz]
 [2024-05-04 06:03:29] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
 [2024-05-04 06:03:29] INFO root fetch - main [MainThread]: Store serial: [23055480]
+[2024-05-04 06:05:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055480]
+[2024-05-04 06:05:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 06:05:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-aws
+[2024-05-04 06:05:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PepperPepper
+[2024-05-04 06:05:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkscreener
+[2024-05-04 06:05:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chromedriver-binary
+[2024-05-04 06:05:52] INFO root fetch - processPackages [PepperPepper]: New version: [0.0.6.9] Old Version: [0.0.6.8]
+[2024-05-04 06:05:52] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240504.327] Old Version: [0.44.20240504.326]
+[2024-05-04 06:05:52] INFO root fetch - processPackages [chromedriver-binary]: New version: [99.0.4844.51.0] Old Version: [99.0.4844.35.0]
+[2024-05-04 06:05:52] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/b3/15/a0867b36624a757d2f2571a3bfd02c4bd757e291d599a16b5b55ffe7a497/pepperpepper-0.0.6.8.tar.gz
+[2024-05-04 06:05:52] INFO root fetch - processPackages [pulumi-aws]: New version: [6.9.0a1700084435] Old Version: [6.9.0a1699991594]
+[2024-05-04 06:05:52] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/50/a2/f36a3d2f2aa37ccc496e5f81d594f06e3965b836712da14b4b01d2f05ca8/chromedriver-binary-99.0.4844.35.0.tar.gz
+[2024-05-04 06:05:52] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/3a/c7/9cdc944cb3ae4e7269d43678135da27a0f376ec609fbe95a25c7706c361c/pkscreener-0.44.20240504.326.tar.gz
+[2024-05-04 06:05:52] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/a0/a2/f3d6a22128ff67870d10c3ca182908739235f19b85627a56ee2b7387d4f5/pepperpepper-0.0.6.9.tar.gz
+[2024-05-04 06:05:52] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/d9/eb/3bd2a308b9e6f7441fbed7b759578bddade2cb983bb4ffe7fc3777863314/chromedriver-binary-99.0.4844.51.0.tar.gz
+[2024-05-04 06:05:52] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/e1/df/14b748e40340692e18bd19ad3631916881c3bfc6ab8cc9db1f79ca1fb86a/pulumi_aws-6.9.0a1699991594.tar.gz
+[2024-05-04 06:05:52] INFO root fetch - processPackages [PepperPepper]: executing diffoscope
+[2024-05-04 06:05:52] INFO root fetch - processPackages [PepperPepper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperpepper-0.0.6.8.tar.gz tmp/pepperpepper-0.0.6.9.tar.gz --markdown 20240504/P/PepperPepper/0.0.6.8-0.0.6.9/README.md --exclude *.pyd
+[2024-05-04 06:05:52] INFO root fetch - processPackages [chromedriver-binary]: executing diffoscope
+[2024-05-04 06:05:52] INFO root fetch - processPackages [chromedriver-binary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromedriver-binary-99.0.4844.35.0.tar.gz tmp/chromedriver-binary-99.0.4844.51.0.tar.gz --markdown 20240504/c/chromedriver-binary/99.0.4844.35.0-99.0.4844.51.0/README.md --exclude *.pyd
+[2024-05-04 06:05:53] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/a7/71/8ad4e0b8a21cd66594d861051862f2c29ecb689374c3acc39ff781702633/pkscreener-0.44.20240504.327.tar.gz
+[2024-05-04 06:05:53] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-04 06:05:53] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240504.326.tar.gz tmp/pkscreener-0.44.20240504.327.tar.gz --markdown 20240504/p/pkscreener/0.44.20240504.326-0.44.20240504.327/README.md --exclude *.pyd
+[2024-05-04 06:05:53] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.35.0.tar.gz]
+[2024-05-04 06:05:53] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.51.0.tar.gz]
+[2024-05-04 06:05:53] INFO root fetch - main [MainThread]: End processing [chromedriver-binary]: success
+[2024-05-04 06:05:53] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.6.8.tar.gz]
+[2024-05-04 06:05:53] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.6.9.tar.gz]
+[2024-05-04 06:05:53] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
+[2024-05-04 06:05:53] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/f3/70/32e3669ea3bb0042d4f4aac12c2584c3217ddc25b9e1646f05b9a9e1a24f/pulumi_aws-6.9.0a1700084435.tar.gz
+[2024-05-04 06:05:53] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.326.tar.gz]
+[2024-05-04 06:05:53] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.327.tar.gz]
+[2024-05-04 06:05:53] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-04 06:05:53] INFO root fetch - processPackages [pulumi-aws]: executing diffoscope
+[2024-05-04 06:05:53] INFO root fetch - processPackages [pulumi-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws-6.9.0a1699991594.tar.gz tmp/pulumi_aws-6.9.0a1700084435.tar.gz --markdown 20240504/p/pulumi-aws/6.9.0a1699991594-6.9.0a1700084435/README.md --exclude *.pyd
+[2024-05-04 06:06:10] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1699991594.tar.gz]
+[2024-05-04 06:06:10] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
+[2024-05-04 06:06:10] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
+[2024-05-04 06:06:10] INFO root fetch - main [MainThread]: Store serial: [23055492]
