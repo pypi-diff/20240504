@@ -17562,3 +17562,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:16:58] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.9.tar.gz]
 [2024-05-04 19:16:58] INFO root fetch - main [MainThread]: End processing [querent]: success
 [2024-05-04 19:16:58] INFO root fetch - main [MainThread]: Store serial: [23059515]
+[2024-05-04 19:19:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059515]
+[2024-05-04 19:19:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 19:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arz-api
+[2024-05-04 19:19:07] INFO root fetch - processPackages [arz-api]: New version: [2.0] Old Version: [1.8.2]
+[2024-05-04 19:19:07] INFO root fetch - processPackages [arz-api]: Downloading https://files.pythonhosted.org/packages/b1/3c/db9abed66683e12af967794637b927f5932452cb067846ed876c209e010f/arz_api-1.8.2.tar.gz
+[2024-05-04 19:19:08] INFO root fetch - processPackages [arz-api]: Downloading https://files.pythonhosted.org/packages/ea/7a/e6a8d9b6173bbaeb8ac691456da573abad58e05ae6b826851b0b5270bba9/arz_api-2.0.tar.gz
+[2024-05-04 19:19:08] INFO root fetch - processPackages [arz-api]: executing diffoscope
+[2024-05-04 19:19:08] INFO root fetch - processPackages [arz-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arz_api-1.8.2.tar.gz tmp/arz_api-2.0.tar.gz --markdown 20240504/a/arz-api/1.8.2-2.0/README.md --exclude *.pyd
+[2024-05-04 19:19:08] INFO root fetch - processPackages [arz-api]: Remove: archive file [/home/abi/fetcher/tmp/arz_api-1.8.2.tar.gz]
+[2024-05-04 19:19:08] INFO root fetch - processPackages [arz-api]: Remove: archive file [/home/abi/fetcher/tmp/arz_api-2.0.tar.gz]
+[2024-05-04 19:19:08] INFO root fetch - main [MainThread]: End processing [arz-api]: success
+[2024-05-04 19:19:08] INFO root fetch - main [MainThread]: Store serial: [23059518]
