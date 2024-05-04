@@ -12124,3 +12124,24 @@
 [2024-05-04 11:05:20] INFO root fetch - processPackages [networkx-graph]: Remove: archive file [/home/abi/fetcher/tmp/networkx_graph-0.2.3-cp310-cp310-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
 [2024-05-04 11:05:20] INFO root fetch - main [MainThread]: End processing [networkx-graph]: success
 [2024-05-04 11:05:20] INFO root fetch - main [MainThread]: Store serial: [23057101]
+[2024-05-04 11:07:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057101]
+[2024-05-04 11:07:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 11:07:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon
+[2024-05-04 11:07:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easy-fossy
+[2024-05-04 11:07:29] INFO root fetch - processPackages [easy-fossy]: New version: [2.3.1] Old Version: [2.2.0]
+[2024-05-04 11:07:29] INFO root fetch - processPackages [autogluon]: New version: [1.1.1b20240503] Old Version: [1.1.1b20240502]
+[2024-05-04 11:07:29] INFO root fetch - processPackages [easy-fossy]: Downloading https://files.pythonhosted.org/packages/7a/b1/2fb7e7ef0a4385435b7d1a8753061edc29638ac63444fa7e7c759f4f835c/easy_fossy-2.2.0.tar.gz
+[2024-05-04 11:07:29] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/f7/77/657b16bb59001cc0f0619992d7ee31a80e5a21684a44f1178abcfbe9d0f0/autogluon-1.1.1b20240502.tar.gz
+[2024-05-04 11:07:29] INFO root fetch - processPackages [easy-fossy]: Downloading https://files.pythonhosted.org/packages/8e/fd/878d2863c5a8bf58294926740f7c69e84fe3daf98be5b34e380176d8d8b3/easy_fossy-2.3.1.tar.gz
+[2024-05-04 11:07:29] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/b8/95/5cdf12c15c1cdd5f993325ba28130d082fab7512ce979253b93eefa5193b/autogluon-1.1.1b20240503.tar.gz
+[2024-05-04 11:07:30] INFO root fetch - processPackages [easy-fossy]: executing diffoscope
+[2024-05-04 11:07:30] INFO root fetch - processPackages [easy-fossy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_fossy-2.2.0.tar.gz tmp/easy_fossy-2.3.1.tar.gz --markdown 20240504/e/easy-fossy/2.2.0-2.3.1/README.md --exclude *.pyd
+[2024-05-04 11:07:30] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2024-05-04 11:07:30] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-1.1.1b20240502.tar.gz tmp/autogluon-1.1.1b20240503.tar.gz --markdown 20240504/a/autogluon/1.1.1b20240502-1.1.1b20240503/README.md --exclude *.pyd
+[2024-05-04 11:07:30] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240502.tar.gz]
+[2024-05-04 11:07:30] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240503.tar.gz]
+[2024-05-04 11:07:30] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2024-05-04 11:07:30] INFO root fetch - processPackages [easy-fossy]: Remove: archive file [/home/abi/fetcher/tmp/easy_fossy-2.2.0.tar.gz]
+[2024-05-04 11:07:30] INFO root fetch - processPackages [easy-fossy]: Remove: archive file [/home/abi/fetcher/tmp/easy_fossy-2.3.1.tar.gz]
+[2024-05-04 11:07:30] INFO root fetch - main [MainThread]: End processing [easy-fossy]: success
+[2024-05-04 11:07:30] INFO root fetch - main [MainThread]: Store serial: [23057167]
