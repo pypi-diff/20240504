@@ -2432,3 +2432,24 @@
 [2024-05-04 02:37:12] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
 [2024-05-04 02:37:12] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
 [2024-05-04 02:37:12] INFO root fetch - main [MainThread]: Store serial: [23053080]
+[2024-05-04 02:39:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053080]
+[2024-05-04 02:39:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 02:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vllm-acc
+[2024-05-04 02:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CTDFjorder
+[2024-05-04 02:39:21] INFO root fetch - processPackages [CTDFjorder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 02:39:21] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/f4/55/a40186b16bc262a9be94d2bc145b870286c15bed2abf982a6f1a7227f885/CTDFjorder-0.0.8.tar.gz
+[2024-05-04 02:39:21] INFO root fetch - processPackages [vllm-acc]: New version: [0.4.11714782966.854302] Old Version: [0.4.1]
+[2024-05-04 02:39:21] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/e4/08/9eb66c9f842964f28a0e8214bd3791b744a8bbf8a3dec102434a6d25c486/CTDFjorder-0.0.9.tar.gz
+[2024-05-04 02:39:21] INFO root fetch - processPackages [vllm-acc]: Downloading https://files.pythonhosted.org/packages/1f/73/fd93835b8cf1e19dadc1a080585e0360e86de257b8af505fc0a4684b2d8b/vllm_acc-0.4.1.tar.gz
+[2024-05-04 02:39:22] INFO root fetch - processPackages [CTDFjorder]: executing diffoscope
+[2024-05-04 02:39:22] INFO root fetch - processPackages [CTDFjorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTDFjorder-0.0.8.tar.gz tmp/CTDFjorder-0.0.9.tar.gz --markdown 20240504/C/CTDFjorder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 02:39:22] INFO root fetch - processPackages [vllm-acc]: Downloading https://files.pythonhosted.org/packages/df/65/337333b473621b042eace50b4702c1c3107f4707a652b97496134568d657/vllm_acc-0.4.11714782966.854302.tar.gz
+[2024-05-04 02:39:22] INFO root fetch - processPackages [vllm-acc]: executing diffoscope
+[2024-05-04 02:39:22] INFO root fetch - processPackages [vllm-acc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vllm_acc-0.4.1.tar.gz tmp/vllm_acc-0.4.11714782966.854302.tar.gz --markdown 20240504/v/vllm-acc/0.4.1-0.4.11714782966.854302/README.md --exclude *.pyd
+[2024-05-04 02:39:22] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/CTDFjorder-0.0.8.tar.gz]
+[2024-05-04 02:39:22] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/CTDFjorder-0.0.9.tar.gz]
+[2024-05-04 02:39:22] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
+[2024-05-04 02:39:24] INFO root fetch - processPackages [vllm-acc]: Remove: archive file [/home/abi/fetcher/tmp/vllm_acc-0.4.1.tar.gz]
+[2024-05-04 02:39:24] INFO root fetch - processPackages [vllm-acc]: Remove: archive file [/home/abi/fetcher/tmp/vllm_acc-0.4.11714782966.854302.tar.gz]
+[2024-05-04 02:39:24] INFO root fetch - main [MainThread]: End processing [vllm-acc]: success
+[2024-05-04 02:39:24] INFO root fetch - main [MainThread]: Store serial: [23053087]
