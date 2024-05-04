@@ -19577,3 +19577,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:43:15] INFO root fetch - processPackages [sievedata]: Remove: archive file [/home/abi/fetcher/tmp/sievedata-1.0.9-py3-none-any.whl.zip]
 [2024-05-04 21:43:15] INFO root fetch - main [MainThread]: End processing [sievedata]: success
 [2024-05-04 21:43:15] INFO root fetch - main [MainThread]: Store serial: [23060532]
+[2024-05-04 21:45:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060532]
+[2024-05-04 21:45:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 21:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinxcontrib-lightbox2
+[2024-05-04 21:45:24] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 21:45:24] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Downloading https://files.pythonhosted.org/packages/fe/92/a6c2d9216e5ff82ca3f38d3c44b08e9cc8eacf3562cd11be6a5404ee8a17/sphinxcontrib_lightbox2-0.1.0.tar.gz
+[2024-05-04 21:45:24] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Downloading https://files.pythonhosted.org/packages/0c/99/fb53b568834aa5e0f4dfacd43313a8c35f2af350b699b58d0fe14bf5aaca/sphinxcontrib_lightbox2-0.1.1.tar.gz
+[2024-05-04 21:45:24] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: executing diffoscope
+[2024-05-04 21:45:24] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_lightbox2-0.1.0.tar.gz tmp/sphinxcontrib_lightbox2-0.1.1.tar.gz --markdown 20240504/s/sphinxcontrib-lightbox2/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 21:45:25] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_lightbox2-0.1.0.tar.gz]
+[2024-05-04 21:45:25] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_lightbox2-0.1.1.tar.gz]
+[2024-05-04 21:45:25] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-lightbox2]: success
+[2024-05-04 21:45:25] INFO root fetch - main [MainThread]: Store serial: [23060535]
