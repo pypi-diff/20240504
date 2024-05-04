@@ -20651,3 +20651,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:00:09] INFO root fetch - processPackages [r2e_test_server]: Remove: archive file [/home/abi/fetcher/tmp/r2e_test_server-0.1.1.tar.gz]
 [2024-05-04 23:00:09] INFO root fetch - main [MainThread]: End processing [r2e_test_server]: success
 [2024-05-04 23:00:09] INFO root fetch - main [MainThread]: Store serial: [23060949]
+[2024-05-04 23:02:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060949]
+[2024-05-04 23:02:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 23:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blankslate-python
+[2024-05-04 23:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymmdb
+[2024-05-04 23:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-tarpit
+[2024-05-04 23:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: algomodule
+[2024-05-04 23:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-redux
+[2024-05-04 23:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bihyung
+[2024-05-04 23:02:18] INFO root fetch - processPackages [blankslate-python]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-05-04 23:02:18] INFO root fetch - processPackages [python-redux]: New version: [0.9.9a0] Old Version: [0.9.9]
+[2024-05-04 23:02:18] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/10/af/334efcc2c01cc0da811cea8769f5668a2b5bee46e9cad6f4db3ffb0a4d4c/blankslate_python-1.1.3.tar.gz
+[2024-05-04 23:02:18] INFO root fetch - processPackages [fastapi-tarpit]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 23:02:18] INFO root fetch - processPackages [algomodule]: New version: [1.1.0] Old Version: [1.0.4]
+[2024-05-04 23:02:18] INFO root fetch - processPackages [python-redux]: Downloading https://files.pythonhosted.org/packages/25/f6/7f30f318faa9b9b4ed3d5b4517bc78ba60a0a3853efcecbfb8f1093f06f8/python_redux-0.9.9.tar.gz
+[2024-05-04 23:02:18] WARNING root fetch - processPackages [pymmdb]: Skipping, unable to determine old version
+[2024-05-04 23:02:18] INFO root fetch - main [MainThread]: End processing [pymmdb] error
+[2024-05-04 23:02:18] INFO root fetch - processPackages [bihyung]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-05-04 23:02:18] INFO root fetch - processPackages [fastapi-tarpit]: Downloading https://files.pythonhosted.org/packages/87/20/ea2114ff9e6f927549b975a592193b409496ddaf62cf16b88c6d390cfbcc/fastapi_tarpit-1.0.1.tar.gz
+[2024-05-04 23:02:18] INFO root fetch - processPackages [algomodule]: Downloading https://files.pythonhosted.org/packages/c4/c7/69c8490b601020fd47b19b9ae050a14c01ce958cad9f54a3934dfbaf668f/algomodule-1.0.4.tar.gz
+[2024-05-04 23:02:18] INFO root fetch - processPackages [python-redux]: Downloading https://files.pythonhosted.org/packages/78/88/2425c5253a8005201b5b26b38481ea8784a32bea175f334a08082da43388/python_redux-0.9.9a0.tar.gz
+[2024-05-04 23:02:18] INFO root fetch - processPackages [bihyung]: Downloading https://files.pythonhosted.org/packages/b2/df/86195960b0453808bc1fbcdbe8192d9b23a4b11a495c6e03c76e251f0b86/bihyung-0.2.9.tar.gz
+[2024-05-04 23:02:18] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/3a/40/8bc10c86586cfbb06c38dbaba508b667a23a2dfad6c6ea81b3bda1e5196b/blankslate_python-1.1.4.tar.gz
+[2024-05-04 23:02:18] INFO root fetch - processPackages [python-redux]: executing diffoscope
+[2024-05-04 23:02:18] INFO root fetch - processPackages [python-redux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_redux-0.9.9.tar.gz tmp/python_redux-0.9.9a0.tar.gz --markdown 20240504/p/python-redux/0.9.9-0.9.9a0/README.md --exclude *.pyd
+[2024-05-04 23:02:18] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-04 23:02:18] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.1.3.tar.gz tmp/blankslate_python-1.1.4.tar.gz --markdown 20240504/b/blankslate-python/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-05-04 23:02:18] INFO root fetch - processPackages [fastapi-tarpit]: Downloading https://files.pythonhosted.org/packages/ca/50/eb4abfcbf43558a7226782030dae6869d841a1ee9659f99e234b6ccddf59/fastapi_tarpit-1.0.2.tar.gz
+[2024-05-04 23:02:18] INFO root fetch - processPackages [bihyung]: Downloading https://files.pythonhosted.org/packages/b5/33/60fe3a98c905dc34b92d1802fb3ad352c80c2cfc287849b0dd5f055f82b1/bihyung-0.3.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-04 23:02:18] INFO root fetch - processPackages [algomodule]: Downloading https://files.pythonhosted.org/packages/c6/8f/2c02db47e57ab948ed785fca9bee8b22d852a98157433d116604d52016aa/algomodule-1.1.0.tar.gz
+[2024-05-04 23:02:18] INFO root fetch - processPackages [fastapi-tarpit]: executing diffoscope
+[2024-05-04 23:02:18] INFO root fetch - processPackages [fastapi-tarpit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_tarpit-1.0.1.tar.gz tmp/fastapi_tarpit-1.0.2.tar.gz --markdown 20240504/f/fastapi-tarpit/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 23:02:19] INFO root fetch - processPackages [algomodule]: executing diffoscope
+[2024-05-04 23:02:19] INFO root fetch - processPackages [algomodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algomodule-1.0.4.tar.gz tmp/algomodule-1.1.0.tar.gz --markdown 20240504/a/algomodule/1.0.4-1.1.0/README.md --exclude *.pyd
+[2024-05-04 23:02:19] INFO root fetch - processPackages [python-redux]: Remove: archive file [/home/abi/fetcher/tmp/python_redux-0.9.9.tar.gz]
+[2024-05-04 23:02:19] INFO root fetch - processPackages [python-redux]: Remove: archive file [/home/abi/fetcher/tmp/python_redux-0.9.9a0.tar.gz]
+[2024-05-04 23:02:19] INFO root fetch - main [MainThread]: End processing [python-redux]: success
+[2024-05-04 23:02:19] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.3.tar.gz]
+[2024-05-04 23:02:19] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.4.tar.gz]
+[2024-05-04 23:02:19] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-04 23:02:19] INFO root fetch - processPackages [fastapi-tarpit]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_tarpit-1.0.1.tar.gz]
+[2024-05-04 23:02:19] INFO root fetch - processPackages [fastapi-tarpit]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_tarpit-1.0.2.tar.gz]
+[2024-05-04 23:02:19] INFO root fetch - main [MainThread]: End processing [fastapi-tarpit]: success
+[2024-05-04 23:02:19] WARNING root fetch - processPackages [bihyung]: Skipping package: exceeds size limit 16390121>=10485760
+[2024-05-04 23:02:19] INFO root fetch - main [MainThread]: End processing [bihyung] error
+[2024-05-04 23:02:20] INFO root fetch - processPackages [algomodule]: Remove: archive file [/home/abi/fetcher/tmp/algomodule-1.0.4.tar.gz]
+[2024-05-04 23:02:20] INFO root fetch - processPackages [algomodule]: Remove: archive file [/home/abi/fetcher/tmp/algomodule-1.1.0.tar.gz]
+[2024-05-04 23:02:20] INFO root fetch - main [MainThread]: End processing [algomodule]: success
+[2024-05-04 23:02:20] INFO root fetch - main [MainThread]: Store serial: [23060970]
