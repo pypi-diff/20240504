@@ -13417,3 +13417,33 @@
 [2024-05-04 13:17:53] INFO root fetch - processPackages [otpme]: Remove: archive file [/home/abi/fetcher/tmp/otpme-0.3.0a62.tar.gz]
 [2024-05-04 13:17:53] INFO root fetch - main [MainThread]: End processing [otpme]: success
 [2024-05-04 13:17:53] INFO root fetch - main [MainThread]: Store serial: [23057662]
+[2024-05-04 13:20:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057662]
+[2024-05-04 13:20:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 13:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyLodStorage
+[2024-05-04 13:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: STAIR-tools
+[2024-05-04 13:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dsptoolbox
+[2024-05-04 13:20:07] INFO root fetch - processPackages [pyLodStorage]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-04 13:20:07] INFO root fetch - processPackages [pyLodStorage]: Downloading https://files.pythonhosted.org/packages/4c/e3/15ad58c688ca9613afcfa8f73ab039cb5ee8a215b2780d306a423cdcc76a/pylodstorage-0.9.1.tar.gz
+[2024-05-04 13:20:07] INFO root fetch - processPackages [dsptoolbox]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-04 13:20:07] INFO root fetch - processPackages [STAIR-tools]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-04 13:20:07] INFO root fetch - processPackages [dsptoolbox]: Downloading https://files.pythonhosted.org/packages/1d/5d/0b37b01f0202746e03a60cf34b26c995af40e22f4edfe2efc826ab03d2de/dsptoolbox-0.3.6.tar.gz
+[2024-05-04 13:20:07] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/ff/ae/83f41b628b5793d382a53085aa085b5ae7f79c6bc6ddcffb24cc69499264/STAIR-tools-1.1.8.tar.gz
+[2024-05-04 13:20:07] INFO root fetch - processPackages [pyLodStorage]: Downloading https://files.pythonhosted.org/packages/fa/73/19116c570959e490c6e63cc4ed466cc8f943e9f123f6c0fb7c3f944ee193/pylodstorage-0.9.2.tar.gz
+[2024-05-04 13:20:08] INFO root fetch - processPackages [pyLodStorage]: executing diffoscope
+[2024-05-04 13:20:08] INFO root fetch - processPackages [pyLodStorage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylodstorage-0.9.1.tar.gz tmp/pylodstorage-0.9.2.tar.gz --markdown 20240504/p/pyLodStorage/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-04 13:20:08] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/74/eb/8ee770b8afd9281320fe1bceeb1715aa6a38e65aed7e66e556f7c8822913/STAIR-tools-1.1.9.tar.gz
+[2024-05-04 13:20:08] INFO root fetch - processPackages [STAIR-tools]: executing diffoscope
+[2024-05-04 13:20:08] INFO root fetch - processPackages [STAIR-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAIR-tools-1.1.8.tar.gz tmp/STAIR-tools-1.1.9.tar.gz --markdown 20240504/S/STAIR-tools/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-04 13:20:08] INFO root fetch - processPackages [dsptoolbox]: Downloading https://files.pythonhosted.org/packages/68/38/9ae5c52ecc7287fd24e082734a49947303f3688476680acb4a9e8d81c92d/dsptoolbox-0.3.7-py3-none-any.whl
+[2024-05-04 13:20:08] INFO root fetch - processPackages [dsptoolbox]: executing diffoscope
+[2024-05-04 13:20:08] INFO root fetch - processPackages [dsptoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsptoolbox-0.3.6.tar.gz tmp/dsptoolbox-0.3.7-py3-none-any.whl.zip --markdown 20240504/d/dsptoolbox/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-04 13:20:08] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.8.tar.gz]
+[2024-05-04 13:20:08] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.9.tar.gz]
+[2024-05-04 13:20:08] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
+[2024-05-04 13:20:09] INFO root fetch - processPackages [pyLodStorage]: Remove: archive file [/home/abi/fetcher/tmp/pylodstorage-0.9.1.tar.gz]
+[2024-05-04 13:20:09] INFO root fetch - processPackages [pyLodStorage]: Remove: archive file [/home/abi/fetcher/tmp/pylodstorage-0.9.2.tar.gz]
+[2024-05-04 13:20:09] INFO root fetch - main [MainThread]: End processing [pyLodStorage]: success
+[2024-05-04 13:20:09] INFO root fetch - processPackages [dsptoolbox]: Remove: archive file [/home/abi/fetcher/tmp/dsptoolbox-0.3.6.tar.gz]
+[2024-05-04 13:20:09] INFO root fetch - processPackages [dsptoolbox]: Remove: archive file [/home/abi/fetcher/tmp/dsptoolbox-0.3.7-py3-none-any.whl.zip]
+[2024-05-04 13:20:09] INFO root fetch - main [MainThread]: End processing [dsptoolbox]: success
+[2024-05-04 13:20:09] INFO root fetch - main [MainThread]: Store serial: [23057670]
