@@ -16508,3 +16508,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:56:34] INFO root fetch - processPackages [pyegeria]: Remove: archive file [/home/abi/fetcher/tmp/pyegeria-0.3.8.tar.gz]
 [2024-05-04 17:56:34] INFO root fetch - main [MainThread]: End processing [pyegeria]: success
 [2024-05-04 17:56:34] INFO root fetch - main [MainThread]: Store serial: [23059048]
+[2024-05-04 17:58:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059048]
+[2024-05-04 17:58:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 17:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: constellate
+[2024-05-04 17:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Bottleneck
+[2024-05-04 17:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beam-client
+[2024-05-04 17:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mo-logs
+[2024-05-04 17:58:42] INFO root fetch - processPackages [mo-logs]: New version: [8.617.24125] Old Version: [8.608.24119]
+[2024-05-04 17:58:42] INFO root fetch - processPackages [beam-client]: New version: [0.2.7] Old Version: [0.2.5]
+[2024-05-04 17:58:42] INFO root fetch - processPackages [constellate]: New version: [0.8.3] Old Version: [0.8.1]
+[2024-05-04 17:58:42] INFO root fetch - processPackages [Bottleneck]: New version: [1.4.0rc4] Old Version: [1.3.8rc5]
+[2024-05-04 17:58:43] INFO root fetch - processPackages [constellate]: Downloading https://files.pythonhosted.org/packages/3c/92/a15e18ccb2a239a8435aca8aaebcabb065788106525b040c27b0234bcf8c/constellate-0.8.1-py2.py3-none-any.whl
+[2024-05-04 17:58:43] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/14/b6/92412b034c6f9927c873c366218339ceee49421b6cf59fb97315f80f8d55/mo_logs-8.608.24119.tar.gz
+[2024-05-04 17:58:43] INFO root fetch - processPackages [beam-client]: Downloading https://files.pythonhosted.org/packages/f3/35/6bfabe03943f7ba52129048de25fec34ca8cdd7c623b006c92ccb14899b1/beam_client-0.2.5.tar.gz
+[2024-05-04 17:58:43] INFO root fetch - processPackages [Bottleneck]: Downloading https://files.pythonhosted.org/packages/0c/dc/04b5f9c419825c9501de33a532f10763c3144d0ac2ee1af74666abf4816a/Bottleneck-1.3.8rc5.tar.gz
+[2024-05-04 17:58:43] INFO root fetch - processPackages [constellate]: Downloading https://files.pythonhosted.org/packages/bc/3b/f3e5867c10417de85bb919efe73c20e1fd4a4d9f47b396db48c262621119/constellate-0.8.3-py2.py3-none-any.whl
+[2024-05-04 17:58:43] INFO root fetch - processPackages [beam-client]: Downloading https://files.pythonhosted.org/packages/f5/fd/8301574de8b99fdd87985df4c6acd82f18082338de517a9d888939e48198/beam_client-0.2.7.tar.gz
+[2024-05-04 17:58:43] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/a6/b6/a3a6ecf69184d93e39fcda7a960da5bb5c048378eeb8a297289e5b82454f/mo_logs-8.617.24125.tar.gz
+[2024-05-04 17:58:43] INFO root fetch - processPackages [beam-client]: executing diffoscope
+[2024-05-04 17:58:43] INFO root fetch - processPackages [beam-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beam_client-0.2.5.tar.gz tmp/beam_client-0.2.7.tar.gz --markdown 20240504/b/beam-client/0.2.5-0.2.7/README.md --exclude *.pyd
+[2024-05-04 17:58:43] INFO root fetch - processPackages [Bottleneck]: Downloading https://files.pythonhosted.org/packages/01/79/e8d77cd2d4d7512b1a926154004585fbd24ea5c120bcb0e1d0b8aa8de00a/bottleneck-1.4.0rc4.tar.gz
+[2024-05-04 17:58:43] INFO root fetch - processPackages [constellate]: executing diffoscope
+[2024-05-04 17:58:43] INFO root fetch - processPackages [constellate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constellate-0.8.1-py2.py3-none-any.whl.zip tmp/constellate-0.8.3-py2.py3-none-any.whl.zip --markdown 20240504/c/constellate/0.8.1-0.8.3/README.md --exclude *.pyd
+[2024-05-04 17:58:43] INFO root fetch - processPackages [mo-logs]: executing diffoscope
+[2024-05-04 17:58:43] INFO root fetch - processPackages [mo-logs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_logs-8.608.24119.tar.gz tmp/mo_logs-8.617.24125.tar.gz --markdown 20240504/m/mo-logs/8.608.24119-8.617.24125/README.md --exclude *.pyd
+[2024-05-04 17:58:43] INFO root fetch - processPackages [Bottleneck]: executing diffoscope
+[2024-05-04 17:58:43] INFO root fetch - processPackages [Bottleneck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bottleneck-1.3.8rc5.tar.gz tmp/bottleneck-1.4.0rc4.tar.gz --markdown 20240504/B/Bottleneck/1.3.8rc5-1.4.0rc4/README.md --exclude *.pyd
+[2024-05-04 17:58:44] INFO root fetch - processPackages [beam-client]: Remove: archive file [/home/abi/fetcher/tmp/beam_client-0.2.5.tar.gz]
+[2024-05-04 17:58:44] INFO root fetch - processPackages [beam-client]: Remove: archive file [/home/abi/fetcher/tmp/beam_client-0.2.7.tar.gz]
+[2024-05-04 17:58:44] INFO root fetch - main [MainThread]: End processing [beam-client]: success
+[2024-05-04 17:58:44] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.608.24119.tar.gz]
+[2024-05-04 17:58:44] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.617.24125.tar.gz]
+[2024-05-04 17:58:44] INFO root fetch - main [MainThread]: End processing [mo-logs]: success
+[2024-05-04 17:58:44] INFO root fetch - processPackages [constellate]: Remove: archive file [/home/abi/fetcher/tmp/constellate-0.8.1-py2.py3-none-any.whl.zip]
+[2024-05-04 17:58:44] INFO root fetch - processPackages [constellate]: Remove: archive file [/home/abi/fetcher/tmp/constellate-0.8.3-py2.py3-none-any.whl.zip]
+[2024-05-04 17:58:44] INFO root fetch - main [MainThread]: End processing [constellate]: success
+[2024-05-04 17:58:44] INFO root fetch - processPackages [Bottleneck]: Remove: archive file [/home/abi/fetcher/tmp/Bottleneck-1.3.8rc5.tar.gz]
+[2024-05-04 17:58:44] INFO root fetch - processPackages [Bottleneck]: Remove: archive file [/home/abi/fetcher/tmp/bottleneck-1.4.0rc4.tar.gz]
+[2024-05-04 17:58:44] INFO root fetch - main [MainThread]: End processing [Bottleneck]: success
+[2024-05-04 17:58:44] INFO root fetch - main [MainThread]: Store serial: [23059100]
