@@ -21366,3 +21366,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:52:25] INFO root fetch - processPackages [meds-etl]: Remove: archive file [/home/abi/fetcher/tmp/meds_etl-0.2.0.tar.gz]
 [2024-05-04 23:52:25] INFO root fetch - main [MainThread]: End processing [meds-etl]: success
 [2024-05-04 23:52:25] INFO root fetch - main [MainThread]: Store serial: [23061257]
+[2024-05-04 23:54:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061257]
+[2024-05-04 23:54:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 23:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlglot
+[2024-05-04 23:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: petrosa
+[2024-05-04 23:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OZI.build
+[2024-05-04 23:54:35] INFO root fetch - processPackages [petrosa]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 23:54:35] INFO root fetch - processPackages [OZI.build]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 23:54:35] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-04 23:54:35] INFO root fetch - processPackages [OZI.build]: Downloading https://files.pythonhosted.org/packages/c2/68/445f96f8f6a7f7bc556936a301c80ff6e3b858eff7efa40c69e738b241fa/OZI.build-0.0.8.tar.gz
+[2024-05-04 23:54:35] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/e6/b9/0d446977c84ba028c6ed2dacf861f0724f3cb58cf628ae8bf9ab062ac258/petrosa-0.0.8.tar.gz
+[2024-05-04 23:54:35] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-04 23:54:35] INFO root fetch - processPackages [OZI.build]: Downloading https://files.pythonhosted.org/packages/b8/82/03697e429f995cc711a5f35ab319b525638b624dc6970aef7ef1879562c0/OZI.build-0.0.9.tar.gz
+[2024-05-04 23:54:35] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-04 23:54:35] INFO root fetch - processPackages [OZI.build]: executing diffoscope
+[2024-05-04 23:54:35] INFO root fetch - processPackages [OZI.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI.build-0.0.8.tar.gz tmp/OZI.build-0.0.9.tar.gz --markdown 20240504/O/OZI.build/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 23:54:35] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-04 23:54:35] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240504/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-04 23:54:35] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/44/fe/1f3118a8d146a7e23eec51b4caff69f7fe9aa77052269f8ca078482d6985/petrosa-0.0.9.tar.gz
+[2024-05-04 23:54:35] INFO root fetch - processPackages [petrosa]: executing diffoscope
+[2024-05-04 23:54:35] INFO root fetch - processPackages [petrosa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petrosa-0.0.8.tar.gz tmp/petrosa-0.0.9.tar.gz --markdown 20240504/p/petrosa/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 23:54:36] INFO root fetch - processPackages [OZI.build]: Remove: archive file [/home/abi/fetcher/tmp/OZI.build-0.0.8.tar.gz]
+[2024-05-04 23:54:36] INFO root fetch - processPackages [OZI.build]: Remove: archive file [/home/abi/fetcher/tmp/OZI.build-0.0.9.tar.gz]
+[2024-05-04 23:54:36] INFO root fetch - main [MainThread]: End processing [OZI.build]: success
+[2024-05-04 23:54:36] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-04 23:54:36] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-04 23:54:36] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-04 23:54:37] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.8.tar.gz]
+[2024-05-04 23:54:37] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.9.tar.gz]
+[2024-05-04 23:54:37] INFO root fetch - main [MainThread]: End processing [petrosa]: success
+[2024-05-04 23:54:37] INFO root fetch - main [MainThread]: Store serial: [23061266]
