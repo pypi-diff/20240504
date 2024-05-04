@@ -14084,3 +14084,15 @@
 [2024-05-04 14:25:06] INFO root fetch - processPackages [openagents-node-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openagents_node_sdk-0.1.3.tar.gz]
 [2024-05-04 14:25:06] INFO root fetch - main [MainThread]: End processing [openagents-node-sdk]: success
 [2024-05-04 14:25:06] INFO root fetch - main [MainThread]: Store serial: [23057960]
+[2024-05-04 14:27:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057960]
+[2024-05-04 14:27:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 14:27:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: idc-index
+[2024-05-04 14:27:14] INFO root fetch - processPackages [idc-index]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-05-04 14:27:15] INFO root fetch - processPackages [idc-index]: Downloading https://files.pythonhosted.org/packages/ab/86/f9b53e86ec19adf3603eb828b246b1cb31e6dddf85eebde0fc224ed0a8b1/idc_index-0.5.3.tar.gz
+[2024-05-04 14:27:15] INFO root fetch - processPackages [idc-index]: Downloading https://files.pythonhosted.org/packages/03/af/51ebdcea1e7eb68c76bf5b34f7c9b3d0fabec801de839dc8c744faffeb26/idc_index-0.5.4.tar.gz
+[2024-05-04 14:27:15] INFO root fetch - processPackages [idc-index]: executing diffoscope
+[2024-05-04 14:27:15] INFO root fetch - processPackages [idc-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idc_index-0.5.3.tar.gz tmp/idc_index-0.5.4.tar.gz --markdown 20240504/i/idc-index/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-05-04 14:27:16] INFO root fetch - processPackages [idc-index]: Remove: archive file [/home/abi/fetcher/tmp/idc_index-0.5.3.tar.gz]
+[2024-05-04 14:27:16] INFO root fetch - processPackages [idc-index]: Remove: archive file [/home/abi/fetcher/tmp/idc_index-0.5.4.tar.gz]
+[2024-05-04 14:27:16] INFO root fetch - main [MainThread]: End processing [idc-index]: success
+[2024-05-04 14:27:16] INFO root fetch - main [MainThread]: Store serial: [23057963]
