@@ -20592,3 +20592,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:51:23] INFO root fetch - processPackages [barmpy]: Remove: archive file [/home/abi/fetcher/tmp/barmpy-1.1.0.tar.gz]
 [2024-05-04 22:51:23] INFO root fetch - main [MainThread]: End processing [barmpy]: success
 [2024-05-04 22:51:23] INFO root fetch - main [MainThread]: Store serial: [23060907]
+[2024-05-04 22:53:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060907]
+[2024-05-04 22:53:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 22:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blankslate-python
+[2024-05-04 22:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vital-ai-domain
+[2024-05-04 22:53:38] INFO root fetch - processPackages [blankslate-python]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-04 22:53:38] INFO root fetch - processPackages [vital-ai-domain]: New version: [0.1.3] Old Version: [0.1.1]
+[2024-05-04 22:53:38] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/e0/ac/4fb5f44151286065a483ed88079238c3b3f4fc7b325a682cae6f17e3b34b/blankslate_python-1.1.2.tar.gz
+[2024-05-04 22:53:38] INFO root fetch - processPackages [vital-ai-domain]: Downloading https://files.pythonhosted.org/packages/94/f6/aaba1571e9fd2838248351b78f19618b6d9c5436c6d471fefe89c90d2695/vital-ai-domain-0.1.1.tar.gz
+[2024-05-04 22:53:38] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/10/af/334efcc2c01cc0da811cea8769f5668a2b5bee46e9cad6f4db3ffb0a4d4c/blankslate_python-1.1.3.tar.gz
+[2024-05-04 22:53:39] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-04 22:53:39] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.1.2.tar.gz tmp/blankslate_python-1.1.3.tar.gz --markdown 20240504/b/blankslate-python/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-04 22:53:39] INFO root fetch - processPackages [vital-ai-domain]: Downloading https://files.pythonhosted.org/packages/d5/e6/354ebace65d990f6a02d6c518be6021fc9934d211d53cd36db414d4c249d/vital-ai-domain-0.1.3.tar.gz
+[2024-05-04 22:53:39] INFO root fetch - processPackages [vital-ai-domain]: executing diffoscope
+[2024-05-04 22:53:39] INFO root fetch - processPackages [vital-ai-domain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vital-ai-domain-0.1.1.tar.gz tmp/vital-ai-domain-0.1.3.tar.gz --markdown 20240504/v/vital-ai-domain/0.1.1-0.1.3/README.md --exclude *.pyd
+[2024-05-04 22:53:39] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.2.tar.gz]
+[2024-05-04 22:53:39] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.3.tar.gz]
+[2024-05-04 22:53:39] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-04 22:53:39] INFO root fetch - processPackages [vital-ai-domain]: Remove: archive file [/home/abi/fetcher/tmp/vital-ai-domain-0.1.1.tar.gz]
+[2024-05-04 22:53:39] INFO root fetch - processPackages [vital-ai-domain]: Remove: archive file [/home/abi/fetcher/tmp/vital-ai-domain-0.1.3.tar.gz]
+[2024-05-04 22:53:39] INFO root fetch - main [MainThread]: End processing [vital-ai-domain]: success
+[2024-05-04 22:53:39] INFO root fetch - main [MainThread]: Store serial: [23060913]
