@@ -10869,3 +10869,24 @@
 [2024-05-04 09:07:43] INFO root fetch - processPackages [openc3]: Remove: archive file [/home/abi/fetcher/tmp/openc3-5.9.2b0.tar.gz]
 [2024-05-04 09:07:43] INFO root fetch - main [MainThread]: End processing [openc3]: success
 [2024-05-04 09:07:43] INFO root fetch - main [MainThread]: Store serial: [23056406]
+[2024-05-04 09:09:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056406]
+[2024-05-04 09:09:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 09:09:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-hub-nightly
+[2024-05-04 09:09:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-05-04 09:09:52] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240504.330] Old Version: [0.44.20240504.329]
+[2024-05-04 09:09:52] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-05-04 09:09:52] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-05-04 09:09:52] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/9d/c3/05875fbc9b005e8975334a1574c89890e0471e1a99d0adb92be29ba792d1/pkscreener-0.44.20240504.329.tar.gz
+[2024-05-04 09:09:53] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-05-04 09:09:53] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-05-04 09:09:53] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240504/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-05-04 09:09:53] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/eb/f5/a2c18c61209caad59990eac6413361626787f1cfbb85f6b16b5f749f124c/pkscreener-0.44.20240504.330.tar.gz
+[2024-05-04 09:09:53] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-04 09:09:53] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240504.329.tar.gz tmp/pkscreener-0.44.20240504.330.tar.gz --markdown 20240504/p/pkscreener/0.44.20240504.329-0.44.20240504.330/README.md --exclude *.pyd
+[2024-05-04 09:09:53] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-05-04 09:09:53] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-05-04 09:09:53] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-05-04 09:09:54] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.329.tar.gz]
+[2024-05-04 09:09:54] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.330.tar.gz]
+[2024-05-04 09:09:54] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-04 09:09:54] INFO root fetch - main [MainThread]: Store serial: [23056413]
