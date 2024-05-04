@@ -8541,3 +8541,42 @@
 [2024-05-04 05:33:11] WARNING root fetch - processPackages [ok-tool]: Skipping, unable to determine old version
 [2024-05-04 05:33:11] INFO root fetch - main [MainThread]: End processing [ok-tool] error
 [2024-05-04 05:33:11] INFO root fetch - main [MainThread]: Store serial: [23055341]
+[2024-05-04 05:35:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055341]
+[2024-05-04 05:35:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 05:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coiled
+[2024-05-04 05:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: freezefs
+[2024-05-04 05:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dreams-core
+[2024-05-04 05:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: citric
+[2024-05-04 05:35:31] INFO root fetch - processPackages [dreams-core]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-04 05:35:31] INFO root fetch - processPackages [citric]: New version: [1.0.1a1] Old Version: [1.0.0]
+[2024-05-04 05:35:31] INFO root fetch - processPackages [coiled]: New version: [1.9.1.dev9] Old Version: [1.9.1.dev8]
+[2024-05-04 05:35:31] INFO root fetch - processPackages [freezefs]: New version: [2.3] Old Version: [2.2]
+[2024-05-04 05:35:31] INFO root fetch - processPackages [dreams-core]: Downloading https://files.pythonhosted.org/packages/ea/d0/095c41f71b76bffa26122f3edfea1f3c4a42e00ffbb25d02705f38feee02/dreams_core-0.0.5.tar.gz
+[2024-05-04 05:35:31] INFO root fetch - processPackages [citric]: Downloading https://files.pythonhosted.org/packages/39/59/3a57c7bd7de0fd5e2d7bdd7b0d4f1b7b295a390bde2ff497feeabbf1ba95/citric-1.0.0.tar.gz
+[2024-05-04 05:35:31] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/8b/97/14337c08d9fc8bec2c9c7a5961519e141cf75d7dffa582bb987eecacefa4/coiled-1.9.1.dev8.tar.gz
+[2024-05-04 05:35:31] INFO root fetch - processPackages [freezefs]: Downloading https://files.pythonhosted.org/packages/9f/67/3352f59d9d085f9317bba6909134dcbe08d902ef37bff4770e537a604832/freezefs-2.2.tar.gz
+[2024-05-04 05:35:31] INFO root fetch - processPackages [citric]: Downloading https://files.pythonhosted.org/packages/aa/0e/03447ec225069a1acf583e9d2cab67d2f27343172be82b786d48931a96ac/citric-1.0.1a1.tar.gz
+[2024-05-04 05:35:31] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/58/16/aec6b9100728dfee740792b7dd55fc6e56240fdadb5ef317a1d120e019d7/coiled-1.9.1.dev9.tar.gz
+[2024-05-04 05:35:31] INFO root fetch - processPackages [dreams-core]: Downloading https://files.pythonhosted.org/packages/12/56/c6b92431e09c01b6a6d70131f2587483ccba6f30d2693cb13d3e1ae0ec49/dreams_core-0.0.6.tar.gz
+[2024-05-04 05:35:31] INFO root fetch - processPackages [citric]: executing diffoscope
+[2024-05-04 05:35:31] INFO root fetch - processPackages [citric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citric-1.0.0.tar.gz tmp/citric-1.0.1a1.tar.gz --markdown 20240504/c/citric/1.0.0-1.0.1a1/README.md --exclude *.pyd
+[2024-05-04 05:35:31] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2024-05-04 05:35:31] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-1.9.1.dev8.tar.gz tmp/coiled-1.9.1.dev9.tar.gz --markdown 20240504/c/coiled/1.9.1.dev8-1.9.1.dev9/README.md --exclude *.pyd
+[2024-05-04 05:35:31] INFO root fetch - processPackages [dreams-core]: executing diffoscope
+[2024-05-04 05:35:31] INFO root fetch - processPackages [dreams-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreams_core-0.0.5.tar.gz tmp/dreams_core-0.0.6.tar.gz --markdown 20240504/d/dreams-core/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-04 05:35:31] INFO root fetch - processPackages [freezefs]: Downloading https://files.pythonhosted.org/packages/fe/70/a56215814b6cc436877edb8425bd81077f5175e89833b87e681335996a93/freezefs-2.3.tar.gz
+[2024-05-04 05:35:31] INFO root fetch - processPackages [freezefs]: executing diffoscope
+[2024-05-04 05:35:31] INFO root fetch - processPackages [freezefs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freezefs-2.2.tar.gz tmp/freezefs-2.3.tar.gz --markdown 20240504/f/freezefs/2.2-2.3/README.md --exclude *.pyd
+[2024-05-04 05:35:32] INFO root fetch - processPackages [dreams-core]: Remove: archive file [/home/abi/fetcher/tmp/dreams_core-0.0.5.tar.gz]
+[2024-05-04 05:35:32] INFO root fetch - processPackages [dreams-core]: Remove: archive file [/home/abi/fetcher/tmp/dreams_core-0.0.6.tar.gz]
+[2024-05-04 05:35:32] INFO root fetch - main [MainThread]: End processing [dreams-core]: success
+[2024-05-04 05:35:32] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev8.tar.gz]
+[2024-05-04 05:35:32] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev9.tar.gz]
+[2024-05-04 05:35:32] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2024-05-04 05:35:32] INFO root fetch - processPackages [freezefs]: Remove: archive file [/home/abi/fetcher/tmp/freezefs-2.2.tar.gz]
+[2024-05-04 05:35:32] INFO root fetch - processPackages [freezefs]: Remove: archive file [/home/abi/fetcher/tmp/freezefs-2.3.tar.gz]
+[2024-05-04 05:35:32] INFO root fetch - main [MainThread]: End processing [freezefs]: success
+[2024-05-04 05:35:32] INFO root fetch - processPackages [citric]: Remove: archive file [/home/abi/fetcher/tmp/citric-1.0.0.tar.gz]
+[2024-05-04 05:35:32] INFO root fetch - processPackages [citric]: Remove: archive file [/home/abi/fetcher/tmp/citric-1.0.1a1.tar.gz]
+[2024-05-04 05:35:32] INFO root fetch - main [MainThread]: End processing [citric]: success
+[2024-05-04 05:35:32] INFO root fetch - main [MainThread]: Store serial: [23055353]
