@@ -20888,3 +20888,53 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:15:26] INFO root fetch - processPackages [mpy-cross-v5]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross_v5-1.0.2.tar.gz]
 [2024-05-04 23:15:26] INFO root fetch - main [MainThread]: End processing [mpy-cross-v5]: success
 [2024-05-04 23:15:26] INFO root fetch - main [MainThread]: Store serial: [23061059]
+[2024-05-04 23:17:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061059]
+[2024-05-04 23:17:34] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 23:19:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061061]
+[2024-05-04 23:19:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 23:19:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slack-machine
+[2024-05-04 23:19:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hnn-utils
+[2024-05-04 23:19:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mdremotifier
+[2024-05-04 23:19:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mimllearning
+[2024-05-04 23:19:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: latch-cloud-clients
+[2024-05-04 23:19:40] INFO root fetch - processPackages [latch-cloud-clients]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 23:19:40] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-04 23:19:40] INFO root fetch - processPackages [latch-cloud-clients]: Downloading https://files.pythonhosted.org/packages/39/00/928ff564c7506a0f9c519ca3c26d072d1c23e6ed8bdb3404b7ca780a67d7/latch_cloud_clients-0.1.8.tar.gz
+[2024-05-04 23:19:40] INFO root fetch - processPackages [slack-machine]: New version: [0.9] Old Version: [0.8]
+[2024-05-04 23:19:40] INFO root fetch - processPackages [mdremotifier]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-04 23:19:40] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-04 23:19:40] INFO root fetch - processPackages [hnn-utils]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-04 23:19:40] INFO root fetch - processPackages [slack-machine]: Downloading https://files.pythonhosted.org/packages/12/d8/f79d8c4179393b9acd82d41104f6e03458622eedbe19b4773916f9ecea66/slack-machine-0.8.tar.gz
+[2024-05-04 23:19:40] INFO root fetch - processPackages [mdremotifier]: Downloading https://files.pythonhosted.org/packages/c8/7b/7c9ecdfcdf9914797196fb9aaedefeb5336ca18dd577c8b810ba63b862f6/mdremotifier-0.3.0.tar.gz
+[2024-05-04 23:19:40] INFO root fetch - processPackages [hnn-utils]: Downloading https://files.pythonhosted.org/packages/fa/17/08163155a4a83c5e3d2b3c30bf0f9ef2ce15e5a6719f4d1ebd88d17c0347/hnn_utils-0.3.4.tar.gz
+[2024-05-04 23:19:40] INFO root fetch - processPackages [latch-cloud-clients]: Downloading https://files.pythonhosted.org/packages/4c/6a/9701d200b8339e435fef04dc8b24a7e7a7ecee4e1b38a16e4a1f10fcbdf8/latch_cloud_clients-0.1.9.tar.gz
+[2024-05-04 23:19:40] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-04 23:19:40] INFO root fetch - processPackages [latch-cloud-clients]: executing diffoscope
+[2024-05-04 23:19:40] INFO root fetch - processPackages [latch-cloud-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch_cloud_clients-0.1.8.tar.gz tmp/latch_cloud_clients-0.1.9.tar.gz --markdown 20240504/l/latch-cloud-clients/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 23:19:41] INFO root fetch - processPackages [hnn-utils]: Downloading https://files.pythonhosted.org/packages/03/3a/defea647ba350264111f556503f35b520a5b4acab87b20b36a519b4d59a9/hnn_utils-0.3.5.tar.gz
+[2024-05-04 23:19:41] INFO root fetch - processPackages [mdremotifier]: Downloading https://files.pythonhosted.org/packages/e0/1a/805b3d1a115367f1e0189bda45ec7d2ac6bc061a7c83f9191f7d1b2fd2bb/mdremotifier-0.3.1.tar.gz
+[2024-05-04 23:19:41] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-04 23:19:41] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240504/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-04 23:19:41] INFO root fetch - processPackages [slack-machine]: Downloading https://files.pythonhosted.org/packages/36/73/e01dbd3c0c33de47093013946f646bfe5609f3219568a043c87eb0abb404/slack-machine-0.9.tar.gz
+[2024-05-04 23:19:41] INFO root fetch - processPackages [hnn-utils]: executing diffoscope
+[2024-05-04 23:19:41] INFO root fetch - processPackages [hnn-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hnn_utils-0.3.4.tar.gz tmp/hnn_utils-0.3.5.tar.gz --markdown 20240504/h/hnn-utils/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-04 23:19:41] INFO root fetch - processPackages [mdremotifier]: executing diffoscope
+[2024-05-04 23:19:41] INFO root fetch - processPackages [mdremotifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdremotifier-0.3.0.tar.gz tmp/mdremotifier-0.3.1.tar.gz --markdown 20240504/m/mdremotifier/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-04 23:19:41] INFO root fetch - processPackages [slack-machine]: executing diffoscope
+[2024-05-04 23:19:41] INFO root fetch - processPackages [slack-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slack-machine-0.8.tar.gz tmp/slack-machine-0.9.tar.gz --markdown 20240504/s/slack-machine/0.8-0.9/README.md --exclude *.pyd
+[2024-05-04 23:19:41] INFO root fetch - processPackages [latch-cloud-clients]: Remove: archive file [/home/abi/fetcher/tmp/latch_cloud_clients-0.1.8.tar.gz]
+[2024-05-04 23:19:41] INFO root fetch - processPackages [latch-cloud-clients]: Remove: archive file [/home/abi/fetcher/tmp/latch_cloud_clients-0.1.9.tar.gz]
+[2024-05-04 23:19:41] INFO root fetch - main [MainThread]: End processing [latch-cloud-clients]: success
+[2024-05-04 23:19:41] INFO root fetch - processPackages [hnn-utils]: Remove: archive file [/home/abi/fetcher/tmp/hnn_utils-0.3.4.tar.gz]
+[2024-05-04 23:19:41] INFO root fetch - processPackages [hnn-utils]: Remove: archive file [/home/abi/fetcher/tmp/hnn_utils-0.3.5.tar.gz]
+[2024-05-04 23:19:41] INFO root fetch - main [MainThread]: End processing [hnn-utils]: success
+[2024-05-04 23:19:41] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-04 23:19:41] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-04 23:19:41] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-04 23:19:41] INFO root fetch - processPackages [mdremotifier]: Remove: archive file [/home/abi/fetcher/tmp/mdremotifier-0.3.0.tar.gz]
+[2024-05-04 23:19:41] INFO root fetch - processPackages [mdremotifier]: Remove: archive file [/home/abi/fetcher/tmp/mdremotifier-0.3.1.tar.gz]
+[2024-05-04 23:19:41] INFO root fetch - main [MainThread]: End processing [mdremotifier]: success
+[2024-05-04 23:19:42] INFO root fetch - processPackages [slack-machine]: Remove: archive file [/home/abi/fetcher/tmp/slack-machine-0.8.tar.gz]
+[2024-05-04 23:19:42] INFO root fetch - processPackages [slack-machine]: Remove: archive file [/home/abi/fetcher/tmp/slack-machine-0.9.tar.gz]
+[2024-05-04 23:19:42] INFO root fetch - main [MainThread]: End processing [slack-machine]: success
+[2024-05-04 23:19:42] INFO root fetch - main [MainThread]: Store serial: [23061077]
