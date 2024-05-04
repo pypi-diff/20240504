@@ -11639,3 +11639,15 @@
 [2024-05-04 10:23:53] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
 [2024-05-04 10:23:53] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-04 10:23:53] INFO root fetch - main [MainThread]: Store serial: [23056801]
+[2024-05-04 10:25:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056801]
+[2024-05-04 10:26:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 10:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-05-04 10:26:02] INFO root fetch - processPackages [freegenius]: New version: [0.2.3] Old Version: [0.2.1]
+[2024-05-04 10:26:02] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/13/8c/f8f13e59d3a5db2119865bb82ac50e1f42edccf0d1183772837f74df8676/freegenius-0.2.1.tar.gz
+[2024-05-04 10:26:02] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/be/97/5259c46bb3cdbabe24a5c50913cd845c700eee535b35cbf65ae38c06e48f/freegenius-0.2.3.tar.gz
+[2024-05-04 10:26:02] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-04 10:26:02] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.1.tar.gz tmp/freegenius-0.2.3.tar.gz --markdown 20240504/f/freegenius/0.2.1-0.2.3/README.md --exclude *.pyd
+[2024-05-04 10:26:04] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.1.tar.gz]
+[2024-05-04 10:26:04] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.3.tar.gz]
+[2024-05-04 10:26:04] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-04 10:26:04] INFO root fetch - main [MainThread]: Store serial: [23056804]
