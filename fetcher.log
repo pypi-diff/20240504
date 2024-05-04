@@ -7422,3 +7422,38 @@
 [2024-05-04 04:21:12] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
 [2024-05-04 04:21:12] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
 [2024-05-04 04:21:13] INFO root fetch - main [MainThread]: Store serial: [23054822]
+[2024-05-04 04:23:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054822]
+[2024-05-04 04:23:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 04:23:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cerebras-appliance
+[2024-05-04 04:23:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerebras-pytorch
+[2024-05-04 04:23:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpc-obscodes
+[2024-05-04 04:23:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cerebras-sdk
+[2024-05-04 04:23:29] INFO root fetch - processPackages [mpc-obscodes]: New version: [2024.5.3] Old Version: [2024.4.5]
+[2024-05-04 04:23:29] INFO root fetch - processPackages [cerebras-appliance]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-05-04 04:23:29] INFO root fetch - processPackages [cerebras-sdk]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-05-04 04:23:29] INFO root fetch - processPackages [cerebras-pytorch]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-05-04 04:23:30] INFO root fetch - processPackages [mpc-obscodes]: Downloading https://files.pythonhosted.org/packages/c5/c7/026120cceb75d622414d8a5b26f0bbed6fe5ce3036fcf9be3ddab9297b6d/mpc_obscodes-2024.4.5.tar.gz
+[2024-05-04 04:23:30] INFO root fetch - processPackages [cerebras-appliance]: Downloading https://files.pythonhosted.org/packages/92/de/8adbc0ef70a288834cd9d53a92f71ace08636181e8565b815f6b685dff7c/cerebras_appliance-2.2.0-cp38-cp38-manylinux2014_x86_64.whl
+[2024-05-04 04:23:30] INFO root fetch - processPackages [cerebras-sdk]: Downloading https://files.pythonhosted.org/packages/af/99/057113f88fffe817b19345d1a806c6e159852a034122a24e3eca6352d675/cerebras_sdk-2.2.0-cp38-none-manylinux2014_x86_64.whl
+[2024-05-04 04:23:30] INFO root fetch - processPackages [mpc-obscodes]: Downloading https://files.pythonhosted.org/packages/df/51/ad23e9e448a1700ccc36a04a78eb75dceb9e82517cc4e116211d4a581d0b/mpc_obscodes-2024.5.3.tar.gz
+[2024-05-04 04:23:30] INFO root fetch - processPackages [cerebras-pytorch]: Downloading https://files.pythonhosted.org/packages/eb/9d/f1c354bf988b85fad785e464e27b80571437e919ad79ef5d71d54b31043d/cerebras_pytorch-2.2.0-cp38-cp38-manylinux2014_x86_64.whl
+[2024-05-04 04:23:30] INFO root fetch - processPackages [mpc-obscodes]: executing diffoscope
+[2024-05-04 04:23:30] INFO root fetch - processPackages [mpc-obscodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpc_obscodes-2024.4.5.tar.gz tmp/mpc_obscodes-2024.5.3.tar.gz --markdown 20240504/m/mpc-obscodes/2024.4.5-2024.5.3/README.md --exclude *.pyd
+[2024-05-04 04:23:30] INFO root fetch - processPackages [cerebras-sdk]: Downloading https://files.pythonhosted.org/packages/25/46/b9ea6f7b6eda3dcaf042e34cfc2523c281174ea368b2a8b8c1b65baee1de/cerebras_sdk-2.2.1-cp38-none-manylinux2014_x86_64.whl
+[2024-05-04 04:23:30] INFO root fetch - processPackages [cerebras-sdk]: executing diffoscope
+[2024-05-04 04:23:30] INFO root fetch - processPackages [cerebras-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerebras_sdk-2.2.0-cp38-none-manylinux2014_x86_64.whl.zip tmp/cerebras_sdk-2.2.1-cp38-none-manylinux2014_x86_64.whl.zip --markdown 20240504/c/cerebras-sdk/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-05-04 04:23:31] INFO root fetch - processPackages [mpc-obscodes]: Remove: archive file [/home/abi/fetcher/tmp/mpc_obscodes-2024.4.5.tar.gz]
+[2024-05-04 04:23:31] INFO root fetch - processPackages [mpc-obscodes]: Remove: archive file [/home/abi/fetcher/tmp/mpc_obscodes-2024.5.3.tar.gz]
+[2024-05-04 04:23:31] INFO root fetch - main [MainThread]: End processing [mpc-obscodes]: success
+[2024-05-04 04:23:31] INFO root fetch - processPackages [cerebras-sdk]: Remove: archive file [/home/abi/fetcher/tmp/cerebras_sdk-2.2.0-cp38-none-manylinux2014_x86_64.whl.zip]
+[2024-05-04 04:23:31] INFO root fetch - processPackages [cerebras-sdk]: Remove: archive file [/home/abi/fetcher/tmp/cerebras_sdk-2.2.1-cp38-none-manylinux2014_x86_64.whl.zip]
+[2024-05-04 04:23:31] INFO root fetch - main [MainThread]: End processing [cerebras-sdk]: success
+[2024-05-04 04:23:31] INFO root fetch - processPackages [cerebras-appliance]: Downloading https://files.pythonhosted.org/packages/d7/b4/f286acac2579068f1d5872e4c78c6a1fe99833dd07d453290b74ad3422c5/cerebras_appliance-2.2.1-cp38-cp38-manylinux2014_x86_64.whl
+[2024-05-04 04:23:31] WARNING root fetch - processPackages [cerebras-pytorch]: Skipping package: exceeds size limit 38027151>=10485760
+[2024-05-04 04:23:31] INFO root fetch - main [MainThread]: End processing [cerebras-pytorch] error
+[2024-05-04 04:23:32] INFO root fetch - processPackages [cerebras-appliance]: executing diffoscope
+[2024-05-04 04:23:32] INFO root fetch - processPackages [cerebras-appliance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerebras_appliance-2.2.0-cp38-cp38-manylinux2014_x86_64.whl.zip tmp/cerebras_appliance-2.2.1-cp38-cp38-manylinux2014_x86_64.whl.zip --markdown 20240504/c/cerebras-appliance/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-05-04 04:24:46] INFO root fetch - processPackages [cerebras-appliance]: Remove: archive file [/home/abi/fetcher/tmp/cerebras_appliance-2.2.0-cp38-cp38-manylinux2014_x86_64.whl.zip]
+[2024-05-04 04:24:46] INFO root fetch - processPackages [cerebras-appliance]: Remove: archive file [/home/abi/fetcher/tmp/cerebras_appliance-2.2.1-cp38-cp38-manylinux2014_x86_64.whl.zip]
+[2024-05-04 04:24:46] INFO root fetch - main [MainThread]: End processing [cerebras-appliance]: success
+[2024-05-04 04:24:46] INFO root fetch - main [MainThread]: Store serial: [23054847]
