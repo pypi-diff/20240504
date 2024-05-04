@@ -8843,3 +8843,42 @@
 [2024-05-04 06:01:03] INFO root fetch - processPackages [cdktf-cdktf-provider-cloudflare]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-cloudflare-9.0.3.tar.gz]
 [2024-05-04 06:01:03] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-cloudflare]: success
 [2024-05-04 06:01:03] INFO root fetch - main [MainThread]: Store serial: [23055456]
+[2024-05-04 06:03:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055456]
+[2024-05-04 06:03:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 06:03:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TreeSAK
+[2024-05-04 06:03:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mmcore
+[2024-05-04 06:03:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: schwab-py
+[2024-05-04 06:03:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdktf-cdktf-provider-spotinst
+[2024-05-04 06:03:25] INFO root fetch - processPackages [schwab-py]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2024-05-04 06:03:25] INFO root fetch - processPackages [TreeSAK]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-04 06:03:25] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: New version: [9.0.9] Old Version: [9.0.8]
+[2024-05-04 06:03:25] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/4a/97/d78b9c894adc5546c1464a6150bd183cffc758049f5f599b96df24c97f56/schwab-py-0.0.0a8.tar.gz
+[2024-05-04 06:03:25] INFO root fetch - processPackages [mmcore]: New version: [0.25.9] Old Version: [0.25.6]
+[2024-05-04 06:03:25] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/33/3d/03ab6748b3aed0610812e461492b58278718c5c15236ce439a758aa3fc27/TreeSAK-1.9.1.tar.gz
+[2024-05-04 06:03:25] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/23/3a/ff7bddacc6d9aefca0eeeab5018195400ffe56e21e80a61d96540ae2d5ef/cdktf-cdktf-provider-spotinst-9.0.8.tar.gz
+[2024-05-04 06:03:25] INFO root fetch - processPackages [mmcore]: Downloading https://files.pythonhosted.org/packages/fe/e1/11f1b9a1ccaf19dee4233586c6bc2c57800e365463c6ce136863222bc10d/mmcore-0.25.6.tar.gz
+[2024-05-04 06:03:25] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/f3/f1/efd2cf1baeff4d7f78477ad6df2d7f97c864c877ffd1d2e6a1425706ef14/schwab-py-0.0.0a9.tar.gz
+[2024-05-04 06:03:25] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/3d/18/0b0f8a2c565de5415024065f522c859677184cac283a7e4af0060f267891/TreeSAK-1.9.2.tar.gz
+[2024-05-04 06:03:25] INFO root fetch - processPackages [schwab-py]: executing diffoscope
+[2024-05-04 06:03:25] INFO root fetch - processPackages [schwab-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab-py-0.0.0a8.tar.gz tmp/schwab-py-0.0.0a9.tar.gz --markdown 20240504/s/schwab-py/0.0.0a8-0.0.0a9/README.md --exclude *.pyd
+[2024-05-04 06:03:25] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/b8/2c/aa878226c72dad7c19534c6713ae070650c0bb7480c80bb6e755f5ccfb7f/cdktf-cdktf-provider-spotinst-9.0.9.tar.gz
+[2024-05-04 06:03:25] INFO root fetch - processPackages [TreeSAK]: executing diffoscope
+[2024-05-04 06:03:25] INFO root fetch - processPackages [TreeSAK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TreeSAK-1.9.1.tar.gz tmp/TreeSAK-1.9.2.tar.gz --markdown 20240504/T/TreeSAK/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-04 06:03:25] INFO root fetch - processPackages [mmcore]: Downloading https://files.pythonhosted.org/packages/04/cd/e39ffdab22e849e263498ea3227b40e7e52949f3c021c25343caf7091aab/mmcore-0.25.9.tar.gz
+[2024-05-04 06:03:25] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: executing diffoscope
+[2024-05-04 06:03:25] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-spotinst-9.0.8.tar.gz tmp/cdktf-cdktf-provider-spotinst-9.0.9.tar.gz --markdown 20240504/c/cdktf-cdktf-provider-spotinst/9.0.8-9.0.9/README.md --exclude *.pyd
+[2024-05-04 06:03:26] INFO root fetch - processPackages [mmcore]: executing diffoscope
+[2024-05-04 06:03:26] INFO root fetch - processPackages [mmcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmcore-0.25.6.tar.gz tmp/mmcore-0.25.9.tar.gz --markdown 20240504/m/mmcore/0.25.6-0.25.9/README.md --exclude *.pyd
+[2024-05-04 06:03:26] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a8.tar.gz]
+[2024-05-04 06:03:26] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a9.tar.gz]
+[2024-05-04 06:03:26] INFO root fetch - main [MainThread]: End processing [schwab-py]: success
+[2024-05-04 06:03:26] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.1.tar.gz]
+[2024-05-04 06:03:26] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.2.tar.gz]
+[2024-05-04 06:03:26] INFO root fetch - main [MainThread]: End processing [TreeSAK]: success
+[2024-05-04 06:03:27] INFO root fetch - processPackages [mmcore]: Remove: archive file [/home/abi/fetcher/tmp/mmcore-0.25.6.tar.gz]
+[2024-05-04 06:03:27] INFO root fetch - processPackages [mmcore]: Remove: archive file [/home/abi/fetcher/tmp/mmcore-0.25.9.tar.gz]
+[2024-05-04 06:03:27] INFO root fetch - main [MainThread]: End processing [mmcore]: success
+[2024-05-04 06:03:29] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-spotinst-9.0.8.tar.gz]
+[2024-05-04 06:03:29] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-spotinst-9.0.9.tar.gz]
+[2024-05-04 06:03:29] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
+[2024-05-04 06:03:29] INFO root fetch - main [MainThread]: Store serial: [23055480]
