@@ -13089,3 +13089,11 @@
 [2024-05-04 12:43:09] INFO root fetch - processPackages [viessmann-gridbox-connector]: Remove: archive file [/home/abi/fetcher/tmp/viessmann_gridbox_connector-1.3.7.tar.gz]
 [2024-05-04 12:43:09] INFO root fetch - main [MainThread]: End processing [viessmann-gridbox-connector]: success
 [2024-05-04 12:43:09] INFO root fetch - main [MainThread]: Store serial: [23057546]
+[2024-05-04 12:45:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057546]
+[2024-05-04 12:45:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 12:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IoTNetworkMalwareClassifier
+[2024-05-04 12:45:18] INFO root fetch - processPackages [IoTNetworkMalwareClassifier]: New version: [0.0.18] Old Version: [0.0.16]
+[2024-05-04 12:45:18] INFO root fetch - processPackages [IoTNetworkMalwareClassifier]: Downloading https://files.pythonhosted.org/packages/96/50/5f51a38099327672e98abe2baea4da37cc6663404a85eeb5fb3bca0658e3/iotnetworkmalwareclassifier-0.0.16.tar.gz
+[2024-05-04 12:45:18] ERROR root fetch - processPackages [IoTNetworkMalwareClassifier]: Unable to fetch info: No such project/version 'IoTNetworkMalwareClassifier' 0.0.18
+[2024-05-04 12:45:18] INFO root fetch - main [MainThread]: End processing [IoTNetworkMalwareClassifier] error
+[2024-05-04 12:45:18] INFO root fetch - main [MainThread]: Store serial: [23057553]
