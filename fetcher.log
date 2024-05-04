@@ -14819,3 +14819,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:37:09] INFO root fetch - processPackages [syncstart]: Remove: archive file [/home/abi/fetcher/tmp/syncstart-1.1.1-py3-none-any.whl.zip]
 [2024-05-04 15:37:09] INFO root fetch - main [MainThread]: End processing [syncstart]: success
 [2024-05-04 15:37:09] INFO root fetch - main [MainThread]: Store serial: [23058246]
+[2024-05-04 15:39:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058246]
+[2024-05-04 15:39:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 15:39:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: khoj-assistant
+[2024-05-04 15:39:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lfg-llama
+[2024-05-04 15:39:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: videobox
+[2024-05-04 15:39:18] INFO root fetch - processPackages [lfg-llama]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-04 15:39:18] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-05-04 15:39:18] INFO root fetch - processPackages [lfg-llama]: Downloading https://files.pythonhosted.org/packages/d1/aa/e9835bdf3d275f4a98a16e969a99de012533c14ae3783d434b0dd4c04ff4/lfg_llama-1.2.1.tar.gz
+[2024-05-04 15:39:18] INFO root fetch - processPackages [videobox]: New version: [0.7.0] Old Version: [0.6.1]
+[2024-05-04 15:39:18] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-05-04 15:39:18] INFO root fetch - processPackages [videobox]: Downloading https://files.pythonhosted.org/packages/93/dc/bf5ebe8047fea008b9b7338e857e18a1bcf12517bacf49517a8a5dcf5314/videobox-0.6.1.tar.gz
+[2024-05-04 15:39:18] INFO root fetch - processPackages [lfg-llama]: Downloading https://files.pythonhosted.org/packages/5c/56/29ba051614e2d3eb94e83de2d6a12e67056ba82f5df5eb23747f7b34a80b/lfg_llama-1.2.2.tar.gz
+[2024-05-04 15:39:18] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-05-04 15:39:18] INFO root fetch - processPackages [lfg-llama]: executing diffoscope
+[2024-05-04 15:39:18] INFO root fetch - processPackages [lfg-llama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lfg_llama-1.2.1.tar.gz tmp/lfg_llama-1.2.2.tar.gz --markdown 20240504/l/lfg-llama/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-04 15:39:18] INFO root fetch - processPackages [videobox]: Downloading https://files.pythonhosted.org/packages/3a/70/61db3ea405e1ab9fa4fb0419fe9ef3d3b53a8bc064ad7d2a97ed949dd35e/videobox-0.7.0.tar.gz
+[2024-05-04 15:39:18] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-05-04 15:39:18] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240504/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-04 15:39:18] INFO root fetch - processPackages [videobox]: executing diffoscope
+[2024-05-04 15:39:18] INFO root fetch - processPackages [videobox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/videobox-0.6.1.tar.gz tmp/videobox-0.7.0.tar.gz --markdown 20240504/v/videobox/0.6.1-0.7.0/README.md --exclude *.pyd
+[2024-05-04 15:39:19] INFO root fetch - processPackages [lfg-llama]: Remove: archive file [/home/abi/fetcher/tmp/lfg_llama-1.2.1.tar.gz]
+[2024-05-04 15:39:19] INFO root fetch - processPackages [lfg-llama]: Remove: archive file [/home/abi/fetcher/tmp/lfg_llama-1.2.2.tar.gz]
+[2024-05-04 15:39:19] INFO root fetch - main [MainThread]: End processing [lfg-llama]: success
+[2024-05-04 15:39:19] INFO root fetch - processPackages [videobox]: Remove: archive file [/home/abi/fetcher/tmp/videobox-0.6.1.tar.gz]
+[2024-05-04 15:39:19] INFO root fetch - processPackages [videobox]: Remove: archive file [/home/abi/fetcher/tmp/videobox-0.7.0.tar.gz]
+[2024-05-04 15:39:19] INFO root fetch - main [MainThread]: End processing [videobox]: success
+[2024-05-04 15:39:20] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-05-04 15:39:20] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-05-04 15:39:20] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-05-04 15:39:20] INFO root fetch - main [MainThread]: Store serial: [23058257]
