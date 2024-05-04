@@ -6744,3 +6744,42 @@
 [2024-05-04 03:32:48] INFO root fetch - processPackages [decision-utils]: Remove: archive file [/home/abi/fetcher/tmp/decision_utils-0.0.6.tar.gz]
 [2024-05-04 03:32:48] INFO root fetch - main [MainThread]: End processing [decision-utils]: success
 [2024-05-04 03:32:48] INFO root fetch - main [MainThread]: Store serial: [23054475]
+[2024-05-04 03:34:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054475]
+[2024-05-04 03:34:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 03:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgegap-consul
+[2024-05-04 03:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edgegap-logging
+[2024-05-04 03:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edgegap-api
+[2024-05-04 03:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: homeassistant-stubs
+[2024-05-04 03:34:56] INFO root fetch - processPackages [edgegap-consul]: New version: [1.6.4] Old Version: [1.6.3]
+[2024-05-04 03:34:56] INFO root fetch - processPackages [edgegap-logging]: New version: [1.6.3] Old Version: [1.6.2]
+[2024-05-04 03:34:56] INFO root fetch - processPackages [edgegap-api]: New version: [1.6.4] Old Version: [1.6.3]
+[2024-05-04 03:34:56] INFO root fetch - processPackages [edgegap-logging]: Downloading https://files.pythonhosted.org/packages/f9/11/a40b38960ff26f3a8808a91befe66dc54257ed6cb5b647c5db6ad854e33c/edgegap_logging-1.6.2.tar.gz
+[2024-05-04 03:34:56] INFO root fetch - processPackages [edgegap-api]: Downloading https://files.pythonhosted.org/packages/d4/e7/0e8b450e363797e36c4dee57b5eced0b62d5b91692786e9698a1454aeb6a/edgegap_api-1.6.3.tar.gz
+[2024-05-04 03:34:56] INFO root fetch - processPackages [homeassistant-stubs]: New version: [2024.5.1] Old Version: [2024.5.0b7]
+[2024-05-04 03:34:56] INFO root fetch - processPackages [edgegap-consul]: Downloading https://files.pythonhosted.org/packages/2d/21/6c6491b2c8d8397905d531e9dbdf7425e83d4db93343628965c46aaad8fc/edgegap_consul-1.6.3.tar.gz
+[2024-05-04 03:34:57] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/2a/40/99618133e4fb5f707d01a1249ee21040cb20e95c453ac289d7a168d94b37/homeassistant_stubs-2024.5.0b7.tar.gz
+[2024-05-04 03:34:57] INFO root fetch - processPackages [edgegap-api]: Downloading https://files.pythonhosted.org/packages/70/06/20077b2a19070e278a7dcdbf807060178e57cd84bdd3021268dc469fac4e/edgegap_api-1.6.4-py3-none-any.whl
+[2024-05-04 03:34:57] INFO root fetch - processPackages [edgegap-logging]: Downloading https://files.pythonhosted.org/packages/32/36/45bf998d1a3b48d3658b39cbcb211c962f69bffb136bb6e3930b045691e0/edgegap_logging-1.6.3.tar.gz
+[2024-05-04 03:34:57] INFO root fetch - processPackages [edgegap-consul]: Downloading https://files.pythonhosted.org/packages/be/00/8b0d18489e2b579b62649dc137936ce9440be108f214d910279a179f3db9/edgegap_consul-1.6.4.tar.gz
+[2024-05-04 03:34:57] INFO root fetch - processPackages [edgegap-api]: executing diffoscope
+[2024-05-04 03:34:57] INFO root fetch - processPackages [edgegap-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_api-1.6.3.tar.gz tmp/edgegap_api-1.6.4-py3-none-any.whl.zip --markdown 20240504/e/edgegap-api/1.6.3-1.6.4/README.md --exclude *.pyd
+[2024-05-04 03:34:57] INFO root fetch - processPackages [edgegap-logging]: executing diffoscope
+[2024-05-04 03:34:57] INFO root fetch - processPackages [edgegap-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_logging-1.6.2.tar.gz tmp/edgegap_logging-1.6.3.tar.gz --markdown 20240504/e/edgegap-logging/1.6.2-1.6.3/README.md --exclude *.pyd
+[2024-05-04 03:34:57] INFO root fetch - processPackages [edgegap-consul]: executing diffoscope
+[2024-05-04 03:34:57] INFO root fetch - processPackages [edgegap-consul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_consul-1.6.3.tar.gz tmp/edgegap_consul-1.6.4.tar.gz --markdown 20240504/e/edgegap-consul/1.6.3-1.6.4/README.md --exclude *.pyd
+[2024-05-04 03:34:57] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/cf/c6/34c702261286c20f8601e162a4e4006f2156248062a932175704a0bbdaa8/homeassistant_stubs-2024.5.1.tar.gz
+[2024-05-04 03:34:57] INFO root fetch - processPackages [homeassistant-stubs]: executing diffoscope
+[2024-05-04 03:34:57] INFO root fetch - processPackages [homeassistant-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeassistant_stubs-2024.5.0b7.tar.gz tmp/homeassistant_stubs-2024.5.1.tar.gz --markdown 20240504/h/homeassistant-stubs/2024.5.0b7-2024.5.1/README.md --exclude *.pyd
+[2024-05-04 03:34:57] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.3.tar.gz]
+[2024-05-04 03:34:57] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.4-py3-none-any.whl.zip]
+[2024-05-04 03:34:57] INFO root fetch - main [MainThread]: End processing [edgegap-api]: success
+[2024-05-04 03:34:58] INFO root fetch - processPackages [edgegap-logging]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_logging-1.6.2.tar.gz]
+[2024-05-04 03:34:58] INFO root fetch - processPackages [edgegap-logging]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_logging-1.6.3.tar.gz]
+[2024-05-04 03:34:58] INFO root fetch - main [MainThread]: End processing [edgegap-logging]: success
+[2024-05-04 03:34:58] INFO root fetch - processPackages [edgegap-consul]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_consul-1.6.3.tar.gz]
+[2024-05-04 03:34:58] INFO root fetch - processPackages [edgegap-consul]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_consul-1.6.4.tar.gz]
+[2024-05-04 03:34:58] INFO root fetch - main [MainThread]: End processing [edgegap-consul]: success
+[2024-05-04 03:35:10] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.0b7.tar.gz]
+[2024-05-04 03:35:10] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.1.tar.gz]
+[2024-05-04 03:35:10] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
+[2024-05-04 03:35:10] INFO root fetch - main [MainThread]: Store serial: [23054538]
