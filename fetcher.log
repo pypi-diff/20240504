@@ -10057,3 +10057,24 @@
 [2024-05-04 07:53:14] INFO root fetch - processPackages [odoo-addon-sale-automatic-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_automatic_workflow-16.0.1.1.0.1-py3-none-any.whl.zip]
 [2024-05-04 07:53:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-automatic-workflow]: success
 [2024-05-04 07:53:14] INFO root fetch - main [MainThread]: Store serial: [23056056]
+[2024-05-04 07:55:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056056]
+[2024-05-04 07:55:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 07:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: khoj-assistant
+[2024-05-04 07:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: panpipelines
+[2024-05-04 07:55:23] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-05-04 07:55:23] INFO root fetch - processPackages [panpipelines]: New version: [1.0.0] Old Version: [0.9.9]
+[2024-05-04 07:55:23] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-05-04 07:55:23] INFO root fetch - processPackages [panpipelines]: Downloading https://files.pythonhosted.org/packages/4c/0d/5d874b1665dad6cef940dfa9f934a57a56694474e5d119fd0c8768025812/panpipelines-0.9.9.tar.gz
+[2024-05-04 07:55:24] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-05-04 07:55:24] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-05-04 07:55:24] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240504/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-04 07:55:24] INFO root fetch - processPackages [panpipelines]: Downloading https://files.pythonhosted.org/packages/f0/25/d37fdddc9b2a8dbb3a66545151b8b2bcf0d1b62847c47576e3761d72fceb/panpipelines-1.0.0.tar.gz
+[2024-05-04 07:55:24] INFO root fetch - processPackages [panpipelines]: executing diffoscope
+[2024-05-04 07:55:24] INFO root fetch - processPackages [panpipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panpipelines-0.9.9.tar.gz tmp/panpipelines-1.0.0.tar.gz --markdown 20240504/p/panpipelines/0.9.9-1.0.0/README.md --exclude *.pyd
+[2024-05-04 07:55:25] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-05-04 07:55:25] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-05-04 07:55:25] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-05-04 07:55:26] INFO root fetch - processPackages [panpipelines]: Remove: archive file [/home/abi/fetcher/tmp/panpipelines-0.9.9.tar.gz]
+[2024-05-04 07:55:26] INFO root fetch - processPackages [panpipelines]: Remove: archive file [/home/abi/fetcher/tmp/panpipelines-1.0.0.tar.gz]
+[2024-05-04 07:55:26] INFO root fetch - main [MainThread]: End processing [panpipelines]: success
+[2024-05-04 07:55:26] INFO root fetch - main [MainThread]: Store serial: [23056062]
