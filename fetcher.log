@@ -11677,3 +11677,24 @@
 [2024-05-04 10:32:29] INFO root fetch - processPackages [easy-fossy]: Remove: archive file [/home/abi/fetcher/tmp/easy_fossy-2.3.0.tar.gz]
 [2024-05-04 10:32:29] INFO root fetch - main [MainThread]: End processing [easy-fossy]: success
 [2024-05-04 10:32:29] INFO root fetch - main [MainThread]: Store serial: [23056811]
+[2024-05-04 10:34:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056811]
+[2024-05-04 10:34:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 10:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diwork
+[2024-05-04 10:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omnisafe
+[2024-05-04 10:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyo2.abc2
+[2024-05-04 10:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openagents-grpc-proto
+[2024-05-04 10:34:38] WARNING root fetch - processPackages [openagents-grpc-proto]: Skipping, unable to determine old version
+[2024-05-04 10:34:38] INFO root fetch - main [MainThread]: End processing [openagents-grpc-proto] error
+[2024-05-04 10:34:38] WARNING root fetch - processPackages [diwork]: Skipping, unable to determine old version
+[2024-05-04 10:34:38] INFO root fetch - main [MainThread]: End processing [diwork] error
+[2024-05-04 10:34:38] INFO root fetch - processPackages [omnisafe]: New version: [0.5.0b0] Old Version: [0.4.0]
+[2024-05-04 10:34:38] WARNING root fetch - processPackages [hyo2.abc2]: Skipping, unable to determine old version
+[2024-05-04 10:34:38] INFO root fetch - main [MainThread]: End processing [hyo2.abc2] error
+[2024-05-04 10:34:38] INFO root fetch - processPackages [omnisafe]: Downloading https://files.pythonhosted.org/packages/f4/f8/e16f2e30afc305c0841a9ca13e70e5d3b2b6d3957cc8d420dae8f12465bf/omnisafe-0.4.0.tar.gz
+[2024-05-04 10:34:39] INFO root fetch - processPackages [omnisafe]: Downloading https://files.pythonhosted.org/packages/d6/f3/d6ff5c9cf2a684da8d265f2e2f3ccfa2bdad383173b46abf373dd138f5f4/omnisafe-0.5.0b0.tar.gz
+[2024-05-04 10:34:39] INFO root fetch - processPackages [omnisafe]: executing diffoscope
+[2024-05-04 10:34:39] INFO root fetch - processPackages [omnisafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnisafe-0.4.0.tar.gz tmp/omnisafe-0.5.0b0.tar.gz --markdown 20240504/o/omnisafe/0.4.0-0.5.0b0/README.md --exclude *.pyd
+[2024-05-04 10:34:41] INFO root fetch - processPackages [omnisafe]: Remove: archive file [/home/abi/fetcher/tmp/omnisafe-0.4.0.tar.gz]
+[2024-05-04 10:34:41] INFO root fetch - processPackages [omnisafe]: Remove: archive file [/home/abi/fetcher/tmp/omnisafe-0.5.0b0.tar.gz]
+[2024-05-04 10:34:41] INFO root fetch - main [MainThread]: End processing [omnisafe]: success
+[2024-05-04 10:34:41] INFO root fetch - main [MainThread]: Store serial: [23056827]
