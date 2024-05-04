@@ -17574,3 +17574,21 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:19:08] INFO root fetch - processPackages [arz-api]: Remove: archive file [/home/abi/fetcher/tmp/arz_api-2.0.tar.gz]
 [2024-05-04 19:19:08] INFO root fetch - main [MainThread]: End processing [arz-api]: success
 [2024-05-04 19:19:08] INFO root fetch - main [MainThread]: Store serial: [23059518]
+[2024-05-04 19:21:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059518]
+[2024-05-04 19:21:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 19:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: testpulse-uploader
+[2024-05-04 19:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blankslate-python
+[2024-05-04 19:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cantus
+[2024-05-04 19:21:17] INFO root fetch - processPackages [testpulse-uploader]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 19:21:17] INFO root fetch - processPackages [testpulse-uploader]: Downloading https://files.pythonhosted.org/packages/46/41/862ceb805932f98ca76a984b567d3ceb49604aa4f0b188fb68765e703755/testpulse-uploader-0.0.8.tar.gz
+[2024-05-04 19:21:17] WARNING root fetch - processPackages [blankslate-python]: Skipping, unable to determine old version
+[2024-05-04 19:21:17] INFO root fetch - main [MainThread]: End processing [blankslate-python] error
+[2024-05-04 19:21:17] WARNING root fetch - processPackages [cantus]: Skipping, unable to determine old version
+[2024-05-04 19:21:17] INFO root fetch - main [MainThread]: End processing [cantus] error
+[2024-05-04 19:21:17] INFO root fetch - processPackages [testpulse-uploader]: Downloading https://files.pythonhosted.org/packages/68/05/bf8b2d453be777c3de7aae7bf6ed379765be834139e1da957914796175bd/testpulse-uploader-0.0.9.tar.gz
+[2024-05-04 19:21:18] INFO root fetch - processPackages [testpulse-uploader]: executing diffoscope
+[2024-05-04 19:21:18] INFO root fetch - processPackages [testpulse-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testpulse-uploader-0.0.8.tar.gz tmp/testpulse-uploader-0.0.9.tar.gz --markdown 20240504/t/testpulse-uploader/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 19:21:18] INFO root fetch - processPackages [testpulse-uploader]: Remove: archive file [/home/abi/fetcher/tmp/testpulse-uploader-0.0.8.tar.gz]
+[2024-05-04 19:21:18] INFO root fetch - processPackages [testpulse-uploader]: Remove: archive file [/home/abi/fetcher/tmp/testpulse-uploader-0.0.9.tar.gz]
+[2024-05-04 19:21:18] INFO root fetch - main [MainThread]: End processing [testpulse-uploader]: success
+[2024-05-04 19:21:18] INFO root fetch - main [MainThread]: Store serial: [23059531]
