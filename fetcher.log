@@ -17976,3 +17976,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:47:24] INFO root fetch - processPackages [sqlclasses]: Remove: archive file [/home/abi/fetcher/tmp/sqlclasses-1.1.tar.gz]
 [2024-05-04 19:47:24] INFO root fetch - main [MainThread]: End processing [sqlclasses]: success
 [2024-05-04 19:47:24] INFO root fetch - main [MainThread]: Store serial: [23059701]
+[2024-05-04 19:49:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059701]
+[2024-05-04 19:49:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 19:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ssebowa
+[2024-05-04 19:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: valsai
+[2024-05-04 19:49:33] WARNING root fetch - processPackages [ssebowa]: Skipping, unable to determine old version
+[2024-05-04 19:49:33] INFO root fetch - main [MainThread]: End processing [ssebowa] error
+[2024-05-04 19:49:33] INFO root fetch - processPackages [valsai]: New version: [0.0.34] Old Version: [0.0.33]
+[2024-05-04 19:49:33] INFO root fetch - processPackages [valsai]: Downloading https://files.pythonhosted.org/packages/da/78/b330740c8e1609960309baa36934f39195379603fdf044ce7cccba2d4e60/valsai-0.0.33.tar.gz
+[2024-05-04 19:49:33] INFO root fetch - processPackages [valsai]: Downloading https://files.pythonhosted.org/packages/7d/ef/3b18ac67175c6c31678260ed16ad7080b0cd6cc999137bf9f67e8bbda2e0/valsai-0.0.34.tar.gz
+[2024-05-04 19:49:34] INFO root fetch - processPackages [valsai]: executing diffoscope
+[2024-05-04 19:49:34] INFO root fetch - processPackages [valsai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valsai-0.0.33.tar.gz tmp/valsai-0.0.34.tar.gz --markdown 20240504/v/valsai/0.0.33-0.0.34/README.md --exclude *.pyd
+[2024-05-04 19:49:35] INFO root fetch - processPackages [valsai]: Remove: archive file [/home/abi/fetcher/tmp/valsai-0.0.33.tar.gz]
+[2024-05-04 19:49:35] INFO root fetch - processPackages [valsai]: Remove: archive file [/home/abi/fetcher/tmp/valsai-0.0.34.tar.gz]
+[2024-05-04 19:49:35] INFO root fetch - main [MainThread]: End processing [valsai]: success
+[2024-05-04 19:49:35] INFO root fetch - main [MainThread]: Store serial: [23059704]
