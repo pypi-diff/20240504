@@ -14205,3 +14205,54 @@
 [2024-05-04 14:38:07] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.7.9.tar.gz]
 [2024-05-04 14:38:07] INFO root fetch - main [MainThread]: End processing [PYield]: success
 [2024-05-04 14:38:07] INFO root fetch - main [MainThread]: Store serial: [23058006]
+[2024-05-04 14:40:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058006]
+[2024-05-04 14:40:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 14:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorcircuit-nightly
+[2024-05-04 14:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vfb-connect
+[2024-05-04 14:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kobo-highlights-extractor
+[2024-05-04 14:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-llm
+[2024-05-04 14:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: siglyser
+[2024-05-04 14:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mmo-tools
+[2024-05-04 14:40:16] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230608] Old Version: [0.9.1.dev20230607]
+[2024-05-04 14:40:16] INFO root fetch - processPackages [bigdl-llm]: New version: [2.5.0b20240503] Old Version: [2.5.0b20240502]
+[2024-05-04 14:40:16] WARNING root fetch - processPackages [mmo-tools]: Skipping, unable to determine old version
+[2024-05-04 14:40:16] INFO root fetch - main [MainThread]: End processing [mmo-tools] error
+[2024-05-04 14:40:16] INFO root fetch - processPackages [kobo-highlights-extractor]: New version: [0.1.0] Old Version: [0.0.2]
+[2024-05-04 14:40:16] INFO root fetch - processPackages [siglyser]: New version: [0.2] Old Version: [0.112]
+[2024-05-04 14:40:16] INFO root fetch - processPackages [vfb-connect]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-04 14:40:16] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/79/2a/50740b6f8b7e1d0c4223c72c789f41baca7a4e77f32e8f52bd91e7ebff20/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz
+[2024-05-04 14:40:16] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/a8/a7/60256691496922aba98bc19535a2b6050917972e7c315c1b3c4fd923619a/bigdl_llm-2.5.0b20240502-py3-none-win_amd64.whl
+[2024-05-04 14:40:16] INFO root fetch - processPackages [siglyser]: Downloading https://files.pythonhosted.org/packages/c8/4b/45cf818f1a46a615293acfae6ecbca719bb28031dc0d7f5ca22e7a4831ac/siglyser-0.112.tar.gz
+[2024-05-04 14:40:16] INFO root fetch - processPackages [kobo-highlights-extractor]: Downloading https://files.pythonhosted.org/packages/1d/39/fcd24abfc34559c309691d988c816c45641e3a83e5154d6388bd02e67001/kobo_highlights_extractor-0.0.2.tar.gz
+[2024-05-04 14:40:16] INFO root fetch - processPackages [vfb-connect]: Downloading https://files.pythonhosted.org/packages/37/01/0f22b05a3ecc1a0cf8c8ba2b71641537d1653fb993f9f22df58d16a9b062/vfb_connect-1.2.8.tar.gz
+[2024-05-04 14:40:16] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/2f/cc/671276320457670987d1eb503de15ee19924e63c7ec9c99b14c240d5aa18/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz
+[2024-05-04 14:40:16] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2024-05-04 14:40:16] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz --markdown 20240504/t/tensorcircuit-nightly/0.9.1.dev20230607-0.9.1.dev20230608/README.md --exclude *.pyd
+[2024-05-04 14:40:16] INFO root fetch - processPackages [kobo-highlights-extractor]: Downloading https://files.pythonhosted.org/packages/24/9e/5978a46b4149d3ae20157540163dfe99bd966a103f067c36d2e23b550978/kobo_highlights_extractor-0.1.0.tar.gz
+[2024-05-04 14:40:17] INFO root fetch - processPackages [siglyser]: Downloading https://files.pythonhosted.org/packages/95/67/805ee3427612e09b19d1bfb676898fe8e5bc64c1f33975861ed962232099/siglyser-0.2.tar.gz
+[2024-05-04 14:40:17] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/19/b7/4323221157348cbe8f8980115cb33951d18bb882dc425df4d291cfdd6998/bigdl_llm-2.5.0b20240503-py3-none-win_amd64.whl
+[2024-05-04 14:40:17] INFO root fetch - processPackages [kobo-highlights-extractor]: executing diffoscope
+[2024-05-04 14:40:17] INFO root fetch - processPackages [kobo-highlights-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kobo_highlights_extractor-0.0.2.tar.gz tmp/kobo_highlights_extractor-0.1.0.tar.gz --markdown 20240504/k/kobo-highlights-extractor/0.0.2-0.1.0/README.md --exclude *.pyd
+[2024-05-04 14:40:17] INFO root fetch - processPackages [vfb-connect]: Downloading https://files.pythonhosted.org/packages/80/1c/459695d545ece984768176a25afcead994d5ccbd47e4f7036e5c4226e203/vfb_connect-1.2.9.tar.gz
+[2024-05-04 14:40:17] INFO root fetch - processPackages [siglyser]: executing diffoscope
+[2024-05-04 14:40:17] INFO root fetch - processPackages [siglyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siglyser-0.112.tar.gz tmp/siglyser-0.2.tar.gz --markdown 20240504/s/siglyser/0.112-0.2/README.md --exclude *.pyd
+[2024-05-04 14:40:17] INFO root fetch - processPackages [bigdl-llm]: executing diffoscope
+[2024-05-04 14:40:17] INFO root fetch - processPackages [bigdl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_llm-2.5.0b20240502-py3-none-win_amd64.whl.zip tmp/bigdl_llm-2.5.0b20240503-py3-none-win_amd64.whl.zip --markdown 20240504/b/bigdl-llm/2.5.0b20240502-2.5.0b20240503/README.md --exclude *.pyd
+[2024-05-04 14:40:17] INFO root fetch - processPackages [kobo-highlights-extractor]: Remove: archive file [/home/abi/fetcher/tmp/kobo_highlights_extractor-0.0.2.tar.gz]
+[2024-05-04 14:40:17] INFO root fetch - processPackages [kobo-highlights-extractor]: Remove: archive file [/home/abi/fetcher/tmp/kobo_highlights_extractor-0.1.0.tar.gz]
+[2024-05-04 14:40:17] INFO root fetch - main [MainThread]: End processing [kobo-highlights-extractor]: success
+[2024-05-04 14:40:17] INFO root fetch - processPackages [siglyser]: Remove: archive file [/home/abi/fetcher/tmp/siglyser-0.112.tar.gz]
+[2024-05-04 14:40:17] INFO root fetch - processPackages [siglyser]: Remove: archive file [/home/abi/fetcher/tmp/siglyser-0.2.tar.gz]
+[2024-05-04 14:40:17] INFO root fetch - main [MainThread]: End processing [siglyser]: success
+[2024-05-04 14:40:17] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz]
+[2024-05-04 14:40:17] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz]
+[2024-05-04 14:40:17] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2024-05-04 14:40:18] INFO root fetch - processPackages [vfb-connect]: executing diffoscope
+[2024-05-04 14:40:18] INFO root fetch - processPackages [vfb-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vfb_connect-1.2.8.tar.gz tmp/vfb_connect-1.2.9.tar.gz --markdown 20240504/v/vfb-connect/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-04 14:40:18] INFO root fetch - processPackages [vfb-connect]: Remove: archive file [/home/abi/fetcher/tmp/vfb_connect-1.2.8.tar.gz]
+[2024-05-04 14:40:18] INFO root fetch - processPackages [vfb-connect]: Remove: archive file [/home/abi/fetcher/tmp/vfb_connect-1.2.9.tar.gz]
+[2024-05-04 14:40:18] INFO root fetch - main [MainThread]: End processing [vfb-connect]: success
+[2024-05-04 14:40:18] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240502-py3-none-win_amd64.whl.zip]
+[2024-05-04 14:40:18] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240503-py3-none-win_amd64.whl.zip]
+[2024-05-04 14:40:18] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
+[2024-05-04 14:40:18] INFO root fetch - main [MainThread]: Store serial: [23058026]
