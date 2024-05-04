@@ -12443,3 +12443,15 @@
 [2024-05-04 11:37:56] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240504.tar.gz]
 [2024-05-04 11:37:56] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
 [2024-05-04 11:37:56] INFO root fetch - main [MainThread]: Store serial: [23057286]
+[2024-05-04 11:40:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057286]
+[2024-05-04 11:40:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 11:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fei-crypto
+[2024-05-04 11:40:05] INFO root fetch - processPackages [fei-crypto]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-04 11:40:05] INFO root fetch - processPackages [fei-crypto]: Downloading https://files.pythonhosted.org/packages/0e/74/d8ce02cf08e1d999a8482b20b8d2f03f57b668ba73e3c0942bc3a01f9f5b/fei_crypto-0.2.5.tar.gz
+[2024-05-04 11:40:05] INFO root fetch - processPackages [fei-crypto]: Downloading https://files.pythonhosted.org/packages/46/26/e147b81d7b8e9ce99be684f9655d75621a9fac0a2cf87eb8359ed5a032cf/fei_crypto-0.2.6.tar.gz
+[2024-05-04 11:40:05] INFO root fetch - processPackages [fei-crypto]: executing diffoscope
+[2024-05-04 11:40:05] INFO root fetch - processPackages [fei-crypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fei_crypto-0.2.5.tar.gz tmp/fei_crypto-0.2.6.tar.gz --markdown 20240504/f/fei-crypto/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-04 11:40:06] INFO root fetch - processPackages [fei-crypto]: Remove: archive file [/home/abi/fetcher/tmp/fei_crypto-0.2.5.tar.gz]
+[2024-05-04 11:40:06] INFO root fetch - processPackages [fei-crypto]: Remove: archive file [/home/abi/fetcher/tmp/fei_crypto-0.2.6.tar.gz]
+[2024-05-04 11:40:06] INFO root fetch - main [MainThread]: End processing [fei-crypto]: success
+[2024-05-04 11:40:06] INFO root fetch - main [MainThread]: Store serial: [23057289]
