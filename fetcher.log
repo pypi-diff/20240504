@@ -12655,3 +12655,15 @@
 [2024-05-04 12:06:06] INFO root fetch - processPackages [pytgpt-bot]: Remove: archive file [/home/abi/fetcher/tmp/pytgpt_bot-0.1.7.4.tar.gz]
 [2024-05-04 12:06:06] INFO root fetch - main [MainThread]: End processing [pytgpt-bot]: success
 [2024-05-04 12:06:06] INFO root fetch - main [MainThread]: Store serial: [23057372]
+[2024-05-04 12:08:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057372]
+[2024-05-04 12:08:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 12:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stac-fastapi.core
+[2024-05-04 12:08:14] INFO root fetch - processPackages [stac-fastapi.core]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-04 12:08:14] INFO root fetch - processPackages [stac-fastapi.core]: Downloading https://files.pythonhosted.org/packages/cc/7a/7dd6177d9d371d2498cfb6835e7a16e745648342db81e8d175ebc4cc5406/stac_fastapi_core-2.3.0.tar.gz
+[2024-05-04 12:08:15] INFO root fetch - processPackages [stac-fastapi.core]: Downloading https://files.pythonhosted.org/packages/10/09/0426c3f7a6c845887954b25762d68cbc0526ca253811518a9297aaa3e079/stac_fastapi_core-2.3.1.tar.gz
+[2024-05-04 12:08:15] INFO root fetch - processPackages [stac-fastapi.core]: executing diffoscope
+[2024-05-04 12:08:15] INFO root fetch - processPackages [stac-fastapi.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stac_fastapi_core-2.3.0.tar.gz tmp/stac_fastapi_core-2.3.1.tar.gz --markdown 20240504/s/stac-fastapi.core/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-04 12:08:15] INFO root fetch - processPackages [stac-fastapi.core]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_core-2.3.0.tar.gz]
+[2024-05-04 12:08:15] INFO root fetch - processPackages [stac-fastapi.core]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_core-2.3.1.tar.gz]
+[2024-05-04 12:08:15] INFO root fetch - main [MainThread]: End processing [stac-fastapi.core]: success
+[2024-05-04 12:08:15] INFO root fetch - main [MainThread]: Store serial: [23057375]
