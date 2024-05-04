@@ -19475,3 +19475,12 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:34:35] INFO root fetch - processPackages [rutificador]: Remove: archive file [/home/abi/fetcher/tmp/rutificador-0.2.6.tar.gz]
 [2024-05-04 21:34:35] INFO root fetch - main [MainThread]: End processing [rutificador]: success
 [2024-05-04 21:34:35] INFO root fetch - main [MainThread]: Store serial: [23060485]
+[2024-05-04 21:36:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060485]
+[2024-05-04 21:36:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 21:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drf-events
+[2024-05-04 21:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: request-tea-ok
+[2024-05-04 21:36:44] WARNING root fetch - processPackages [request-tea-ok]: Skipping, unable to determine old version
+[2024-05-04 21:36:44] INFO root fetch - main [MainThread]: End processing [request-tea-ok] error
+[2024-05-04 21:36:44] WARNING root fetch - processPackages [drf-events]: Skipping, unable to determine old version
+[2024-05-04 21:36:44] INFO root fetch - main [MainThread]: End processing [drf-events] error
+[2024-05-04 21:36:44] INFO root fetch - main [MainThread]: Store serial: [23060494]
