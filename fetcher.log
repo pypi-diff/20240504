@@ -7247,3 +7247,74 @@
 [2024-05-04 04:11:19] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.86.tar.gz]
 [2024-05-04 04:11:19] INFO root fetch - main [MainThread]: End processing [model-explorer]: success
 [2024-05-04 04:11:19] INFO root fetch - main [MainThread]: Store serial: [23054706]
+[2024-05-04 04:13:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054706]
+[2024-05-04 04:13:28] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-04 04:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgegap-database
+[2024-05-04 04:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edgegap-service
+[2024-05-04 04:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edgegap-logging
+[2024-05-04 04:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edgegap-consul
+[2024-05-04 04:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edgegap-time
+[2024-05-04 04:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edgegap-scheduling
+[2024-05-04 04:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: onnxruntime-genai
+[2024-05-04 04:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: onnxruntime-genai-directml
+[2024-05-04 04:13:28] INFO root fetch - processPackages [edgegap-consul]: New version: [1.6.7] Old Version: [1.6.6]
+[2024-05-04 04:13:28] INFO root fetch - processPackages [edgegap-database]: New version: [1.6.4] Old Version: [1.6.3]
+[2024-05-04 04:13:28] INFO root fetch - processPackages [edgegap-time]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-05-04 04:13:28] INFO root fetch - processPackages [edgegap-logging]: New version: [1.6.6] Old Version: [1.6.5]
+[2024-05-04 04:13:28] INFO root fetch - processPackages [edgegap-scheduling]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-05-04 04:13:28] INFO root fetch - processPackages [edgegap-service]: New version: [1.6.4] Old Version: [1.6.3]
+[2024-05-04 04:13:28] INFO root fetch - processPackages [edgegap-consul]: Downloading https://files.pythonhosted.org/packages/5a/ab/7597238a9a70cb06772cfa604f29f8412e35e7fde11c832bdd4ba63fe945/edgegap_consul-1.6.6.tar.gz
+[2024-05-04 04:13:28] INFO root fetch - processPackages [edgegap-database]: Downloading https://files.pythonhosted.org/packages/42/35/f262cf569b5730eec9a6f0659bb0dfd80cca771e1cd6d3c2e40fee24050c/edgegap_database-1.6.3.tar.gz
+[2024-05-04 04:13:28] INFO root fetch - processPackages [onnxruntime-genai-directml]: New version: [0.2.0rc5] Old Version: [0.2.0rc4]
+[2024-05-04 04:13:28] INFO root fetch - processPackages [onnxruntime-genai]: New version: [0.2.0rc5] Old Version: [0.2.0rc4]
+[2024-05-04 04:13:28] INFO root fetch - processPackages [edgegap-time]: Downloading https://files.pythonhosted.org/packages/90/8f/ba409a3ab2cbfe4bacf2bfc078b9a7fc93e9f7fb69a8cce999340ec20f33/edgegap_time-1.1.5.tar.gz
+[2024-05-04 04:13:28] INFO root fetch - processPackages [edgegap-logging]: Downloading https://files.pythonhosted.org/packages/38/c5/728270100f218c463f4655c27183d2e4a1e0bbea14675353b8b67689e7ce/edgegap_logging-1.6.5.tar.gz
+[2024-05-04 04:13:28] INFO root fetch - processPackages [edgegap-scheduling]: Downloading https://files.pythonhosted.org/packages/73/e2/cbc5eebfaba3e4b7fe2f7c246d7bfdb61a188e9fa1182abd5460b41b2406/edgegap_scheduling-1.6.0.tar.gz
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-service]: Downloading https://files.pythonhosted.org/packages/c2/08/bd55ffbe9ac2918fe8f7416459947f9f5998de7fb382025a1647e86eda85/edgegap_service-1.6.3.tar.gz
+[2024-05-04 04:13:29] INFO root fetch - processPackages [onnxruntime-genai-directml]: Downloading https://files.pythonhosted.org/packages/d0/bb/9b3c898733275d630f76dafc3a4c75e54b2c1609429ae899440881286a23/onnxruntime_genai_directml-0.2.0rc4-cp39-cp39-win_amd64.whl
+[2024-05-04 04:13:29] INFO root fetch - processPackages [onnxruntime-genai]: Downloading https://files.pythonhosted.org/packages/5c/6a/db8c088ac883c4d8e5ac048056fcd802a64584e89762df802c16259298bf/onnxruntime_genai-0.2.0rc4-cp39-cp39-win_amd64.whl
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-database]: Downloading https://files.pythonhosted.org/packages/7a/8d/a444faf4ab82e9acc185aa60077bfb544915ea5974d68220819cf89f2ffa/edgegap_database-1.6.4.tar.gz
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-consul]: Downloading https://files.pythonhosted.org/packages/fa/ae/249786ad2986681206e185fa6f16dd05c90251892e2b3e5ab9ff4294fc87/edgegap_consul-1.6.7.tar.gz
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-time]: Downloading https://files.pythonhosted.org/packages/c6/3c/10cd6e39498865f4f4321b48cda5dda6683acfc9cd3cd50be5223d540390/edgegap_time-1.1.6.tar.gz
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-logging]: Downloading https://files.pythonhosted.org/packages/5b/51/6b32af8ec1fa31fc5d8a1d9de897fc6ae1df5a1411cc10801ba630b975c6/edgegap_logging-1.6.6.tar.gz
+[2024-05-04 04:13:29] WARNING root fetch - processPackages [onnxruntime-genai-directml]: Skipping package: exceeds size limit 15423721>=10485760
+[2024-05-04 04:13:29] INFO root fetch - main [MainThread]: End processing [onnxruntime-genai-directml] error
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-scheduling]: Downloading https://files.pythonhosted.org/packages/d4/24/bd1136bdedd68e574bd9d0cdbdde220601b3475e8c8aeb1c67ad6ec1d02e/edgegap_scheduling-1.6.1.tar.gz
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-database]: executing diffoscope
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_database-1.6.3.tar.gz tmp/edgegap_database-1.6.4.tar.gz --markdown 20240504/e/edgegap-database/1.6.3-1.6.4/README.md --exclude *.pyd
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-time]: executing diffoscope
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-time]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_time-1.1.5.tar.gz tmp/edgegap_time-1.1.6.tar.gz --markdown 20240504/e/edgegap-time/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-logging]: executing diffoscope
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-consul]: executing diffoscope
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-consul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_consul-1.6.6.tar.gz tmp/edgegap_consul-1.6.7.tar.gz --markdown 20240504/e/edgegap-consul/1.6.6-1.6.7/README.md --exclude *.pyd
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_logging-1.6.5.tar.gz tmp/edgegap_logging-1.6.6.tar.gz --markdown 20240504/e/edgegap-logging/1.6.5-1.6.6/README.md --exclude *.pyd
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-service]: Downloading https://files.pythonhosted.org/packages/af/81/75a94c99f094239cdd4004d29f751b146a89a53919ab8e934b6b6b4d3069/edgegap_service-1.6.4.tar.gz
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-scheduling]: executing diffoscope
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-scheduling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_scheduling-1.6.0.tar.gz tmp/edgegap_scheduling-1.6.1.tar.gz --markdown 20240504/e/edgegap-scheduling/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-service]: executing diffoscope
+[2024-05-04 04:13:29] INFO root fetch - processPackages [edgegap-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_service-1.6.3.tar.gz tmp/edgegap_service-1.6.4.tar.gz --markdown 20240504/e/edgegap-service/1.6.3-1.6.4/README.md --exclude *.pyd
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-time]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_time-1.1.5.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-time]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_time-1.1.6.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - main [MainThread]: End processing [edgegap-time]: success
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-logging]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_logging-1.6.5.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-logging]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_logging-1.6.6.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - main [MainThread]: End processing [edgegap-logging]: success
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-scheduling]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_scheduling-1.6.0.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-scheduling]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_scheduling-1.6.1.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - main [MainThread]: End processing [edgegap-scheduling]: success
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-database]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_database-1.6.3.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-database]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_database-1.6.4.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - main [MainThread]: End processing [edgegap-database]: success
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-service]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_service-1.6.3.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-service]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_service-1.6.4.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - main [MainThread]: End processing [edgegap-service]: success
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-consul]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_consul-1.6.6.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - processPackages [edgegap-consul]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_consul-1.6.7.tar.gz]
+[2024-05-04 04:13:30] INFO root fetch - main [MainThread]: End processing [edgegap-consul]: success
+[2024-05-04 04:13:30] INFO root fetch - processPackages [onnxruntime-genai]: Downloading https://files.pythonhosted.org/packages/18/f8/e95ecb5798f401c8a0def130c9a7aeba7f9d24f1253889b8ea1984a91b14/onnxruntime_genai-0.2.0rc5-cp39-cp39-win_amd64.whl
+[2024-05-04 04:13:31] INFO root fetch - processPackages [onnxruntime-genai]: executing diffoscope
+[2024-05-04 04:13:31] INFO root fetch - processPackages [onnxruntime-genai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxruntime_genai-0.2.0rc4-cp39-cp39-win_amd64.whl.zip tmp/onnxruntime_genai-0.2.0rc5-cp39-cp39-win_amd64.whl.zip --markdown 20240504/o/onnxruntime-genai/0.2.0rc4-0.2.0rc5/README.md --exclude *.pyd
+[2024-05-04 04:14:07] INFO root fetch - processPackages [onnxruntime-genai]: Remove: archive file [/home/abi/fetcher/tmp/onnxruntime_genai-0.2.0rc4-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 04:14:07] INFO root fetch - processPackages [onnxruntime-genai]: Remove: archive file [/home/abi/fetcher/tmp/onnxruntime_genai-0.2.0rc5-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 04:14:07] INFO root fetch - main [MainThread]: End processing [onnxruntime-genai]: success
+[2024-05-04 04:14:07] INFO root fetch - main [MainThread]: Store serial: [23054741]
