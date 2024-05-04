@@ -11324,3 +11324,51 @@
 [2024-05-04 09:53:27] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
 [2024-05-04 09:53:27] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-05-04 09:53:27] INFO root fetch - main [MainThread]: Store serial: [23056657]
+[2024-05-04 09:55:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056657]
+[2024-05-04 09:55:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 09:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: luxos
+[2024-05-04 09:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aitelegrambot
+[2024-05-04 09:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stoobly-agent
+[2024-05-04 09:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flops-utils
+[2024-05-04 09:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hebill
+[2024-05-04 09:55:36] INFO root fetch - processPackages [flops-utils]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-04 09:55:36] INFO root fetch - processPackages [aitelegrambot]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-05-04 09:55:36] INFO root fetch - processPackages [luxos]: New version: [0.0.5b20] Old Version: [0.0.5b19]
+[2024-05-04 09:55:36] INFO root fetch - processPackages [aitelegrambot]: Downloading https://files.pythonhosted.org/packages/7a/fa/e9568072477ca4e6c08d01702460c908693321dc95651bf1d54365e842ab/aitelegrambot-0.7.0.tar.gz
+[2024-05-04 09:55:36] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/a0/ec/d35561032a9c56781684f379173fde5c8906bdf18cb7d2f79266e17ff563/flops_utils-0.2.6.tar.gz
+[2024-05-04 09:55:36] INFO root fetch - processPackages [stoobly-agent]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-04 09:55:36] INFO root fetch - processPackages [hebill]: New version: [1.2.7] Old Version: [1.2.6]
+[2024-05-04 09:55:36] INFO root fetch - processPackages [luxos]: Downloading https://files.pythonhosted.org/packages/43/af/5619326ba0ea549e7f57a2db3b63a19f9995e51bf780f009116ad247a3b8/luxos-0.0.5b19.tar.gz
+[2024-05-04 09:55:36] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/10/cb/c97674c0bc36c7bda63e6fe5debef2c525e23cf74107ddbc08ef5e7fc7ab/flops_utils-0.2.7.tar.gz
+[2024-05-04 09:55:36] INFO root fetch - processPackages [aitelegrambot]: Downloading https://files.pythonhosted.org/packages/e9/05/5ae163eec80a5240152bbf8c62120cdaea0dbc756f33d99bb5e186df8436/aitelegrambot-0.8.0.tar.gz
+[2024-05-04 09:55:36] INFO root fetch - processPackages [hebill]: Downloading https://files.pythonhosted.org/packages/98/5e/fb494267fe53c0206d7d589811dee2053edc91df7e554651a1dd2bf51acf/hebill-1.2.6.tar.gz
+[2024-05-04 09:55:36] INFO root fetch - processPackages [stoobly-agent]: Downloading https://files.pythonhosted.org/packages/e9/78/2350cae18a65474161019a795a652b6b64841323787b44192e8f739ac86a/stoobly-agent-0.9.6.tar.gz
+[2024-05-04 09:55:36] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-04 09:55:36] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.2.6.tar.gz tmp/flops_utils-0.2.7.tar.gz --markdown 20240504/f/flops-utils/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-04 09:55:36] INFO root fetch - processPackages [aitelegrambot]: executing diffoscope
+[2024-05-04 09:55:36] INFO root fetch - processPackages [aitelegrambot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aitelegrambot-0.7.0.tar.gz tmp/aitelegrambot-0.8.0.tar.gz --markdown 20240504/a/aitelegrambot/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-05-04 09:55:36] INFO root fetch - processPackages [luxos]: Downloading https://files.pythonhosted.org/packages/bf/e8/ca8f54709716ee4f985ce0b3065e80cedd31fd4d15dca18dae5896c65f37/luxos-0.0.5b20.tar.gz
+[2024-05-04 09:55:37] INFO root fetch - processPackages [luxos]: executing diffoscope
+[2024-05-04 09:55:37] INFO root fetch - processPackages [luxos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luxos-0.0.5b19.tar.gz tmp/luxos-0.0.5b20.tar.gz --markdown 20240504/l/luxos/0.0.5b19-0.0.5b20/README.md --exclude *.pyd
+[2024-05-04 09:55:37] INFO root fetch - processPackages [hebill]: Downloading https://files.pythonhosted.org/packages/ec/8f/7544902f44734a9ed0906b3f0ff3d05d731c22a80d0b3c7b7df68c1349b8/hebill-1.2.7.tar.gz
+[2024-05-04 09:55:37] INFO root fetch - processPackages [stoobly-agent]: Downloading https://files.pythonhosted.org/packages/45/f8/01a12e6de49e8f9a58b3c7a511a2a2b6259be0af19738d4fefcfb2af88f5/stoobly-agent-0.9.7.tar.gz
+[2024-05-04 09:55:37] INFO root fetch - processPackages [stoobly-agent]: executing diffoscope
+[2024-05-04 09:55:37] INFO root fetch - processPackages [stoobly-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stoobly-agent-0.9.6.tar.gz tmp/stoobly-agent-0.9.7.tar.gz --markdown 20240504/s/stoobly-agent/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-04 09:55:37] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.2.6.tar.gz]
+[2024-05-04 09:55:37] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.2.7.tar.gz]
+[2024-05-04 09:55:37] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-04 09:55:37] INFO root fetch - processPackages [aitelegrambot]: Remove: archive file [/home/abi/fetcher/tmp/aitelegrambot-0.7.0.tar.gz]
+[2024-05-04 09:55:37] INFO root fetch - processPackages [aitelegrambot]: Remove: archive file [/home/abi/fetcher/tmp/aitelegrambot-0.8.0.tar.gz]
+[2024-05-04 09:55:37] INFO root fetch - main [MainThread]: End processing [aitelegrambot]: success
+[2024-05-04 09:55:37] INFO root fetch - processPackages [luxos]: Remove: archive file [/home/abi/fetcher/tmp/luxos-0.0.5b19.tar.gz]
+[2024-05-04 09:55:37] INFO root fetch - processPackages [luxos]: Remove: archive file [/home/abi/fetcher/tmp/luxos-0.0.5b20.tar.gz]
+[2024-05-04 09:55:37] INFO root fetch - main [MainThread]: End processing [luxos]: success
+[2024-05-04 09:55:37] INFO root fetch - processPackages [hebill]: executing diffoscope
+[2024-05-04 09:55:37] INFO root fetch - processPackages [hebill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hebill-1.2.6.tar.gz tmp/hebill-1.2.7.tar.gz --markdown 20240504/h/hebill/1.2.6-1.2.7/README.md --exclude *.pyd
+[2024-05-04 09:55:37] INFO root fetch - processPackages [stoobly-agent]: Remove: archive file [/home/abi/fetcher/tmp/stoobly-agent-0.9.6.tar.gz]
+[2024-05-04 09:55:37] INFO root fetch - processPackages [stoobly-agent]: Remove: archive file [/home/abi/fetcher/tmp/stoobly-agent-0.9.7.tar.gz]
+[2024-05-04 09:55:37] INFO root fetch - main [MainThread]: End processing [stoobly-agent]: success
+[2024-05-04 09:55:38] INFO root fetch - processPackages [hebill]: Remove: archive file [/home/abi/fetcher/tmp/hebill-1.2.6.tar.gz]
+[2024-05-04 09:55:38] INFO root fetch - processPackages [hebill]: Remove: archive file [/home/abi/fetcher/tmp/hebill-1.2.7.tar.gz]
+[2024-05-04 09:55:38] INFO root fetch - main [MainThread]: End processing [hebill]: success
+[2024-05-04 09:55:38] INFO root fetch - main [MainThread]: Store serial: [23056671]
