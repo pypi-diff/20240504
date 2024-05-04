@@ -12637,3 +12637,9 @@
 [2024-05-04 12:01:47] INFO root fetch - processPackages [rag-retrieval]: Remove: archive file [/home/abi/fetcher/tmp/rag_retrieval-0.2.0.tar.gz]
 [2024-05-04 12:01:47] INFO root fetch - main [MainThread]: End processing [rag-retrieval]: success
 [2024-05-04 12:01:47] INFO root fetch - main [MainThread]: Store serial: [23057365]
+[2024-05-04 12:03:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057365]
+[2024-05-04 12:03:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 12:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diwork
+[2024-05-04 12:03:56] WARNING root fetch - processPackages [diwork]: Skipping, unable to determine old version
+[2024-05-04 12:03:56] INFO root fetch - main [MainThread]: End processing [diwork] error
+[2024-05-04 12:03:56] INFO root fetch - main [MainThread]: Store serial: [23057368]
