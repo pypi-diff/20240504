@@ -15471,3 +15471,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:23:03] INFO root fetch - processPackages [ezfs]: Remove: archive file [/home/abi/fetcher/tmp/ezfs-1.0.2.tar.gz]
 [2024-05-04 16:23:03] INFO root fetch - main [MainThread]: End processing [ezfs]: success
 [2024-05-04 16:23:03] INFO root fetch - main [MainThread]: Store serial: [23058503]
+[2024-05-04 16:25:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058503]
+[2024-05-04 16:25:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 16:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: studiosr
+[2024-05-04 16:25:12] INFO root fetch - processPackages [studiosr]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 16:25:12] INFO root fetch - processPackages [studiosr]: Downloading https://files.pythonhosted.org/packages/5c/9e/493ac973beb7b4e07c948e59994f8505f5ab9735b16f820d257f8643b852/studiosr-0.1.8-py3-none-any.whl
+[2024-05-04 16:25:12] INFO root fetch - processPackages [studiosr]: Downloading https://files.pythonhosted.org/packages/a5/cc/ada28bd6628d5729235cdfc3ed383d6726a10ad3925be5a161bfc892f5a3/studiosr-0.1.9-py3-none-any.whl
+[2024-05-04 16:25:13] INFO root fetch - processPackages [studiosr]: executing diffoscope
+[2024-05-04 16:25:13] INFO root fetch - processPackages [studiosr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/studiosr-0.1.8-py3-none-any.whl.zip tmp/studiosr-0.1.9-py3-none-any.whl.zip --markdown 20240504/s/studiosr/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 16:25:13] INFO root fetch - processPackages [studiosr]: Remove: archive file [/home/abi/fetcher/tmp/studiosr-0.1.8-py3-none-any.whl.zip]
+[2024-05-04 16:25:13] INFO root fetch - processPackages [studiosr]: Remove: archive file [/home/abi/fetcher/tmp/studiosr-0.1.9-py3-none-any.whl.zip]
+[2024-05-04 16:25:13] INFO root fetch - main [MainThread]: End processing [studiosr]: success
+[2024-05-04 16:25:13] INFO root fetch - main [MainThread]: Store serial: [23058505]
