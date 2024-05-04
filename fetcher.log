@@ -18817,3 +18817,78 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:46:54] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.8.1a0.tar.gz]
 [2024-05-04 20:46:54] INFO root fetch - main [MainThread]: End processing [cf2tf]: success
 [2024-05-04 20:46:54] INFO root fetch - main [MainThread]: Store serial: [23060232]
+[2024-05-04 20:48:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060232]
+[2024-05-04 20:49:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-04 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hnt-nf-jira-library
+[2024-05-04 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sphinxcontrib-lightbox2
+[2024-05-04 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: haskellian
+[2024-05-04 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: metapensiero.sqlalchemy.proxy
+[2024-05-04 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mapdata
+[2024-05-04 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: imgcv
+[2024-05-04 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torch-nos
+[2024-05-04 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: email-profile
+[2024-05-04 20:49:03] INFO root fetch - processPackages [haskellian]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-04 20:49:03] INFO root fetch - processPackages [imgcv]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-04 20:49:03] INFO root fetch - processPackages [hnt-nf-jira-library]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-05-04 20:49:03] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 20:49:03] INFO root fetch - processPackages [mapdata]: New version: [3.6.2] Old Version: [3.6.1]
+[2024-05-04 20:49:03] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/db/6c/0cdc593830d9100fe25525ec6686c93e0284c0c2dec1bd9a6f2756850f4c/haskellian-0.3.8.tar.gz
+[2024-05-04 20:49:03] INFO root fetch - processPackages [email-profile]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-04 20:49:03] INFO root fetch - processPackages [torch-nos]: New version: [0.3.0] Old Version: [0.2.0b0]
+[2024-05-04 20:49:03] INFO root fetch - processPackages [metapensiero.sqlalchemy.proxy]: New version: [6.0.dev9] Old Version: [6.0.dev8]
+[2024-05-04 20:49:03] INFO root fetch - processPackages [imgcv]: Downloading https://files.pythonhosted.org/packages/0d/4f/26c88573c797f2e3e6e3f96ce24cc88aacd3d74f1fbac4f15c5678fc6f25/imgcv-0.4.0.tar.gz
+[2024-05-04 20:49:03] INFO root fetch - processPackages [hnt-nf-jira-library]: Downloading https://files.pythonhosted.org/packages/bb/77/920bf5cd644f93c841ec40963f6a7ee108039f5a89d3ec4e1d7996dbc6d3/hnt_nf_jira_library-0.4.6.tar.gz
+[2024-05-04 20:49:03] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Downloading https://files.pythonhosted.org/packages/fe/92/a6c2d9216e5ff82ca3f38d3c44b08e9cc8eacf3562cd11be6a5404ee8a17/sphinxcontrib_lightbox2-0.1.0.tar.gz
+[2024-05-04 20:49:04] INFO root fetch - processPackages [mapdata]: Downloading https://files.pythonhosted.org/packages/5f/e2/92870775abfa87cfff337aa9654e787335d8c20b78bfce25440e21745da1/mapdata-3.6.1.tar.gz
+[2024-05-04 20:49:04] INFO root fetch - processPackages [metapensiero.sqlalchemy.proxy]: Downloading https://files.pythonhosted.org/packages/04/e7/c0c7d1d27eaab911c98867135ae9a8a415907ccedfeb31359b4152675079/metapensiero_sqlalchemy_proxy-6.0.dev8.tar.gz
+[2024-05-04 20:49:04] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/03/2b/ba04bf61c6d93413248fa1d1286dad3fe5fa7835df534f02230b764ad6e3/haskellian-0.3.9.tar.gz
+[2024-05-04 20:49:04] INFO root fetch - processPackages [email-profile]: Downloading https://files.pythonhosted.org/packages/36/56/ea53f110bbbac94137a74f8e2c5ae030bb6a983670384315301d98229652/email_profile-0.3.0.tar.gz
+[2024-05-04 20:49:04] INFO root fetch - processPackages [torch-nos]: Downloading https://files.pythonhosted.org/packages/fa/bb/544bc36e1366ce02c87a3563af2e9e607355f6a12e0e4de03850465a81b7/torch_nos-0.2.0b0-py3-none-any.whl
+[2024-05-04 20:49:04] INFO root fetch - processPackages [imgcv]: Downloading https://files.pythonhosted.org/packages/5d/37/cfe65055f8c878a1cc9ef0cf193a04c505c69ec050d24f34ca54062267a1/imgcv-0.5.0.tar.gz
+[2024-05-04 20:49:04] INFO root fetch - processPackages [hnt-nf-jira-library]: Downloading https://files.pythonhosted.org/packages/0a/f7/d44d6ad2be61e92316a12f40960d1ab5990d033029b18fe1b96bc855bafd/hnt_nf_jira_library-0.4.7.tar.gz
+[2024-05-04 20:49:04] INFO root fetch - processPackages [haskellian]: executing diffoscope
+[2024-05-04 20:49:04] INFO root fetch - processPackages [haskellian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haskellian-0.3.8.tar.gz tmp/haskellian-0.3.9.tar.gz --markdown 20240504/h/haskellian/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-04 20:49:04] INFO root fetch - processPackages [imgcv]: executing diffoscope
+[2024-05-04 20:49:04] INFO root fetch - processPackages [imgcv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imgcv-0.4.0.tar.gz tmp/imgcv-0.5.0.tar.gz --markdown 20240504/i/imgcv/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-04 20:49:04] INFO root fetch - processPackages [hnt-nf-jira-library]: executing diffoscope
+[2024-05-04 20:49:04] INFO root fetch - processPackages [hnt-nf-jira-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hnt_nf_jira_library-0.4.6.tar.gz tmp/hnt_nf_jira_library-0.4.7.tar.gz --markdown 20240504/h/hnt-nf-jira-library/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-05-04 20:49:04] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Downloading https://files.pythonhosted.org/packages/0c/99/fb53b568834aa5e0f4dfacd43313a8c35f2af350b699b58d0fe14bf5aaca/sphinxcontrib_lightbox2-0.1.1.tar.gz
+[2024-05-04 20:49:04] INFO root fetch - processPackages [mapdata]: Downloading https://files.pythonhosted.org/packages/99/80/ad4375e6697bc7d25c8f43933df63bbadc24d04d283eca9c90ddafcdd4f7/mapdata-3.6.2.tar.gz
+[2024-05-04 20:49:04] INFO root fetch - processPackages [email-profile]: Downloading https://files.pythonhosted.org/packages/77/3e/6eeca2aadc6d1e66c718b7cae3f21bdc4517178be7e9fe23328885758fa6/email_profile-0.4.0.tar.gz
+[2024-05-04 20:49:04] INFO root fetch - processPackages [metapensiero.sqlalchemy.proxy]: Downloading https://files.pythonhosted.org/packages/86/37/b13d030166cdc599a02442ac10472c3d3429bf3b454bdab9687948ca3355/metapensiero_sqlalchemy_proxy-6.0.dev9.tar.gz
+[2024-05-04 20:49:04] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: executing diffoscope
+[2024-05-04 20:49:04] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_lightbox2-0.1.0.tar.gz tmp/sphinxcontrib_lightbox2-0.1.1.tar.gz --markdown 20240504/s/sphinxcontrib-lightbox2/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 20:49:04] INFO root fetch - processPackages [email-profile]: executing diffoscope
+[2024-05-04 20:49:04] INFO root fetch - processPackages [email-profile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/email_profile-0.3.0.tar.gz tmp/email_profile-0.4.0.tar.gz --markdown 20240504/e/email-profile/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-04 20:49:04] INFO root fetch - processPackages [mapdata]: executing diffoscope
+[2024-05-04 20:49:04] INFO root fetch - processPackages [mapdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapdata-3.6.1.tar.gz tmp/mapdata-3.6.2.tar.gz --markdown 20240504/m/mapdata/3.6.1-3.6.2/README.md --exclude *.pyd
+[2024-05-04 20:49:04] INFO root fetch - processPackages [metapensiero.sqlalchemy.proxy]: executing diffoscope
+[2024-05-04 20:49:04] INFO root fetch - processPackages [metapensiero.sqlalchemy.proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metapensiero_sqlalchemy_proxy-6.0.dev8.tar.gz tmp/metapensiero_sqlalchemy_proxy-6.0.dev9.tar.gz --markdown 20240504/m/metapensiero.sqlalchemy.proxy/6.0.dev8-6.0.dev9/README.md --exclude *.pyd
+[2024-05-04 20:49:04] INFO root fetch - processPackages [torch-nos]: Downloading https://files.pythonhosted.org/packages/a9/f9/1678bf550d32def0e200c534bd45f04e4b1e933a0efb1cbeb025a168bd54/torch_nos-0.3.0-py3-none-any.whl
+[2024-05-04 20:49:04] INFO root fetch - processPackages [imgcv]: Remove: archive file [/home/abi/fetcher/tmp/imgcv-0.4.0.tar.gz]
+[2024-05-04 20:49:04] INFO root fetch - processPackages [imgcv]: Remove: archive file [/home/abi/fetcher/tmp/imgcv-0.5.0.tar.gz]
+[2024-05-04 20:49:04] INFO root fetch - main [MainThread]: End processing [imgcv]: success
+[2024-05-04 20:49:04] INFO root fetch - processPackages [torch-nos]: executing diffoscope
+[2024-05-04 20:49:04] INFO root fetch - processPackages [torch-nos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_nos-0.2.0b0-py3-none-any.whl.zip tmp/torch_nos-0.3.0-py3-none-any.whl.zip --markdown 20240504/t/torch-nos/0.2.0b0-0.3.0/README.md --exclude *.pyd
+[2024-05-04 20:49:05] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.8.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.9.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - main [MainThread]: End processing [haskellian]: success
+[2024-05-04 20:49:05] INFO root fetch - processPackages [hnt-nf-jira-library]: Remove: archive file [/home/abi/fetcher/tmp/hnt_nf_jira_library-0.4.6.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - processPackages [hnt-nf-jira-library]: Remove: archive file [/home/abi/fetcher/tmp/hnt_nf_jira_library-0.4.7.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - main [MainThread]: End processing [hnt-nf-jira-library]: success
+[2024-05-04 20:49:05] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_lightbox2-0.1.0.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_lightbox2-0.1.1.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-lightbox2]: success
+[2024-05-04 20:49:05] INFO root fetch - processPackages [email-profile]: Remove: archive file [/home/abi/fetcher/tmp/email_profile-0.3.0.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - processPackages [email-profile]: Remove: archive file [/home/abi/fetcher/tmp/email_profile-0.4.0.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - main [MainThread]: End processing [email-profile]: success
+[2024-05-04 20:49:05] INFO root fetch - processPackages [metapensiero.sqlalchemy.proxy]: Remove: archive file [/home/abi/fetcher/tmp/metapensiero_sqlalchemy_proxy-6.0.dev8.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - processPackages [metapensiero.sqlalchemy.proxy]: Remove: archive file [/home/abi/fetcher/tmp/metapensiero_sqlalchemy_proxy-6.0.dev9.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - main [MainThread]: End processing [metapensiero.sqlalchemy.proxy]: success
+[2024-05-04 20:49:05] INFO root fetch - processPackages [mapdata]: Remove: archive file [/home/abi/fetcher/tmp/mapdata-3.6.1.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - processPackages [mapdata]: Remove: archive file [/home/abi/fetcher/tmp/mapdata-3.6.2.tar.gz]
+[2024-05-04 20:49:05] INFO root fetch - main [MainThread]: End processing [mapdata]: success
+[2024-05-04 20:49:05] INFO root fetch - processPackages [torch-nos]: Remove: archive file [/home/abi/fetcher/tmp/torch_nos-0.2.0b0-py3-none-any.whl.zip]
+[2024-05-04 20:49:05] INFO root fetch - processPackages [torch-nos]: Remove: archive file [/home/abi/fetcher/tmp/torch_nos-0.3.0-py3-none-any.whl.zip]
+[2024-05-04 20:49:05] INFO root fetch - main [MainThread]: End processing [torch-nos]: success
+[2024-05-04 20:49:05] INFO root fetch - main [MainThread]: Store serial: [23060255]
