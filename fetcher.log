@@ -15867,3 +15867,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:05:11] INFO root fetch - processPackages [re-ircbot]: Remove: archive file [/home/abi/fetcher/tmp/re_ircbot-2.0.0.dev0.tar.gz]
 [2024-05-04 17:05:11] INFO root fetch - main [MainThread]: End processing [re-ircbot]: success
 [2024-05-04 17:05:11] INFO root fetch - main [MainThread]: Store serial: [23058739]
+[2024-05-04 17:07:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058739]
+[2024-05-04 17:07:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 17:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: starrail_damage_cal
+[2024-05-04 17:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: copy-spotter
+[2024-05-04 17:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meta-machina
+[2024-05-04 17:07:20] INFO root fetch - processPackages [meta-machina]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-04 17:07:20] INFO root fetch - processPackages [copy-spotter]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-04 17:07:20] INFO root fetch - processPackages [starrail_damage_cal]: New version: [1.6.0] Old Version: [1.5.5]
+[2024-05-04 17:07:20] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/5f/72/0e39331e5ee811ae7b0458db8d509ec74bbc50fdbf9569a3f3e66cc79db2/copy-spotter-0.1.6.tar.gz
+[2024-05-04 17:07:20] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/e3/f9/cc5ca80975b8ce89c862e5e3353b85f652076f40ed358869acd3129ae442/meta_machina-0.0.1.tar.gz
+[2024-05-04 17:07:20] INFO root fetch - processPackages [starrail_damage_cal]: Downloading https://files.pythonhosted.org/packages/c0/48/c858ec6c616b16dd98e0e52f17520c4e2271095c6525f8b541cb697ba0ab/starrail_damage_cal-1.5.5.tar.gz
+[2024-05-04 17:07:20] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/48/6c/e7120a689b04564ee2354b238aef0f08f506d3b7818153b44a5be1a2d727/copy-spotter-0.1.7.tar.gz
+[2024-05-04 17:07:21] INFO root fetch - processPackages [copy-spotter]: executing diffoscope
+[2024-05-04 17:07:21] INFO root fetch - processPackages [copy-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copy-spotter-0.1.6.tar.gz tmp/copy-spotter-0.1.7.tar.gz --markdown 20240504/c/copy-spotter/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-04 17:07:21] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/46/83/4f3e452858fdbfda5ba1a3de0beee1cc1ccc6b163b761cdfb345b35f8588/meta_machina-0.0.2.tar.gz
+[2024-05-04 17:07:21] INFO root fetch - processPackages [starrail_damage_cal]: Downloading https://files.pythonhosted.org/packages/1d/6a/4d1170483a3c2c65eca86be90484831d53500ec695886da093f8e7f33250/starrail_damage_cal-1.6.0.tar.gz
+[2024-05-04 17:07:21] INFO root fetch - processPackages [meta-machina]: executing diffoscope
+[2024-05-04 17:07:21] INFO root fetch - processPackages [meta-machina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta_machina-0.0.1.tar.gz tmp/meta_machina-0.0.2.tar.gz --markdown 20240504/m/meta-machina/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-04 17:07:21] INFO root fetch - processPackages [starrail_damage_cal]: executing diffoscope
+[2024-05-04 17:07:21] INFO root fetch - processPackages [starrail_damage_cal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starrail_damage_cal-1.5.5.tar.gz tmp/starrail_damage_cal-1.6.0.tar.gz --markdown 20240504/s/starrail_damage_cal/1.5.5-1.6.0/README.md --exclude *.pyd
+[2024-05-04 17:07:21] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.6.tar.gz]
+[2024-05-04 17:07:21] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.7.tar.gz]
+[2024-05-04 17:07:21] INFO root fetch - main [MainThread]: End processing [copy-spotter]: success
+[2024-05-04 17:07:21] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.1.tar.gz]
+[2024-05-04 17:07:21] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.2.tar.gz]
+[2024-05-04 17:07:21] INFO root fetch - main [MainThread]: End processing [meta-machina]: success
+[2024-05-04 17:07:22] INFO root fetch - processPackages [starrail_damage_cal]: Remove: archive file [/home/abi/fetcher/tmp/starrail_damage_cal-1.5.5.tar.gz]
+[2024-05-04 17:07:22] INFO root fetch - processPackages [starrail_damage_cal]: Remove: archive file [/home/abi/fetcher/tmp/starrail_damage_cal-1.6.0.tar.gz]
+[2024-05-04 17:07:22] INFO root fetch - main [MainThread]: End processing [starrail_damage_cal]: success
+[2024-05-04 17:07:22] INFO root fetch - main [MainThread]: Store serial: [23058748]
