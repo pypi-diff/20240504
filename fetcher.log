@@ -1831,3 +1831,60 @@
 [2024-05-04 02:04:33] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.9.tar.gz]
 [2024-05-04 02:04:33] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2024-05-04 02:04:33] INFO root fetch - main [MainThread]: Store serial: [23052858]
+[2024-05-04 02:06:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052858]
+[2024-05-04 02:06:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 02:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mct-nightly
+[2024-05-04 02:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbt-bigquery
+[2024-05-04 02:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jaxkern-nightly
+[2024-05-04 02:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: segmentation-skeleton-metrics
+[2024-05-04 02:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: great-expectations-cloud
+[2024-05-04 02:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: npc_lims
+[2024-05-04 02:06:42] INFO root fetch - processPackages [segmentation-skeleton-metrics]: New version: [4.1.5] Old Version: [4.1.4]
+[2024-05-04 02:06:42] INFO root fetch - processPackages [dbt-bigquery]: New version: [1.8.0rc1] Old Version: [1.8.0b2]
+[2024-05-04 02:06:42] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-05-04 02:06:42] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240503.422] Old Version: [2.0.0.20240502.415]
+[2024-05-04 02:06:42] INFO root fetch - processPackages [great-expectations-cloud]: New version: [20240503.0.dev1] Old Version: [20240502.0.dev0]
+[2024-05-04 02:06:42] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Downloading https://files.pythonhosted.org/packages/ba/eb/492f34246beaacb76b40f1ac8c2f7d5f0c748362039a61f9e5d8a04dbffd/segmentation_skeleton_metrics-4.1.4.tar.gz
+[2024-05-04 02:06:42] INFO root fetch - processPackages [npc_lims]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-04 02:06:42] INFO root fetch - processPackages [dbt-bigquery]: Downloading https://files.pythonhosted.org/packages/04/c2/108e4355903d19eed3532c4b7190a4d377c9fc184e5a583812af1dadffff/dbt-bigquery-1.8.0b2.tar.gz
+[2024-05-04 02:06:42] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-05-04 02:06:42] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/cb/06/9fe190b06f63ee3b1a8b57ea14be5cade49e5b89e5e0cabeda7492afc65e/mct-nightly-2.0.0.20240502.415.tar.gz
+[2024-05-04 02:06:42] INFO root fetch - processPackages [great-expectations-cloud]: Downloading https://files.pythonhosted.org/packages/fd/b7/a304e2e31e082d39071f94b723d374a6510b7576a15b519d390c93e41616/great_expectations_cloud-20240502.0.dev0.tar.gz
+[2024-05-04 02:06:42] INFO root fetch - processPackages [npc_lims]: Downloading https://files.pythonhosted.org/packages/eb/a3/a72478dcef25d9b46c35b7730c5c9a426e07354369fb652045cc1befbe7e/npc_lims-0.1.98.tar.gz
+[2024-05-04 02:06:43] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-05-04 02:06:43] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Downloading https://files.pythonhosted.org/packages/aa/05/b6d98720f9a5c4e156f903dc2fc5fc63cd6c4c8a724b75da01f84e2c589e/segmentation_skeleton_metrics-4.1.5.tar.gz
+[2024-05-04 02:06:43] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/83/43/8bb6a16e5437d36b67f7af91da3a1f1533a3749ea8d756e83db38316783d/mct-nightly-2.0.0.20240503.422.tar.gz
+[2024-05-04 02:06:43] INFO root fetch - processPackages [dbt-bigquery]: Downloading https://files.pythonhosted.org/packages/99/2a/069c63f1a7a7b27f1ac27bdc5caca47114a3c5c15c4ca2402c1cc104affe/dbt_bigquery-1.8.0rc1.tar.gz
+[2024-05-04 02:06:43] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-05-04 02:06:43] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240504/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-05-04 02:06:43] INFO root fetch - processPackages [great-expectations-cloud]: Downloading https://files.pythonhosted.org/packages/78/af/5cf3847def3e9e43bf7a5f967058f51f645eda39b45df70158584e6c7a7d/great_expectations_cloud-20240503.0.dev1.tar.gz
+[2024-05-04 02:06:43] INFO root fetch - processPackages [segmentation-skeleton-metrics]: executing diffoscope
+[2024-05-04 02:06:43] INFO root fetch - processPackages [segmentation-skeleton-metrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segmentation_skeleton_metrics-4.1.4.tar.gz tmp/segmentation_skeleton_metrics-4.1.5.tar.gz --markdown 20240504/s/segmentation-skeleton-metrics/4.1.4-4.1.5/README.md --exclude *.pyd
+[2024-05-04 02:06:43] INFO root fetch - processPackages [dbt-bigquery]: executing diffoscope
+[2024-05-04 02:06:43] INFO root fetch - processPackages [dbt-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-bigquery-1.8.0b2.tar.gz tmp/dbt_bigquery-1.8.0rc1.tar.gz --markdown 20240504/d/dbt-bigquery/1.8.0b2-1.8.0rc1/README.md --exclude *.pyd
+[2024-05-04 02:06:43] INFO root fetch - processPackages [npc_lims]: Downloading https://files.pythonhosted.org/packages/20/8f/2a3ef0e71c09fd01ba3685a9f92c448766eab8a9e83f1e03e62e90091e0a/npc_lims-0.1.99.tar.gz
+[2024-05-04 02:06:43] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-05-04 02:06:43] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240502.415.tar.gz tmp/mct-nightly-2.0.0.20240503.422.tar.gz --markdown 20240504/m/mct-nightly/2.0.0.20240502.415-2.0.0.20240503.422/README.md --exclude *.pyd
+[2024-05-04 02:06:43] INFO root fetch - processPackages [npc_lims]: executing diffoscope
+[2024-05-04 02:06:43] INFO root fetch - processPackages [npc_lims]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npc_lims-0.1.98.tar.gz tmp/npc_lims-0.1.99.tar.gz --markdown 20240504/n/npc_lims/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-04 02:06:43] INFO root fetch - processPackages [great-expectations-cloud]: executing diffoscope
+[2024-05-04 02:06:43] INFO root fetch - processPackages [great-expectations-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/great_expectations_cloud-20240502.0.dev0.tar.gz tmp/great_expectations_cloud-20240503.0.dev1.tar.gz --markdown 20240504/g/great-expectations-cloud/20240502.0.dev0-20240503.0.dev1/README.md --exclude *.pyd
+[2024-05-04 02:06:44] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-05-04 02:06:44] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-05-04 02:06:44] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-05-04 02:06:44] INFO root fetch - processPackages [great-expectations-cloud]: Remove: archive file [/home/abi/fetcher/tmp/great_expectations_cloud-20240502.0.dev0.tar.gz]
+[2024-05-04 02:06:44] INFO root fetch - processPackages [great-expectations-cloud]: Remove: archive file [/home/abi/fetcher/tmp/great_expectations_cloud-20240503.0.dev1.tar.gz]
+[2024-05-04 02:06:44] INFO root fetch - main [MainThread]: End processing [great-expectations-cloud]: success
+[2024-05-04 02:06:44] INFO root fetch - processPackages [npc_lims]: Remove: archive file [/home/abi/fetcher/tmp/npc_lims-0.1.98.tar.gz]
+[2024-05-04 02:06:44] INFO root fetch - processPackages [npc_lims]: Remove: archive file [/home/abi/fetcher/tmp/npc_lims-0.1.99.tar.gz]
+[2024-05-04 02:06:44] INFO root fetch - main [MainThread]: End processing [npc_lims]: success
+[2024-05-04 02:06:44] INFO root fetch - processPackages [dbt-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/dbt-bigquery-1.8.0b2.tar.gz]
+[2024-05-04 02:06:44] INFO root fetch - processPackages [dbt-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/dbt_bigquery-1.8.0rc1.tar.gz]
+[2024-05-04 02:06:44] INFO root fetch - main [MainThread]: End processing [dbt-bigquery]: success
+[2024-05-04 02:06:45] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Remove: archive file [/home/abi/fetcher/tmp/segmentation_skeleton_metrics-4.1.4.tar.gz]
+[2024-05-04 02:06:45] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Remove: archive file [/home/abi/fetcher/tmp/segmentation_skeleton_metrics-4.1.5.tar.gz]
+[2024-05-04 02:06:45] INFO root fetch - main [MainThread]: End processing [segmentation-skeleton-metrics]: success
+[2024-05-04 02:06:45] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240502.415.tar.gz]
+[2024-05-04 02:06:45] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240503.422.tar.gz]
+[2024-05-04 02:06:45] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-05-04 02:06:45] INFO root fetch - main [MainThread]: Store serial: [23052877]
