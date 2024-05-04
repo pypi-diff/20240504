@@ -19631,3 +19631,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:47:35] INFO root fetch - processPackages [resamp]: Remove: archive file [/home/abi/fetcher/tmp/resamp-1.7.tar.gz]
 [2024-05-04 21:47:35] INFO root fetch - main [MainThread]: End processing [resamp]: success
 [2024-05-04 21:47:35] INFO root fetch - main [MainThread]: Store serial: [23060559]
+[2024-05-04 21:49:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060559]
+[2024-05-04 21:49:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 21:49:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: league-tools
+[2024-05-04 21:49:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-dots
+[2024-05-04 21:49:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Flask-Cors
+[2024-05-04 21:49:44] WARNING root fetch - processPackages [league-tools]: Skipping, unable to determine old version
+[2024-05-04 21:49:44] INFO root fetch - main [MainThread]: End processing [league-tools] error
+[2024-05-04 21:49:44] INFO root fetch - processPackages [mo-dots]: New version: [9.606.24115] Old Version: [9.605.24115]
+[2024-05-04 21:49:44] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/c1/78/500bc80bd2febc9c1dd08390617553bf8eb583859830968121d99c41760a/mo_dots-9.605.24115.tar.gz
+[2024-05-04 21:49:44] INFO root fetch - processPackages [Flask-Cors]: New version: [4.0.1] Old Version: [4.0.0a0]
+[2024-05-04 21:49:44] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/62/60/27b3dbfd973f17e5e448be2a9a9d96cea0e25479810b1ba253056fa3f295/mo_dots-9.606.24115.tar.gz
+[2024-05-04 21:49:44] INFO root fetch - processPackages [Flask-Cors]: Downloading https://files.pythonhosted.org/packages/fa/93/b52ee1819053ec169fd9f94ae5bcd2adf24e6c609a3d05507abf55595907/Flask-Cors-4.0.0a0.tar.gz
+[2024-05-04 21:49:44] INFO root fetch - processPackages [mo-dots]: executing diffoscope
+[2024-05-04 21:49:44] INFO root fetch - processPackages [mo-dots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_dots-9.605.24115.tar.gz tmp/mo_dots-9.606.24115.tar.gz --markdown 20240504/m/mo-dots/9.605.24115-9.606.24115/README.md --exclude *.pyd
+[2024-05-04 21:49:45] INFO root fetch - processPackages [Flask-Cors]: Downloading https://files.pythonhosted.org/packages/40/6a/a8d56d60bcfa1ec3e4fdad81b45aafd508c3bd5c244a16526fa29139d7d4/flask_cors-4.0.1.tar.gz
+[2024-05-04 21:49:45] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.605.24115.tar.gz]
+[2024-05-04 21:49:45] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.606.24115.tar.gz]
+[2024-05-04 21:49:45] INFO root fetch - main [MainThread]: End processing [mo-dots]: success
+[2024-05-04 21:49:45] INFO root fetch - processPackages [Flask-Cors]: executing diffoscope
+[2024-05-04 21:49:45] INFO root fetch - processPackages [Flask-Cors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-Cors-4.0.0a0.tar.gz tmp/flask_cors-4.0.1.tar.gz --markdown 20240504/F/Flask-Cors/4.0.0a0-4.0.1/README.md --exclude *.pyd
+[2024-05-04 21:49:46] INFO root fetch - processPackages [Flask-Cors]: Remove: archive file [/home/abi/fetcher/tmp/Flask-Cors-4.0.0a0.tar.gz]
+[2024-05-04 21:49:46] INFO root fetch - processPackages [Flask-Cors]: Remove: archive file [/home/abi/fetcher/tmp/flask_cors-4.0.1.tar.gz]
+[2024-05-04 21:49:46] INFO root fetch - main [MainThread]: End processing [Flask-Cors]: success
+[2024-05-04 21:49:46] INFO root fetch - main [MainThread]: Store serial: [23060566]
