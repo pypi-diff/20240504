@@ -12034,3 +12034,21 @@
 [2024-05-04 11:00:59] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.4.tar.gz]
 [2024-05-04 11:00:59] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
 [2024-05-04 11:00:59] INFO root fetch - main [MainThread]: Store serial: [23057050]
+[2024-05-04 11:03:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057050]
+[2024-05-04 11:03:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 11:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-access-control
+[2024-05-04 11:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyo2.bag
+[2024-05-04 11:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openagents-node-sdk
+[2024-05-04 11:03:08] WARNING root fetch - processPackages [openagents-node-sdk]: Skipping, unable to determine old version
+[2024-05-04 11:03:08] INFO root fetch - main [MainThread]: End processing [openagents-node-sdk] error
+[2024-05-04 11:03:08] WARNING root fetch - processPackages [hyo2.bag]: Skipping, unable to determine old version
+[2024-05-04 11:03:08] INFO root fetch - main [MainThread]: End processing [hyo2.bag] error
+[2024-05-04 11:03:08] INFO root fetch - processPackages [nonebot-plugin-access-control]: New version: [1.2.0] Old Version: [1.1.5a1]
+[2024-05-04 11:03:08] INFO root fetch - processPackages [nonebot-plugin-access-control]: Downloading https://files.pythonhosted.org/packages/c1/ce/65147b04e18ff7dfc155855cf67df118e30f4b791f05487c86cbf29ee4c0/nonebot_plugin_access_control-1.1.5a1.tar.gz
+[2024-05-04 11:03:08] INFO root fetch - processPackages [nonebot-plugin-access-control]: Downloading https://files.pythonhosted.org/packages/2e/88/fc5e66f514f9657b7017d5c559c925cb81a5784f55b9f0e31c0c0cf8478d/nonebot_plugin_access_control-1.2.0.tar.gz
+[2024-05-04 11:03:08] INFO root fetch - processPackages [nonebot-plugin-access-control]: executing diffoscope
+[2024-05-04 11:03:08] INFO root fetch - processPackages [nonebot-plugin-access-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_access_control-1.1.5a1.tar.gz tmp/nonebot_plugin_access_control-1.2.0.tar.gz --markdown 20240504/n/nonebot-plugin-access-control/1.1.5a1-1.2.0/README.md --exclude *.pyd
+[2024-05-04 11:03:09] INFO root fetch - processPackages [nonebot-plugin-access-control]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_access_control-1.1.5a1.tar.gz]
+[2024-05-04 11:03:09] INFO root fetch - processPackages [nonebot-plugin-access-control]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_access_control-1.2.0.tar.gz]
+[2024-05-04 11:03:09] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-access-control]: success
+[2024-05-04 11:03:09] INFO root fetch - main [MainThread]: Store serial: [23057070]
