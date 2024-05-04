@@ -20959,3 +20959,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:21:52] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
 [2024-05-04 23:21:52] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
 [2024-05-04 23:21:52] INFO root fetch - main [MainThread]: Store serial: [23061083]
+[2024-05-04 23:23:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061083]
+[2024-05-04 23:24:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 23:24:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: petrosa
+[2024-05-04 23:24:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cpop
+[2024-05-04 23:24:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: evnex
+[2024-05-04 23:24:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inspect-ai
+[2024-05-04 23:24:01] INFO root fetch - processPackages [evnex]: New version: [0.4.0a1] Old Version: [0.4.0]
+[2024-05-04 23:24:01] INFO root fetch - processPackages [evnex]: Downloading https://files.pythonhosted.org/packages/8b/17/bb85d6f119fa42c495656223b4e5c8b398f8b21d9431f2e5256d102de911/evnex-0.4.0.tar.gz
+[2024-05-04 23:24:01] INFO root fetch - processPackages [cpop]: New version: [35.5.2] Old Version: [35.5.1]
+[2024-05-04 23:24:01] INFO root fetch - processPackages [petrosa]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 23:24:01] INFO root fetch - processPackages [inspect-ai]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-04 23:24:01] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/e6/b9/0d446977c84ba028c6ed2dacf861f0724f3cb58cf628ae8bf9ab062ac258/petrosa-0.0.8.tar.gz
+[2024-05-04 23:24:01] INFO root fetch - processPackages [evnex]: Downloading https://files.pythonhosted.org/packages/0e/1d/dc54a6c3cc13b3b54a5f92fa3d35ad4aba1fb07ebe6be70b6b00c1a89627/evnex-0.4.0a1.tar.gz
+[2024-05-04 23:24:01] INFO root fetch - processPackages [cpop]: Downloading https://files.pythonhosted.org/packages/85/0a/ef5bea35cb04517d1772a5ce9aea1b6d7e7aa944ee39e35bf070e221f9b8/cpop-35.5.1.tar.gz
+[2024-05-04 23:24:01] INFO root fetch - processPackages [inspect-ai]: Downloading https://files.pythonhosted.org/packages/ff/91/d03c1be089b05cfb971590a47205d3e4765d8c7279d8c70adc65c78ade52/inspect_ai-0.3.4.tar.gz
+[2024-05-04 23:24:01] INFO root fetch - processPackages [evnex]: executing diffoscope
+[2024-05-04 23:24:01] INFO root fetch - processPackages [evnex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evnex-0.4.0.tar.gz tmp/evnex-0.4.0a1.tar.gz --markdown 20240504/e/evnex/0.4.0-0.4.0a1/README.md --exclude *.pyd
+[2024-05-04 23:24:02] INFO root fetch - processPackages [cpop]: Downloading https://files.pythonhosted.org/packages/f8/29/c7a7932b27c4a89fb2a4a434f0bb0fcc05f6ff537bd474e6152cf6a5be48/cpop-35.5.2.tar.gz
+[2024-05-04 23:24:02] INFO root fetch - processPackages [cpop]: executing diffoscope
+[2024-05-04 23:24:02] INFO root fetch - processPackages [cpop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpop-35.5.1.tar.gz tmp/cpop-35.5.2.tar.gz --markdown 20240504/c/cpop/35.5.1-35.5.2/README.md --exclude *.pyd
+[2024-05-04 23:24:02] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/44/fe/1f3118a8d146a7e23eec51b4caff69f7fe9aa77052269f8ca078482d6985/petrosa-0.0.9.tar.gz
+[2024-05-04 23:24:02] INFO root fetch - processPackages [inspect-ai]: Downloading https://files.pythonhosted.org/packages/a4/22/07973e7f171f5777ac8514c57f249e67bdc694a41fe4c8d554e21b607175/inspect_ai-0.3.5.tar.gz
+[2024-05-04 23:24:02] INFO root fetch - processPackages [evnex]: Remove: archive file [/home/abi/fetcher/tmp/evnex-0.4.0.tar.gz]
+[2024-05-04 23:24:02] INFO root fetch - processPackages [evnex]: Remove: archive file [/home/abi/fetcher/tmp/evnex-0.4.0a1.tar.gz]
+[2024-05-04 23:24:02] INFO root fetch - main [MainThread]: End processing [evnex]: success
+[2024-05-04 23:24:03] INFO root fetch - processPackages [petrosa]: executing diffoscope
+[2024-05-04 23:24:03] INFO root fetch - processPackages [petrosa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petrosa-0.0.8.tar.gz tmp/petrosa-0.0.9.tar.gz --markdown 20240504/p/petrosa/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 23:24:03] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-35.5.1.tar.gz]
+[2024-05-04 23:24:03] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-35.5.2.tar.gz]
+[2024-05-04 23:24:03] INFO root fetch - main [MainThread]: End processing [cpop]: success
+[2024-05-04 23:24:03] INFO root fetch - processPackages [inspect-ai]: executing diffoscope
+[2024-05-04 23:24:03] INFO root fetch - processPackages [inspect-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspect_ai-0.3.4.tar.gz tmp/inspect_ai-0.3.5.tar.gz --markdown 20240504/i/inspect-ai/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-04 23:24:04] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.8.tar.gz]
+[2024-05-04 23:24:04] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.9.tar.gz]
+[2024-05-04 23:24:04] INFO root fetch - main [MainThread]: End processing [petrosa]: success
+[2024-05-04 23:24:05] INFO root fetch - processPackages [inspect-ai]: Remove: archive file [/home/abi/fetcher/tmp/inspect_ai-0.3.4.tar.gz]
+[2024-05-04 23:24:05] INFO root fetch - processPackages [inspect-ai]: Remove: archive file [/home/abi/fetcher/tmp/inspect_ai-0.3.5.tar.gz]
+[2024-05-04 23:24:05] INFO root fetch - main [MainThread]: End processing [inspect-ai]: success
+[2024-05-04 23:24:05] INFO root fetch - main [MainThread]: Store serial: [23061095]
