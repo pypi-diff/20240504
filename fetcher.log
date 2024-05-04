@@ -2377,3 +2377,11 @@
 [2024-05-04 02:30:43] INFO root fetch - processPackages [numalogic]: Remove: archive file [/home/abi/fetcher/tmp/numalogic-0.9.1a9.tar.gz]
 [2024-05-04 02:30:43] INFO root fetch - main [MainThread]: End processing [numalogic]: success
 [2024-05-04 02:30:43] INFO root fetch - main [MainThread]: Store serial: [23053058]
+[2024-05-04 02:32:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053058]
+[2024-05-04 02:32:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 02:32:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NikGapps
+[2024-05-04 02:32:52] INFO root fetch - processPackages [NikGapps]: New version: [2.62] Old Version: [2.61]
+[2024-05-04 02:32:52] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/7b/98/1974450826e77c2b11cd8d8d74c24976f166a99c60194b61bb635ee7815b/nikgapps-2.61.tar.gz
+[2024-05-04 02:32:52] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 44660166>=10485760
+[2024-05-04 02:32:52] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2024-05-04 02:32:52] INFO root fetch - main [MainThread]: Store serial: [23053061]
