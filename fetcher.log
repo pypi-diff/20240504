@@ -10618,3 +10618,27 @@
 [2024-05-04 08:48:08] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mgmtsystem_action-16.0.1.0.0.9-py3-none-any.whl.zip]
 [2024-05-04 08:48:08] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-action]: success
 [2024-05-04 08:48:08] INFO root fetch - main [MainThread]: Store serial: [23056296]
+[2024-05-04 08:50:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056296]
+[2024-05-04 08:50:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 08:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AGTEPyth
+[2024-05-04 08:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CTDFjorder
+[2024-05-04 08:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: exctrap
+[2024-05-04 08:50:17] WARNING root fetch - processPackages [AGTEPyth]: Skipping, unable to determine old version
+[2024-05-04 08:50:17] INFO root fetch - main [MainThread]: End processing [AGTEPyth] error
+[2024-05-04 08:50:17] INFO root fetch - processPackages [CTDFjorder]: New version: [0.0.36] Old Version: [0.0.35]
+[2024-05-04 08:50:17] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/e5/3b/d6bcbf22d1222600f1dffb0a22a0bad784b0720b7e70e013dda0a62c94c0/ctdfjorder-0.0.35.tar.gz
+[2024-05-04 08:50:17] INFO root fetch - processPackages [exctrap]: New version: [0.2] Old Version: [0.1]
+[2024-05-04 08:50:17] INFO root fetch - processPackages [exctrap]: Downloading https://files.pythonhosted.org/packages/60/ac/19ebf17b2a60de82bf516c97cefe95b81278e700f71663ca92391c4fecd6/exctrap-0.1.tar.gz
+[2024-05-04 08:50:18] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/3d/3c/59643cb6bdfc748e4825620d495339b62ef5b12ba381723a2cf84cff6edb/ctdfjorder-0.0.36.tar.gz
+[2024-05-04 08:50:18] INFO root fetch - processPackages [CTDFjorder]: executing diffoscope
+[2024-05-04 08:50:18] INFO root fetch - processPackages [CTDFjorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctdfjorder-0.0.35.tar.gz tmp/ctdfjorder-0.0.36.tar.gz --markdown 20240504/C/CTDFjorder/0.0.35-0.0.36/README.md --exclude *.pyd
+[2024-05-04 08:50:18] INFO root fetch - processPackages [exctrap]: Downloading https://files.pythonhosted.org/packages/b5/a5/caac6429b169721cbc0365a98b39ed9a452d05855a2901b930fde85d7374/exctrap-0.2.tar.gz
+[2024-05-04 08:50:18] INFO root fetch - processPackages [exctrap]: executing diffoscope
+[2024-05-04 08:50:18] INFO root fetch - processPackages [exctrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exctrap-0.1.tar.gz tmp/exctrap-0.2.tar.gz --markdown 20240504/e/exctrap/0.1-0.2/README.md --exclude *.pyd
+[2024-05-04 08:50:18] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.35.tar.gz]
+[2024-05-04 08:50:18] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.36.tar.gz]
+[2024-05-04 08:50:18] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
+[2024-05-04 08:50:18] INFO root fetch - processPackages [exctrap]: Remove: archive file [/home/abi/fetcher/tmp/exctrap-0.1.tar.gz]
+[2024-05-04 08:50:18] INFO root fetch - processPackages [exctrap]: Remove: archive file [/home/abi/fetcher/tmp/exctrap-0.2.tar.gz]
+[2024-05-04 08:50:18] INFO root fetch - main [MainThread]: End processing [exctrap]: success
+[2024-05-04 08:50:18] INFO root fetch - main [MainThread]: Store serial: [23056305]
