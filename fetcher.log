@@ -2340,3 +2340,40 @@
 [2024-05-04 02:28:33] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
 [2024-05-04 02:28:33] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
 [2024-05-04 02:28:33] INFO root fetch - main [MainThread]: Store serial: [23053044]
+[2024-05-04 02:30:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053044]
+[2024-05-04 02:30:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 02:30:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numalogic
+[2024-05-04 02:30:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rship-sdk
+[2024-05-04 02:30:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aeppl-nightly
+[2024-05-04 02:30:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rship-sdk
+[2024-05-04 02:30:42] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 02:30:42] INFO root fetch - processPackages [numalogic]: New version: [0.9.1a9] Old Version: [0.9.1a8]
+[2024-05-04 02:30:42] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 02:30:42] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240503] Old Version: [0.1.5.dev20240502]
+[2024-05-04 02:30:42] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 02:30:42] INFO root fetch - processPackages [numalogic]: Downloading https://files.pythonhosted.org/packages/80/b5/9e80f614ead87736460e66d0049276b9fc0dfd67ae49851f3adf69902835/numalogic-0.9.1a8.tar.gz
+[2024-05-04 02:30:42] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 02:30:42] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/15/10/7ef44f895d21f15740b42758d394659d50f7da53e0f6938f13a365d4d727/aeppl_nightly-0.1.5.dev20240502.tar.gz
+[2024-05-04 02:30:42] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 02:30:42] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 02:30:42] INFO root fetch - processPackages [numalogic]: Downloading https://files.pythonhosted.org/packages/b2/6d/f7c13948f98dba24ec80224a278d64a91d4f322402a10712c57a6ff5bfad/numalogic-0.9.1a9.tar.gz
+[2024-05-04 02:30:42] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/a7/13/2074e3e750574ed4a99df30cf445bd3c41a7ea34789eeb4b5b323ad1d558/aeppl_nightly-0.1.5.dev20240503.tar.gz
+[2024-05-04 02:30:42] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 02:30:42] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 02:30:42] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 02:30:42] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 02:30:42] INFO root fetch - processPackages [numalogic]: executing diffoscope
+[2024-05-04 02:30:42] INFO root fetch - processPackages [numalogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numalogic-0.9.1a8.tar.gz tmp/numalogic-0.9.1a9.tar.gz --markdown 20240504/n/numalogic/0.9.1a8-0.9.1a9/README.md --exclude *.pyd
+[2024-05-04 02:30:42] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-05-04 02:30:42] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240502.tar.gz tmp/aeppl_nightly-0.1.5.dev20240503.tar.gz --markdown 20240504/a/aeppl-nightly/0.1.5.dev20240502-0.1.5.dev20240503/README.md --exclude *.pyd
+[2024-05-04 02:30:43] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 02:30:43] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 02:30:43] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 02:30:43] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 02:30:43] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240502.tar.gz]
+[2024-05-04 02:30:43] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240503.tar.gz]
+[2024-05-04 02:30:43] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-05-04 02:30:43] INFO root fetch - processPackages [numalogic]: Remove: archive file [/home/abi/fetcher/tmp/numalogic-0.9.1a8.tar.gz]
+[2024-05-04 02:30:43] INFO root fetch - processPackages [numalogic]: Remove: archive file [/home/abi/fetcher/tmp/numalogic-0.9.1a9.tar.gz]
+[2024-05-04 02:30:43] INFO root fetch - main [MainThread]: End processing [numalogic]: success
+[2024-05-04 02:30:43] INFO root fetch - main [MainThread]: Store serial: [23053058]
