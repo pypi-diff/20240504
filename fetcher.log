@@ -11489,3 +11489,24 @@
 [2024-05-04 10:10:49] INFO root fetch - processPackages [jax-sysid]: Remove: archive file [/home/abi/fetcher/tmp/jax_sysid-0.3.4.tar.gz]
 [2024-05-04 10:10:49] INFO root fetch - main [MainThread]: End processing [jax-sysid]: success
 [2024-05-04 10:10:49] INFO root fetch - main [MainThread]: Store serial: [23056734]
+[2024-05-04 10:12:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056734]
+[2024-05-04 10:12:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 10:12:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-table-reader-plugin
+[2024-05-04 10:12:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mootdx
+[2024-05-04 10:12:57] INFO root fetch - processPackages [mkdocs-table-reader-plugin]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-05-04 10:12:57] INFO root fetch - processPackages [mootdx]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-04 10:12:58] INFO root fetch - processPackages [mkdocs-table-reader-plugin]: Downloading https://files.pythonhosted.org/packages/fd/6c/5780b61421a67700c13d4ddb72655fd266fd1fd07895df420120bbfe0bf6/mkdocs-table-reader-plugin-2.1.0.tar.gz
+[2024-05-04 10:12:58] INFO root fetch - processPackages [mootdx]: Downloading https://files.pythonhosted.org/packages/72/07/da98b3355ddcc663ca86afb6fc85557412fdf562280b02ffe9a7c7b14f05/mootdx-0.9.8.tar.gz
+[2024-05-04 10:12:58] INFO root fetch - processPackages [mkdocs-table-reader-plugin]: Downloading https://files.pythonhosted.org/packages/56/da/9542b2cab218c57482c89dcc9e9968ddaf98e689527012447fef9ac3899d/mkdocs_table_reader_plugin-2.2.0.tar.gz
+[2024-05-04 10:12:58] INFO root fetch - processPackages [mkdocs-table-reader-plugin]: executing diffoscope
+[2024-05-04 10:12:58] INFO root fetch - processPackages [mkdocs-table-reader-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-table-reader-plugin-2.1.0.tar.gz tmp/mkdocs_table_reader_plugin-2.2.0.tar.gz --markdown 20240504/m/mkdocs-table-reader-plugin/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-05-04 10:12:58] INFO root fetch - processPackages [mootdx]: Downloading https://files.pythonhosted.org/packages/f7/94/bebf14fdb2cde078167d69a93a491cd27d77902c24eaa462b2faaa154f28/mootdx-0.9.9.tar.gz
+[2024-05-04 10:12:58] INFO root fetch - processPackages [mootdx]: executing diffoscope
+[2024-05-04 10:12:58] INFO root fetch - processPackages [mootdx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mootdx-0.9.8.tar.gz tmp/mootdx-0.9.9.tar.gz --markdown 20240504/m/mootdx/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-04 10:12:59] INFO root fetch - processPackages [mkdocs-table-reader-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-table-reader-plugin-2.1.0.tar.gz]
+[2024-05-04 10:12:59] INFO root fetch - processPackages [mkdocs-table-reader-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_table_reader_plugin-2.2.0.tar.gz]
+[2024-05-04 10:12:59] INFO root fetch - main [MainThread]: End processing [mkdocs-table-reader-plugin]: success
+[2024-05-04 10:12:59] INFO root fetch - processPackages [mootdx]: Remove: archive file [/home/abi/fetcher/tmp/mootdx-0.9.8.tar.gz]
+[2024-05-04 10:12:59] INFO root fetch - processPackages [mootdx]: Remove: archive file [/home/abi/fetcher/tmp/mootdx-0.9.9.tar.gz]
+[2024-05-04 10:12:59] INFO root fetch - main [MainThread]: End processing [mootdx]: success
+[2024-05-04 10:12:59] INFO root fetch - main [MainThread]: Store serial: [23056740]
