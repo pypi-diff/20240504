@@ -12022,3 +12022,15 @@
 [2024-05-04 10:58:49] WARNING root fetch - processPackages [sifaka]: Skipping, unable to determine old version
 [2024-05-04 10:58:49] INFO root fetch - main [MainThread]: End processing [sifaka] error
 [2024-05-04 10:58:49] INFO root fetch - main [MainThread]: Store serial: [23057041]
+[2024-05-04 11:00:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057041]
+[2024-05-04 11:00:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 11:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mptradelib
+[2024-05-04 11:00:58] INFO root fetch - processPackages [mptradelib]: New version: [0.3.4] Old Version: [0.3.2]
+[2024-05-04 11:00:58] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/47/b7/45ba889178a4e0881dcd11338b82dd658bf8076a6e02ae1c94916da26abb/mptradelib-0.3.2.tar.gz
+[2024-05-04 11:00:58] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/61/da/94b45fe08adad190810451ee3cb922f1d36ea0d31d55bc7be88c9d0d41ac/mptradelib-0.3.4.tar.gz
+[2024-05-04 11:00:58] INFO root fetch - processPackages [mptradelib]: executing diffoscope
+[2024-05-04 11:00:58] INFO root fetch - processPackages [mptradelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mptradelib-0.3.2.tar.gz tmp/mptradelib-0.3.4.tar.gz --markdown 20240504/m/mptradelib/0.3.2-0.3.4/README.md --exclude *.pyd
+[2024-05-04 11:00:59] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.2.tar.gz]
+[2024-05-04 11:00:59] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.4.tar.gz]
+[2024-05-04 11:00:59] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
+[2024-05-04 11:00:59] INFO root fetch - main [MainThread]: Store serial: [23057050]
