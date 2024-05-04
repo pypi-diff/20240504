@@ -17286,3 +17286,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:52:59] INFO root fetch - processPackages [testpulse-uploader]: Remove: archive file [/home/abi/fetcher/tmp/testpulse-uploader-0.0.9.tar.gz]
 [2024-05-04 18:52:59] INFO root fetch - main [MainThread]: End processing [testpulse-uploader]: success
 [2024-05-04 18:52:59] INFO root fetch - main [MainThread]: Store serial: [23059394]
+[2024-05-04 18:55:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059394]
+[2024-05-04 18:55:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 18:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agixt
+[2024-05-04 18:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: name-generator-nicomp
+[2024-05-04 18:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: boolean-solver-gui
+[2024-05-04 18:55:08] INFO root fetch - processPackages [name-generator-nicomp]: New version: [1.0.8] Old Version: [1.0.6]
+[2024-05-04 18:55:08] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/89/21/e52b15f9936776f948786826a91a19833842ee3b238b10555b90bc98547e/name_generator_nicomp-1.0.6.tar.gz
+[2024-05-04 18:55:08] WARNING root fetch - processPackages [boolean-solver-gui]: Skipping, unable to determine old version
+[2024-05-04 18:55:08] INFO root fetch - main [MainThread]: End processing [boolean-solver-gui] error
+[2024-05-04 18:55:08] INFO root fetch - processPackages [agixt]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-05-04 18:55:08] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/06/8b/f4b0981365819afdbeecb1796ebb1d23439132f5063fcb9b4192e4c43a18/agixt-1.5.8-py3-none-any.whl
+[2024-05-04 18:55:08] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/e7/7d/7b558d8f7bb0ddfd215d7f3c3799d22620396a5b808d8adfd9ec24d58bd4/name_generator_nicomp-1.0.8.tar.gz
+[2024-05-04 18:55:08] INFO root fetch - processPackages [name-generator-nicomp]: executing diffoscope
+[2024-05-04 18:55:08] INFO root fetch - processPackages [name-generator-nicomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/name_generator_nicomp-1.0.6.tar.gz tmp/name_generator_nicomp-1.0.8.tar.gz --markdown 20240504/n/name-generator-nicomp/1.0.6-1.0.8/README.md --exclude *.pyd
+[2024-05-04 18:55:08] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/25/a0/f70bdd10c23b4095f2f5ebd25957e2c061b93a50907a0651a729f4b4656c/agixt-1.5.9-py3-none-any.whl
+[2024-05-04 18:55:08] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2024-05-04 18:55:08] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.5.8-py3-none-any.whl.zip tmp/agixt-1.5.9-py3-none-any.whl.zip --markdown 20240504/a/agixt/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-05-04 18:55:09] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.6.tar.gz]
+[2024-05-04 18:55:09] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.8.tar.gz]
+[2024-05-04 18:55:09] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp]: success
+[2024-05-04 18:55:09] INFO root fetch - processPackages [agixt]: Remove: archive file [/home/abi/fetcher/tmp/agixt-1.5.8-py3-none-any.whl.zip]
+[2024-05-04 18:55:09] INFO root fetch - processPackages [agixt]: Remove: archive file [/home/abi/fetcher/tmp/agixt-1.5.9-py3-none-any.whl.zip]
+[2024-05-04 18:55:09] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2024-05-04 18:55:09] INFO root fetch - main [MainThread]: Store serial: [23059403]
