@@ -8935,3 +8935,42 @@
 [2024-05-04 06:11:34] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2024-05-04 06:11:34] INFO root fetch - main [MainThread]: End processing [netron] error
 [2024-05-04 06:11:34] INFO root fetch - main [MainThread]: Store serial: [23055501]
+[2024-05-04 06:13:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055501]
+[2024-05-04 06:13:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 06:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlexecutorx
+[2024-05-04 06:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nucflag
+[2024-05-04 06:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hbox
+[2024-05-04 06:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gemini-ai-app-downloader
+[2024-05-04 06:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bcrypt
+[2024-05-04 06:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: GeneNet-3D
+[2024-05-04 06:13:58] WARNING root fetch - processPackages [sqlexecutorx]: Skipping, unable to determine old version
+[2024-05-04 06:13:58] INFO root fetch - main [MainThread]: End processing [sqlexecutorx] error
+[2024-05-04 06:13:58] INFO root fetch - processPackages [hbox]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-04 06:13:58] INFO root fetch - processPackages [bcrypt]: New version: [4.1.2] Old Version: [4.1.1]
+[2024-05-04 06:13:58] INFO root fetch - processPackages [gemini-ai-app-downloader]: New version: [1.5] Old Version: [1.4]
+[2024-05-04 06:13:58] WARNING root fetch - processPackages [nucflag]: Skipping, unable to determine old version
+[2024-05-04 06:13:58] INFO root fetch - main [MainThread]: End processing [nucflag] error
+[2024-05-04 06:13:58] INFO root fetch - processPackages [hbox]: Downloading https://files.pythonhosted.org/packages/14/29/000b06b78eb17140794494976493ff51e7c9d689d99eeda4fcead29608ab/hbox-0.3.3.tar.gz
+[2024-05-04 06:13:58] WARNING root fetch - processPackages [GeneNet-3D]: Skipping, unable to determine old version
+[2024-05-04 06:13:58] INFO root fetch - main [MainThread]: End processing [GeneNet-3D] error
+[2024-05-04 06:13:58] INFO root fetch - processPackages [bcrypt]: Downloading https://files.pythonhosted.org/packages/df/56/be5fda8e6fc05123c8c9f526095e93d0802a0a0b2beaf995ee2cc20aa2f8/bcrypt-4.1.1.tar.gz
+[2024-05-04 06:13:59] INFO root fetch - processPackages [gemini-ai-app-downloader]: Downloading https://files.pythonhosted.org/packages/5e/cd/d8e43232e4ac9b835e91962eca8569ee94ada9914ab21c700a4c4c9eed88/gemini_ai_app_downloader-1.4.tar.gz
+[2024-05-04 06:13:59] INFO root fetch - processPackages [hbox]: Downloading https://files.pythonhosted.org/packages/7e/70/8faba949e667db91d014c6fae9dbcd8b6c42c39e7c7a196dbb5d82f8414f/hbox-0.3.4.tar.gz
+[2024-05-04 06:13:59] INFO root fetch - processPackages [bcrypt]: Downloading https://files.pythonhosted.org/packages/72/07/6a6f2047a9dc9d012b7b977e4041d37d078b76b44b7ee4daf331c1e6fb35/bcrypt-4.1.2.tar.gz
+[2024-05-04 06:13:59] INFO root fetch - processPackages [hbox]: executing diffoscope
+[2024-05-04 06:13:59] INFO root fetch - processPackages [hbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbox-0.3.3.tar.gz tmp/hbox-0.3.4.tar.gz --markdown 20240504/h/hbox/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-04 06:13:59] INFO root fetch - processPackages [bcrypt]: executing diffoscope
+[2024-05-04 06:13:59] INFO root fetch - processPackages [bcrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcrypt-4.1.1.tar.gz tmp/bcrypt-4.1.2.tar.gz --markdown 20240504/b/bcrypt/4.1.1-4.1.2/README.md --exclude *.pyd
+[2024-05-04 06:13:59] INFO root fetch - processPackages [gemini-ai-app-downloader]: Downloading https://files.pythonhosted.org/packages/41/36/9e45ad1d4d9903e5747793c9c4758903830baa6d3179d42ea9cdd7e156fe/gemini_ai_app_downloader-1.5.tar.gz
+[2024-05-04 06:13:59] INFO root fetch - processPackages [gemini-ai-app-downloader]: executing diffoscope
+[2024-05-04 06:13:59] INFO root fetch - processPackages [gemini-ai-app-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemini_ai_app_downloader-1.4.tar.gz tmp/gemini_ai_app_downloader-1.5.tar.gz --markdown 20240504/g/gemini-ai-app-downloader/1.4-1.5/README.md --exclude *.pyd
+[2024-05-04 06:13:59] INFO root fetch - processPackages [hbox]: Remove: archive file [/home/abi/fetcher/tmp/hbox-0.3.3.tar.gz]
+[2024-05-04 06:13:59] INFO root fetch - processPackages [hbox]: Remove: archive file [/home/abi/fetcher/tmp/hbox-0.3.4.tar.gz]
+[2024-05-04 06:13:59] INFO root fetch - main [MainThread]: End processing [hbox]: success
+[2024-05-04 06:13:59] INFO root fetch - processPackages [bcrypt]: Remove: archive file [/home/abi/fetcher/tmp/bcrypt-4.1.1.tar.gz]
+[2024-05-04 06:13:59] INFO root fetch - processPackages [bcrypt]: Remove: archive file [/home/abi/fetcher/tmp/bcrypt-4.1.2.tar.gz]
+[2024-05-04 06:13:59] INFO root fetch - main [MainThread]: End processing [bcrypt]: success
+[2024-05-04 06:14:00] INFO root fetch - processPackages [gemini-ai-app-downloader]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ai_app_downloader-1.4.tar.gz]
+[2024-05-04 06:14:00] INFO root fetch - processPackages [gemini-ai-app-downloader]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ai_app_downloader-1.5.tar.gz]
+[2024-05-04 06:14:00] INFO root fetch - main [MainThread]: End processing [gemini-ai-app-downloader]: success
+[2024-05-04 06:14:00] INFO root fetch - main [MainThread]: Store serial: [23055548]
