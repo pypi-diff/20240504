@@ -11540,3 +11540,48 @@
 [2024-05-04 10:15:11] INFO root fetch - processPackages [MulensModel]: Remove: archive file [/home/abi/fetcher/tmp/MulensModel-2.8.1.tar.gz]
 [2024-05-04 10:15:11] INFO root fetch - main [MainThread]: End processing [MulensModel]: success
 [2024-05-04 10:15:11] INFO root fetch - main [MainThread]: Store serial: [23056760]
+[2024-05-04 10:17:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056760]
+[2024-05-04 10:17:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 10:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openagents-grpc-proto
+[2024-05-04 10:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arclet-cithun
+[2024-05-04 10:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkscreener
+[2024-05-04 10:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maling
+[2024-05-04 10:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flask-marshmallow-openapi
+[2024-05-04 10:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyDolarVenezuela
+[2024-05-04 10:17:20] INFO root fetch - processPackages [pyDolarVenezuela]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-05-04 10:17:20] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240504.332] Old Version: [0.44.20240504.330]
+[2024-05-04 10:17:20] INFO root fetch - processPackages [flask-marshmallow-openapi]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-04 10:17:20] WARNING root fetch - processPackages [openagents-grpc-proto]: Skipping, unable to determine old version
+[2024-05-04 10:17:20] INFO root fetch - main [MainThread]: End processing [openagents-grpc-proto] error
+[2024-05-04 10:17:20] WARNING root fetch - processPackages [arclet-cithun]: Skipping, unable to determine old version
+[2024-05-04 10:17:20] INFO root fetch - main [MainThread]: End processing [arclet-cithun] error
+[2024-05-04 10:17:20] INFO root fetch - processPackages [pyDolarVenezuela]: Downloading https://files.pythonhosted.org/packages/ca/1b/2cf0d8d6ad474e7f169c0fe180076d8a76e1be8fdf4df5a79318277a7d14/pydolarvenezuela-1.5.2.tar.gz
+[2024-05-04 10:17:20] INFO root fetch - processPackages [maling]: New version: [2.3.4] Old Version: [2.3.3]
+[2024-05-04 10:17:20] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/eb/f5/a2c18c61209caad59990eac6413361626787f1cfbb85f6b16b5f749f124c/pkscreener-0.44.20240504.330.tar.gz
+[2024-05-04 10:17:20] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/55/ab/8f3478e6efa76e7e22147107eec68eedff402a9721910ae3babc3581cded/maling-2.3.3.tar.gz
+[2024-05-04 10:17:20] INFO root fetch - processPackages [flask-marshmallow-openapi]: Downloading https://files.pythonhosted.org/packages/45/fe/00b62c894a4c62e33feb636de05dcc3c379a0085e86e391be53880d1bbd1/flask-marshmallow-openapi-0.6.1.tar.gz
+[2024-05-04 10:17:20] INFO root fetch - processPackages [pyDolarVenezuela]: Downloading https://files.pythonhosted.org/packages/03/d7/8ffb4f96bf09f37e2880d8b5e93942bf7e205559d92369b64bd7fc126f97/pydolarvenezuela-1.5.3.tar.gz
+[2024-05-04 10:17:20] INFO root fetch - processPackages [pyDolarVenezuela]: executing diffoscope
+[2024-05-04 10:17:20] INFO root fetch - processPackages [pyDolarVenezuela]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydolarvenezuela-1.5.2.tar.gz tmp/pydolarvenezuela-1.5.3.tar.gz --markdown 20240504/p/pyDolarVenezuela/1.5.2-1.5.3/README.md --exclude *.pyd
+[2024-05-04 10:17:20] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/ca/ac/8ef02708facb6ad22eebc054e7eac472e482407289e739c84b4dd134d71f/pkscreener-0.44.20240504.332.tar.gz
+[2024-05-04 10:17:20] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/2c/13/78b6a7b3628afb87b4fb7c087ff43aa448cf561d5f9116db21178b1ed7eb/maling-2.3.4.tar.gz
+[2024-05-04 10:17:20] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-04 10:17:20] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240504.330.tar.gz tmp/pkscreener-0.44.20240504.332.tar.gz --markdown 20240504/p/pkscreener/0.44.20240504.330-0.44.20240504.332/README.md --exclude *.pyd
+[2024-05-04 10:17:20] INFO root fetch - processPackages [flask-marshmallow-openapi]: Downloading https://files.pythonhosted.org/packages/3a/d2/eb8363a37692ccb92f5c1c45ac0b0efb36368ccab2752ba1e0dd43b15655/flask_marshmallow_openapi-0.6.2.tar.gz
+[2024-05-04 10:17:20] INFO root fetch - processPackages [maling]: executing diffoscope
+[2024-05-04 10:17:20] INFO root fetch - processPackages [maling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maling-2.3.3.tar.gz tmp/maling-2.3.4.tar.gz --markdown 20240504/m/maling/2.3.3-2.3.4/README.md --exclude *.pyd
+[2024-05-04 10:17:21] INFO root fetch - processPackages [flask-marshmallow-openapi]: executing diffoscope
+[2024-05-04 10:17:21] INFO root fetch - processPackages [flask-marshmallow-openapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-marshmallow-openapi-0.6.1.tar.gz tmp/flask_marshmallow_openapi-0.6.2.tar.gz --markdown 20240504/f/flask-marshmallow-openapi/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-04 10:17:21] INFO root fetch - processPackages [pyDolarVenezuela]: Remove: archive file [/home/abi/fetcher/tmp/pydolarvenezuela-1.5.2.tar.gz]
+[2024-05-04 10:17:21] INFO root fetch - processPackages [pyDolarVenezuela]: Remove: archive file [/home/abi/fetcher/tmp/pydolarvenezuela-1.5.3.tar.gz]
+[2024-05-04 10:17:21] INFO root fetch - main [MainThread]: End processing [pyDolarVenezuela]: success
+[2024-05-04 10:17:21] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.330.tar.gz]
+[2024-05-04 10:17:21] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.332.tar.gz]
+[2024-05-04 10:17:21] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-04 10:17:21] INFO root fetch - processPackages [flask-marshmallow-openapi]: Remove: archive file [/home/abi/fetcher/tmp/flask-marshmallow-openapi-0.6.1.tar.gz]
+[2024-05-04 10:17:21] INFO root fetch - processPackages [flask-marshmallow-openapi]: Remove: archive file [/home/abi/fetcher/tmp/flask_marshmallow_openapi-0.6.2.tar.gz]
+[2024-05-04 10:17:21] INFO root fetch - main [MainThread]: End processing [flask-marshmallow-openapi]: success
+[2024-05-04 10:17:22] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.3.3.tar.gz]
+[2024-05-04 10:17:22] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.3.4.tar.gz]
+[2024-05-04 10:17:22] INFO root fetch - main [MainThread]: End processing [maling]: success
+[2024-05-04 10:17:22] INFO root fetch - main [MainThread]: Store serial: [23056781]
