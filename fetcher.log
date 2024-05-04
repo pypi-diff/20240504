@@ -19130,3 +19130,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:04:13] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.9.tar.gz]
 [2024-05-04 21:04:13] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
 [2024-05-04 21:04:13] INFO root fetch - main [MainThread]: Store serial: [23060347]
+[2024-05-04 21:06:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060347]
+[2024-05-04 21:06:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 21:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: speedruncompy
+[2024-05-04 21:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aldsim
+[2024-05-04 21:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ReverseBox
+[2024-05-04 21:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mo-math
+[2024-05-04 21:06:22] INFO root fetch - processPackages [ReverseBox]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-04 21:06:22] INFO root fetch - processPackages [mo-math]: New version: [7.621.24125] Old Version: [7.616.24125]
+[2024-05-04 21:06:22] INFO root fetch - processPackages [speedruncompy]: New version: [0.4.0] Old Version: [0.3.3]
+[2024-05-04 21:06:22] WARNING root fetch - processPackages [aldsim]: Skipping, unable to determine old version
+[2024-05-04 21:06:22] INFO root fetch - main [MainThread]: End processing [aldsim] error
+[2024-05-04 21:06:22] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/ca/90/c8c0083bb7d6f34dae1944fc86aeccd36a7b67a502e27ea2559337b8b6a8/mo_math-7.616.24125.tar.gz
+[2024-05-04 21:06:22] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/74/cc/11091d3e16e8c16abc1b9c3eb04cb718cd0488d56153855d5f5e79e25846/ReverseBox-0.8.8.tar.gz
+[2024-05-04 21:06:22] INFO root fetch - processPackages [speedruncompy]: Downloading https://files.pythonhosted.org/packages/00/21/a3ece51a690c78deb498cc5a24e3c2136db462faa92cd750ec3fa521b90f/speedruncompy-0.3.3.tar.gz
+[2024-05-04 21:06:22] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/d1/c3/6bc63d99438ad058c6caf3cd05d52bd03200ec6ceda9b935dc71447ab750/ReverseBox-0.8.9.tar.gz
+[2024-05-04 21:06:22] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/d6/15/95ca967936ad4166f12277fc8cf1997296f7670287d244cf4110616af960/mo_math-7.621.24125.tar.gz
+[2024-05-04 21:06:22] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-04 21:06:22] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.8.8.tar.gz tmp/ReverseBox-0.8.9.tar.gz --markdown 20240504/R/ReverseBox/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-04 21:06:22] INFO root fetch - processPackages [mo-math]: executing diffoscope
+[2024-05-04 21:06:22] INFO root fetch - processPackages [mo-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_math-7.616.24125.tar.gz tmp/mo_math-7.621.24125.tar.gz --markdown 20240504/m/mo-math/7.616.24125-7.621.24125/README.md --exclude *.pyd
+[2024-05-04 21:06:22] INFO root fetch - processPackages [speedruncompy]: Downloading https://files.pythonhosted.org/packages/13/49/094ef2e5b119e4ee34c3bc66c0a396cc0d03f340f6f334f91fc7514ca20c/speedruncompy-0.4.0.tar.gz
+[2024-05-04 21:06:22] INFO root fetch - processPackages [speedruncompy]: executing diffoscope
+[2024-05-04 21:06:22] INFO root fetch - processPackages [speedruncompy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speedruncompy-0.3.3.tar.gz tmp/speedruncompy-0.4.0.tar.gz --markdown 20240504/s/speedruncompy/0.3.3-0.4.0/README.md --exclude *.pyd
+[2024-05-04 21:06:23] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.616.24125.tar.gz]
+[2024-05-04 21:06:23] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.621.24125.tar.gz]
+[2024-05-04 21:06:23] INFO root fetch - main [MainThread]: End processing [mo-math]: success
+[2024-05-04 21:06:23] INFO root fetch - processPackages [speedruncompy]: Remove: archive file [/home/abi/fetcher/tmp/speedruncompy-0.3.3.tar.gz]
+[2024-05-04 21:06:23] INFO root fetch - processPackages [speedruncompy]: Remove: archive file [/home/abi/fetcher/tmp/speedruncompy-0.4.0.tar.gz]
+[2024-05-04 21:06:23] INFO root fetch - main [MainThread]: End processing [speedruncompy]: success
+[2024-05-04 21:06:23] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.8.tar.gz]
+[2024-05-04 21:06:23] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.9.tar.gz]
+[2024-05-04 21:06:23] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-04 21:06:23] INFO root fetch - main [MainThread]: Store serial: [23060360]
