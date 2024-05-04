@@ -16916,3 +16916,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:26:59] INFO root fetch - processPackages [eidolon-ai-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_sdk-0.1.45.tar.gz]
 [2024-05-04 18:26:59] INFO root fetch - main [MainThread]: End processing [eidolon-ai-sdk]: success
 [2024-05-04 18:26:59] INFO root fetch - main [MainThread]: Store serial: [23059258]
+[2024-05-04 18:29:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059258]
+[2024-05-04 18:29:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 18:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sr.comp.scorer
+[2024-05-04 18:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beet
+[2024-05-04 18:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-memoize
+[2024-05-04 18:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: honeybee-radiance-postprocess
+[2024-05-04 18:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: super-rubik-cube
+[2024-05-04 18:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: proboscis-async-events
+[2024-05-04 18:29:07] WARNING root fetch - processPackages [super-rubik-cube]: Skipping, unable to determine old version
+[2024-05-04 18:29:07] INFO root fetch - main [MainThread]: End processing [super-rubik-cube] error
+[2024-05-04 18:29:07] INFO root fetch - processPackages [py-memoize]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-04 18:29:07] INFO root fetch - processPackages [sr.comp.scorer]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-05-04 18:29:07] INFO root fetch - processPackages [proboscis-async-events]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-04 18:29:07] INFO root fetch - processPackages [beet]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-05-04 18:29:07] INFO root fetch - processPackages [honeybee-radiance-postprocess]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-04 18:29:07] INFO root fetch - processPackages [py-memoize]: Downloading https://files.pythonhosted.org/packages/17/96/e76250eac9aed2604080e07548b1e712aed75ae705b793a27aa9967eefff/py-memoize-1.2.1.tar.gz
+[2024-05-04 18:29:08] INFO root fetch - processPackages [sr.comp.scorer]: Downloading https://files.pythonhosted.org/packages/c0/e6/73b8a0db9380e5d443158bb071a712218b9aeb4213026df06ce044703cc5/sr_comp_scorer-1.3.0.tar.gz
+[2024-05-04 18:29:08] INFO root fetch - processPackages [beet]: Downloading https://files.pythonhosted.org/packages/af/42/eb8f4c6aca9e204edd691d0eb6a55ad92c6b265912ddc246e2f100298b27/beet-0.99.2.tar.gz
+[2024-05-04 18:29:08] INFO root fetch - processPackages [proboscis-async-events]: Downloading https://files.pythonhosted.org/packages/49/ef/a38a5512fe8e4f9d747e34bb7e8e7ae0d3a57e0500cfc3e2394f09a694bd/proboscis_async_events-0.1.2.tar.gz
+[2024-05-04 18:29:08] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Downloading https://files.pythonhosted.org/packages/b6/91/e656cf214b08dde444b27576e74fc06004fa6bbc0d5f04f1d6514eb05429/honeybee-radiance-postprocess-0.4.98.tar.gz
+[2024-05-04 18:29:08] INFO root fetch - processPackages [py-memoize]: Downloading https://files.pythonhosted.org/packages/b7/07/9c5c284346e926a6bf184f52754147c8c12d934ffe68a78823f1411bf370/py-memoize-1.2.2.tar.gz
+[2024-05-04 18:29:08] INFO root fetch - processPackages [sr.comp.scorer]: Downloading https://files.pythonhosted.org/packages/f6/67/dd2b4e8d728354c8767003c5339e3429c80b5887f5296f70a390b9652faa/sr_comp_scorer-1.4.0.tar.gz
+[2024-05-04 18:29:08] INFO root fetch - processPackages [py-memoize]: executing diffoscope
+[2024-05-04 18:29:08] INFO root fetch - processPackages [proboscis-async-events]: Downloading https://files.pythonhosted.org/packages/63/2e/12ba09dd1a454532dc5e55045a067b75e986ab8aedb8202bebc0619be072/proboscis_async_events-0.1.3.tar.gz
+[2024-05-04 18:29:08] INFO root fetch - processPackages [py-memoize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-memoize-1.2.1.tar.gz tmp/py-memoize-1.2.2.tar.gz --markdown 20240504/p/py-memoize/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-04 18:29:08] INFO root fetch - processPackages [beet]: Downloading https://files.pythonhosted.org/packages/7c/95/8bf5ece9fe1ee188fa81cd945a48c17b291aa71b8f36f53d8d46407506b9/beet-0.99.3.tar.gz
+[2024-05-04 18:29:08] INFO root fetch - processPackages [sr.comp.scorer]: executing diffoscope
+[2024-05-04 18:29:08] INFO root fetch - processPackages [sr.comp.scorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sr_comp_scorer-1.3.0.tar.gz tmp/sr_comp_scorer-1.4.0.tar.gz --markdown 20240504/s/sr.comp.scorer/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-05-04 18:29:08] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Downloading https://files.pythonhosted.org/packages/e0/41/5be881e0724bb4d271ee5bb707666eff4c4b9ca79bc8c67f7316687d2f67/honeybee-radiance-postprocess-0.4.99.tar.gz
+[2024-05-04 18:29:08] INFO root fetch - processPackages [proboscis-async-events]: executing diffoscope
+[2024-05-04 18:29:08] INFO root fetch - processPackages [proboscis-async-events]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proboscis_async_events-0.1.2.tar.gz tmp/proboscis_async_events-0.1.3.tar.gz --markdown 20240504/p/proboscis-async-events/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-04 18:29:08] INFO root fetch - processPackages [beet]: executing diffoscope
+[2024-05-04 18:29:08] INFO root fetch - processPackages [beet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beet-0.99.2.tar.gz tmp/beet-0.99.3.tar.gz --markdown 20240504/b/beet/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-05-04 18:29:08] INFO root fetch - processPackages [honeybee-radiance-postprocess]: executing diffoscope
+[2024-05-04 18:29:08] INFO root fetch - processPackages [honeybee-radiance-postprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-radiance-postprocess-0.4.98.tar.gz tmp/honeybee-radiance-postprocess-0.4.99.tar.gz --markdown 20240504/h/honeybee-radiance-postprocess/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-04 18:29:09] INFO root fetch - processPackages [py-memoize]: Remove: archive file [/home/abi/fetcher/tmp/py-memoize-1.2.1.tar.gz]
+[2024-05-04 18:29:09] INFO root fetch - processPackages [py-memoize]: Remove: archive file [/home/abi/fetcher/tmp/py-memoize-1.2.2.tar.gz]
+[2024-05-04 18:29:09] INFO root fetch - main [MainThread]: End processing [py-memoize]: success
+[2024-05-04 18:29:09] INFO root fetch - processPackages [proboscis-async-events]: Remove: archive file [/home/abi/fetcher/tmp/proboscis_async_events-0.1.2.tar.gz]
+[2024-05-04 18:29:09] INFO root fetch - processPackages [proboscis-async-events]: Remove: archive file [/home/abi/fetcher/tmp/proboscis_async_events-0.1.3.tar.gz]
+[2024-05-04 18:29:09] INFO root fetch - main [MainThread]: End processing [proboscis-async-events]: success
+[2024-05-04 18:29:09] INFO root fetch - processPackages [sr.comp.scorer]: Remove: archive file [/home/abi/fetcher/tmp/sr_comp_scorer-1.3.0.tar.gz]
+[2024-05-04 18:29:09] INFO root fetch - processPackages [sr.comp.scorer]: Remove: archive file [/home/abi/fetcher/tmp/sr_comp_scorer-1.4.0.tar.gz]
+[2024-05-04 18:29:09] INFO root fetch - main [MainThread]: End processing [sr.comp.scorer]: success
+[2024-05-04 18:29:09] INFO root fetch - processPackages [beet]: Remove: archive file [/home/abi/fetcher/tmp/beet-0.99.2.tar.gz]
+[2024-05-04 18:29:09] INFO root fetch - processPackages [beet]: Remove: archive file [/home/abi/fetcher/tmp/beet-0.99.3.tar.gz]
+[2024-05-04 18:29:09] INFO root fetch - main [MainThread]: End processing [beet]: success
+[2024-05-04 18:29:09] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-postprocess-0.4.98.tar.gz]
+[2024-05-04 18:29:09] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-postprocess-0.4.99.tar.gz]
+[2024-05-04 18:29:09] INFO root fetch - main [MainThread]: End processing [honeybee-radiance-postprocess]: success
+[2024-05-04 18:29:09] INFO root fetch - main [MainThread]: Store serial: [23059280]
