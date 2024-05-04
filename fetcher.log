@@ -13870,3 +13870,24 @@
 [2024-05-04 14:03:22] WARNING root fetch - processPackages [NODE-deconvolution-scipy]: Skipping, unable to determine old version
 [2024-05-04 14:03:22] INFO root fetch - main [MainThread]: End processing [NODE-deconvolution-scipy] error
 [2024-05-04 14:03:22] INFO root fetch - main [MainThread]: Store serial: [23057822]
+[2024-05-04 14:05:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057822]
+[2024-05-04 14:05:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 14:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: taskwarrior_flow
+[2024-05-04 14:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: esentity
+[2024-05-04 14:05:31] INFO root fetch - processPackages [taskwarrior_flow]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 14:05:31] INFO root fetch - processPackages [taskwarrior_flow]: Downloading https://files.pythonhosted.org/packages/d9/a7/0b4560e9cef32c14a5bf18472bdb48390c848460f33d1ba512f9ec006af2/taskwarrior_flow-0.1.0.tar.gz
+[2024-05-04 14:05:31] INFO root fetch - processPackages [esentity]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-05-04 14:05:31] INFO root fetch - processPackages [taskwarrior_flow]: Downloading https://files.pythonhosted.org/packages/8c/69/0f7e10b6925da231df9d88fbf0c1bf0acf1675a0734c76cfdb1f55440611/taskwarrior_flow-0.1.1.tar.gz
+[2024-05-04 14:05:31] INFO root fetch - processPackages [esentity]: Downloading https://files.pythonhosted.org/packages/1e/9f/e0a6280d40e9cb6e3dfaa2e923b81a0d650931aa948d73ca9a8a3fbf219d/esentity-0.2.98.tar.gz
+[2024-05-04 14:05:31] INFO root fetch - processPackages [taskwarrior_flow]: executing diffoscope
+[2024-05-04 14:05:31] INFO root fetch - processPackages [taskwarrior_flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskwarrior_flow-0.1.0.tar.gz tmp/taskwarrior_flow-0.1.1.tar.gz --markdown 20240504/t/taskwarrior_flow/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 14:05:31] INFO root fetch - processPackages [esentity]: Downloading https://files.pythonhosted.org/packages/c8/5b/c12322aa6c71e3e0da12b137cf7fef6f67acbd686b0adeaffba5426fd63b/esentity-0.2.99.tar.gz
+[2024-05-04 14:05:32] INFO root fetch - processPackages [esentity]: executing diffoscope
+[2024-05-04 14:05:32] INFO root fetch - processPackages [esentity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esentity-0.2.98.tar.gz tmp/esentity-0.2.99.tar.gz --markdown 20240504/e/esentity/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-05-04 14:05:32] INFO root fetch - processPackages [taskwarrior_flow]: Remove: archive file [/home/abi/fetcher/tmp/taskwarrior_flow-0.1.0.tar.gz]
+[2024-05-04 14:05:32] INFO root fetch - processPackages [taskwarrior_flow]: Remove: archive file [/home/abi/fetcher/tmp/taskwarrior_flow-0.1.1.tar.gz]
+[2024-05-04 14:05:32] INFO root fetch - main [MainThread]: End processing [taskwarrior_flow]: success
+[2024-05-04 14:05:32] INFO root fetch - processPackages [esentity]: Remove: archive file [/home/abi/fetcher/tmp/esentity-0.2.98.tar.gz]
+[2024-05-04 14:05:32] INFO root fetch - processPackages [esentity]: Remove: archive file [/home/abi/fetcher/tmp/esentity-0.2.99.tar.gz]
+[2024-05-04 14:05:32] INFO root fetch - main [MainThread]: End processing [esentity]: success
+[2024-05-04 14:05:32] INFO root fetch - main [MainThread]: Store serial: [23057830]
