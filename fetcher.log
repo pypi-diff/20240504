@@ -13017,3 +13017,51 @@
 [2024-05-04 12:38:48] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240503.tar.gz]
 [2024-05-04 12:38:48] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
 [2024-05-04 12:38:48] INFO root fetch - main [MainThread]: Store serial: [23057513]
+[2024-05-04 12:40:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057513]
+[2024-05-04 12:40:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 12:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymemgpt-nightly
+[2024-05-04 12:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyprland
+[2024-05-04 12:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stac-fastapi.opensearch
+[2024-05-04 12:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: etm-dgraham
+[2024-05-04 12:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yeref
+[2024-05-04 12:40:57] INFO root fetch - processPackages [stac-fastapi.opensearch]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-04 12:40:57] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-04 12:40:57] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-05-04 12:40:57] INFO root fetch - processPackages [etm-dgraham]: New version: [6.1.9] Old Version: [6.1.8]
+[2024-05-04 12:40:57] INFO root fetch - processPackages [stac-fastapi.opensearch]: Downloading https://files.pythonhosted.org/packages/92/c8/316bd41d4d61d1bf60dccd1b0bcfd1fbd296641e4ab119328d61496d4dee/stac_fastapi_opensearch-2.3.0.tar.gz
+[2024-05-04 12:40:57] INFO root fetch - processPackages [pyprland]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-05-04 12:40:57] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-04 12:40:57] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-05-04 12:40:57] INFO root fetch - processPackages [etm-dgraham]: Downloading https://files.pythonhosted.org/packages/ec/17/0e748df245b314530d0c4a448f7637d8f01b8bfcaf3445681e43dc256c8b/etm-dgraham-6.1.8.tar.gz
+[2024-05-04 12:40:57] INFO root fetch - processPackages [stac-fastapi.opensearch]: Downloading https://files.pythonhosted.org/packages/42/76/9eca41ec212f3bb3046c6effca4e2007282a020e543344666f942b043416/stac_fastapi_opensearch-2.3.1.tar.gz
+[2024-05-04 12:40:57] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/50/9c/37941f87694596c8b3fb82481dbf8e340bfbd2ff72524d70105ecc40a267/pyprland-2.2.8.tar.gz
+[2024-05-04 12:40:57] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-04 12:40:57] INFO root fetch - processPackages [stac-fastapi.opensearch]: executing diffoscope
+[2024-05-04 12:40:57] INFO root fetch - processPackages [stac-fastapi.opensearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stac_fastapi_opensearch-2.3.0.tar.gz tmp/stac_fastapi_opensearch-2.3.1.tar.gz --markdown 20240504/s/stac-fastapi.opensearch/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-04 12:40:57] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-05-04 12:40:57] INFO root fetch - processPackages [etm-dgraham]: Downloading https://files.pythonhosted.org/packages/c0/35/35ec59f655a6c82f49b3aa4340c5444b7f5eeae9e8087a0313988a8a89ae/etm-dgraham-6.1.9.tar.gz
+[2024-05-04 12:40:58] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-04 12:40:58] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240504/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-04 12:40:58] INFO root fetch - processPackages [etm-dgraham]: executing diffoscope
+[2024-05-04 12:40:58] INFO root fetch - processPackages [etm-dgraham]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etm-dgraham-6.1.8.tar.gz tmp/etm-dgraham-6.1.9.tar.gz --markdown 20240504/e/etm-dgraham/6.1.8-6.1.9/README.md --exclude *.pyd
+[2024-05-04 12:40:58] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-05-04 12:40:58] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240504/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-05-04 12:40:58] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/95/54/b41c74cea0d530094950d0f33daa1e4b290d0fafa217c2a9c6605192e37e/pyprland-2.2.9.tar.gz
+[2024-05-04 12:40:58] INFO root fetch - processPackages [pyprland]: executing diffoscope
+[2024-05-04 12:40:58] INFO root fetch - processPackages [pyprland]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprland-2.2.8.tar.gz tmp/pyprland-2.2.9.tar.gz --markdown 20240504/p/pyprland/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-05-04 12:40:58] INFO root fetch - processPackages [stac-fastapi.opensearch]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_opensearch-2.3.0.tar.gz]
+[2024-05-04 12:40:58] INFO root fetch - processPackages [stac-fastapi.opensearch]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_opensearch-2.3.1.tar.gz]
+[2024-05-04 12:40:58] INFO root fetch - main [MainThread]: End processing [stac-fastapi.opensearch]: success
+[2024-05-04 12:40:58] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-04 12:40:58] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-04 12:40:58] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-04 12:40:58] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.8.tar.gz]
+[2024-05-04 12:40:58] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.9.tar.gz]
+[2024-05-04 12:40:58] INFO root fetch - main [MainThread]: End processing [pyprland]: success
+[2024-05-04 12:40:59] INFO root fetch - processPackages [etm-dgraham]: Remove: archive file [/home/abi/fetcher/tmp/etm-dgraham-6.1.8.tar.gz]
+[2024-05-04 12:40:59] INFO root fetch - processPackages [etm-dgraham]: Remove: archive file [/home/abi/fetcher/tmp/etm-dgraham-6.1.9.tar.gz]
+[2024-05-04 12:40:59] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
+[2024-05-04 12:40:59] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-05-04 12:40:59] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-05-04 12:40:59] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-05-04 12:40:59] INFO root fetch - main [MainThread]: Store serial: [23057527]
