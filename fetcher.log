@@ -10950,3 +10950,47 @@
 [2024-05-04 09:14:21] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
 [2024-05-04 09:14:21] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2024-05-04 09:14:21] INFO root fetch - main [MainThread]: Store serial: [23056452]
+[2024-05-04 09:16:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056452]
+[2024-05-04 09:16:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 09:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-memoize
+[2024-05-04 09:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jumeaux
+[2024-05-04 09:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: codex-of-the-damned
+[2024-05-04 09:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dcxht
+[2024-05-04 09:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clishelf
+[2024-05-04 09:16:30] INFO root fetch - processPackages [py-memoize]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-04 09:16:30] INFO root fetch - processPackages [py-memoize]: Downloading https://files.pythonhosted.org/packages/de/e2/70ab3dbe3f71cbbf376d10b46145789abcde3a795b343adea3be92ac9332/py-memoize-1.2.0.tar.gz
+[2024-05-04 09:16:30] INFO root fetch - processPackages [dcxht]: New version: [1.2] Old Version: [1.1]
+[2024-05-04 09:16:30] INFO root fetch - processPackages [jumeaux]: New version: [5.0.1] Old Version: [5.0.0]
+[2024-05-04 09:16:30] INFO root fetch - processPackages [clishelf]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-04 09:16:31] INFO root fetch - processPackages [codex-of-the-damned]: New version: [1.9] Old Version: [1.8]
+[2024-05-04 09:16:31] INFO root fetch - processPackages [dcxht]: Downloading https://files.pythonhosted.org/packages/8f/e3/f689f546f202afcde6ea72537d634c1e3f4dfa71b7d3fb181fe9165f0aa4/dcxht-1.1.tar.gz
+[2024-05-04 09:16:31] INFO root fetch - processPackages [jumeaux]: Downloading https://files.pythonhosted.org/packages/bb/f4/fa641815279c9c8f698aeffb847fc8722439825fa4addd0d7f73cddf1f7b/jumeaux-5.0.0-py3-none-any.whl
+[2024-05-04 09:16:31] INFO root fetch - processPackages [clishelf]: Downloading https://files.pythonhosted.org/packages/14/47/d82c338b63ac55ba499f66b26c43c5f74c72ec22b7bfef504c84229fd325/clishelf-0.2.3.tar.gz
+[2024-05-04 09:16:31] INFO root fetch - processPackages [py-memoize]: Downloading https://files.pythonhosted.org/packages/17/96/e76250eac9aed2604080e07548b1e712aed75ae705b793a27aa9967eefff/py-memoize-1.2.1.tar.gz
+[2024-05-04 09:16:31] INFO root fetch - processPackages [codex-of-the-damned]: Downloading https://files.pythonhosted.org/packages/c2/11/df884619fc13a601b050cb3e01ceb86181c35a4ee94f824c8544d07562f3/codex-of-the-damned-1.8.tar.gz
+[2024-05-04 09:16:31] INFO root fetch - processPackages [py-memoize]: executing diffoscope
+[2024-05-04 09:16:31] INFO root fetch - processPackages [py-memoize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-memoize-1.2.0.tar.gz tmp/py-memoize-1.2.1.tar.gz --markdown 20240504/p/py-memoize/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-04 09:16:31] WARNING root fetch - processPackages [codex-of-the-damned]: Skipping package: exceeds size limit 17715792>=10485760
+[2024-05-04 09:16:31] INFO root fetch - main [MainThread]: End processing [codex-of-the-damned] error
+[2024-05-04 09:16:31] INFO root fetch - processPackages [dcxht]: Downloading https://files.pythonhosted.org/packages/9c/28/0bf7784fffd92ada4ce4a6172479f7ffa7d425701a71d127830ded06d225/dcxht-1.2.tar.gz
+[2024-05-04 09:16:31] INFO root fetch - processPackages [jumeaux]: Downloading https://files.pythonhosted.org/packages/8e/37/1ee3730dcdc50dc3e284b06452e7f237a78d119452a9fce65e9aa80712f2/jumeaux-5.0.1-py3-none-any.whl
+[2024-05-04 09:16:31] INFO root fetch - processPackages [clishelf]: Downloading https://files.pythonhosted.org/packages/4f/69/29c1ec83bb1824bd197c609d2fede8f0e7c324fadc0626b88bea5c42445a/clishelf-0.2.4.tar.gz
+[2024-05-04 09:16:31] INFO root fetch - processPackages [dcxht]: executing diffoscope
+[2024-05-04 09:16:31] INFO root fetch - processPackages [dcxht]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcxht-1.1.tar.gz tmp/dcxht-1.2.tar.gz --markdown 20240504/d/dcxht/1.1-1.2/README.md --exclude *.pyd
+[2024-05-04 09:16:31] INFO root fetch - processPackages [jumeaux]: executing diffoscope
+[2024-05-04 09:16:31] INFO root fetch - processPackages [clishelf]: executing diffoscope
+[2024-05-04 09:16:31] INFO root fetch - processPackages [clishelf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clishelf-0.2.3.tar.gz tmp/clishelf-0.2.4.tar.gz --markdown 20240504/c/clishelf/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-04 09:16:31] INFO root fetch - processPackages [jumeaux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jumeaux-5.0.0-py3-none-any.whl.zip tmp/jumeaux-5.0.1-py3-none-any.whl.zip --markdown 20240504/j/jumeaux/5.0.0-5.0.1/README.md --exclude *.pyd
+[2024-05-04 09:16:31] INFO root fetch - processPackages [py-memoize]: Remove: archive file [/home/abi/fetcher/tmp/py-memoize-1.2.0.tar.gz]
+[2024-05-04 09:16:31] INFO root fetch - processPackages [py-memoize]: Remove: archive file [/home/abi/fetcher/tmp/py-memoize-1.2.1.tar.gz]
+[2024-05-04 09:16:31] INFO root fetch - main [MainThread]: End processing [py-memoize]: success
+[2024-05-04 09:16:32] INFO root fetch - processPackages [dcxht]: Remove: archive file [/home/abi/fetcher/tmp/dcxht-1.1.tar.gz]
+[2024-05-04 09:16:32] INFO root fetch - processPackages [dcxht]: Remove: archive file [/home/abi/fetcher/tmp/dcxht-1.2.tar.gz]
+[2024-05-04 09:16:32] INFO root fetch - main [MainThread]: End processing [dcxht]: success
+[2024-05-04 09:16:32] INFO root fetch - processPackages [clishelf]: Remove: archive file [/home/abi/fetcher/tmp/clishelf-0.2.3.tar.gz]
+[2024-05-04 09:16:32] INFO root fetch - processPackages [clishelf]: Remove: archive file [/home/abi/fetcher/tmp/clishelf-0.2.4.tar.gz]
+[2024-05-04 09:16:32] INFO root fetch - main [MainThread]: End processing [clishelf]: success
+[2024-05-04 09:16:32] INFO root fetch - processPackages [jumeaux]: Remove: archive file [/home/abi/fetcher/tmp/jumeaux-5.0.0-py3-none-any.whl.zip]
+[2024-05-04 09:16:32] INFO root fetch - processPackages [jumeaux]: Remove: archive file [/home/abi/fetcher/tmp/jumeaux-5.0.1-py3-none-any.whl.zip]
+[2024-05-04 09:16:32] INFO root fetch - main [MainThread]: End processing [jumeaux]: success
+[2024-05-04 09:16:32] INFO root fetch - main [MainThread]: Store serial: [23056480]
