@@ -12604,3 +12604,36 @@
 [2024-05-04 11:59:36] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.9.tar.gz]
 [2024-05-04 11:59:36] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-05-04 11:59:36] INFO root fetch - main [MainThread]: Store serial: [23057353]
+[2024-05-04 12:01:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057353]
+[2024-05-04 12:01:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 12:01:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-ditto
+[2024-05-04 12:01:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LLMEasyTools
+[2024-05-04 12:01:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rag-retrieval
+[2024-05-04 12:01:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mns-scheduler
+[2024-05-04 12:01:46] INFO root fetch - processPackages [rag-retrieval]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-04 12:01:46] WARNING root fetch - processPackages [pytest-ditto]: Skipping, unable to determine old version
+[2024-05-04 12:01:46] INFO root fetch - main [MainThread]: End processing [pytest-ditto] error
+[2024-05-04 12:01:46] INFO root fetch - processPackages [mns-scheduler]: New version: [1.0.3.9] Old Version: [1.0.3.8]
+[2024-05-04 12:01:46] INFO root fetch - processPackages [LLMEasyTools]: New version: [0.9] Old Version: [0.8]
+[2024-05-04 12:01:46] INFO root fetch - processPackages [rag-retrieval]: Downloading https://files.pythonhosted.org/packages/b4/8e/d17160532cb320113ae94d8278b200a483edcb01ac3cbf933786792dfa9e/rag_retrieval-0.1.1.tar.gz
+[2024-05-04 12:01:46] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/6f/26/b94112d7e49d5ff38a61f54badd8ce638db7736dd6f0b343000925901926/mns-scheduler-1.0.3.8.tar.gz
+[2024-05-04 12:01:46] INFO root fetch - processPackages [LLMEasyTools]: Downloading https://files.pythonhosted.org/packages/82/92/3b67230d7ddb3b80cc3c61e5bd7678372c21db75cd4249fc296e1e48663c/LLMEasyTools-0.8.tar.gz
+[2024-05-04 12:01:46] INFO root fetch - processPackages [LLMEasyTools]: Downloading https://files.pythonhosted.org/packages/72/a3/c49ac0fb7ddf156d6a831d2b908fcf1ca4c36f2081aec1178176f19d3958/LLMEasyTools-0.9.tar.gz
+[2024-05-04 12:01:46] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/a0/3a/5303a06a397d8e9399bc8b6d4ab6b7fc99407f861eeca23056c29df9e2d1/mns-scheduler-1.0.3.9.tar.gz
+[2024-05-04 12:01:46] INFO root fetch - processPackages [rag-retrieval]: Downloading https://files.pythonhosted.org/packages/a1/88/9e3556711d41fa8f95dafa38ebc41327154cc7d8b5eaf14e079d718d9574/rag_retrieval-0.2.0.tar.gz
+[2024-05-04 12:01:46] INFO root fetch - processPackages [LLMEasyTools]: executing diffoscope
+[2024-05-04 12:01:46] INFO root fetch - processPackages [LLMEasyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LLMEasyTools-0.8.tar.gz tmp/LLMEasyTools-0.9.tar.gz --markdown 20240504/L/LLMEasyTools/0.8-0.9/README.md --exclude *.pyd
+[2024-05-04 12:01:46] INFO root fetch - processPackages [mns-scheduler]: executing diffoscope
+[2024-05-04 12:01:46] INFO root fetch - processPackages [mns-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns-scheduler-1.0.3.8.tar.gz tmp/mns-scheduler-1.0.3.9.tar.gz --markdown 20240504/m/mns-scheduler/1.0.3.8-1.0.3.9/README.md --exclude *.pyd
+[2024-05-04 12:01:46] INFO root fetch - processPackages [rag-retrieval]: executing diffoscope
+[2024-05-04 12:01:46] INFO root fetch - processPackages [rag-retrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_retrieval-0.1.1.tar.gz tmp/rag_retrieval-0.2.0.tar.gz --markdown 20240504/r/rag-retrieval/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-04 12:01:47] INFO root fetch - processPackages [LLMEasyTools]: Remove: archive file [/home/abi/fetcher/tmp/LLMEasyTools-0.8.tar.gz]
+[2024-05-04 12:01:47] INFO root fetch - processPackages [LLMEasyTools]: Remove: archive file [/home/abi/fetcher/tmp/LLMEasyTools-0.9.tar.gz]
+[2024-05-04 12:01:47] INFO root fetch - main [MainThread]: End processing [LLMEasyTools]: success
+[2024-05-04 12:01:47] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.3.8.tar.gz]
+[2024-05-04 12:01:47] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.3.9.tar.gz]
+[2024-05-04 12:01:47] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
+[2024-05-04 12:01:47] INFO root fetch - processPackages [rag-retrieval]: Remove: archive file [/home/abi/fetcher/tmp/rag_retrieval-0.1.1.tar.gz]
+[2024-05-04 12:01:47] INFO root fetch - processPackages [rag-retrieval]: Remove: archive file [/home/abi/fetcher/tmp/rag_retrieval-0.2.0.tar.gz]
+[2024-05-04 12:01:47] INFO root fetch - main [MainThread]: End processing [rag-retrieval]: success
+[2024-05-04 12:01:47] INFO root fetch - main [MainThread]: Store serial: [23057365]
