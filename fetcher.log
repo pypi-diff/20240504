@@ -12978,3 +12978,42 @@
 [2024-05-04 12:36:37] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.1.0.tar.gz]
 [2024-05-04 12:36:37] INFO root fetch - main [MainThread]: End processing [audiolm-superfeel]: success
 [2024-05-04 12:36:37] INFO root fetch - main [MainThread]: Store serial: [23057503]
+[2024-05-04 12:38:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057503]
+[2024-05-04 12:38:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 12:38:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pgsqlx
+[2024-05-04 12:38:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pywigxjpf
+[2024-05-04 12:38:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skypilot-nightly
+[2024-05-04 12:38:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stac-fastapi.elasticsearch
+[2024-05-04 12:38:46] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-04 12:38:46] INFO root fetch - processPackages [pywigxjpf]: New version: [1.13] Old Version: [1.12]
+[2024-05-04 12:38:46] INFO root fetch - processPackages [skypilot-nightly]: New version: [1.0.0.dev20240503] Old Version: [1.0.0.dev20240502]
+[2024-05-04 12:38:46] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Downloading https://files.pythonhosted.org/packages/c2/8a/23e5d7896da022665ef75537786a948785dabc30667e4cdcc3d8df18dd05/stac_fastapi_elasticsearch-2.3.0.tar.gz
+[2024-05-04 12:38:46] INFO root fetch - processPackages [pgsqlx]: New version: [2.2.0] Old Version: [2.1.4]
+[2024-05-04 12:38:46] INFO root fetch - processPackages [pywigxjpf]: Downloading https://files.pythonhosted.org/packages/eb/80/17525598472ff3ae8be9a0037c96d5390014d0c9c96477c7eb80802b1a88/pywigxjpf-1.12.tar.gz
+[2024-05-04 12:38:46] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/73/0c/03b2fdf6a05f5ba2e9c0c7b54fbd1bd9991f8dce3f79fd27ff026e4e6a4e/skypilot_nightly-1.0.0.dev20240502.tar.gz
+[2024-05-04 12:38:46] INFO root fetch - processPackages [pgsqlx]: Downloading https://files.pythonhosted.org/packages/77/be/22bf5b46966d74340fe4dcd17f05ffa85499559fa90999f3ebd61911e888/pgsqlx-2.1.4.tar.gz
+[2024-05-04 12:38:46] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Downloading https://files.pythonhosted.org/packages/f5/89/75b8c8ad4a1297ba9dc57f1a8559674dde4e37457601146fb839c79df505/stac_fastapi_elasticsearch-2.3.1.tar.gz
+[2024-05-04 12:38:46] INFO root fetch - processPackages [pywigxjpf]: Downloading https://files.pythonhosted.org/packages/78/df/133155d21627da829e240d0ef0ae2b68f8b4f455c4ece48864d9f27ac741/pywigxjpf-1.13.tar.gz
+[2024-05-04 12:38:46] INFO root fetch - processPackages [pywigxjpf]: executing diffoscope
+[2024-05-04 12:38:46] INFO root fetch - processPackages [pywigxjpf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywigxjpf-1.12.tar.gz tmp/pywigxjpf-1.13.tar.gz --markdown 20240504/p/pywigxjpf/1.12-1.13/README.md --exclude *.pyd
+[2024-05-04 12:38:46] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: executing diffoscope
+[2024-05-04 12:38:46] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stac_fastapi_elasticsearch-2.3.0.tar.gz tmp/stac_fastapi_elasticsearch-2.3.1.tar.gz --markdown 20240504/s/stac-fastapi.elasticsearch/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-04 12:38:46] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/c9/a9/2c851025335b9c38b37b6b7cb3d9ca50aa0efb325e5441bbb257f52655a3/skypilot_nightly-1.0.0.dev20240503.tar.gz
+[2024-05-04 12:38:47] INFO root fetch - processPackages [pgsqlx]: Downloading https://files.pythonhosted.org/packages/8b/22/4868a6c5a593db542493c7cbf907437b36a097b0cbd9d038dca84b0dfa52/pgsqlx-2.2.0.tar.gz
+[2024-05-04 12:38:47] INFO root fetch - processPackages [skypilot-nightly]: executing diffoscope
+[2024-05-04 12:38:47] INFO root fetch - processPackages [skypilot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skypilot_nightly-1.0.0.dev20240502.tar.gz tmp/skypilot_nightly-1.0.0.dev20240503.tar.gz --markdown 20240504/s/skypilot-nightly/1.0.0.dev20240502-1.0.0.dev20240503/README.md --exclude *.pyd
+[2024-05-04 12:38:47] INFO root fetch - processPackages [pgsqlx]: executing diffoscope
+[2024-05-04 12:38:47] INFO root fetch - processPackages [pgsqlx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgsqlx-2.1.4.tar.gz tmp/pgsqlx-2.2.0.tar.gz --markdown 20240504/p/pgsqlx/2.1.4-2.2.0/README.md --exclude *.pyd
+[2024-05-04 12:38:47] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_elasticsearch-2.3.0.tar.gz]
+[2024-05-04 12:38:47] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_elasticsearch-2.3.1.tar.gz]
+[2024-05-04 12:38:47] INFO root fetch - main [MainThread]: End processing [stac-fastapi.elasticsearch]: success
+[2024-05-04 12:38:47] INFO root fetch - processPackages [pywigxjpf]: Remove: archive file [/home/abi/fetcher/tmp/pywigxjpf-1.12.tar.gz]
+[2024-05-04 12:38:47] INFO root fetch - processPackages [pywigxjpf]: Remove: archive file [/home/abi/fetcher/tmp/pywigxjpf-1.13.tar.gz]
+[2024-05-04 12:38:47] INFO root fetch - main [MainThread]: End processing [pywigxjpf]: success
+[2024-05-04 12:38:47] INFO root fetch - processPackages [pgsqlx]: Remove: archive file [/home/abi/fetcher/tmp/pgsqlx-2.1.4.tar.gz]
+[2024-05-04 12:38:47] INFO root fetch - processPackages [pgsqlx]: Remove: archive file [/home/abi/fetcher/tmp/pgsqlx-2.2.0.tar.gz]
+[2024-05-04 12:38:47] INFO root fetch - main [MainThread]: End processing [pgsqlx]: success
+[2024-05-04 12:38:48] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240502.tar.gz]
+[2024-05-04 12:38:48] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240503.tar.gz]
+[2024-05-04 12:38:48] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
+[2024-05-04 12:38:48] INFO root fetch - main [MainThread]: Store serial: [23057513]
