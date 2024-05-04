@@ -12688,3 +12688,24 @@
 [2024-05-04 12:12:37] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024050309.tar.gz]
 [2024-05-04 12:12:37] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-05-04 12:12:37] INFO root fetch - main [MainThread]: Store serial: [23057388]
+[2024-05-04 12:14:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057388]
+[2024-05-04 12:14:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 12:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IoTNetworkMalwareClassifier
+[2024-05-04 12:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytom3d
+[2024-05-04 12:14:46] INFO root fetch - processPackages [IoTNetworkMalwareClassifier]: New version: [0.0.16] Old Version: [0.0.15]
+[2024-05-04 12:14:46] INFO root fetch - processPackages [IoTNetworkMalwareClassifier]: Downloading https://files.pythonhosted.org/packages/62/68/86a3bd68ac42e0927f83ee1ffe0c8e81fdbb9c39835c873014e0303348a8/iotnetworkmalwareclassifier-0.0.15.tar.gz
+[2024-05-04 12:14:46] INFO root fetch - processPackages [pytom3d]: New version: [0.0.0rc4] Old Version: [0.0.0rc3]
+[2024-05-04 12:14:46] INFO root fetch - processPackages [pytom3d]: Downloading https://files.pythonhosted.org/packages/5b/13/79ce5a06c9ca1682b82e076f31aae1398accc2df68066f533d8b4f3cb798/pytom3d-0.0.0rc3.tar.gz
+[2024-05-04 12:14:46] INFO root fetch - processPackages [IoTNetworkMalwareClassifier]: Downloading https://files.pythonhosted.org/packages/96/50/5f51a38099327672e98abe2baea4da37cc6663404a85eeb5fb3bca0658e3/iotnetworkmalwareclassifier-0.0.16.tar.gz
+[2024-05-04 12:14:46] INFO root fetch - processPackages [pytom3d]: Downloading https://files.pythonhosted.org/packages/9c/ec/d06eda959e5e2e17441823bf192a48b5e73a8a3c25f005889c39ccc3dde6/pytom3d-0.0.0rc4.tar.gz
+[2024-05-04 12:14:46] INFO root fetch - processPackages [IoTNetworkMalwareClassifier]: executing diffoscope
+[2024-05-04 12:14:46] INFO root fetch - processPackages [IoTNetworkMalwareClassifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iotnetworkmalwareclassifier-0.0.15.tar.gz tmp/iotnetworkmalwareclassifier-0.0.16.tar.gz --markdown 20240504/I/IoTNetworkMalwareClassifier/0.0.15-0.0.16/README.md --exclude *.pyd
+[2024-05-04 12:14:46] INFO root fetch - processPackages [pytom3d]: executing diffoscope
+[2024-05-04 12:14:46] INFO root fetch - processPackages [pytom3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytom3d-0.0.0rc3.tar.gz tmp/pytom3d-0.0.0rc4.tar.gz --markdown 20240504/p/pytom3d/0.0.0rc3-0.0.0rc4/README.md --exclude *.pyd
+[2024-05-04 12:14:47] INFO root fetch - processPackages [pytom3d]: Remove: archive file [/home/abi/fetcher/tmp/pytom3d-0.0.0rc3.tar.gz]
+[2024-05-04 12:14:47] INFO root fetch - processPackages [pytom3d]: Remove: archive file [/home/abi/fetcher/tmp/pytom3d-0.0.0rc4.tar.gz]
+[2024-05-04 12:14:47] INFO root fetch - main [MainThread]: End processing [pytom3d]: success
+[2024-05-04 12:14:47] INFO root fetch - processPackages [IoTNetworkMalwareClassifier]: Remove: archive file [/home/abi/fetcher/tmp/iotnetworkmalwareclassifier-0.0.15.tar.gz]
+[2024-05-04 12:14:47] INFO root fetch - processPackages [IoTNetworkMalwareClassifier]: Remove: archive file [/home/abi/fetcher/tmp/iotnetworkmalwareclassifier-0.0.16.tar.gz]
+[2024-05-04 12:14:47] INFO root fetch - main [MainThread]: End processing [IoTNetworkMalwareClassifier]: success
+[2024-05-04 12:14:47] INFO root fetch - main [MainThread]: Store serial: [23057394]
