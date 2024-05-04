@@ -11917,3 +11917,69 @@
 [2024-05-04 10:52:10] INFO root fetch - processPackages [kitab]: Remove: archive file [/home/abi/fetcher/tmp/kitab-0.0.24.tar.gz]
 [2024-05-04 10:52:10] INFO root fetch - main [MainThread]: End processing [kitab]: success
 [2024-05-04 10:52:10] INFO root fetch - main [MainThread]: Store serial: [23056950]
+[2024-05-04 10:54:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056950]
+[2024-05-04 10:54:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 10:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: otfftw
+[2024-05-04 10:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: otmixmod
+[2024-05-04 10:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: otmorris
+[2024-05-04 10:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otrobopt
+[2024-05-04 10:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: otsvm
+[2024-05-04 10:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openagents-grpc-proto
+[2024-05-04 10:54:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wnb
+[2024-05-04 10:54:19] INFO root fetch - processPackages [openagents-grpc-proto]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-04 10:54:19] INFO root fetch - processPackages [openagents-grpc-proto]: Downloading https://files.pythonhosted.org/packages/df/cf/b1b79e364c4d04dd600c8b61731aa7b4d0b9689f82045e4c43fb99e4dd86/openagents_grpc_proto-0.7.8.tar.gz
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otrobopt]: New version: [0.9.post1] Old Version: [0.9.3]
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otmorris]: New version: [0.16] Old Version: [0.15.post1]
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otmixmod]: New version: [0.17] Old Version: [0.16.post1]
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otfftw]: New version: [0.15] Old Version: [0.14.post1]
+[2024-05-04 10:54:19] INFO root fetch - processPackages [wnb]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otsvm]: New version: [0.14] Old Version: [0.13.post1]
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otrobopt]: Downloading https://files.pythonhosted.org/packages/33/89/7c08d65a845bd7369559024ead8b1b54bf3bf26f76952b4982f48a5ec41e/otrobopt-0.9.3-cp39-cp39-manylinux1_x86_64.whl
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otmorris]: Downloading https://files.pythonhosted.org/packages/d5/84/4706a1907d9147a32d3da51c5237f768c69b0a4d7cc51d8f92a967d604d0/otmorris-0.15.post1-cp39-cp39-win_amd64.whl
+[2024-05-04 10:54:19] INFO root fetch - processPackages [wnb]: Downloading https://files.pythonhosted.org/packages/e3/35/d511170183b658019bd0b988b144c8e0a10803b0f2f655761d96fcd2eafa/wnb-0.2.1.tar.gz
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otsvm]: Downloading https://files.pythonhosted.org/packages/99/9b/50c77637d548c06a28a163fb0b5fb7778171a39e479ca236ba9e24a43b16/otsvm-0.13.post1-cp39-cp39-win_amd64.whl
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otfftw]: Downloading https://files.pythonhosted.org/packages/36/46/b9df0cd058aa0fa8697bdb240eec5f8e153026fbb58acb6a34a2f5970b14/otfftw-0.14.post1-cp39-cp39-win_amd64.whl
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otmixmod]: Downloading https://files.pythonhosted.org/packages/ba/be/3f7257f43c17db242150eec11aa2d78737d6be5edb8341bc9c065d9b28be/otmixmod-0.16.post1-cp39-cp39-win_amd64.whl
+[2024-05-04 10:54:19] INFO root fetch - processPackages [openagents-grpc-proto]: Downloading https://files.pythonhosted.org/packages/c8/07/57c53e60ea04fd797642bb8f833c304f525c8d347f0f28d9618d50e01895/openagents_grpc_proto-0.7.9.tar.gz
+[2024-05-04 10:54:19] INFO root fetch - processPackages [openagents-grpc-proto]: executing diffoscope
+[2024-05-04 10:54:19] INFO root fetch - processPackages [openagents-grpc-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openagents_grpc_proto-0.7.8.tar.gz tmp/openagents_grpc_proto-0.7.9.tar.gz --markdown 20240504/o/openagents-grpc-proto/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-04 10:54:19] INFO root fetch - processPackages [wnb]: Downloading https://files.pythonhosted.org/packages/f6/8b/ff280cab85a362ffb1d98a76933fe871f78ac10fdd64ac4544747fd8c6cc/wnb-0.2.2.tar.gz
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otsvm]: Downloading https://files.pythonhosted.org/packages/31/e4/7743e68b3348f2eb2e18f0e1342183bfd309c972fce5f428cd194a9feb04/otsvm-0.14-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otmixmod]: Downloading https://files.pythonhosted.org/packages/0e/69/7acccbe22bdf5c7fb180f9eedb65c96b0d2a84f7954d3bacd6c905d9f05c/otmixmod-0.17-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otmorris]: Downloading https://files.pythonhosted.org/packages/ee/3d/51d687ff10d3d6827f07b18c5bf8693d0999710e72a7c56b39fc6bd7a226/otmorris-0.16-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-04 10:54:19] INFO root fetch - processPackages [otrobopt]: Downloading https://files.pythonhosted.org/packages/ce/8f/6972439419ca87dcfd71175aeee2a7bc190b06326033b93eee09c419fec3/otrobopt-0.9.post1-cp39-cp39-manylinux1_x86_64.whl
+[2024-05-04 10:54:20] INFO root fetch - processPackages [wnb]: executing diffoscope
+[2024-05-04 10:54:20] INFO root fetch - processPackages [wnb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wnb-0.2.1.tar.gz tmp/wnb-0.2.2.tar.gz --markdown 20240504/w/wnb/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otsvm]: executing diffoscope
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otsvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otsvm-0.13.post1-cp39-cp39-win_amd64.whl.zip tmp/otsvm-0.14-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240504/o/otsvm/0.13.post1-0.14/README.md --exclude *.pyd
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otmixmod]: executing diffoscope
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otmixmod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otmixmod-0.16.post1-cp39-cp39-win_amd64.whl.zip tmp/otmixmod-0.17-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240504/o/otmixmod/0.16.post1-0.17/README.md --exclude *.pyd
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otrobopt]: executing diffoscope
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otrobopt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otrobopt-0.9.3-cp39-cp39-manylinux1_x86_64.whl.zip tmp/otrobopt-0.9.post1-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20240504/o/otrobopt/0.9.3-0.9.post1/README.md --exclude *.pyd
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otmorris]: executing diffoscope
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otmorris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otmorris-0.15.post1-cp39-cp39-win_amd64.whl.zip tmp/otmorris-0.16-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240504/o/otmorris/0.15.post1-0.16/README.md --exclude *.pyd
+[2024-05-04 10:54:20] INFO root fetch - processPackages [openagents-grpc-proto]: Remove: archive file [/home/abi/fetcher/tmp/openagents_grpc_proto-0.7.8.tar.gz]
+[2024-05-04 10:54:20] INFO root fetch - processPackages [openagents-grpc-proto]: Remove: archive file [/home/abi/fetcher/tmp/openagents_grpc_proto-0.7.9.tar.gz]
+[2024-05-04 10:54:20] INFO root fetch - main [MainThread]: End processing [openagents-grpc-proto]: success
+[2024-05-04 10:54:20] INFO root fetch - processPackages [wnb]: Remove: archive file [/home/abi/fetcher/tmp/wnb-0.2.1.tar.gz]
+[2024-05-04 10:54:20] INFO root fetch - processPackages [wnb]: Remove: archive file [/home/abi/fetcher/tmp/wnb-0.2.2.tar.gz]
+[2024-05-04 10:54:20] INFO root fetch - main [MainThread]: End processing [wnb]: success
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otsvm]: Remove: archive file [/home/abi/fetcher/tmp/otsvm-0.13.post1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otsvm]: Remove: archive file [/home/abi/fetcher/tmp/otsvm-0.14-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-04 10:54:20] INFO root fetch - main [MainThread]: End processing [otsvm]: success
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otmixmod]: Remove: archive file [/home/abi/fetcher/tmp/otmixmod-0.16.post1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otmixmod]: Remove: archive file [/home/abi/fetcher/tmp/otmixmod-0.17-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-04 10:54:20] INFO root fetch - main [MainThread]: End processing [otmixmod]: success
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otmorris]: Remove: archive file [/home/abi/fetcher/tmp/otmorris-0.15.post1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 10:54:20] INFO root fetch - processPackages [otmorris]: Remove: archive file [/home/abi/fetcher/tmp/otmorris-0.16-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-04 10:54:20] INFO root fetch - main [MainThread]: End processing [otmorris]: success
+[2024-05-04 10:54:21] INFO root fetch - processPackages [otfftw]: Downloading https://files.pythonhosted.org/packages/f6/2c/8035d7507d1a00dc71c24179a225bbd0523c370b878f8f60c7e7d49b125f/otfftw-0.15-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-04 10:54:21] INFO root fetch - processPackages [otfftw]: executing diffoscope
+[2024-05-04 10:54:21] INFO root fetch - processPackages [otfftw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otfftw-0.14.post1-cp39-cp39-win_amd64.whl.zip tmp/otfftw-0.15-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240504/o/otfftw/0.14.post1-0.15/README.md --exclude *.pyd
+[2024-05-04 10:54:23] INFO root fetch - processPackages [otfftw]: Remove: archive file [/home/abi/fetcher/tmp/otfftw-0.14.post1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 10:54:23] INFO root fetch - processPackages [otfftw]: Remove: archive file [/home/abi/fetcher/tmp/otfftw-0.15-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-04 10:54:23] INFO root fetch - main [MainThread]: End processing [otfftw]: success
+[2024-05-04 10:54:27] INFO root fetch - processPackages [otrobopt]: Remove: archive file [/home/abi/fetcher/tmp/otrobopt-0.9.3-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-05-04 10:54:27] INFO root fetch - processPackages [otrobopt]: Remove: archive file [/home/abi/fetcher/tmp/otrobopt-0.9.post1-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-05-04 10:54:27] INFO root fetch - main [MainThread]: End processing [otrobopt]: success
+[2024-05-04 10:54:27] INFO root fetch - main [MainThread]: Store serial: [23056994]
