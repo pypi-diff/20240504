@@ -16326,3 +16326,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:38:21] INFO root fetch - processPackages [safe-ds-stubgen]: Remove: archive file [/home/abi/fetcher/tmp/safe_ds_stubgen-0.3.0.tar.gz]
 [2024-05-04 17:38:21] INFO root fetch - main [MainThread]: End processing [safe-ds-stubgen]: success
 [2024-05-04 17:38:21] INFO root fetch - main [MainThread]: Store serial: [23058979]
+[2024-05-04 17:40:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058979]
+[2024-05-04 17:40:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 17:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: queue-pipelines
+[2024-05-04 17:40:30] INFO root fetch - processPackages [queue-pipelines]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 17:40:30] INFO root fetch - processPackages [queue-pipelines]: Downloading https://files.pythonhosted.org/packages/55/c5/d7bb7e2175f04bc36ed9d28327fea249bf45f7989d39dc4c82613a5bc641/queue_pipelines-0.1.0.tar.gz
+[2024-05-04 17:40:30] INFO root fetch - processPackages [queue-pipelines]: Downloading https://files.pythonhosted.org/packages/22/90/0992ebd5a5add8b5eaf0409707bb487fc3a4624bf7aa8ed5fb480e46aa16/queue_pipelines-0.1.1.tar.gz
+[2024-05-04 17:40:30] INFO root fetch - processPackages [queue-pipelines]: executing diffoscope
+[2024-05-04 17:40:30] INFO root fetch - processPackages [queue-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queue_pipelines-0.1.0.tar.gz tmp/queue_pipelines-0.1.1.tar.gz --markdown 20240504/q/queue-pipelines/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 17:40:31] INFO root fetch - processPackages [queue-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/queue_pipelines-0.1.0.tar.gz]
+[2024-05-04 17:40:31] INFO root fetch - processPackages [queue-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/queue_pipelines-0.1.1.tar.gz]
+[2024-05-04 17:40:31] INFO root fetch - main [MainThread]: End processing [queue-pipelines]: success
+[2024-05-04 17:40:31] INFO root fetch - main [MainThread]: Store serial: [23058979]
