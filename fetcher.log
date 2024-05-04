@@ -14546,3 +14546,108 @@
 [2024-05-04 15:17:36] INFO root fetch - processPackages [soundstorm-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/soundstorm_pytorch-0.4.3.tar.gz]
 [2024-05-04 15:17:36] INFO root fetch - main [MainThread]: End processing [soundstorm-pytorch]: success
 [2024-05-04 15:17:36] INFO root fetch - main [MainThread]: Store serial: [23058117]
+[2024-05-04 15:19:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058117]
+[2024-05-04 15:19:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 15:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: siat
+[2024-05-04 15:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SAMBA-ilum
+[2024-05-04 15:19:44] INFO root fetch - processPackages [SAMBA-ilum]: New version: [1.0.0.8] Old Version: [1.0.0.7]
+[2024-05-04 15:19:44] INFO root fetch - processPackages [SAMBA-ilum]: Downloading https://files.pythonhosted.org/packages/1d/4a/4931c6ea59fa0600e1909bfe1d0312f9ad81192361561a66800834867718/SAMBA_ilum-1.0.0.7.tar.gz
+[2024-05-04 15:19:44] INFO root fetch - processPackages [siat]: New version: [3.0.41] Old Version: [3.0.40]
+[2024-05-04 15:19:44] INFO root fetch - processPackages [SAMBA-ilum]: Downloading https://files.pythonhosted.org/packages/4c/27/a93b12e8ca6afb047436a4828a17040ee8ac6e2fc03bb5ae4d42de895cb8/SAMBA_ilum-1.0.0.8.tar.gz
+[2024-05-04 15:19:45] INFO root fetch - processPackages [siat]: Downloading https://files.pythonhosted.org/packages/d1/bb/40c658c64ca0d6ec92e495e8120aae52196fba3db23092e4083e94e8c432/siat-3.0.41-py3-none-any.whl
+[2024-05-04 15:19:45] INFO root fetch - processPackages [SAMBA-ilum]: executing diffoscope
+[2024-05-04 15:19:45] INFO root fetch - processPackages [SAMBA-ilum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SAMBA_ilum-1.0.0.7.tar.gz tmp/SAMBA_ilum-1.0.0.8.tar.gz --markdown 20240504/S/SAMBA-ilum/1.0.0.7-1.0.0.8/README.md --exclude *.pyd
+[2024-05-04 15:19:45] INFO root fetch - processPackages [siat]: executing diffoscope
+[2024-05-04 15:19:45] INFO root fetch - processPackages [siat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siat-3.0.40-py3-none-any.whl.zip tmp/siat-3.0.41-py3-none-any.whl.zip --markdown 20240504/s/siat/3.0.40-3.0.41/README.md --exclude *.pyd
+[2024-05-04 15:19:45] ERROR root fetch - processPackages [siat]: Diffoscope failed: time="2024-05-04T15:19:45+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid continuation byte
+
+[2024-05-04 15:19:45] INFO root fetch - main [MainThread]: End processing [siat] error
+[2024-05-04 15:19:46] INFO root fetch - processPackages [SAMBA-ilum]: Remove: archive file [/home/abi/fetcher/tmp/SAMBA_ilum-1.0.0.7.tar.gz]
+[2024-05-04 15:19:46] INFO root fetch - processPackages [SAMBA-ilum]: Remove: archive file [/home/abi/fetcher/tmp/SAMBA_ilum-1.0.0.8.tar.gz]
+[2024-05-04 15:19:46] INFO root fetch - main [MainThread]: End processing [SAMBA-ilum]: success
+[2024-05-04 15:19:46] INFO root fetch - main [MainThread]: Store serial: [23058123]
