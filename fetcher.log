@@ -13577,3 +13577,18 @@
 [2024-05-04 13:31:05] INFO root fetch - processPackages [wlr-layout-ui]: Remove: archive file [/home/abi/fetcher/tmp/wlr_layout_ui-1.6.8.tar.gz]
 [2024-05-04 13:31:05] INFO root fetch - main [MainThread]: End processing [wlr-layout-ui]: success
 [2024-05-04 13:31:05] INFO root fetch - main [MainThread]: Store serial: [23057718]
+[2024-05-04 13:33:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057718]
+[2024-05-04 13:33:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 13:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xcloudmanager
+[2024-05-04 13:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TH-camera-calibration
+[2024-05-04 13:33:14] WARNING root fetch - processPackages [xcloudmanager]: Skipping, unable to determine old version
+[2024-05-04 13:33:14] INFO root fetch - main [MainThread]: End processing [xcloudmanager] error
+[2024-05-04 13:33:14] INFO root fetch - processPackages [TH-camera-calibration]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-05-04 13:33:14] INFO root fetch - processPackages [TH-camera-calibration]: Downloading https://files.pythonhosted.org/packages/e7/60/47506ece8107e603af5856d8fb2961478c4f925ced0af2e041afccbcf775/TH_camera_calibration-0.4.6.tar.gz
+[2024-05-04 13:33:14] INFO root fetch - processPackages [TH-camera-calibration]: Downloading https://files.pythonhosted.org/packages/fa/a5/70cf0f8f9b6eec0c1c8a82e82ce37a49e6ed6dbc0f41e670e295e89d8aba/TH_camera_calibration-0.4.7.tar.gz
+[2024-05-04 13:33:14] INFO root fetch - processPackages [TH-camera-calibration]: executing diffoscope
+[2024-05-04 13:33:14] INFO root fetch - processPackages [TH-camera-calibration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TH_camera_calibration-0.4.6.tar.gz tmp/TH_camera_calibration-0.4.7.tar.gz --markdown 20240504/T/TH-camera-calibration/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-05-04 13:33:15] INFO root fetch - processPackages [TH-camera-calibration]: Remove: archive file [/home/abi/fetcher/tmp/TH_camera_calibration-0.4.6.tar.gz]
+[2024-05-04 13:33:15] INFO root fetch - processPackages [TH-camera-calibration]: Remove: archive file [/home/abi/fetcher/tmp/TH_camera_calibration-0.4.7.tar.gz]
+[2024-05-04 13:33:15] INFO root fetch - main [MainThread]: End processing [TH-camera-calibration]: success
+[2024-05-04 13:33:15] INFO root fetch - main [MainThread]: Store serial: [23057725]
