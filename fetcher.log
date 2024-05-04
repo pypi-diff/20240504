@@ -12826,3 +12826,39 @@
 [2024-05-04 12:23:28] INFO root fetch - processPackages [python-tgpt]: Remove: archive file [/home/abi/fetcher/tmp/python_tgpt-0.7.1.tar.gz]
 [2024-05-04 12:23:28] INFO root fetch - main [MainThread]: End processing [python-tgpt]: success
 [2024-05-04 12:23:28] INFO root fetch - main [MainThread]: Store serial: [23057439]
+[2024-05-04 12:25:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057439]
+[2024-05-04 12:25:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 12:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aimDIAS
+[2024-05-04 12:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: instructlab
+[2024-05-04 12:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: soundstorm-superfeel
+[2024-05-04 12:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: solidipy-mipt
+[2024-05-04 12:25:37] INFO root fetch - processPackages [soundstorm-superfeel]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-04 12:25:37] INFO root fetch - processPackages [solidipy-mipt]: New version: [1.2.0] Old Version: [1.1.3]
+[2024-05-04 12:25:37] INFO root fetch - processPackages [aimDIAS]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 12:25:37] INFO root fetch - processPackages [instructlab]: New version: [0.14.0] Old Version: [0.0]
+[2024-05-04 12:25:37] INFO root fetch - processPackages [soundstorm-superfeel]: Downloading https://files.pythonhosted.org/packages/30/f9/6bc5e1024c249597f01124d4392689556fef91bf649823dd9392f7402342/soundstorm_superfeel-0.4.2.tar.gz
+[2024-05-04 12:25:37] INFO root fetch - processPackages [aimDIAS]: Downloading https://files.pythonhosted.org/packages/f9/63/acbb61e161d9f85789292df264a3009a421acefc14ab830042689bfad422/aimDIAS-1.0.0-py3-none-any.whl
+[2024-05-04 12:25:37] INFO root fetch - processPackages [instructlab]: Downloading https://files.pythonhosted.org/packages/71/d5/f618afc9b4ebc1049e812d49c0d440739f74eb0e4c4976129cf18efedfc0/instructlab-0.0-py3-none-any.whl
+[2024-05-04 12:25:37] INFO root fetch - processPackages [solidipy-mipt]: Downloading https://files.pythonhosted.org/packages/4b/ae/3d1979d9bd07afd7f33573683e8294ee0771ac9f08b61385d2562d078611/solidipy_mipt-1.1.3.tar.gz
+[2024-05-04 12:25:37] INFO root fetch - processPackages [soundstorm-superfeel]: Downloading https://files.pythonhosted.org/packages/7c/49/0fa26ad6c0e1e9ed7b698d0638f031ac2fb7d7f4dade03e6e33ee1a93d8e/soundstorm_superfeel-0.4.3.tar.gz
+[2024-05-04 12:25:38] INFO root fetch - processPackages [aimDIAS]: Downloading https://files.pythonhosted.org/packages/a4/91/e74bbf252ed698cbca730b7633cbfb8466777cc77441a8d48d76b5794457/aimDIAS-1.0.1.tar.gz
+[2024-05-04 12:25:38] INFO root fetch - processPackages [instructlab]: Downloading https://files.pythonhosted.org/packages/8a/9d/2af2857afb44a8096790d6eea6b48490836d4f233e9948a878cec64b09d0/instructlab-0.14.0.tar.gz
+[2024-05-04 12:25:38] INFO root fetch - processPackages [solidipy-mipt]: Downloading https://files.pythonhosted.org/packages/37/19/56104fbf71115efcd768c66f370c50652ceded4cd6387b2d5d10979906c7/solidipy_mipt-1.2.0.tar.gz
+[2024-05-04 12:25:38] INFO root fetch - processPackages [soundstorm-superfeel]: executing diffoscope
+[2024-05-04 12:25:38] INFO root fetch - processPackages [soundstorm-superfeel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soundstorm_superfeel-0.4.2.tar.gz tmp/soundstorm_superfeel-0.4.3.tar.gz --markdown 20240504/s/soundstorm-superfeel/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-04 12:25:38] WARNING root fetch - processPackages [aimDIAS]: Skipping package: exceeds size limit 69335555>=10485760
+[2024-05-04 12:25:38] INFO root fetch - main [MainThread]: End processing [aimDIAS] error
+[2024-05-04 12:25:38] INFO root fetch - processPackages [solidipy-mipt]: executing diffoscope
+[2024-05-04 12:25:38] INFO root fetch - processPackages [solidipy-mipt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solidipy_mipt-1.1.3.tar.gz tmp/solidipy_mipt-1.2.0.tar.gz --markdown 20240504/s/solidipy-mipt/1.1.3-1.2.0/README.md --exclude *.pyd
+[2024-05-04 12:25:38] INFO root fetch - processPackages [instructlab]: executing diffoscope
+[2024-05-04 12:25:38] INFO root fetch - processPackages [instructlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instructlab-0.0-py3-none-any.whl.zip tmp/instructlab-0.14.0.tar.gz --markdown 20240504/i/instructlab/0.0-0.14.0/README.md --exclude *.pyd
+[2024-05-04 12:25:38] INFO root fetch - processPackages [soundstorm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/soundstorm_superfeel-0.4.2.tar.gz]
+[2024-05-04 12:25:38] INFO root fetch - processPackages [soundstorm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/soundstorm_superfeel-0.4.3.tar.gz]
+[2024-05-04 12:25:38] INFO root fetch - main [MainThread]: End processing [soundstorm-superfeel]: success
+[2024-05-04 12:25:38] INFO root fetch - processPackages [solidipy-mipt]: Remove: archive file [/home/abi/fetcher/tmp/solidipy_mipt-1.1.3.tar.gz]
+[2024-05-04 12:25:38] INFO root fetch - processPackages [solidipy-mipt]: Remove: archive file [/home/abi/fetcher/tmp/solidipy_mipt-1.2.0.tar.gz]
+[2024-05-04 12:25:38] INFO root fetch - main [MainThread]: End processing [solidipy-mipt]: success
+[2024-05-04 12:25:40] INFO root fetch - processPackages [instructlab]: Remove: archive file [/home/abi/fetcher/tmp/instructlab-0.0-py3-none-any.whl.zip]
+[2024-05-04 12:25:40] INFO root fetch - processPackages [instructlab]: Remove: archive file [/home/abi/fetcher/tmp/instructlab-0.14.0.tar.gz]
+[2024-05-04 12:25:40] INFO root fetch - main [MainThread]: End processing [instructlab]: success
+[2024-05-04 12:25:40] INFO root fetch - main [MainThread]: Store serial: [23057452]
