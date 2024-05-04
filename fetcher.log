@@ -11792,3 +11792,47 @@
 [2024-05-04 10:41:13] INFO root fetch - processPackages [moonss]: Remove: archive file [/home/abi/fetcher/tmp/moonss-0.99.tar.gz]
 [2024-05-04 10:41:13] INFO root fetch - main [MainThread]: End processing [moonss]: success
 [2024-05-04 10:41:13] INFO root fetch - main [MainThread]: Store serial: [23056871]
+[2024-05-04 10:43:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056871]
+[2024-05-04 10:43:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 10:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openturns
+[2024-05-04 10:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omnisafe
+[2024-05-04 10:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Excalibur2
+[2024-05-04 10:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: helmet
+[2024-05-04 10:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kuzu
+[2024-05-04 10:43:22] INFO root fetch - processPackages [omnisafe]: New version: [0.5.1b0] Old Version: [0.5.0b0]
+[2024-05-04 10:43:22] INFO root fetch - processPackages [helmet]: New version: [1.1.0] Old Version: [1.0.5]
+[2024-05-04 10:43:22] INFO root fetch - processPackages [omnisafe]: Downloading https://files.pythonhosted.org/packages/d6/f3/d6ff5c9cf2a684da8d265f2e2f3ccfa2bdad383173b46abf373dd138f5f4/omnisafe-0.5.0b0.tar.gz
+[2024-05-04 10:43:22] INFO root fetch - processPackages [Excalibur2]: New version: [2.3] Old Version: [2.2]
+[2024-05-04 10:43:22] INFO root fetch - processPackages [openturns]: New version: [1.23rc1] Old Version: [1.22rc1]
+[2024-05-04 10:43:22] INFO root fetch - processPackages [kuzu]: New version: [0.4.1.dev1] Old Version: [0.4.0]
+[2024-05-04 10:43:22] INFO root fetch - processPackages [openturns]: Downloading https://files.pythonhosted.org/packages/ed/f7/f0302bbb3b8fef3725714c791b2d26bcfb43f9d84e79b6f87ea84c29a194/openturns-1.22rc1-cp39-cp39-win_amd64.whl
+[2024-05-04 10:43:22] INFO root fetch - processPackages [helmet]: Downloading https://files.pythonhosted.org/packages/5e/62/29e0e4e06c27ad1c8f207ba3013cbc608dc6fbd00aa64ebca38af1aa1086/helmet-1.0.5.tar.gz
+[2024-05-04 10:43:22] INFO root fetch - processPackages [Excalibur2]: Downloading https://files.pythonhosted.org/packages/08/2c/5ec755cbb020d0766c104e61d98bb8b98ae1f431d374cec18dbd7f719fa1/Excalibur2-2.2.tar.gz
+[2024-05-04 10:43:22] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/49/6f/5f4e40c0bcc2cfe337c7cd9254928a53504ad71bd87b34532ac37e6f470f/kuzu-0.4.0.tar.gz
+[2024-05-04 10:43:22] INFO root fetch - processPackages [omnisafe]: Downloading https://files.pythonhosted.org/packages/0c/68/2732fe3f6cfc185a7070d91b3bf211d29ea7492bdf1bf2c56f99d58de0db/omnisafe-0.5.1b0.tar.gz
+[2024-05-04 10:43:22] INFO root fetch - processPackages [helmet]: Downloading https://files.pythonhosted.org/packages/40/4c/a9c0f459832379de1241560903d96d77a5a2d78b565e9b4183eaed4f25de/helmet-1.1.0.tar.gz
+[2024-05-04 10:43:22] INFO root fetch - processPackages [Excalibur2]: Downloading https://files.pythonhosted.org/packages/20/76/1d0201e6ee1f4d1891dc573b8da39067fcd0caefb7c39d5ca6362963c71d/excalibur2-2.3.tar.gz
+[2024-05-04 10:43:22] INFO root fetch - processPackages [helmet]: executing diffoscope
+[2024-05-04 10:43:22] INFO root fetch - processPackages [helmet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helmet-1.0.5.tar.gz tmp/helmet-1.1.0.tar.gz --markdown 20240504/h/helmet/1.0.5-1.1.0/README.md --exclude *.pyd
+[2024-05-04 10:43:22] INFO root fetch - processPackages [Excalibur2]: executing diffoscope
+[2024-05-04 10:43:22] INFO root fetch - processPackages [Excalibur2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Excalibur2-2.2.tar.gz tmp/excalibur2-2.3.tar.gz --markdown 20240504/E/Excalibur2/2.2-2.3/README.md --exclude *.pyd
+[2024-05-04 10:43:22] INFO root fetch - processPackages [omnisafe]: executing diffoscope
+[2024-05-04 10:43:22] INFO root fetch - processPackages [omnisafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnisafe-0.5.0b0.tar.gz tmp/omnisafe-0.5.1b0.tar.gz --markdown 20240504/o/omnisafe/0.5.0b0-0.5.1b0/README.md --exclude *.pyd
+[2024-05-04 10:43:22] WARNING root fetch - processPackages [openturns]: Skipping package: exceeds size limit 57771597>=10485760
+[2024-05-04 10:43:22] INFO root fetch - main [MainThread]: End processing [openturns] error
+[2024-05-04 10:43:23] INFO root fetch - processPackages [Excalibur2]: Remove: archive file [/home/abi/fetcher/tmp/Excalibur2-2.2.tar.gz]
+[2024-05-04 10:43:23] INFO root fetch - processPackages [Excalibur2]: Remove: archive file [/home/abi/fetcher/tmp/excalibur2-2.3.tar.gz]
+[2024-05-04 10:43:23] INFO root fetch - main [MainThread]: End processing [Excalibur2]: success
+[2024-05-04 10:43:23] INFO root fetch - processPackages [helmet]: Remove: archive file [/home/abi/fetcher/tmp/helmet-1.0.5.tar.gz]
+[2024-05-04 10:43:23] INFO root fetch - processPackages [helmet]: Remove: archive file [/home/abi/fetcher/tmp/helmet-1.1.0.tar.gz]
+[2024-05-04 10:43:23] INFO root fetch - main [MainThread]: End processing [helmet]: success
+[2024-05-04 10:43:23] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/0f/6c/2c53ba28846aa10938898a3724c6565459dbfd4c704170cdb0569defaa82/kuzu-0.4.1.dev1-cp312-cp312-macosx_11_0_arm64.whl
+[2024-05-04 10:43:24] INFO root fetch - processPackages [omnisafe]: Remove: archive file [/home/abi/fetcher/tmp/omnisafe-0.5.0b0.tar.gz]
+[2024-05-04 10:43:24] INFO root fetch - processPackages [omnisafe]: Remove: archive file [/home/abi/fetcher/tmp/omnisafe-0.5.1b0.tar.gz]
+[2024-05-04 10:43:24] INFO root fetch - main [MainThread]: End processing [omnisafe]: success
+[2024-05-04 10:43:25] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-05-04 10:43:25] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.4.0.tar.gz tmp/kuzu-0.4.1.dev1-cp312-cp312-macosx_11_0_arm64.whl.zip --markdown 20240504/k/kuzu/0.4.0-0.4.1.dev1/README.md --exclude *.pyd
+[2024-05-04 10:43:26] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.0.tar.gz]
+[2024-05-04 10:43:26] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.1.dev1-cp312-cp312-macosx_11_0_arm64.whl.zip]
+[2024-05-04 10:43:26] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-05-04 10:43:26] INFO root fetch - main [MainThread]: Store serial: [23056895]
