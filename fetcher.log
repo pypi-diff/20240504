@@ -15026,3 +15026,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:52:35] INFO root fetch - processPackages [exciton]: Remove: archive file [/home/abi/fetcher/tmp/exciton-2.6.0-py3-none-any.whl.zip]
 [2024-05-04 15:52:35] INFO root fetch - main [MainThread]: End processing [exciton]: success
 [2024-05-04 15:52:35] INFO root fetch - main [MainThread]: Store serial: [23058322]
+[2024-05-04 15:54:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058322]
+[2024-05-04 15:54:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 15:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ao3statscraper
+[2024-05-04 15:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: multidefusion
+[2024-05-04 15:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cloudlanguagetools
+[2024-05-04 15:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensordict-nightly
+[2024-05-04 15:54:44] INFO root fetch - processPackages [multidefusion]: New version: [0.0.6] Old Version: [0.0.21]
+[2024-05-04 15:54:44] INFO root fetch - processPackages [ao3statscraper]: New version: [0.1.7] Old Version: [0.1.4]
+[2024-05-04 15:54:44] INFO root fetch - processPackages [cloudlanguagetools]: New version: [9.2.1] Old Version: [9.2]
+[2024-05-04 15:54:44] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.5.4] Old Version: [2024.5.3]
+[2024-05-04 15:54:44] INFO root fetch - processPackages [cloudlanguagetools]: Downloading https://files.pythonhosted.org/packages/aa/f3/524147c2bfec656b94dab9548e62615867fb1e21bbf808093be888f503b1/cloudlanguagetools-9.2.tar.gz
+[2024-05-04 15:54:44] INFO root fetch - processPackages [multidefusion]: Downloading https://files.pythonhosted.org/packages/c7/d3/d71761772c0465d193d9b331129d73e1eb9de4b8a4304b914f40929e2088/multidefusion-0.0.21.tar.gz
+[2024-05-04 15:54:44] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/66/ad/cd06d124b967c2040223539080474947de35e7aa205b25855047e48f3778/tensordict_nightly-2024.5.3-cp39-cp39-win_amd64.whl
+[2024-05-04 15:54:44] INFO root fetch - processPackages [ao3statscraper]: Downloading https://files.pythonhosted.org/packages/75/37/9917f92573f66bb04aed670f01963c591b6a8cdd9725e06e94572bea246f/ao3statscraper-0.1.4.tar.gz
+[2024-05-04 15:54:44] INFO root fetch - processPackages [multidefusion]: Downloading https://files.pythonhosted.org/packages/71/c6/69c3646915a255d3c6a2a81eec500a18d5846357e6cf00eb9d65ea8a1e1c/multidefusion-0.0.6.tar.gz
+[2024-05-04 15:54:44] INFO root fetch - processPackages [cloudlanguagetools]: Downloading https://files.pythonhosted.org/packages/c0/32/579c728bff1eaea83df3134fc2bf0d97775f0207693a94d4178df4c3c18e/cloudlanguagetools-9.2.1.tar.gz
+[2024-05-04 15:54:44] INFO root fetch - processPackages [ao3statscraper]: Downloading https://files.pythonhosted.org/packages/44/10/3c13e50c5d0276afcc513fdae16efbc1200a1ad7368d68ce51facb15c7d5/ao3statscraper-0.1.7.tar.gz
+[2024-05-04 15:54:44] INFO root fetch - processPackages [multidefusion]: executing diffoscope
+[2024-05-04 15:54:44] INFO root fetch - processPackages [multidefusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multidefusion-0.0.21.tar.gz tmp/multidefusion-0.0.6.tar.gz --markdown 20240504/m/multidefusion/0.0.21-0.0.6/README.md --exclude *.pyd
+[2024-05-04 15:54:44] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/30/21/d6ab4983d50792d6ee8995e9d2ab4f432d8e237479280db05065e0eef45e/tensordict_nightly-2024.5.4-cp38-cp38-manylinux1_x86_64.whl
+[2024-05-04 15:54:44] INFO root fetch - processPackages [cloudlanguagetools]: executing diffoscope
+[2024-05-04 15:54:44] INFO root fetch - processPackages [cloudlanguagetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudlanguagetools-9.2.tar.gz tmp/cloudlanguagetools-9.2.1.tar.gz --markdown 20240504/c/cloudlanguagetools/9.2-9.2.1/README.md --exclude *.pyd
+[2024-05-04 15:54:44] INFO root fetch - processPackages [ao3statscraper]: executing diffoscope
+[2024-05-04 15:54:44] INFO root fetch - processPackages [ao3statscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ao3statscraper-0.1.4.tar.gz tmp/ao3statscraper-0.1.7.tar.gz --markdown 20240504/a/ao3statscraper/0.1.4-0.1.7/README.md --exclude *.pyd
+[2024-05-04 15:54:45] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-05-04 15:54:45] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.5.3-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.5.4-cp38-cp38-manylinux1_x86_64.whl.zip --markdown 20240504/t/tensordict-nightly/2024.5.3-2024.5.4/README.md --exclude *.pyd
+[2024-05-04 15:54:45] INFO root fetch - processPackages [multidefusion]: Remove: archive file [/home/abi/fetcher/tmp/multidefusion-0.0.21.tar.gz]
+[2024-05-04 15:54:45] INFO root fetch - processPackages [multidefusion]: Remove: archive file [/home/abi/fetcher/tmp/multidefusion-0.0.6.tar.gz]
+[2024-05-04 15:54:45] INFO root fetch - main [MainThread]: End processing [multidefusion]: success
+[2024-05-04 15:54:45] INFO root fetch - processPackages [cloudlanguagetools]: Remove: archive file [/home/abi/fetcher/tmp/cloudlanguagetools-9.2.tar.gz]
+[2024-05-04 15:54:45] INFO root fetch - processPackages [cloudlanguagetools]: Remove: archive file [/home/abi/fetcher/tmp/cloudlanguagetools-9.2.1.tar.gz]
+[2024-05-04 15:54:45] INFO root fetch - main [MainThread]: End processing [cloudlanguagetools]: success
+[2024-05-04 15:54:45] INFO root fetch - processPackages [ao3statscraper]: Remove: archive file [/home/abi/fetcher/tmp/ao3statscraper-0.1.4.tar.gz]
+[2024-05-04 15:54:45] INFO root fetch - processPackages [ao3statscraper]: Remove: archive file [/home/abi/fetcher/tmp/ao3statscraper-0.1.7.tar.gz]
+[2024-05-04 15:54:45] INFO root fetch - main [MainThread]: End processing [ao3statscraper]: success
+[2024-05-04 15:54:46] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.3-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 15:54:46] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.4-cp38-cp38-manylinux1_x86_64.whl.zip]
+[2024-05-04 15:54:46] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-05-04 15:54:46] INFO root fetch - main [MainThread]: Store serial: [23058331]
