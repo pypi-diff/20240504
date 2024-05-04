@@ -13562,3 +13562,18 @@
 [2024-05-04 13:28:55] INFO root fetch - processPackages [acmecse-test]: Remove: archive file [/home/abi/fetcher/tmp/acmecse_test-2024.4.9-py3-none-any.whl.zip]
 [2024-05-04 13:28:55] INFO root fetch - main [MainThread]: End processing [acmecse-test]: success
 [2024-05-04 13:28:55] INFO root fetch - main [MainThread]: Store serial: [23057711]
+[2024-05-04 13:30:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057711]
+[2024-05-04 13:31:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 13:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asyncAminoLab
+[2024-05-04 13:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wlr-layout-ui
+[2024-05-04 13:31:04] INFO root fetch - processPackages [wlr-layout-ui]: New version: [1.6.8] Old Version: [1.6.7]
+[2024-05-04 13:31:04] INFO root fetch - processPackages [wlr-layout-ui]: Downloading https://files.pythonhosted.org/packages/5a/95/afb4f70575df5c1c39aebd34ddcca1d0ecba66e5d0aab8b702ac6c2c9669/wlr_layout_ui-1.6.7.tar.gz
+[2024-05-04 13:31:04] WARNING root fetch - processPackages [asyncAminoLab]: Skipping, unable to determine old version
+[2024-05-04 13:31:04] INFO root fetch - main [MainThread]: End processing [asyncAminoLab] error
+[2024-05-04 13:31:04] INFO root fetch - processPackages [wlr-layout-ui]: Downloading https://files.pythonhosted.org/packages/06/d7/3e9626f4efa8a82efeff6b5d02ec768aa8538e1040fe6c6a871e41647767/wlr_layout_ui-1.6.8.tar.gz
+[2024-05-04 13:31:04] INFO root fetch - processPackages [wlr-layout-ui]: executing diffoscope
+[2024-05-04 13:31:04] INFO root fetch - processPackages [wlr-layout-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wlr_layout_ui-1.6.7.tar.gz tmp/wlr_layout_ui-1.6.8.tar.gz --markdown 20240504/w/wlr-layout-ui/1.6.7-1.6.8/README.md --exclude *.pyd
+[2024-05-04 13:31:05] INFO root fetch - processPackages [wlr-layout-ui]: Remove: archive file [/home/abi/fetcher/tmp/wlr_layout_ui-1.6.7.tar.gz]
+[2024-05-04 13:31:05] INFO root fetch - processPackages [wlr-layout-ui]: Remove: archive file [/home/abi/fetcher/tmp/wlr_layout_ui-1.6.8.tar.gz]
+[2024-05-04 13:31:05] INFO root fetch - main [MainThread]: End processing [wlr-layout-ui]: success
+[2024-05-04 13:31:05] INFO root fetch - main [MainThread]: Store serial: [23057718]
