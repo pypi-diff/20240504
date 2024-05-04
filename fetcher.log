@@ -9546,3 +9546,18 @@
 [2024-05-04 07:10:39] INFO root fetch - processPackages [genmax]: Remove: archive file [/home/abi/fetcher/tmp/genmax-0.1.7.tar.gz]
 [2024-05-04 07:10:39] INFO root fetch - main [MainThread]: End processing [genmax]: success
 [2024-05-04 07:10:39] INFO root fetch - main [MainThread]: Store serial: [23055820]
+[2024-05-04 07:12:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055820]
+[2024-05-04 07:12:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 07:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CTDFjorder
+[2024-05-04 07:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: supplies
+[2024-05-04 07:12:48] INFO root fetch - processPackages [CTDFjorder]: New version: [0.0.33] Old Version: [0.0.32]
+[2024-05-04 07:12:48] WARNING root fetch - processPackages [supplies]: Skipping, unable to determine old version
+[2024-05-04 07:12:48] INFO root fetch - main [MainThread]: End processing [supplies] error
+[2024-05-04 07:12:48] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/f9/00/e3488bdc77b957cc1090d3b5f2b19c5869375027270365d2012ca28d2aae/ctdfjorder-0.0.32.tar.gz
+[2024-05-04 07:12:48] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/e6/24/d846e6247be16b67cc5aecdcc1c198aef20297b4acebfcfd3734d6d1e366/ctdfjorder-0.0.33.tar.gz
+[2024-05-04 07:12:48] INFO root fetch - processPackages [CTDFjorder]: executing diffoscope
+[2024-05-04 07:12:48] INFO root fetch - processPackages [CTDFjorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctdfjorder-0.0.32.tar.gz tmp/ctdfjorder-0.0.33.tar.gz --markdown 20240504/C/CTDFjorder/0.0.32-0.0.33/README.md --exclude *.pyd
+[2024-05-04 07:12:49] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.32.tar.gz]
+[2024-05-04 07:12:49] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.33.tar.gz]
+[2024-05-04 07:12:49] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
+[2024-05-04 07:12:49] INFO root fetch - main [MainThread]: Store serial: [23055827]
