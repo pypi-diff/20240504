@@ -12479,3 +12479,24 @@
 [2024-05-04 11:42:18] INFO root fetch - processPackages [py-automl-lib]: Remove: archive file [/home/abi/fetcher/tmp/py_automl_lib-2.2.2.tar.gz]
 [2024-05-04 11:42:18] INFO root fetch - main [MainThread]: End processing [py-automl-lib]: success
 [2024-05-04 11:42:18] INFO root fetch - main [MainThread]: Store serial: [23057300]
+[2024-05-04 11:44:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057300]
+[2024-05-04 11:44:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 11:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mptradelib
+[2024-05-04 11:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlforge
+[2024-05-04 11:44:26] INFO root fetch - processPackages [mptradelib]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-04 11:44:26] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/61/da/94b45fe08adad190810451ee3cb922f1d36ea0d31d55bc7be88c9d0d41ac/mptradelib-0.3.4.tar.gz
+[2024-05-04 11:44:26] INFO root fetch - processPackages [mlforge]: New version: [0.1.4a0] Old Version: [0.1.3a0]
+[2024-05-04 11:44:26] INFO root fetch - processPackages [mlforge]: Downloading https://files.pythonhosted.org/packages/d7/60/2bf53a41a474e15e315495bd791fff4c88bf11e8bd63958851fe2218b9c6/mlforge-0.1.3a0.tar.gz
+[2024-05-04 11:44:26] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/6e/fd/6562784f5cb845aa32b6dcdde56b8534706ed1eac3d8db361a9c5e2f402e/mptradelib-0.3.5.tar.gz
+[2024-05-04 11:44:27] INFO root fetch - processPackages [mptradelib]: executing diffoscope
+[2024-05-04 11:44:27] INFO root fetch - processPackages [mptradelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mptradelib-0.3.4.tar.gz tmp/mptradelib-0.3.5.tar.gz --markdown 20240504/m/mptradelib/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-04 11:44:27] INFO root fetch - processPackages [mlforge]: Downloading https://files.pythonhosted.org/packages/cd/33/e864c903be8c84c4e7e8b05e2ba680ea214e8f5c58df34f97cf73b6bb679/mlforge-0.1.4a0.tar.gz
+[2024-05-04 11:44:27] INFO root fetch - processPackages [mlforge]: executing diffoscope
+[2024-05-04 11:44:27] INFO root fetch - processPackages [mlforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlforge-0.1.3a0.tar.gz tmp/mlforge-0.1.4a0.tar.gz --markdown 20240504/m/mlforge/0.1.3a0-0.1.4a0/README.md --exclude *.pyd
+[2024-05-04 11:44:27] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.4.tar.gz]
+[2024-05-04 11:44:27] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.5.tar.gz]
+[2024-05-04 11:44:27] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
+[2024-05-04 11:44:27] INFO root fetch - processPackages [mlforge]: Remove: archive file [/home/abi/fetcher/tmp/mlforge-0.1.3a0.tar.gz]
+[2024-05-04 11:44:27] INFO root fetch - processPackages [mlforge]: Remove: archive file [/home/abi/fetcher/tmp/mlforge-0.1.4a0.tar.gz]
+[2024-05-04 11:44:27] INFO root fetch - main [MainThread]: End processing [mlforge]: success
+[2024-05-04 11:44:27] INFO root fetch - main [MainThread]: Store serial: [23057307]
