@@ -14777,3 +14777,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:32:48] INFO root fetch - processPackages [PACMAN-charge]: Remove: archive file [/home/abi/fetcher/tmp/PACMAN-charge-0.1.3.tar.gz]
 [2024-05-04 15:32:48] INFO root fetch - main [MainThread]: End processing [PACMAN-charge]: success
 [2024-05-04 15:32:48] INFO root fetch - main [MainThread]: Store serial: [23058235]
+[2024-05-04 15:34:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058235]
+[2024-05-04 15:34:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 15:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: searcharray
+[2024-05-04 15:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cell-imaging-utils
+[2024-05-04 15:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: naverplaceapi
+[2024-05-04 15:34:57] INFO root fetch - processPackages [searcharray]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 15:34:57] INFO root fetch - processPackages [cell-imaging-utils]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-05-04 15:34:57] INFO root fetch - processPackages [naverplaceapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 15:34:57] INFO root fetch - processPackages [searcharray]: Downloading https://files.pythonhosted.org/packages/13/d2/42d0e0a5f78c59eb2f5d56c1dbde5dcbee81b46d8390cedf9988344b3e45/searcharray-0.0.8.tar.gz
+[2024-05-04 15:34:57] INFO root fetch - processPackages [cell-imaging-utils]: Downloading https://files.pythonhosted.org/packages/59/ab/441ddb0261a8901eadfcf8d6618a03be98bcbd53ebd09553be87837ba5af/cell_imaging_utils-1.5.8.tar.gz
+[2024-05-04 15:34:57] INFO root fetch - processPackages [searcharray]: Downloading https://files.pythonhosted.org/packages/2b/85/78c9e4e0be0965b7456ca73905cad36da7857d89af8ff16b2844e6628cee/searcharray-0.0.9.tar.gz
+[2024-05-04 15:34:57] INFO root fetch - processPackages [naverplaceapi]: Downloading https://files.pythonhosted.org/packages/76/d9/4dd5ff78d7edda8549c2197c4bf8e22fb61282799812c8a99d6229923df0/naverplaceapi-0.1.8.tar.gz
+[2024-05-04 15:34:58] INFO root fetch - processPackages [searcharray]: executing diffoscope
+[2024-05-04 15:34:58] INFO root fetch - processPackages [searcharray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searcharray-0.0.8.tar.gz tmp/searcharray-0.0.9.tar.gz --markdown 20240504/s/searcharray/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 15:34:58] INFO root fetch - processPackages [cell-imaging-utils]: Downloading https://files.pythonhosted.org/packages/11/4f/b80f8c7bc358cd880a2dd1a719aa79f2bf70c6284e3d321560df103a67a0/cell_imaging_utils-1.5.9.tar.gz
+[2024-05-04 15:34:58] INFO root fetch - processPackages [naverplaceapi]: Downloading https://files.pythonhosted.org/packages/d6/49/6fd82197b70cc3b07a714c6728efc2da9518496de2c2a7d893b2283afbce/naverplaceapi-0.1.9.tar.gz
+[2024-05-04 15:34:58] INFO root fetch - processPackages [cell-imaging-utils]: executing diffoscope
+[2024-05-04 15:34:58] INFO root fetch - processPackages [cell-imaging-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cell_imaging_utils-1.5.8.tar.gz tmp/cell_imaging_utils-1.5.9.tar.gz --markdown 20240504/c/cell-imaging-utils/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-05-04 15:34:58] INFO root fetch - processPackages [naverplaceapi]: executing diffoscope
+[2024-05-04 15:34:58] INFO root fetch - processPackages [naverplaceapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naverplaceapi-0.1.8.tar.gz tmp/naverplaceapi-0.1.9.tar.gz --markdown 20240504/n/naverplaceapi/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 15:34:58] INFO root fetch - processPackages [searcharray]: Remove: archive file [/home/abi/fetcher/tmp/searcharray-0.0.8.tar.gz]
+[2024-05-04 15:34:58] INFO root fetch - processPackages [searcharray]: Remove: archive file [/home/abi/fetcher/tmp/searcharray-0.0.9.tar.gz]
+[2024-05-04 15:34:58] INFO root fetch - main [MainThread]: End processing [searcharray]: success
+[2024-05-04 15:34:58] INFO root fetch - processPackages [cell-imaging-utils]: Remove: archive file [/home/abi/fetcher/tmp/cell_imaging_utils-1.5.8.tar.gz]
+[2024-05-04 15:34:58] INFO root fetch - processPackages [cell-imaging-utils]: Remove: archive file [/home/abi/fetcher/tmp/cell_imaging_utils-1.5.9.tar.gz]
+[2024-05-04 15:34:58] INFO root fetch - main [MainThread]: End processing [cell-imaging-utils]: success
+[2024-05-04 15:34:59] INFO root fetch - processPackages [naverplaceapi]: Remove: archive file [/home/abi/fetcher/tmp/naverplaceapi-0.1.8.tar.gz]
+[2024-05-04 15:34:59] INFO root fetch - processPackages [naverplaceapi]: Remove: archive file [/home/abi/fetcher/tmp/naverplaceapi-0.1.9.tar.gz]
+[2024-05-04 15:34:59] INFO root fetch - main [MainThread]: End processing [naverplaceapi]: success
+[2024-05-04 15:34:59] INFO root fetch - main [MainThread]: Store serial: [23058244]
