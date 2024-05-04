@@ -15536,3 +15536,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:31:39] INFO root fetch - processPackages [iinfer]: Remove: archive file [/home/abi/fetcher/tmp/iinfer-0.7.2.tar.gz]
 [2024-05-04 16:31:39] INFO root fetch - main [MainThread]: End processing [iinfer]: success
 [2024-05-04 16:31:39] INFO root fetch - main [MainThread]: Store serial: [23058520]
+[2024-05-04 16:33:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058520]
+[2024-05-04 16:33:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 16:33:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meta-machina
+[2024-05-04 16:33:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nimbusagent
+[2024-05-04 16:33:48] WARNING root fetch - processPackages [meta-machina]: Skipping, unable to determine old version
+[2024-05-04 16:33:48] INFO root fetch - main [MainThread]: End processing [meta-machina] error
+[2024-05-04 16:33:48] INFO root fetch - processPackages [nimbusagent]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-04 16:33:49] INFO root fetch - processPackages [nimbusagent]: Downloading https://files.pythonhosted.org/packages/e2/fa/843f545e07924d78fe5d61bbc31fb1e935af531ed617cc13f38e2611ae97/nimbusagent-0.6.0.tar.gz
+[2024-05-04 16:33:49] INFO root fetch - processPackages [nimbusagent]: Downloading https://files.pythonhosted.org/packages/32/13/e5f8398dd72981fb6c95a46aa1b373f9ee26df840d323a16fe1dac051089/nimbusagent-0.6.1.tar.gz
+[2024-05-04 16:33:49] INFO root fetch - processPackages [nimbusagent]: executing diffoscope
+[2024-05-04 16:33:49] INFO root fetch - processPackages [nimbusagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nimbusagent-0.6.0.tar.gz tmp/nimbusagent-0.6.1.tar.gz --markdown 20240504/n/nimbusagent/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-04 16:33:50] INFO root fetch - processPackages [nimbusagent]: Remove: archive file [/home/abi/fetcher/tmp/nimbusagent-0.6.0.tar.gz]
+[2024-05-04 16:33:50] INFO root fetch - processPackages [nimbusagent]: Remove: archive file [/home/abi/fetcher/tmp/nimbusagent-0.6.1.tar.gz]
+[2024-05-04 16:33:50] INFO root fetch - main [MainThread]: End processing [nimbusagent]: success
+[2024-05-04 16:33:50] INFO root fetch - main [MainThread]: Store serial: [23058528]
