@@ -10839,3 +10839,33 @@
 [2024-05-04 09:05:32] INFO root fetch - main [MainThread]: End processing [xCloudClient] error
 [2024-05-04 09:05:32] INFO root fetch - main [MainThread]: End processing [carubi] error
 [2024-05-04 09:05:32] INFO root fetch - main [MainThread]: Store serial: [23056398]
+[2024-05-04 09:07:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056398]
+[2024-05-04 09:07:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ppvector
+[2024-05-04 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imgcv
+[2024-05-04 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openc3
+[2024-05-04 09:07:41] INFO root fetch - processPackages [imgcv]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-04 09:07:41] INFO root fetch - processPackages [openc3]: New version: [5.9.2b0] Old Version: [5.16.0]
+[2024-05-04 09:07:41] INFO root fetch - processPackages [ppvector]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-04 09:07:41] INFO root fetch - processPackages [imgcv]: Downloading https://files.pythonhosted.org/packages/0d/4f/26c88573c797f2e3e6e3f96ce24cc88aacd3d74f1fbac4f15c5678fc6f25/imgcv-0.4.0.tar.gz
+[2024-05-04 09:07:41] INFO root fetch - processPackages [openc3]: Downloading https://files.pythonhosted.org/packages/06/49/59a48e47274f19871beec68f7fce9dbb2c8cd5c80753f966e2008b05e44f/openc3-5.16.0.tar.gz
+[2024-05-04 09:07:41] INFO root fetch - processPackages [ppvector]: Downloading https://files.pythonhosted.org/packages/61/af/edf3c37ee87df011efd8d531523196396d5c6f30bac7868ce263b7386914/ppvector-1.0.3-py3-none-any.whl
+[2024-05-04 09:07:41] INFO root fetch - processPackages [imgcv]: Downloading https://files.pythonhosted.org/packages/5d/37/cfe65055f8c878a1cc9ef0cf193a04c505c69ec050d24f34ca54062267a1/imgcv-0.5.0.tar.gz
+[2024-05-04 09:07:41] INFO root fetch - processPackages [ppvector]: Downloading https://files.pythonhosted.org/packages/3a/fb/af44208498f3a391b80a7ded88c81bd0ba098018ba412d3f18b8037aada8/ppvector-1.0.4-py3-none-any.whl
+[2024-05-04 09:07:41] INFO root fetch - processPackages [openc3]: Downloading https://files.pythonhosted.org/packages/26/a7/1e2b188ad9d1677d8d52f680bf95a1823d70072c6ddd19eb06f9c3f68eb4/openc3-5.9.2b0.tar.gz
+[2024-05-04 09:07:42] INFO root fetch - processPackages [imgcv]: executing diffoscope
+[2024-05-04 09:07:42] INFO root fetch - processPackages [imgcv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imgcv-0.4.0.tar.gz tmp/imgcv-0.5.0.tar.gz --markdown 20240504/i/imgcv/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-04 09:07:42] INFO root fetch - processPackages [ppvector]: executing diffoscope
+[2024-05-04 09:07:42] INFO root fetch - processPackages [ppvector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ppvector-1.0.3-py3-none-any.whl.zip tmp/ppvector-1.0.4-py3-none-any.whl.zip --markdown 20240504/p/ppvector/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-04 09:07:42] INFO root fetch - processPackages [openc3]: executing diffoscope
+[2024-05-04 09:07:42] INFO root fetch - processPackages [openc3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openc3-5.16.0.tar.gz tmp/openc3-5.9.2b0.tar.gz --markdown 20240504/o/openc3/5.16.0-5.9.2b0/README.md --exclude *.pyd
+[2024-05-04 09:07:42] INFO root fetch - processPackages [imgcv]: Remove: archive file [/home/abi/fetcher/tmp/imgcv-0.4.0.tar.gz]
+[2024-05-04 09:07:42] INFO root fetch - processPackages [imgcv]: Remove: archive file [/home/abi/fetcher/tmp/imgcv-0.5.0.tar.gz]
+[2024-05-04 09:07:42] INFO root fetch - main [MainThread]: End processing [imgcv]: success
+[2024-05-04 09:07:42] INFO root fetch - processPackages [ppvector]: Remove: archive file [/home/abi/fetcher/tmp/ppvector-1.0.3-py3-none-any.whl.zip]
+[2024-05-04 09:07:42] INFO root fetch - processPackages [ppvector]: Remove: archive file [/home/abi/fetcher/tmp/ppvector-1.0.4-py3-none-any.whl.zip]
+[2024-05-04 09:07:42] INFO root fetch - main [MainThread]: End processing [ppvector]: success
+[2024-05-04 09:07:43] INFO root fetch - processPackages [openc3]: Remove: archive file [/home/abi/fetcher/tmp/openc3-5.16.0.tar.gz]
+[2024-05-04 09:07:43] INFO root fetch - processPackages [openc3]: Remove: archive file [/home/abi/fetcher/tmp/openc3-5.9.2b0.tar.gz]
+[2024-05-04 09:07:43] INFO root fetch - main [MainThread]: End processing [openc3]: success
+[2024-05-04 09:07:43] INFO root fetch - main [MainThread]: Store serial: [23056406]
