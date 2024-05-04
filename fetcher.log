@@ -20436,3 +20436,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:40:27] INFO root fetch - processPackages [mobspy]: Remove: archive file [/home/abi/fetcher/tmp/mobspy-2.3.5.tar.gz]
 [2024-05-04 22:40:27] INFO root fetch - main [MainThread]: End processing [mobspy]: success
 [2024-05-04 22:40:27] INFO root fetch - main [MainThread]: Store serial: [23060848]
+[2024-05-04 22:42:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060848]
+[2024-05-04 22:42:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 22:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scikit-fingerprints
+[2024-05-04 22:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpy-cross-v6.1
+[2024-05-04 22:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vital-ai-vitalsigns
+[2024-05-04 22:42:36] INFO root fetch - processPackages [vital-ai-vitalsigns]: New version: [0.1.3] Old Version: [0.1.1]
+[2024-05-04 22:42:36] INFO root fetch - processPackages [mpy-cross-v6.1]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 22:42:36] INFO root fetch - processPackages [scikit-fingerprints]: New version: [1.4.0] Old Version: [1.2.0]
+[2024-05-04 22:42:36] INFO root fetch - processPackages [scikit-fingerprints]: Downloading https://files.pythonhosted.org/packages/8b/22/b1233bf2f16b1c807794e4e0fda10406c41327d0899f5c6ca27adff7ebf7/scikit_fingerprints-1.2.0.tar.gz
+[2024-05-04 22:42:36] INFO root fetch - processPackages [mpy-cross-v6.1]: Downloading https://files.pythonhosted.org/packages/4f/86/ac01d2c1bad10ad1ff67074f9989446f2daf11d00689fb30849266c8d951/mpy-cross-v6.1-1.0.0.tar.gz
+[2024-05-04 22:42:36] INFO root fetch - processPackages [vital-ai-vitalsigns]: Downloading https://files.pythonhosted.org/packages/e6/9d/bf478e8c89d7539cb7ff53b351d303566a070d0da6839833bc32a6b6ed68/vital-ai-vitalsigns-0.1.1.tar.gz
+[2024-05-04 22:42:37] INFO root fetch - processPackages [scikit-fingerprints]: Downloading https://files.pythonhosted.org/packages/3a/f1/586f956e6e52d9453b890b964aa61aec9742660820c2465382cb340763d0/scikit_fingerprints-1.4.0.tar.gz
+[2024-05-04 22:42:37] INFO root fetch - processPackages [mpy-cross-v6.1]: Downloading https://files.pythonhosted.org/packages/46/e2/666cd3eb9e91b406dbe995d040af116f6c6efb71544125278c620af08171/mpy_cross_v6_1-1.0.1.tar.gz
+[2024-05-04 22:42:37] INFO root fetch - processPackages [vital-ai-vitalsigns]: Downloading https://files.pythonhosted.org/packages/6b/9c/066e170127242c2bd3aa29e2d96725788b336422c29142d943d9d5f0b21b/vital-ai-vitalsigns-0.1.3.tar.gz
+[2024-05-04 22:42:37] INFO root fetch - processPackages [scikit-fingerprints]: executing diffoscope
+[2024-05-04 22:42:37] INFO root fetch - processPackages [scikit-fingerprints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit_fingerprints-1.2.0.tar.gz tmp/scikit_fingerprints-1.4.0.tar.gz --markdown 20240504/s/scikit-fingerprints/1.2.0-1.4.0/README.md --exclude *.pyd
+[2024-05-04 22:42:37] INFO root fetch - processPackages [mpy-cross-v6.1]: executing diffoscope
+[2024-05-04 22:42:37] INFO root fetch - processPackages [mpy-cross-v6.1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpy-cross-v6.1-1.0.0.tar.gz tmp/mpy_cross_v6_1-1.0.1.tar.gz --markdown 20240504/m/mpy-cross-v6.1/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 22:42:37] INFO root fetch - processPackages [vital-ai-vitalsigns]: executing diffoscope
+[2024-05-04 22:42:37] INFO root fetch - processPackages [vital-ai-vitalsigns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vital-ai-vitalsigns-0.1.1.tar.gz tmp/vital-ai-vitalsigns-0.1.3.tar.gz --markdown 20240504/v/vital-ai-vitalsigns/0.1.1-0.1.3/README.md --exclude *.pyd
+[2024-05-04 22:42:37] INFO root fetch - processPackages [vital-ai-vitalsigns]: Remove: archive file [/home/abi/fetcher/tmp/vital-ai-vitalsigns-0.1.1.tar.gz]
+[2024-05-04 22:42:37] INFO root fetch - processPackages [vital-ai-vitalsigns]: Remove: archive file [/home/abi/fetcher/tmp/vital-ai-vitalsigns-0.1.3.tar.gz]
+[2024-05-04 22:42:37] INFO root fetch - main [MainThread]: End processing [vital-ai-vitalsigns]: success
+[2024-05-04 22:42:37] INFO root fetch - processPackages [scikit-fingerprints]: Remove: archive file [/home/abi/fetcher/tmp/scikit_fingerprints-1.2.0.tar.gz]
+[2024-05-04 22:42:37] INFO root fetch - processPackages [scikit-fingerprints]: Remove: archive file [/home/abi/fetcher/tmp/scikit_fingerprints-1.4.0.tar.gz]
+[2024-05-04 22:42:37] INFO root fetch - main [MainThread]: End processing [scikit-fingerprints]: success
+[2024-05-04 22:42:38] INFO root fetch - processPackages [mpy-cross-v6.1]: Remove: archive file [/home/abi/fetcher/tmp/mpy-cross-v6.1-1.0.0.tar.gz]
+[2024-05-04 22:42:38] INFO root fetch - processPackages [mpy-cross-v6.1]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross_v6_1-1.0.1.tar.gz]
+[2024-05-04 22:42:38] INFO root fetch - main [MainThread]: End processing [mpy-cross-v6.1]: success
+[2024-05-04 22:42:38] INFO root fetch - main [MainThread]: Store serial: [23060864]
