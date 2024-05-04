@@ -7686,3 +7686,27 @@
 [2024-05-04 04:50:34] INFO root fetch - processPackages [packyak-aws-cdk]: Remove: archive file [/home/abi/fetcher/tmp/packyak-aws-cdk-0.4.9.tar.gz]
 [2024-05-04 04:50:34] INFO root fetch - main [MainThread]: End processing [packyak-aws-cdk]: success
 [2024-05-04 04:50:34] INFO root fetch - main [MainThread]: Store serial: [23054936]
+[2024-05-04 04:52:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054936]
+[2024-05-04 04:52:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 04:52:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-payment-return-import
+[2024-05-04 04:52:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: c4t
+[2024-05-04 04:52:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: huskypo
+[2024-05-04 04:52:54] INFO root fetch - processPackages [c4t]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-05-04 04:52:54] INFO root fetch - processPackages [c4t]: Downloading https://files.pythonhosted.org/packages/2d/58/996cf08a63cb038e4722e3ed96ef850556622ca5f2bbd6895d0c4ef9c2f1/c4t-1.4.0.tar.gz
+[2024-05-04 04:52:54] INFO root fetch - processPackages [odoo-addon-account-payment-return-import]: New version: [16.0.1.0.1.2] Old Version: [16.0.1.0.1.1]
+[2024-05-04 04:52:54] WARNING root fetch - processPackages [huskypo]: Skipping, unable to determine old version
+[2024-05-04 04:52:54] INFO root fetch - main [MainThread]: End processing [huskypo] error
+[2024-05-04 04:52:54] INFO root fetch - processPackages [c4t]: Downloading https://files.pythonhosted.org/packages/2f/1b/b5b34636dc9ae2871b327ad5d5ed33e16ed653ce0b552e807e980a2cb201/c4t-1.5.0.tar.gz
+[2024-05-04 04:52:54] INFO root fetch - processPackages [odoo-addon-account-payment-return-import]: Downloading https://files.pythonhosted.org/packages/e6/4b/cee03798df1613128ee0ccb6f86cb3b4ae778f060ba9728a1daa0f557dfe/odoo_addon_account_payment_return_import-16.0.1.0.1.1-py3-none-any.whl
+[2024-05-04 04:52:54] INFO root fetch - processPackages [c4t]: executing diffoscope
+[2024-05-04 04:52:54] INFO root fetch - processPackages [c4t]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c4t-1.4.0.tar.gz tmp/c4t-1.5.0.tar.gz --markdown 20240504/c/c4t/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-05-04 04:52:54] INFO root fetch - processPackages [odoo-addon-account-payment-return-import]: Downloading https://files.pythonhosted.org/packages/3a/ab/63be6fae56f9115c1b4c63d9b241a8e473c200f44eee520bdb1101bd4f44/odoo_addon_account_payment_return_import-16.0.1.0.1.2-py3-none-any.whl
+[2024-05-04 04:52:55] INFO root fetch - processPackages [odoo-addon-account-payment-return-import]: executing diffoscope
+[2024-05-04 04:52:55] INFO root fetch - processPackages [odoo-addon-account-payment-return-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_return_import-16.0.1.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_account_payment_return_import-16.0.1.0.1.2-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-account-payment-return-import/16.0.1.0.1.1-16.0.1.0.1.2/README.md --exclude *.pyd
+[2024-05-04 04:52:55] INFO root fetch - processPackages [c4t]: Remove: archive file [/home/abi/fetcher/tmp/c4t-1.4.0.tar.gz]
+[2024-05-04 04:52:55] INFO root fetch - processPackages [c4t]: Remove: archive file [/home/abi/fetcher/tmp/c4t-1.5.0.tar.gz]
+[2024-05-04 04:52:55] INFO root fetch - main [MainThread]: End processing [c4t]: success
+[2024-05-04 04:52:55] INFO root fetch - processPackages [odoo-addon-account-payment-return-import]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_return_import-16.0.1.0.1.1-py3-none-any.whl.zip]
+[2024-05-04 04:52:55] INFO root fetch - processPackages [odoo-addon-account-payment-return-import]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_return_import-16.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-05-04 04:52:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-return-import]: success
+[2024-05-04 04:52:55] INFO root fetch - main [MainThread]: Store serial: [23054946]
