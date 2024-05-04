@@ -19163,3 +19163,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:06:23] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.9.tar.gz]
 [2024-05-04 21:06:23] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
 [2024-05-04 21:06:23] INFO root fetch - main [MainThread]: Store serial: [23060360]
+[2024-05-04 21:08:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060360]
+[2024-05-04 21:08:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 21:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: musical_games
+[2024-05-04 21:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-logs
+[2024-05-04 21:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ayoubinstadow
+[2024-05-04 21:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oandadata
+[2024-05-04 21:08:32] INFO root fetch - processPackages [oandadata]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 21:08:32] INFO root fetch - processPackages [musical_games]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-05-04 21:08:32] INFO root fetch - processPackages [mo-logs]: New version: [8.621.24125] Old Version: [8.618.24125]
+[2024-05-04 21:08:32] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/6d/d7/206db90826d8342538d0ed679693607ab88c362f2adbfcbedd9ac7f38bd4/musical_games-0.8.1.tar.gz
+[2024-05-04 21:08:32] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/00/0b/5a2e2aa36af6ebd9b947ad27f866288bd1d9ac515205859a92ef353ff66d/mo_logs-8.618.24125.tar.gz
+[2024-05-04 21:08:32] WARNING root fetch - processPackages [ayoubinstadow]: Skipping, unable to determine old version
+[2024-05-04 21:08:32] INFO root fetch - main [MainThread]: End processing [ayoubinstadow] error
+[2024-05-04 21:08:32] INFO root fetch - processPackages [oandadata]: Downloading https://files.pythonhosted.org/packages/f6/54/b2b4201fa3f83c2f7ff3bdce857996bb0fa62ae2a1a11c59df0a3fdedd33/oandadata-0.1.1.tar.gz
+[2024-05-04 21:08:32] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/c9/b0/bf2afd6383941c1964dc0641d08c11f5ce39994ac61efe48798ae6530d47/musical_games-0.8.2.tar.gz
+[2024-05-04 21:08:32] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/72/7c/ce13e0876e3ba0ac73d5b09326a03e77ab9a5e7a000d3bbafca735b55475/mo_logs-8.621.24125.tar.gz
+[2024-05-04 21:08:32] INFO root fetch - processPackages [musical_games]: executing diffoscope
+[2024-05-04 21:08:32] INFO root fetch - processPackages [musical_games]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musical_games-0.8.1.tar.gz tmp/musical_games-0.8.2.tar.gz --markdown 20240504/m/musical_games/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-05-04 21:08:32] INFO root fetch - processPackages [mo-logs]: executing diffoscope
+[2024-05-04 21:08:32] INFO root fetch - processPackages [mo-logs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_logs-8.618.24125.tar.gz tmp/mo_logs-8.621.24125.tar.gz --markdown 20240504/m/mo-logs/8.618.24125-8.621.24125/README.md --exclude *.pyd
+[2024-05-04 21:08:32] INFO root fetch - processPackages [oandadata]: Downloading https://files.pythonhosted.org/packages/b0/63/d2a4a13c089591a71d16b2201f125cdf80d522ad1ce35de79bf057dc6f7c/oandadata-0.1.2.tar.gz
+[2024-05-04 21:08:32] INFO root fetch - processPackages [oandadata]: executing diffoscope
+[2024-05-04 21:08:32] INFO root fetch - processPackages [oandadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oandadata-0.1.1.tar.gz tmp/oandadata-0.1.2.tar.gz --markdown 20240504/o/oandadata/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 21:08:33] INFO root fetch - processPackages [oandadata]: Remove: archive file [/home/abi/fetcher/tmp/oandadata-0.1.1.tar.gz]
+[2024-05-04 21:08:33] INFO root fetch - processPackages [oandadata]: Remove: archive file [/home/abi/fetcher/tmp/oandadata-0.1.2.tar.gz]
+[2024-05-04 21:08:33] INFO root fetch - main [MainThread]: End processing [oandadata]: success
+[2024-05-04 21:08:33] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.618.24125.tar.gz]
+[2024-05-04 21:08:33] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.621.24125.tar.gz]
+[2024-05-04 21:08:33] INFO root fetch - main [MainThread]: End processing [mo-logs]: success
+[2024-05-04 21:08:33] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.1.tar.gz]
+[2024-05-04 21:08:33] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.2.tar.gz]
+[2024-05-04 21:08:33] INFO root fetch - main [MainThread]: End processing [musical_games]: success
+[2024-05-04 21:08:33] INFO root fetch - main [MainThread]: Store serial: [23060375]
