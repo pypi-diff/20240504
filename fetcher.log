@@ -16147,3 +16147,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:27:25] INFO root fetch - processPackages [cdk-static-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-static-wordpress-0.1.9.tar.gz]
 [2024-05-04 17:27:25] INFO root fetch - main [MainThread]: End processing [cdk-static-wordpress]: success
 [2024-05-04 17:27:25] INFO root fetch - main [MainThread]: Store serial: [23058885]
+[2024-05-04 17:29:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058885]
+[2024-05-04 17:29:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 17:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: copy-spotter
+[2024-05-04 17:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: memmpy
+[2024-05-04 17:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyauth0
+[2024-05-04 17:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygpt-net
+[2024-05-04 17:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easy-llama
+[2024-05-04 17:29:34] INFO root fetch - processPackages [pyauth0]: New version: [0.1.3a0] Old Version: [0.1.2]
+[2024-05-04 17:29:34] INFO root fetch - processPackages [easy-llama]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 17:29:34] INFO root fetch - processPackages [copy-spotter]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-04 17:29:34] INFO root fetch - processPackages [pygpt-net]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-05-04 17:29:34] INFO root fetch - processPackages [memmpy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 17:29:34] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/1d/8f/8344d14d371539b9d779d12244a2f7b2de001a25a5fc40dcce481e9a7fc3/pyauth0-0.1.2.tar.gz
+[2024-05-04 17:29:34] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/ce/e9/39a06b9ce349625a5d6c7da00644a8cc7320112fb3ba2b2e54944d3a6135/easy_llama-0.1.8.tar.gz
+[2024-05-04 17:29:34] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/48/6c/e7120a689b04564ee2354b238aef0f08f506d3b7818153b44a5be1a2d727/copy-spotter-0.1.7.tar.gz
+[2024-05-04 17:29:34] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/a2/51/eab8c08ccf8061d3c9a0a64e34850f09c2f311fb768c293d3683b097b0a1/pygpt_net-2.2.8.tar.gz
+[2024-05-04 17:29:34] INFO root fetch - processPackages [memmpy]: Downloading https://files.pythonhosted.org/packages/7d/61/3001e104674f6a062feaec2ed6eedba210d044a1393543b7fbba09d33e50/memmpy-0.1.8.tar.gz
+[2024-05-04 17:29:34] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/98/5d/f5007368104957b81fc41c01c18234178e2875066cca25192bec1d846caf/easy_llama-0.1.9.tar.gz
+[2024-05-04 17:29:34] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/33/01/ea605e427d5b6cfec30d0af9ce2143cf334c4bc6231a618cd0e0431da615/pyauth0-0.1.3a0.tar.gz
+[2024-05-04 17:29:34] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/f0/77/3e3348701a345eb7881da0ffa91811cd425cf43a95ab7dd9387a41301032/copy-spotter-0.1.8.tar.gz
+[2024-05-04 17:29:34] INFO root fetch - processPackages [easy-llama]: executing diffoscope
+[2024-05-04 17:29:34] INFO root fetch - processPackages [easy-llama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_llama-0.1.8.tar.gz tmp/easy_llama-0.1.9.tar.gz --markdown 20240504/e/easy-llama/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 17:29:34] INFO root fetch - processPackages [pyauth0]: executing diffoscope
+[2024-05-04 17:29:34] INFO root fetch - processPackages [pyauth0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyauth0-0.1.2.tar.gz tmp/pyauth0-0.1.3a0.tar.gz --markdown 20240504/p/pyauth0/0.1.2-0.1.3a0/README.md --exclude *.pyd
+[2024-05-04 17:29:34] INFO root fetch - processPackages [copy-spotter]: executing diffoscope
+[2024-05-04 17:29:34] INFO root fetch - processPackages [copy-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copy-spotter-0.1.7.tar.gz tmp/copy-spotter-0.1.8.tar.gz --markdown 20240504/c/copy-spotter/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-04 17:29:34] INFO root fetch - processPackages [memmpy]: Downloading https://files.pythonhosted.org/packages/f2/0c/e56ee3b7b12ad916121a72854a1e1bd4b6b8430f8654a1c9345e17b72c64/memmpy-0.1.9.tar.gz
+[2024-05-04 17:29:34] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/9a/6b/ef19dace2478125566a1c01459255b7c5ee6d85a70cc2501323506c14e6a/pygpt_net-2.2.9.tar.gz
+[2024-05-04 17:29:34] INFO root fetch - processPackages [memmpy]: executing diffoscope
+[2024-05-04 17:29:34] INFO root fetch - processPackages [memmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memmpy-0.1.8.tar.gz tmp/memmpy-0.1.9.tar.gz --markdown 20240504/m/memmpy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 17:29:35] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-05-04 17:29:35] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.2.8.tar.gz tmp/pygpt_net-2.2.9.tar.gz --markdown 20240504/p/pygpt-net/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-05-04 17:29:35] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.2.tar.gz]
+[2024-05-04 17:29:35] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.3a0.tar.gz]
+[2024-05-04 17:29:35] INFO root fetch - main [MainThread]: End processing [pyauth0]: success
+[2024-05-04 17:29:35] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.7.tar.gz]
+[2024-05-04 17:29:35] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.8.tar.gz]
+[2024-05-04 17:29:35] INFO root fetch - main [MainThread]: End processing [copy-spotter]: success
+[2024-05-04 17:29:35] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.8.tar.gz]
+[2024-05-04 17:29:35] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.9.tar.gz]
+[2024-05-04 17:29:35] INFO root fetch - main [MainThread]: End processing [easy-llama]: success
+[2024-05-04 17:29:35] INFO root fetch - processPackages [memmpy]: Remove: archive file [/home/abi/fetcher/tmp/memmpy-0.1.8.tar.gz]
+[2024-05-04 17:29:35] INFO root fetch - processPackages [memmpy]: Remove: archive file [/home/abi/fetcher/tmp/memmpy-0.1.9.tar.gz]
+[2024-05-04 17:29:35] INFO root fetch - main [MainThread]: End processing [memmpy]: success
+[2024-05-04 17:29:38] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.8.tar.gz]
+[2024-05-04 17:29:38] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.9.tar.gz]
+[2024-05-04 17:29:38] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-05-04 17:29:38] INFO root fetch - main [MainThread]: Store serial: [23058900]
