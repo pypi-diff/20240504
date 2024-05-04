@@ -10444,3 +10444,24 @@
 [2024-05-04 08:26:39] INFO root fetch - processPackages [odoo-addon-fs-attachment]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_attachment-17.0.1.0.1.2-py3-none-any.whl.zip]
 [2024-05-04 08:26:39] INFO root fetch - main [MainThread]: End processing [odoo-addon-fs-attachment]: success
 [2024-05-04 08:26:39] INFO root fetch - main [MainThread]: Store serial: [23056175]
+[2024-05-04 08:28:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056175]
+[2024-05-04 08:28:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 08:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: midi-abstraction
+[2024-05-04 08:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RPICommLink
+[2024-05-04 08:28:47] INFO root fetch - processPackages [RPICommLink]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-04 08:28:47] INFO root fetch - processPackages [RPICommLink]: Downloading https://files.pythonhosted.org/packages/58/82/bda1d75600716b06a7c1a5e7a5e3ae8a89ff21f8b46fd1e59fe9b054fd48/RPICommLink-1.0.3.tar.gz
+[2024-05-04 08:28:47] INFO root fetch - processPackages [midi-abstraction]: New version: [2.0.0] Old Version: [1.0.6]
+[2024-05-04 08:28:48] INFO root fetch - processPackages [midi-abstraction]: Downloading https://files.pythonhosted.org/packages/5f/9b/98f5b12403ba79ddeafe89f1c10588b322200d152391b4607f051936b88a/midi-abstraction-1.0.6.tar.gz
+[2024-05-04 08:28:48] INFO root fetch - processPackages [RPICommLink]: Downloading https://files.pythonhosted.org/packages/73/8d/bb0fcf1639611c01e8f00cd2e384347ae0741fdab4b17cdd2c1d96f5a7a0/RPICommLink-1.0.4.tar.gz
+[2024-05-04 08:28:48] INFO root fetch - processPackages [RPICommLink]: executing diffoscope
+[2024-05-04 08:28:48] INFO root fetch - processPackages [RPICommLink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RPICommLink-1.0.3.tar.gz tmp/RPICommLink-1.0.4.tar.gz --markdown 20240504/R/RPICommLink/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-04 08:28:48] INFO root fetch - processPackages [midi-abstraction]: Downloading https://files.pythonhosted.org/packages/ec/13/33450c956c21c7e458bc9fde99fd4b67333d8f836acf892c2818b9a3f592/midi-abstraction-2.0.0.tar.gz
+[2024-05-04 08:28:48] INFO root fetch - processPackages [midi-abstraction]: executing diffoscope
+[2024-05-04 08:28:48] INFO root fetch - processPackages [midi-abstraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midi-abstraction-1.0.6.tar.gz tmp/midi-abstraction-2.0.0.tar.gz --markdown 20240504/m/midi-abstraction/1.0.6-2.0.0/README.md --exclude *.pyd
+[2024-05-04 08:28:49] INFO root fetch - processPackages [RPICommLink]: Remove: archive file [/home/abi/fetcher/tmp/RPICommLink-1.0.3.tar.gz]
+[2024-05-04 08:28:49] INFO root fetch - processPackages [RPICommLink]: Remove: archive file [/home/abi/fetcher/tmp/RPICommLink-1.0.4.tar.gz]
+[2024-05-04 08:28:49] INFO root fetch - main [MainThread]: End processing [RPICommLink]: success
+[2024-05-04 08:28:49] INFO root fetch - processPackages [midi-abstraction]: Remove: archive file [/home/abi/fetcher/tmp/midi-abstraction-1.0.6.tar.gz]
+[2024-05-04 08:28:49] INFO root fetch - processPackages [midi-abstraction]: Remove: archive file [/home/abi/fetcher/tmp/midi-abstraction-2.0.0.tar.gz]
+[2024-05-04 08:28:49] INFO root fetch - main [MainThread]: End processing [midi-abstraction]: success
+[2024-05-04 08:28:49] INFO root fetch - main [MainThread]: Store serial: [23056183]
