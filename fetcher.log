@@ -16781,3 +16781,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:16:06] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.4.tar.gz]
 [2024-05-04 18:16:06] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp]: success
 [2024-05-04 18:16:06] INFO root fetch - main [MainThread]: Store serial: [23059202]
+[2024-05-04 18:18:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059202]
+[2024-05-04 18:18:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 18:18:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meta-machina
+[2024-05-04 18:18:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: super-rubik-cube
+[2024-05-04 18:18:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: honeybee-radiance
+[2024-05-04 18:18:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: honeybee-energy
+[2024-05-04 18:18:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sr.comp.scorer
+[2024-05-04 18:18:15] INFO root fetch - processPackages [meta-machina]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-04 18:18:15] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/e0/f1/437c74821a0e00320226a27204a1e5913c55fe526ad7b46c98c80e078e6d/meta_machina-0.0.5.tar.gz
+[2024-05-04 18:18:15] WARNING root fetch - processPackages [sr.comp.scorer]: Skipping, unable to determine old version
+[2024-05-04 18:18:15] INFO root fetch - main [MainThread]: End processing [sr.comp.scorer] error
+[2024-05-04 18:18:15] WARNING root fetch - processPackages [super-rubik-cube]: Skipping, unable to determine old version
+[2024-05-04 18:18:15] INFO root fetch - main [MainThread]: End processing [super-rubik-cube] error
+[2024-05-04 18:18:15] INFO root fetch - processPackages [honeybee-radiance]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-04 18:18:15] INFO root fetch - processPackages [honeybee-energy]: New version: [1.99.9] Old Version: [1.99.8]
+[2024-05-04 18:18:15] INFO root fetch - processPackages [honeybee-radiance]: Downloading https://files.pythonhosted.org/packages/48/ae/cca3e8aac6a72593fde7860cbf91882050c1a465c316efc2e0472bfa36e1/honeybee-radiance-1.9.1.tar.gz
+[2024-05-04 18:18:15] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/83/c0/dde0fb3f1078694c45b65c7889cfdc89d0d7cadd55b223eda3063d02e132/meta_machina-0.0.6.tar.gz
+[2024-05-04 18:18:15] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/b1/ab/c8fb70e349d71cce95bac52782f7ea0659a6987ed84dd41c7fe2ef40806c/honeybee-energy-1.99.8.tar.gz
+[2024-05-04 18:18:15] INFO root fetch - processPackages [meta-machina]: executing diffoscope
+[2024-05-04 18:18:15] INFO root fetch - processPackages [meta-machina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta_machina-0.0.5.tar.gz tmp/meta_machina-0.0.6.tar.gz --markdown 20240504/m/meta-machina/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-04 18:18:16] INFO root fetch - processPackages [honeybee-radiance]: Downloading https://files.pythonhosted.org/packages/50/24/71a3a4863bb39caef68dcd79f1b380133b1f1968426af26bc9c4812376d1/honeybee-radiance-1.9.2.tar.gz
+[2024-05-04 18:18:16] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/8d/5e/1bc90eeaf45799cc7d5cda125017c1e4e2cf0ef068cd3db60d971b9596ba/honeybee-energy-1.99.9.tar.gz
+[2024-05-04 18:18:16] INFO root fetch - processPackages [honeybee-radiance]: executing diffoscope
+[2024-05-04 18:18:16] INFO root fetch - processPackages [honeybee-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-radiance-1.9.1.tar.gz tmp/honeybee-radiance-1.9.2.tar.gz --markdown 20240504/h/honeybee-radiance/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-04 18:18:16] INFO root fetch - processPackages [honeybee-energy]: executing diffoscope
+[2024-05-04 18:18:16] INFO root fetch - processPackages [honeybee-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-energy-1.99.8.tar.gz tmp/honeybee-energy-1.99.9.tar.gz --markdown 20240504/h/honeybee-energy/1.99.8-1.99.9/README.md --exclude *.pyd
+[2024-05-04 18:18:16] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.5.tar.gz]
+[2024-05-04 18:18:16] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.6.tar.gz]
+[2024-05-04 18:18:16] INFO root fetch - main [MainThread]: End processing [meta-machina]: success
+[2024-05-04 18:18:17] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.8.tar.gz]
+[2024-05-04 18:18:17] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.9.tar.gz]
+[2024-05-04 18:18:17] INFO root fetch - main [MainThread]: End processing [honeybee-energy]: success
+[2024-05-04 18:18:17] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.1.tar.gz]
+[2024-05-04 18:18:17] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.2.tar.gz]
+[2024-05-04 18:18:17] INFO root fetch - main [MainThread]: End processing [honeybee-radiance]: success
+[2024-05-04 18:18:17] INFO root fetch - main [MainThread]: Store serial: [23059221]
