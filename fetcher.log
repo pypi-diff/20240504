@@ -18147,3 +18147,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:56:19] INFO root fetch - processPackages [robotpy-wpimath]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_wpimath-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
 [2024-05-04 19:56:19] INFO root fetch - main [MainThread]: End processing [robotpy-wpimath]: success
 [2024-05-04 19:56:19] INFO root fetch - main [MainThread]: Store serial: [23059907]
+[2024-05-04 19:58:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059907]
+[2024-05-04 19:58:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 19:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wpilib
+[2024-05-04 19:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alfred-pyflow
+[2024-05-04 19:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bcra-api-client
+[2024-05-04 19:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: habitat-suitability
+[2024-05-04 19:58:28] INFO root fetch - processPackages [bcra-api-client]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-05-04 19:58:28] INFO root fetch - processPackages [alfred-pyflow]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-05-04 19:58:28] WARNING root fetch - processPackages [habitat-suitability]: Skipping, unable to determine old version
+[2024-05-04 19:58:28] INFO root fetch - main [MainThread]: End processing [habitat-suitability] error
+[2024-05-04 19:58:28] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/2e/2d/871244a7ab6ae471c1779640fdf29f864c879a2b23bde7d5039d4ed45fc4/bcra-api-client-1.1.5.tar.gz
+[2024-05-04 19:58:28] INFO root fetch - processPackages [wpilib]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:58:28] INFO root fetch - processPackages [alfred-pyflow]: Downloading https://files.pythonhosted.org/packages/7c/29/f63d35648e588f629d96e2d9c7a540c142f855f8b04f527f9227b470a368/alfred_pyflow-0.4.6.tar.gz
+[2024-05-04 19:58:28] INFO root fetch - processPackages [wpilib]: Downloading https://files.pythonhosted.org/packages/e9/7d/d643fe7891caf21bebac63150c70cd8823d2985f509c0bd9225df04d4dec/wpilib-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:58:28] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/cd/ae/54d7054821ca98bb2effb3ea7db7d32dd72f52feefa5485ed8158be4ef52/bcra-api-client-1.1.6.tar.gz
+[2024-05-04 19:58:28] INFO root fetch - processPackages [bcra-api-client]: executing diffoscope
+[2024-05-04 19:58:28] INFO root fetch - processPackages [bcra-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcra-api-client-1.1.5.tar.gz tmp/bcra-api-client-1.1.6.tar.gz --markdown 20240504/b/bcra-api-client/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-05-04 19:58:28] INFO root fetch - processPackages [alfred-pyflow]: Downloading https://files.pythonhosted.org/packages/4e/7b/aeca13615b8ba6edbad4c1308810f7d3a501513959fd60302bb40e2bb924/alfred_pyflow-0.4.7.tar.gz
+[2024-05-04 19:58:29] INFO root fetch - processPackages [alfred-pyflow]: executing diffoscope
+[2024-05-04 19:58:29] INFO root fetch - processPackages [alfred-pyflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alfred_pyflow-0.4.6.tar.gz tmp/alfred_pyflow-0.4.7.tar.gz --markdown 20240504/a/alfred-pyflow/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-05-04 19:58:29] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra-api-client-1.1.5.tar.gz]
+[2024-05-04 19:58:29] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra-api-client-1.1.6.tar.gz]
+[2024-05-04 19:58:29] INFO root fetch - main [MainThread]: End processing [bcra-api-client]: success
+[2024-05-04 19:58:29] INFO root fetch - processPackages [alfred-pyflow]: Remove: archive file [/home/abi/fetcher/tmp/alfred_pyflow-0.4.6.tar.gz]
+[2024-05-04 19:58:29] INFO root fetch - processPackages [alfred-pyflow]: Remove: archive file [/home/abi/fetcher/tmp/alfred_pyflow-0.4.7.tar.gz]
+[2024-05-04 19:58:29] INFO root fetch - main [MainThread]: End processing [alfred-pyflow]: success
+[2024-05-04 19:58:29] INFO root fetch - processPackages [wpilib]: Downloading https://files.pythonhosted.org/packages/75/4b/6ae1fa592e478109242248862dffd056c882f54ffbc726faa88c1f0dccdd/wpilib-2024.3.2.1-cp39-cp39-win_amd64.whl
+[2024-05-04 19:58:30] INFO root fetch - processPackages [wpilib]: executing diffoscope
+[2024-05-04 19:58:30] INFO root fetch - processPackages [wpilib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wpilib-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/wpilib-2024.3.2.1-cp39-cp39-win_amd64.whl.zip --markdown 20240504/w/wpilib/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:58:31] INFO root fetch - processPackages [wpilib]: Remove: archive file [/home/abi/fetcher/tmp/wpilib-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:58:31] INFO root fetch - processPackages [wpilib]: Remove: archive file [/home/abi/fetcher/tmp/wpilib-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:58:31] INFO root fetch - main [MainThread]: End processing [wpilib]: success
+[2024-05-04 19:58:31] INFO root fetch - main [MainThread]: Store serial: [23059944]
