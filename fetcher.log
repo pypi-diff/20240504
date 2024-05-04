@@ -14981,3 +14981,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:48:14] INFO root fetch - processPackages [odfdo]: Remove: archive file [/home/abi/fetcher/tmp/odfdo-3.7.9.tar.gz]
 [2024-05-04 15:48:14] INFO root fetch - main [MainThread]: End processing [odfdo]: success
 [2024-05-04 15:48:14] INFO root fetch - main [MainThread]: Store serial: [23058306]
+[2024-05-04 15:50:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058306]
+[2024-05-04 15:50:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 15:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sapiopylib
+[2024-05-04 15:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PACMAN-charge
+[2024-05-04 15:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyo2.bagexplorer
+[2024-05-04 15:50:23] INFO root fetch - processPackages [sapiopylib]: New version: [2024.5.3rc190] Old Version: [2024.4.9a182]
+[2024-05-04 15:50:23] INFO root fetch - processPackages [PACMAN-charge]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-04 15:50:23] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/0a/6b/94a233fca31880977a33a8f70d7b3908cb3176e420daafd0446fd86d4cdd/sapiopylib-2024.4.9a182.tar.gz
+[2024-05-04 15:50:23] WARNING root fetch - processPackages [hyo2.bagexplorer]: Skipping, unable to determine old version
+[2024-05-04 15:50:23] INFO root fetch - main [MainThread]: End processing [hyo2.bagexplorer] error
+[2024-05-04 15:50:23] INFO root fetch - processPackages [PACMAN-charge]: Downloading https://files.pythonhosted.org/packages/a0/a1/333df807906530086f83883e79c9e77bc21488a5f0a83962413f1667eafa/PACMAN-charge-0.1.4.tar.gz
+[2024-05-04 15:50:23] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/d1/91/79a23306054739e0f3f618b284e90b38f0899a44c954a918355fddc999ec/sapiopylib-2024.5.3rc190.tar.gz
+[2024-05-04 15:50:23] INFO root fetch - processPackages [PACMAN-charge]: Downloading https://files.pythonhosted.org/packages/70/68/5aee6e9c43ca5966725a09eb5222193bcc21f7ebd8c0708a8c533fe7b407/PACMAN-charge-0.1.5.tar.gz
+[2024-05-04 15:50:23] INFO root fetch - processPackages [sapiopylib]: executing diffoscope
+[2024-05-04 15:50:23] INFO root fetch - processPackages [sapiopylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopylib-2024.4.9a182.tar.gz tmp/sapiopylib-2024.5.3rc190.tar.gz --markdown 20240504/s/sapiopylib/2024.4.9a182-2024.5.3rc190/README.md --exclude *.pyd
+[2024-05-04 15:50:23] INFO root fetch - processPackages [PACMAN-charge]: executing diffoscope
+[2024-05-04 15:50:23] INFO root fetch - processPackages [PACMAN-charge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PACMAN-charge-0.1.4.tar.gz tmp/PACMAN-charge-0.1.5.tar.gz --markdown 20240504/P/PACMAN-charge/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-04 15:50:24] INFO root fetch - processPackages [PACMAN-charge]: Remove: archive file [/home/abi/fetcher/tmp/PACMAN-charge-0.1.4.tar.gz]
+[2024-05-04 15:50:24] INFO root fetch - processPackages [PACMAN-charge]: Remove: archive file [/home/abi/fetcher/tmp/PACMAN-charge-0.1.5.tar.gz]
+[2024-05-04 15:50:24] INFO root fetch - main [MainThread]: End processing [PACMAN-charge]: success
+[2024-05-04 15:50:25] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.4.9a182.tar.gz]
+[2024-05-04 15:50:25] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.5.3rc190.tar.gz]
+[2024-05-04 15:50:25] INFO root fetch - main [MainThread]: End processing [sapiopylib]: success
+[2024-05-04 15:50:25] INFO root fetch - main [MainThread]: Store serial: [23058317]
