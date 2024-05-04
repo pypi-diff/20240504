@@ -15322,3 +15322,75 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:14:21] INFO root fetch - processPackages [great-expectations-cloud]: Remove: archive file [/home/abi/fetcher/tmp/great_expectations_cloud-20240503.0.dev3.tar.gz]
 [2024-05-04 16:14:21] INFO root fetch - main [MainThread]: End processing [great-expectations-cloud]: success
 [2024-05-04 16:14:21] INFO root fetch - main [MainThread]: Store serial: [23058449]
+[2024-05-04 16:16:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058449]
+[2024-05-04 16:16:30] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-04 16:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-05-04 16:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fbgemm-gpu-nightly
+[2024-05-04 16:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: padaleclib
+[2024-05-04 16:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pybotters
+[2024-05-04 16:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2024-05-04 16:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: copy-spotter
+[2024-05-04 16:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spark-on-k8s
+[2024-05-04 16:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: iwcs
+[2024-05-04 16:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: chord-reviews
+[2024-05-04 16:16:31] INFO root fetch - processPackages [chord-reviews]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-04 16:16:31] INFO root fetch - processPackages [copy-spotter]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-04 16:16:31] WARNING root fetch - processPackages [padaleclib]: Skipping, unable to determine old version
+[2024-05-04 16:16:31] INFO root fetch - main [MainThread]: End processing [padaleclib] error
+[2024-05-04 16:16:31] INFO root fetch - processPackages [spark-on-k8s]: New version: [0.6.0rc1] Old Version: [0.5.2]
+[2024-05-04 16:16:31] INFO root fetch - processPackages [iwcs]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-04 16:16:31] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2024.5.4] Old Version: [2024.5.3]
+[2024-05-04 16:16:31] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/4f/4b/d2d6b88a22222bca37cf3b23f443f2999e486555b38ab7a9729b835b8eb4/copy-spotter-0.1.4.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [pybotters]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-04 16:16:31] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-04 16:16:31] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-04 16:16:31] INFO root fetch - processPackages [chord-reviews]: Downloading https://files.pythonhosted.org/packages/4c/e7/48588961fc1bded2d388773b41b668f08ebdc09a874312a72ae787e965b5/chord_reviews-0.1.1.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [spark-on-k8s]: Downloading https://files.pythonhosted.org/packages/d2/3a/60270e0f6030343b00d3ae0dc5dc8ecc7d3c943cfae5a66905d99486f4f2/spark_on_k8s-0.5.2.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [pybotters]: Downloading https://files.pythonhosted.org/packages/85/2e/74aeb10bd53802a0a8fb0c0caf64525e4dd47ef120276e2e6059a6b98523/pybotters-1.1.0.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/33/5a/9e185c04d80f3bf0f42d25dc61c714bbfcd4b64cdc411ea25ebb0d8680b8/fbgemm_gpu_nightly-2024.5.3-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-04 16:16:31] INFO root fetch - processPackages [iwcs]: Downloading https://files.pythonhosted.org/packages/38/e5/c1d744677763002d20264a13ac0445658f477d13a501d8a164de1285f93a/iwcs-0.0.3.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/98/61/763157cab60dc007d5159c988d02d32b2a0cfab7731d8ef3facd5620eaa3/copy-spotter-0.1.5.tar.gz
+[2024-05-04 16:16:31] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 222216968>=10485760
+[2024-05-04 16:16:31] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2024-05-04 16:16:31] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [copy-spotter]: executing diffoscope
+[2024-05-04 16:16:31] INFO root fetch - processPackages [copy-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copy-spotter-0.1.4.tar.gz tmp/copy-spotter-0.1.5.tar.gz --markdown 20240504/c/copy-spotter/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-04 16:16:31] INFO root fetch - processPackages [chord-reviews]: Downloading https://files.pythonhosted.org/packages/76/e0/965b7785466d15f9783d29c7da9c23e6d6d0d83313d52a2fdcbac64af6a0/chord_reviews-0.2.0.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [spark-on-k8s]: Downloading https://files.pythonhosted.org/packages/49/17/bcaecc0e112a4a6a2889fa59309fa1b1fcf1b0e84f7504e48230f99c6182/spark_on_k8s-0.6.0rc1.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [pybotters]: Downloading https://files.pythonhosted.org/packages/29/68/00d88067860aa54ddfc7fadbb3883e76de9fd0067d6be79001bc2398bb7c/pybotters-1.1.1.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [chord-reviews]: executing diffoscope
+[2024-05-04 16:16:31] INFO root fetch - processPackages [chord-reviews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chord_reviews-0.1.1.tar.gz tmp/chord_reviews-0.2.0.tar.gz --markdown 20240504/c/chord-reviews/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-04 16:16:31] INFO root fetch - processPackages [iwcs]: Downloading https://files.pythonhosted.org/packages/70/c7/7b28f5975a368cdf30543a498ee3b8545386d44a15f6840dfe4cc29f7122/iwcs-0.0.4.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-04 16:16:31] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-04 16:16:32] INFO root fetch - processPackages [pybotters]: executing diffoscope
+[2024-05-04 16:16:32] INFO root fetch - processPackages [pybotters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybotters-1.1.0.tar.gz tmp/pybotters-1.1.1.tar.gz --markdown 20240504/p/pybotters/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-04 16:16:32] INFO root fetch - processPackages [spark-on-k8s]: executing diffoscope
+[2024-05-04 16:16:32] INFO root fetch - processPackages [spark-on-k8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spark_on_k8s-0.5.2.tar.gz tmp/spark_on_k8s-0.6.0rc1.tar.gz --markdown 20240504/s/spark-on-k8s/0.5.2-0.6.0rc1/README.md --exclude *.pyd
+[2024-05-04 16:16:32] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-04 16:16:32] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240504/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-04 16:16:32] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-04 16:16:32] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240504/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-04 16:16:32] INFO root fetch - processPackages [iwcs]: executing diffoscope
+[2024-05-04 16:16:32] INFO root fetch - processPackages [iwcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iwcs-0.0.3.tar.gz tmp/iwcs-0.0.4.tar.gz --markdown 20240504/i/iwcs/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-04 16:16:32] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.4.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.5.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - main [MainThread]: End processing [copy-spotter]: success
+[2024-05-04 16:16:32] INFO root fetch - processPackages [chord-reviews]: Remove: archive file [/home/abi/fetcher/tmp/chord_reviews-0.1.1.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - processPackages [chord-reviews]: Remove: archive file [/home/abi/fetcher/tmp/chord_reviews-0.2.0.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - main [MainThread]: End processing [chord-reviews]: success
+[2024-05-04 16:16:32] INFO root fetch - processPackages [iwcs]: Remove: archive file [/home/abi/fetcher/tmp/iwcs-0.0.3.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - processPackages [iwcs]: Remove: archive file [/home/abi/fetcher/tmp/iwcs-0.0.4.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - main [MainThread]: End processing [iwcs]: success
+[2024-05-04 16:16:32] INFO root fetch - processPackages [spark-on-k8s]: Remove: archive file [/home/abi/fetcher/tmp/spark_on_k8s-0.5.2.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - processPackages [spark-on-k8s]: Remove: archive file [/home/abi/fetcher/tmp/spark_on_k8s-0.6.0rc1.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - main [MainThread]: End processing [spark-on-k8s]: success
+[2024-05-04 16:16:32] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-04 16:16:32] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-04 16:16:32] INFO root fetch - processPackages [pybotters]: Remove: archive file [/home/abi/fetcher/tmp/pybotters-1.1.0.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - processPackages [pybotters]: Remove: archive file [/home/abi/fetcher/tmp/pybotters-1.1.1.tar.gz]
+[2024-05-04 16:16:32] INFO root fetch - main [MainThread]: End processing [pybotters]: success
+[2024-05-04 16:16:32] INFO root fetch - main [MainThread]: Store serial: [23058479]
