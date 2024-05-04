@@ -17310,3 +17310,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:55:09] INFO root fetch - processPackages [agixt]: Remove: archive file [/home/abi/fetcher/tmp/agixt-1.5.9-py3-none-any.whl.zip]
 [2024-05-04 18:55:09] INFO root fetch - main [MainThread]: End processing [agixt]: success
 [2024-05-04 18:55:09] INFO root fetch - main [MainThread]: Store serial: [23059403]
+[2024-05-04 18:57:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059403]
+[2024-05-04 18:57:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 18:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flarejax
+[2024-05-04 18:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: soco
+[2024-05-04 18:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: try-pub-pypi
+[2024-05-04 18:57:17] WARNING root fetch - processPackages [try-pub-pypi]: Skipping, unable to determine old version
+[2024-05-04 18:57:17] INFO root fetch - main [MainThread]: End processing [try-pub-pypi] error
+[2024-05-04 18:57:18] INFO root fetch - processPackages [flarejax]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-04 18:57:18] INFO root fetch - processPackages [soco]: New version: [0.9] Old Version: [0.8]
+[2024-05-04 18:57:18] INFO root fetch - processPackages [flarejax]: Downloading https://files.pythonhosted.org/packages/61/b4/9d04a605caee5088a5aa285b798d2ff3b883e4992b91d58694803b9b8bcc/flarejax-0.2.0.tar.gz
+[2024-05-04 18:57:18] INFO root fetch - processPackages [soco]: Downloading https://files.pythonhosted.org/packages/2c/13/ed3573fb32a08d8e19eab8a186b48bbf62ffd3fcbac1d70d652c9b170dce/soco-0.8.tar.gz
+[2024-05-04 18:57:18] INFO root fetch - processPackages [flarejax]: Downloading https://files.pythonhosted.org/packages/67/35/7799e9deab55c87e21846fe4a514de125217d9379e18a5317539a8085477/flarejax-0.2.1.tar.gz
+[2024-05-04 18:57:18] INFO root fetch - processPackages [flarejax]: executing diffoscope
+[2024-05-04 18:57:18] INFO root fetch - processPackages [flarejax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarejax-0.2.0.tar.gz tmp/flarejax-0.2.1.tar.gz --markdown 20240504/f/flarejax/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-04 18:57:18] INFO root fetch - processPackages [soco]: Downloading https://files.pythonhosted.org/packages/19/cb/73ea986be47c981870950baff7d1b8a94eac81ec9affe02ac9fa3228b720/soco-0.9.tar.gz
+[2024-05-04 18:57:19] INFO root fetch - processPackages [soco]: executing diffoscope
+[2024-05-04 18:57:19] INFO root fetch - processPackages [soco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soco-0.8.tar.gz tmp/soco-0.9.tar.gz --markdown 20240504/s/soco/0.8-0.9/README.md --exclude *.pyd
+[2024-05-04 18:57:19] INFO root fetch - processPackages [flarejax]: Remove: archive file [/home/abi/fetcher/tmp/flarejax-0.2.0.tar.gz]
+[2024-05-04 18:57:19] INFO root fetch - processPackages [flarejax]: Remove: archive file [/home/abi/fetcher/tmp/flarejax-0.2.1.tar.gz]
+[2024-05-04 18:57:19] INFO root fetch - main [MainThread]: End processing [flarejax]: success
+[2024-05-04 18:57:19] INFO root fetch - processPackages [soco]: Remove: archive file [/home/abi/fetcher/tmp/soco-0.8.tar.gz]
+[2024-05-04 18:57:19] INFO root fetch - processPackages [soco]: Remove: archive file [/home/abi/fetcher/tmp/soco-0.9.tar.gz]
+[2024-05-04 18:57:19] INFO root fetch - main [MainThread]: End processing [soco]: success
+[2024-05-04 18:57:19] INFO root fetch - main [MainThread]: Store serial: [23059412]
