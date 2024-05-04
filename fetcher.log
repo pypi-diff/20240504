@@ -19235,3 +19235,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:10:43] INFO root fetch - processPackages [lime-stable]: Remove: archive file [/home/abi/fetcher/tmp/lime-stable-1.0.1.tar.gz]
 [2024-05-04 21:10:43] INFO root fetch - main [MainThread]: End processing [lime-stable]: success
 [2024-05-04 21:10:43] INFO root fetch - main [MainThread]: Store serial: [23060389]
+[2024-05-04 21:12:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060389]
+[2024-05-04 21:12:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 21:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psp-liquids-daq-parser
+[2024-05-04 21:12:52] INFO root fetch - processPackages [psp-liquids-daq-parser]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 21:12:52] INFO root fetch - processPackages [psp-liquids-daq-parser]: Downloading https://files.pythonhosted.org/packages/5a/ac/acb2afa30ac1f5b2b0951c15a15e36c8ff37d2b157a58f13f26d6da72f9d/psp_liquids_daq_parser-0.0.8.tar.gz
+[2024-05-04 21:12:53] INFO root fetch - processPackages [psp-liquids-daq-parser]: Downloading https://files.pythonhosted.org/packages/d4/93/54529293da723ef115445c4b8df210739f8431f36b86101fd0a2925667c2/psp_liquids_daq_parser-0.0.9.tar.gz
+[2024-05-04 21:12:53] INFO root fetch - processPackages [psp-liquids-daq-parser]: executing diffoscope
+[2024-05-04 21:12:53] INFO root fetch - processPackages [psp-liquids-daq-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psp_liquids_daq_parser-0.0.8.tar.gz tmp/psp_liquids_daq_parser-0.0.9.tar.gz --markdown 20240504/p/psp-liquids-daq-parser/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 21:12:53] INFO root fetch - processPackages [psp-liquids-daq-parser]: Remove: archive file [/home/abi/fetcher/tmp/psp_liquids_daq_parser-0.0.8.tar.gz]
+[2024-05-04 21:12:53] INFO root fetch - processPackages [psp-liquids-daq-parser]: Remove: archive file [/home/abi/fetcher/tmp/psp_liquids_daq_parser-0.0.9.tar.gz]
+[2024-05-04 21:12:53] INFO root fetch - main [MainThread]: End processing [psp-liquids-daq-parser]: success
+[2024-05-04 21:12:53] INFO root fetch - main [MainThread]: Store serial: [23060392]
