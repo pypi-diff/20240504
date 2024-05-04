@@ -10502,3 +10502,29 @@
 [2024-05-04 08:35:09] INFO root fetch - processPackages [cronrepo]: Remove: archive file [/home/abi/fetcher/tmp/cronrepo-0.3.4.tar.gz]
 [2024-05-04 08:35:09] INFO root fetch - main [MainThread]: End processing [cronrepo]: success
 [2024-05-04 08:35:09] INFO root fetch - main [MainThread]: Store serial: [23056195]
+[2024-05-04 08:37:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056195]
+[2024-05-04 08:37:18] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 08:39:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056195]
+[2024-05-04 08:39:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 08:39:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qh3
+[2024-05-04 08:39:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AGTEPyth
+[2024-05-04 08:39:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clovers_setu_collection
+[2024-05-04 08:39:25] INFO root fetch - processPackages [clovers_setu_collection]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 08:39:25] WARNING root fetch - processPackages [AGTEPyth]: Skipping, unable to determine old version
+[2024-05-04 08:39:25] INFO root fetch - main [MainThread]: End processing [AGTEPyth] error
+[2024-05-04 08:39:25] INFO root fetch - processPackages [qh3]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-04 08:39:25] INFO root fetch - processPackages [clovers_setu_collection]: Downloading https://files.pythonhosted.org/packages/71/53/0ac54a0377a8ca30fc5906f8d1731d0595de1fbb8f59c1c63a875c135ff4/clovers_setu_collection-0.1.1.tar.gz
+[2024-05-04 08:39:25] INFO root fetch - processPackages [qh3]: Downloading https://files.pythonhosted.org/packages/7e/12/0511dc2c3638c2d92d6c72e29835afd489b2b2513993cfb282351009a37d/qh3-1.0.4.tar.gz
+[2024-05-04 08:39:25] INFO root fetch - processPackages [clovers_setu_collection]: Downloading https://files.pythonhosted.org/packages/71/0c/6096a669d6ea1b8086dd77f844d6f1b403d486e3c04b1e5ab150a96bb1d8/clovers_setu_collection-0.1.2.tar.gz
+[2024-05-04 08:39:26] INFO root fetch - processPackages [clovers_setu_collection]: executing diffoscope
+[2024-05-04 08:39:26] INFO root fetch - processPackages [clovers_setu_collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clovers_setu_collection-0.1.1.tar.gz tmp/clovers_setu_collection-0.1.2.tar.gz --markdown 20240504/c/clovers_setu_collection/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 08:39:26] INFO root fetch - processPackages [qh3]: Downloading https://files.pythonhosted.org/packages/f4/d8/77eee14a689261bd370afaa0948f7f3ffddb743a3e336dcedb347095dd17/qh3-1.0.5-pp38-pypy38_pp73-musllinux_1_1_aarch64.whl
+[2024-05-04 08:39:26] INFO root fetch - processPackages [clovers_setu_collection]: Remove: archive file [/home/abi/fetcher/tmp/clovers_setu_collection-0.1.1.tar.gz]
+[2024-05-04 08:39:26] INFO root fetch - processPackages [clovers_setu_collection]: Remove: archive file [/home/abi/fetcher/tmp/clovers_setu_collection-0.1.2.tar.gz]
+[2024-05-04 08:39:26] INFO root fetch - main [MainThread]: End processing [clovers_setu_collection]: success
+[2024-05-04 08:39:27] INFO root fetch - processPackages [qh3]: executing diffoscope
+[2024-05-04 08:39:27] INFO root fetch - processPackages [qh3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qh3-1.0.4.tar.gz tmp/qh3-1.0.5-pp38-pypy38_pp73-musllinux_1_1_aarch64.whl.zip --markdown 20240504/q/qh3/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-04 08:39:28] INFO root fetch - processPackages [qh3]: Remove: archive file [/home/abi/fetcher/tmp/qh3-1.0.4.tar.gz]
+[2024-05-04 08:39:28] INFO root fetch - processPackages [qh3]: Remove: archive file [/home/abi/fetcher/tmp/qh3-1.0.5-pp38-pypy38_pp73-musllinux_1_1_aarch64.whl.zip]
+[2024-05-04 08:39:28] INFO root fetch - main [MainThread]: End processing [qh3]: success
+[2024-05-04 08:39:28] INFO root fetch - main [MainThread]: Store serial: [23056252]
