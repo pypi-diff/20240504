@@ -14478,3 +14478,15 @@
 [2024-05-04 15:06:14] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.9.tar.gz]
 [2024-05-04 15:06:14] INFO root fetch - main [MainThread]: End processing [astabc]: success
 [2024-05-04 15:06:14] INFO root fetch - main [MainThread]: Store serial: [23058095]
+[2024-05-04 15:08:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058095]
+[2024-05-04 15:08:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 15:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: name-generator-nicomp
+[2024-05-04 15:08:23] INFO root fetch - processPackages [name-generator-nicomp]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 15:08:23] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/57/f0/8b7f386ba049af43050aca877e2e6fd4639dc45e8ca74c10e4e45d42cf2c/name_generator_nicomp-1.0.0.tar.gz
+[2024-05-04 15:08:23] INFO root fetch - processPackages [name-generator-nicomp]: Downloading https://files.pythonhosted.org/packages/9a/55/ec394d28059b2b5187b7f1788d66a62bbc323126410056840a08afd6c830/name_generator_nicomp-1.0.1.tar.gz
+[2024-05-04 15:08:24] INFO root fetch - processPackages [name-generator-nicomp]: executing diffoscope
+[2024-05-04 15:08:24] INFO root fetch - processPackages [name-generator-nicomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/name_generator_nicomp-1.0.0.tar.gz tmp/name_generator_nicomp-1.0.1.tar.gz --markdown 20240504/n/name-generator-nicomp/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 15:08:24] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.0.tar.gz]
+[2024-05-04 15:08:24] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.1.tar.gz]
+[2024-05-04 15:08:24] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp]: success
+[2024-05-04 15:08:24] INFO root fetch - main [MainThread]: Store serial: [23058098]
