@@ -11053,3 +11053,27 @@
 [2024-05-04 09:25:13] WARNING root fetch - processPackages [sandowichi]: Skipping, unable to determine old version
 [2024-05-04 09:25:13] INFO root fetch - main [MainThread]: End processing [sandowichi] error
 [2024-05-04 09:25:13] INFO root fetch - main [MainThread]: Store serial: [23056541]
+[2024-05-04 09:27:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056541]
+[2024-05-04 09:27:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 09:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zscaler-pulumi-zpa
+[2024-05-04 09:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: munet
+[2024-05-04 09:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: justtrade
+[2024-05-04 09:27:21] INFO root fetch - processPackages [munet]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-04 09:27:21] INFO root fetch - processPackages [zscaler-pulumi-zpa]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-04 09:27:21] WARNING root fetch - processPackages [justtrade]: Skipping, unable to determine old version
+[2024-05-04 09:27:21] INFO root fetch - main [MainThread]: End processing [justtrade] error
+[2024-05-04 09:27:21] INFO root fetch - processPackages [munet]: Downloading https://files.pythonhosted.org/packages/ab/ab/50abc3289545adb952eebcb12b5d75cd68c3deddb2ead102309f6b23b3fd/munet-0.9.8.tar.gz
+[2024-05-04 09:27:21] INFO root fetch - processPackages [zscaler-pulumi-zpa]: Downloading https://files.pythonhosted.org/packages/7e/98/36cf40c75aadb0a252d1d62479a08b78ce6b6ca37f33510127b3a8de9b5c/zscaler_pulumi_zpa-0.0.7.tar.gz
+[2024-05-04 09:27:21] INFO root fetch - processPackages [munet]: Downloading https://files.pythonhosted.org/packages/e9/a7/16aef984464ad235996a4918e7377bd5e40cd015eb9b5cae381b237aeba4/munet-0.9.9.tar.gz
+[2024-05-04 09:27:22] INFO root fetch - processPackages [munet]: executing diffoscope
+[2024-05-04 09:27:22] INFO root fetch - processPackages [munet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/munet-0.9.8.tar.gz tmp/munet-0.9.9.tar.gz --markdown 20240504/m/munet/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-04 09:27:22] INFO root fetch - processPackages [zscaler-pulumi-zpa]: Downloading https://files.pythonhosted.org/packages/eb/2c/e9eafbd66c61a6b40c6dc180331e54cd01aee03367d6b74086aad8ac6d2e/zscaler_pulumi_zpa-0.0.9.tar.gz
+[2024-05-04 09:27:22] INFO root fetch - processPackages [zscaler-pulumi-zpa]: executing diffoscope
+[2024-05-04 09:27:22] INFO root fetch - processPackages [zscaler-pulumi-zpa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zscaler_pulumi_zpa-0.0.7.tar.gz tmp/zscaler_pulumi_zpa-0.0.9.tar.gz --markdown 20240504/z/zscaler-pulumi-zpa/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-04 09:27:22] INFO root fetch - processPackages [munet]: Remove: archive file [/home/abi/fetcher/tmp/munet-0.9.8.tar.gz]
+[2024-05-04 09:27:22] INFO root fetch - processPackages [munet]: Remove: archive file [/home/abi/fetcher/tmp/munet-0.9.9.tar.gz]
+[2024-05-04 09:27:22] INFO root fetch - main [MainThread]: End processing [munet]: success
+[2024-05-04 09:27:23] INFO root fetch - processPackages [zscaler-pulumi-zpa]: Remove: archive file [/home/abi/fetcher/tmp/zscaler_pulumi_zpa-0.0.7.tar.gz]
+[2024-05-04 09:27:23] INFO root fetch - processPackages [zscaler-pulumi-zpa]: Remove: archive file [/home/abi/fetcher/tmp/zscaler_pulumi_zpa-0.0.9.tar.gz]
+[2024-05-04 09:27:23] INFO root fetch - main [MainThread]: End processing [zscaler-pulumi-zpa]: success
+[2024-05-04 09:27:23] INFO root fetch - main [MainThread]: Store serial: [23056555]
