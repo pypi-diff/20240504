@@ -20520,3 +20520,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:47:01] INFO root fetch - processPackages [carate]: Remove: archive file [/home/abi/fetcher/tmp/carate-0.3.9.tar.gz]
 [2024-05-04 22:47:01] INFO root fetch - main [MainThread]: End processing [carate]: success
 [2024-05-04 22:47:01] INFO root fetch - main [MainThread]: Store serial: [23060881]
+[2024-05-04 22:49:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060881]
+[2024-05-04 22:49:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 22:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yolo-world-open
+[2024-05-04 22:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyshotgrid
+[2024-05-04 22:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-04 22:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlglot
+[2024-05-04 22:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: coh2-live-stats
+[2024-05-04 22:49:09] INFO root fetch - processPackages [yolo-world-open]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-04 22:49:09] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-04 22:49:09] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-04 22:49:09] INFO root fetch - processPackages [pyshotgrid]: New version: [2.0.2] Old Version: [2.0.0]
+[2024-05-04 22:49:09] INFO root fetch - processPackages [yolo-world-open]: Downloading https://files.pythonhosted.org/packages/c2/15/f742eb331c43e0e6bd291639abaa3923544b8aea026e9a3681e522d236d7/yolo_world_open-0.3.0.tar.gz
+[2024-05-04 22:49:09] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-04 22:49:09] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-04 22:49:09] WARNING root fetch - processPackages [coh2-live-stats]: Skipping, unable to determine old version
+[2024-05-04 22:49:09] INFO root fetch - main [MainThread]: End processing [coh2-live-stats] error
+[2024-05-04 22:49:10] INFO root fetch - processPackages [pyshotgrid]: Downloading https://files.pythonhosted.org/packages/d0/8a/dcdb1f10986406ee089bdb9d05b43ab988e13265600ba88536c6d1ab193a/pyshotgrid-2.0.0.tar.gz
+[2024-05-04 22:49:10] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-04 22:49:10] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-04 22:49:10] INFO root fetch - processPackages [yolo-world-open]: Downloading https://files.pythonhosted.org/packages/93/00/4897cb1cc2e62176969f6cf9fce9afa11cc6626241db534c9f235f970fa7/yolo_world_open-0.4.0.tar.gz
+[2024-05-04 22:49:10] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-04 22:49:10] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240504/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-04 22:49:10] INFO root fetch - processPackages [yolo-world-open]: executing diffoscope
+[2024-05-04 22:49:10] INFO root fetch - processPackages [yolo-world-open]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yolo_world_open-0.3.0.tar.gz tmp/yolo_world_open-0.4.0.tar.gz --markdown 20240504/y/yolo-world-open/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-04 22:49:10] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-04 22:49:10] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240504/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-04 22:49:10] INFO root fetch - processPackages [pyshotgrid]: Downloading https://files.pythonhosted.org/packages/a0/0c/c42fc695cd95d0adcd1ea6da6a87c57ca82e41ff0ca642844071d3791d88/pyshotgrid-2.0.2.tar.gz
+[2024-05-04 22:49:10] INFO root fetch - processPackages [pyshotgrid]: executing diffoscope
+[2024-05-04 22:49:10] INFO root fetch - processPackages [pyshotgrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyshotgrid-2.0.0.tar.gz tmp/pyshotgrid-2.0.2.tar.gz --markdown 20240504/p/pyshotgrid/2.0.0-2.0.2/README.md --exclude *.pyd
+[2024-05-04 22:49:11] INFO root fetch - processPackages [yolo-world-open]: Remove: archive file [/home/abi/fetcher/tmp/yolo_world_open-0.3.0.tar.gz]
+[2024-05-04 22:49:11] INFO root fetch - processPackages [yolo-world-open]: Remove: archive file [/home/abi/fetcher/tmp/yolo_world_open-0.4.0.tar.gz]
+[2024-05-04 22:49:11] INFO root fetch - main [MainThread]: End processing [yolo-world-open]: success
+[2024-05-04 22:49:11] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-04 22:49:11] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-04 22:49:11] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-04 22:49:11] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-04 22:49:11] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-04 22:49:11] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-04 22:49:11] INFO root fetch - processPackages [pyshotgrid]: Remove: archive file [/home/abi/fetcher/tmp/pyshotgrid-2.0.0.tar.gz]
+[2024-05-04 22:49:11] INFO root fetch - processPackages [pyshotgrid]: Remove: archive file [/home/abi/fetcher/tmp/pyshotgrid-2.0.2.tar.gz]
+[2024-05-04 22:49:11] INFO root fetch - main [MainThread]: End processing [pyshotgrid]: success
+[2024-05-04 22:49:11] INFO root fetch - main [MainThread]: Store serial: [23060897]
