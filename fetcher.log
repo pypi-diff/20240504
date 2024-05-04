@@ -18892,3 +18892,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:49:05] INFO root fetch - processPackages [torch-nos]: Remove: archive file [/home/abi/fetcher/tmp/torch_nos-0.3.0-py3-none-any.whl.zip]
 [2024-05-04 20:49:05] INFO root fetch - main [MainThread]: End processing [torch-nos]: success
 [2024-05-04 20:49:05] INFO root fetch - main [MainThread]: Store serial: [23060255]
+[2024-05-04 20:51:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060255]
+[2024-05-04 20:51:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 20:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docx2latex
+[2024-05-04 20:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hexdoc
+[2024-05-04 20:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hat-aio
+[2024-05-04 20:51:14] WARNING root fetch - processPackages [docx2latex]: Skipping, unable to determine old version
+[2024-05-04 20:51:14] INFO root fetch - main [MainThread]: End processing [docx2latex] error
+[2024-05-04 20:51:14] INFO root fetch - processPackages [hexdoc]: New version: [1!0.1.0a9] Old Version: [1!0.1.0a8]
+[2024-05-04 20:51:14] INFO root fetch - processPackages [hat-aio]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-04 20:51:14] INFO root fetch - processPackages [hexdoc]: Downloading https://files.pythonhosted.org/packages/41/3c/095a3abe0276460303a7fb44be7549f3b5eeee9ab93e540fe79d34c61915/hexdoc-1!0.1.0a8.tar.gz
+[2024-05-04 20:51:15] INFO root fetch - processPackages [hat-aio]: Downloading https://files.pythonhosted.org/packages/7f/40/834f86b914509e5e515ea27b321580ab7f17379831fd42636297046c3c04/hat_aio-0.7.8-cp310.cp311-none-any.whl
+[2024-05-04 20:51:15] INFO root fetch - processPackages [hexdoc]: Downloading https://files.pythonhosted.org/packages/cd/f8/77bb4fb48d1590fa4afd9345e60063d3975f2401318af826181c3435d518/hexdoc-1!0.1.0a9.tar.gz
+[2024-05-04 20:51:15] INFO root fetch - processPackages [hat-aio]: Downloading https://files.pythonhosted.org/packages/d2/4f/d768e26f9ad7eaace30787fb92aeb70123f62407c7fad5de50b3935072e6/hat_aio-0.7.9-cp310.cp311-none-any.whl
+[2024-05-04 20:51:15] INFO root fetch - processPackages [hexdoc]: executing diffoscope
+[2024-05-04 20:51:15] INFO root fetch - processPackages [hexdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexdoc-1!0.1.0a8.tar.gz tmp/hexdoc-1!0.1.0a9.tar.gz --markdown 20240504/h/hexdoc/1!0.1.0a8-1!0.1.0a9/README.md --exclude *.pyd
+[2024-05-04 20:51:15] INFO root fetch - processPackages [hat-aio]: executing diffoscope
+[2024-05-04 20:51:15] INFO root fetch - processPackages [hat-aio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_aio-0.7.8-cp310.cp311-none-any.whl.zip tmp/hat_aio-0.7.9-cp310.cp311-none-any.whl.zip --markdown 20240504/h/hat-aio/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-04 20:51:16] INFO root fetch - processPackages [hat-aio]: Remove: archive file [/home/abi/fetcher/tmp/hat_aio-0.7.8-cp310.cp311-none-any.whl.zip]
+[2024-05-04 20:51:16] INFO root fetch - processPackages [hat-aio]: Remove: archive file [/home/abi/fetcher/tmp/hat_aio-0.7.9-cp310.cp311-none-any.whl.zip]
+[2024-05-04 20:51:16] INFO root fetch - main [MainThread]: End processing [hat-aio]: success
+[2024-05-04 20:51:16] INFO root fetch - processPackages [hexdoc]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc-1!0.1.0a8.tar.gz]
+[2024-05-04 20:51:16] INFO root fetch - processPackages [hexdoc]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc-1!0.1.0a9.tar.gz]
+[2024-05-04 20:51:16] INFO root fetch - main [MainThread]: End processing [hexdoc]: success
+[2024-05-04 20:51:16] INFO root fetch - main [MainThread]: Store serial: [23060264]
