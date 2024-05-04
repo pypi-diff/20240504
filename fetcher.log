@@ -18612,3 +18612,50 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:31:24] INFO root fetch - processPackages [histcite-python]: Remove: archive file [/home/abi/fetcher/tmp/histcite_python-2.0.0.tar.gz]
 [2024-05-04 20:31:24] INFO root fetch - main [MainThread]: End processing [histcite-python]: success
 [2024-05-04 20:31:24] INFO root fetch - main [MainThread]: Store serial: [23060152]
+[2024-05-04 20:33:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060152]
+[2024-05-04 20:33:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 20:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: timeseries-shaper
+[2024-05-04 20:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bloqade
+[2024-05-04 20:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: parcllabs
+[2024-05-04 20:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: try-pub-pypi
+[2024-05-04 20:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: baseapp-auth
+[2024-05-04 20:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: techgram
+[2024-05-04 20:33:33] INFO root fetch - processPackages [try-pub-pypi]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-04 20:33:33] INFO root fetch - processPackages [techgram]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-04 20:33:33] INFO root fetch - processPackages [parcllabs]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 20:33:33] INFO root fetch - processPackages [baseapp-auth]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-04 20:33:33] WARNING root fetch - processPackages [timeseries-shaper]: Skipping, unable to determine old version
+[2024-05-04 20:33:33] INFO root fetch - main [MainThread]: End processing [timeseries-shaper] error
+[2024-05-04 20:33:33] INFO root fetch - processPackages [bloqade]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-04 20:33:33] INFO root fetch - processPackages [techgram]: Downloading https://files.pythonhosted.org/packages/30/15/825e1d9cc6f88a01c3b2bd1555e1ea6111d882da5da25741f9dc156feb55/techgram-1.0.5-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-04 20:33:33] INFO root fetch - processPackages [parcllabs]: Downloading https://files.pythonhosted.org/packages/4b/a7/9060c070fcbeed0ac71fb0b49e67b6162c4027ec3296ac7d9595c1654294/parcllabs-0.1.8.tar.gz
+[2024-05-04 20:33:33] INFO root fetch - processPackages [try-pub-pypi]: Downloading https://files.pythonhosted.org/packages/c3/d9/17cca747590b9d5d9770096d3007f1d2f41245252e3d9f5545be6ab67f8d/try_pub_pypi-0.0.1.tar.gz
+[2024-05-04 20:33:33] WARNING root fetch - processPackages [techgram]: Skipping package: exceeds size limit 11230132>=10485760
+[2024-05-04 20:33:33] INFO root fetch - main [MainThread]: End processing [techgram] error
+[2024-05-04 20:33:33] INFO root fetch - processPackages [bloqade]: Downloading https://files.pythonhosted.org/packages/af/b4/a0d13bd1e2f8038441dfdbe7be8b9b9133e0690c493a3ec5a6bed9a71f31/bloqade-0.8.0.tar.gz
+[2024-05-04 20:33:33] INFO root fetch - processPackages [baseapp-auth]: Downloading https://files.pythonhosted.org/packages/ce/e0/d4361ef285a78ba7baddbc26368922d9e136ce89435eaa10d056f76a3e83/baseapp-auth-0.2.8.tar.gz
+[2024-05-04 20:33:33] INFO root fetch - processPackages [parcllabs]: Downloading https://files.pythonhosted.org/packages/54/76/252d5d459b8fefcdb4cd8ba9124168cc37b81f5740ca09ff3e754621335b/parcllabs-0.1.9.tar.gz
+[2024-05-04 20:33:33] INFO root fetch - processPackages [try-pub-pypi]: Downloading https://files.pythonhosted.org/packages/f4/25/e048ddae2a81cd1e728de1c09d82f298189e9d07ad7b1f93243afb3c52df/try_pub_pypi-0.0.2.tar.gz
+[2024-05-04 20:33:33] INFO root fetch - processPackages [parcllabs]: executing diffoscope
+[2024-05-04 20:33:33] INFO root fetch - processPackages [parcllabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parcllabs-0.1.8.tar.gz tmp/parcllabs-0.1.9.tar.gz --markdown 20240504/p/parcllabs/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 20:33:33] INFO root fetch - processPackages [try-pub-pypi]: executing diffoscope
+[2024-05-04 20:33:33] INFO root fetch - processPackages [try-pub-pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/try_pub_pypi-0.0.1.tar.gz tmp/try_pub_pypi-0.0.2.tar.gz --markdown 20240504/t/try-pub-pypi/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-04 20:33:33] INFO root fetch - processPackages [baseapp-auth]: Downloading https://files.pythonhosted.org/packages/f2/80/4a395ce9b8d3ae8f396526d45da3044de7ae996cbb9042b595b447b0cae8/baseapp-auth-0.2.9.tar.gz
+[2024-05-04 20:33:34] INFO root fetch - processPackages [bloqade]: Downloading https://files.pythonhosted.org/packages/29/98/44f6b60eda27fd11d2a570439b7f2c12f2694884047e15eb6965757187d0/bloqade-0.9.0.tar.gz
+[2024-05-04 20:33:34] INFO root fetch - processPackages [baseapp-auth]: executing diffoscope
+[2024-05-04 20:33:34] INFO root fetch - processPackages [baseapp-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseapp-auth-0.2.8.tar.gz tmp/baseapp-auth-0.2.9.tar.gz --markdown 20240504/b/baseapp-auth/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-04 20:33:34] INFO root fetch - processPackages [bloqade]: executing diffoscope
+[2024-05-04 20:33:34] INFO root fetch - processPackages [bloqade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bloqade-0.8.0.tar.gz tmp/bloqade-0.9.0.tar.gz --markdown 20240504/b/bloqade/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-04 20:33:34] INFO root fetch - processPackages [parcllabs]: Remove: archive file [/home/abi/fetcher/tmp/parcllabs-0.1.8.tar.gz]
+[2024-05-04 20:33:34] INFO root fetch - processPackages [parcllabs]: Remove: archive file [/home/abi/fetcher/tmp/parcllabs-0.1.9.tar.gz]
+[2024-05-04 20:33:34] INFO root fetch - main [MainThread]: End processing [parcllabs]: success
+[2024-05-04 20:33:34] INFO root fetch - processPackages [try-pub-pypi]: Remove: archive file [/home/abi/fetcher/tmp/try_pub_pypi-0.0.1.tar.gz]
+[2024-05-04 20:33:34] INFO root fetch - processPackages [try-pub-pypi]: Remove: archive file [/home/abi/fetcher/tmp/try_pub_pypi-0.0.2.tar.gz]
+[2024-05-04 20:33:34] INFO root fetch - main [MainThread]: End processing [try-pub-pypi]: success
+[2024-05-04 20:33:34] INFO root fetch - processPackages [baseapp-auth]: Remove: archive file [/home/abi/fetcher/tmp/baseapp-auth-0.2.8.tar.gz]
+[2024-05-04 20:33:34] INFO root fetch - processPackages [baseapp-auth]: Remove: archive file [/home/abi/fetcher/tmp/baseapp-auth-0.2.9.tar.gz]
+[2024-05-04 20:33:34] INFO root fetch - main [MainThread]: End processing [baseapp-auth]: success
+[2024-05-04 20:33:35] INFO root fetch - processPackages [bloqade]: Remove: archive file [/home/abi/fetcher/tmp/bloqade-0.8.0.tar.gz]
+[2024-05-04 20:33:35] INFO root fetch - processPackages [bloqade]: Remove: archive file [/home/abi/fetcher/tmp/bloqade-0.9.0.tar.gz]
+[2024-05-04 20:33:35] INFO root fetch - main [MainThread]: End processing [bloqade]: success
+[2024-05-04 20:33:35] INFO root fetch - main [MainThread]: Store serial: [23060175]
