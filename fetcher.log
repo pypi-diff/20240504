@@ -18704,3 +18704,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:37:55] INFO root fetch - processPackages [github-backup]: Remove: archive file [/home/abi/fetcher/tmp/github-backup-0.9.0.tar.gz]
 [2024-05-04 20:37:55] INFO root fetch - main [MainThread]: End processing [github-backup]: success
 [2024-05-04 20:37:55] INFO root fetch - main [MainThread]: Store serial: [23060191]
+[2024-05-04 20:39:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060191]
+[2024-05-04 20:40:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 20:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bcra-api-client
+[2024-05-04 20:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-watsonx
+[2024-05-04 20:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rdltr
+[2024-05-04 20:40:04] INFO root fetch - processPackages [bcra-api-client]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-05-04 20:40:04] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/cd/ae/54d7054821ca98bb2effb3ea7db7d32dd72f52feefa5485ed8158be4ef52/bcra-api-client-1.1.6.tar.gz
+[2024-05-04 20:40:04] WARNING root fetch - processPackages [llm-watsonx]: Skipping, unable to determine old version
+[2024-05-04 20:40:04] INFO root fetch - main [MainThread]: End processing [llm-watsonx] error
+[2024-05-04 20:40:04] INFO root fetch - processPackages [rdltr]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 20:40:04] INFO root fetch - processPackages [rdltr]: Downloading https://files.pythonhosted.org/packages/ef/8f/c3fc4ac98878a827842eed416e584aae23b451abeea2e6da09ad707effd8/rdltr-0.1.8.tar.gz
+[2024-05-04 20:40:04] INFO root fetch - processPackages [bcra-api-client]: Downloading https://files.pythonhosted.org/packages/15/3d/4321075452c4779f064e35e9259b36111061032e4e5b0e5b330ade1198c9/bcra-api-client-1.1.7.tar.gz
+[2024-05-04 20:40:05] INFO root fetch - processPackages [bcra-api-client]: executing diffoscope
+[2024-05-04 20:40:05] INFO root fetch - processPackages [bcra-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcra-api-client-1.1.6.tar.gz tmp/bcra-api-client-1.1.7.tar.gz --markdown 20240504/b/bcra-api-client/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-05-04 20:40:05] INFO root fetch - processPackages [rdltr]: Downloading https://files.pythonhosted.org/packages/6d/7b/50443b0872dd48b95438074d395a69b7d425b5c6f3058125756450599b57/rdltr-0.1.9.tar.gz
+[2024-05-04 20:40:05] INFO root fetch - processPackages [rdltr]: executing diffoscope
+[2024-05-04 20:40:05] INFO root fetch - processPackages [rdltr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdltr-0.1.8.tar.gz tmp/rdltr-0.1.9.tar.gz --markdown 20240504/r/rdltr/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 20:40:05] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra-api-client-1.1.6.tar.gz]
+[2024-05-04 20:40:05] INFO root fetch - processPackages [bcra-api-client]: Remove: archive file [/home/abi/fetcher/tmp/bcra-api-client-1.1.7.tar.gz]
+[2024-05-04 20:40:05] INFO root fetch - main [MainThread]: End processing [bcra-api-client]: success
+[2024-05-04 20:40:14] INFO root fetch - processPackages [rdltr]: Remove: archive file [/home/abi/fetcher/tmp/rdltr-0.1.8.tar.gz]
+[2024-05-04 20:40:14] INFO root fetch - processPackages [rdltr]: Remove: archive file [/home/abi/fetcher/tmp/rdltr-0.1.9.tar.gz]
+[2024-05-04 20:40:14] INFO root fetch - main [MainThread]: End processing [rdltr]: success
+[2024-05-04 20:40:14] INFO root fetch - main [MainThread]: Store serial: [23060199]
