@@ -20562,3 +20562,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:49:11] INFO root fetch - processPackages [pyshotgrid]: Remove: archive file [/home/abi/fetcher/tmp/pyshotgrid-2.0.2.tar.gz]
 [2024-05-04 22:49:11] INFO root fetch - main [MainThread]: End processing [pyshotgrid]: success
 [2024-05-04 22:49:11] INFO root fetch - main [MainThread]: Store serial: [23060897]
+[2024-05-04 22:51:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060897]
+[2024-05-04 22:51:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: barmpy
+[2024-05-04 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sitesyncro
+[2024-05-04 22:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycountries
+[2024-05-04 22:51:20] INFO root fetch - processPackages [pycountries]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 22:51:20] INFO root fetch - processPackages [barmpy]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-04 22:51:20] INFO root fetch - processPackages [sitesyncro]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-05-04 22:51:20] INFO root fetch - processPackages [pycountries]: Downloading https://files.pythonhosted.org/packages/1b/f7/68fc9ce2b256c4dd6ed9c3ec676fe0c1f04ac64230a6dae7f4468da42fdb/pycountries-1.0.1.tar.gz
+[2024-05-04 22:51:20] INFO root fetch - processPackages [sitesyncro]: Downloading https://files.pythonhosted.org/packages/0f/b6/6c0e26a3c9ad1e2b1d90cc617628ebc6b83b35004acca16a2c0a42e1491e/sitesyncro-0.9.3.tar.gz
+[2024-05-04 22:51:20] INFO root fetch - processPackages [barmpy]: Downloading https://files.pythonhosted.org/packages/21/2b/b30457edf97a1fbc7106cdd16414f603adcf369a4604af52af4bf7b5df68/barmpy-1.0.0-py3-none-any.whl
+[2024-05-04 22:51:20] INFO root fetch - processPackages [sitesyncro]: Downloading https://files.pythonhosted.org/packages/95/61/cf359b3863fdd07d57a374fe90755922412f70b47bbbd03f92e939cdd2bd/sitesyncro-0.9.4.tar.gz
+[2024-05-04 22:51:20] INFO root fetch - processPackages [pycountries]: Downloading https://files.pythonhosted.org/packages/f4/27/776a66f931a3872320bae12dd109232aaa440106374154f00e23257e197d/pycountries-1.0.2.tar.gz
+[2024-05-04 22:51:20] INFO root fetch - processPackages [pycountries]: executing diffoscope
+[2024-05-04 22:51:20] INFO root fetch - processPackages [pycountries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycountries-1.0.1.tar.gz tmp/pycountries-1.0.2.tar.gz --markdown 20240504/p/pycountries/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 22:51:20] INFO root fetch - processPackages [sitesyncro]: executing diffoscope
+[2024-05-04 22:51:20] INFO root fetch - processPackages [sitesyncro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sitesyncro-0.9.3.tar.gz tmp/sitesyncro-0.9.4.tar.gz --markdown 20240504/s/sitesyncro/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-05-04 22:51:21] INFO root fetch - processPackages [barmpy]: Downloading https://files.pythonhosted.org/packages/00/8c/5a3c9ec3bed92caa3595e80513c94136801024bb5b9e15c6283f1afd2117/barmpy-1.1.0.tar.gz
+[2024-05-04 22:51:21] INFO root fetch - processPackages [barmpy]: executing diffoscope
+[2024-05-04 22:51:21] INFO root fetch - processPackages [barmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barmpy-1.0.0-py3-none-any.whl.zip tmp/barmpy-1.1.0.tar.gz --markdown 20240504/b/barmpy/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-04 22:51:21] INFO root fetch - processPackages [pycountries]: Remove: archive file [/home/abi/fetcher/tmp/pycountries-1.0.1.tar.gz]
+[2024-05-04 22:51:21] INFO root fetch - processPackages [pycountries]: Remove: archive file [/home/abi/fetcher/tmp/pycountries-1.0.2.tar.gz]
+[2024-05-04 22:51:21] INFO root fetch - main [MainThread]: End processing [pycountries]: success
+[2024-05-04 22:51:21] INFO root fetch - processPackages [sitesyncro]: Remove: archive file [/home/abi/fetcher/tmp/sitesyncro-0.9.3.tar.gz]
+[2024-05-04 22:51:21] INFO root fetch - processPackages [sitesyncro]: Remove: archive file [/home/abi/fetcher/tmp/sitesyncro-0.9.4.tar.gz]
+[2024-05-04 22:51:21] INFO root fetch - main [MainThread]: End processing [sitesyncro]: success
+[2024-05-04 22:51:23] INFO root fetch - processPackages [barmpy]: Remove: archive file [/home/abi/fetcher/tmp/barmpy-1.0.0-py3-none-any.whl.zip]
+[2024-05-04 22:51:23] INFO root fetch - processPackages [barmpy]: Remove: archive file [/home/abi/fetcher/tmp/barmpy-1.1.0.tar.gz]
+[2024-05-04 22:51:23] INFO root fetch - main [MainThread]: End processing [barmpy]: success
+[2024-05-04 22:51:23] INFO root fetch - main [MainThread]: Store serial: [23060907]
