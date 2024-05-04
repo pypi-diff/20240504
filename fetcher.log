@@ -18561,3 +18561,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:27:02] INFO root fetch - processPackages [beat]: Remove: archive file [/home/abi/fetcher/tmp/beat-2.0.1.tar.gz]
 [2024-05-04 20:27:02] INFO root fetch - main [MainThread]: End processing [beat]: success
 [2024-05-04 20:27:02] INFO root fetch - main [MainThread]: Store serial: [23060136]
+[2024-05-04 20:29:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060136]
+[2024-05-04 20:29:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 20:29:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: WsgiDAV
+[2024-05-04 20:29:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: copy-spotter
+[2024-05-04 20:29:12] INFO root fetch - processPackages [copy-spotter]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 20:29:12] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/f0/77/3e3348701a345eb7881da0ffa91811cd425cf43a95ab7dd9387a41301032/copy-spotter-0.1.8.tar.gz
+[2024-05-04 20:29:12] INFO root fetch - processPackages [WsgiDAV]: New version: [4.3.3] Old Version: [4.3.2]
+[2024-05-04 20:29:12] INFO root fetch - processPackages [WsgiDAV]: Downloading https://files.pythonhosted.org/packages/29/e9/20c31025286ed18282af8bd91f45ea7584cb137172ab7add92d220ce4883/WsgiDAV-4.3.2.tar.gz
+[2024-05-04 20:29:12] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/45/b3/c6846a1e8f941cc094cd908f537068e64c6e0c6ad32b6c4dec297eabcd13/copy-spotter-0.1.9.tar.gz
+[2024-05-04 20:29:12] INFO root fetch - processPackages [copy-spotter]: executing diffoscope
+[2024-05-04 20:29:12] INFO root fetch - processPackages [copy-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copy-spotter-0.1.8.tar.gz tmp/copy-spotter-0.1.9.tar.gz --markdown 20240504/c/copy-spotter/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 20:29:12] INFO root fetch - processPackages [WsgiDAV]: Downloading https://files.pythonhosted.org/packages/a1/f4/9c89e3e41dc7762cbb005d1baf23381718c7b13607236eacda23b855a288/wsgidav-4.3.3.tar.gz
+[2024-05-04 20:29:12] INFO root fetch - processPackages [WsgiDAV]: executing diffoscope
+[2024-05-04 20:29:12] INFO root fetch - processPackages [WsgiDAV]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WsgiDAV-4.3.2.tar.gz tmp/wsgidav-4.3.3.tar.gz --markdown 20240504/W/WsgiDAV/4.3.2-4.3.3/README.md --exclude *.pyd
+[2024-05-04 20:29:13] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.8.tar.gz]
+[2024-05-04 20:29:13] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.9.tar.gz]
+[2024-05-04 20:29:13] INFO root fetch - main [MainThread]: End processing [copy-spotter]: success
+[2024-05-04 20:29:13] INFO root fetch - processPackages [WsgiDAV]: Remove: archive file [/home/abi/fetcher/tmp/WsgiDAV-4.3.2.tar.gz]
+[2024-05-04 20:29:13] INFO root fetch - processPackages [WsgiDAV]: Remove: archive file [/home/abi/fetcher/tmp/wsgidav-4.3.3.tar.gz]
+[2024-05-04 20:29:13] INFO root fetch - main [MainThread]: End processing [WsgiDAV]: success
+[2024-05-04 20:29:13] INFO root fetch - main [MainThread]: Store serial: [23060142]
