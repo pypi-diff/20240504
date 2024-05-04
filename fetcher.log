@@ -12193,3 +12193,27 @@
 [2024-05-04 11:12:00] INFO root fetch - processPackages [uiautomator2]: Remove: archive file [/home/abi/fetcher/tmp/uiautomator2-3.0.9.tar.gz]
 [2024-05-04 11:12:00] INFO root fetch - main [MainThread]: End processing [uiautomator2]: success
 [2024-05-04 11:12:00] INFO root fetch - main [MainThread]: Store serial: [23057185]
+[2024-05-04 11:14:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057185]
+[2024-05-04 11:14:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 11:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyallel
+[2024-05-04 11:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SMClib.py
+[2024-05-04 11:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulses
+[2024-05-04 11:14:09] WARNING root fetch - processPackages [pulses]: Skipping, unable to determine old version
+[2024-05-04 11:14:09] INFO root fetch - main [MainThread]: End processing [pulses] error
+[2024-05-04 11:14:09] INFO root fetch - processPackages [SMClib.py]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-04 11:14:09] INFO root fetch - processPackages [pyallel]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-04 11:14:09] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/96/c6/d1b31101df0474515c4ccac169aa233e2f65203aeac3c17f4eb82274d0bd/SMClib.py-1.0.5.tar.gz
+[2024-05-04 11:14:09] INFO root fetch - processPackages [pyallel]: Downloading https://files.pythonhosted.org/packages/f7/af/5b47e69b1d409e81a909bf529b419d80ccc48fd46eb1f41ca595165723c0/pyallel-1.2.1.tar.gz
+[2024-05-04 11:14:09] INFO root fetch - processPackages [pyallel]: Downloading https://files.pythonhosted.org/packages/05/e3/ab4ca8591b660af63729ecb977fde1e9d47b6310a83fa7b775b9f7d63336/pyallel-1.2.2.tar.gz
+[2024-05-04 11:14:09] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/f3/a6/6f041767c2ca59b8f625a77ae37cf5e47e3732486adbeae4ae6bac70ffd7/SMClib.py-1.0.6.tar.gz
+[2024-05-04 11:14:09] INFO root fetch - processPackages [pyallel]: executing diffoscope
+[2024-05-04 11:14:09] INFO root fetch - processPackages [pyallel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyallel-1.2.1.tar.gz tmp/pyallel-1.2.2.tar.gz --markdown 20240504/p/pyallel/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-04 11:14:10] INFO root fetch - processPackages [SMClib.py]: executing diffoscope
+[2024-05-04 11:14:10] INFO root fetch - processPackages [SMClib.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SMClib.py-1.0.5.tar.gz tmp/SMClib.py-1.0.6.tar.gz --markdown 20240504/S/SMClib.py/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-04 11:14:10] INFO root fetch - processPackages [pyallel]: Remove: archive file [/home/abi/fetcher/tmp/pyallel-1.2.1.tar.gz]
+[2024-05-04 11:14:10] INFO root fetch - processPackages [pyallel]: Remove: archive file [/home/abi/fetcher/tmp/pyallel-1.2.2.tar.gz]
+[2024-05-04 11:14:10] INFO root fetch - main [MainThread]: End processing [pyallel]: success
+[2024-05-04 11:14:10] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.5.tar.gz]
+[2024-05-04 11:14:10] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.6.tar.gz]
+[2024-05-04 11:14:10] INFO root fetch - main [MainThread]: End processing [SMClib.py]: success
+[2024-05-04 11:14:10] INFO root fetch - main [MainThread]: Store serial: [23057195]
