@@ -21049,3 +21049,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:28:25] INFO root fetch - processPackages [sfconn]: Remove: archive file [/home/abi/fetcher/tmp/sfconn-0.3.1.tar.gz]
 [2024-05-04 23:28:25] INFO root fetch - main [MainThread]: End processing [sfconn]: success
 [2024-05-04 23:28:25] INFO root fetch - main [MainThread]: Store serial: [23061122]
+[2024-05-04 23:30:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061122]
+[2024-05-04 23:30:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 23:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notolog
+[2024-05-04 23:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jubtools
+[2024-05-04 23:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blankslate-python
+[2024-05-04 23:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cocoon-data
+[2024-05-04 23:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbb-api
+[2024-05-04 23:30:38] INFO root fetch - processPackages [nbb-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 23:30:38] INFO root fetch - processPackages [blankslate-python]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-05-04 23:30:38] INFO root fetch - processPackages [jubtools]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-04 23:30:38] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 23:30:38] INFO root fetch - processPackages [notolog]: New version: [0.9.0b11] Old Version: [0.9.0b10]
+[2024-05-04 23:30:38] INFO root fetch - processPackages [nbb-api]: Downloading https://files.pythonhosted.org/packages/2c/aa/185febf5ad962f993e0b4f233dc0f7125457f9851057f25d9b14b0bbc2b6/nbb_api-0.1.8.tar.gz
+[2024-05-04 23:30:38] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/83/15/f7dee240aca1d2b0ed2fdf553ce9485fde69c01d839a0dcf159f2e532c4b/blankslate_python-1.1.5.tar.gz
+[2024-05-04 23:30:39] INFO root fetch - processPackages [jubtools]: Downloading https://files.pythonhosted.org/packages/c1/a2/b6318accc5fb3a66544776b4027053713066685b8c9521f2fb2720eb51cd/jubtools-0.5.0.tar.gz
+[2024-05-04 23:30:39] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-05-04 23:30:39] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/24/c9/bb2157b7fde9973c29216b7120928da34164ed23db12cc7c7fac4454cc3b/notolog-0.9.0b10.tar.gz
+[2024-05-04 23:30:39] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-05-04 23:30:39] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/fb/84/b017e8cbc20af41cd8630cf5f22d01ec0f541b5f46198ad4cdc3759036ad/blankslate_python-1.1.6.tar.gz
+[2024-05-04 23:30:39] INFO root fetch - processPackages [jubtools]: Downloading https://files.pythonhosted.org/packages/ec/95/30588ea8821a749204210eac2c85aaee050b2b58df5c99be27ad840c44f4/jubtools-0.5.1.tar.gz
+[2024-05-04 23:30:39] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-05-04 23:30:39] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240504/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 23:30:39] INFO root fetch - processPackages [nbb-api]: Downloading https://files.pythonhosted.org/packages/0e/c5/b3538f1294ada9c6102e76f4c29cebbb35dcaad3a7f77c78e1c1e30aab30/nbb_api-0.1.9.tar.gz
+[2024-05-04 23:30:39] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-04 23:30:39] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.1.5.tar.gz tmp/blankslate_python-1.1.6.tar.gz --markdown 20240504/b/blankslate-python/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-05-04 23:30:39] INFO root fetch - processPackages [jubtools]: executing diffoscope
+[2024-05-04 23:30:39] INFO root fetch - processPackages [jubtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jubtools-0.5.0.tar.gz tmp/jubtools-0.5.1.tar.gz --markdown 20240504/j/jubtools/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-04 23:30:39] INFO root fetch - processPackages [nbb-api]: executing diffoscope
+[2024-05-04 23:30:39] INFO root fetch - processPackages [nbb-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbb_api-0.1.8.tar.gz tmp/nbb_api-0.1.9.tar.gz --markdown 20240504/n/nbb-api/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 23:30:39] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/16/76/e5d81c58df0340eaa773e8d33a3eae497fca888adf0185ab59dfdf65ebbb/notolog-0.9.0b11.tar.gz
+[2024-05-04 23:30:39] INFO root fetch - processPackages [notolog]: executing diffoscope
+[2024-05-04 23:30:39] INFO root fetch - processPackages [notolog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notolog-0.9.0b10.tar.gz tmp/notolog-0.9.0b11.tar.gz --markdown 20240504/n/notolog/0.9.0b10-0.9.0b11/README.md --exclude *.pyd
+[2024-05-04 23:30:40] INFO root fetch - processPackages [nbb-api]: Remove: archive file [/home/abi/fetcher/tmp/nbb_api-0.1.8.tar.gz]
+[2024-05-04 23:30:40] INFO root fetch - processPackages [nbb-api]: Remove: archive file [/home/abi/fetcher/tmp/nbb_api-0.1.9.tar.gz]
+[2024-05-04 23:30:40] INFO root fetch - main [MainThread]: End processing [nbb-api]: success
+[2024-05-04 23:30:40] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.5.tar.gz]
+[2024-05-04 23:30:40] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.6.tar.gz]
+[2024-05-04 23:30:40] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-04 23:30:40] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-05-04 23:30:40] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-05-04 23:30:40] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-05-04 23:30:40] INFO root fetch - processPackages [jubtools]: Remove: archive file [/home/abi/fetcher/tmp/jubtools-0.5.0.tar.gz]
+[2024-05-04 23:30:40] INFO root fetch - processPackages [jubtools]: Remove: archive file [/home/abi/fetcher/tmp/jubtools-0.5.1.tar.gz]
+[2024-05-04 23:30:40] INFO root fetch - main [MainThread]: End processing [jubtools]: success
+[2024-05-04 23:30:41] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.0b10.tar.gz]
+[2024-05-04 23:30:41] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.0b11.tar.gz]
+[2024-05-04 23:30:41] INFO root fetch - main [MainThread]: End processing [notolog]: success
+[2024-05-04 23:30:41] INFO root fetch - main [MainThread]: Store serial: [23061134]
