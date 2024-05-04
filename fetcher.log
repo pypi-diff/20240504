@@ -17532,3 +17532,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:14:47] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-05-04 19:14:47] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-05-04 19:14:47] INFO root fetch - main [MainThread]: Store serial: [23059504]
+[2024-05-04 19:16:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059504]
+[2024-05-04 19:16:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 19:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: entity-recognition-service
+[2024-05-04 19:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rutificador
+[2024-05-04 19:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: querent
+[2024-05-04 19:16:56] INFO root fetch - processPackages [rutificador]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-04 19:16:56] INFO root fetch - processPackages [entity-recognition-service]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 19:16:56] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/23/18/7145326a6ea0566c2c41ba0bf3822fffc6b4da314a426433179c4724bda3/entity_recognition_service-0.1.8.tar.gz
+[2024-05-04 19:16:56] INFO root fetch - processPackages [rutificador]: Downloading https://files.pythonhosted.org/packages/c3/bf/1eb80149e26e6d795255dc937503fc3fdb3f23b4e1cae8723f4bf99d9253/rutificador-0.2.3.tar.gz
+[2024-05-04 19:16:56] INFO root fetch - processPackages [querent]: New version: [3.0.9] Old Version: [3.0.8]
+[2024-05-04 19:16:56] INFO root fetch - processPackages [rutificador]: Downloading https://files.pythonhosted.org/packages/ff/d7/291406561bebbf9d20553762b3e4e90193c68ca880453d5afcff4bc6de5d/rutificador-0.2.4.tar.gz
+[2024-05-04 19:16:56] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/86/75/a994a9af22b16241a2b38cb3314e7d2457d9aaf73d35a5b70823d8c8ce18/entity_recognition_service-0.1.9.tar.gz
+[2024-05-04 19:16:56] INFO root fetch - processPackages [querent]: Downloading https://files.pythonhosted.org/packages/6d/93/f856b1ab66ad8372724c798f645d28224be50aa8459e27d40f106827c021/querent-3.0.8.tar.gz
+[2024-05-04 19:16:57] INFO root fetch - processPackages [rutificador]: executing diffoscope
+[2024-05-04 19:16:57] INFO root fetch - processPackages [rutificador]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rutificador-0.2.3.tar.gz tmp/rutificador-0.2.4.tar.gz --markdown 20240504/r/rutificador/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-04 19:16:57] INFO root fetch - processPackages [entity-recognition-service]: executing diffoscope
+[2024-05-04 19:16:57] INFO root fetch - processPackages [entity-recognition-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entity_recognition_service-0.1.8.tar.gz tmp/entity_recognition_service-0.1.9.tar.gz --markdown 20240504/e/entity-recognition-service/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 19:16:57] INFO root fetch - processPackages [querent]: Downloading https://files.pythonhosted.org/packages/12/ab/a5114a0858b8ade5578ce5722ab2e715cedb176b7b2f89281d52caa3b78d/querent-3.0.9.tar.gz
+[2024-05-04 19:16:57] INFO root fetch - processPackages [rutificador]: Remove: archive file [/home/abi/fetcher/tmp/rutificador-0.2.3.tar.gz]
+[2024-05-04 19:16:57] INFO root fetch - processPackages [rutificador]: Remove: archive file [/home/abi/fetcher/tmp/rutificador-0.2.4.tar.gz]
+[2024-05-04 19:16:57] INFO root fetch - main [MainThread]: End processing [rutificador]: success
+[2024-05-04 19:16:57] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.8.tar.gz]
+[2024-05-04 19:16:57] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.9.tar.gz]
+[2024-05-04 19:16:57] INFO root fetch - main [MainThread]: End processing [entity-recognition-service]: success
+[2024-05-04 19:16:57] INFO root fetch - processPackages [querent]: executing diffoscope
+[2024-05-04 19:16:57] INFO root fetch - processPackages [querent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/querent-3.0.8.tar.gz tmp/querent-3.0.9.tar.gz --markdown 20240504/q/querent/3.0.8-3.0.9/README.md --exclude *.pyd
+[2024-05-04 19:16:58] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.8.tar.gz]
+[2024-05-04 19:16:58] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.9.tar.gz]
+[2024-05-04 19:16:58] INFO root fetch - main [MainThread]: End processing [querent]: success
+[2024-05-04 19:16:58] INFO root fetch - main [MainThread]: Store serial: [23059515]
