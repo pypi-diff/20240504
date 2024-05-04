@@ -21310,3 +21310,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:48:06] INFO root fetch - processPackages [pynbody]: Remove: archive file [/home/abi/fetcher/tmp/pynbody-2.0.0b8.tar.gz]
 [2024-05-04 23:48:06] INFO root fetch - main [MainThread]: End processing [pynbody]: success
 [2024-05-04 23:48:06] INFO root fetch - main [MainThread]: Store serial: [23061227]
+[2024-05-04 23:50:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061227]
+[2024-05-04 23:50:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 23:50:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lytils
+[2024-05-04 23:50:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aind-data-transfer-models
+[2024-05-04 23:50:14] INFO root fetch - processPackages [lytils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 23:50:14] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/e5/63/947a765769a040af108780166ef416734281e055d3577ce6f8ecd6dcff7b/lytils-0.1.8.tar.gz
+[2024-05-04 23:50:14] WARNING root fetch - processPackages [aind-data-transfer-models]: Skipping, unable to determine old version
+[2024-05-04 23:50:14] INFO root fetch - main [MainThread]: End processing [aind-data-transfer-models] error
+[2024-05-04 23:50:15] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/47/f2/15accaaf8b3ff3e0f0f877cb445d79db9dcd4614b25c36859a4bfd9c5c75/lytils-0.1.9.tar.gz
+[2024-05-04 23:50:15] INFO root fetch - processPackages [lytils]: executing diffoscope
+[2024-05-04 23:50:15] INFO root fetch - processPackages [lytils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lytils-0.1.8.tar.gz tmp/lytils-0.1.9.tar.gz --markdown 20240504/l/lytils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 23:50:15] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.8.tar.gz]
+[2024-05-04 23:50:15] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.9.tar.gz]
+[2024-05-04 23:50:15] INFO root fetch - main [MainThread]: End processing [lytils]: success
+[2024-05-04 23:50:15] INFO root fetch - main [MainThread]: Store serial: [23061236]
