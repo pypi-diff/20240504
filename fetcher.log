@@ -14747,3 +14747,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:28:28] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.1.3.tar.gz]
 [2024-05-04 15:28:28] INFO root fetch - main [MainThread]: End processing [mmo-tools]: success
 [2024-05-04 15:28:28] INFO root fetch - main [MainThread]: Store serial: [23058218]
+[2024-05-04 15:30:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058218]
+[2024-05-04 15:30:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 15:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cosmatch
+[2024-05-04 15:30:37] INFO root fetch - processPackages [cosmatch]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-04 15:30:37] INFO root fetch - processPackages [cosmatch]: Downloading https://files.pythonhosted.org/packages/c2/4f/b08c1b838b20a8c916bc5f4d740454c75b172acdae3fb6f33327c01aa32e/cosmatch-0.1.3.tar.gz
+[2024-05-04 15:30:38] INFO root fetch - processPackages [cosmatch]: Downloading https://files.pythonhosted.org/packages/da/fa/4f95791a752e2141aa526a58714b939fe800782cc4ffd5dde31b7ad3770d/cosmatch-0.1.4.tar.gz
+[2024-05-04 15:30:38] INFO root fetch - processPackages [cosmatch]: executing diffoscope
+[2024-05-04 15:30:38] INFO root fetch - processPackages [cosmatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cosmatch-0.1.3.tar.gz tmp/cosmatch-0.1.4.tar.gz --markdown 20240504/c/cosmatch/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-04 15:30:38] INFO root fetch - processPackages [cosmatch]: Remove: archive file [/home/abi/fetcher/tmp/cosmatch-0.1.3.tar.gz]
+[2024-05-04 15:30:38] INFO root fetch - processPackages [cosmatch]: Remove: archive file [/home/abi/fetcher/tmp/cosmatch-0.1.4.tar.gz]
+[2024-05-04 15:30:38] INFO root fetch - main [MainThread]: End processing [cosmatch]: success
+[2024-05-04 15:30:38] INFO root fetch - main [MainThread]: Store serial: [23058222]
