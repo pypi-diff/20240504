@@ -16877,3 +16877,12 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:22:40] INFO root fetch - processPackages [vkdispatch]: Remove: archive file [/home/abi/fetcher/tmp/vkdispatch-0.0.4.tar.gz]
 [2024-05-04 18:22:40] INFO root fetch - main [MainThread]: End processing [vkdispatch]: success
 [2024-05-04 18:22:40] INFO root fetch - main [MainThread]: Store serial: [23059238]
+[2024-05-04 18:24:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059238]
+[2024-05-04 18:24:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 18:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: runespreader
+[2024-05-04 18:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datatransformation
+[2024-05-04 18:24:49] WARNING root fetch - processPackages [runespreader]: Skipping, unable to determine old version
+[2024-05-04 18:24:49] INFO root fetch - main [MainThread]: End processing [runespreader] error
+[2024-05-04 18:24:49] WARNING root fetch - processPackages [datatransformation]: Skipping, unable to determine old version
+[2024-05-04 18:24:49] INFO root fetch - main [MainThread]: End processing [datatransformation] error
+[2024-05-04 18:24:49] INFO root fetch - main [MainThread]: Store serial: [23059249]
