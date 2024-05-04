@@ -9042,3 +9042,33 @@
 [2024-05-04 06:21:17] INFO root fetch - processPackages [libvsbsdl-python]: Remove: archive file [/home/abi/fetcher/tmp/libvsbsdl-python-20240504.tar.gz]
 [2024-05-04 06:21:17] INFO root fetch - main [MainThread]: End processing [libvsbsdl-python]: success
 [2024-05-04 06:21:17] INFO root fetch - main [MainThread]: Store serial: [23055581]
+[2024-05-04 06:23:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055581]
+[2024-05-04 06:23:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 06:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TreeSAK
+[2024-05-04 06:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twikit
+[2024-05-04 06:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bihyung
+[2024-05-04 06:23:40] INFO root fetch - processPackages [bihyung]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-04 06:23:40] INFO root fetch - processPackages [twikit]: New version: [1.6.0] Old Version: [1.5.9]
+[2024-05-04 06:23:40] INFO root fetch - processPackages [TreeSAK]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-04 06:23:40] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/91/8f/4cbb6f8859c8b1bf5587ee57fa870e9ba808dd95602037d4719b70ed03ad/twikit-1.5.9.tar.gz
+[2024-05-04 06:23:40] INFO root fetch - processPackages [bihyung]: Downloading https://files.pythonhosted.org/packages/df/60/19b2822b3d357f9a9a7bd1bed8c7c44df19525182190b0c844fab3b4c13b/bihyung-0.2.8.tar.gz
+[2024-05-04 06:23:40] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/33/3d/03ab6748b3aed0610812e461492b58278718c5c15236ce439a758aa3fc27/TreeSAK-1.9.1.tar.gz
+[2024-05-04 06:23:40] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/5a/5d/49cd1119fe89852c4069a412e10e120a2ed1bf53a7640c1ebc9acc4a8b0b/twikit-1.6.0.tar.gz
+[2024-05-04 06:23:40] INFO root fetch - processPackages [bihyung]: Downloading https://files.pythonhosted.org/packages/b2/df/86195960b0453808bc1fbcdbe8192d9b23a4b11a495c6e03c76e251f0b86/bihyung-0.2.9.tar.gz
+[2024-05-04 06:23:40] INFO root fetch - processPackages [twikit]: executing diffoscope
+[2024-05-04 06:23:40] INFO root fetch - processPackages [twikit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twikit-1.5.9.tar.gz tmp/twikit-1.6.0.tar.gz --markdown 20240504/t/twikit/1.5.9-1.6.0/README.md --exclude *.pyd
+[2024-05-04 06:23:40] INFO root fetch - processPackages [bihyung]: executing diffoscope
+[2024-05-04 06:23:40] INFO root fetch - processPackages [bihyung]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bihyung-0.2.8.tar.gz tmp/bihyung-0.2.9.tar.gz --markdown 20240504/b/bihyung/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-04 06:23:41] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/3d/18/0b0f8a2c565de5415024065f522c859677184cac283a7e4af0060f267891/TreeSAK-1.9.2.tar.gz
+[2024-05-04 06:23:41] INFO root fetch - processPackages [TreeSAK]: executing diffoscope
+[2024-05-04 06:23:41] INFO root fetch - processPackages [TreeSAK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TreeSAK-1.9.1.tar.gz tmp/TreeSAK-1.9.2.tar.gz --markdown 20240504/T/TreeSAK/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-04 06:23:41] INFO root fetch - processPackages [bihyung]: Remove: archive file [/home/abi/fetcher/tmp/bihyung-0.2.8.tar.gz]
+[2024-05-04 06:23:41] INFO root fetch - processPackages [bihyung]: Remove: archive file [/home/abi/fetcher/tmp/bihyung-0.2.9.tar.gz]
+[2024-05-04 06:23:41] INFO root fetch - main [MainThread]: End processing [bihyung]: success
+[2024-05-04 06:23:41] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.5.9.tar.gz]
+[2024-05-04 06:23:41] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.6.0.tar.gz]
+[2024-05-04 06:23:41] INFO root fetch - main [MainThread]: End processing [twikit]: success
+[2024-05-04 06:23:41] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.1.tar.gz]
+[2024-05-04 06:23:41] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.2.tar.gz]
+[2024-05-04 06:23:41] INFO root fetch - main [MainThread]: End processing [TreeSAK]: success
+[2024-05-04 06:23:41] INFO root fetch - main [MainThread]: Store serial: [23055600]
