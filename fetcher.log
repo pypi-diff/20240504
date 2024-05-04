@@ -14013,3 +14013,24 @@
 [2024-05-04 14:16:26] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.7.tar.gz]
 [2024-05-04 14:16:26] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox]: success
 [2024-05-04 14:16:26] INFO root fetch - main [MainThread]: Store serial: [23057929]
+[2024-05-04 14:18:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057929]
+[2024-05-04 14:18:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 14:18:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hdf-compass
+[2024-05-04 14:18:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SimpleTKMessageBox
+[2024-05-04 14:18:35] INFO root fetch - processPackages [hdf-compass]: New version: [0.7b8] Old Version: [0.7b6]
+[2024-05-04 14:18:35] INFO root fetch - processPackages [SimpleTKMessageBox]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-04 14:18:35] INFO root fetch - processPackages [hdf-compass]: Downloading https://files.pythonhosted.org/packages/b4/7e/bf7cafbc994a32d937bd81edfc79988524e259bc3dd2e840f3cbc01346d3/hdf_compass-0.7b6.tar.gz
+[2024-05-04 14:18:35] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/a4/b6/86a04c1c0af724785aa3bd0910690f152429573afff18ba44b436fba85a3/SimpleTKMessageBox-0.2.7.tar.gz
+[2024-05-04 14:18:35] INFO root fetch - processPackages [hdf-compass]: Downloading https://files.pythonhosted.org/packages/d8/8f/cd84fdac0f30eaaf41a641a9bb86e0aba118f4811fe1b92e2dac0667d231/hdf_compass-0.7b8.tar.gz
+[2024-05-04 14:18:35] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/1f/16/4231d719387314b4548401331f662dcf0643ad05033bb37147da897ed6dd/SimpleTKMessageBox-0.2.8.tar.gz
+[2024-05-04 14:18:35] INFO root fetch - processPackages [hdf-compass]: executing diffoscope
+[2024-05-04 14:18:35] INFO root fetch - processPackages [hdf-compass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdf_compass-0.7b6.tar.gz tmp/hdf_compass-0.7b8.tar.gz --markdown 20240504/h/hdf-compass/0.7b6-0.7b8/README.md --exclude *.pyd
+[2024-05-04 14:18:35] INFO root fetch - processPackages [SimpleTKMessageBox]: executing diffoscope
+[2024-05-04 14:18:35] INFO root fetch - processPackages [SimpleTKMessageBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleTKMessageBox-0.2.7.tar.gz tmp/SimpleTKMessageBox-0.2.8.tar.gz --markdown 20240504/S/SimpleTKMessageBox/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-04 14:18:36] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.7.tar.gz]
+[2024-05-04 14:18:36] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.8.tar.gz]
+[2024-05-04 14:18:36] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox]: success
+[2024-05-04 14:18:36] INFO root fetch - processPackages [hdf-compass]: Remove: archive file [/home/abi/fetcher/tmp/hdf_compass-0.7b6.tar.gz]
+[2024-05-04 14:18:36] INFO root fetch - processPackages [hdf-compass]: Remove: archive file [/home/abi/fetcher/tmp/hdf_compass-0.7b8.tar.gz]
+[2024-05-04 14:18:36] INFO root fetch - main [MainThread]: End processing [hdf-compass]: success
+[2024-05-04 14:18:36] INFO root fetch - main [MainThread]: Store serial: [23057935]
