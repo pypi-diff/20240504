@@ -14141,3 +14141,20 @@
 [2024-05-04 14:31:36] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.6.tar.gz]
 [2024-05-04 14:31:36] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
 [2024-05-04 14:31:36] INFO root fetch - main [MainThread]: Store serial: [23057983]
+[2024-05-04 14:33:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057983]
+[2024-05-04 14:33:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 14:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BioSAK
+[2024-05-04 14:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: juxtapose
+[2024-05-04 14:33:44] INFO root fetch - processPackages [juxtapose]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 14:33:45] INFO root fetch - processPackages [juxtapose]: Downloading https://files.pythonhosted.org/packages/61/ef/b8b96f6ca1edc65e2f9e7470c51e5294b5cbbabb55ca13a82f4456e37edc/juxtapose-0.0.8.tar.gz
+[2024-05-04 14:33:45] INFO root fetch - processPackages [BioSAK]: New version: [1.88.0] Old Version: [1.87.2]
+[2024-05-04 14:33:45] WARNING root fetch - processPackages [juxtapose]: Skipping package: exceeds size limit 19361597>=10485760
+[2024-05-04 14:33:45] INFO root fetch - main [MainThread]: End processing [juxtapose] error
+[2024-05-04 14:33:45] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/0f/75/e22ad59585ae5555ab48f7dc30df44e50c0f433eec6f215d4e60cc1dddd9/BioSAK-1.87.2.tar.gz
+[2024-05-04 14:33:45] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/02/52/4f09ac942c41b67fb420a184d7bf41dce4cb80a89eb866504dd814cac257/BioSAK-1.88.0.tar.gz
+[2024-05-04 14:33:45] INFO root fetch - processPackages [BioSAK]: executing diffoscope
+[2024-05-04 14:33:45] INFO root fetch - processPackages [BioSAK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BioSAK-1.87.2.tar.gz tmp/BioSAK-1.88.0.tar.gz --markdown 20240504/B/BioSAK/1.87.2-1.88.0/README.md --exclude *.pyd
+[2024-05-04 14:33:47] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.87.2.tar.gz]
+[2024-05-04 14:33:47] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.88.0.tar.gz]
+[2024-05-04 14:33:47] INFO root fetch - main [MainThread]: End processing [BioSAK]: success
+[2024-05-04 14:33:47] INFO root fetch - main [MainThread]: Store serial: [23057989]
