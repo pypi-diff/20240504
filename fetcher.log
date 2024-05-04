@@ -9157,3 +9157,24 @@
 [2024-05-04 06:33:29] INFO root fetch - processPackages [pdfminer.aemc]: Remove: archive file [/home/abi/fetcher/tmp/pdfminer_aemc-20231228.tar.gz]
 [2024-05-04 06:33:29] INFO root fetch - main [MainThread]: End processing [pdfminer.aemc]: success
 [2024-05-04 06:33:29] INFO root fetch - main [MainThread]: Store serial: [23055641]
+[2024-05-04 06:35:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055641]
+[2024-05-04 06:35:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 06:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heaserver-keychain
+[2024-05-04 06:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-ro-stock-account-tracking
+[2024-05-04 06:35:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-tracking]: New version: [16.0.1.25.0] Old Version: [16.0.1.24.0]
+[2024-05-04 06:35:53] INFO root fetch - processPackages [heaserver-keychain]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-04 06:35:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-tracking]: Downloading https://files.pythonhosted.org/packages/c2/31/59fa7f507f371d59f17db7505864a5c6fce55781f46d0b37a9aa7e8ad33c/odoo_addon_l10n_ro_stock_account_tracking-16.0.1.24.0-py3-none-any.whl
+[2024-05-04 06:35:53] INFO root fetch - processPackages [heaserver-keychain]: Downloading https://files.pythonhosted.org/packages/b3/a1/2ce34f0c542720dbf1ecff4432b02a76debb3bc214a49b93eb2c01503a2a/heaserver-keychain-1.1.0.tar.gz
+[2024-05-04 06:35:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-tracking]: Downloading https://files.pythonhosted.org/packages/30/56/b1144887def15fc6adb89c28e6e656b230ed4a350d5276975a854ccd5e79/odoo_addon_l10n_ro_stock_account_tracking-16.0.1.25.0-py3-none-any.whl
+[2024-05-04 06:35:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-tracking]: executing diffoscope
+[2024-05-04 06:35:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_stock_account_tracking-16.0.1.24.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_stock_account_tracking-16.0.1.25.0-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-l10n-ro-stock-account-tracking/16.0.1.24.0-16.0.1.25.0/README.md --exclude *.pyd
+[2024-05-04 06:35:54] INFO root fetch - processPackages [heaserver-keychain]: Downloading https://files.pythonhosted.org/packages/69/19/07ba206106efdcd16f07437baa4656f26c64bff7ee012fb11c5dbdf299c4/heaserver_keychain-1.2.0.tar.gz
+[2024-05-04 06:35:54] INFO root fetch - processPackages [heaserver-keychain]: executing diffoscope
+[2024-05-04 06:35:54] INFO root fetch - processPackages [heaserver-keychain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-keychain-1.1.0.tar.gz tmp/heaserver_keychain-1.2.0.tar.gz --markdown 20240504/h/heaserver-keychain/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-04 06:35:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-tracking]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_account_tracking-16.0.1.24.0-py3-none-any.whl.zip]
+[2024-05-04 06:35:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-tracking]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_account_tracking-16.0.1.25.0-py3-none-any.whl.zip]
+[2024-05-04 06:35:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-stock-account-tracking]: success
+[2024-05-04 06:35:54] INFO root fetch - processPackages [heaserver-keychain]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-keychain-1.1.0.tar.gz]
+[2024-05-04 06:35:54] INFO root fetch - processPackages [heaserver-keychain]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_keychain-1.2.0.tar.gz]
+[2024-05-04 06:35:54] INFO root fetch - main [MainThread]: End processing [heaserver-keychain]: success
+[2024-05-04 06:35:54] INFO root fetch - main [MainThread]: Store serial: [23055646]
