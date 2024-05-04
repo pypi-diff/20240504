@@ -12721,3 +12721,39 @@
 [2024-05-04 12:16:57] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.7.tar.gz]
 [2024-05-04 12:16:57] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox]: success
 [2024-05-04 12:16:57] INFO root fetch - main [MainThread]: Store serial: [23057396]
+[2024-05-04 12:19:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057396]
+[2024-05-04 12:19:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 12:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: etm-dgraham
+[2024-05-04 12:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ReverseBox
+[2024-05-04 12:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spok
+[2024-05-04 12:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: audiolm-superfeel
+[2024-05-04 12:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pywigxjpf
+[2024-05-04 12:19:06] WARNING root fetch - processPackages [spok]: Skipping, unable to determine old version
+[2024-05-04 12:19:06] INFO root fetch - main [MainThread]: End processing [spok] error
+[2024-05-04 12:19:06] INFO root fetch - processPackages [ReverseBox]: New version: [0.8.7] Old Version: [0.8.6]
+[2024-05-04 12:19:06] WARNING root fetch - processPackages [audiolm-superfeel]: Skipping, unable to determine old version
+[2024-05-04 12:19:06] INFO root fetch - main [MainThread]: End processing [audiolm-superfeel] error
+[2024-05-04 12:19:06] INFO root fetch - processPackages [pywigxjpf]: New version: [1.13] Old Version: [1.12]
+[2024-05-04 12:19:06] INFO root fetch - processPackages [etm-dgraham]: New version: [6.1.9] Old Version: [6.1.8]
+[2024-05-04 12:19:06] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/20/89/b83f7277c09c6629e03ceee18d508c9eef53b2835c578f7f33f7a0a8354a/ReverseBox-0.8.6.tar.gz
+[2024-05-04 12:19:06] INFO root fetch - processPackages [pywigxjpf]: Downloading https://files.pythonhosted.org/packages/eb/80/17525598472ff3ae8be9a0037c96d5390014d0c9c96477c7eb80802b1a88/pywigxjpf-1.12.tar.gz
+[2024-05-04 12:19:06] INFO root fetch - processPackages [etm-dgraham]: Downloading https://files.pythonhosted.org/packages/ec/17/0e748df245b314530d0c4a448f7637d8f01b8bfcaf3445681e43dc256c8b/etm-dgraham-6.1.8.tar.gz
+[2024-05-04 12:19:07] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/c1/83/15db1280d2d992aa0eee571f85fd8de41dc59b5c5850728cdb9f5d3bf0bb/ReverseBox-0.8.7.tar.gz
+[2024-05-04 12:19:07] INFO root fetch - processPackages [pywigxjpf]: Downloading https://files.pythonhosted.org/packages/78/df/133155d21627da829e240d0ef0ae2b68f8b4f455c4ece48864d9f27ac741/pywigxjpf-1.13.tar.gz
+[2024-05-04 12:19:07] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-04 12:19:07] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.8.6.tar.gz tmp/ReverseBox-0.8.7.tar.gz --markdown 20240504/R/ReverseBox/0.8.6-0.8.7/README.md --exclude *.pyd
+[2024-05-04 12:19:07] INFO root fetch - processPackages [pywigxjpf]: executing diffoscope
+[2024-05-04 12:19:07] INFO root fetch - processPackages [pywigxjpf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywigxjpf-1.12.tar.gz tmp/pywigxjpf-1.13.tar.gz --markdown 20240504/p/pywigxjpf/1.12-1.13/README.md --exclude *.pyd
+[2024-05-04 12:19:07] INFO root fetch - processPackages [etm-dgraham]: Downloading https://files.pythonhosted.org/packages/c0/35/35ec59f655a6c82f49b3aa4340c5444b7f5eeae9e8087a0313988a8a89ae/etm-dgraham-6.1.9.tar.gz
+[2024-05-04 12:19:07] INFO root fetch - processPackages [etm-dgraham]: executing diffoscope
+[2024-05-04 12:19:07] INFO root fetch - processPackages [etm-dgraham]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etm-dgraham-6.1.8.tar.gz tmp/etm-dgraham-6.1.9.tar.gz --markdown 20240504/e/etm-dgraham/6.1.8-6.1.9/README.md --exclude *.pyd
+[2024-05-04 12:19:07] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.6.tar.gz]
+[2024-05-04 12:19:07] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.7.tar.gz]
+[2024-05-04 12:19:07] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-04 12:19:07] INFO root fetch - processPackages [pywigxjpf]: Remove: archive file [/home/abi/fetcher/tmp/pywigxjpf-1.12.tar.gz]
+[2024-05-04 12:19:07] INFO root fetch - processPackages [pywigxjpf]: Remove: archive file [/home/abi/fetcher/tmp/pywigxjpf-1.13.tar.gz]
+[2024-05-04 12:19:07] INFO root fetch - main [MainThread]: End processing [pywigxjpf]: success
+[2024-05-04 12:19:08] INFO root fetch - processPackages [etm-dgraham]: Remove: archive file [/home/abi/fetcher/tmp/etm-dgraham-6.1.8.tar.gz]
+[2024-05-04 12:19:08] INFO root fetch - processPackages [etm-dgraham]: Remove: archive file [/home/abi/fetcher/tmp/etm-dgraham-6.1.9.tar.gz]
+[2024-05-04 12:19:08] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
+[2024-05-04 12:19:08] INFO root fetch - main [MainThread]: Store serial: [23057410]
