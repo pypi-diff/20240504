@@ -15813,3 +15813,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:00:36] INFO root fetch - processPackages [breez-sdk]: Remove: archive file [/home/abi/fetcher/tmp/breez_sdk-0.4.0rc5-cp39-cp39-win_amd64.whl.zip]
 [2024-05-04 17:00:36] INFO root fetch - main [MainThread]: End processing [breez-sdk]: success
 [2024-05-04 17:00:36] INFO root fetch - main [MainThread]: Store serial: [23058711]
+[2024-05-04 17:02:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058711]
+[2024-05-04 17:02:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 17:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nl-matcher
+[2024-05-04 17:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gridworks-debug-cli
+[2024-05-04 17:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ChordReviewsVis
+[2024-05-04 17:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pchjlib
+[2024-05-04 17:02:59] INFO root fetch - processPackages [nl-matcher]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-04 17:02:59] INFO root fetch - processPackages [nl-matcher]: Downloading https://files.pythonhosted.org/packages/27/6f/bf808185fc66cf04f9430351c9d668b7e7344ea402d257ecb319b60fee4d/nl_matcher-0.0.2.tar.gz
+[2024-05-04 17:02:59] INFO root fetch - processPackages [gridworks-debug-cli]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-04 17:02:59] INFO root fetch - processPackages [pchjlib]: New version: [0.0.3.7] Old Version: [0.0.3.6]
+[2024-05-04 17:02:59] WARNING root fetch - processPackages [ChordReviewsVis]: Skipping, unable to determine old version
+[2024-05-04 17:02:59] INFO root fetch - main [MainThread]: End processing [ChordReviewsVis] error
+[2024-05-04 17:02:59] INFO root fetch - processPackages [gridworks-debug-cli]: Downloading https://files.pythonhosted.org/packages/21/67/8037694c0555dfd7a859935d9b63a39dab17b6d0179a78311e09e16618e8/gridworks_debug_cli-0.2.8.tar.gz
+[2024-05-04 17:02:59] INFO root fetch - processPackages [pchjlib]: Downloading https://files.pythonhosted.org/packages/06/d1/0686fde53636cbef874aee60fb94beb17ca683b536ff99a3f81db6742891/pchjlib-0.0.3.6.tar.gz
+[2024-05-04 17:02:59] INFO root fetch - processPackages [nl-matcher]: Downloading https://files.pythonhosted.org/packages/0c/29/4cdd51a992d80efe42924ac3c7fbf0d01d9a9c26835cb1786e2bd649cca0/nl_matcher-0.0.3.tar.gz
+[2024-05-04 17:02:59] INFO root fetch - processPackages [nl-matcher]: executing diffoscope
+[2024-05-04 17:02:59] INFO root fetch - processPackages [nl-matcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nl_matcher-0.0.2.tar.gz tmp/nl_matcher-0.0.3.tar.gz --markdown 20240504/n/nl-matcher/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-04 17:03:00] INFO root fetch - processPackages [pchjlib]: Downloading https://files.pythonhosted.org/packages/82/8e/2505ef81a4b2e62f0cc0904319ae3b2fb41c4a70f1fd89c76601e218bb90/pchjlib-0.0.3.7.tar.gz
+[2024-05-04 17:03:00] INFO root fetch - processPackages [gridworks-debug-cli]: Downloading https://files.pythonhosted.org/packages/94/f0/a15786ae7b64f82aa7ba12defc8be8d0093cdcc42e59b96d1ea1715d914b/gridworks_debug_cli-0.2.9.tar.gz
+[2024-05-04 17:03:00] INFO root fetch - processPackages [nl-matcher]: Remove: archive file [/home/abi/fetcher/tmp/nl_matcher-0.0.2.tar.gz]
+[2024-05-04 17:03:00] INFO root fetch - processPackages [nl-matcher]: Remove: archive file [/home/abi/fetcher/tmp/nl_matcher-0.0.3.tar.gz]
+[2024-05-04 17:03:00] INFO root fetch - main [MainThread]: End processing [nl-matcher]: success
+[2024-05-04 17:03:01] INFO root fetch - processPackages [pchjlib]: executing diffoscope
+[2024-05-04 17:03:01] INFO root fetch - processPackages [pchjlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pchjlib-0.0.3.6.tar.gz tmp/pchjlib-0.0.3.7.tar.gz --markdown 20240504/p/pchjlib/0.0.3.6-0.0.3.7/README.md --exclude *.pyd
+[2024-05-04 17:03:01] INFO root fetch - processPackages [gridworks-debug-cli]: executing diffoscope
+[2024-05-04 17:03:01] INFO root fetch - processPackages [gridworks-debug-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridworks_debug_cli-0.2.8.tar.gz tmp/gridworks_debug_cli-0.2.9.tar.gz --markdown 20240504/g/gridworks-debug-cli/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-04 17:03:01] INFO root fetch - processPackages [pchjlib]: Remove: archive file [/home/abi/fetcher/tmp/pchjlib-0.0.3.6.tar.gz]
+[2024-05-04 17:03:01] INFO root fetch - processPackages [pchjlib]: Remove: archive file [/home/abi/fetcher/tmp/pchjlib-0.0.3.7.tar.gz]
+[2024-05-04 17:03:01] INFO root fetch - main [MainThread]: End processing [pchjlib]: success
+[2024-05-04 17:03:02] INFO root fetch - processPackages [gridworks-debug-cli]: Remove: archive file [/home/abi/fetcher/tmp/gridworks_debug_cli-0.2.8.tar.gz]
+[2024-05-04 17:03:02] INFO root fetch - processPackages [gridworks-debug-cli]: Remove: archive file [/home/abi/fetcher/tmp/gridworks_debug_cli-0.2.9.tar.gz]
+[2024-05-04 17:03:02] INFO root fetch - main [MainThread]: End processing [gridworks-debug-cli]: success
+[2024-05-04 17:03:02] INFO root fetch - main [MainThread]: Store serial: [23058732]
