@@ -9346,3 +9346,18 @@
 [2024-05-04 06:53:12] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.32.tar.gz]
 [2024-05-04 06:53:12] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
 [2024-05-04 06:53:12] INFO root fetch - main [MainThread]: Store serial: [23055717]
+[2024-05-04 06:55:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055717]
+[2024-05-04 06:55:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 06:55:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multiconnect
+[2024-05-04 06:55:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dataspecs
+[2024-05-04 06:55:21] WARNING root fetch - processPackages [multiconnect]: Skipping, unable to determine old version
+[2024-05-04 06:55:21] INFO root fetch - main [MainThread]: End processing [multiconnect] error
+[2024-05-04 06:55:21] INFO root fetch - processPackages [dataspecs]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-04 06:55:22] INFO root fetch - processPackages [dataspecs]: Downloading https://files.pythonhosted.org/packages/2d/17/107f00931b91d2ac45c4f85af90906b5e2cc4d1ee89bbdb52a9237d37c67/dataspecs-0.4.0.tar.gz
+[2024-05-04 06:55:22] INFO root fetch - processPackages [dataspecs]: Downloading https://files.pythonhosted.org/packages/d3/28/a6c906abf6c6bf850e7c19c8d7f94588dc1da93a8b3ed34455462a5dfaf5/dataspecs-0.5.0.tar.gz
+[2024-05-04 06:55:22] INFO root fetch - processPackages [dataspecs]: executing diffoscope
+[2024-05-04 06:55:22] INFO root fetch - processPackages [dataspecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataspecs-0.4.0.tar.gz tmp/dataspecs-0.5.0.tar.gz --markdown 20240504/d/dataspecs/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-04 06:55:23] INFO root fetch - processPackages [dataspecs]: Remove: archive file [/home/abi/fetcher/tmp/dataspecs-0.4.0.tar.gz]
+[2024-05-04 06:55:23] INFO root fetch - processPackages [dataspecs]: Remove: archive file [/home/abi/fetcher/tmp/dataspecs-0.5.0.tar.gz]
+[2024-05-04 06:55:23] INFO root fetch - main [MainThread]: End processing [dataspecs]: success
+[2024-05-04 06:55:23] INFO root fetch - main [MainThread]: Store serial: [23055731]
