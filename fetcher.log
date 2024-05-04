@@ -20490,3 +20490,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:44:50] INFO root fetch - processPackages [opex-manifest-generator]: Remove: archive file [/home/abi/fetcher/tmp/opex_manifest_generator-1.1.6.tar.gz]
 [2024-05-04 22:44:50] INFO root fetch - main [MainThread]: End processing [opex-manifest-generator]: success
 [2024-05-04 22:44:50] INFO root fetch - main [MainThread]: Store serial: [23060875]
+[2024-05-04 22:46:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060875]
+[2024-05-04 22:46:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 22:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parcllabs
+[2024-05-04 22:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: carate
+[2024-05-04 22:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yolo-world-open
+[2024-05-04 22:46:59] INFO root fetch - processPackages [parcllabs]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 22:46:59] INFO root fetch - processPackages [yolo-world-open]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-04 22:46:59] INFO root fetch - processPackages [parcllabs]: Downloading https://files.pythonhosted.org/packages/4b/a7/9060c070fcbeed0ac71fb0b49e67b6162c4027ec3296ac7d9595c1654294/parcllabs-0.1.8.tar.gz
+[2024-05-04 22:46:59] INFO root fetch - processPackages [carate]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-04 22:46:59] INFO root fetch - processPackages [yolo-world-open]: Downloading https://files.pythonhosted.org/packages/1f/3e/15394944ceee01c68bcdcd7f91f8e800ca9d4a69fb146c4eccfe24de88ac/yolo_world_open-0.2.0.tar.gz
+[2024-05-04 22:46:59] INFO root fetch - processPackages [carate]: Downloading https://files.pythonhosted.org/packages/fa/13/418f87351688b66a900259ada5412eefec626a0a172308a78dc1a059da2d/carate-0.3.8.tar.gz
+[2024-05-04 22:47:00] INFO root fetch - processPackages [parcllabs]: Downloading https://files.pythonhosted.org/packages/54/76/252d5d459b8fefcdb4cd8ba9124168cc37b81f5740ca09ff3e754621335b/parcllabs-0.1.9.tar.gz
+[2024-05-04 22:47:00] INFO root fetch - processPackages [yolo-world-open]: Downloading https://files.pythonhosted.org/packages/c2/15/f742eb331c43e0e6bd291639abaa3923544b8aea026e9a3681e522d236d7/yolo_world_open-0.3.0.tar.gz
+[2024-05-04 22:47:00] INFO root fetch - processPackages [parcllabs]: executing diffoscope
+[2024-05-04 22:47:00] INFO root fetch - processPackages [parcllabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parcllabs-0.1.8.tar.gz tmp/parcllabs-0.1.9.tar.gz --markdown 20240504/p/parcllabs/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 22:47:00] INFO root fetch - processPackages [yolo-world-open]: executing diffoscope
+[2024-05-04 22:47:00] INFO root fetch - processPackages [yolo-world-open]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yolo_world_open-0.2.0.tar.gz tmp/yolo_world_open-0.3.0.tar.gz --markdown 20240504/y/yolo-world-open/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-04 22:47:00] INFO root fetch - processPackages [carate]: Downloading https://files.pythonhosted.org/packages/bc/12/575875304cb985ca255ad8178617d4694a2b9eb77510ac16bedd4e76df55/carate-0.3.9.tar.gz
+[2024-05-04 22:47:00] INFO root fetch - processPackages [carate]: executing diffoscope
+[2024-05-04 22:47:00] INFO root fetch - processPackages [carate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carate-0.3.8.tar.gz tmp/carate-0.3.9.tar.gz --markdown 20240504/c/carate/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-04 22:47:00] INFO root fetch - processPackages [yolo-world-open]: Remove: archive file [/home/abi/fetcher/tmp/yolo_world_open-0.2.0.tar.gz]
+[2024-05-04 22:47:00] INFO root fetch - processPackages [yolo-world-open]: Remove: archive file [/home/abi/fetcher/tmp/yolo_world_open-0.3.0.tar.gz]
+[2024-05-04 22:47:00] INFO root fetch - main [MainThread]: End processing [yolo-world-open]: success
+[2024-05-04 22:47:00] INFO root fetch - processPackages [parcllabs]: Remove: archive file [/home/abi/fetcher/tmp/parcllabs-0.1.8.tar.gz]
+[2024-05-04 22:47:00] INFO root fetch - processPackages [parcllabs]: Remove: archive file [/home/abi/fetcher/tmp/parcllabs-0.1.9.tar.gz]
+[2024-05-04 22:47:00] INFO root fetch - main [MainThread]: End processing [parcllabs]: success
+[2024-05-04 22:47:01] INFO root fetch - processPackages [carate]: Remove: archive file [/home/abi/fetcher/tmp/carate-0.3.8.tar.gz]
+[2024-05-04 22:47:01] INFO root fetch - processPackages [carate]: Remove: archive file [/home/abi/fetcher/tmp/carate-0.3.9.tar.gz]
+[2024-05-04 22:47:01] INFO root fetch - main [MainThread]: End processing [carate]: success
+[2024-05-04 22:47:01] INFO root fetch - main [MainThread]: Store serial: [23060881]
