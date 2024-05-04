@@ -18207,3 +18207,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:00:43] INFO root fetch - processPackages [mo-streams]: Remove: archive file [/home/abi/fetcher/tmp/mo_streams-1.620.24125.tar.gz]
 [2024-05-04 20:00:43] INFO root fetch - main [MainThread]: End processing [mo-streams]: success
 [2024-05-04 20:00:43] INFO root fetch - main [MainThread]: Store serial: [23059955]
+[2024-05-04 20:02:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059955]
+[2024-05-04 20:02:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 20:02:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bleak
+[2024-05-04 20:02:51] INFO root fetch - processPackages [bleak]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-04 20:02:51] INFO root fetch - processPackages [bleak]: Downloading https://files.pythonhosted.org/packages/e8/33/141a68b8770fc339dd0ddc0e1b5704bdd42bfe5755feaec56120954da614/bleak-0.9.0.tar.gz
+[2024-05-04 20:02:52] INFO root fetch - processPackages [bleak]: Downloading https://files.pythonhosted.org/packages/3e/43/6d88604149459a7e3fefe72c7cf03a95bafd33216c18d72ade40adeb427a/bleak-0.9.1.tar.gz
+[2024-05-04 20:02:52] INFO root fetch - processPackages [bleak]: executing diffoscope
+[2024-05-04 20:02:52] INFO root fetch - processPackages [bleak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bleak-0.9.0.tar.gz tmp/bleak-0.9.1.tar.gz --markdown 20240504/b/bleak/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-04 20:02:53] INFO root fetch - processPackages [bleak]: Remove: archive file [/home/abi/fetcher/tmp/bleak-0.9.0.tar.gz]
+[2024-05-04 20:02:53] INFO root fetch - processPackages [bleak]: Remove: archive file [/home/abi/fetcher/tmp/bleak-0.9.1.tar.gz]
+[2024-05-04 20:02:53] INFO root fetch - main [MainThread]: End processing [bleak]: success
+[2024-05-04 20:02:53] INFO root fetch - main [MainThread]: Store serial: [23059958]
