@@ -10152,3 +10152,58 @@
 [2024-05-04 08:02:29] INFO root fetch - processPackages [ovos-workshop]: Remove: archive file [/home/abi/fetcher/tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip]
 [2024-05-04 08:02:29] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
 [2024-05-04 08:02:29] INFO root fetch - main [MainThread]: Store serial: [23056080]
+[2024-05-04 08:04:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056080]
+[2024-05-04 08:04:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 08:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-module-auto-update
+[2024-05-04 08:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: queuelib
+[2024-05-04 08:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: grplot
+[2024-05-04 08:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grplot
+[2024-05-04 08:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-web-tree-customized-field-list
+[2024-05-04 08:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: streamlit-analytics2
+[2024-05-04 08:04:38] INFO root fetch - processPackages [odoo-addon-module-auto-update]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.3]
+[2024-05-04 08:04:38] INFO root fetch - processPackages [grplot]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-04 08:04:38] INFO root fetch - processPackages [grplot]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-04 08:04:38] INFO root fetch - processPackages [odoo14-addon-web-tree-customized-field-list]: New version: [14.0.1.0.1.dev4] Old Version: [14.0.1.0.1.dev2]
+[2024-05-04 08:04:38] INFO root fetch - processPackages [odoo-addon-module-auto-update]: Downloading https://files.pythonhosted.org/packages/f6/14/36b97f6e282f9b7bb8727d3ecb057874a85e68398ed60112232dee274c42/odoo_addon_module_auto_update-17.0.1.0.0.3-py3-none-any.whl
+[2024-05-04 08:04:38] INFO root fetch - processPackages [queuelib]: New version: [1.7.0] Old Version: [1.6.2]
+[2024-05-04 08:04:38] INFO root fetch - processPackages [streamlit-analytics2]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-05-04 08:04:38] INFO root fetch - processPackages [grplot]: Downloading https://files.pythonhosted.org/packages/6c/5d/0095432f24c4cd5a518498b7bc218864b250061a9f8eae633813d95ac4a8/grplot-0.9.5.tar.gz
+[2024-05-04 08:04:38] INFO root fetch - processPackages [odoo14-addon-web-tree-customized-field-list]: Downloading https://files.pythonhosted.org/packages/8b/89/a22c6a1a93949d3500eebebfb94340c79bab561617f905eebfd08bc2834a/odoo14_addon_web_tree_customized_field_list-14.0.1.0.1.dev2-py3-none-any.whl
+[2024-05-04 08:04:38] INFO root fetch - processPackages [grplot]: Downloading https://files.pythonhosted.org/packages/6c/5d/0095432f24c4cd5a518498b7bc218864b250061a9f8eae633813d95ac4a8/grplot-0.9.5.tar.gz
+[2024-05-04 08:04:38] INFO root fetch - processPackages [queuelib]: Downloading https://files.pythonhosted.org/packages/4d/11/94d3a5c1a03fa984b3f793ceecfac4b685ca9fc7a3af03f806dbb973555b/queuelib-1.6.2.tar.gz
+[2024-05-04 08:04:38] INFO root fetch - processPackages [streamlit-analytics2]: Downloading https://files.pythonhosted.org/packages/5e/41/85b6f04daca5e657e2e06fa7f08f17a23ad7a6b106eae4fae41c0b114bdd/streamlit_analytics2-0.7.2.tar.gz
+[2024-05-04 08:04:38] INFO root fetch - processPackages [odoo-addon-module-auto-update]: Downloading https://files.pythonhosted.org/packages/11/7d/abc54da37ba468007ca7d6a776b1ada732953400b2f339185cbe10a8f929/odoo_addon_module_auto_update-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-04 08:04:39] INFO root fetch - processPackages [odoo-addon-module-auto-update]: executing diffoscope
+[2024-05-04 08:04:39] INFO root fetch - processPackages [odoo-addon-module-auto-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_module_auto_update-17.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_module_auto_update-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-module-auto-update/17.0.1.0.0.3-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-04 08:04:39] INFO root fetch - processPackages [queuelib]: Downloading https://files.pythonhosted.org/packages/fb/a4/8af5d8ee3526c64a152549a1c7b42896be9fae9a2fda7712883dc09822ac/queuelib-1.7.0.tar.gz
+[2024-05-04 08:04:39] INFO root fetch - processPackages [odoo14-addon-web-tree-customized-field-list]: Downloading https://files.pythonhosted.org/packages/ab/32/de24977ed4df0d2cafcda4d428f0b8950d8fce10d51b8d18609596d07ae0/odoo14_addon_web_tree_customized_field_list-14.0.1.0.1.dev4-py3-none-any.whl
+[2024-05-04 08:04:39] INFO root fetch - processPackages [grplot]: Downloading https://files.pythonhosted.org/packages/15/2f/32f4132e2153668a9da8ef1be22fc8c7c35e7578bf1edcb91c52463258db/grplot-0.9.6.tar.gz
+[2024-05-04 08:04:39] INFO root fetch - processPackages [grplot]: Downloading https://files.pythonhosted.org/packages/15/2f/32f4132e2153668a9da8ef1be22fc8c7c35e7578bf1edcb91c52463258db/grplot-0.9.6.tar.gz
+[2024-05-04 08:04:39] INFO root fetch - processPackages [queuelib]: executing diffoscope
+[2024-05-04 08:04:39] INFO root fetch - processPackages [queuelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queuelib-1.6.2.tar.gz tmp/queuelib-1.7.0.tar.gz --markdown 20240504/q/queuelib/1.6.2-1.7.0/README.md --exclude *.pyd
+[2024-05-04 08:04:39] INFO root fetch - processPackages [streamlit-analytics2]: Downloading https://files.pythonhosted.org/packages/91/b0/9a654d86bb5117a78dd02bb6d753bc8fa0be911e0daba207e196306638e5/streamlit_analytics2-0.7.3.tar.gz
+[2024-05-04 08:04:39] INFO root fetch - processPackages [odoo14-addon-web-tree-customized-field-list]: executing diffoscope
+[2024-05-04 08:04:39] INFO root fetch - processPackages [odoo14-addon-web-tree-customized-field-list]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_web_tree_customized_field_list-14.0.1.0.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_web_tree_customized_field_list-14.0.1.0.1.dev4-py3-none-any.whl.zip --markdown 20240504/o/odoo14-addon-web-tree-customized-field-list/14.0.1.0.1.dev2-14.0.1.0.1.dev4/README.md --exclude *.pyd
+[2024-05-04 08:04:39] INFO root fetch - processPackages [streamlit-analytics2]: executing diffoscope
+[2024-05-04 08:04:39] INFO root fetch - processPackages [streamlit-analytics2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_analytics2-0.7.2.tar.gz tmp/streamlit_analytics2-0.7.3.tar.gz --markdown 20240504/s/streamlit-analytics2/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-05-04 08:04:39] INFO root fetch - processPackages [grplot]: executing diffoscope
+[2024-05-04 08:04:39] INFO root fetch - processPackages [grplot]: executing diffoscope
+[2024-05-04 08:04:39] INFO root fetch - processPackages [grplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grplot-0.9.5.tar.gz tmp/grplot-0.9.6.tar.gz --markdown 20240504/g/grplot/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-04 08:04:39] INFO root fetch - processPackages [grplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grplot-0.9.5.tar.gz tmp/grplot-0.9.6.tar.gz --markdown 20240504/g/grplot/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-04 08:04:39] INFO root fetch - processPackages [odoo-addon-module-auto-update]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_module_auto_update-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-04 08:04:39] INFO root fetch - processPackages [odoo-addon-module-auto-update]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_module_auto_update-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-04 08:04:39] INFO root fetch - main [MainThread]: End processing [odoo-addon-module-auto-update]: success
+[2024-05-04 08:04:39] INFO root fetch - processPackages [queuelib]: Remove: archive file [/home/abi/fetcher/tmp/queuelib-1.6.2.tar.gz]
+[2024-05-04 08:04:39] INFO root fetch - processPackages [queuelib]: Remove: archive file [/home/abi/fetcher/tmp/queuelib-1.7.0.tar.gz]
+[2024-05-04 08:04:39] INFO root fetch - main [MainThread]: End processing [queuelib]: success
+[2024-05-04 08:04:39] INFO root fetch - processPackages [odoo14-addon-web-tree-customized-field-list]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_web_tree_customized_field_list-14.0.1.0.1.dev2-py3-none-any.whl.zip]
+[2024-05-04 08:04:39] INFO root fetch - processPackages [odoo14-addon-web-tree-customized-field-list]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_web_tree_customized_field_list-14.0.1.0.1.dev4-py3-none-any.whl.zip]
+[2024-05-04 08:04:39] INFO root fetch - main [MainThread]: End processing [odoo14-addon-web-tree-customized-field-list]: success
+[2024-05-04 08:04:40] INFO root fetch - processPackages [streamlit-analytics2]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_analytics2-0.7.2.tar.gz]
+[2024-05-04 08:04:40] INFO root fetch - processPackages [streamlit-analytics2]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_analytics2-0.7.3.tar.gz]
+[2024-05-04 08:04:40] INFO root fetch - main [MainThread]: End processing [streamlit-analytics2]: success
+[2024-05-04 08:04:40] INFO root fetch - processPackages [grplot]: Remove: archive file [/home/abi/fetcher/tmp/grplot-0.9.5.tar.gz]
+[2024-05-04 08:04:40] INFO root fetch - processPackages [grplot]: Remove: archive file [/home/abi/fetcher/tmp/grplot-0.9.6.tar.gz]
+[2024-05-04 08:04:40] INFO root fetch - main [MainThread]: End processing [grplot]: success
+[2024-05-04 08:04:40] INFO root fetch - main [MainThread]: End processing [grplot]: success
+[2024-05-04 08:04:40] INFO root fetch - main [MainThread]: Store serial: [23056097]
