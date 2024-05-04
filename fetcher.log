@@ -7593,3 +7593,33 @@
 [2024-05-04 04:43:30] INFO root fetch - processPackages [svg-ultralight]: Remove: archive file [/home/abi/fetcher/tmp/svg_ultralight-0.9.0.tar.gz]
 [2024-05-04 04:43:30] INFO root fetch - main [MainThread]: End processing [svg-ultralight]: success
 [2024-05-04 04:43:30] INFO root fetch - main [MainThread]: Store serial: [23054907]
+[2024-05-04 04:45:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054907]
+[2024-05-04 04:45:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 04:45:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OZI
+[2024-05-04 04:45:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dj_component_view
+[2024-05-04 04:45:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo12-addons-oca-account-invoicing
+[2024-05-04 04:45:50] INFO root fetch - processPackages [dj_component_view]: New version: [6.0] Old Version: [5.0]
+[2024-05-04 04:45:50] INFO root fetch - processPackages [OZI]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-05-04 04:45:50] INFO root fetch - processPackages [dj_component_view]: Downloading https://files.pythonhosted.org/packages/fa/ba/a408e24d8fefee34a09cc13feeb7f6eed963795ec0b10a5569b18c5236d9/dj_component_view-5.0.tar.gz
+[2024-05-04 04:45:50] INFO root fetch - processPackages [odoo12-addons-oca-account-invoicing]: New version: [12.0.20240503.0] Old Version: [12.0.20240130.0]
+[2024-05-04 04:45:50] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/d9/5c/c9f2b3c48a7f758d7e05e0776148f824235fcc28ccdd1cb3cb8301ac96e2/OZI-1.3.1.tar.gz
+[2024-05-04 04:45:50] INFO root fetch - processPackages [odoo12-addons-oca-account-invoicing]: Downloading https://files.pythonhosted.org/packages/46/9e/d61ff43727e1dc5180b0d5fd6c5492dec9e93c95b36981af3b330bd14574/odoo12_addons_oca_account_invoicing-12.0.20240130.0-py3-none-any.whl
+[2024-05-04 04:45:50] INFO root fetch - processPackages [dj_component_view]: Downloading https://files.pythonhosted.org/packages/11/94/477d9401835bd93220298bd95722c1bd2be3b37d4fde627131bfb242abda/dj_component_view-6.0.tar.gz
+[2024-05-04 04:45:51] INFO root fetch - processPackages [dj_component_view]: executing diffoscope
+[2024-05-04 04:45:51] INFO root fetch - processPackages [dj_component_view]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj_component_view-5.0.tar.gz tmp/dj_component_view-6.0.tar.gz --markdown 20240504/d/dj_component_view/5.0-6.0/README.md --exclude *.pyd
+[2024-05-04 04:45:51] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/85/58/c330b695fbdc31b63677091a0bf4f0ca1317ab5888eb0a57e017b45d2242/OZI-1.3.2.tar.gz
+[2024-05-04 04:45:51] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-05-04 04:45:51] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.3.1.tar.gz tmp/OZI-1.3.2.tar.gz --markdown 20240504/O/OZI/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-05-04 04:45:51] INFO root fetch - processPackages [odoo12-addons-oca-account-invoicing]: Downloading https://files.pythonhosted.org/packages/9d/e3/f9b56d151cf8fe60c3320b1f4edbbe9c91f34c9581911a03a4ba055328b1/odoo12_addons_oca_account_invoicing-12.0.20240503.0-py3-none-any.whl
+[2024-05-04 04:45:51] INFO root fetch - processPackages [odoo12-addons-oca-account-invoicing]: executing diffoscope
+[2024-05-04 04:45:51] INFO root fetch - processPackages [odoo12-addons-oca-account-invoicing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addons_oca_account_invoicing-12.0.20240130.0-py3-none-any.whl.zip tmp/odoo12_addons_oca_account_invoicing-12.0.20240503.0-py3-none-any.whl.zip --markdown 20240504/o/odoo12-addons-oca-account-invoicing/12.0.20240130.0-12.0.20240503.0/README.md --exclude *.pyd
+[2024-05-04 04:45:51] INFO root fetch - processPackages [dj_component_view]: Remove: archive file [/home/abi/fetcher/tmp/dj_component_view-5.0.tar.gz]
+[2024-05-04 04:45:51] INFO root fetch - processPackages [dj_component_view]: Remove: archive file [/home/abi/fetcher/tmp/dj_component_view-6.0.tar.gz]
+[2024-05-04 04:45:51] INFO root fetch - main [MainThread]: End processing [dj_component_view]: success
+[2024-05-04 04:45:51] INFO root fetch - processPackages [odoo12-addons-oca-account-invoicing]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addons_oca_account_invoicing-12.0.20240130.0-py3-none-any.whl.zip]
+[2024-05-04 04:45:51] INFO root fetch - processPackages [odoo12-addons-oca-account-invoicing]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addons_oca_account_invoicing-12.0.20240503.0-py3-none-any.whl.zip]
+[2024-05-04 04:45:51] INFO root fetch - main [MainThread]: End processing [odoo12-addons-oca-account-invoicing]: success
+[2024-05-04 04:45:52] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.3.1.tar.gz]
+[2024-05-04 04:45:52] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.3.2.tar.gz]
+[2024-05-04 04:45:52] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-05-04 04:45:52] INFO root fetch - main [MainThread]: Store serial: [23054917]
