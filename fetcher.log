@@ -9717,3 +9717,25 @@
 [2024-05-04 07:23:41] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.9.tar.gz]
 [2024-05-04 07:23:41] INFO root fetch - main [MainThread]: End processing [hgraph]: success
 [2024-05-04 07:23:41] INFO root fetch - main [MainThread]: Store serial: [23055876]
+[2024-05-04 07:25:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055876]
+[2024-05-04 07:25:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 07:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sparseypy
+[2024-05-04 07:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sparseypy
+[2024-05-04 07:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: filchatter
+[2024-05-04 07:25:50] INFO root fetch - processPackages [sparseypy]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-05-04 07:25:50] INFO root fetch - processPackages [sparseypy]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-05-04 07:25:50] WARNING root fetch - processPackages [filchatter]: Skipping, unable to determine old version
+[2024-05-04 07:25:50] INFO root fetch - main [MainThread]: End processing [filchatter] error
+[2024-05-04 07:25:50] INFO root fetch - processPackages [sparseypy]: Downloading https://files.pythonhosted.org/packages/a5/45/806631877fdb8b69bbd5377d6424501c8a54593231eb95c579e052c4409a/sparseypy-0.0.3.tar.gz
+[2024-05-04 07:25:50] INFO root fetch - processPackages [sparseypy]: Downloading https://files.pythonhosted.org/packages/a5/45/806631877fdb8b69bbd5377d6424501c8a54593231eb95c579e052c4409a/sparseypy-0.0.3.tar.gz
+[2024-05-04 07:25:51] INFO root fetch - processPackages [sparseypy]: Downloading https://files.pythonhosted.org/packages/8b/2b/b93ad3725ccf6d63278c7a25056771f89f86946c913aaa8b84d8cbb02958/sparseypy-0.0.5.tar.gz
+[2024-05-04 07:25:51] INFO root fetch - processPackages [sparseypy]: Downloading https://files.pythonhosted.org/packages/8b/2b/b93ad3725ccf6d63278c7a25056771f89f86946c913aaa8b84d8cbb02958/sparseypy-0.0.5.tar.gz
+[2024-05-04 07:25:51] INFO root fetch - processPackages [sparseypy]: executing diffoscope
+[2024-05-04 07:25:51] INFO root fetch - processPackages [sparseypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparseypy-0.0.3.tar.gz tmp/sparseypy-0.0.5.tar.gz --markdown 20240504/s/sparseypy/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-05-04 07:25:51] INFO root fetch - processPackages [sparseypy]: executing diffoscope
+[2024-05-04 07:25:51] INFO root fetch - processPackages [sparseypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparseypy-0.0.3.tar.gz tmp/sparseypy-0.0.5.tar.gz --markdown 20240504/s/sparseypy/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-05-04 07:25:57] INFO root fetch - processPackages [sparseypy]: Remove: archive file [/home/abi/fetcher/tmp/sparseypy-0.0.3.tar.gz]
+[2024-05-04 07:25:57] INFO root fetch - processPackages [sparseypy]: Remove: archive file [/home/abi/fetcher/tmp/sparseypy-0.0.5.tar.gz]
+[2024-05-04 07:25:57] INFO root fetch - main [MainThread]: End processing [sparseypy]: success
+[2024-05-04 07:25:57] INFO root fetch - main [MainThread]: End processing [sparseypy]: success
+[2024-05-04 07:25:57] INFO root fetch - main [MainThread]: Store serial: [23055888]
