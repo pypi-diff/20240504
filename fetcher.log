@@ -17782,3 +17782,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:34:22] INFO root fetch - processPackages [flashcam]: Remove: archive file [/home/abi/fetcher/tmp/flashcam-1.9.3.tar.gz]
 [2024-05-04 19:34:22] INFO root fetch - main [MainThread]: End processing [flashcam]: success
 [2024-05-04 19:34:22] INFO root fetch - main [MainThread]: Store serial: [23059600]
+[2024-05-04 19:36:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059600]
+[2024-05-04 19:36:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 19:36:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyvserv
+[2024-05-04 19:36:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyauth0
+[2024-05-04 19:36:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-threads
+[2024-05-04 19:36:31] INFO root fetch - processPackages [pyvserv]: New version: [1.0.6] Old Version: [1.0.4]
+[2024-05-04 19:36:31] INFO root fetch - processPackages [pyauth0]: New version: [0.1.3a2] Old Version: [0.1.3a1]
+[2024-05-04 19:36:31] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/e5/05/af69712866a86bd19d367eb25f87eb41517f37d989d54875394fb7a8365f/pyauth0-0.1.3a1.tar.gz
+[2024-05-04 19:36:31] INFO root fetch - processPackages [pyvserv]: Downloading https://files.pythonhosted.org/packages/48/88/4692852b5e9b65095b6e392d6b0291fa8fba79bb681872209efcbc03e9b2/pyvserv-1.0.4.tar.gz
+[2024-05-04 19:36:31] INFO root fetch - processPackages [mo-threads]: New version: [6.619.24125] Old Version: [6.610.24119]
+[2024-05-04 19:36:31] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/f9/b2/8bdf82185c887bd561953d1ba3ab3f9e4595bbcb9f60fc363b990a6e2c38/pyauth0-0.1.3a2.tar.gz
+[2024-05-04 19:36:31] INFO root fetch - processPackages [mo-threads]: Downloading https://files.pythonhosted.org/packages/39/cf/99ff8f4b7052c1812117b5cb0a0de44f8968113f837706fe70668beaf525/mo_threads-6.610.24119.tar.gz
+[2024-05-04 19:36:31] INFO root fetch - processPackages [pyvserv]: Downloading https://files.pythonhosted.org/packages/04/9c/6322360a44a9bc14e813e76f9f04e59379ef43c71cce5197b283b4b85ae3/pyvserv-1.0.6.tar.gz
+[2024-05-04 19:36:31] INFO root fetch - processPackages [pyauth0]: executing diffoscope
+[2024-05-04 19:36:31] INFO root fetch - processPackages [pyauth0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyauth0-0.1.3a1.tar.gz tmp/pyauth0-0.1.3a2.tar.gz --markdown 20240504/p/pyauth0/0.1.3a1-0.1.3a2/README.md --exclude *.pyd
+[2024-05-04 19:36:32] INFO root fetch - processPackages [pyvserv]: executing diffoscope
+[2024-05-04 19:36:32] INFO root fetch - processPackages [pyvserv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvserv-1.0.4.tar.gz tmp/pyvserv-1.0.6.tar.gz --markdown 20240504/p/pyvserv/1.0.4-1.0.6/README.md --exclude *.pyd
+[2024-05-04 19:36:32] INFO root fetch - processPackages [mo-threads]: Downloading https://files.pythonhosted.org/packages/cf/dc/a9efe00bb7c764144e5ce85e378694877c4d0e27147b221b1fe08afb0f12/mo_threads-6.619.24125.tar.gz
+[2024-05-04 19:36:32] INFO root fetch - processPackages [mo-threads]: executing diffoscope
+[2024-05-04 19:36:32] INFO root fetch - processPackages [mo-threads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_threads-6.610.24119.tar.gz tmp/mo_threads-6.619.24125.tar.gz --markdown 20240504/m/mo-threads/6.610.24119-6.619.24125/README.md --exclude *.pyd
+[2024-05-04 19:36:32] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.3a1.tar.gz]
+[2024-05-04 19:36:32] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.3a2.tar.gz]
+[2024-05-04 19:36:32] INFO root fetch - main [MainThread]: End processing [pyauth0]: success
+[2024-05-04 19:36:32] INFO root fetch - processPackages [mo-threads]: Remove: archive file [/home/abi/fetcher/tmp/mo_threads-6.610.24119.tar.gz]
+[2024-05-04 19:36:32] INFO root fetch - processPackages [mo-threads]: Remove: archive file [/home/abi/fetcher/tmp/mo_threads-6.619.24125.tar.gz]
+[2024-05-04 19:36:32] INFO root fetch - main [MainThread]: End processing [mo-threads]: success
+[2024-05-04 19:36:33] INFO root fetch - processPackages [pyvserv]: Remove: archive file [/home/abi/fetcher/tmp/pyvserv-1.0.4.tar.gz]
+[2024-05-04 19:36:33] INFO root fetch - processPackages [pyvserv]: Remove: archive file [/home/abi/fetcher/tmp/pyvserv-1.0.6.tar.gz]
+[2024-05-04 19:36:33] INFO root fetch - main [MainThread]: End processing [pyvserv]: success
+[2024-05-04 19:36:33] INFO root fetch - main [MainThread]: Store serial: [23059612]
