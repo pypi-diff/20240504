@@ -19370,3 +19370,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:23:45] INFO root fetch - processPackages [papers-dl]: Remove: archive file [/home/abi/fetcher/tmp/papers_dl-0.0.4.tar.gz]
 [2024-05-04 21:23:45] INFO root fetch - main [MainThread]: End processing [papers-dl]: success
 [2024-05-04 21:23:45] INFO root fetch - main [MainThread]: Store serial: [23060442]
+[2024-05-04 21:25:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060442]
+[2024-05-04 21:25:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 21:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: papers-dl
+[2024-05-04 21:25:54] INFO root fetch - processPackages [papers-dl]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-04 21:25:54] INFO root fetch - processPackages [papers-dl]: Downloading https://files.pythonhosted.org/packages/a7/81/3a3955271d54a07cb0237054587d57dcc76dfa02efba4ddaf805c125af24/papers_dl-0.0.3.tar.gz
+[2024-05-04 21:25:55] INFO root fetch - processPackages [papers-dl]: Downloading https://files.pythonhosted.org/packages/6a/7a/f436ce82d8152724f4ee9a863671d91654564817d73bf66dd714b4f539ba/papers_dl-0.0.4.tar.gz
+[2024-05-04 21:25:55] INFO root fetch - processPackages [papers-dl]: executing diffoscope
+[2024-05-04 21:25:55] INFO root fetch - processPackages [papers-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/papers_dl-0.0.3.tar.gz tmp/papers_dl-0.0.4.tar.gz --markdown 20240504/p/papers-dl/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-04 21:25:55] INFO root fetch - processPackages [papers-dl]: Remove: archive file [/home/abi/fetcher/tmp/papers_dl-0.0.3.tar.gz]
+[2024-05-04 21:25:55] INFO root fetch - processPackages [papers-dl]: Remove: archive file [/home/abi/fetcher/tmp/papers_dl-0.0.4.tar.gz]
+[2024-05-04 21:25:55] INFO root fetch - main [MainThread]: End processing [papers-dl]: success
+[2024-05-04 21:25:55] INFO root fetch - main [MainThread]: Store serial: [23060445]
