@@ -20699,3 +20699,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:02:20] INFO root fetch - processPackages [algomodule]: Remove: archive file [/home/abi/fetcher/tmp/algomodule-1.1.0.tar.gz]
 [2024-05-04 23:02:20] INFO root fetch - main [MainThread]: End processing [algomodule]: success
 [2024-05-04 23:02:20] INFO root fetch - main [MainThread]: Store serial: [23060970]
+[2024-05-04 23:04:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060970]
+[2024-05-04 23:04:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 23:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymmdb
+[2024-05-04 23:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hakowan
+[2024-05-04 23:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymmdb
+[2024-05-04 23:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jx-python
+[2024-05-04 23:04:29] WARNING root fetch - processPackages [pymmdb]: Skipping, unable to determine old version
+[2024-05-04 23:04:29] INFO root fetch - main [MainThread]: End processing [pymmdb] error
+[2024-05-04 23:04:29] WARNING root fetch - processPackages [pymmdb]: Skipping, unable to determine old version
+[2024-05-04 23:04:29] INFO root fetch - main [MainThread]: End processing [pymmdb] error
+[2024-05-04 23:04:29] INFO root fetch - processPackages [jx-python]: New version: [4.625.24125] Old Version: [4.607.24116]
+[2024-05-04 23:04:29] INFO root fetch - processPackages [jx-python]: Downloading https://files.pythonhosted.org/packages/38/5c/4c4a578934f5893ef1cd9230a94437df90746372dee9495a8c3e50bd5bff/jx_python-4.607.24116.tar.gz
+[2024-05-04 23:04:29] INFO root fetch - processPackages [hakowan]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-04 23:04:29] INFO root fetch - processPackages [hakowan]: Downloading https://files.pythonhosted.org/packages/b8/5a/4a0109a3a51b1188046d1aebef515144ed351d232da737666f63a6f36fb1/hakowan-0.3.3-py3-none-any.whl
+[2024-05-04 23:04:29] INFO root fetch - processPackages [jx-python]: Downloading https://files.pythonhosted.org/packages/02/94/68fe3d7a165f7f14868333a00ece6c6f7b645e7b1d7e5c8a0305423b78ad/jx_python-4.625.24125.tar.gz
+[2024-05-04 23:04:29] INFO root fetch - processPackages [jx-python]: executing diffoscope
+[2024-05-04 23:04:29] INFO root fetch - processPackages [jx-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jx_python-4.607.24116.tar.gz tmp/jx_python-4.625.24125.tar.gz --markdown 20240504/j/jx-python/4.607.24116-4.625.24125/README.md --exclude *.pyd
+[2024-05-04 23:04:29] INFO root fetch - processPackages [hakowan]: Downloading https://files.pythonhosted.org/packages/96/09/1de905908948c4fd0b537b8a880623c9f3db778ff7d1ea16cf3e88a17a6c/hakowan-0.3.4-py3-none-any.whl
+[2024-05-04 23:04:29] INFO root fetch - processPackages [hakowan]: executing diffoscope
+[2024-05-04 23:04:29] INFO root fetch - processPackages [hakowan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hakowan-0.3.3-py3-none-any.whl.zip tmp/hakowan-0.3.4-py3-none-any.whl.zip --markdown 20240504/h/hakowan/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-04 23:04:30] INFO root fetch - processPackages [jx-python]: Remove: archive file [/home/abi/fetcher/tmp/jx_python-4.607.24116.tar.gz]
+[2024-05-04 23:04:30] INFO root fetch - processPackages [jx-python]: Remove: archive file [/home/abi/fetcher/tmp/jx_python-4.625.24125.tar.gz]
+[2024-05-04 23:04:30] INFO root fetch - main [MainThread]: End processing [jx-python]: success
+[2024-05-04 23:04:30] INFO root fetch - processPackages [hakowan]: Remove: archive file [/home/abi/fetcher/tmp/hakowan-0.3.3-py3-none-any.whl.zip]
+[2024-05-04 23:04:30] INFO root fetch - processPackages [hakowan]: Remove: archive file [/home/abi/fetcher/tmp/hakowan-0.3.4-py3-none-any.whl.zip]
+[2024-05-04 23:04:30] INFO root fetch - main [MainThread]: End processing [hakowan]: success
+[2024-05-04 23:04:30] INFO root fetch - main [MainThread]: Store serial: [23060989]
