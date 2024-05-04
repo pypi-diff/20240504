@@ -13378,3 +13378,42 @@
 [2024-05-04 13:15:39] INFO root fetch - processPackages [fiftyl-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/fiftyl_toolkit-0.1.3.tar.gz]
 [2024-05-04 13:15:39] INFO root fetch - main [MainThread]: End processing [fiftyl-toolkit]: success
 [2024-05-04 13:15:39] INFO root fetch - main [MainThread]: Store serial: [23057651]
+[2024-05-04 13:17:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057651]
+[2024-05-04 13:17:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 13:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiolm-superfeel
+[2024-05-04 13:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transaction-middleware
+[2024-05-04 13:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: algomodule
+[2024-05-04 13:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otpme
+[2024-05-04 13:17:48] INFO root fetch - processPackages [audiolm-superfeel]: New version: [2.1.5] Old Version: [2.1.3]
+[2024-05-04 13:17:48] INFO root fetch - processPackages [transaction-middleware]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-04 13:17:48] INFO root fetch - processPackages [otpme]: New version: [0.3.0a62] Old Version: [0.3.0a61]
+[2024-05-04 13:17:48] INFO root fetch - processPackages [audiolm-superfeel]: Downloading https://files.pythonhosted.org/packages/5a/c1/02523aef14be82979c1a31a314ef5d5228d0ddd314fb6cb924c380f4e2da/audiolm_superfeel-2.1.3.tar.gz
+[2024-05-04 13:17:48] INFO root fetch - processPackages [transaction-middleware]: Downloading https://files.pythonhosted.org/packages/d9/7a/af3f3789377952b09f360bcea6545caa9da8ada555acba7bc2650ae91800/transaction_middleware-0.1.5.tar.gz
+[2024-05-04 13:17:48] INFO root fetch - processPackages [algomodule]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-04 13:17:48] INFO root fetch - processPackages [otpme]: Downloading https://files.pythonhosted.org/packages/73/04/a119df83d59837a9eefcda7687be097ebaf0558fab13f49fb636c6774726/otpme-0.3.0a61.tar.gz
+[2024-05-04 13:17:48] INFO root fetch - processPackages [algomodule]: Downloading https://files.pythonhosted.org/packages/c7/df/496a685a0fe2316cb0d84d67dde218fca1939926ef7f6c90a1091fec98d8/algomodule-1.0.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
+[2024-05-04 13:17:48] INFO root fetch - processPackages [transaction-middleware]: Downloading https://files.pythonhosted.org/packages/3a/2f/9bee1cfd33634637168f8f380e693aa3fa114986a995f88d6dcf626b0920/transaction_middleware-0.1.6.tar.gz
+[2024-05-04 13:17:48] INFO root fetch - processPackages [audiolm-superfeel]: Downloading https://files.pythonhosted.org/packages/13/51/b3fe97989192a05c75f9ad2a618f581be5580199b0b2039cf72488b9c401/audiolm_superfeel-2.1.5.tar.gz
+[2024-05-04 13:17:48] INFO root fetch - processPackages [transaction-middleware]: executing diffoscope
+[2024-05-04 13:17:48] INFO root fetch - processPackages [transaction-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transaction_middleware-0.1.5.tar.gz tmp/transaction_middleware-0.1.6.tar.gz --markdown 20240504/t/transaction-middleware/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-04 13:17:48] INFO root fetch - processPackages [audiolm-superfeel]: executing diffoscope
+[2024-05-04 13:17:48] INFO root fetch - processPackages [audiolm-superfeel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiolm_superfeel-2.1.3.tar.gz tmp/audiolm_superfeel-2.1.5.tar.gz --markdown 20240504/a/audiolm-superfeel/2.1.3-2.1.5/README.md --exclude *.pyd
+[2024-05-04 13:17:48] INFO root fetch - processPackages [algomodule]: Downloading https://files.pythonhosted.org/packages/c4/c7/69c8490b601020fd47b19b9ae050a14c01ce958cad9f54a3934dfbaf668f/algomodule-1.0.4.tar.gz
+[2024-05-04 13:17:49] INFO root fetch - processPackages [algomodule]: executing diffoscope
+[2024-05-04 13:17:49] INFO root fetch - processPackages [algomodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algomodule-1.0.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl.zip tmp/algomodule-1.0.4.tar.gz --markdown 20240504/a/algomodule/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-04 13:17:49] INFO root fetch - processPackages [transaction-middleware]: Remove: archive file [/home/abi/fetcher/tmp/transaction_middleware-0.1.5.tar.gz]
+[2024-05-04 13:17:49] INFO root fetch - processPackages [transaction-middleware]: Remove: archive file [/home/abi/fetcher/tmp/transaction_middleware-0.1.6.tar.gz]
+[2024-05-04 13:17:49] INFO root fetch - main [MainThread]: End processing [transaction-middleware]: success
+[2024-05-04 13:17:49] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.1.3.tar.gz]
+[2024-05-04 13:17:49] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.1.5.tar.gz]
+[2024-05-04 13:17:49] INFO root fetch - main [MainThread]: End processing [audiolm-superfeel]: success
+[2024-05-04 13:17:50] INFO root fetch - processPackages [otpme]: Downloading https://files.pythonhosted.org/packages/70/08/536d4c62eb4b70734ad31c7dd8d3a78ac9436d812e2c1b742fd796e02fa8/otpme-0.3.0a62.tar.gz
+[2024-05-04 13:17:51] INFO root fetch - processPackages [algomodule]: Remove: archive file [/home/abi/fetcher/tmp/algomodule-1.0.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl.zip]
+[2024-05-04 13:17:51] INFO root fetch - processPackages [algomodule]: Remove: archive file [/home/abi/fetcher/tmp/algomodule-1.0.4.tar.gz]
+[2024-05-04 13:17:51] INFO root fetch - main [MainThread]: End processing [algomodule]: success
+[2024-05-04 13:17:51] INFO root fetch - processPackages [otpme]: executing diffoscope
+[2024-05-04 13:17:51] INFO root fetch - processPackages [otpme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otpme-0.3.0a61.tar.gz tmp/otpme-0.3.0a62.tar.gz --markdown 20240504/o/otpme/0.3.0a61-0.3.0a62/README.md --exclude *.pyd
+[2024-05-04 13:17:53] INFO root fetch - processPackages [otpme]: Remove: archive file [/home/abi/fetcher/tmp/otpme-0.3.0a61.tar.gz]
+[2024-05-04 13:17:53] INFO root fetch - processPackages [otpme]: Remove: archive file [/home/abi/fetcher/tmp/otpme-0.3.0a62.tar.gz]
+[2024-05-04 13:17:53] INFO root fetch - main [MainThread]: End processing [otpme]: success
+[2024-05-04 13:17:53] INFO root fetch - main [MainThread]: Store serial: [23057662]
