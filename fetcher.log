@@ -15155,3 +15155,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:01:18] INFO root fetch - processPackages [grand-cypher]: Remove: archive file [/home/abi/fetcher/tmp/grand-cypher-0.7.0.tar.gz]
 [2024-05-04 16:01:18] INFO root fetch - main [MainThread]: End processing [grand-cypher]: success
 [2024-05-04 16:01:18] INFO root fetch - main [MainThread]: Store serial: [23058377]
+[2024-05-04 16:03:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058377]
+[2024-05-04 16:03:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 16:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glue-utils
+[2024-05-04 16:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kube-copilot
+[2024-05-04 16:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Test19991021
+[2024-05-04 16:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flops-utils
+[2024-05-04 16:03:27] INFO root fetch - processPackages [flops-utils]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-05-04 16:03:27] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/19/26/b7665c064fbad4bf3a9e12f3e3f5fafc1f610cfe9eef17b7a62fe49e8cf4/flops_utils-0.2.9.tar.gz
+[2024-05-04 16:03:27] INFO root fetch - processPackages [glue-utils]: New version: [0.2.2b0] Old Version: [0.2.1rc4]
+[2024-05-04 16:03:27] WARNING root fetch - processPackages [Test19991021]: Skipping, unable to determine old version
+[2024-05-04 16:03:27] INFO root fetch - main [MainThread]: End processing [Test19991021] error
+[2024-05-04 16:03:27] INFO root fetch - processPackages [kube-copilot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 16:03:27] INFO root fetch - processPackages [glue-utils]: Downloading https://files.pythonhosted.org/packages/c4/c4/68d34ec0cd56a90294897fb3d8b06516d04450bfdd4e4840fe2a38dffdac/glue_utils-0.2.1rc4.tar.gz
+[2024-05-04 16:03:27] INFO root fetch - processPackages [kube-copilot]: Downloading https://files.pythonhosted.org/packages/92/ed/ae22c3eb11fd91f9bc01dbdcba0f4a7c22cef980bf8f5fef46caec814480/kube_copilot-0.1.8.tar.gz
+[2024-05-04 16:03:28] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/a7/f6/7061928ae9875d5cd9cb3816b8e608c22b6b7af7ea458d0712cf86844991/flops_utils-0.3.0.tar.gz
+[2024-05-04 16:03:28] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-04 16:03:28] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.2.9.tar.gz tmp/flops_utils-0.3.0.tar.gz --markdown 20240504/f/flops-utils/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-05-04 16:03:28] INFO root fetch - processPackages [glue-utils]: Downloading https://files.pythonhosted.org/packages/d6/02/c0a7a6224df281602bb7c7b9c56a11d91b5ac941a11ab9abb01eabc6dd9f/glue_utils-0.2.2b0.tar.gz
+[2024-05-04 16:03:28] INFO root fetch - processPackages [kube-copilot]: Downloading https://files.pythonhosted.org/packages/fd/35/3e18869b47a41c295ac800019e28347fde14879ede6506f97393faade562/kube_copilot-0.1.9.tar.gz
+[2024-05-04 16:03:28] INFO root fetch - processPackages [glue-utils]: executing diffoscope
+[2024-05-04 16:03:28] INFO root fetch - processPackages [glue-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glue_utils-0.2.1rc4.tar.gz tmp/glue_utils-0.2.2b0.tar.gz --markdown 20240504/g/glue-utils/0.2.1rc4-0.2.2b0/README.md --exclude *.pyd
+[2024-05-04 16:03:28] INFO root fetch - processPackages [kube-copilot]: executing diffoscope
+[2024-05-04 16:03:28] INFO root fetch - processPackages [kube-copilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kube_copilot-0.1.8.tar.gz tmp/kube_copilot-0.1.9.tar.gz --markdown 20240504/k/kube-copilot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 16:03:28] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.2.9.tar.gz]
+[2024-05-04 16:03:28] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.3.0.tar.gz]
+[2024-05-04 16:03:28] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-04 16:03:28] INFO root fetch - processPackages [glue-utils]: Remove: archive file [/home/abi/fetcher/tmp/glue_utils-0.2.1rc4.tar.gz]
+[2024-05-04 16:03:28] INFO root fetch - processPackages [glue-utils]: Remove: archive file [/home/abi/fetcher/tmp/glue_utils-0.2.2b0.tar.gz]
+[2024-05-04 16:03:28] INFO root fetch - main [MainThread]: End processing [glue-utils]: success
+[2024-05-04 16:03:28] INFO root fetch - processPackages [kube-copilot]: Remove: archive file [/home/abi/fetcher/tmp/kube_copilot-0.1.8.tar.gz]
+[2024-05-04 16:03:28] INFO root fetch - processPackages [kube-copilot]: Remove: archive file [/home/abi/fetcher/tmp/kube_copilot-0.1.9.tar.gz]
+[2024-05-04 16:03:28] INFO root fetch - main [MainThread]: End processing [kube-copilot]: success
+[2024-05-04 16:03:28] INFO root fetch - main [MainThread]: Store serial: [23058390]
