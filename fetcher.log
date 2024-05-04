@@ -11477,3 +11477,15 @@
 [2024-05-04 10:08:39] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240503.tar.gz]
 [2024-05-04 10:08:39] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2024-05-04 10:08:39] INFO root fetch - main [MainThread]: Store serial: [23056730]
+[2024-05-04 10:10:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056730]
+[2024-05-04 10:10:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 10:10:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jax-sysid
+[2024-05-04 10:10:47] INFO root fetch - processPackages [jax-sysid]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-04 10:10:48] INFO root fetch - processPackages [jax-sysid]: Downloading https://files.pythonhosted.org/packages/be/8b/358eece960a962b623443f784323de1d8ed51c78b12ab605c2f8847c6410/jax_sysid-0.3.3.tar.gz
+[2024-05-04 10:10:48] INFO root fetch - processPackages [jax-sysid]: Downloading https://files.pythonhosted.org/packages/01/b5/23b01c0c380f987adec430351e58008b226a9cacbfdf4008a6485bed5373/jax_sysid-0.3.4.tar.gz
+[2024-05-04 10:10:48] INFO root fetch - processPackages [jax-sysid]: executing diffoscope
+[2024-05-04 10:10:48] INFO root fetch - processPackages [jax-sysid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jax_sysid-0.3.3.tar.gz tmp/jax_sysid-0.3.4.tar.gz --markdown 20240504/j/jax-sysid/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-04 10:10:49] INFO root fetch - processPackages [jax-sysid]: Remove: archive file [/home/abi/fetcher/tmp/jax_sysid-0.3.3.tar.gz]
+[2024-05-04 10:10:49] INFO root fetch - processPackages [jax-sysid]: Remove: archive file [/home/abi/fetcher/tmp/jax_sysid-0.3.4.tar.gz]
+[2024-05-04 10:10:49] INFO root fetch - main [MainThread]: End processing [jax-sysid]: success
+[2024-05-04 10:10:49] INFO root fetch - main [MainThread]: Store serial: [23056734]
