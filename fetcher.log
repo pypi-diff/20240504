@@ -18090,3 +18090,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:54:05] INFO root fetch - processPackages [robotpy-halsim-gui]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_halsim_gui-2024.3.2.1-cp38-cp38-manylinux_2_35_x86_64.whl.zip]
 [2024-05-04 19:54:05] INFO root fetch - main [MainThread]: End processing [robotpy-halsim-gui]: success
 [2024-05-04 19:54:05] INFO root fetch - main [MainThread]: Store serial: [23059814]
+[2024-05-04 19:56:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059814]
+[2024-05-04 19:56:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 19:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robotpy-halsim-ws
+[2024-05-04 19:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robotpy-romi
+[2024-05-04 19:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: robotpy-wpimath
+[2024-05-04 19:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robotpy-wpinet
+[2024-05-04 19:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: robotpy-wpiutil
+[2024-05-04 19:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: robotpy-xrp
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-romi]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-wpinet]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-xrp]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-halsim-ws]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-wpimath]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-wpiutil]: New version: [2024.3.2.1] Old Version: [2024.3.2.0]
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-romi]: Downloading https://files.pythonhosted.org/packages/66/f7/932002660664d44e69743b623239518396fe083599fe1b83599e443c75ab/robotpy_romi-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-wpimath]: Downloading https://files.pythonhosted.org/packages/d7/b9/fe3f120ec269c0c02ace47609b90cc3b63c2f16e0b6ee88f44e1e458e5bd/robotpy_wpimath-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-xrp]: Downloading https://files.pythonhosted.org/packages/48/30/15ba04ef72676e2c3af14fa8e893123c6e8f6dccea054677bb0e1b0acc6f/robotpy_xrp-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-halsim-ws]: Downloading https://files.pythonhosted.org/packages/0a/03/e91866942e99145ec4a9a009cd25f8d91b6efe8053e1263671eae9007c4b/robotpy_halsim_ws-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-wpinet]: Downloading https://files.pythonhosted.org/packages/24/ac/a64d94dd210e30d52c70fa1110b821cec89a9e768a9c0d08df043eec9970/robotpy_wpinet-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-wpiutil]: Downloading https://files.pythonhosted.org/packages/f0/58/a7e955a027bf17a806ba873f6638bba5a341a751c6043ecdd772c7441f79/robotpy_wpiutil-2024.3.2.0-cp39-cp39-win_amd64.whl
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-romi]: Downloading https://files.pythonhosted.org/packages/15/fb/a5dd48017b8afdb5bea2bb84b51e7f6d2c6794d7b39a3bcfd05a9b05c077/robotpy_romi-2024.3.2.1-cp39-cp39-win_amd64.whl
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-halsim-ws]: Downloading https://files.pythonhosted.org/packages/07/50/8be11220d6d2657e8115468004b547f82c060b3b34faa598a516a478df37/robotpy_halsim_ws-2024.3.2.1-cp39-cp39-win_amd64.whl
+[2024-05-04 19:56:14] INFO root fetch - processPackages [robotpy-xrp]: Downloading https://files.pythonhosted.org/packages/90/f2/665d24470153ef130f1666e49a1764e22005090791dbb1674c5a9c94aef1/robotpy_xrp-2024.3.2.1-cp312-cp312-win_amd64.whl
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-romi]: executing diffoscope
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-romi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy_romi-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/robotpy_romi-2024.3.2.1-cp39-cp39-win_amd64.whl.zip --markdown 20240504/r/robotpy-romi/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-wpinet]: Downloading https://files.pythonhosted.org/packages/91/53/9bb82f689ac49c9790555751bb03e9e057262f3a9d3433a2e4660e941f10/robotpy_wpinet-2024.3.2.1-cp39-cp39-win_amd64.whl
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-halsim-ws]: executing diffoscope
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-halsim-ws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy_halsim_ws-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/robotpy_halsim_ws-2024.3.2.1-cp39-cp39-win_amd64.whl.zip --markdown 20240504/r/robotpy-halsim-ws/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-wpinet]: executing diffoscope
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-wpinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy_wpinet-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/robotpy_wpinet-2024.3.2.1-cp39-cp39-win_amd64.whl.zip --markdown 20240504/r/robotpy-wpinet/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-wpimath]: Downloading https://files.pythonhosted.org/packages/bd/0c/4398ebb6ac0b542db4afb73ec7a1b7d93cae2369f5a28bfb3440249f9965/robotpy_wpimath-2024.3.2.1-cp39-cp39-win_amd64.whl
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-romi]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_romi-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-romi]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_romi-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:56:15] INFO root fetch - main [MainThread]: End processing [robotpy-romi]: success
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-wpiutil]: Downloading https://files.pythonhosted.org/packages/c4/08/394a57b04978c8768554ea86f29002089e981fc1d5c3f7b76ec17fbce9fb/robotpy_wpiutil-2024.3.2.1-cp39-cp39-win_amd64.whl
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-xrp]: executing diffoscope
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-xrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy_xrp-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/robotpy_xrp-2024.3.2.1-cp312-cp312-win_amd64.whl.zip --markdown 20240504/r/robotpy-xrp/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-halsim-ws]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_halsim_ws-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:56:15] INFO root fetch - processPackages [robotpy-halsim-ws]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_halsim_ws-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:56:15] INFO root fetch - main [MainThread]: End processing [robotpy-halsim-ws]: success
+[2024-05-04 19:56:16] INFO root fetch - processPackages [robotpy-wpinet]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_wpinet-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:56:16] INFO root fetch - processPackages [robotpy-wpinet]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_wpinet-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:56:16] INFO root fetch - main [MainThread]: End processing [robotpy-wpinet]: success
+[2024-05-04 19:56:16] INFO root fetch - processPackages [robotpy-wpimath]: executing diffoscope
+[2024-05-04 19:56:16] INFO root fetch - processPackages [robotpy-wpimath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy_wpimath-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/robotpy_wpimath-2024.3.2.1-cp39-cp39-win_amd64.whl.zip --markdown 20240504/r/robotpy-wpimath/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:56:16] INFO root fetch - processPackages [robotpy-xrp]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_xrp-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:56:16] INFO root fetch - processPackages [robotpy-xrp]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_xrp-2024.3.2.1-cp312-cp312-win_amd64.whl.zip]
+[2024-05-04 19:56:16] INFO root fetch - main [MainThread]: End processing [robotpy-xrp]: success
+[2024-05-04 19:56:16] INFO root fetch - processPackages [robotpy-wpiutil]: executing diffoscope
+[2024-05-04 19:56:16] INFO root fetch - processPackages [robotpy-wpiutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy_wpiutil-2024.3.2.0-cp39-cp39-win_amd64.whl.zip tmp/robotpy_wpiutil-2024.3.2.1-cp39-cp39-win_amd64.whl.zip --markdown 20240504/r/robotpy-wpiutil/2024.3.2.0-2024.3.2.1/README.md --exclude *.pyd
+[2024-05-04 19:56:18] INFO root fetch - processPackages [robotpy-wpiutil]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_wpiutil-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:56:18] INFO root fetch - processPackages [robotpy-wpiutil]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_wpiutil-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:56:18] INFO root fetch - main [MainThread]: End processing [robotpy-wpiutil]: success
+[2024-05-04 19:56:19] INFO root fetch - processPackages [robotpy-wpimath]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_wpimath-2024.3.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:56:19] INFO root fetch - processPackages [robotpy-wpimath]: Remove: archive file [/home/abi/fetcher/tmp/robotpy_wpimath-2024.3.2.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-04 19:56:19] INFO root fetch - main [MainThread]: End processing [robotpy-wpimath]: success
+[2024-05-04 19:56:19] INFO root fetch - main [MainThread]: Store serial: [23059907]
