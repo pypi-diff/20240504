@@ -12262,3 +12262,27 @@
 [2024-05-04 11:16:20] INFO root fetch - processPackages [aps-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/aps-toolkit-0.5.4.tar.gz]
 [2024-05-04 11:16:20] INFO root fetch - main [MainThread]: End processing [aps-toolkit]: success
 [2024-05-04 11:16:20] INFO root fetch - main [MainThread]: Store serial: [23057219]
+[2024-05-04 11:18:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057219]
+[2024-05-04 11:18:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 11:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask-web-duit-febro
+[2024-05-04 11:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fingerprintMatcher
+[2024-05-04 11:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyallel
+[2024-05-04 11:18:29] INFO root fetch - processPackages [pyallel]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-04 11:18:29] INFO root fetch - processPackages [pyallel]: Downloading https://files.pythonhosted.org/packages/f7/af/5b47e69b1d409e81a909bf529b419d80ccc48fd46eb1f41ca595165723c0/pyallel-1.2.1.tar.gz
+[2024-05-04 11:18:29] INFO root fetch - processPackages [fingerprintMatcher]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-04 11:18:29] WARNING root fetch - processPackages [flask-web-duit-febro]: Skipping, unable to determine old version
+[2024-05-04 11:18:29] INFO root fetch - main [MainThread]: End processing [flask-web-duit-febro] error
+[2024-05-04 11:18:30] INFO root fetch - processPackages [pyallel]: Downloading https://files.pythonhosted.org/packages/05/e3/ab4ca8591b660af63729ecb977fde1e9d47b6310a83fa7b775b9f7d63336/pyallel-1.2.2.tar.gz
+[2024-05-04 11:18:30] INFO root fetch - processPackages [fingerprintMatcher]: Downloading https://files.pythonhosted.org/packages/76/1b/62dcf467bb42fe0c842a00175c06a5176c4c386ca4947888acdf74aacd87/fingerprintMatcher-1.0.5.tar.gz
+[2024-05-04 11:18:30] INFO root fetch - processPackages [pyallel]: executing diffoscope
+[2024-05-04 11:18:30] INFO root fetch - processPackages [pyallel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyallel-1.2.1.tar.gz tmp/pyallel-1.2.2.tar.gz --markdown 20240504/p/pyallel/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-04 11:18:30] INFO root fetch - processPackages [fingerprintMatcher]: Downloading https://files.pythonhosted.org/packages/2d/d4/271c7b5a71889f6f6dbc963bfdef0dd57b82eff06223f8966f6b6dc7e672/fingerprintMatcher-1.0.6.tar.gz
+[2024-05-04 11:18:30] INFO root fetch - processPackages [fingerprintMatcher]: executing diffoscope
+[2024-05-04 11:18:30] INFO root fetch - processPackages [fingerprintMatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fingerprintMatcher-1.0.5.tar.gz tmp/fingerprintMatcher-1.0.6.tar.gz --markdown 20240504/f/fingerprintMatcher/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-04 11:18:30] INFO root fetch - processPackages [pyallel]: Remove: archive file [/home/abi/fetcher/tmp/pyallel-1.2.1.tar.gz]
+[2024-05-04 11:18:30] INFO root fetch - processPackages [pyallel]: Remove: archive file [/home/abi/fetcher/tmp/pyallel-1.2.2.tar.gz]
+[2024-05-04 11:18:30] INFO root fetch - main [MainThread]: End processing [pyallel]: success
+[2024-05-04 11:18:31] INFO root fetch - processPackages [fingerprintMatcher]: Remove: archive file [/home/abi/fetcher/tmp/fingerprintMatcher-1.0.5.tar.gz]
+[2024-05-04 11:18:31] INFO root fetch - processPackages [fingerprintMatcher]: Remove: archive file [/home/abi/fetcher/tmp/fingerprintMatcher-1.0.6.tar.gz]
+[2024-05-04 11:18:31] INFO root fetch - main [MainThread]: End processing [fingerprintMatcher]: success
+[2024-05-04 11:18:31] INFO root fetch - main [MainThread]: Store serial: [23057231]
