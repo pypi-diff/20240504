@@ -17592,3 +17592,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:21:18] INFO root fetch - processPackages [testpulse-uploader]: Remove: archive file [/home/abi/fetcher/tmp/testpulse-uploader-0.0.9.tar.gz]
 [2024-05-04 19:21:18] INFO root fetch - main [MainThread]: End processing [testpulse-uploader]: success
 [2024-05-04 19:21:18] INFO root fetch - main [MainThread]: Store serial: [23059531]
+[2024-05-04 19:23:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059531]
+[2024-05-04 19:23:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 19:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geoparser
+[2024-05-04 19:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meta-reid
+[2024-05-04 19:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mteb
+[2024-05-04 19:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: entity-recognition-service
+[2024-05-04 19:23:27] INFO root fetch - processPackages [entity-recognition-service]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 19:23:27] INFO root fetch - processPackages [meta-reid]: New version: [3.9.26] Old Version: [3.9.25]
+[2024-05-04 19:23:27] INFO root fetch - processPackages [mteb]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-05-04 19:23:27] INFO root fetch - processPackages [geoparser]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-04 19:23:27] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/23/18/7145326a6ea0566c2c41ba0bf3822fffc6b4da314a426433179c4724bda3/entity_recognition_service-0.1.8.tar.gz
+[2024-05-04 19:23:27] INFO root fetch - processPackages [meta-reid]: Downloading https://files.pythonhosted.org/packages/2e/0e/75c11e00e2da59379bb78632b3c8cc13c552ae28bbaeba905fce5a9c75c0/meta-reid-3.9.25.tar.gz
+[2024-05-04 19:23:27] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/b5/e7/1ffcd000a118bd6a4b183610de5d0891ab9c767ccabb6c7e3f63ba9edb45/mteb-1.7.8.tar.gz
+[2024-05-04 19:23:27] INFO root fetch - processPackages [geoparser]: Downloading https://files.pythonhosted.org/packages/25/f5/d8bcedd81bd23ccdea76edecfa57e6f32c5935c306bf4a0fe0e770f75a56/geoparser-0.1.4.tar.gz
+[2024-05-04 19:23:27] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/86/75/a994a9af22b16241a2b38cb3314e7d2457d9aaf73d35a5b70823d8c8ce18/entity_recognition_service-0.1.9.tar.gz
+[2024-05-04 19:23:27] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/eb/d9/b925270f0a2467b3204b0f467cc702668d24bd9a8e876306ea7e3da17507/mteb-1.7.9.tar.gz
+[2024-05-04 19:23:27] INFO root fetch - processPackages [meta-reid]: Downloading https://files.pythonhosted.org/packages/f6/8b/7b3c7dcae80d465cab451cae0ed585eb326e97fde5715bc6481c852479a6/meta-reid-3.9.26.tar.gz
+[2024-05-04 19:23:27] INFO root fetch - processPackages [entity-recognition-service]: executing diffoscope
+[2024-05-04 19:23:27] INFO root fetch - processPackages [entity-recognition-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entity_recognition_service-0.1.8.tar.gz tmp/entity_recognition_service-0.1.9.tar.gz --markdown 20240504/e/entity-recognition-service/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 19:23:27] INFO root fetch - processPackages [meta-reid]: executing diffoscope
+[2024-05-04 19:23:27] INFO root fetch - processPackages [meta-reid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta-reid-3.9.25.tar.gz tmp/meta-reid-3.9.26.tar.gz --markdown 20240504/m/meta-reid/3.9.25-3.9.26/README.md --exclude *.pyd
+[2024-05-04 19:23:27] INFO root fetch - processPackages [geoparser]: Downloading https://files.pythonhosted.org/packages/45/ec/f2a1c4938ff7e1b0c6029f87a99c3876a6c2c8f38962e88dc13c3697f881/geoparser-0.1.5.tar.gz
+[2024-05-04 19:23:27] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-04 19:23:27] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.8.tar.gz tmp/mteb-1.7.9.tar.gz --markdown 20240504/m/mteb/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-05-04 19:23:28] INFO root fetch - processPackages [geoparser]: executing diffoscope
+[2024-05-04 19:23:28] INFO root fetch - processPackages [geoparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoparser-0.1.4.tar.gz tmp/geoparser-0.1.5.tar.gz --markdown 20240504/g/geoparser/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-04 19:23:28] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.8.tar.gz]
+[2024-05-04 19:23:28] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.9.tar.gz]
+[2024-05-04 19:23:28] INFO root fetch - main [MainThread]: End processing [entity-recognition-service]: success
+[2024-05-04 19:23:28] INFO root fetch - processPackages [meta-reid]: Remove: archive file [/home/abi/fetcher/tmp/meta-reid-3.9.25.tar.gz]
+[2024-05-04 19:23:28] INFO root fetch - processPackages [meta-reid]: Remove: archive file [/home/abi/fetcher/tmp/meta-reid-3.9.26.tar.gz]
+[2024-05-04 19:23:28] INFO root fetch - main [MainThread]: End processing [meta-reid]: success
+[2024-05-04 19:23:28] INFO root fetch - processPackages [geoparser]: Remove: archive file [/home/abi/fetcher/tmp/geoparser-0.1.4.tar.gz]
+[2024-05-04 19:23:28] INFO root fetch - processPackages [geoparser]: Remove: archive file [/home/abi/fetcher/tmp/geoparser-0.1.5.tar.gz]
+[2024-05-04 19:23:28] INFO root fetch - main [MainThread]: End processing [geoparser]: success
+[2024-05-04 19:23:29] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.8.tar.gz]
+[2024-05-04 19:23:29] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
+[2024-05-04 19:23:29] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-04 19:23:29] INFO root fetch - main [MainThread]: Store serial: [23059540]
