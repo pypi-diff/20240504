@@ -11232,3 +11232,21 @@
 [2024-05-04 09:40:26] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
 [2024-05-04 09:40:26] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-05-04 09:40:26] INFO root fetch - main [MainThread]: Store serial: [23056620]
+[2024-05-04 09:42:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056620]
+[2024-05-04 09:42:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: haskellian
+[2024-05-04 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: burgiir
+[2024-05-04 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: soosiz
+[2024-05-04 09:42:35] INFO root fetch - processPackages [haskellian]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-04 09:42:35] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/db/6c/0cdc593830d9100fe25525ec6686c93e0284c0c2dec1bd9a6f2756850f4c/haskellian-0.3.8.tar.gz
+[2024-05-04 09:42:35] WARNING root fetch - processPackages [soosiz]: Skipping, unable to determine old version
+[2024-05-04 09:42:35] INFO root fetch - main [MainThread]: End processing [soosiz] error
+[2024-05-04 09:42:35] WARNING root fetch - processPackages [burgiir]: Skipping, unable to determine old version
+[2024-05-04 09:42:35] INFO root fetch - main [MainThread]: End processing [burgiir] error
+[2024-05-04 09:42:35] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/03/2b/ba04bf61c6d93413248fa1d1286dad3fe5fa7835df534f02230b764ad6e3/haskellian-0.3.9.tar.gz
+[2024-05-04 09:42:35] INFO root fetch - processPackages [haskellian]: executing diffoscope
+[2024-05-04 09:42:35] INFO root fetch - processPackages [haskellian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haskellian-0.3.8.tar.gz tmp/haskellian-0.3.9.tar.gz --markdown 20240504/h/haskellian/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-04 09:42:36] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.8.tar.gz]
+[2024-05-04 09:42:36] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.9.tar.gz]
+[2024-05-04 09:42:36] INFO root fetch - main [MainThread]: End processing [haskellian]: success
+[2024-05-04 09:42:36] INFO root fetch - main [MainThread]: Store serial: [23056631]
