@@ -20466,3 +20466,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 22:42:38] INFO root fetch - processPackages [mpy-cross-v6.1]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross_v6_1-1.0.1.tar.gz]
 [2024-05-04 22:42:38] INFO root fetch - main [MainThread]: End processing [mpy-cross-v6.1]: success
 [2024-05-04 22:42:38] INFO root fetch - main [MainThread]: Store serial: [23060864]
+[2024-05-04 22:44:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060864]
+[2024-05-04 22:44:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 22:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thingking-machine
+[2024-05-04 22:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opex-manifest-generator
+[2024-05-04 22:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rer.newsletterplugin.flask
+[2024-05-04 22:44:49] INFO root fetch - processPackages [rer.newsletterplugin.flask]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 22:44:49] WARNING root fetch - processPackages [thingking-machine]: Skipping, unable to determine old version
+[2024-05-04 22:44:49] INFO root fetch - main [MainThread]: End processing [thingking-machine] error
+[2024-05-04 22:44:49] INFO root fetch - processPackages [opex-manifest-generator]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-05-04 22:44:49] INFO root fetch - processPackages [rer.newsletterplugin.flask]: Downloading https://files.pythonhosted.org/packages/34/e0/15f91b45ed2a2192a20819c8ee3ef66460cbd9c50e45c5540d011637bb38/rer.newsletterplugin.flask-0.1.0.tar.gz
+[2024-05-04 22:44:49] INFO root fetch - processPackages [opex-manifest-generator]: Downloading https://files.pythonhosted.org/packages/15/c0/6aca4cff87546665b7d93cb75a395d92875a6bafbb6ec127abd0c1525548/opex_manifest_generator-1.1.5.tar.gz
+[2024-05-04 22:44:49] INFO root fetch - processPackages [opex-manifest-generator]: Downloading https://files.pythonhosted.org/packages/cf/6b/64ea9c0eb1f341ac19afce8b46a79d7c6423710fafd739250868b96ebed1/opex_manifest_generator-1.1.6.tar.gz
+[2024-05-04 22:44:49] INFO root fetch - processPackages [rer.newsletterplugin.flask]: Downloading https://files.pythonhosted.org/packages/e4/5c/79a87a35deb5b86c84cdb06ea940dfd82b9999c39905a45a2426f88c90d3/rer.newsletterplugin.flask-0.1.1.tar.gz
+[2024-05-04 22:44:49] INFO root fetch - processPackages [opex-manifest-generator]: executing diffoscope
+[2024-05-04 22:44:49] INFO root fetch - processPackages [opex-manifest-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opex_manifest_generator-1.1.5.tar.gz tmp/opex_manifest_generator-1.1.6.tar.gz --markdown 20240504/o/opex-manifest-generator/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-05-04 22:44:49] INFO root fetch - processPackages [rer.newsletterplugin.flask]: executing diffoscope
+[2024-05-04 22:44:49] INFO root fetch - processPackages [rer.newsletterplugin.flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rer.newsletterplugin.flask-0.1.0.tar.gz tmp/rer.newsletterplugin.flask-0.1.1.tar.gz --markdown 20240504/r/rer.newsletterplugin.flask/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 22:44:50] INFO root fetch - processPackages [rer.newsletterplugin.flask]: Remove: archive file [/home/abi/fetcher/tmp/rer.newsletterplugin.flask-0.1.0.tar.gz]
+[2024-05-04 22:44:50] INFO root fetch - processPackages [rer.newsletterplugin.flask]: Remove: archive file [/home/abi/fetcher/tmp/rer.newsletterplugin.flask-0.1.1.tar.gz]
+[2024-05-04 22:44:50] INFO root fetch - main [MainThread]: End processing [rer.newsletterplugin.flask]: success
+[2024-05-04 22:44:50] INFO root fetch - processPackages [opex-manifest-generator]: Remove: archive file [/home/abi/fetcher/tmp/opex_manifest_generator-1.1.5.tar.gz]
+[2024-05-04 22:44:50] INFO root fetch - processPackages [opex-manifest-generator]: Remove: archive file [/home/abi/fetcher/tmp/opex_manifest_generator-1.1.6.tar.gz]
+[2024-05-04 22:44:50] INFO root fetch - main [MainThread]: End processing [opex-manifest-generator]: success
+[2024-05-04 22:44:50] INFO root fetch - main [MainThread]: Store serial: [23060875]
