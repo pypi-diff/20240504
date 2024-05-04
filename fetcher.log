@@ -7190,3 +7190,60 @@
 [2024-05-04 04:08:50] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.7.tar.gz]
 [2024-05-04 04:08:50] INFO root fetch - main [MainThread]: End processing [edgegap-api]: success
 [2024-05-04 04:08:50] INFO root fetch - main [MainThread]: Store serial: [23054685]
+[2024-05-04 04:10:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054685]
+[2024-05-04 04:10:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 04:10:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: model-explorer
+[2024-05-04 04:10:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cmusic
+[2024-05-04 04:10:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: commits2pdf
+[2024-05-04 04:10:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clichatapp
+[2024-05-04 04:10:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: music-assistant-frontend
+[2024-05-04 04:10:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edgegap-api
+[2024-05-04 04:10:59] INFO root fetch - processPackages [commits2pdf]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-04 04:10:59] INFO root fetch - processPackages [cmusic]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 04:10:59] INFO root fetch - processPackages [model-explorer]: New version: [0.0.86] Old Version: [0.0.85]
+[2024-05-04 04:10:59] INFO root fetch - processPackages [edgegap-api]: New version: [1.6.6] Old Version: [1.6.5]
+[2024-05-04 04:10:59] INFO root fetch - processPackages [commits2pdf]: Downloading https://files.pythonhosted.org/packages/ef/1c/55c500e7c22bcc4664d5fb44dad59f1a5a2e616962c86f25bad73b7c5443/commits2pdf-1.1.8.tar.gz
+[2024-05-04 04:10:59] INFO root fetch - processPackages [clichatapp]: New version: [0.1.12] Old Version: [0.1.10]
+[2024-05-04 04:10:59] INFO root fetch - processPackages [music-assistant-frontend]: New version: [2.5.0] Old Version: [2.4.7]
+[2024-05-04 04:10:59] INFO root fetch - processPackages [cmusic]: Downloading https://files.pythonhosted.org/packages/0a/3c/9c89548f922965ce163359ab0597c814c7958fbec567be42c6615855ca7d/cmusic-1.0.1.tar.gz
+[2024-05-04 04:10:59] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/15/f5/c1e6617781a5c38ee2e8bc69b22a98562f23fc413bb1fb44917c614875e1/model_explorer-0.0.85.tar.gz
+[2024-05-04 04:10:59] INFO root fetch - processPackages [edgegap-api]: Downloading https://files.pythonhosted.org/packages/2d/e6/d4cb8733153046133b26b61339bff564ac3fdede6d4b09f9e77a5637426d/edgegap_api-1.6.5.tar.gz
+[2024-05-04 04:10:59] INFO root fetch - processPackages [commits2pdf]: Downloading https://files.pythonhosted.org/packages/5f/44/0731ba05a6961252355314fd2a0083730736c8c4a7484953b8b9b9f1c19e/commits2pdf-1.1.9.tar.gz
+[2024-05-04 04:10:59] INFO root fetch - processPackages [music-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/96/00/a62387cfcc6e35bf92c37d5a5d23e0d290530d7b053b3039ebb32028e783/music-assistant-frontend-2.4.7.tar.gz
+[2024-05-04 04:10:59] INFO root fetch - processPackages [clichatapp]: Downloading https://files.pythonhosted.org/packages/2d/b3/b967b8cce8451dbb1775a4f5559e36c6d79b663111fa3589b1322e1fcf1b/clichatapp-0.1.10.tar.gz
+[2024-05-04 04:10:59] INFO root fetch - processPackages [edgegap-api]: Downloading https://files.pythonhosted.org/packages/ea/b0/78cfe705fa64837023a107d3926e4546e7e12a7bb945de5556eeaca7b740/edgegap_api-1.6.6.tar.gz
+[2024-05-04 04:11:00] INFO root fetch - processPackages [commits2pdf]: executing diffoscope
+[2024-05-04 04:11:00] INFO root fetch - processPackages [commits2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commits2pdf-1.1.8.tar.gz tmp/commits2pdf-1.1.9.tar.gz --markdown 20240504/c/commits2pdf/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-04 04:11:00] INFO root fetch - processPackages [edgegap-api]: executing diffoscope
+[2024-05-04 04:11:00] INFO root fetch - processPackages [edgegap-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_api-1.6.5.tar.gz tmp/edgegap_api-1.6.6.tar.gz --markdown 20240504/e/edgegap-api/1.6.5-1.6.6/README.md --exclude *.pyd
+[2024-05-04 04:11:00] INFO root fetch - processPackages [cmusic]: Downloading https://files.pythonhosted.org/packages/d9/bb/607adf29f1e2d8b7c53b4c8710a99989e583ee6b14667ecd0edf8cd7dc81/cmusic-1.0.2.tar.gz
+[2024-05-04 04:11:00] INFO root fetch - processPackages [cmusic]: executing diffoscope
+[2024-05-04 04:11:00] INFO root fetch - processPackages [cmusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmusic-1.0.1.tar.gz tmp/cmusic-1.0.2.tar.gz --markdown 20240504/c/cmusic/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 04:11:00] INFO root fetch - processPackages [clichatapp]: Downloading https://files.pythonhosted.org/packages/60/17/96af9b057305bc87f06c5ba35ffde622428ee15c69be937137da33e22dca/clichatapp-0.1.12.tar.gz
+[2024-05-04 04:11:00] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/3c/d4/f4577e3ef0f04e6576ed5a821c93123277fd260fc83daee45a2a0507d55f/model_explorer-0.0.86.tar.gz
+[2024-05-04 04:11:00] INFO root fetch - processPackages [clichatapp]: executing diffoscope
+[2024-05-04 04:11:00] INFO root fetch - processPackages [clichatapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clichatapp-0.1.10.tar.gz tmp/clichatapp-0.1.12.tar.gz --markdown 20240504/c/clichatapp/0.1.10-0.1.12/README.md --exclude *.pyd
+[2024-05-04 04:11:00] INFO root fetch - processPackages [music-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/95/21/41abd2746f145b981f40ae7f8fca8a49101ba8b1dc8a4d2843ff97f73f8a/music-assistant-frontend-2.5.0.tar.gz
+[2024-05-04 04:11:00] INFO root fetch - processPackages [model-explorer]: executing diffoscope
+[2024-05-04 04:11:00] INFO root fetch - processPackages [model-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer-0.0.85.tar.gz tmp/model_explorer-0.0.86.tar.gz --markdown 20240504/m/model-explorer/0.0.85-0.0.86/README.md --exclude *.pyd
+[2024-05-04 04:11:00] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.5.tar.gz]
+[2024-05-04 04:11:00] INFO root fetch - processPackages [edgegap-api]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_api-1.6.6.tar.gz]
+[2024-05-04 04:11:00] INFO root fetch - main [MainThread]: End processing [edgegap-api]: success
+[2024-05-04 04:11:00] INFO root fetch - processPackages [cmusic]: Remove: archive file [/home/abi/fetcher/tmp/cmusic-1.0.1.tar.gz]
+[2024-05-04 04:11:00] INFO root fetch - processPackages [cmusic]: Remove: archive file [/home/abi/fetcher/tmp/cmusic-1.0.2.tar.gz]
+[2024-05-04 04:11:00] INFO root fetch - main [MainThread]: End processing [cmusic]: success
+[2024-05-04 04:11:00] INFO root fetch - processPackages [commits2pdf]: Remove: archive file [/home/abi/fetcher/tmp/commits2pdf-1.1.8.tar.gz]
+[2024-05-04 04:11:00] INFO root fetch - processPackages [commits2pdf]: Remove: archive file [/home/abi/fetcher/tmp/commits2pdf-1.1.9.tar.gz]
+[2024-05-04 04:11:00] INFO root fetch - main [MainThread]: End processing [commits2pdf]: success
+[2024-05-04 04:11:00] INFO root fetch - processPackages [clichatapp]: Remove: archive file [/home/abi/fetcher/tmp/clichatapp-0.1.10.tar.gz]
+[2024-05-04 04:11:00] INFO root fetch - processPackages [clichatapp]: Remove: archive file [/home/abi/fetcher/tmp/clichatapp-0.1.12.tar.gz]
+[2024-05-04 04:11:00] INFO root fetch - main [MainThread]: End processing [clichatapp]: success
+[2024-05-04 04:11:01] INFO root fetch - processPackages [music-assistant-frontend]: executing diffoscope
+[2024-05-04 04:11:01] INFO root fetch - processPackages [music-assistant-frontend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/music-assistant-frontend-2.4.7.tar.gz tmp/music-assistant-frontend-2.5.0.tar.gz --markdown 20240504/m/music-assistant-frontend/2.4.7-2.5.0/README.md --exclude *.pyd
+[2024-05-04 04:11:18] INFO root fetch - processPackages [music-assistant-frontend]: Remove: archive file [/home/abi/fetcher/tmp/music-assistant-frontend-2.4.7.tar.gz]
+[2024-05-04 04:11:18] INFO root fetch - processPackages [music-assistant-frontend]: Remove: archive file [/home/abi/fetcher/tmp/music-assistant-frontend-2.5.0.tar.gz]
+[2024-05-04 04:11:18] INFO root fetch - main [MainThread]: End processing [music-assistant-frontend]: success
+[2024-05-04 04:11:19] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.85.tar.gz]
+[2024-05-04 04:11:19] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.86.tar.gz]
+[2024-05-04 04:11:19] INFO root fetch - main [MainThread]: End processing [model-explorer]: success
+[2024-05-04 04:11:19] INFO root fetch - main [MainThread]: Store serial: [23054706]
