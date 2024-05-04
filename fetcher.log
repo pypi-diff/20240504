@@ -18243,3 +18243,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:05:03] INFO root fetch - processPackages [tasksflow]: Remove: archive file [/home/abi/fetcher/tmp/tasksflow-0.2.1.tar.gz]
 [2024-05-04 20:05:03] INFO root fetch - main [MainThread]: End processing [tasksflow]: success
 [2024-05-04 20:05:03] INFO root fetch - main [MainThread]: Store serial: [23059968]
+[2024-05-04 20:07:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059968]
+[2024-05-04 20:07:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 20:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: klayout
+[2024-05-04 20:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: krakenpull
+[2024-05-04 20:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shulkr
+[2024-05-04 20:07:12] INFO root fetch - processPackages [krakenpull]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-04 20:07:12] INFO root fetch - processPackages [klayout]: New version: [0.29.1] Old Version: [0.29.0]
+[2024-05-04 20:07:12] INFO root fetch - processPackages [shulkr]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-05-04 20:07:13] INFO root fetch - processPackages [shulkr]: Downloading https://files.pythonhosted.org/packages/c7/9b/4db9b72a2640ec06a274e4b5812e200f1d30f64ac84f0385f5633995f569/shulkr-0.7.1.tar.gz
+[2024-05-04 20:07:13] INFO root fetch - processPackages [krakenpull]: Downloading https://files.pythonhosted.org/packages/6f/bb/7e1bbab69538d4f7a8440fc09f491724f038e7d68d1d14e038d7b66087b7/krakenpull-0.1.1.tar.gz
+[2024-05-04 20:07:13] INFO root fetch - processPackages [klayout]: Downloading https://files.pythonhosted.org/packages/ed/b6/bbad46f004567ead034fad59602b92b81d5e231d73e200b87d101bd3718f/klayout-0.29.0.tar.gz
+[2024-05-04 20:07:13] INFO root fetch - processPackages [shulkr]: Downloading https://files.pythonhosted.org/packages/96/51/f9a6353ba5adb84c6e01f55c99dcc353b0b5ef4bdd25cf44eb2e2473341e/shulkr-0.7.2.tar.gz
+[2024-05-04 20:07:13] INFO root fetch - processPackages [krakenpull]: Downloading https://files.pythonhosted.org/packages/e4/59/3fff64b41b0f7d6f0b4d5cd507142da48e016b516d0a457fd3fca38429a4/krakenpull-0.2.0.tar.gz
+[2024-05-04 20:07:13] INFO root fetch - processPackages [krakenpull]: executing diffoscope
+[2024-05-04 20:07:13] INFO root fetch - processPackages [krakenpull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krakenpull-0.1.1.tar.gz tmp/krakenpull-0.2.0.tar.gz --markdown 20240504/k/krakenpull/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-04 20:07:13] INFO root fetch - processPackages [shulkr]: executing diffoscope
+[2024-05-04 20:07:13] INFO root fetch - processPackages [shulkr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shulkr-0.7.1.tar.gz tmp/shulkr-0.7.2.tar.gz --markdown 20240504/s/shulkr/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-05-04 20:07:13] INFO root fetch - processPackages [klayout]: Downloading https://files.pythonhosted.org/packages/cf/26/e6764ea43203e5cc72655cac38f12dccf0b9d31a197424a4f77de82ff01b/klayout-0.29.1.tar.gz
+[2024-05-04 20:07:14] INFO root fetch - processPackages [krakenpull]: Remove: archive file [/home/abi/fetcher/tmp/krakenpull-0.1.1.tar.gz]
+[2024-05-04 20:07:14] INFO root fetch - processPackages [krakenpull]: Remove: archive file [/home/abi/fetcher/tmp/krakenpull-0.2.0.tar.gz]
+[2024-05-04 20:07:14] INFO root fetch - main [MainThread]: End processing [krakenpull]: success
+[2024-05-04 20:07:14] INFO root fetch - processPackages [shulkr]: Remove: archive file [/home/abi/fetcher/tmp/shulkr-0.7.1.tar.gz]
+[2024-05-04 20:07:14] INFO root fetch - processPackages [shulkr]: Remove: archive file [/home/abi/fetcher/tmp/shulkr-0.7.2.tar.gz]
+[2024-05-04 20:07:14] INFO root fetch - main [MainThread]: End processing [shulkr]: success
+[2024-05-04 20:07:14] INFO root fetch - processPackages [klayout]: executing diffoscope
+[2024-05-04 20:07:14] INFO root fetch - processPackages [klayout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klayout-0.29.0.tar.gz tmp/klayout-0.29.1.tar.gz --markdown 20240504/k/klayout/0.29.0-0.29.1/README.md --exclude *.pyd
+[2024-05-04 20:07:21] INFO root fetch - processPackages [klayout]: Remove: archive file [/home/abi/fetcher/tmp/klayout-0.29.0.tar.gz]
+[2024-05-04 20:07:21] INFO root fetch - processPackages [klayout]: Remove: archive file [/home/abi/fetcher/tmp/klayout-0.29.1.tar.gz]
+[2024-05-04 20:07:21] INFO root fetch - main [MainThread]: End processing [klayout]: success
+[2024-05-04 20:07:21] INFO root fetch - main [MainThread]: Store serial: [23060002]
