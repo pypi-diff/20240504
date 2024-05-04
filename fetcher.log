@@ -1888,3 +1888,33 @@
 [2024-05-04 02:06:45] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240503.422.tar.gz]
 [2024-05-04 02:06:45] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2024-05-04 02:06:45] INFO root fetch - main [MainThread]: Store serial: [23052877]
+[2024-05-04 02:08:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052877]
+[2024-05-04 02:08:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 02:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxutils-nightly
+[2024-05-04 02:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-common
+[2024-05-04 02:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: great-expectations-cloud
+[2024-05-04 02:08:54] INFO root fetch - processPackages [great-expectations-cloud]: New version: [20240503.0.dev1] Old Version: [20240502.0.dev0]
+[2024-05-04 02:08:54] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20240503] Old Version: [0.0.8.dev20240502]
+[2024-05-04 02:08:54] INFO root fetch - processPackages [great-expectations-cloud]: Downloading https://files.pythonhosted.org/packages/fd/b7/a304e2e31e082d39071f94b723d374a6510b7576a15b519d390c93e41616/great_expectations_cloud-20240502.0.dev0.tar.gz
+[2024-05-04 02:08:54] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/91/56/5a27e6df4b551b457fc862787cb46f0703ab69916c8b8f4c29f0fdde0398/jaxutils-nightly-0.0.8.dev20240502.tar.gz
+[2024-05-04 02:08:54] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-04 02:08:54] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-05-04 02:08:54] INFO root fetch - processPackages [great-expectations-cloud]: Downloading https://files.pythonhosted.org/packages/78/af/5cf3847def3e9e43bf7a5f967058f51f645eda39b45df70158584e6c7a7d/great_expectations_cloud-20240503.0.dev1.tar.gz
+[2024-05-04 02:08:54] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/0d/55/e2310787b1583a4fd948e5d9548287983d41cddcca28d88baa7d95c4d65b/jaxutils-nightly-0.0.8.dev20240503.tar.gz
+[2024-05-04 02:08:54] INFO root fetch - processPackages [great-expectations-cloud]: executing diffoscope
+[2024-05-04 02:08:54] INFO root fetch - processPackages [great-expectations-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/great_expectations_cloud-20240502.0.dev0.tar.gz tmp/great_expectations_cloud-20240503.0.dev1.tar.gz --markdown 20240504/g/great-expectations-cloud/20240502.0.dev0-20240503.0.dev1/README.md --exclude *.pyd
+[2024-05-04 02:08:55] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2024-05-04 02:08:55] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20240502.tar.gz tmp/jaxutils-nightly-0.0.8.dev20240503.tar.gz --markdown 20240504/j/jaxutils-nightly/0.0.8.dev20240502-0.0.8.dev20240503/README.md --exclude *.pyd
+[2024-05-04 02:08:55] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-05-04 02:08:55] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-05-04 02:08:55] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240504/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-04 02:08:55] INFO root fetch - processPackages [great-expectations-cloud]: Remove: archive file [/home/abi/fetcher/tmp/great_expectations_cloud-20240502.0.dev0.tar.gz]
+[2024-05-04 02:08:55] INFO root fetch - processPackages [great-expectations-cloud]: Remove: archive file [/home/abi/fetcher/tmp/great_expectations_cloud-20240503.0.dev1.tar.gz]
+[2024-05-04 02:08:55] INFO root fetch - main [MainThread]: End processing [great-expectations-cloud]: success
+[2024-05-04 02:08:55] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240502.tar.gz]
+[2024-05-04 02:08:55] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240503.tar.gz]
+[2024-05-04 02:08:55] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2024-05-04 02:08:56] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-05-04 02:08:56] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-05-04 02:08:56] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-05-04 02:08:56] INFO root fetch - main [MainThread]: Store serial: [23052886]
