@@ -9307,3 +9307,42 @@
 [2024-05-04 06:51:02] INFO root fetch - processPackages [herbie-data]: Remove: archive file [/home/abi/fetcher/tmp/herbie_data-2024.5.0.tar.gz]
 [2024-05-04 06:51:02] INFO root fetch - main [MainThread]: End processing [herbie-data]: success
 [2024-05-04 06:51:02] INFO root fetch - main [MainThread]: Store serial: [23055705]
+[2024-05-04 06:53:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055705]
+[2024-05-04 06:53:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 06:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kan-gpt
+[2024-05-04 06:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: excel2db
+[2024-05-04 06:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CTDFjorder
+[2024-05-04 06:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: snapquery
+[2024-05-04 06:53:11] INFO root fetch - processPackages [CTDFjorder]: New version: [0.0.32] Old Version: [0.0.30]
+[2024-05-04 06:53:11] INFO root fetch - processPackages [snapquery]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-04 06:53:11] INFO root fetch - processPackages [kan-gpt]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 06:53:11] INFO root fetch - processPackages [excel2db]: New version: [1.0.0] Old Version: [0.0.5]
+[2024-05-04 06:53:11] INFO root fetch - processPackages [excel2db]: Downloading https://files.pythonhosted.org/packages/2e/45/079230f3e8e4234ad31f58f06cfa5ab5038fc27cf7b856e6a9d80ce00ee4/excel2db-0.0.5.tar.gz
+[2024-05-04 06:53:11] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/a8/21/3051c58d5686024507935e484fa92617e75d41e4b6393a4b02d7325062c4/ctdfjorder-0.0.30.tar.gz
+[2024-05-04 06:53:11] INFO root fetch - processPackages [snapquery]: Downloading https://files.pythonhosted.org/packages/6e/a3/9340a3fee478aad6f912b9c6247ea0a03c290e3298f1dacaf1d6b3079074/snapquery-0.0.1.tar.gz
+[2024-05-04 06:53:11] INFO root fetch - processPackages [kan-gpt]: Downloading https://files.pythonhosted.org/packages/69/3f/d205dab313f11e7ee24a4b8029fd85cdcce61f028f973dd657e9b827d781/kan_gpt-0.1.0.tar.gz
+[2024-05-04 06:53:11] INFO root fetch - processPackages [excel2db]: Downloading https://files.pythonhosted.org/packages/d6/65/10286026f374f3ed612828985ae848276498633e7d9cb2a618138a0c5f90/excel2db-1.0.0.tar.gz
+[2024-05-04 06:53:11] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/f9/00/e3488bdc77b957cc1090d3b5f2b19c5869375027270365d2012ca28d2aae/ctdfjorder-0.0.32.tar.gz
+[2024-05-04 06:53:11] INFO root fetch - processPackages [kan-gpt]: Downloading https://files.pythonhosted.org/packages/05/a9/9ba4d6c97097254f8113e00a4ee51cba9bd858b0e5c32e0f6d0e0addeceb/kan_gpt-0.1.1.tar.gz
+[2024-05-04 06:53:11] INFO root fetch - processPackages [snapquery]: Downloading https://files.pythonhosted.org/packages/3a/04/4685bc601abd81f22e3e495c6ddf13b777ec310f766146b55b39e534dd89/snapquery-0.0.2.tar.gz
+[2024-05-04 06:53:11] INFO root fetch - processPackages [excel2db]: executing diffoscope
+[2024-05-04 06:53:11] INFO root fetch - processPackages [excel2db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/excel2db-0.0.5.tar.gz tmp/excel2db-1.0.0.tar.gz --markdown 20240504/e/excel2db/0.0.5-1.0.0/README.md --exclude *.pyd
+[2024-05-04 06:53:12] INFO root fetch - processPackages [CTDFjorder]: executing diffoscope
+[2024-05-04 06:53:12] INFO root fetch - processPackages [CTDFjorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctdfjorder-0.0.30.tar.gz tmp/ctdfjorder-0.0.32.tar.gz --markdown 20240504/C/CTDFjorder/0.0.30-0.0.32/README.md --exclude *.pyd
+[2024-05-04 06:53:12] INFO root fetch - processPackages [snapquery]: executing diffoscope
+[2024-05-04 06:53:12] INFO root fetch - processPackages [snapquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snapquery-0.0.1.tar.gz tmp/snapquery-0.0.2.tar.gz --markdown 20240504/s/snapquery/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-04 06:53:12] INFO root fetch - processPackages [kan-gpt]: executing diffoscope
+[2024-05-04 06:53:12] INFO root fetch - processPackages [kan-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kan_gpt-0.1.0.tar.gz tmp/kan_gpt-0.1.1.tar.gz --markdown 20240504/k/kan-gpt/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 06:53:12] INFO root fetch - processPackages [excel2db]: Remove: archive file [/home/abi/fetcher/tmp/excel2db-0.0.5.tar.gz]
+[2024-05-04 06:53:12] INFO root fetch - processPackages [excel2db]: Remove: archive file [/home/abi/fetcher/tmp/excel2db-1.0.0.tar.gz]
+[2024-05-04 06:53:12] INFO root fetch - main [MainThread]: End processing [excel2db]: success
+[2024-05-04 06:53:12] INFO root fetch - processPackages [snapquery]: Remove: archive file [/home/abi/fetcher/tmp/snapquery-0.0.1.tar.gz]
+[2024-05-04 06:53:12] INFO root fetch - processPackages [snapquery]: Remove: archive file [/home/abi/fetcher/tmp/snapquery-0.0.2.tar.gz]
+[2024-05-04 06:53:12] INFO root fetch - main [MainThread]: End processing [snapquery]: success
+[2024-05-04 06:53:12] INFO root fetch - processPackages [kan-gpt]: Remove: archive file [/home/abi/fetcher/tmp/kan_gpt-0.1.0.tar.gz]
+[2024-05-04 06:53:12] INFO root fetch - processPackages [kan-gpt]: Remove: archive file [/home/abi/fetcher/tmp/kan_gpt-0.1.1.tar.gz]
+[2024-05-04 06:53:12] INFO root fetch - main [MainThread]: End processing [kan-gpt]: success
+[2024-05-04 06:53:12] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.30.tar.gz]
+[2024-05-04 06:53:12] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.32.tar.gz]
+[2024-05-04 06:53:12] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
+[2024-05-04 06:53:12] INFO root fetch - main [MainThread]: Store serial: [23055717]
