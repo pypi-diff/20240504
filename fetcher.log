@@ -10370,3 +10370,33 @@
 [2024-05-04 08:22:19] WARNING root fetch - processPackages [filchatter]: Skipping, unable to determine old version
 [2024-05-04 08:22:19] INFO root fetch - main [MainThread]: End processing [filchatter] error
 [2024-05-04 08:22:19] INFO root fetch - main [MainThread]: Store serial: [23056157]
+[2024-05-04 08:24:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056157]
+[2024-05-04 08:24:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 08:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kfre
+[2024-05-04 08:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AdroitFisherman
+[2024-05-04 08:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tkfontselector
+[2024-05-04 08:24:28] INFO root fetch - processPackages [tkfontselector]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-04 08:24:28] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/c7/ff/3da6045f65c21ee0d942efd943ae8dc4f41c28ffa40177f125fd30d12b6f/tkfontselector-1.0.6.tar.gz
+[2024-05-04 08:24:28] INFO root fetch - processPackages [AdroitFisherman]: New version: [0.0.25] Old Version: [0.0.24]
+[2024-05-04 08:24:28] INFO root fetch - processPackages [kfre]: New version: [0.1.2b0] Old Version: [0.1.2]
+[2024-05-04 08:24:28] INFO root fetch - processPackages [AdroitFisherman]: Downloading https://files.pythonhosted.org/packages/cc/7a/b09c24878728370397a5f330c7d0108f1221ff8277f16d72afe898804ebc/AdroitFisherman-0.0.24.tar.gz
+[2024-05-04 08:24:28] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/38/73/d79fdb36afe1cd02411ecff822a23d039e48dfe7e16d524a4c08f3f2c488/kfre-0.1.2.tar.gz
+[2024-05-04 08:24:28] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/20/17/7536ec053935a961df0c78a70f673579035c7f7ce1f8043a5a6dd9c58782/tkfontselector-1.0.7.tar.gz
+[2024-05-04 08:24:28] INFO root fetch - processPackages [tkfontselector]: executing diffoscope
+[2024-05-04 08:24:28] INFO root fetch - processPackages [tkfontselector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkfontselector-1.0.6.tar.gz tmp/tkfontselector-1.0.7.tar.gz --markdown 20240504/t/tkfontselector/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-04 08:24:28] INFO root fetch - processPackages [AdroitFisherman]: Downloading https://files.pythonhosted.org/packages/89/70/8bce1269be658d846aa10a360230f2ee1a04445a78952159c4cf953db58b/AdroitFisherman-0.0.25.tar.gz
+[2024-05-04 08:24:28] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/39/f2/3bd7ba3e67c6e44b771b7e85e94d81762eddcafa1f73e327ebe60ec42911/kfre-0.1.2b0.tar.gz
+[2024-05-04 08:24:28] INFO root fetch - processPackages [AdroitFisherman]: executing diffoscope
+[2024-05-04 08:24:28] INFO root fetch - processPackages [AdroitFisherman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AdroitFisherman-0.0.24.tar.gz tmp/AdroitFisherman-0.0.25.tar.gz --markdown 20240504/A/AdroitFisherman/0.0.24-0.0.25/README.md --exclude *.pyd
+[2024-05-04 08:24:28] INFO root fetch - processPackages [kfre]: executing diffoscope
+[2024-05-04 08:24:28] INFO root fetch - processPackages [kfre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfre-0.1.2.tar.gz tmp/kfre-0.1.2b0.tar.gz --markdown 20240504/k/kfre/0.1.2-0.1.2b0/README.md --exclude *.pyd
+[2024-05-04 08:24:29] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.6.tar.gz]
+[2024-05-04 08:24:29] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.7.tar.gz]
+[2024-05-04 08:24:29] INFO root fetch - main [MainThread]: End processing [tkfontselector]: success
+[2024-05-04 08:24:29] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2.tar.gz]
+[2024-05-04 08:24:29] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2b0.tar.gz]
+[2024-05-04 08:24:29] INFO root fetch - main [MainThread]: End processing [kfre]: success
+[2024-05-04 08:24:29] INFO root fetch - processPackages [AdroitFisherman]: Remove: archive file [/home/abi/fetcher/tmp/AdroitFisherman-0.0.24.tar.gz]
+[2024-05-04 08:24:29] INFO root fetch - processPackages [AdroitFisherman]: Remove: archive file [/home/abi/fetcher/tmp/AdroitFisherman-0.0.25.tar.gz]
+[2024-05-04 08:24:29] INFO root fetch - main [MainThread]: End processing [AdroitFisherman]: success
+[2024-05-04 08:24:29] INFO root fetch - main [MainThread]: Store serial: [23056165]
