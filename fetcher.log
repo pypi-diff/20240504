@@ -19316,3 +19316,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:19:24] INFO root fetch - processPackages [beet]: Remove: archive file [/home/abi/fetcher/tmp/beet-0.99.3.tar.gz]
 [2024-05-04 21:19:24] INFO root fetch - main [MainThread]: End processing [beet]: success
 [2024-05-04 21:19:24] INFO root fetch - main [MainThread]: Store serial: [23060424]
+[2024-05-04 21:21:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060424]
+[2024-05-04 21:21:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 21:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyinfra
+[2024-05-04 21:21:33] INFO root fetch - processPackages [pyinfra]: New version: [3.0b1] Old Version: [3.0b0]
+[2024-05-04 21:21:33] INFO root fetch - processPackages [pyinfra]: Downloading https://files.pythonhosted.org/packages/ba/97/297816366aea37a6d9486b7191c27581e9736d7afa0d55eac58c1ec1e909/pyinfra-3.0b0.tar.gz
+[2024-05-04 21:21:34] INFO root fetch - processPackages [pyinfra]: Downloading https://files.pythonhosted.org/packages/ae/d7/cd9ea6a8e56b767a17925239779fbef99ba04789dd27c5d041c4f0b6e0be/pyinfra-3.0b1.tar.gz
+[2024-05-04 21:21:34] INFO root fetch - processPackages [pyinfra]: executing diffoscope
+[2024-05-04 21:21:34] INFO root fetch - processPackages [pyinfra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinfra-3.0b0.tar.gz tmp/pyinfra-3.0b1.tar.gz --markdown 20240504/p/pyinfra/3.0b0-3.0b1/README.md --exclude *.pyd
+[2024-05-04 21:21:35] INFO root fetch - processPackages [pyinfra]: Remove: archive file [/home/abi/fetcher/tmp/pyinfra-3.0b0.tar.gz]
+[2024-05-04 21:21:35] INFO root fetch - processPackages [pyinfra]: Remove: archive file [/home/abi/fetcher/tmp/pyinfra-3.0b1.tar.gz]
+[2024-05-04 21:21:35] INFO root fetch - main [MainThread]: End processing [pyinfra]: success
+[2024-05-04 21:21:35] INFO root fetch - main [MainThread]: Store serial: [23060427]
