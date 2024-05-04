@@ -2147,3 +2147,63 @@
 [2024-05-04 02:17:44] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.831.tar.gz]
 [2024-05-04 02:17:44] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-04 02:17:44] INFO root fetch - main [MainThread]: Store serial: [23052970]
+[2024-05-04 02:19:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052970]
+[2024-05-04 02:19:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 02:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-gitlab-runner
+[2024-05-04 02:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arize-phoenix-evals
+[2024-05-04 02:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-budibase
+[2024-05-04 02:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coomer-favorites-helper-for-cyberdrop-dl
+[2024-05-04 02:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rship-sdk
+[2024-05-04 02:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: juan-stats
+[2024-05-04 02:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdklabs.cdk-ethereum-node
+[2024-05-04 02:19:52] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 02:19:52] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-04 02:19:52] INFO root fetch - processPackages [cdk-budibase]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-04 02:19:52] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-04 02:19:52] INFO root fetch - processPackages [juan-stats]: New version: [2.0] Old Version: [1.9]
+[2024-05-04 02:19:52] WARNING root fetch - processPackages [coomer-favorites-helper-for-cyberdrop-dl]: Skipping, unable to determine old version
+[2024-05-04 02:19:52] INFO root fetch - main [MainThread]: End processing [coomer-favorites-helper-for-cyberdrop-dl] error
+[2024-05-04 02:19:52] INFO root fetch - processPackages [arize-phoenix-evals]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-05-04 02:19:52] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/d8/1a/417af84315b2d52f6063ccf2072677259777d28fb73cab91e17879faaa26/cdklabs.cdk-ethereum-node-0.0.98.tar.gz
+[2024-05-04 02:19:52] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 02:19:53] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/4f/0a/01c6428b0ea2e78dd2dd9e10aba3ba8252b6cd0992b5a90ea9ba90983551/cdk-budibase-0.0.98.tar.gz
+[2024-05-04 02:19:53] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-05-04 02:19:53] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/67/ee/f914a272dc9d3b31d65cced4776cd9bf7e9d8011ee622ac090a298462a78/juan_stats-1.9.tar.gz
+[2024-05-04 02:19:53] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 02:19:53] INFO root fetch - processPackages [arize-phoenix-evals]: Downloading https://files.pythonhosted.org/packages/29/73/345deec6cabc8098ee6d9d5dff39f62fe0ab9cf6eae74586e08460b70e8d/arize_phoenix_evals-0.8.0.tar.gz
+[2024-05-04 02:19:53] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-05-04 02:19:53] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/3d/b1/10d1c8f0601959fd0771f3dc7b94b15e702b81729d74397e80ca3dd66c88/cdk-budibase-0.0.99.tar.gz
+[2024-05-04 02:19:53] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 02:19:53] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 02:19:53] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/2d/d8/3fd98f927d9988f7c189f488b1829ac7aa7f855bf93f6030e3bed9af9a97/cdklabs.cdk-ethereum-node-0.0.99.tar.gz
+[2024-05-04 02:19:53] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-05-04 02:19:53] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240504/c/cdk-gitlab-runner/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-04 02:19:53] INFO root fetch - processPackages [cdk-budibase]: executing diffoscope
+[2024-05-04 02:19:53] INFO root fetch - processPackages [cdk-budibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budibase-0.0.98.tar.gz tmp/cdk-budibase-0.0.99.tar.gz --markdown 20240504/c/cdk-budibase/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-04 02:19:53] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2024-05-04 02:19:53] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20240504/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-04 02:19:53] INFO root fetch - processPackages [juan-stats]: Downloading https://files.pythonhosted.org/packages/90/c4/ebeecdedeede89e7d398e101d988055e7dedc0c6375cb30db16fd6319c1a/juan_stats-2.0.tar.gz
+[2024-05-04 02:19:53] INFO root fetch - processPackages [juan-stats]: executing diffoscope
+[2024-05-04 02:19:53] INFO root fetch - processPackages [juan-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juan_stats-1.9.tar.gz tmp/juan_stats-2.0.tar.gz --markdown 20240504/j/juan-stats/1.9-2.0/README.md --exclude *.pyd
+[2024-05-04 02:19:53] INFO root fetch - processPackages [arize-phoenix-evals]: Downloading https://files.pythonhosted.org/packages/30/51/d80a0fbefc05491bda1e966cd0aaf4a72c24066759389b80c0b962d9b97a/arize_phoenix_evals-0.8.1.tar.gz
+[2024-05-04 02:19:53] INFO root fetch - processPackages [arize-phoenix-evals]: executing diffoscope
+[2024-05-04 02:19:53] INFO root fetch - processPackages [arize-phoenix-evals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arize_phoenix_evals-0.8.0.tar.gz tmp/arize_phoenix_evals-0.8.1.tar.gz --markdown 20240504/a/arize-phoenix-evals/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-05-04 02:19:54] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-05-04 02:19:54] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.98.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.99.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
+[2024-05-04 02:19:54] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 02:19:54] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2024-05-04 02:19:54] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-1.9.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - processPackages [juan-stats]: Remove: archive file [/home/abi/fetcher/tmp/juan_stats-2.0.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - main [MainThread]: End processing [juan-stats]: success
+[2024-05-04 02:19:54] INFO root fetch - processPackages [arize-phoenix-evals]: Remove: archive file [/home/abi/fetcher/tmp/arize_phoenix_evals-0.8.0.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - processPackages [arize-phoenix-evals]: Remove: archive file [/home/abi/fetcher/tmp/arize_phoenix_evals-0.8.1.tar.gz]
+[2024-05-04 02:19:54] INFO root fetch - main [MainThread]: End processing [arize-phoenix-evals]: success
+[2024-05-04 02:19:54] INFO root fetch - main [MainThread]: Store serial: [23052991]
