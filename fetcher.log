@@ -15394,3 +15394,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:16:32] INFO root fetch - processPackages [pybotters]: Remove: archive file [/home/abi/fetcher/tmp/pybotters-1.1.1.tar.gz]
 [2024-05-04 16:16:32] INFO root fetch - main [MainThread]: End processing [pybotters]: success
 [2024-05-04 16:16:32] INFO root fetch - main [MainThread]: Store serial: [23058479]
+[2024-05-04 16:18:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058479]
+[2024-05-04 16:18:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 16:18:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-mystool
+[2024-05-04 16:18:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ahn-cli
+[2024-05-04 16:18:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyauth0
+[2024-05-04 16:18:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Test19991021
+[2024-05-04 16:18:41] INFO root fetch - processPackages [ahn-cli]: New version: [0.2.0] Old Version: [0.1.8]
+[2024-05-04 16:18:41] INFO root fetch - processPackages [Test19991021]: New version: [0.3.0] Old Version: [0.1.0]
+[2024-05-04 16:18:41] INFO root fetch - processPackages [ahn-cli]: Downloading https://files.pythonhosted.org/packages/33/d6/994703b9e61c813a0bac729aeb74254d4e57212dd574718539c1e251d8cd/ahn_cli-0.1.8.tar.gz
+[2024-05-04 16:18:41] INFO root fetch - processPackages [pyauth0]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 16:18:41] INFO root fetch - processPackages [nonebot-plugin-mystool]: New version: [2.4.0] Old Version: [2.3.0]
+[2024-05-04 16:18:42] WARNING root fetch - processPackages [ahn-cli]: Skipping package: exceeds size limit 14366950>=10485760
+[2024-05-04 16:18:42] INFO root fetch - main [MainThread]: End processing [ahn-cli] error
+[2024-05-04 16:18:42] INFO root fetch - processPackages [nonebot-plugin-mystool]: Downloading https://files.pythonhosted.org/packages/4c/ac/287acfc66963fb0be0d79459d3afb59da8231f17d2ae03ca5581409842fa/nonebot_plugin_mystool-2.3.0.tar.gz
+[2024-05-04 16:18:42] INFO root fetch - processPackages [Test19991021]: Downloading https://files.pythonhosted.org/packages/7d/0c/65d2a76bbe9e1b193455adf5eb44d1c6c3ddf6a9097aae0e468708dd89dc/Test19991021-0.1.0.tar.gz
+[2024-05-04 16:18:42] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/1c/8f/28e5502ab8583bdc419aeadde8dc6c9f235723a6f92507d33de9ed162a4c/pyauth0-0.1.1.tar.gz
+[2024-05-04 16:18:42] INFO root fetch - processPackages [nonebot-plugin-mystool]: Downloading https://files.pythonhosted.org/packages/27/09/1ace53531fb6a452e3af42b2a2ccf534d22f8e311808256d5d149f117c5d/nonebot_plugin_mystool-2.4.0.tar.gz
+[2024-05-04 16:18:42] INFO root fetch - processPackages [Test19991021]: Downloading https://files.pythonhosted.org/packages/41/0b/e14ad022b073d2fa91a3f9b7c11bb5c4f59579f65bee0328dd955b164331/Test19991021-0.3.0-py3-none-any.whl
+[2024-05-04 16:18:42] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/1d/8f/8344d14d371539b9d779d12244a2f7b2de001a25a5fc40dcce481e9a7fc3/pyauth0-0.1.2.tar.gz
+[2024-05-04 16:18:42] INFO root fetch - processPackages [nonebot-plugin-mystool]: executing diffoscope
+[2024-05-04 16:18:42] INFO root fetch - processPackages [nonebot-plugin-mystool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_mystool-2.3.0.tar.gz tmp/nonebot_plugin_mystool-2.4.0.tar.gz --markdown 20240504/n/nonebot-plugin-mystool/2.3.0-2.4.0/README.md --exclude *.pyd
+[2024-05-04 16:18:42] INFO root fetch - processPackages [Test19991021]: executing diffoscope
+[2024-05-04 16:18:42] INFO root fetch - processPackages [Test19991021]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Test19991021-0.1.0.tar.gz tmp/Test19991021-0.3.0-py3-none-any.whl.zip --markdown 20240504/T/Test19991021/0.1.0-0.3.0/README.md --exclude *.pyd
+[2024-05-04 16:18:42] INFO root fetch - processPackages [pyauth0]: executing diffoscope
+[2024-05-04 16:18:42] INFO root fetch - processPackages [pyauth0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyauth0-0.1.1.tar.gz tmp/pyauth0-0.1.2.tar.gz --markdown 20240504/p/pyauth0/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 16:18:43] INFO root fetch - processPackages [Test19991021]: Remove: archive file [/home/abi/fetcher/tmp/Test19991021-0.1.0.tar.gz]
+[2024-05-04 16:18:43] INFO root fetch - processPackages [Test19991021]: Remove: archive file [/home/abi/fetcher/tmp/Test19991021-0.3.0-py3-none-any.whl.zip]
+[2024-05-04 16:18:43] INFO root fetch - main [MainThread]: End processing [Test19991021]: success
+[2024-05-04 16:18:43] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.1.tar.gz]
+[2024-05-04 16:18:43] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.2.tar.gz]
+[2024-05-04 16:18:43] INFO root fetch - main [MainThread]: End processing [pyauth0]: success
+[2024-05-04 16:18:43] INFO root fetch - processPackages [nonebot-plugin-mystool]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mystool-2.3.0.tar.gz]
+[2024-05-04 16:18:43] INFO root fetch - processPackages [nonebot-plugin-mystool]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mystool-2.4.0.tar.gz]
+[2024-05-04 16:18:43] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mystool]: success
+[2024-05-04 16:18:43] INFO root fetch - main [MainThread]: Store serial: [23058491]
