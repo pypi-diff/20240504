@@ -14516,3 +14516,33 @@
 [2024-05-04 15:15:26] INFO root fetch - processPackages [snapquery]: Remove: archive file [/home/abi/fetcher/tmp/snapquery-0.0.3.tar.gz]
 [2024-05-04 15:15:26] INFO root fetch - main [MainThread]: End processing [snapquery]: success
 [2024-05-04 15:15:26] INFO root fetch - main [MainThread]: Store serial: [23058108]
+[2024-05-04 15:17:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058108]
+[2024-05-04 15:17:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 15:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soundstorm-pytorch
+[2024-05-04 15:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mmo-tools
+[2024-05-04 15:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tflite-micro
+[2024-05-04 15:17:34] INFO root fetch - processPackages [mmo-tools]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 15:17:34] INFO root fetch - processPackages [tflite-micro]: New version: [0.dev20240502151121] Old Version: [0.dev20240430183525]
+[2024-05-04 15:17:35] INFO root fetch - processPackages [soundstorm-pytorch]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-04 15:17:35] INFO root fetch - processPackages [tflite-micro]: Downloading https://files.pythonhosted.org/packages/08/03/ef133121d632c41dd546a9fbfb8ce09204fcc33b43c1be1b6bb153a071a0/tflite_micro-0.dev20240430183525-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-05-04 15:17:35] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/0d/28/f1aef4fb67eed027b3cb7d610568ebebdc82cc3983360d1c19977d4a7494/mmo_tools-0.1.0.tar.gz
+[2024-05-04 15:17:35] INFO root fetch - processPackages [soundstorm-pytorch]: Downloading https://files.pythonhosted.org/packages/35/49/ea53f3242ebe030816147818c791cce735c357774d0fcd8f9b0739ef2c3f/soundstorm-pytorch-0.4.2.tar.gz
+[2024-05-04 15:17:35] INFO root fetch - processPackages [tflite-micro]: Downloading https://files.pythonhosted.org/packages/eb/05/1d8743c208a645e05dcb2181399d2c58fdd5ffe9e22e5bed7858fbeb1c4c/tflite_micro-0.dev20240502151121-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-05-04 15:17:35] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/bf/c1/6d69aae02c4e1f75f520c179de6eb62d5d40262b7b3158b718f5712b6034/mmo_tools-0.1.1.tar.gz
+[2024-05-04 15:17:35] INFO root fetch - processPackages [tflite-micro]: executing diffoscope
+[2024-05-04 15:17:35] INFO root fetch - processPackages [tflite-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_micro-0.dev20240430183525-cp311-cp311-manylinux_2_28_x86_64.whl.zip tmp/tflite_micro-0.dev20240502151121-cp311-cp311-manylinux_2_28_x86_64.whl.zip --markdown 20240504/t/tflite-micro/0.dev20240430183525-0.dev20240502151121/README.md --exclude *.pyd
+[2024-05-04 15:17:35] INFO root fetch - processPackages [mmo-tools]: executing diffoscope
+[2024-05-04 15:17:35] INFO root fetch - processPackages [mmo-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmo_tools-0.1.0.tar.gz tmp/mmo_tools-0.1.1.tar.gz --markdown 20240504/m/mmo-tools/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 15:17:35] INFO root fetch - processPackages [soundstorm-pytorch]: Downloading https://files.pythonhosted.org/packages/2b/1f/de21bf549950cd608ef652b38f9374072be8820ff5f0f66fba7cec9153bf/soundstorm_pytorch-0.4.3.tar.gz
+[2024-05-04 15:17:35] INFO root fetch - processPackages [soundstorm-pytorch]: executing diffoscope
+[2024-05-04 15:17:35] INFO root fetch - processPackages [soundstorm-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soundstorm-pytorch-0.4.2.tar.gz tmp/soundstorm_pytorch-0.4.3.tar.gz --markdown 20240504/s/soundstorm-pytorch/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-04 15:17:36] INFO root fetch - processPackages [tflite-micro]: Remove: archive file [/home/abi/fetcher/tmp/tflite_micro-0.dev20240430183525-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-05-04 15:17:36] INFO root fetch - processPackages [tflite-micro]: Remove: archive file [/home/abi/fetcher/tmp/tflite_micro-0.dev20240502151121-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-05-04 15:17:36] INFO root fetch - main [MainThread]: End processing [tflite-micro]: success
+[2024-05-04 15:17:36] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.1.0.tar.gz]
+[2024-05-04 15:17:36] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.1.1.tar.gz]
+[2024-05-04 15:17:36] INFO root fetch - main [MainThread]: End processing [mmo-tools]: success
+[2024-05-04 15:17:36] INFO root fetch - processPackages [soundstorm-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/soundstorm-pytorch-0.4.2.tar.gz]
+[2024-05-04 15:17:36] INFO root fetch - processPackages [soundstorm-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/soundstorm_pytorch-0.4.3.tar.gz]
+[2024-05-04 15:17:36] INFO root fetch - main [MainThread]: End processing [soundstorm-pytorch]: success
+[2024-05-04 15:17:36] INFO root fetch - main [MainThread]: Store serial: [23058117]
