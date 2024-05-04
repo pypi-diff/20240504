@@ -9361,3 +9361,30 @@
 [2024-05-04 06:55:23] INFO root fetch - processPackages [dataspecs]: Remove: archive file [/home/abi/fetcher/tmp/dataspecs-0.5.0.tar.gz]
 [2024-05-04 06:55:23] INFO root fetch - main [MainThread]: End processing [dataspecs]: success
 [2024-05-04 06:55:23] INFO root fetch - main [MainThread]: Store serial: [23055731]
+[2024-05-04 06:57:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055731]
+[2024-05-04 06:57:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 06:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wheat-packager
+[2024-05-04 06:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-product-margin-classification
+[2024-05-04 06:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: supplies
+[2024-05-04 06:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkscreener
+[2024-05-04 06:57:31] WARNING root fetch - processPackages [wheat-packager]: Skipping, unable to determine old version
+[2024-05-04 06:57:31] INFO root fetch - processPackages [odoo-addon-product-margin-classification]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.2]
+[2024-05-04 06:57:31] INFO root fetch - main [MainThread]: End processing [wheat-packager] error
+[2024-05-04 06:57:31] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240504.328] Old Version: [0.44.20240504.327]
+[2024-05-04 06:57:31] INFO root fetch - processPackages [odoo-addon-product-margin-classification]: Downloading https://files.pythonhosted.org/packages/75/f5/88d1820b0340382c28042580a18cf8c3be5bfb937fd7615b066c43ab4f40/odoo_addon_product_margin_classification-16.0.1.0.2-py3-none-any.whl
+[2024-05-04 06:57:31] WARNING root fetch - processPackages [supplies]: Skipping, unable to determine old version
+[2024-05-04 06:57:31] INFO root fetch - main [MainThread]: End processing [supplies] error
+[2024-05-04 06:57:31] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/a7/71/8ad4e0b8a21cd66594d861051862f2c29ecb689374c3acc39ff781702633/pkscreener-0.44.20240504.327.tar.gz
+[2024-05-04 06:57:32] INFO root fetch - processPackages [odoo-addon-product-margin-classification]: Downloading https://files.pythonhosted.org/packages/e2/45/f667147e564456c510dd662afe39350c1c03f3ef54cbfd2a87c1168b69fa/odoo_addon_product_margin_classification-16.0.1.1.0-py3-none-any.whl
+[2024-05-04 06:57:32] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/34/b4/23912f330ec6cc1264e3e71118e1fbbcc2ca71c134c71c5d65869dbd8f82/pkscreener-0.44.20240504.328.tar.gz
+[2024-05-04 06:57:32] INFO root fetch - processPackages [odoo-addon-product-margin-classification]: executing diffoscope
+[2024-05-04 06:57:32] INFO root fetch - processPackages [odoo-addon-product-margin-classification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_margin_classification-16.0.1.0.2-py3-none-any.whl.zip tmp/odoo_addon_product_margin_classification-16.0.1.1.0-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-product-margin-classification/16.0.1.0.2-16.0.1.1.0/README.md --exclude *.pyd
+[2024-05-04 06:57:32] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-04 06:57:32] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240504.327.tar.gz tmp/pkscreener-0.44.20240504.328.tar.gz --markdown 20240504/p/pkscreener/0.44.20240504.327-0.44.20240504.328/README.md --exclude *.pyd
+[2024-05-04 06:57:32] INFO root fetch - processPackages [odoo-addon-product-margin-classification]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_margin_classification-16.0.1.0.2-py3-none-any.whl.zip]
+[2024-05-04 06:57:32] INFO root fetch - processPackages [odoo-addon-product-margin-classification]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_margin_classification-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-04 06:57:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-margin-classification]: success
+[2024-05-04 06:57:33] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.327.tar.gz]
+[2024-05-04 06:57:33] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.328.tar.gz]
+[2024-05-04 06:57:33] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-04 06:57:33] INFO root fetch - main [MainThread]: Store serial: [23055748]
