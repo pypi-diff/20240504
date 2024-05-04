@@ -21226,3 +21226,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:41:33] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.3.0.tar.gz]
 [2024-05-04 23:41:33] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
 [2024-05-04 23:41:33] INFO root fetch - main [MainThread]: Store serial: [23061182]
+[2024-05-04 23:43:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061182]
+[2024-05-04 23:43:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sumapi
+[2024-05-04 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypl4
+[2024-05-04 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notolog
+[2024-05-04 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mpyg321
+[2024-05-04 23:43:42] INFO root fetch - processPackages [notolog]: New version: [0.9.0b11] Old Version: [0.9.0b10]
+[2024-05-04 23:43:42] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/24/c9/bb2157b7fde9973c29216b7120928da34164ed23db12cc7c7fac4454cc3b/notolog-0.9.0b10.tar.gz
+[2024-05-04 23:43:42] INFO root fetch - processPackages [sumapi]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-04 23:43:42] WARNING root fetch - processPackages [pypl4]: Skipping, unable to determine old version
+[2024-05-04 23:43:42] INFO root fetch - main [MainThread]: End processing [pypl4] error
+[2024-05-04 23:43:42] INFO root fetch - processPackages [mpyg321]: New version: [2.2.0] Old Version: [2.1.1]
+[2024-05-04 23:43:42] INFO root fetch - processPackages [sumapi]: Downloading https://files.pythonhosted.org/packages/ca/65/44cf7103db70a5ceb53421ed1902805b01932eefb5a5755535ca53c253f8/sumapi-0.3.8.tar.gz
+[2024-05-04 23:43:42] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/16/76/e5d81c58df0340eaa773e8d33a3eae497fca888adf0185ab59dfdf65ebbb/notolog-0.9.0b11.tar.gz
+[2024-05-04 23:43:42] INFO root fetch - processPackages [mpyg321]: Downloading https://files.pythonhosted.org/packages/66/4b/00d5001125ea5e7499af28930391ec25a3d402791da8d6796649654891b5/mpyg321-2.1.1.tar.gz
+[2024-05-04 23:43:43] INFO root fetch - processPackages [notolog]: executing diffoscope
+[2024-05-04 23:43:43] INFO root fetch - processPackages [notolog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notolog-0.9.0b10.tar.gz tmp/notolog-0.9.0b11.tar.gz --markdown 20240504/n/notolog/0.9.0b10-0.9.0b11/README.md --exclude *.pyd
+[2024-05-04 23:43:43] INFO root fetch - processPackages [sumapi]: Downloading https://files.pythonhosted.org/packages/6b/dc/8593626811bef1641e20ba6f0dbc1fe733a10e5b137f2c3769b29e0f0aa2/sumapi-0.3.9.tar.gz
+[2024-05-04 23:43:43] INFO root fetch - processPackages [mpyg321]: Downloading https://files.pythonhosted.org/packages/b3/02/0aa5463d14dffbe1177d4c6ead9285a1fce3e7af9ea6f9bf9b30df996b88/mpyg321-2.2.0.tar.gz
+[2024-05-04 23:43:43] INFO root fetch - processPackages [sumapi]: executing diffoscope
+[2024-05-04 23:43:43] INFO root fetch - processPackages [sumapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sumapi-0.3.8.tar.gz tmp/sumapi-0.3.9.tar.gz --markdown 20240504/s/sumapi/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-04 23:43:43] INFO root fetch - processPackages [mpyg321]: executing diffoscope
+[2024-05-04 23:43:43] INFO root fetch - processPackages [mpyg321]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpyg321-2.1.1.tar.gz tmp/mpyg321-2.2.0.tar.gz --markdown 20240504/m/mpyg321/2.1.1-2.2.0/README.md --exclude *.pyd
+[2024-05-04 23:43:43] INFO root fetch - processPackages [sumapi]: Remove: archive file [/home/abi/fetcher/tmp/sumapi-0.3.8.tar.gz]
+[2024-05-04 23:43:43] INFO root fetch - processPackages [sumapi]: Remove: archive file [/home/abi/fetcher/tmp/sumapi-0.3.9.tar.gz]
+[2024-05-04 23:43:43] INFO root fetch - main [MainThread]: End processing [sumapi]: success
+[2024-05-04 23:43:43] INFO root fetch - processPackages [mpyg321]: Remove: archive file [/home/abi/fetcher/tmp/mpyg321-2.1.1.tar.gz]
+[2024-05-04 23:43:43] INFO root fetch - processPackages [mpyg321]: Remove: archive file [/home/abi/fetcher/tmp/mpyg321-2.2.0.tar.gz]
+[2024-05-04 23:43:43] INFO root fetch - main [MainThread]: End processing [mpyg321]: success
+[2024-05-04 23:43:44] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.0b10.tar.gz]
+[2024-05-04 23:43:44] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.0b11.tar.gz]
+[2024-05-04 23:43:44] INFO root fetch - main [MainThread]: End processing [notolog]: success
+[2024-05-04 23:43:44] INFO root fetch - main [MainThread]: Store serial: [23061196]
