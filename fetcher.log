@@ -13592,3 +13592,40 @@
 [2024-05-04 13:33:15] INFO root fetch - processPackages [TH-camera-calibration]: Remove: archive file [/home/abi/fetcher/tmp/TH_camera_calibration-0.4.7.tar.gz]
 [2024-05-04 13:33:15] INFO root fetch - main [MainThread]: End processing [TH-camera-calibration]: success
 [2024-05-04 13:33:15] INFO root fetch - main [MainThread]: Store serial: [23057725]
+[2024-05-04 13:35:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057725]
+[2024-05-04 13:35:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 13:37:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057727]
+[2024-05-04 13:37:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 13:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchserve-nightly
+[2024-05-04 13:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torch-model-archiver-nightly
+[2024-05-04 13:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-workflow-archiver-nightly
+[2024-05-04 13:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ytmusicapi
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torchserve-nightly]: New version: [2024.5.3] Old Version: [2024.5.2]
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2024.5.3] Old Version: [2024.5.2]
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2024.5.3] Old Version: [2024.5.2]
+[2024-05-04 13:37:29] INFO root fetch - processPackages [ytmusicapi]: New version: [1.7.0] Old Version: [1.6.0]
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/b6/b5/d1e4a621f0376c9eaa3f019220239794f13343d9b66abad4cfb3c4eac616/torch_model_archiver_nightly-2024.5.2-py3-none-any.whl
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/d8/ea/d850bf92f2e71ce17f942c829b30eac17a29b4a9b23f04d963b992724763/torch_workflow_archiver_nightly-2024.5.2-py3-none-any.whl
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/c9/39/f0ac557b720b124c1c5afd331b32fda9c158c014f623d7e64f65f4ff31a2/torchserve_nightly-2024.5.2-py3-none-any.whl
+[2024-05-04 13:37:29] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 24333038>=10485760
+[2024-05-04 13:37:29] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2024-05-04 13:37:29] INFO root fetch - processPackages [ytmusicapi]: Downloading https://files.pythonhosted.org/packages/1a/14/a2c2b2bdd172da527655b1727d5ae8c9fbc2389417360bd1839da18c8612/ytmusicapi-1.6.0.tar.gz
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/ba/53/512a47fb265cc893219c910c4c25accf36dd80b1cb4d0dbe299e4ba749a5/torch_workflow_archiver_nightly-2024.5.3-py3-none-any.whl
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/6f/c9/d1e9b67e2fd167040773f6150849ce5b7f017aca198ea1ea21c332ca2231/torch_model_archiver_nightly-2024.5.3-py3-none-any.whl
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2024.5.2-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2024.5.3-py3-none-any.whl.zip --markdown 20240504/t/torch-workflow-archiver-nightly/2024.5.2-2024.5.3/README.md --exclude *.pyd
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2024-05-04 13:37:29] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2024.5.2-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2024.5.3-py3-none-any.whl.zip --markdown 20240504/t/torch-model-archiver-nightly/2024.5.2-2024.5.3/README.md --exclude *.pyd
+[2024-05-04 13:37:29] INFO root fetch - processPackages [ytmusicapi]: Downloading https://files.pythonhosted.org/packages/d5/f1/ca5f3fc9045792e65274c0b69afc4f92d526f9727f8a26e0b10e812fc7f4/ytmusicapi-1.7.0.tar.gz
+[2024-05-04 13:37:29] INFO root fetch - processPackages [ytmusicapi]: executing diffoscope
+[2024-05-04 13:37:29] INFO root fetch - processPackages [ytmusicapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytmusicapi-1.6.0.tar.gz tmp/ytmusicapi-1.7.0.tar.gz --markdown 20240504/y/ytmusicapi/1.6.0-1.7.0/README.md --exclude *.pyd
+[2024-05-04 13:37:30] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.5.2-py3-none-any.whl.zip]
+[2024-05-04 13:37:30] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.5.3-py3-none-any.whl.zip]
+[2024-05-04 13:37:30] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2024-05-04 13:37:30] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.5.2-py3-none-any.whl.zip]
+[2024-05-04 13:37:30] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.5.3-py3-none-any.whl.zip]
+[2024-05-04 13:37:30] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2024-05-04 13:37:30] INFO root fetch - processPackages [ytmusicapi]: Remove: archive file [/home/abi/fetcher/tmp/ytmusicapi-1.6.0.tar.gz]
+[2024-05-04 13:37:30] INFO root fetch - processPackages [ytmusicapi]: Remove: archive file [/home/abi/fetcher/tmp/ytmusicapi-1.7.0.tar.gz]
+[2024-05-04 13:37:30] INFO root fetch - main [MainThread]: End processing [ytmusicapi]: success
+[2024-05-04 13:37:30] INFO root fetch - main [MainThread]: Store serial: [23057737]
