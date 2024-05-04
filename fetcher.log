@@ -16721,3 +16721,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:11:46] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.9.tar.gz]
 [2024-05-04 18:11:46] INFO root fetch - main [MainThread]: End processing [copy-spotter]: success
 [2024-05-04 18:11:46] INFO root fetch - main [MainThread]: Store serial: [23059182]
+[2024-05-04 18:13:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059182]
+[2024-05-04 18:13:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 18:13:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gradio-grid
+[2024-05-04 18:13:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vkdispatch
+[2024-05-04 18:13:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-batch
+[2024-05-04 18:13:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: safe-ds
+[2024-05-04 18:13:55] INFO root fetch - processPackages [gpt-batch]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 18:13:55] INFO root fetch - processPackages [safe-ds]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-04 18:13:55] INFO root fetch - processPackages [vkdispatch]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-04 18:13:55] INFO root fetch - processPackages [gradio-grid]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 18:13:55] INFO root fetch - processPackages [gpt-batch]: Downloading https://files.pythonhosted.org/packages/78/f8/ea1877577bcad0c604de354331419aa3fcfaac6684fd75ef3fed3625988a/gpt_batch-0.1.0.tar.gz
+[2024-05-04 18:13:55] INFO root fetch - processPackages [safe-ds]: Downloading https://files.pythonhosted.org/packages/09/f6/a6b32c0bddd70e357b5ee90c9b88c336cc90c5fb454915f0b87e3d58a1b6/safe_ds-0.8.0.tar.gz
+[2024-05-04 18:13:55] INFO root fetch - processPackages [vkdispatch]: Downloading https://files.pythonhosted.org/packages/7e/91/037f65e6cf338e284da9b78630ef07f95373f3961d863f9a6e9b0dabc1b2/vkdispatch-0.0.3.tar.gz
+[2024-05-04 18:13:55] INFO root fetch - processPackages [gradio-grid]: Downloading https://files.pythonhosted.org/packages/45/d3/4a688aa359a6a9738d9b428af80e6c5520f389d625abde80b6ab50a6ef50/gradio_grid-1.0.0.tar.gz
+[2024-05-04 18:13:55] INFO root fetch - processPackages [gpt-batch]: Downloading https://files.pythonhosted.org/packages/2e/1b/f6dc531be1e95553d088258283b46c93967872b02e9ee9098c3afff732ca/gpt_batch-0.1.1.tar.gz
+[2024-05-04 18:13:55] INFO root fetch - processPackages [safe-ds]: Downloading https://files.pythonhosted.org/packages/bd/f8/60207d42597a9f68aa486aee74213d0424e53d4bd7cce2a8b050d148f4ed/safe_ds-0.9.0.tar.gz
+[2024-05-04 18:13:55] INFO root fetch - processPackages [gpt-batch]: executing diffoscope
+[2024-05-04 18:13:55] INFO root fetch - processPackages [gpt-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_batch-0.1.0.tar.gz tmp/gpt_batch-0.1.1.tar.gz --markdown 20240504/g/gpt-batch/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 18:13:55] INFO root fetch - processPackages [gradio-grid]: Downloading https://files.pythonhosted.org/packages/8f/86/39fbbc42386386d0f779ea22743070a962753b04509282d982b22ea7e46b/gradio_grid-1.0.1.tar.gz
+[2024-05-04 18:13:55] INFO root fetch - processPackages [vkdispatch]: Downloading https://files.pythonhosted.org/packages/1f/03/41a95b6151e542b3b5aa69d66c32a4602992496f40477fb98747d29826b7/vkdispatch-0.0.4.tar.gz
+[2024-05-04 18:13:55] INFO root fetch - processPackages [safe-ds]: executing diffoscope
+[2024-05-04 18:13:55] INFO root fetch - processPackages [safe-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safe_ds-0.8.0.tar.gz tmp/safe_ds-0.9.0.tar.gz --markdown 20240504/s/safe-ds/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-04 18:13:55] INFO root fetch - processPackages [gradio-grid]: executing diffoscope
+[2024-05-04 18:13:55] INFO root fetch - processPackages [gradio-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_grid-1.0.0.tar.gz tmp/gradio_grid-1.0.1.tar.gz --markdown 20240504/g/gradio-grid/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 18:13:55] INFO root fetch - processPackages [vkdispatch]: executing diffoscope
+[2024-05-04 18:13:55] INFO root fetch - processPackages [vkdispatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vkdispatch-0.0.3.tar.gz tmp/vkdispatch-0.0.4.tar.gz --markdown 20240504/v/vkdispatch/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-04 18:13:56] INFO root fetch - processPackages [gpt-batch]: Remove: archive file [/home/abi/fetcher/tmp/gpt_batch-0.1.0.tar.gz]
+[2024-05-04 18:13:56] INFO root fetch - processPackages [gpt-batch]: Remove: archive file [/home/abi/fetcher/tmp/gpt_batch-0.1.1.tar.gz]
+[2024-05-04 18:13:56] INFO root fetch - main [MainThread]: End processing [gpt-batch]: success
+[2024-05-04 18:13:56] INFO root fetch - processPackages [gradio-grid]: Remove: archive file [/home/abi/fetcher/tmp/gradio_grid-1.0.0.tar.gz]
+[2024-05-04 18:13:56] INFO root fetch - processPackages [gradio-grid]: Remove: archive file [/home/abi/fetcher/tmp/gradio_grid-1.0.1.tar.gz]
+[2024-05-04 18:13:56] INFO root fetch - main [MainThread]: End processing [gradio-grid]: success
+[2024-05-04 18:13:56] INFO root fetch - processPackages [safe-ds]: Remove: archive file [/home/abi/fetcher/tmp/safe_ds-0.8.0.tar.gz]
+[2024-05-04 18:13:56] INFO root fetch - processPackages [safe-ds]: Remove: archive file [/home/abi/fetcher/tmp/safe_ds-0.9.0.tar.gz]
+[2024-05-04 18:13:56] INFO root fetch - main [MainThread]: End processing [safe-ds]: success
+[2024-05-04 18:13:57] INFO root fetch - processPackages [vkdispatch]: Remove: archive file [/home/abi/fetcher/tmp/vkdispatch-0.0.3.tar.gz]
+[2024-05-04 18:13:57] INFO root fetch - processPackages [vkdispatch]: Remove: archive file [/home/abi/fetcher/tmp/vkdispatch-0.0.4.tar.gz]
+[2024-05-04 18:13:57] INFO root fetch - main [MainThread]: End processing [vkdispatch]: success
+[2024-05-04 18:13:57] INFO root fetch - main [MainThread]: Store serial: [23059196]
