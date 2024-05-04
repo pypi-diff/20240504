@@ -9123,3 +9123,25 @@
 [2024-05-04 06:28:34] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.9.tar.gz]
 [2024-05-04 06:28:34] INFO root fetch - main [MainThread]: End processing [viser]: success
 [2024-05-04 06:28:34] INFO root fetch - main [MainThread]: Store serial: [23055617]
+[2024-05-04 06:30:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055617]
+[2024-05-04 06:30:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 06:30:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lalsuite
+[2024-05-04 06:30:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tkfontselector
+[2024-05-04 06:30:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lalsuite
+[2024-05-04 06:30:58] INFO root fetch - processPackages [tkfontselector]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-04 06:30:58] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/3c/5b/4d7170e289d17099492e1594dc93ecfe32b9caac238975af8fadd9619bf1/tkfontselector-1.0.4.tar.gz
+[2024-05-04 06:30:59] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-05-04 06:30:59] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-05-04 06:30:59] INFO root fetch - processPackages [tkfontselector]: Downloading https://files.pythonhosted.org/packages/d6/4a/0e11d57378cb7acbfc642034148e292e2f390e8be5c54dec0b11a4a6c832/tkfontselector-1.0.5.tar.gz
+[2024-05-04 06:30:59] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-04 06:30:59] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-04 06:30:59] INFO root fetch - processPackages [tkfontselector]: executing diffoscope
+[2024-05-04 06:30:59] INFO root fetch - processPackages [tkfontselector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkfontselector-1.0.4.tar.gz tmp/tkfontselector-1.0.5.tar.gz --markdown 20240504/t/tkfontselector/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-04 06:30:59] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-05-04 06:30:59] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-05-04 06:30:59] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-05-04 06:30:59] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-05-04 06:30:59] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.4.tar.gz]
+[2024-05-04 06:30:59] INFO root fetch - processPackages [tkfontselector]: Remove: archive file [/home/abi/fetcher/tmp/tkfontselector-1.0.5.tar.gz]
+[2024-05-04 06:30:59] INFO root fetch - main [MainThread]: End processing [tkfontselector]: success
+[2024-05-04 06:30:59] INFO root fetch - main [MainThread]: Store serial: [23055638]
