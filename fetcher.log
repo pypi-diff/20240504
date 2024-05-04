@@ -16817,3 +16817,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:18:17] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.2.tar.gz]
 [2024-05-04 18:18:17] INFO root fetch - main [MainThread]: End processing [honeybee-radiance]: success
 [2024-05-04 18:18:17] INFO root fetch - main [MainThread]: Store serial: [23059221]
+[2024-05-04 18:20:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059221]
+[2024-05-04 18:20:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 18:20:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dragonfly-core
+[2024-05-04 18:20:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kfre
+[2024-05-04 18:20:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: EAP
+[2024-05-04 18:20:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pc-perf
+[2024-05-04 18:20:26] INFO root fetch - processPackages [pc-perf]: New version: [1.2.3] Old Version: [1.2.1]
+[2024-05-04 18:20:26] INFO root fetch - processPackages [kfre]: New version: [0.1.2b4] Old Version: [0.1.2b3]
+[2024-05-04 18:20:27] INFO root fetch - processPackages [dragonfly-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-05-04 18:20:27] INFO root fetch - processPackages [pc-perf]: Downloading https://files.pythonhosted.org/packages/29/64/f10d18b29b759d6e5ea28abfa9bde934676ec65e0caeef3ae3fe1da28249/pc-perf-1.2.1.tar.gz
+[2024-05-04 18:20:27] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/a9/11/53b083f77553706b9b4b79f4d1a953005351d9995611d40d722c934338db/kfre-0.1.2b3.tar.gz
+[2024-05-04 18:20:27] INFO root fetch - processPackages [EAP]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-04 18:20:27] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/93/fd/7cad9d4c9406e421f7ce31b725936bb32ec8a421f9b143e829c33cae55dd/dragonfly-core-1.8.1.tar.gz
+[2024-05-04 18:20:27] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/75/cb/4a1ce4726a070a188305b8d5343b4300bf24190845d85c8718cc31aa3e53/dragonfly-core-1.9.0.tar.gz
+[2024-05-04 18:20:27] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/b6/38/f1580bd11753e524cfe9545e7fcf0821dd421847634d108dbb7358b7b78c/kfre-0.1.2b4.tar.gz
+[2024-05-04 18:20:27] INFO root fetch - processPackages [pc-perf]: Downloading https://files.pythonhosted.org/packages/ef/98/376fd207c2a9e0202fd88c64dc6dd6a317ba3d1ce94a935e453d05a7621d/pc-perf-1.2.3.tar.gz
+[2024-05-04 18:20:27] INFO root fetch - processPackages [dragonfly-core]: executing diffoscope
+[2024-05-04 18:20:27] INFO root fetch - processPackages [dragonfly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-core-1.8.1.tar.gz tmp/dragonfly-core-1.9.0.tar.gz --markdown 20240504/d/dragonfly-core/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-05-04 18:20:27] INFO root fetch - processPackages [kfre]: executing diffoscope
+[2024-05-04 18:20:27] INFO root fetch - processPackages [kfre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfre-0.1.2b3.tar.gz tmp/kfre-0.1.2b4.tar.gz --markdown 20240504/k/kfre/0.1.2b3-0.1.2b4/README.md --exclude *.pyd
+[2024-05-04 18:20:27] INFO root fetch - processPackages [EAP]: Downloading https://files.pythonhosted.org/packages/a3/1a/e3d7b0526d451a0c6e68dc3092da2a686a01c79f9606d67b534f0989b516/EAP-1.1.8.tar.gz
+[2024-05-04 18:20:27] INFO root fetch - processPackages [pc-perf]: executing diffoscope
+[2024-05-04 18:20:27] INFO root fetch - processPackages [pc-perf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pc-perf-1.2.1.tar.gz tmp/pc-perf-1.2.3.tar.gz --markdown 20240504/p/pc-perf/1.2.1-1.2.3/README.md --exclude *.pyd
+[2024-05-04 18:20:28] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.8.1.tar.gz]
+[2024-05-04 18:20:28] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.9.0.tar.gz]
+[2024-05-04 18:20:28] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
+[2024-05-04 18:20:28] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2b3.tar.gz]
+[2024-05-04 18:20:28] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2b4.tar.gz]
+[2024-05-04 18:20:28] INFO root fetch - main [MainThread]: End processing [kfre]: success
+[2024-05-04 18:20:28] INFO root fetch - processPackages [pc-perf]: Remove: archive file [/home/abi/fetcher/tmp/pc-perf-1.2.1.tar.gz]
+[2024-05-04 18:20:28] INFO root fetch - processPackages [pc-perf]: Remove: archive file [/home/abi/fetcher/tmp/pc-perf-1.2.3.tar.gz]
+[2024-05-04 18:20:28] INFO root fetch - main [MainThread]: End processing [pc-perf]: success
+[2024-05-04 18:20:28] INFO root fetch - processPackages [EAP]: Downloading https://files.pythonhosted.org/packages/c8/dd/7af98bb1c10cfce4b61e16feb924677d0f81104a9903d7a0cd4cbed61401/EAP-1.1.9.tar.gz
+[2024-05-04 18:20:28] INFO root fetch - processPackages [EAP]: executing diffoscope
+[2024-05-04 18:20:28] INFO root fetch - processPackages [EAP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EAP-1.1.8.tar.gz tmp/EAP-1.1.9.tar.gz --markdown 20240504/E/EAP/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-04 18:20:29] INFO root fetch - processPackages [EAP]: Remove: archive file [/home/abi/fetcher/tmp/EAP-1.1.8.tar.gz]
+[2024-05-04 18:20:29] INFO root fetch - processPackages [EAP]: Remove: archive file [/home/abi/fetcher/tmp/EAP-1.1.9.tar.gz]
+[2024-05-04 18:20:29] INFO root fetch - main [MainThread]: End processing [EAP]: success
+[2024-05-04 18:20:29] INFO root fetch - main [MainThread]: Store serial: [23059233]
