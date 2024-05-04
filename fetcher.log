@@ -13659,3 +13659,56 @@
 [2024-05-04 13:39:41] INFO root fetch - processPackages [vka]: Remove: archive file [/home/abi/fetcher/tmp/vka-1.2.9.tar.gz]
 [2024-05-04 13:39:41] INFO root fetch - main [MainThread]: End processing [vka]: success
 [2024-05-04 13:39:41] INFO root fetch - main [MainThread]: Store serial: [23057745]
+[2024-05-04 13:41:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057745]
+[2024-05-04 13:41:50] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 13:43:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057746]
+[2024-05-04 13:43:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 13:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diwork
+[2024-05-04 13:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lol-voice
+[2024-05-04 13:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netbox-contract
+[2024-05-04 13:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vka
+[2024-05-04 13:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hyo2.bag
+[2024-05-04 13:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kobo-highlights-extractor
+[2024-05-04 13:43:55] WARNING root fetch - processPackages [hyo2.bag]: Skipping, unable to determine old version
+[2024-05-04 13:43:55] INFO root fetch - main [MainThread]: End processing [hyo2.bag] error
+[2024-05-04 13:43:55] INFO root fetch - processPackages [vka]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-04 13:43:55] INFO root fetch - processPackages [kobo-highlights-extractor]: New version: [0.0.11] Old Version: [0.0.1]
+[2024-05-04 13:43:55] INFO root fetch - processPackages [diwork]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-04 13:43:55] INFO root fetch - processPackages [lol-voice]: New version: [1.0.4.1] Old Version: [1.0.4]
+[2024-05-04 13:43:56] INFO root fetch - processPackages [vka]: Downloading https://files.pythonhosted.org/packages/b0/bb/9e2424da6ba6efb491947a984af904fdd3e896435bb6417a8e3666e0d748/vka-1.2.8.tar.gz
+[2024-05-04 13:43:56] INFO root fetch - processPackages [netbox-contract]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-04 13:43:56] INFO root fetch - processPackages [diwork]: Downloading https://files.pythonhosted.org/packages/57/5d/acdfc2c414a170afe5eb67f027dec93dfad5b48a4caf18a2c8365036c498/diwork-1.0.0.tar.gz
+[2024-05-04 13:43:56] INFO root fetch - processPackages [kobo-highlights-extractor]: Downloading https://files.pythonhosted.org/packages/0d/5f/7bfe1652cf3d17c327e08aff814cea0d632c07f6959e2793d101f95c59dc/kobo_highlights_extractor-0.0.1.tar.gz
+[2024-05-04 13:43:56] INFO root fetch - processPackages [lol-voice]: Downloading https://files.pythonhosted.org/packages/1e/79/00ba4b3992f9b83782b8e262a36cb9a248ece028faa75258cb131c39e4bb/lol_voice-1.0.4.tar.gz
+[2024-05-04 13:43:56] INFO root fetch - processPackages [netbox-contract]: Downloading https://files.pythonhosted.org/packages/c0/83/3b7fe580151c8cc8ec7a7205873d976c41bedbbba449b8aa50a1107b9de4/netbox-contract-2.0.8.tar.gz
+[2024-05-04 13:43:56] INFO root fetch - processPackages [vka]: Downloading https://files.pythonhosted.org/packages/8e/46/ab7a7c188e32f0b2c63ff472431c60a38a52687c4b854aa6783e469c1595/vka-1.2.9.tar.gz
+[2024-05-04 13:43:56] INFO root fetch - processPackages [diwork]: Downloading https://files.pythonhosted.org/packages/fa/5b/fb84bfd893ed549b5a5648a6b5229c68eb6178e0fd1ef4ee4e5792791238/diwork-1.1.0.tar.gz
+[2024-05-04 13:43:56] INFO root fetch - processPackages [vka]: executing diffoscope
+[2024-05-04 13:43:56] INFO root fetch - processPackages [vka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vka-1.2.8.tar.gz tmp/vka-1.2.9.tar.gz --markdown 20240504/v/vka/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-04 13:43:56] INFO root fetch - processPackages [lol-voice]: Downloading https://files.pythonhosted.org/packages/44/9e/66926b95d2d702ca46f6859b9a31862c902db5946343c15aca830ae1d5fa/lol_voice-1.0.4.1.tar.gz
+[2024-05-04 13:43:56] INFO root fetch - processPackages [kobo-highlights-extractor]: Downloading https://files.pythonhosted.org/packages/42/b6/8f4040c6c1e19530846580473d88445048728a5efa7793a08a43b3c3382f/kobo_highlights_extractor-0.0.11.tar.gz
+[2024-05-04 13:43:56] INFO root fetch - processPackages [diwork]: executing diffoscope
+[2024-05-04 13:43:56] INFO root fetch - processPackages [diwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diwork-1.0.0.tar.gz tmp/diwork-1.1.0.tar.gz --markdown 20240504/d/diwork/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-04 13:43:56] INFO root fetch - processPackages [netbox-contract]: Downloading https://files.pythonhosted.org/packages/fb/0a/e5456f3011e97c5322f4160cc4830214437e2ea60c503183c2d6f724eed8/netbox-contract-2.0.9.tar.gz
+[2024-05-04 13:43:56] INFO root fetch - processPackages [lol-voice]: executing diffoscope
+[2024-05-04 13:43:56] INFO root fetch - processPackages [lol-voice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lol_voice-1.0.4.tar.gz tmp/lol_voice-1.0.4.1.tar.gz --markdown 20240504/l/lol-voice/1.0.4-1.0.4.1/README.md --exclude *.pyd
+[2024-05-04 13:43:56] INFO root fetch - processPackages [kobo-highlights-extractor]: executing diffoscope
+[2024-05-04 13:43:56] INFO root fetch - processPackages [kobo-highlights-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kobo_highlights_extractor-0.0.1.tar.gz tmp/kobo_highlights_extractor-0.0.11.tar.gz --markdown 20240504/k/kobo-highlights-extractor/0.0.1-0.0.11/README.md --exclude *.pyd
+[2024-05-04 13:43:56] INFO root fetch - processPackages [netbox-contract]: executing diffoscope
+[2024-05-04 13:43:56] INFO root fetch - processPackages [netbox-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-contract-2.0.8.tar.gz tmp/netbox-contract-2.0.9.tar.gz --markdown 20240504/n/netbox-contract/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-04 13:43:57] INFO root fetch - processPackages [vka]: Remove: archive file [/home/abi/fetcher/tmp/vka-1.2.8.tar.gz]
+[2024-05-04 13:43:57] INFO root fetch - processPackages [vka]: Remove: archive file [/home/abi/fetcher/tmp/vka-1.2.9.tar.gz]
+[2024-05-04 13:43:57] INFO root fetch - main [MainThread]: End processing [vka]: success
+[2024-05-04 13:43:57] INFO root fetch - processPackages [kobo-highlights-extractor]: Remove: archive file [/home/abi/fetcher/tmp/kobo_highlights_extractor-0.0.1.tar.gz]
+[2024-05-04 13:43:57] INFO root fetch - processPackages [kobo-highlights-extractor]: Remove: archive file [/home/abi/fetcher/tmp/kobo_highlights_extractor-0.0.11.tar.gz]
+[2024-05-04 13:43:57] INFO root fetch - main [MainThread]: End processing [kobo-highlights-extractor]: success
+[2024-05-04 13:43:57] INFO root fetch - processPackages [lol-voice]: Remove: archive file [/home/abi/fetcher/tmp/lol_voice-1.0.4.tar.gz]
+[2024-05-04 13:43:57] INFO root fetch - processPackages [lol-voice]: Remove: archive file [/home/abi/fetcher/tmp/lol_voice-1.0.4.1.tar.gz]
+[2024-05-04 13:43:57] INFO root fetch - main [MainThread]: End processing [lol-voice]: success
+[2024-05-04 13:43:57] INFO root fetch - processPackages [diwork]: Remove: archive file [/home/abi/fetcher/tmp/diwork-1.0.0.tar.gz]
+[2024-05-04 13:43:57] INFO root fetch - processPackages [diwork]: Remove: archive file [/home/abi/fetcher/tmp/diwork-1.1.0.tar.gz]
+[2024-05-04 13:43:57] INFO root fetch - main [MainThread]: End processing [diwork]: success
+[2024-05-04 13:43:57] INFO root fetch - processPackages [netbox-contract]: Remove: archive file [/home/abi/fetcher/tmp/netbox-contract-2.0.8.tar.gz]
+[2024-05-04 13:43:57] INFO root fetch - processPackages [netbox-contract]: Remove: archive file [/home/abi/fetcher/tmp/netbox-contract-2.0.9.tar.gz]
+[2024-05-04 13:43:57] INFO root fetch - main [MainThread]: End processing [netbox-contract]: success
+[2024-05-04 13:43:57] INFO root fetch - main [MainThread]: Store serial: [23057763]
