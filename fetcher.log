@@ -13447,3 +13447,34 @@
 [2024-05-04 13:20:09] INFO root fetch - processPackages [dsptoolbox]: Remove: archive file [/home/abi/fetcher/tmp/dsptoolbox-0.3.7-py3-none-any.whl.zip]
 [2024-05-04 13:20:09] INFO root fetch - main [MainThread]: End processing [dsptoolbox]: success
 [2024-05-04 13:20:09] INFO root fetch - main [MainThread]: Store serial: [23057670]
+[2024-05-04 13:22:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057670]
+[2024-05-04 13:22:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 13:22:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-xe
+[2024-05-04 13:22:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: acmecse-test
+[2024-05-04 13:22:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: exciton
+[2024-05-04 13:22:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-core-xe-21
+[2024-05-04 13:22:18] INFO root fetch - processPackages [acmecse-test]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-05-04 13:22:18] INFO root fetch - processPackages [acmecse-test]: Downloading https://files.pythonhosted.org/packages/83/c7/8079f1a0ff34e30ee02bc2b22b749824103789dd73e1354f4f728e7f6686/acmecse_test-2024.4.8-py3-none-any.whl
+[2024-05-04 13:22:18] INFO root fetch - processPackages [exciton]: New version: [2.5.5] Old Version: [2.5.3]
+[2024-05-04 13:22:18] INFO root fetch - processPackages [bigdl-core-xe]: New version: [2.5.0b20240504] Old Version: [2.5.0b20240503]
+[2024-05-04 13:22:18] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240504] Old Version: [2.5.0b20240503]
+[2024-05-04 13:22:18] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/0b/56/41df22f5177221d6dfe9f5c29c8da9fea1bc92e1553e6b1cb9d58eb740df/exciton-2.5.3-py3-none-any.whl
+[2024-05-04 13:22:18] INFO root fetch - processPackages [bigdl-core-xe]: Downloading https://files.pythonhosted.org/packages/f2/e6/b9a3fe36313f58eeff12de3fef84e5d70418b72824eab2da28be225064da/bigdl_core_xe-2.5.0b20240503-cp39-cp39-manylinux2010_x86_64.whl
+[2024-05-04 13:22:18] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/0f/62/91d5a03a990bcce2be51be44b841fd17dc0b5d35ad15c1e93733bf6e6e87/bigdl_core_xe_21-2.5.0b20240503-cp39-cp39-win_amd64.whl
+[2024-05-04 13:22:18] WARNING root fetch - processPackages [bigdl-core-xe]: Skipping package: exceeds size limit 105668127>=10485760
+[2024-05-04 13:22:18] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe] error
+[2024-05-04 13:22:18] INFO root fetch - processPackages [acmecse-test]: Downloading https://files.pythonhosted.org/packages/98/16/773da797873f8244cf7d50979913aea9c6125ce94e470fa94154f776bbc5/acmecse_test-2024.4.9-py3-none-any.whl
+[2024-05-04 13:22:18] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 28998868>=10485760
+[2024-05-04 13:22:18] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-05-04 13:22:18] INFO root fetch - processPackages [acmecse-test]: executing diffoscope
+[2024-05-04 13:22:18] INFO root fetch - processPackages [acmecse-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acmecse_test-2024.4.8-py3-none-any.whl.zip tmp/acmecse_test-2024.4.9-py3-none-any.whl.zip --markdown 20240504/a/acmecse-test/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-05-04 13:22:18] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/31/30/4b0fe29a20b5f9b19e7ddda8d2cf563817ef11aa1f04b95366c8f667b52a/exciton-2.5.5-py3-none-any.whl
+[2024-05-04 13:22:19] INFO root fetch - processPackages [exciton]: executing diffoscope
+[2024-05-04 13:22:19] INFO root fetch - processPackages [exciton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exciton-2.5.3-py3-none-any.whl.zip tmp/exciton-2.5.5-py3-none-any.whl.zip --markdown 20240504/e/exciton/2.5.3-2.5.5/README.md --exclude *.pyd
+[2024-05-04 13:22:19] INFO root fetch - processPackages [acmecse-test]: Remove: archive file [/home/abi/fetcher/tmp/acmecse_test-2024.4.8-py3-none-any.whl.zip]
+[2024-05-04 13:22:19] INFO root fetch - processPackages [acmecse-test]: Remove: archive file [/home/abi/fetcher/tmp/acmecse_test-2024.4.9-py3-none-any.whl.zip]
+[2024-05-04 13:22:19] INFO root fetch - main [MainThread]: End processing [acmecse-test]: success
+[2024-05-04 13:22:19] INFO root fetch - processPackages [exciton]: Remove: archive file [/home/abi/fetcher/tmp/exciton-2.5.3-py3-none-any.whl.zip]
+[2024-05-04 13:22:19] INFO root fetch - processPackages [exciton]: Remove: archive file [/home/abi/fetcher/tmp/exciton-2.5.5-py3-none-any.whl.zip]
+[2024-05-04 13:22:19] INFO root fetch - main [MainThread]: End processing [exciton]: success
+[2024-05-04 13:22:19] INFO root fetch - main [MainThread]: Store serial: [23057679]
