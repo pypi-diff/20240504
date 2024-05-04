@@ -11465,3 +11465,15 @@
 [2024-05-04 10:06:28] WARNING root fetch - processPackages [deepstack-ai]: Skipping, unable to determine old version
 [2024-05-04 10:06:28] INFO root fetch - main [MainThread]: End processing [deepstack-ai] error
 [2024-05-04 10:06:28] INFO root fetch - main [MainThread]: Store serial: [23056725]
+[2024-05-04 10:08:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056725]
+[2024-05-04 10:08:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 10:08:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyglove
+[2024-05-04 10:08:37] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240503] Old Version: [0.4.5.dev20240502]
+[2024-05-04 10:08:37] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/e2/13/63681c8214ad4f755356cbf0d2abdeb06c48057a9bc61944c8cd82759111/pyglove-0.4.5.dev20240502.tar.gz
+[2024-05-04 10:08:37] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/80/d2/b441e6410cc7282ce0786530d3233331bd1ce2a8d07bc4dc973aa0414876/pyglove-0.4.5.dev20240503.tar.gz
+[2024-05-04 10:08:38] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-05-04 10:08:38] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240502.tar.gz tmp/pyglove-0.4.5.dev20240503.tar.gz --markdown 20240504/p/pyglove/0.4.5.dev20240502-0.4.5.dev20240503/README.md --exclude *.pyd
+[2024-05-04 10:08:39] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240502.tar.gz]
+[2024-05-04 10:08:39] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240503.tar.gz]
+[2024-05-04 10:08:39] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-05-04 10:08:39] INFO root fetch - main [MainThread]: Store serial: [23056730]
