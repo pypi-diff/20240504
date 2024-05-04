@@ -19247,3 +19247,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:12:53] INFO root fetch - processPackages [psp-liquids-daq-parser]: Remove: archive file [/home/abi/fetcher/tmp/psp_liquids_daq_parser-0.0.9.tar.gz]
 [2024-05-04 21:12:53] INFO root fetch - main [MainThread]: End processing [psp-liquids-daq-parser]: success
 [2024-05-04 21:12:53] INFO root fetch - main [MainThread]: Store serial: [23060392]
+[2024-05-04 21:14:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060392]
+[2024-05-04 21:15:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 21:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: regional-mom6
+[2024-05-04 21:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sonatoki
+[2024-05-04 21:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: specsy
+[2024-05-04 21:15:02] INFO root fetch - processPackages [sonatoki]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 21:15:02] INFO root fetch - processPackages [sonatoki]: Downloading https://files.pythonhosted.org/packages/ae/95/059af5dfcf7c7659b53d4e45106bfdc54071961e23d869eb857a5f855bfd/sonatoki-0.1.0.tar.gz
+[2024-05-04 21:15:02] INFO root fetch - processPackages [regional-mom6]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-04 21:15:02] INFO root fetch - processPackages [specsy]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-04 21:15:02] INFO root fetch - processPackages [regional-mom6]: Downloading https://files.pythonhosted.org/packages/c6/6a/52dbac4c89bf2b92224b957e4d422ee8288d31c33829a15ac8104f4262cf/regional_mom6-0.5.1.tar.gz
+[2024-05-04 21:15:02] INFO root fetch - processPackages [specsy]: Downloading https://files.pythonhosted.org/packages/54/4b/ccb6ed3d585224d2f33ca2da891d52281ea8b2acbe8de53d7122cbd47156/specsy-0.2.2.tar.gz
+[2024-05-04 21:15:02] INFO root fetch - processPackages [sonatoki]: Downloading https://files.pythonhosted.org/packages/24/42/45fdb84e46e70f119ba9cdbadaf5dcb8ccd9c1d4e13caa75020084309c37/sonatoki-0.1.1.tar.gz
+[2024-05-04 21:15:02] INFO root fetch - processPackages [sonatoki]: executing diffoscope
+[2024-05-04 21:15:02] INFO root fetch - processPackages [sonatoki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sonatoki-0.1.0.tar.gz tmp/sonatoki-0.1.1.tar.gz --markdown 20240504/s/sonatoki/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 21:15:03] INFO root fetch - processPackages [regional-mom6]: Downloading https://files.pythonhosted.org/packages/50/e1/34acaf42927b4607cf75fe69f89cbef4aca1af172be86cf53a96efbe6926/regional_mom6-0.5.2.tar.gz
+[2024-05-04 21:15:03] INFO root fetch - processPackages [specsy]: Downloading https://files.pythonhosted.org/packages/8c/32/cdc923db18c92b605e62466e5dec9c5931f9bbf0201b8155f8deba2d229c/specsy-0.2.3.tar.gz
+[2024-05-04 21:15:03] INFO root fetch - processPackages [regional-mom6]: executing diffoscope
+[2024-05-04 21:15:03] INFO root fetch - processPackages [regional-mom6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regional_mom6-0.5.1.tar.gz tmp/regional_mom6-0.5.2.tar.gz --markdown 20240504/r/regional-mom6/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-04 21:15:03] INFO root fetch - processPackages [specsy]: executing diffoscope
+[2024-05-04 21:15:03] INFO root fetch - processPackages [specsy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/specsy-0.2.2.tar.gz tmp/specsy-0.2.3.tar.gz --markdown 20240504/s/specsy/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-04 21:15:03] INFO root fetch - processPackages [sonatoki]: Remove: archive file [/home/abi/fetcher/tmp/sonatoki-0.1.0.tar.gz]
+[2024-05-04 21:15:03] INFO root fetch - processPackages [sonatoki]: Remove: archive file [/home/abi/fetcher/tmp/sonatoki-0.1.1.tar.gz]
+[2024-05-04 21:15:03] INFO root fetch - main [MainThread]: End processing [sonatoki]: success
+[2024-05-04 21:15:03] INFO root fetch - processPackages [regional-mom6]: Remove: archive file [/home/abi/fetcher/tmp/regional_mom6-0.5.1.tar.gz]
+[2024-05-04 21:15:03] INFO root fetch - processPackages [regional-mom6]: Remove: archive file [/home/abi/fetcher/tmp/regional_mom6-0.5.2.tar.gz]
+[2024-05-04 21:15:03] INFO root fetch - main [MainThread]: End processing [regional-mom6]: success
+[2024-05-04 21:15:03] INFO root fetch - processPackages [specsy]: Remove: archive file [/home/abi/fetcher/tmp/specsy-0.2.2.tar.gz]
+[2024-05-04 21:15:03] INFO root fetch - processPackages [specsy]: Remove: archive file [/home/abi/fetcher/tmp/specsy-0.2.3.tar.gz]
+[2024-05-04 21:15:03] INFO root fetch - main [MainThread]: End processing [specsy]: success
+[2024-05-04 21:15:03] INFO root fetch - main [MainThread]: Store serial: [23060401]
