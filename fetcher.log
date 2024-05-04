@@ -9834,3 +9834,33 @@
 [2024-05-04 07:32:28] INFO root fetch - processPackages [helios-client]: Remove: archive file [/home/abi/fetcher/tmp/helios-client-0.4.20240503.post1.tar.gz]
 [2024-05-04 07:32:28] INFO root fetch - main [MainThread]: End processing [helios-client]: success
 [2024-05-04 07:32:28] INFO root fetch - main [MainThread]: Store serial: [23055916]
+[2024-05-04 07:34:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055916]
+[2024-05-04 07:34:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 07:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-runtime-nightly
+[2024-05-04 07:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: escaper-lite
+[2024-05-04 07:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: albumentations
+[2024-05-04 07:34:37] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.17.0.dev20240502] Old Version: [2.17.0.dev20240501]
+[2024-05-04 07:34:37] INFO root fetch - processPackages [escaper-lite]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-04 07:34:37] INFO root fetch - processPackages [albumentations]: New version: [1.4.6] Old Version: [1.4.4]
+[2024-05-04 07:34:37] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/fa/a6/a09cf06119244891cac020661c575cb37769ee800960da4969f794034d44/tflite_runtime_nightly-2.17.0.dev20240501-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-05-04 07:34:37] INFO root fetch - processPackages [escaper-lite]: Downloading https://files.pythonhosted.org/packages/ff/84/b19366ffe128cf28325a624031ca2a5e26d5ba18a03e31ee4ee7fad2be34/escaper_lite-0.0.9-py3-none-any.whl
+[2024-05-04 07:34:37] INFO root fetch - processPackages [albumentations]: Downloading https://files.pythonhosted.org/packages/28/d1/71ce412e010dc940966ce2adc7a998ae3c67d98ea9974565f100cdd0a2e5/albumentations-1.4.4.tar.gz
+[2024-05-04 07:34:37] INFO root fetch - processPackages [escaper-lite]: Downloading https://files.pythonhosted.org/packages/02/52/30bab06b1eea56588a45e8cff2aa343c6f7899e1c6fbba45768ddc5ee8a9/escaper_lite-0.1.0-py3-none-any.whl
+[2024-05-04 07:34:37] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/c1/77/210ea6ed5cb70ae5e320a39629aea9cbb0e10c016efc103c8d54b467827c/tflite_runtime_nightly-2.17.0.dev20240502-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-05-04 07:34:37] INFO root fetch - processPackages [albumentations]: Downloading https://files.pythonhosted.org/packages/94/9a/950e11bf9b7b2b7e513595f7f74cf97c4a788a4b5a6a76ff8f94184b5a2a/albumentations-1.4.6.tar.gz
+[2024-05-04 07:34:38] INFO root fetch - processPackages [albumentations]: executing diffoscope
+[2024-05-04 07:34:38] INFO root fetch - processPackages [albumentations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/albumentations-1.4.4.tar.gz tmp/albumentations-1.4.6.tar.gz --markdown 20240504/a/albumentations/1.4.4-1.4.6/README.md --exclude *.pyd
+[2024-05-04 07:34:38] INFO root fetch - processPackages [escaper-lite]: executing diffoscope
+[2024-05-04 07:34:38] INFO root fetch - processPackages [escaper-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/escaper_lite-0.0.9-py3-none-any.whl.zip tmp/escaper_lite-0.1.0-py3-none-any.whl.zip --markdown 20240504/e/escaper-lite/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-04 07:34:38] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2024-05-04 07:34:38] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.17.0.dev20240501-cp39-cp39-manylinux_2_34_armv7l.whl.zip tmp/tflite_runtime_nightly-2.17.0.dev20240502-cp39-cp39-manylinux_2_34_armv7l.whl.zip --markdown 20240504/t/tflite-runtime-nightly/2.17.0.dev20240501-2.17.0.dev20240502/README.md --exclude *.pyd
+[2024-05-04 07:34:38] INFO root fetch - processPackages [escaper-lite]: Remove: archive file [/home/abi/fetcher/tmp/escaper_lite-0.0.9-py3-none-any.whl.zip]
+[2024-05-04 07:34:38] INFO root fetch - processPackages [escaper-lite]: Remove: archive file [/home/abi/fetcher/tmp/escaper_lite-0.1.0-py3-none-any.whl.zip]
+[2024-05-04 07:34:38] INFO root fetch - main [MainThread]: End processing [escaper-lite]: success
+[2024-05-04 07:34:39] INFO root fetch - processPackages [albumentations]: Remove: archive file [/home/abi/fetcher/tmp/albumentations-1.4.4.tar.gz]
+[2024-05-04 07:34:39] INFO root fetch - processPackages [albumentations]: Remove: archive file [/home/abi/fetcher/tmp/albumentations-1.4.6.tar.gz]
+[2024-05-04 07:34:39] INFO root fetch - main [MainThread]: End processing [albumentations]: success
+[2024-05-04 07:35:01] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240501-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-05-04 07:35:01] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240502-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-05-04 07:35:01] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2024-05-04 07:35:01] INFO root fetch - main [MainThread]: Store serial: [23055931]
