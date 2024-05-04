@@ -15584,3 +15584,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:38:10] INFO root fetch - processPackages [ipfabric-snow]: Remove: archive file [/home/abi/fetcher/tmp/ipfabric_snow-0.1.0b3.tar.gz]
 [2024-05-04 16:38:10] INFO root fetch - main [MainThread]: End processing [ipfabric-snow]: success
 [2024-05-04 16:38:10] INFO root fetch - main [MainThread]: Store serial: [23058537]
+[2024-05-04 16:40:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058537]
+[2024-05-04 16:40:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 16:40:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: khoj-assistant
+[2024-05-04 16:40:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: super-rubik-cube
+[2024-05-04 16:40:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Test19991021
+[2024-05-04 16:40:19] INFO root fetch - processPackages [Test19991021]: New version: [2.4.0] Old Version: [1.4.0]
+[2024-05-04 16:40:19] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-05-04 16:40:19] INFO root fetch - processPackages [Test19991021]: Downloading https://files.pythonhosted.org/packages/7a/c6/9a812a015c6fe48c2f1c4deca0d58029cedf23bfe2d8853e038321f6e137/Test19991021-1.4.0.tar.gz
+[2024-05-04 16:40:19] WARNING root fetch - processPackages [super-rubik-cube]: Skipping, unable to determine old version
+[2024-05-04 16:40:19] INFO root fetch - main [MainThread]: End processing [super-rubik-cube] error
+[2024-05-04 16:40:19] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-05-04 16:40:19] INFO root fetch - processPackages [Test19991021]: Downloading https://files.pythonhosted.org/packages/b9/87/badf78f5661a9fd8c00383f21c90cc066e6008ff9cca8232d2f7578d1c2e/Test19991021-2.4.0.tar.gz
+[2024-05-04 16:40:19] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-05-04 16:40:19] INFO root fetch - processPackages [Test19991021]: executing diffoscope
+[2024-05-04 16:40:19] INFO root fetch - processPackages [Test19991021]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Test19991021-1.4.0.tar.gz tmp/Test19991021-2.4.0.tar.gz --markdown 20240504/T/Test19991021/1.4.0-2.4.0/README.md --exclude *.pyd
+[2024-05-04 16:40:19] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-05-04 16:40:19] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240504/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-04 16:40:20] INFO root fetch - processPackages [Test19991021]: Remove: archive file [/home/abi/fetcher/tmp/Test19991021-1.4.0.tar.gz]
+[2024-05-04 16:40:20] INFO root fetch - processPackages [Test19991021]: Remove: archive file [/home/abi/fetcher/tmp/Test19991021-2.4.0.tar.gz]
+[2024-05-04 16:40:20] INFO root fetch - main [MainThread]: End processing [Test19991021]: success
+[2024-05-04 16:40:21] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-05-04 16:40:21] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-05-04 16:40:21] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-05-04 16:40:21] INFO root fetch - main [MainThread]: Store serial: [23058548]
