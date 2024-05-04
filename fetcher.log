@@ -15441,3 +15441,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:20:53] INFO root fetch - processPackages [notional]: Remove: archive file [/home/abi/fetcher/tmp/notional-0.8.2.tar.gz]
 [2024-05-04 16:20:53] INFO root fetch - main [MainThread]: End processing [notional]: success
 [2024-05-04 16:20:53] INFO root fetch - main [MainThread]: Store serial: [23058494]
+[2024-05-04 16:22:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058494]
+[2024-05-04 16:23:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 16:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Test19991021
+[2024-05-04 16:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-any2text-parser
+[2024-05-04 16:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ezfs
+[2024-05-04 16:23:02] INFO root fetch - processPackages [Test19991021]: New version: [0.3.0] Old Version: [0.1.0]
+[2024-05-04 16:23:02] INFO root fetch - processPackages [py-any2text-parser]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 16:23:02] INFO root fetch - processPackages [Test19991021]: Downloading https://files.pythonhosted.org/packages/7d/0c/65d2a76bbe9e1b193455adf5eb44d1c6c3ddf6a9097aae0e468708dd89dc/Test19991021-0.1.0.tar.gz
+[2024-05-04 16:23:02] INFO root fetch - processPackages [ezfs]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-04 16:23:02] INFO root fetch - processPackages [py-any2text-parser]: Downloading https://files.pythonhosted.org/packages/23/4e/72fc7fe446db1d2602d725160ebf6d626a8a9b115d6f90838db38b3b8389/py_any2text_parser-1.0.0.tar.gz
+[2024-05-04 16:23:02] INFO root fetch - processPackages [ezfs]: Downloading https://files.pythonhosted.org/packages/fc/ac/23d6b19c31628799c5e86021bfb5369deb95fa3078044c928bf1af6abcc9/ezfs-1.0.1.tar.gz
+[2024-05-04 16:23:02] INFO root fetch - processPackages [Test19991021]: Downloading https://files.pythonhosted.org/packages/41/0b/e14ad022b073d2fa91a3f9b7c11bb5c4f59579f65bee0328dd955b164331/Test19991021-0.3.0-py3-none-any.whl
+[2024-05-04 16:23:02] INFO root fetch - processPackages [py-any2text-parser]: Downloading https://files.pythonhosted.org/packages/1d/46/26b65b3133bab1a8d0ef63669f6bb8ef7ee01cb9803e878385080fd85620/py_any2text_parser-1.0.1.tar.gz
+[2024-05-04 16:23:02] INFO root fetch - processPackages [Test19991021]: executing diffoscope
+[2024-05-04 16:23:02] INFO root fetch - processPackages [Test19991021]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Test19991021-0.1.0.tar.gz tmp/Test19991021-0.3.0-py3-none-any.whl.zip --markdown 20240504/T/Test19991021/0.1.0-0.3.0/README.md --exclude *.pyd
+[2024-05-04 16:23:02] INFO root fetch - processPackages [py-any2text-parser]: executing diffoscope
+[2024-05-04 16:23:02] INFO root fetch - processPackages [py-any2text-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_any2text_parser-1.0.0.tar.gz tmp/py_any2text_parser-1.0.1.tar.gz --markdown 20240504/p/py-any2text-parser/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 16:23:02] INFO root fetch - processPackages [ezfs]: Downloading https://files.pythonhosted.org/packages/48/57/597aa08a7c06eb45b3b2a7a5578b2d5f1a4cbb19333d039dce509bfe6d08/ezfs-1.0.2.tar.gz
+[2024-05-04 16:23:02] INFO root fetch - processPackages [ezfs]: executing diffoscope
+[2024-05-04 16:23:02] INFO root fetch - processPackages [ezfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezfs-1.0.1.tar.gz tmp/ezfs-1.0.2.tar.gz --markdown 20240504/e/ezfs/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-04 16:23:03] INFO root fetch - processPackages [Test19991021]: Remove: archive file [/home/abi/fetcher/tmp/Test19991021-0.1.0.tar.gz]
+[2024-05-04 16:23:03] INFO root fetch - processPackages [Test19991021]: Remove: archive file [/home/abi/fetcher/tmp/Test19991021-0.3.0-py3-none-any.whl.zip]
+[2024-05-04 16:23:03] INFO root fetch - main [MainThread]: End processing [Test19991021]: success
+[2024-05-04 16:23:03] INFO root fetch - processPackages [py-any2text-parser]: Remove: archive file [/home/abi/fetcher/tmp/py_any2text_parser-1.0.0.tar.gz]
+[2024-05-04 16:23:03] INFO root fetch - processPackages [py-any2text-parser]: Remove: archive file [/home/abi/fetcher/tmp/py_any2text_parser-1.0.1.tar.gz]
+[2024-05-04 16:23:03] INFO root fetch - main [MainThread]: End processing [py-any2text-parser]: success
+[2024-05-04 16:23:03] INFO root fetch - processPackages [ezfs]: Remove: archive file [/home/abi/fetcher/tmp/ezfs-1.0.1.tar.gz]
+[2024-05-04 16:23:03] INFO root fetch - processPackages [ezfs]: Remove: archive file [/home/abi/fetcher/tmp/ezfs-1.0.2.tar.gz]
+[2024-05-04 16:23:03] INFO root fetch - main [MainThread]: End processing [ezfs]: success
+[2024-05-04 16:23:03] INFO root fetch - main [MainThread]: Store serial: [23058503]
