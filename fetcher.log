@@ -7469,3 +7469,20 @@
 [2024-05-04 04:27:22] INFO root fetch - processPackages [music-assistant-frontend]: Remove: archive file [/home/abi/fetcher/tmp/music-assistant-frontend-2.5.0.tar.gz]
 [2024-05-04 04:27:22] INFO root fetch - main [MainThread]: End processing [music-assistant-frontend]: success
 [2024-05-04 04:27:22] INFO root fetch - main [MainThread]: Store serial: [23054850]
+[2024-05-04 04:29:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054850]
+[2024-05-04 04:29:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 04:29:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gravitino
+[2024-05-04 04:29:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: music-assistant
+[2024-05-04 04:29:41] INFO root fetch - processPackages [gravitino]: New version: [0.5.0.dev3] Old Version: [0.5.0.dev2]
+[2024-05-04 04:29:41] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/44/34/55f075efd5aa7669f0100aae0de56376b474926023f7253b695d7f5abdfe/gravitino-0.5.0.dev2.tar.gz
+[2024-05-04 04:29:41] INFO root fetch - processPackages [music-assistant]: New version: [2.0.0b144] Old Version: [2.0.0b143]
+[2024-05-04 04:29:41] INFO root fetch - processPackages [music-assistant]: Downloading https://files.pythonhosted.org/packages/0d/f7/8bce98ecfe424f51c163a9a7f090396a1248238ba519d16a7e6eda25749b/music_assistant-2.0.0b143.tar.gz
+[2024-05-04 04:29:41] WARNING root fetch - processPackages [music-assistant]: Skipping package: exceeds size limit 16936237>=10485760
+[2024-05-04 04:29:41] INFO root fetch - main [MainThread]: End processing [music-assistant] error
+[2024-05-04 04:29:41] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/d6/89/e83c35547cdfedeaaafa9ed001b772e2a5f411288cc8b580b7993721a626/gravitino-0.5.0.dev3.tar.gz
+[2024-05-04 04:29:42] INFO root fetch - processPackages [gravitino]: executing diffoscope
+[2024-05-04 04:29:42] INFO root fetch - processPackages [gravitino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitino-0.5.0.dev2.tar.gz tmp/gravitino-0.5.0.dev3.tar.gz --markdown 20240504/g/gravitino/0.5.0.dev2-0.5.0.dev3/README.md --exclude *.pyd
+[2024-05-04 04:29:42] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev2.tar.gz]
+[2024-05-04 04:29:42] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev3.tar.gz]
+[2024-05-04 04:29:42] INFO root fetch - main [MainThread]: End processing [gravitino]: success
+[2024-05-04 04:29:42] INFO root fetch - main [MainThread]: Store serial: [23054861]
