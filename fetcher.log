@@ -15620,3 +15620,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:42:31] INFO root fetch - processPackages [pytzen]: Remove: archive file [/home/abi/fetcher/tmp/pytzen-1.0.6.tar.gz]
 [2024-05-04 16:42:31] INFO root fetch - main [MainThread]: End processing [pytzen]: success
 [2024-05-04 16:42:31] INFO root fetch - main [MainThread]: Store serial: [23058551]
+[2024-05-04 16:44:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058551]
+[2024-05-04 16:44:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 16:44:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lm-format-enforcer
+[2024-05-04 16:44:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pynanovna
+[2024-05-04 16:44:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anstrip
+[2024-05-04 16:44:40] INFO root fetch - processPackages [pynanovna]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-04 16:44:40] INFO root fetch - processPackages [anstrip]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-04 16:44:40] INFO root fetch - processPackages [lm-format-enforcer]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-04 16:44:40] INFO root fetch - processPackages [pynanovna]: Downloading https://files.pythonhosted.org/packages/13/04/4316af501197fb1e12dbc5960285f6b3d3d3e451e9d28af5369e7b23a034/pynanovna-0.0.4.tar.gz
+[2024-05-04 16:44:40] INFO root fetch - processPackages [lm-format-enforcer]: Downloading https://files.pythonhosted.org/packages/8a/bd/01f4485f47e3636e57dfee24bad759773231042a69db930b15d968682315/lm_format_enforcer-0.9.8.tar.gz
+[2024-05-04 16:44:40] INFO root fetch - processPackages [anstrip]: Downloading https://files.pythonhosted.org/packages/0f/d2/e614bc5c54c346505a14c0009aac76f44ccfc8a06773ed8fbd32cf44c5d1/anstrip-0.2.1.tar.gz
+[2024-05-04 16:44:41] INFO root fetch - processPackages [pynanovna]: Downloading https://files.pythonhosted.org/packages/71/67/88ed7a3096e9b397b76e43b2665004078bf37447a456824793a41cad212c/pynanovna-0.0.5.tar.gz
+[2024-05-04 16:44:41] INFO root fetch - processPackages [lm-format-enforcer]: Downloading https://files.pythonhosted.org/packages/2a/94/8833d38190a2393888e5f6682b3abf17a9fd32ec22d8a967c1e511b16c5a/lm_format_enforcer-0.9.9.tar.gz
+[2024-05-04 16:44:41] INFO root fetch - processPackages [anstrip]: Downloading https://files.pythonhosted.org/packages/ca/46/6793b9564f5132cae98d9bfef46f73f3b5f160265d1c9aeea84726af3365/anstrip-0.2.2.tar.gz
+[2024-05-04 16:44:41] INFO root fetch - processPackages [pynanovna]: executing diffoscope
+[2024-05-04 16:44:41] INFO root fetch - processPackages [pynanovna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynanovna-0.0.4.tar.gz tmp/pynanovna-0.0.5.tar.gz --markdown 20240504/p/pynanovna/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-04 16:44:41] INFO root fetch - processPackages [lm-format-enforcer]: executing diffoscope
+[2024-05-04 16:44:41] INFO root fetch - processPackages [lm-format-enforcer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lm_format_enforcer-0.9.8.tar.gz tmp/lm_format_enforcer-0.9.9.tar.gz --markdown 20240504/l/lm-format-enforcer/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-04 16:44:41] INFO root fetch - processPackages [anstrip]: executing diffoscope
+[2024-05-04 16:44:41] INFO root fetch - processPackages [anstrip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anstrip-0.2.1.tar.gz tmp/anstrip-0.2.2.tar.gz --markdown 20240504/a/anstrip/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-04 16:44:41] INFO root fetch - processPackages [lm-format-enforcer]: Remove: archive file [/home/abi/fetcher/tmp/lm_format_enforcer-0.9.8.tar.gz]
+[2024-05-04 16:44:41] INFO root fetch - processPackages [lm-format-enforcer]: Remove: archive file [/home/abi/fetcher/tmp/lm_format_enforcer-0.9.9.tar.gz]
+[2024-05-04 16:44:41] INFO root fetch - main [MainThread]: End processing [lm-format-enforcer]: success
+[2024-05-04 16:44:41] INFO root fetch - processPackages [pynanovna]: Remove: archive file [/home/abi/fetcher/tmp/pynanovna-0.0.4.tar.gz]
+[2024-05-04 16:44:41] INFO root fetch - processPackages [pynanovna]: Remove: archive file [/home/abi/fetcher/tmp/pynanovna-0.0.5.tar.gz]
+[2024-05-04 16:44:41] INFO root fetch - main [MainThread]: End processing [pynanovna]: success
+[2024-05-04 16:44:41] INFO root fetch - processPackages [anstrip]: Remove: archive file [/home/abi/fetcher/tmp/anstrip-0.2.1.tar.gz]
+[2024-05-04 16:44:41] INFO root fetch - processPackages [anstrip]: Remove: archive file [/home/abi/fetcher/tmp/anstrip-0.2.2.tar.gz]
+[2024-05-04 16:44:41] INFO root fetch - main [MainThread]: End processing [anstrip]: success
+[2024-05-04 16:44:41] INFO root fetch - main [MainThread]: Store serial: [23058561]
