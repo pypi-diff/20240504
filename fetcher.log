@@ -12898,3 +12898,18 @@
 [2024-05-04 12:30:05] INFO root fetch - processPackages [pynbody]: Remove: archive file [/home/abi/fetcher/tmp/pynbody-2.0.0b8.tar.gz]
 [2024-05-04 12:30:05] INFO root fetch - main [MainThread]: End processing [pynbody]: success
 [2024-05-04 12:30:05] INFO root fetch - main [MainThread]: Store serial: [23057479]
+[2024-05-04 12:32:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057479]
+[2024-05-04 12:32:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 12:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiolm-superfeel
+[2024-05-04 12:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: batisx
+[2024-05-04 12:32:14] WARNING root fetch - processPackages [batisx]: Skipping, unable to determine old version
+[2024-05-04 12:32:14] INFO root fetch - processPackages [audiolm-superfeel]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-04 12:32:14] INFO root fetch - main [MainThread]: End processing [batisx] error
+[2024-05-04 12:32:14] INFO root fetch - processPackages [audiolm-superfeel]: Downloading https://files.pythonhosted.org/packages/b0/42/3e3b506fca7b1399d0721a72f23b0e2802bfe059edefbbf78ae0739a66e2/audiolm_superfeel-2.0.8.tar.gz
+[2024-05-04 12:32:15] INFO root fetch - processPackages [audiolm-superfeel]: Downloading https://files.pythonhosted.org/packages/87/aa/12f892c612ca9acbade4f49ad07c5da6e3c25339b07affcc7c0e52b5280a/audiolm_superfeel-2.0.9.tar.gz
+[2024-05-04 12:32:15] INFO root fetch - processPackages [audiolm-superfeel]: executing diffoscope
+[2024-05-04 12:32:15] INFO root fetch - processPackages [audiolm-superfeel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiolm_superfeel-2.0.8.tar.gz tmp/audiolm_superfeel-2.0.9.tar.gz --markdown 20240504/a/audiolm-superfeel/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-04 12:32:15] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.0.8.tar.gz]
+[2024-05-04 12:32:15] INFO root fetch - processPackages [audiolm-superfeel]: Remove: archive file [/home/abi/fetcher/tmp/audiolm_superfeel-2.0.9.tar.gz]
+[2024-05-04 12:32:15] INFO root fetch - main [MainThread]: End processing [audiolm-superfeel]: success
+[2024-05-04 12:32:15] INFO root fetch - main [MainThread]: Store serial: [23057484]
