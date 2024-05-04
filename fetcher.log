@@ -16112,3 +16112,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:25:14] INFO root fetch - processPackages [requake]: Remove: archive file [/home/abi/fetcher/tmp/requake-0.6.tar.gz]
 [2024-05-04 17:25:14] INFO root fetch - main [MainThread]: End processing [requake]: success
 [2024-05-04 17:25:14] INFO root fetch - main [MainThread]: Store serial: [23058873]
+[2024-05-04 17:27:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058873]
+[2024-05-04 17:27:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 17:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-static-wordpress
+[2024-05-04 17:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml4teens
+[2024-05-04 17:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whisperplus
+[2024-05-04 17:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iamlistening
+[2024-05-04 17:27:23] INFO root fetch - processPackages [whisperplus]: New version: [0.2.8.1] Old Version: [0.2.8]
+[2024-05-04 17:27:23] INFO root fetch - processPackages [whisperplus]: Downloading https://files.pythonhosted.org/packages/9a/49/42da8dc1dfaa872ba8d15a9a2f7786964130a99fd933dae9f35c17cae8f2/whisperplus-0.2.8.tar.gz
+[2024-05-04 17:27:23] INFO root fetch - processPackages [cdk-static-wordpress]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 17:27:23] INFO root fetch - processPackages [ml4teens]: New version: [0.1.38] Old Version: [0.1.37]
+[2024-05-04 17:27:23] INFO root fetch - processPackages [iamlistening]: New version: [5.1.9] Old Version: [5.1.8]
+[2024-05-04 17:27:23] INFO root fetch - processPackages [cdk-static-wordpress]: Downloading https://files.pythonhosted.org/packages/bb/be/d20322a6568a30a5861516b9a6f51c73a5d891fd8a4c8d6c2c51d153e31a/cdk-static-wordpress-0.1.8.tar.gz
+[2024-05-04 17:27:23] INFO root fetch - processPackages [ml4teens]: Downloading https://files.pythonhosted.org/packages/ae/0b/63027eeed308ffa65add41c223fa4c397bc6decf1e46e32e0adb676856ab/ml4teens-0.1.37.tar.gz
+[2024-05-04 17:27:23] INFO root fetch - processPackages [whisperplus]: Downloading https://files.pythonhosted.org/packages/0a/e0/694e685f11b131302ed805979ac86cfe1eedd9bb780820aa5afe702e0483/whisperplus-0.2.8.1.tar.gz
+[2024-05-04 17:27:23] WARNING root fetch - processPackages [ml4teens]: Skipping package: exceeds size limit 22454797>=10485760
+[2024-05-04 17:27:23] INFO root fetch - main [MainThread]: End processing [ml4teens] error
+[2024-05-04 17:27:23] INFO root fetch - processPackages [iamlistening]: Downloading https://files.pythonhosted.org/packages/07/a4/ba0689d7ba373ab01bee30148890982c66aebce125bf4cb4463c1279f1c8/iamlistening-5.1.8.tar.gz
+[2024-05-04 17:27:23] INFO root fetch - processPackages [whisperplus]: executing diffoscope
+[2024-05-04 17:27:23] INFO root fetch - processPackages [whisperplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisperplus-0.2.8.tar.gz tmp/whisperplus-0.2.8.1.tar.gz --markdown 20240504/w/whisperplus/0.2.8-0.2.8.1/README.md --exclude *.pyd
+[2024-05-04 17:27:24] INFO root fetch - processPackages [iamlistening]: Downloading https://files.pythonhosted.org/packages/1e/81/79876c2de874a7124601107f9019de809d107376866a30720062e102ab24/iamlistening-5.1.9.tar.gz
+[2024-05-04 17:27:24] INFO root fetch - processPackages [cdk-static-wordpress]: Downloading https://files.pythonhosted.org/packages/4c/f6/38d5e5ddf3370f56fb612ccbdf0c7b3a8aa587e85fd6eec51269f0e55a1c/cdk-static-wordpress-0.1.9.tar.gz
+[2024-05-04 17:27:24] INFO root fetch - processPackages [iamlistening]: executing diffoscope
+[2024-05-04 17:27:24] INFO root fetch - processPackages [iamlistening]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iamlistening-5.1.8.tar.gz tmp/iamlistening-5.1.9.tar.gz --markdown 20240504/i/iamlistening/5.1.8-5.1.9/README.md --exclude *.pyd
+[2024-05-04 17:27:24] INFO root fetch - processPackages [whisperplus]: Remove: archive file [/home/abi/fetcher/tmp/whisperplus-0.2.8.tar.gz]
+[2024-05-04 17:27:24] INFO root fetch - processPackages [whisperplus]: Remove: archive file [/home/abi/fetcher/tmp/whisperplus-0.2.8.1.tar.gz]
+[2024-05-04 17:27:24] INFO root fetch - main [MainThread]: End processing [whisperplus]: success
+[2024-05-04 17:27:24] INFO root fetch - processPackages [cdk-static-wordpress]: executing diffoscope
+[2024-05-04 17:27:24] INFO root fetch - processPackages [cdk-static-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-static-wordpress-0.1.8.tar.gz tmp/cdk-static-wordpress-0.1.9.tar.gz --markdown 20240504/c/cdk-static-wordpress/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 17:27:25] INFO root fetch - processPackages [iamlistening]: Remove: archive file [/home/abi/fetcher/tmp/iamlistening-5.1.8.tar.gz]
+[2024-05-04 17:27:25] INFO root fetch - processPackages [iamlistening]: Remove: archive file [/home/abi/fetcher/tmp/iamlistening-5.1.9.tar.gz]
+[2024-05-04 17:27:25] INFO root fetch - main [MainThread]: End processing [iamlistening]: success
+[2024-05-04 17:27:25] INFO root fetch - processPackages [cdk-static-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-static-wordpress-0.1.8.tar.gz]
+[2024-05-04 17:27:25] INFO root fetch - processPackages [cdk-static-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-static-wordpress-0.1.9.tar.gz]
+[2024-05-04 17:27:25] INFO root fetch - main [MainThread]: End processing [cdk-static-wordpress]: success
+[2024-05-04 17:27:25] INFO root fetch - main [MainThread]: Store serial: [23058885]
