@@ -8369,3 +8369,18 @@
 [2024-05-04 05:18:58] INFO root fetch - processPackages [huskypo]: Remove: archive file [/home/abi/fetcher/tmp/huskypo-1.0.1.tar.gz]
 [2024-05-04 05:18:58] INFO root fetch - main [MainThread]: End processing [huskypo]: success
 [2024-05-04 05:18:58] INFO root fetch - main [MainThread]: Store serial: [23055274]
+[2024-05-04 05:21:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055274]
+[2024-05-04 05:21:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 05:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlexecutorx
+[2024-05-04 05:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dreams-core
+[2024-05-04 05:21:18] INFO root fetch - processPackages [dreams-core]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-04 05:21:18] WARNING root fetch - processPackages [sqlexecutorx]: Skipping, unable to determine old version
+[2024-05-04 05:21:18] INFO root fetch - main [MainThread]: End processing [sqlexecutorx] error
+[2024-05-04 05:21:18] INFO root fetch - processPackages [dreams-core]: Downloading https://files.pythonhosted.org/packages/31/dd/2ddc40c1b6caf401e3e1558cb1968389ff2283ccec03f551744989884cde/dreams_core-0.0.4.tar.gz
+[2024-05-04 05:21:18] INFO root fetch - processPackages [dreams-core]: Downloading https://files.pythonhosted.org/packages/ea/d0/095c41f71b76bffa26122f3edfea1f3c4a42e00ffbb25d02705f38feee02/dreams_core-0.0.5.tar.gz
+[2024-05-04 05:21:18] INFO root fetch - processPackages [dreams-core]: executing diffoscope
+[2024-05-04 05:21:18] INFO root fetch - processPackages [dreams-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreams_core-0.0.4.tar.gz tmp/dreams_core-0.0.5.tar.gz --markdown 20240504/d/dreams-core/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-04 05:21:19] INFO root fetch - processPackages [dreams-core]: Remove: archive file [/home/abi/fetcher/tmp/dreams_core-0.0.4.tar.gz]
+[2024-05-04 05:21:19] INFO root fetch - processPackages [dreams-core]: Remove: archive file [/home/abi/fetcher/tmp/dreams_core-0.0.5.tar.gz]
+[2024-05-04 05:21:19] INFO root fetch - main [MainThread]: End processing [dreams-core]: success
+[2024-05-04 05:21:19] INFO root fetch - main [MainThread]: Store serial: [23055282]
