@@ -8770,3 +8770,25 @@
 [2024-05-04 05:54:06] WARNING root fetch - processPackages [deb-pack]: Skipping, unable to determine old version
 [2024-05-04 05:54:06] INFO root fetch - main [MainThread]: End processing [deb-pack] error
 [2024-05-04 05:54:06] INFO root fetch - main [MainThread]: Store serial: [23055424]
+[2024-05-04 05:56:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055424]
+[2024-05-04 05:56:28] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 05:58:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055425]
+[2024-05-04 05:58:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 05:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nucflag
+[2024-05-04 05:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prefref
+[2024-05-04 05:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdktf-cdktf-provider-aws
+[2024-05-04 05:58:33] ERROR root fetch - processPackages [nucflag]: Unable to get metadata: No such project 'nucflag'
+[2024-05-04 05:58:33] INFO root fetch - main [MainThread]: End processing [nucflag] error
+[2024-05-04 05:58:33] INFO root fetch - processPackages [prefref]: New version: [24.5.300] Old Version: [24.2.701]
+[2024-05-04 05:58:33] INFO root fetch - processPackages [prefref]: Downloading https://files.pythonhosted.org/packages/77/ea/51fbb6452e8d8c83a50ad904854890e2d711bfcae8b40b63650dfa700a0d/prefref-24.2.701.tar.gz
+[2024-05-04 05:58:33] INFO root fetch - processPackages [cdktf-cdktf-provider-aws]: New version: [9.0.9] Old Version: [9.0.8]
+[2024-05-04 05:58:34] INFO root fetch - processPackages [prefref]: Downloading https://files.pythonhosted.org/packages/cc/6f/efe140e017860d8ef346aa7207280b558670955e815d08f855271c00d124/prefref-24.5.300.tar.gz
+[2024-05-04 05:58:34] INFO root fetch - processPackages [cdktf-cdktf-provider-aws]: Downloading https://files.pythonhosted.org/packages/aa/2e/834bb9d56f903b34743b3b8d5766864ad4e2a039b6c88e65b6d835c946e4/cdktf-cdktf-provider-aws-9.0.8.tar.gz
+[2024-05-04 05:58:34] INFO root fetch - processPackages [prefref]: executing diffoscope
+[2024-05-04 05:58:34] INFO root fetch - processPackages [prefref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefref-24.2.701.tar.gz tmp/prefref-24.5.300.tar.gz --markdown 20240504/p/prefref/24.2.701-24.5.300/README.md --exclude *.pyd
+[2024-05-04 05:58:34] WARNING root fetch - processPackages [cdktf-cdktf-provider-aws]: Skipping package: exceeds size limit 23814479>=10485760
+[2024-05-04 05:58:34] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-aws] error
+[2024-05-04 05:58:34] INFO root fetch - processPackages [prefref]: Remove: archive file [/home/abi/fetcher/tmp/prefref-24.2.701.tar.gz]
+[2024-05-04 05:58:34] INFO root fetch - processPackages [prefref]: Remove: archive file [/home/abi/fetcher/tmp/prefref-24.5.300.tar.gz]
+[2024-05-04 05:58:34] INFO root fetch - main [MainThread]: End processing [prefref]: success
+[2024-05-04 05:58:34] INFO root fetch - main [MainThread]: Store serial: [23055436]
