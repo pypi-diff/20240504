@@ -21127,3 +21127,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:32:51] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.5.tar.gz]
 [2024-05-04 23:32:51] INFO root fetch - main [MainThread]: End processing [pysparkify]: success
 [2024-05-04 23:32:51] INFO root fetch - main [MainThread]: Store serial: [23061143]
+[2024-05-04 23:34:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061143]
+[2024-05-04 23:35:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 23:35:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-workshop
+[2024-05-04 23:35:00] INFO root fetch - processPackages [ovos-workshop]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2024-05-04 23:35:00] INFO root fetch - processPackages [ovos-workshop]: Downloading https://files.pythonhosted.org/packages/b6/ab/62ae7616b83875d5219bb580c1e6a2ff0fdbdc91c8a9b55495dd60066611/ovos_workshop-0.0.9-py3-none-any.whl
+[2024-05-04 23:35:01] INFO root fetch - processPackages [ovos-workshop]: Downloading https://files.pythonhosted.org/packages/78/03/4b813a66c30f57b7c996eda91cf259cb974ad9186f3ae1762c9384e34fc7/ovos_workshop-0.0.9a1-py3-none-any.whl
+[2024-05-04 23:35:01] INFO root fetch - processPackages [ovos-workshop]: executing diffoscope
+[2024-05-04 23:35:01] INFO root fetch - processPackages [ovos-workshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_workshop-0.0.9-py3-none-any.whl.zip tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip --markdown 20240504/o/ovos-workshop/0.0.9-0.0.9a1/README.md --exclude *.pyd
+[2024-05-04 23:35:01] INFO root fetch - processPackages [ovos-workshop]: Remove: archive file [/home/abi/fetcher/tmp/ovos_workshop-0.0.9-py3-none-any.whl.zip]
+[2024-05-04 23:35:01] INFO root fetch - processPackages [ovos-workshop]: Remove: archive file [/home/abi/fetcher/tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip]
+[2024-05-04 23:35:01] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
+[2024-05-04 23:35:01] INFO root fetch - main [MainThread]: Store serial: [23061152]
