@@ -2740,3 +2740,30 @@
 [2024-05-04 02:59:24] INFO root fetch - processPackages [tifffile]: Remove: archive file [/home/abi/fetcher/tmp/tifffile-2024.5.3.tar.gz]
 [2024-05-04 02:59:24] INFO root fetch - main [MainThread]: End processing [tifffile]: success
 [2024-05-04 02:59:24] INFO root fetch - main [MainThread]: Store serial: [23053182]
+[2024-05-04 03:01:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053182]
+[2024-05-04 03:01:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 03:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgegap-settings
+[2024-05-04 03:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycde
+[2024-05-04 03:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-none-objects
+[2024-05-04 03:01:33] INFO root fetch - processPackages [edgegap-settings]: New version: [1.6.0] Old Version: [1.5.5]
+[2024-05-04 03:01:33] INFO root fetch - processPackages [python-none-objects]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-04 03:01:33] INFO root fetch - processPackages [edgegap-settings]: Downloading https://files.pythonhosted.org/packages/92/99/baa09212010efe15af5ab2429c34df895d7a41130e005dcccf1b2dcc2bdd/edgegap_settings-1.5.5.tar.gz
+[2024-05-04 03:01:33] INFO root fetch - processPackages [python-none-objects]: Downloading https://files.pythonhosted.org/packages/8b/2b/bf2505791970b2b07ea65852888a6ad64981ec2ebe66cb2e3b76ff2ebb73/python_none_objects-1.1.8.tar.gz
+[2024-05-04 03:01:33] INFO root fetch - processPackages [pycde]: New version: [0.3.1.dev943] Old Version: [0.3.1.dev932]
+[2024-05-04 03:01:33] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/fa/b4/46e39f6900b4b7a4fa33889bab563c3fb11bff01fa0c26393eecc56ae7a4/pycde-0.3.1.dev932-cp39-cp39-win_amd64.whl
+[2024-05-04 03:01:34] INFO root fetch - processPackages [edgegap-settings]: Downloading https://files.pythonhosted.org/packages/e2/55/158c66dfec103189701685554d38b165c6501ff406c755b3788bb1d9a4c7/edgegap_settings-1.6.0.tar.gz
+[2024-05-04 03:01:34] INFO root fetch - processPackages [python-none-objects]: Downloading https://files.pythonhosted.org/packages/eb/eb/a730b788e47806f7a11463da2c9aff313c20d559a9a9d7b9f302aff190da/python_none_objects-1.1.9.tar.gz
+[2024-05-04 03:01:34] INFO root fetch - processPackages [edgegap-settings]: executing diffoscope
+[2024-05-04 03:01:34] INFO root fetch - processPackages [edgegap-settings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegap_settings-1.5.5.tar.gz tmp/edgegap_settings-1.6.0.tar.gz --markdown 20240504/e/edgegap-settings/1.5.5-1.6.0/README.md --exclude *.pyd
+[2024-05-04 03:01:34] INFO root fetch - processPackages [python-none-objects]: executing diffoscope
+[2024-05-04 03:01:34] INFO root fetch - processPackages [python-none-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_none_objects-1.1.8.tar.gz tmp/python_none_objects-1.1.9.tar.gz --markdown 20240504/p/python-none-objects/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-04 03:01:34] INFO root fetch - processPackages [edgegap-settings]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_settings-1.5.5.tar.gz]
+[2024-05-04 03:01:34] INFO root fetch - processPackages [edgegap-settings]: Remove: archive file [/home/abi/fetcher/tmp/edgegap_settings-1.6.0.tar.gz]
+[2024-05-04 03:01:34] INFO root fetch - main [MainThread]: End processing [edgegap-settings]: success
+[2024-05-04 03:01:34] INFO root fetch - processPackages [python-none-objects]: Remove: archive file [/home/abi/fetcher/tmp/python_none_objects-1.1.8.tar.gz]
+[2024-05-04 03:01:34] INFO root fetch - processPackages [python-none-objects]: Remove: archive file [/home/abi/fetcher/tmp/python_none_objects-1.1.9.tar.gz]
+[2024-05-04 03:01:34] INFO root fetch - main [MainThread]: End processing [python-none-objects]: success
+[2024-05-04 03:01:35] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/91/36/1d7653ed13382b4f3b37ef0a22272e653d082e317878e590d8096280381a/pycde-0.3.1.dev943-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-04 03:01:35] WARNING root fetch - processPackages [pycde]: Skipping package: exceeds size limit 21485848>=10485760
+[2024-05-04 03:01:35] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2024-05-04 03:01:35] INFO root fetch - main [MainThread]: Store serial: [23053192]
