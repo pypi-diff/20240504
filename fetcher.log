@@ -17812,3 +17812,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:36:33] INFO root fetch - processPackages [pyvserv]: Remove: archive file [/home/abi/fetcher/tmp/pyvserv-1.0.6.tar.gz]
 [2024-05-04 19:36:33] INFO root fetch - main [MainThread]: End processing [pyvserv]: success
 [2024-05-04 19:36:33] INFO root fetch - main [MainThread]: Store serial: [23059612]
+[2024-05-04 19:38:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059612]
+[2024-05-04 19:38:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 19:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: surfkit
+[2024-05-04 19:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyscemu
+[2024-05-04 19:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-files
+[2024-05-04 19:38:41] INFO root fetch - processPackages [surfkit]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-04 19:38:41] INFO root fetch - processPackages [pyscemu]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-04 19:38:41] INFO root fetch - processPackages [mo-files]: New version: [6.619.24125] Old Version: [6.609.24119]
+[2024-05-04 19:38:41] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/c2/e4/d9d6efb4013a22047e07b2174dc8716a86fe2b3fe0652e6e1edddbde177b/surfkit-0.1.98.tar.gz
+[2024-05-04 19:38:41] INFO root fetch - processPackages [pyscemu]: Downloading https://files.pythonhosted.org/packages/22/ce/f48da18ee8d1d87f2cd26d9e4bdb39dd8df1348d2277e9da7f9fa779fe0a/pyscemu-0.6.1.tar.gz
+[2024-05-04 19:38:41] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/65/a8/bfc822b58240522d18c4cf24a25a6f2476da037058406af11377393fa476/surfkit-0.1.99.tar.gz
+[2024-05-04 19:38:41] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/d1/7e/bee1148dcda00da53a332fe4d4004a97318c7a97a0ec8b84f47400f6dc64/mo_files-6.609.24119.tar.gz
+[2024-05-04 19:38:42] INFO root fetch - processPackages [surfkit]: executing diffoscope
+[2024-05-04 19:38:42] INFO root fetch - processPackages [surfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfkit-0.1.98.tar.gz tmp/surfkit-0.1.99.tar.gz --markdown 20240504/s/surfkit/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-04 19:38:42] INFO root fetch - processPackages [pyscemu]: Downloading https://files.pythonhosted.org/packages/dd/33/7d18835070b330cff5549b0f757fd9d617aa5c9c95b63f9d3457d47ded22/pyscemu-0.6.2.tar.gz
+[2024-05-04 19:38:42] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/eb/01/1c283b2c7468657f5fa5186a2795b7f21047b206cfa763587a01e4df992f/mo_files-6.619.24125.tar.gz
+[2024-05-04 19:38:42] INFO root fetch - processPackages [pyscemu]: executing diffoscope
+[2024-05-04 19:38:42] INFO root fetch - processPackages [pyscemu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscemu-0.6.1.tar.gz tmp/pyscemu-0.6.2.tar.gz --markdown 20240504/p/pyscemu/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-04 19:38:42] INFO root fetch - processPackages [mo-files]: executing diffoscope
+[2024-05-04 19:38:42] INFO root fetch - processPackages [mo-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_files-6.609.24119.tar.gz tmp/mo_files-6.619.24125.tar.gz --markdown 20240504/m/mo-files/6.609.24119-6.619.24125/README.md --exclude *.pyd
+[2024-05-04 19:38:42] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.98.tar.gz]
+[2024-05-04 19:38:42] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
+[2024-05-04 19:38:42] INFO root fetch - main [MainThread]: End processing [surfkit]: success
+[2024-05-04 19:38:42] INFO root fetch - processPackages [pyscemu]: Remove: archive file [/home/abi/fetcher/tmp/pyscemu-0.6.1.tar.gz]
+[2024-05-04 19:38:42] INFO root fetch - processPackages [pyscemu]: Remove: archive file [/home/abi/fetcher/tmp/pyscemu-0.6.2.tar.gz]
+[2024-05-04 19:38:42] INFO root fetch - main [MainThread]: End processing [pyscemu]: success
+[2024-05-04 19:38:43] INFO root fetch - processPackages [mo-files]: Remove: archive file [/home/abi/fetcher/tmp/mo_files-6.609.24119.tar.gz]
+[2024-05-04 19:38:43] INFO root fetch - processPackages [mo-files]: Remove: archive file [/home/abi/fetcher/tmp/mo_files-6.619.24125.tar.gz]
+[2024-05-04 19:38:43] INFO root fetch - main [MainThread]: End processing [mo-files]: success
+[2024-05-04 19:38:43] INFO root fetch - main [MainThread]: Store serial: [23059633]
