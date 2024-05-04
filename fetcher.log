@@ -12874,3 +12874,27 @@
 [2024-05-04 12:27:54] INFO root fetch - processPackages [stac-fastapi.core]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_core-2.3.1.tar.gz]
 [2024-05-04 12:27:54] INFO root fetch - main [MainThread]: End processing [stac-fastapi.core]: success
 [2024-05-04 12:27:54] INFO root fetch - main [MainThread]: Store serial: [23057456]
+[2024-05-04 12:29:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057456]
+[2024-05-04 12:30:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 12:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynbody
+[2024-05-04 12:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hagrid
+[2024-05-04 12:30:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: batisx
+[2024-05-04 12:30:03] WARNING root fetch - processPackages [batisx]: Skipping, unable to determine old version
+[2024-05-04 12:30:03] INFO root fetch - main [MainThread]: End processing [batisx] error
+[2024-05-04 12:30:03] INFO root fetch - processPackages [hagrid]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-05-04 12:30:03] INFO root fetch - processPackages [pynbody]: New version: [2.0.0b8] Old Version: [2.0.0b7]
+[2024-05-04 12:30:03] INFO root fetch - processPackages [pynbody]: Downloading https://files.pythonhosted.org/packages/35/11/0e839d0965b8f3a8f55d312c304fbdf830753d6195bfbadbd9009c81f858/pynbody-2.0.0b7.tar.gz
+[2024-05-04 12:30:03] INFO root fetch - processPackages [hagrid]: Downloading https://files.pythonhosted.org/packages/71/5c/7118f88cf946d0a75ccbfe7faf329364c6aa329c75e795f5321774437057/hagrid-0.3.98.tar.gz
+[2024-05-04 12:30:03] INFO root fetch - processPackages [hagrid]: Downloading https://files.pythonhosted.org/packages/cd/59/f6d437913eeba7d4d9bb51ed14ede91b80dcb983f21bbafb63e54e220055/hagrid-0.3.99.tar.gz
+[2024-05-04 12:30:03] INFO root fetch - processPackages [pynbody]: Downloading https://files.pythonhosted.org/packages/f2/43/8c7a092b1e598a8cf9bb8bd06f1b3775bcef65b1292e5a286b9285c4c07b/pynbody-2.0.0b8.tar.gz
+[2024-05-04 12:30:03] INFO root fetch - processPackages [hagrid]: executing diffoscope
+[2024-05-04 12:30:03] INFO root fetch - processPackages [hagrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagrid-0.3.98.tar.gz tmp/hagrid-0.3.99.tar.gz --markdown 20240504/h/hagrid/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-05-04 12:30:04] INFO root fetch - processPackages [pynbody]: executing diffoscope
+[2024-05-04 12:30:04] INFO root fetch - processPackages [pynbody]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynbody-2.0.0b7.tar.gz tmp/pynbody-2.0.0b8.tar.gz --markdown 20240504/p/pynbody/2.0.0b7-2.0.0b8/README.md --exclude *.pyd
+[2024-05-04 12:30:04] INFO root fetch - processPackages [hagrid]: Remove: archive file [/home/abi/fetcher/tmp/hagrid-0.3.98.tar.gz]
+[2024-05-04 12:30:04] INFO root fetch - processPackages [hagrid]: Remove: archive file [/home/abi/fetcher/tmp/hagrid-0.3.99.tar.gz]
+[2024-05-04 12:30:04] INFO root fetch - main [MainThread]: End processing [hagrid]: success
+[2024-05-04 12:30:05] INFO root fetch - processPackages [pynbody]: Remove: archive file [/home/abi/fetcher/tmp/pynbody-2.0.0b7.tar.gz]
+[2024-05-04 12:30:05] INFO root fetch - processPackages [pynbody]: Remove: archive file [/home/abi/fetcher/tmp/pynbody-2.0.0b8.tar.gz]
+[2024-05-04 12:30:05] INFO root fetch - main [MainThread]: End processing [pynbody]: success
+[2024-05-04 12:30:05] INFO root fetch - main [MainThread]: Store serial: [23057479]
