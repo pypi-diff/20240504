@@ -1768,3 +1768,24 @@
 [2024-05-04 02:00:12] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Remove: archive file [/home/abi/fetcher/tmp/segmentation_skeleton_metrics-4.1.5.tar.gz]
 [2024-05-04 02:00:12] INFO root fetch - main [MainThread]: End processing [segmentation-skeleton-metrics]: success
 [2024-05-04 02:00:12] INFO root fetch - main [MainThread]: Store serial: [23052836]
+[2024-05-04 02:02:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052836]
+[2024-05-04 02:02:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 02:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-place
+[2024-05-04 02:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spleenseg
+[2024-05-04 02:02:21] INFO root fetch - processPackages [spleenseg]: New version: [1.2.4] Old Version: [1.2.38]
+[2024-05-04 02:02:21] INFO root fetch - processPackages [data-place]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-04 02:02:21] INFO root fetch - processPackages [data-place]: Downloading https://files.pythonhosted.org/packages/99/9b/00a6b1cedba97043d668c8b3fae1e20594beaa4428b01c60b488b4bd75b3/data-place-0.3.0.tar.gz
+[2024-05-04 02:02:21] INFO root fetch - processPackages [data-place]: Downloading https://files.pythonhosted.org/packages/d1/27/b1b3c891b9fb17bd08834f684c0080b1b3833562c2ecac0507b20bfc203a/data-place-0.3.1.tar.gz
+[2024-05-04 02:02:21] INFO root fetch - processPackages [data-place]: executing diffoscope
+[2024-05-04 02:02:21] INFO root fetch - processPackages [data-place]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-place-0.3.0.tar.gz tmp/data-place-0.3.1.tar.gz --markdown 20240504/d/data-place/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-04 02:02:22] INFO root fetch - processPackages [spleenseg]: Downloading https://files.pythonhosted.org/packages/9f/5a/6e2893560c908d15c871827fe0aaae2df97b27c0af2cd91de2a4050263da/spleenseg-1.2.38.tar.gz
+[2024-05-04 02:02:22] INFO root fetch - processPackages [spleenseg]: Downloading https://files.pythonhosted.org/packages/79/0b/9db236873e673eb503ed1ba14cb184cd4517c10956c612ba3657409cf04f/spleenseg-1.2.4.tar.gz
+[2024-05-04 02:02:22] INFO root fetch - processPackages [spleenseg]: executing diffoscope
+[2024-05-04 02:02:22] INFO root fetch - processPackages [spleenseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spleenseg-1.2.38.tar.gz tmp/spleenseg-1.2.4.tar.gz --markdown 20240504/s/spleenseg/1.2.38-1.2.4/README.md --exclude *.pyd
+[2024-05-04 02:02:22] INFO root fetch - processPackages [data-place]: Remove: archive file [/home/abi/fetcher/tmp/data-place-0.3.0.tar.gz]
+[2024-05-04 02:02:22] INFO root fetch - processPackages [data-place]: Remove: archive file [/home/abi/fetcher/tmp/data-place-0.3.1.tar.gz]
+[2024-05-04 02:02:22] INFO root fetch - main [MainThread]: End processing [data-place]: success
+[2024-05-04 02:02:22] INFO root fetch - processPackages [spleenseg]: Remove: archive file [/home/abi/fetcher/tmp/spleenseg-1.2.38.tar.gz]
+[2024-05-04 02:02:22] INFO root fetch - processPackages [spleenseg]: Remove: archive file [/home/abi/fetcher/tmp/spleenseg-1.2.4.tar.gz]
+[2024-05-04 02:02:22] INFO root fetch - main [MainThread]: End processing [spleenseg]: success
+[2024-05-04 02:02:22] INFO root fetch - main [MainThread]: Store serial: [23052840]
