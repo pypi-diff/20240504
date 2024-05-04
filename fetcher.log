@@ -7572,3 +7572,24 @@
 [2024-05-04 04:41:09] INFO root fetch - processPackages [odoo-addon-account-journal-lock-date]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_journal_lock_date-17.0.1.0.0.3-py3-none-any.whl.zip]
 [2024-05-04 04:41:09] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-journal-lock-date]: success
 [2024-05-04 04:41:09] INFO root fetch - main [MainThread]: Store serial: [23054901]
+[2024-05-04 04:43:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054901]
+[2024-05-04 04:43:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 04:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: svg-ultralight
+[2024-05-04 04:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gravitino
+[2024-05-04 04:43:29] INFO root fetch - processPackages [gravitino]: New version: [0.5.0.dev4] Old Version: [0.5.0.dev3]
+[2024-05-04 04:43:29] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/d6/89/e83c35547cdfedeaaafa9ed001b772e2a5f411288cc8b580b7993721a626/gravitino-0.5.0.dev3.tar.gz
+[2024-05-04 04:43:29] INFO root fetch - processPackages [svg-ultralight]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-04 04:43:29] INFO root fetch - processPackages [svg-ultralight]: Downloading https://files.pythonhosted.org/packages/8d/82/ff6a14335591a3825078854462c3d572b43c2991ea316cbf69e09a7b3573/svg_ultralight-0.8.2.tar.gz
+[2024-05-04 04:43:29] INFO root fetch - processPackages [gravitino]: Downloading https://files.pythonhosted.org/packages/7b/9d/310cecd84e58ed1ae52fca6ed43d97cacaffb951b7166fd9cae17b2ca040/gravitino-0.5.0.dev4.tar.gz
+[2024-05-04 04:43:29] INFO root fetch - processPackages [gravitino]: executing diffoscope
+[2024-05-04 04:43:29] INFO root fetch - processPackages [gravitino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitino-0.5.0.dev3.tar.gz tmp/gravitino-0.5.0.dev4.tar.gz --markdown 20240504/g/gravitino/0.5.0.dev3-0.5.0.dev4/README.md --exclude *.pyd
+[2024-05-04 04:43:29] INFO root fetch - processPackages [svg-ultralight]: Downloading https://files.pythonhosted.org/packages/1c/73/43e2a4c495a8fe97fa74642c7884ba3b040c603c744d8fb23adb4408eef7/svg_ultralight-0.9.0.tar.gz
+[2024-05-04 04:43:30] INFO root fetch - processPackages [svg-ultralight]: executing diffoscope
+[2024-05-04 04:43:30] INFO root fetch - processPackages [svg-ultralight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/svg_ultralight-0.8.2.tar.gz tmp/svg_ultralight-0.9.0.tar.gz --markdown 20240504/s/svg-ultralight/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-04 04:43:30] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev3.tar.gz]
+[2024-05-04 04:43:30] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev4.tar.gz]
+[2024-05-04 04:43:30] INFO root fetch - main [MainThread]: End processing [gravitino]: success
+[2024-05-04 04:43:30] INFO root fetch - processPackages [svg-ultralight]: Remove: archive file [/home/abi/fetcher/tmp/svg_ultralight-0.8.2.tar.gz]
+[2024-05-04 04:43:30] INFO root fetch - processPackages [svg-ultralight]: Remove: archive file [/home/abi/fetcher/tmp/svg_ultralight-0.9.0.tar.gz]
+[2024-05-04 04:43:30] INFO root fetch - main [MainThread]: End processing [svg-ultralight]: success
+[2024-05-04 04:43:30] INFO root fetch - main [MainThread]: Store serial: [23054907]
