@@ -7053,3 +7053,24 @@
 [2024-05-04 03:50:22] INFO root fetch - processPackages [hat-controller]: Remove: archive file [/home/abi/fetcher/tmp/hat_controller-0.1.5-cp310.cp311.cp312-abi3-win_amd64.whl.zip]
 [2024-05-04 03:50:22] INFO root fetch - main [MainThread]: End processing [hat-controller]: success
 [2024-05-04 03:50:22] INFO root fetch - main [MainThread]: Store serial: [23054633]
+[2024-05-04 03:52:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054633]
+[2024-05-04 03:52:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 03:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-cyberfurry
+[2024-05-04 03:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioregistry
+[2024-05-04 03:52:31] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: New version: [1.6] Old Version: [1.5]
+[2024-05-04 03:52:31] INFO root fetch - processPackages [bioregistry]: New version: [0.9.97] Old Version: [0.9.96]
+[2024-05-04 03:52:31] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Downloading https://files.pythonhosted.org/packages/e8/7b/7792da537305a35a66891fcc1c5c954d29f03029699edd636a4dd223daef/nonebot_plugin_cyberfurry-1.5.tar.gz
+[2024-05-04 03:52:31] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Downloading https://files.pythonhosted.org/packages/a8/87/149d45e7003395c30ac090c81c4fe6d2a8c2989edd2796aacc37c07eedd2/nonebot_plugin_cyberfurry-1.6.tar.gz
+[2024-05-04 03:52:31] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/48/3a/7ab0975f6c89bea709b279c9e39ef3be5439cfec168dbf3a614dac397663/bioregistry-0.9.96.tar.gz
+[2024-05-04 03:52:31] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: executing diffoscope
+[2024-05-04 03:52:31] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_cyberfurry-1.5.tar.gz tmp/nonebot_plugin_cyberfurry-1.6.tar.gz --markdown 20240504/n/nonebot-plugin-cyberfurry/1.5-1.6/README.md --exclude *.pyd
+[2024-05-04 03:52:32] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_cyberfurry-1.5.tar.gz]
+[2024-05-04 03:52:32] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_cyberfurry-1.6.tar.gz]
+[2024-05-04 03:52:32] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-cyberfurry]: success
+[2024-05-04 03:52:34] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/57/7b/30897578f436658ac1f334eb6e9f96ad0bacb0a54846670620df53a5a374/bioregistry-0.9.97.tar.gz
+[2024-05-04 03:52:35] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2024-05-04 03:52:35] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.96.tar.gz tmp/bioregistry-0.9.97.tar.gz --markdown 20240504/b/bioregistry/0.9.96-0.9.97/README.md --exclude *.pyd
+[2024-05-04 03:53:42] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.96.tar.gz]
+[2024-05-04 03:53:42] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
+[2024-05-04 03:53:42] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2024-05-04 03:53:42] INFO root fetch - main [MainThread]: Store serial: [23054640]
