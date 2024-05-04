@@ -9004,3 +9004,12 @@
 [2024-05-04 06:16:24] INFO root fetch - processPackages [czsc]: Remove: archive file [/home/abi/fetcher/tmp/czsc-0.9.9.tar.gz]
 [2024-05-04 06:16:24] INFO root fetch - main [MainThread]: End processing [czsc]: success
 [2024-05-04 06:16:24] INFO root fetch - main [MainThread]: Store serial: [23055560]
+[2024-05-04 06:18:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055560]
+[2024-05-04 06:18:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 06:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: normal-position-combination
+[2024-05-04 06:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: genenet
+[2024-05-04 06:18:48] WARNING root fetch - processPackages [normal-position-combination]: Skipping, unable to determine old version
+[2024-05-04 06:18:48] INFO root fetch - main [MainThread]: End processing [normal-position-combination] error
+[2024-05-04 06:18:48] WARNING root fetch - processPackages [genenet]: Skipping, unable to determine old version
+[2024-05-04 06:18:48] INFO root fetch - main [MainThread]: End processing [genenet] error
+[2024-05-04 06:18:48] INFO root fetch - main [MainThread]: Store serial: [23055569]
