@@ -15005,3 +15005,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:50:25] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.5.3rc190.tar.gz]
 [2024-05-04 15:50:25] INFO root fetch - main [MainThread]: End processing [sapiopylib]: success
 [2024-05-04 15:50:25] INFO root fetch - main [MainThread]: Store serial: [23058317]
+[2024-05-04 15:52:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058317]
+[2024-05-04 15:52:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 15:52:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PACMAN-charge
+[2024-05-04 15:52:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exciton
+[2024-05-04 15:52:34] INFO root fetch - processPackages [PACMAN-charge]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-04 15:52:34] INFO root fetch - processPackages [exciton]: New version: [2.6.0] Old Version: [2.5.5]
+[2024-05-04 15:52:34] INFO root fetch - processPackages [PACMAN-charge]: Downloading https://files.pythonhosted.org/packages/70/68/5aee6e9c43ca5966725a09eb5222193bcc21f7ebd8c0708a8c533fe7b407/PACMAN-charge-0.1.5.tar.gz
+[2024-05-04 15:52:34] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/31/30/4b0fe29a20b5f9b19e7ddda8d2cf563817ef11aa1f04b95366c8f667b52a/exciton-2.5.5-py3-none-any.whl
+[2024-05-04 15:52:34] INFO root fetch - processPackages [PACMAN-charge]: Downloading https://files.pythonhosted.org/packages/c9/9e/b376d945c7db985447cd4aa1733c7bf8fa5c070cb30a8d50710904159b4d/PACMAN-charge-0.1.6.tar.gz
+[2024-05-04 15:52:34] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/04/5c/5d2395236add5aeb0f59a8ad651f180be3e1a1b0300cb0d9b0825bf4631f/exciton-2.6.0-py3-none-any.whl
+[2024-05-04 15:52:34] INFO root fetch - processPackages [PACMAN-charge]: executing diffoscope
+[2024-05-04 15:52:34] INFO root fetch - processPackages [PACMAN-charge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PACMAN-charge-0.1.5.tar.gz tmp/PACMAN-charge-0.1.6.tar.gz --markdown 20240504/P/PACMAN-charge/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-04 15:52:34] INFO root fetch - processPackages [exciton]: executing diffoscope
+[2024-05-04 15:52:34] INFO root fetch - processPackages [exciton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exciton-2.5.5-py3-none-any.whl.zip tmp/exciton-2.6.0-py3-none-any.whl.zip --markdown 20240504/e/exciton/2.5.5-2.6.0/README.md --exclude *.pyd
+[2024-05-04 15:52:35] INFO root fetch - processPackages [PACMAN-charge]: Remove: archive file [/home/abi/fetcher/tmp/PACMAN-charge-0.1.5.tar.gz]
+[2024-05-04 15:52:35] INFO root fetch - processPackages [PACMAN-charge]: Remove: archive file [/home/abi/fetcher/tmp/PACMAN-charge-0.1.6.tar.gz]
+[2024-05-04 15:52:35] INFO root fetch - main [MainThread]: End processing [PACMAN-charge]: success
+[2024-05-04 15:52:35] INFO root fetch - processPackages [exciton]: Remove: archive file [/home/abi/fetcher/tmp/exciton-2.5.5-py3-none-any.whl.zip]
+[2024-05-04 15:52:35] INFO root fetch - processPackages [exciton]: Remove: archive file [/home/abi/fetcher/tmp/exciton-2.6.0-py3-none-any.whl.zip]
+[2024-05-04 15:52:35] INFO root fetch - main [MainThread]: End processing [exciton]: success
+[2024-05-04 15:52:35] INFO root fetch - main [MainThread]: Store serial: [23058322]
