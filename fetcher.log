@@ -7560,3 +7560,15 @@
 [2024-05-04 04:38:49] INFO root fetch - processPackages [odoo12-addon-account-lock-date-update]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_lock_date_update-12.0.1.0.0.99.dev9-py3-none-any.whl.zip]
 [2024-05-04 04:38:49] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-lock-date-update]: success
 [2024-05-04 04:38:49] INFO root fetch - main [MainThread]: Store serial: [23054898]
+[2024-05-04 04:41:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054898]
+[2024-05-04 04:41:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 04:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-journal-lock-date
+[2024-05-04 04:41:08] INFO root fetch - processPackages [odoo-addon-account-journal-lock-date]: New version: [17.0.1.0.0.3] Old Version: [17.0.1.0.0.2]
+[2024-05-04 04:41:08] INFO root fetch - processPackages [odoo-addon-account-journal-lock-date]: Downloading https://files.pythonhosted.org/packages/b1/91/366cefe53e02e5171eeadb94ac04c8038ef69d80c1e0242bc68313624b65/odoo_addon_account_journal_lock_date-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-04 04:41:08] INFO root fetch - processPackages [odoo-addon-account-journal-lock-date]: Downloading https://files.pythonhosted.org/packages/6f/e4/1ec8727dff032f7e13e87e7dca6641fc46e9ac6952444f6f37dfe3604636/odoo_addon_account_journal_lock_date-17.0.1.0.0.3-py3-none-any.whl
+[2024-05-04 04:41:08] INFO root fetch - processPackages [odoo-addon-account-journal-lock-date]: executing diffoscope
+[2024-05-04 04:41:08] INFO root fetch - processPackages [odoo-addon-account-journal-lock-date]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_journal_lock_date-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_account_journal_lock_date-17.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-account-journal-lock-date/17.0.1.0.0.2-17.0.1.0.0.3/README.md --exclude *.pyd
+[2024-05-04 04:41:09] INFO root fetch - processPackages [odoo-addon-account-journal-lock-date]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_journal_lock_date-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-04 04:41:09] INFO root fetch - processPackages [odoo-addon-account-journal-lock-date]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_journal_lock_date-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-04 04:41:09] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-journal-lock-date]: success
+[2024-05-04 04:41:09] INFO root fetch - main [MainThread]: Store serial: [23054901]
