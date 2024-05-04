@@ -8667,3 +8667,92 @@
 [2024-05-04 05:42:48] INFO root fetch - processPackages [NEMO-CE]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_CE-2.5.2-py3-none-any.whl.zip]
 [2024-05-04 05:42:48] INFO root fetch - main [MainThread]: End processing [NEMO-CE]: success
 [2024-05-04 05:42:48] INFO root fetch - main [MainThread]: Store serial: [23055386]
+[2024-05-04 05:45:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055386]
+[2024-05-04 05:45:10] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 05:47:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055386]
+[2024-05-04 05:47:15] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-04 05:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-fieldservice-vehicle
+[2024-05-04 05:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-fieldservice-account
+[2024-05-04 05:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-fieldservice-account-analytic
+[2024-05-04 05:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-fieldservice
+[2024-05-04 05:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-fieldservice-recurring
+[2024-05-04 05:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-base-territory
+[2024-05-04 05:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: citric
+[2024-05-04 05:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-fieldservice-calendar
+[2024-05-04 05:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: import-deps
+[2024-05-04 05:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: oktool
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice-account-analytic]: New version: [17.0.1.0.0.3] Old Version: [17.0.1.0.0.2]
+[2024-05-04 05:47:15] INFO root fetch - processPackages [citric]: New version: [1.0.1a2] Old Version: [1.0.1a1]
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice]: New version: [17.0.1.2.0.2] Old Version: [17.0.1.2.0.1]
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice-vehicle]: New version: [17.0.1.0.0.4] Old Version: [17.0.1.0.0.2]
+[2024-05-04 05:47:15] INFO root fetch - processPackages [import-deps]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice-account]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice-calendar]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.0.9]
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice-recurring]: New version: [17.0.1.0.0.3] Old Version: [17.0.1.0.0.2]
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-base-territory]: New version: [17.0.1.0.0.3] Old Version: [17.0.1.0.0.2]
+[2024-05-04 05:47:15] WARNING root fetch - processPackages [oktool]: Skipping, unable to determine old version
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice-account-analytic]: Downloading https://files.pythonhosted.org/packages/f1/fb/329243d9e4cc7c8e8e444b52d6a25c3cf75bf5fad2328be0c4d8fd63770c/odoo_addon_fieldservice_account_analytic-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-04 05:47:15] INFO root fetch - main [MainThread]: End processing [oktool] error
+[2024-05-04 05:47:15] INFO root fetch - processPackages [citric]: Downloading https://files.pythonhosted.org/packages/aa/0e/03447ec225069a1acf583e9d2cab67d2f27343172be82b786d48931a96ac/citric-1.0.1a1.tar.gz
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice]: Downloading https://files.pythonhosted.org/packages/b2/70/c555944198d28de47ee1dcc0d696de18f900554c2e4af4dcda0b989cbc6c/odoo_addon_fieldservice-17.0.1.2.0.1-py3-none-any.whl
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice-vehicle]: Downloading https://files.pythonhosted.org/packages/54/b2/ebb07fd96d9d93bc8e68df96bf88e3d6e541063933ff1901fece15cd7ace/odoo_addon_fieldservice_vehicle-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice-account]: Downloading https://files.pythonhosted.org/packages/ba/b6/ee06fcc7ef34a447a335ac79f7df949fb09d8b53ba5f4b104a09ca2aa5a6/odoo_addon_fieldservice_account-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-04 05:47:15] INFO root fetch - processPackages [import-deps]: Downloading https://files.pythonhosted.org/packages/61/b3/67ecaed610e6f333a318482def6c5f0f1bd502e2a136a03bf3ebb58c6aa4/import_deps-0.2.0.tar.gz
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice-calendar]: Downloading https://files.pythonhosted.org/packages/a3/6d/22dd6ba44322b7c694492f440b2279ca84f49905cfaf75ec244f99499fff/odoo_addon_fieldservice_calendar-16.0.1.0.0.9-py3-none-any.whl
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-fieldservice-recurring]: Downloading https://files.pythonhosted.org/packages/a6/ef/1004e82c5aed262ab41263c38a6ca3661f16042294209973bba49287ff8a/odoo_addon_fieldservice_recurring-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-04 05:47:15] INFO root fetch - processPackages [odoo-addon-base-territory]: Downloading https://files.pythonhosted.org/packages/e4/79/e2e4eef7ab39cd5fc8a6323cf8852fd53e0c0e451d5daf2112c667531fa9/odoo_addon_base_territory-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice]: Downloading https://files.pythonhosted.org/packages/04/12/a634d972bd2e72415ae3fabb12d30b7fa50c731d3d3a71da39ab82ca0ee1/odoo_addon_fieldservice-17.0.1.2.0.2-py3-none-any.whl
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-account-analytic]: Downloading https://files.pythonhosted.org/packages/32/6d/50fba946b26fe441245e35eb8794c124c8be6f25f0864ef3ba65840b9c12/odoo_addon_fieldservice_account_analytic-17.0.1.0.0.3-py3-none-any.whl
+[2024-05-04 05:47:16] INFO root fetch - processPackages [citric]: Downloading https://files.pythonhosted.org/packages/71/d2/b3f248a10ae1d15d83f3d89a35c30f91ac6d5dbd1d78392e5480c8118685/citric-1.0.1a2.tar.gz
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-vehicle]: Downloading https://files.pythonhosted.org/packages/fd/dd/ffea9b4157820e3acd9852b83113377b12710aa999e8fe31d3c818f057fc/odoo_addon_fieldservice_vehicle-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-account-analytic]: executing diffoscope
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-account-analytic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice_account_analytic-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_fieldservice_account_analytic-17.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-fieldservice-account-analytic/17.0.1.0.0.2-17.0.1.0.0.3/README.md --exclude *.pyd
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice]: executing diffoscope
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice-17.0.1.2.0.1-py3-none-any.whl.zip tmp/odoo_addon_fieldservice-17.0.1.2.0.2-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-fieldservice/17.0.1.2.0.1-17.0.1.2.0.2/README.md --exclude *.pyd
+[2024-05-04 05:47:16] INFO root fetch - processPackages [import-deps]: Downloading https://files.pythonhosted.org/packages/21/0c/487690243f9d792c7d1cfdcbc971e21b901140c367729ae83e17d08242ae/import_deps-0.3.0.tar.gz
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-account]: Downloading https://files.pythonhosted.org/packages/cb/67/84299bab56f112df381bfc895b3b97fe847d41ec8a7583e9bfa3e1409ad4/odoo_addon_fieldservice_account-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-04 05:47:16] INFO root fetch - processPackages [citric]: executing diffoscope
+[2024-05-04 05:47:16] INFO root fetch - processPackages [citric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citric-1.0.1a1.tar.gz tmp/citric-1.0.1a2.tar.gz --markdown 20240504/c/citric/1.0.1a1-1.0.1a2/README.md --exclude *.pyd
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-calendar]: Downloading https://files.pythonhosted.org/packages/15/e7/3bc034b5f467df2a76d375bc33abf82a915bd5d74b8edb22bf98401e2a87/odoo_addon_fieldservice_calendar-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-vehicle]: executing diffoscope
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-vehicle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice_vehicle-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_fieldservice_vehicle-17.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-fieldservice-vehicle/17.0.1.0.0.2-17.0.1.0.0.4/README.md --exclude *.pyd
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-recurring]: Downloading https://files.pythonhosted.org/packages/84/93/46bd7ee37c30dfc4b946d3e74c7ea64e2189f4efcad01a456a418866f964/odoo_addon_fieldservice_recurring-17.0.1.0.0.3-py3-none-any.whl
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-base-territory]: Downloading https://files.pythonhosted.org/packages/4f/fe/c8b2d08dc40d287f7ce65fa3d9561e5d459777058120164c4c2fb7eb17ce/odoo_addon_base_territory-17.0.1.0.0.3-py3-none-any.whl
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-account]: executing diffoscope
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice_account-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_fieldservice_account-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-fieldservice-account/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-calendar]: executing diffoscope
+[2024-05-04 05:47:16] INFO root fetch - processPackages [import-deps]: executing diffoscope
+[2024-05-04 05:47:16] INFO root fetch - processPackages [import-deps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/import_deps-0.2.0.tar.gz tmp/import_deps-0.3.0.tar.gz --markdown 20240504/i/import-deps/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-calendar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice_calendar-16.0.1.0.0.9-py3-none-any.whl.zip tmp/odoo_addon_fieldservice_calendar-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-fieldservice-calendar/16.0.1.0.0.9-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-recurring]: executing diffoscope
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-fieldservice-recurring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice_recurring-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_fieldservice_recurring-17.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-fieldservice-recurring/17.0.1.0.0.2-17.0.1.0.0.3/README.md --exclude *.pyd
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-base-territory]: executing diffoscope
+[2024-05-04 05:47:16] INFO root fetch - processPackages [odoo-addon-base-territory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_territory-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_base_territory-17.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-base-territory/17.0.1.0.0.2-17.0.1.0.0.3/README.md --exclude *.pyd
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice-account-analytic]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_account_analytic-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice-account-analytic]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_account_analytic-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice-account-analytic]: success
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice-account]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_account-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice-account]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_account-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice-account]: success
+[2024-05-04 05:47:17] INFO root fetch - processPackages [import-deps]: Remove: archive file [/home/abi/fetcher/tmp/import_deps-0.2.0.tar.gz]
+[2024-05-04 05:47:17] INFO root fetch - processPackages [import-deps]: Remove: archive file [/home/abi/fetcher/tmp/import_deps-0.3.0.tar.gz]
+[2024-05-04 05:47:17] INFO root fetch - main [MainThread]: End processing [import-deps]: success
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice-calendar]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_calendar-16.0.1.0.0.9-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice-calendar]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_calendar-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice-calendar]: success
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-base-territory]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_territory-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-base-territory]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_territory-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-territory]: success
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice-vehicle]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_vehicle-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice-vehicle]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_vehicle-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice-vehicle]: success
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice-17.0.1.2.0.1-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice-17.0.1.2.0.2-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice]: success
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice-recurring]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_recurring-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - processPackages [odoo-addon-fieldservice-recurring]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_recurring-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-04 05:47:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice-recurring]: success
+[2024-05-04 05:47:17] INFO root fetch - processPackages [citric]: Remove: archive file [/home/abi/fetcher/tmp/citric-1.0.1a1.tar.gz]
+[2024-05-04 05:47:17] INFO root fetch - processPackages [citric]: Remove: archive file [/home/abi/fetcher/tmp/citric-1.0.1a2.tar.gz]
+[2024-05-04 05:47:17] INFO root fetch - main [MainThread]: End processing [citric]: success
+[2024-05-04 05:47:17] INFO root fetch - main [MainThread]: Store serial: [23055412]
