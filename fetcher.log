@@ -11738,3 +11738,42 @@
 [2024-05-04 10:36:52] INFO root fetch - processPackages [omnisafe]: Remove: archive file [/home/abi/fetcher/tmp/omnisafe-0.5.0b0.tar.gz]
 [2024-05-04 10:36:52] INFO root fetch - main [MainThread]: End processing [omnisafe]: success
 [2024-05-04 10:36:52] INFO root fetch - main [MainThread]: Store serial: [23056843]
+[2024-05-04 10:38:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056843]
+[2024-05-04 10:39:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 10:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DragonLog
+[2024-05-04 10:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sunholo
+[2024-05-04 10:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: node-graph
+[2024-05-04 10:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easy-fossy
+[2024-05-04 10:39:01] INFO root fetch - processPackages [easy-fossy]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-05-04 10:39:01] INFO root fetch - processPackages [DragonLog]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-04 10:39:01] INFO root fetch - processPackages [node-graph]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-04 10:39:01] INFO root fetch - processPackages [sunholo]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-04 10:39:01] INFO root fetch - processPackages [sunholo]: Downloading https://files.pythonhosted.org/packages/cc/35/0cc2a83f59b1ddd740a568e10894833a89bedfc91b8ebd172a427676694a/sunholo-0.8.8.tar.gz
+[2024-05-04 10:39:01] INFO root fetch - processPackages [easy-fossy]: Downloading https://files.pythonhosted.org/packages/7a/b1/2fb7e7ef0a4385435b7d1a8753061edc29638ac63444fa7e7c759f4f835c/easy_fossy-2.2.0.tar.gz
+[2024-05-04 10:39:01] INFO root fetch - processPackages [DragonLog]: Downloading https://files.pythonhosted.org/packages/77/bb/0e46a6cb163e89fd61674d3884b13bdd741ac0f32ffcfdbc004a30f9e585/dragonlog-1.1.2.tar.gz
+[2024-05-04 10:39:01] INFO root fetch - processPackages [node-graph]: Downloading https://files.pythonhosted.org/packages/64/41/3a4fa50f3be71ef72e614fd98f88cd696ae0e9dc760062ae306a46aeb686/node_graph-0.0.6.tar.gz
+[2024-05-04 10:39:01] INFO root fetch - processPackages [sunholo]: Downloading https://files.pythonhosted.org/packages/f4/84/78248df3236e593119b75003e77cf5b5bd0761e53dc91c6a148cb0571cf9/sunholo-0.8.9.tar.gz
+[2024-05-04 10:39:01] INFO root fetch - processPackages [easy-fossy]: Downloading https://files.pythonhosted.org/packages/76/66/d0cb4c64d563a747e5464dfdb1df5ffe63229f84ca569c167d9a12dbf271/easy_fossy-2.3.0.tar.gz
+[2024-05-04 10:39:01] INFO root fetch - processPackages [easy-fossy]: executing diffoscope
+[2024-05-04 10:39:01] INFO root fetch - processPackages [easy-fossy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_fossy-2.2.0.tar.gz tmp/easy_fossy-2.3.0.tar.gz --markdown 20240504/e/easy-fossy/2.2.0-2.3.0/README.md --exclude *.pyd
+[2024-05-04 10:39:01] INFO root fetch - processPackages [sunholo]: executing diffoscope
+[2024-05-04 10:39:01] INFO root fetch - processPackages [sunholo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunholo-0.8.8.tar.gz tmp/sunholo-0.8.9.tar.gz --markdown 20240504/s/sunholo/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-04 10:39:01] INFO root fetch - processPackages [node-graph]: Downloading https://files.pythonhosted.org/packages/b3/46/86cc0e287e98bed72757bd80ddef109920084ea89c9143be8cb09f0b8708/node_graph-0.0.7.tar.gz
+[2024-05-04 10:39:01] INFO root fetch - processPackages [DragonLog]: Downloading https://files.pythonhosted.org/packages/18/36/7b83d9802d3b23eac5a8027681bd75f46df65783c8f41cbef81e7c081a14/dragonlog-1.1.3.tar.gz
+[2024-05-04 10:39:01] INFO root fetch - processPackages [node-graph]: executing diffoscope
+[2024-05-04 10:39:01] INFO root fetch - processPackages [node-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/node_graph-0.0.6.tar.gz tmp/node_graph-0.0.7.tar.gz --markdown 20240504/n/node-graph/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-04 10:39:01] INFO root fetch - processPackages [DragonLog]: executing diffoscope
+[2024-05-04 10:39:01] INFO root fetch - processPackages [DragonLog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonlog-1.1.2.tar.gz tmp/dragonlog-1.1.3.tar.gz --markdown 20240504/D/DragonLog/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-04 10:39:02] INFO root fetch - processPackages [easy-fossy]: Remove: archive file [/home/abi/fetcher/tmp/easy_fossy-2.2.0.tar.gz]
+[2024-05-04 10:39:02] INFO root fetch - processPackages [easy-fossy]: Remove: archive file [/home/abi/fetcher/tmp/easy_fossy-2.3.0.tar.gz]
+[2024-05-04 10:39:02] INFO root fetch - main [MainThread]: End processing [easy-fossy]: success
+[2024-05-04 10:39:02] INFO root fetch - processPackages [node-graph]: Remove: archive file [/home/abi/fetcher/tmp/node_graph-0.0.6.tar.gz]
+[2024-05-04 10:39:02] INFO root fetch - processPackages [node-graph]: Remove: archive file [/home/abi/fetcher/tmp/node_graph-0.0.7.tar.gz]
+[2024-05-04 10:39:02] INFO root fetch - main [MainThread]: End processing [node-graph]: success
+[2024-05-04 10:39:02] INFO root fetch - processPackages [DragonLog]: Remove: archive file [/home/abi/fetcher/tmp/dragonlog-1.1.2.tar.gz]
+[2024-05-04 10:39:02] INFO root fetch - processPackages [DragonLog]: Remove: archive file [/home/abi/fetcher/tmp/dragonlog-1.1.3.tar.gz]
+[2024-05-04 10:39:02] INFO root fetch - main [MainThread]: End processing [DragonLog]: success
+[2024-05-04 10:39:02] INFO root fetch - processPackages [sunholo]: Remove: archive file [/home/abi/fetcher/tmp/sunholo-0.8.8.tar.gz]
+[2024-05-04 10:39:02] INFO root fetch - processPackages [sunholo]: Remove: archive file [/home/abi/fetcher/tmp/sunholo-0.8.9.tar.gz]
+[2024-05-04 10:39:02] INFO root fetch - main [MainThread]: End processing [sunholo]: success
+[2024-05-04 10:39:02] INFO root fetch - main [MainThread]: Store serial: [23056864]
