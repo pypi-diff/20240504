@@ -8580,3 +8580,27 @@
 [2024-05-04 05:35:32] INFO root fetch - processPackages [citric]: Remove: archive file [/home/abi/fetcher/tmp/citric-1.0.1a1.tar.gz]
 [2024-05-04 05:35:32] INFO root fetch - main [MainThread]: End processing [citric]: success
 [2024-05-04 05:35:32] INFO root fetch - main [MainThread]: Store serial: [23055353]
+[2024-05-04 05:37:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055353]
+[2024-05-04 05:37:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 05:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Cope
+[2024-05-04 05:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: manabase-solver
+[2024-05-04 05:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CTDFjorder
+[2024-05-04 05:37:52] INFO root fetch - processPackages [manabase-solver]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 05:37:52] INFO root fetch - processPackages [Cope]: New version: [2.5.2] Old Version: [2.5.1]
+[2024-05-04 05:37:52] WARNING root fetch - processPackages [CTDFjorder]: Skipping, unable to determine old version
+[2024-05-04 05:37:52] INFO root fetch - main [MainThread]: End processing [CTDFjorder] error
+[2024-05-04 05:37:52] INFO root fetch - processPackages [manabase-solver]: Downloading https://files.pythonhosted.org/packages/85/c0/a438a065c8e812e897b17e763610e9a7eb85ec510b7820ef89749436099d/manabase_solver-0.1.1.tar.gz
+[2024-05-04 05:37:52] INFO root fetch - processPackages [Cope]: Downloading https://files.pythonhosted.org/packages/5c/3e/af0531a9aa7798f198508c6a32d995345666b548f9656be5a79dc342d1b7/cope-2.5.1-py2.py3-none-any.whl
+[2024-05-04 05:37:53] INFO root fetch - processPackages [manabase-solver]: Downloading https://files.pythonhosted.org/packages/2d/8c/56a516be973058b9f0fcfc21a879a5eaac81e6a9d16d00b9641fdc3bbb98/manabase_solver-0.1.2.tar.gz
+[2024-05-04 05:37:53] INFO root fetch - processPackages [Cope]: Downloading https://files.pythonhosted.org/packages/49/c9/3d5da129099cd01a54d96783448dffe83cdb56070277e648b815a1f96658/cope-2.5.2.tar.gz
+[2024-05-04 05:37:53] INFO root fetch - processPackages [manabase-solver]: executing diffoscope
+[2024-05-04 05:37:53] INFO root fetch - processPackages [manabase-solver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manabase_solver-0.1.1.tar.gz tmp/manabase_solver-0.1.2.tar.gz --markdown 20240504/m/manabase-solver/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 05:37:53] INFO root fetch - processPackages [Cope]: executing diffoscope
+[2024-05-04 05:37:53] INFO root fetch - processPackages [Cope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cope-2.5.1-py2.py3-none-any.whl.zip tmp/cope-2.5.2.tar.gz --markdown 20240504/C/Cope/2.5.1-2.5.2/README.md --exclude *.pyd
+[2024-05-04 05:37:53] INFO root fetch - processPackages [manabase-solver]: Remove: archive file [/home/abi/fetcher/tmp/manabase_solver-0.1.1.tar.gz]
+[2024-05-04 05:37:53] INFO root fetch - processPackages [manabase-solver]: Remove: archive file [/home/abi/fetcher/tmp/manabase_solver-0.1.2.tar.gz]
+[2024-05-04 05:37:53] INFO root fetch - main [MainThread]: End processing [manabase-solver]: success
+[2024-05-04 05:37:55] INFO root fetch - processPackages [Cope]: Remove: archive file [/home/abi/fetcher/tmp/cope-2.5.1-py2.py3-none-any.whl.zip]
+[2024-05-04 05:37:55] INFO root fetch - processPackages [Cope]: Remove: archive file [/home/abi/fetcher/tmp/cope-2.5.2.tar.gz]
+[2024-05-04 05:37:55] INFO root fetch - main [MainThread]: End processing [Cope]: success
+[2024-05-04 05:37:55] INFO root fetch - main [MainThread]: Store serial: [23055364]
