@@ -17922,3 +17922,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:43:04] INFO root fetch - processPackages [EAP]: Remove: archive file [/home/abi/fetcher/tmp/EAP-1.1.9.tar.gz]
 [2024-05-04 19:43:04] INFO root fetch - main [MainThread]: End processing [EAP]: success
 [2024-05-04 19:43:04] INFO root fetch - main [MainThread]: Store serial: [23059684]
+[2024-05-04 19:45:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059684]
+[2024-05-04 19:45:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 19:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ssebowa
+[2024-05-04 19:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: file-read-backwards
+[2024-05-04 19:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: KFSconfig
+[2024-05-04 19:45:12] WARNING root fetch - processPackages [ssebowa]: Skipping, unable to determine old version
+[2024-05-04 19:45:12] INFO root fetch - main [MainThread]: End processing [ssebowa] error
+[2024-05-04 19:45:12] INFO root fetch - processPackages [file-read-backwards]: New version: [3.1.0] Old Version: [3.0.0]
+[2024-05-04 19:45:13] INFO root fetch - processPackages [KFSconfig]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-05-04 19:45:13] INFO root fetch - processPackages [file-read-backwards]: Downloading https://files.pythonhosted.org/packages/e2/0f/04d8a9877d80c26506cad53e3ff7024747e9429a5a06479c68f060948d1a/file_read_backwards-3.0.0.tar.gz
+[2024-05-04 19:45:13] INFO root fetch - processPackages [KFSconfig]: Downloading https://files.pythonhosted.org/packages/7b/16/002ee64c3f03781af3e8c291ccdcecbf9446235e5274f90d401513c2c682/kfsconfig-1.2.0.tar.gz
+[2024-05-04 19:45:13] INFO root fetch - processPackages [file-read-backwards]: Downloading https://files.pythonhosted.org/packages/bf/e9/5a3235d4da8be53288fc5bb510d8bab5909fa810beeb4f5c40c3304c8345/file_read_backwards-3.1.0.tar.gz
+[2024-05-04 19:45:13] INFO root fetch - processPackages [file-read-backwards]: executing diffoscope
+[2024-05-04 19:45:13] INFO root fetch - processPackages [file-read-backwards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_read_backwards-3.0.0.tar.gz tmp/file_read_backwards-3.1.0.tar.gz --markdown 20240504/f/file-read-backwards/3.0.0-3.1.0/README.md --exclude *.pyd
+[2024-05-04 19:45:13] INFO root fetch - processPackages [KFSconfig]: Downloading https://files.pythonhosted.org/packages/91/74/d966d7dd3d07713bdcc45bc97aa06a948df38225c8373d334d8129ffdcc8/kfsconfig-2.0.0.tar.gz
+[2024-05-04 19:45:13] INFO root fetch - processPackages [KFSconfig]: executing diffoscope
+[2024-05-04 19:45:13] INFO root fetch - processPackages [KFSconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsconfig-1.2.0.tar.gz tmp/kfsconfig-2.0.0.tar.gz --markdown 20240504/K/KFSconfig/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-05-04 19:45:14] INFO root fetch - processPackages [file-read-backwards]: Remove: archive file [/home/abi/fetcher/tmp/file_read_backwards-3.0.0.tar.gz]
+[2024-05-04 19:45:14] INFO root fetch - processPackages [file-read-backwards]: Remove: archive file [/home/abi/fetcher/tmp/file_read_backwards-3.1.0.tar.gz]
+[2024-05-04 19:45:14] INFO root fetch - main [MainThread]: End processing [file-read-backwards]: success
+[2024-05-04 19:45:14] INFO root fetch - processPackages [KFSconfig]: Remove: archive file [/home/abi/fetcher/tmp/kfsconfig-1.2.0.tar.gz]
+[2024-05-04 19:45:14] INFO root fetch - processPackages [KFSconfig]: Remove: archive file [/home/abi/fetcher/tmp/kfsconfig-2.0.0.tar.gz]
+[2024-05-04 19:45:14] INFO root fetch - main [MainThread]: End processing [KFSconfig]: success
+[2024-05-04 19:45:14] INFO root fetch - main [MainThread]: Store serial: [23059691]
