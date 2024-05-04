@@ -18462,3 +18462,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:18:17] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
 [2024-05-04 20:18:17] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2024-05-04 20:18:17] INFO root fetch - main [MainThread]: Store serial: [23060089]
+[2024-05-04 20:20:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060089]
+[2024-05-04 20:20:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 20:20:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ReverseBox
+[2024-05-04 20:20:26] INFO root fetch - processPackages [ReverseBox]: New version: [0.8.8] Old Version: [0.8.7]
+[2024-05-04 20:20:26] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/c1/83/15db1280d2d992aa0eee571f85fd8de41dc59b5c5850728cdb9f5d3bf0bb/ReverseBox-0.8.7.tar.gz
+[2024-05-04 20:20:27] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/74/cc/11091d3e16e8c16abc1b9c3eb04cb718cd0488d56153855d5f5e79e25846/ReverseBox-0.8.8.tar.gz
+[2024-05-04 20:20:27] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-04 20:20:27] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.8.7.tar.gz tmp/ReverseBox-0.8.8.tar.gz --markdown 20240504/R/ReverseBox/0.8.7-0.8.8/README.md --exclude *.pyd
+[2024-05-04 20:20:27] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.7.tar.gz]
+[2024-05-04 20:20:27] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.8.tar.gz]
+[2024-05-04 20:20:28] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-04 20:20:28] INFO root fetch - main [MainThread]: Store serial: [23060091]
