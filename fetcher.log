@@ -2557,3 +2557,33 @@
 [2024-05-04 02:46:04] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405030044.tar.gz]
 [2024-05-04 02:46:04] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2024-05-04 02:46:04] INFO root fetch - main [MainThread]: Store serial: [23053121]
+[2024-05-04 02:48:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053121]
+[2024-05-04 02:48:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 02:48:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: d20-securityLayer
+[2024-05-04 02:48:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aixblock-ml
+[2024-05-04 02:48:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cgg
+[2024-05-04 02:48:13] INFO root fetch - processPackages [aixblock-ml]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-04 02:48:13] INFO root fetch - processPackages [d20-securityLayer]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2024-05-04 02:48:13] INFO root fetch - processPackages [cgg]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-04 02:48:13] INFO root fetch - processPackages [aixblock-ml]: Downloading https://files.pythonhosted.org/packages/e9/e3/38dbd090a5ad378c58ac03e81445088b46d92e0ff3c832bd36b8cf926be6/aixblock_ml-0.0.9.tar.gz
+[2024-05-04 02:48:13] INFO root fetch - processPackages [d20-securityLayer]: Downloading https://files.pythonhosted.org/packages/b5/7f/086f837981170217116052b05373bbf9ede287aa375d582b42e31e612cf5/d20-securityLayer-2.0.0a8.tar.gz
+[2024-05-04 02:48:13] INFO root fetch - processPackages [cgg]: Downloading https://files.pythonhosted.org/packages/58/a5/961e79a1bc8cc17eb355f97d010ef09cf6efe2289f15b8ed9c8cad88aab3/cgg-0.2.7.tar.gz
+[2024-05-04 02:48:13] INFO root fetch - processPackages [d20-securityLayer]: Downloading https://files.pythonhosted.org/packages/56/46/f3ba1d8980a81e7e0579b812ea29d2c68be9c442ea0e7168a51afcd8c79e/d20-securityLayer-2.0.0a9.tar.gz
+[2024-05-04 02:48:13] INFO root fetch - processPackages [aixblock-ml]: Downloading https://files.pythonhosted.org/packages/72/96/8339343eb1d031417eb4c5ec3f7a5ca566ee8e2b9ee359b6c12c9330f84c/aixblock_ml-0.1.0.tar.gz
+[2024-05-04 02:48:13] INFO root fetch - processPackages [cgg]: Downloading https://files.pythonhosted.org/packages/c9/d9/ce6e15ee4884566d095169611d57e4613fd4c725fadef806d60a8055f0e1/cgg-0.2.8.tar.gz
+[2024-05-04 02:48:13] INFO root fetch - processPackages [d20-securityLayer]: executing diffoscope
+[2024-05-04 02:48:13] INFO root fetch - processPackages [d20-securityLayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-securityLayer-2.0.0a8.tar.gz tmp/d20-securityLayer-2.0.0a9.tar.gz --markdown 20240504/d/d20-securityLayer/2.0.0a8-2.0.0a9/README.md --exclude *.pyd
+[2024-05-04 02:48:13] INFO root fetch - processPackages [cgg]: executing diffoscope
+[2024-05-04 02:48:13] INFO root fetch - processPackages [cgg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cgg-0.2.7.tar.gz tmp/cgg-0.2.8.tar.gz --markdown 20240504/c/cgg/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-04 02:48:13] INFO root fetch - processPackages [aixblock-ml]: executing diffoscope
+[2024-05-04 02:48:13] INFO root fetch - processPackages [aixblock-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixblock_ml-0.0.9.tar.gz tmp/aixblock_ml-0.1.0.tar.gz --markdown 20240504/a/aixblock-ml/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-04 02:48:14] INFO root fetch - processPackages [aixblock-ml]: Remove: archive file [/home/abi/fetcher/tmp/aixblock_ml-0.0.9.tar.gz]
+[2024-05-04 02:48:14] INFO root fetch - processPackages [aixblock-ml]: Remove: archive file [/home/abi/fetcher/tmp/aixblock_ml-0.1.0.tar.gz]
+[2024-05-04 02:48:14] INFO root fetch - main [MainThread]: End processing [aixblock-ml]: success
+[2024-05-04 02:48:14] INFO root fetch - processPackages [cgg]: Remove: archive file [/home/abi/fetcher/tmp/cgg-0.2.7.tar.gz]
+[2024-05-04 02:48:14] INFO root fetch - processPackages [cgg]: Remove: archive file [/home/abi/fetcher/tmp/cgg-0.2.8.tar.gz]
+[2024-05-04 02:48:14] INFO root fetch - main [MainThread]: End processing [cgg]: success
+[2024-05-04 02:48:14] INFO root fetch - processPackages [d20-securityLayer]: Remove: archive file [/home/abi/fetcher/tmp/d20-securityLayer-2.0.0a8.tar.gz]
+[2024-05-04 02:48:14] INFO root fetch - processPackages [d20-securityLayer]: Remove: archive file [/home/abi/fetcher/tmp/d20-securityLayer-2.0.0a9.tar.gz]
+[2024-05-04 02:48:14] INFO root fetch - main [MainThread]: End processing [d20-securityLayer]: success
+[2024-05-04 02:48:14] INFO root fetch - main [MainThread]: Store serial: [23053133]
