@@ -11983,3 +11983,33 @@
 [2024-05-04 10:54:27] INFO root fetch - processPackages [otrobopt]: Remove: archive file [/home/abi/fetcher/tmp/otrobopt-0.9.post1-cp39-cp39-manylinux1_x86_64.whl.zip]
 [2024-05-04 10:54:27] INFO root fetch - main [MainThread]: End processing [otrobopt]: success
 [2024-05-04 10:54:27] INFO root fetch - main [MainThread]: Store serial: [23056994]
+[2024-05-04 10:56:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056994]
+[2024-05-04 10:56:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 10:56:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpi4jax
+[2024-05-04 10:56:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sts-lib
+[2024-05-04 10:56:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: subdominator
+[2024-05-04 10:56:39] INFO root fetch - processPackages [subdominator]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-04 10:56:39] INFO root fetch - processPackages [mpi4jax]: New version: [0.4.1] Old Version: [0.4.0.post6]
+[2024-05-04 10:56:39] INFO root fetch - processPackages [sts-lib]: New version: [0.30.3] Old Version: [0.30.2]
+[2024-05-04 10:56:39] INFO root fetch - processPackages [mpi4jax]: Downloading https://files.pythonhosted.org/packages/9a/66/7a2ddf84f769c5c280515d62c4e9dcf37bea774bfef9dcd13a395a9d537a/mpi4jax-0.4.0.post6.tar.gz
+[2024-05-04 10:56:39] INFO root fetch - processPackages [sts-lib]: Downloading https://files.pythonhosted.org/packages/91/c2/96059707c02fbaaf76569fb525d85a737deee85c0d08565dee8badb47ce4/sts_lib-0.30.2.tar.gz
+[2024-05-04 10:56:39] INFO root fetch - processPackages [subdominator]: Downloading https://files.pythonhosted.org/packages/29/3a/de4f3382bd53a9e58e54be8423a78f9d3800b96f20966180ea04071b27d9/subdominator-1.0.6.tar.gz
+[2024-05-04 10:56:39] INFO root fetch - processPackages [mpi4jax]: Downloading https://files.pythonhosted.org/packages/33/51/4b392accbe2dedd0ab54692f9dc61942e89b05bb42902c7e44d45beda6bf/mpi4jax-0.4.1.tar.gz
+[2024-05-04 10:56:39] INFO root fetch - processPackages [subdominator]: Downloading https://files.pythonhosted.org/packages/f6/dd/d71484f5d50b7dd9333ae96453d1252363b4e23732f49af5c3af75896038/subdominator-1.0.7.tar.gz
+[2024-05-04 10:56:39] INFO root fetch - processPackages [sts-lib]: Downloading https://files.pythonhosted.org/packages/27/f0/d513e15f07129ff16a4393d91b96e74a792199b3f803177cda18b62f2ef1/sts_lib-0.30.3.tar.gz
+[2024-05-04 10:56:39] INFO root fetch - processPackages [subdominator]: executing diffoscope
+[2024-05-04 10:56:39] INFO root fetch - processPackages [subdominator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subdominator-1.0.6.tar.gz tmp/subdominator-1.0.7.tar.gz --markdown 20240504/s/subdominator/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-04 10:56:40] INFO root fetch - processPackages [mpi4jax]: executing diffoscope
+[2024-05-04 10:56:40] INFO root fetch - processPackages [mpi4jax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpi4jax-0.4.0.post6.tar.gz tmp/mpi4jax-0.4.1.tar.gz --markdown 20240504/m/mpi4jax/0.4.0.post6-0.4.1/README.md --exclude *.pyd
+[2024-05-04 10:56:40] INFO root fetch - processPackages [sts-lib]: executing diffoscope
+[2024-05-04 10:56:40] INFO root fetch - processPackages [sts-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sts_lib-0.30.2.tar.gz tmp/sts_lib-0.30.3.tar.gz --markdown 20240504/s/sts-lib/0.30.2-0.30.3/README.md --exclude *.pyd
+[2024-05-04 10:56:40] INFO root fetch - processPackages [subdominator]: Remove: archive file [/home/abi/fetcher/tmp/subdominator-1.0.6.tar.gz]
+[2024-05-04 10:56:40] INFO root fetch - processPackages [subdominator]: Remove: archive file [/home/abi/fetcher/tmp/subdominator-1.0.7.tar.gz]
+[2024-05-04 10:56:40] INFO root fetch - main [MainThread]: End processing [subdominator]: success
+[2024-05-04 10:56:40] INFO root fetch - processPackages [sts-lib]: Remove: archive file [/home/abi/fetcher/tmp/sts_lib-0.30.2.tar.gz]
+[2024-05-04 10:56:40] INFO root fetch - processPackages [sts-lib]: Remove: archive file [/home/abi/fetcher/tmp/sts_lib-0.30.3.tar.gz]
+[2024-05-04 10:56:40] INFO root fetch - main [MainThread]: End processing [sts-lib]: success
+[2024-05-04 10:56:40] INFO root fetch - processPackages [mpi4jax]: Remove: archive file [/home/abi/fetcher/tmp/mpi4jax-0.4.0.post6.tar.gz]
+[2024-05-04 10:56:40] INFO root fetch - processPackages [mpi4jax]: Remove: archive file [/home/abi/fetcher/tmp/mpi4jax-0.4.1.tar.gz]
+[2024-05-04 10:56:40] INFO root fetch - main [MainThread]: End processing [mpi4jax]: success
+[2024-05-04 10:56:40] INFO root fetch - main [MainThread]: Store serial: [23057002]
