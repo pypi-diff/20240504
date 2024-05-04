@@ -1964,3 +1964,45 @@
 [2024-05-04 02:11:09] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202405030009.tar.gz]
 [2024-05-04 02:11:09] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
 [2024-05-04 02:11:09] INFO root fetch - main [MainThread]: Store serial: [23052908]
+[2024-05-04 02:13:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23052908]
+[2024-05-04 02:13:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 02:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: listpicker
+[2024-05-04 02:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: used-addr-check
+[2024-05-04 02:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-events-notify
+[2024-05-04 02:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-nag
+[2024-05-04 02:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MobileInventoryCLI
+[2024-05-04 02:13:17] INFO root fetch - processPackages [cdk-nag]: New version: [2.9.7] Old Version: [2.9.6]
+[2024-05-04 02:13:17] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.82] Old Version: [0.4.81]
+[2024-05-04 02:13:17] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-04 02:13:17] WARNING root fetch - processPackages [used-addr-check]: Skipping, unable to determine old version
+[2024-05-04 02:13:17] INFO root fetch - main [MainThread]: End processing [used-addr-check] error
+[2024-05-04 02:13:17] INFO root fetch - processPackages [listpicker]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-04 02:13:17] INFO root fetch - processPackages [cdk-nag]: Downloading https://files.pythonhosted.org/packages/26/bc/b8768e307b8d360b78f45303ac30baa4232637f372296203b0005cd07cd4/cdk-nag-2.9.6.tar.gz
+[2024-05-04 02:13:17] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/75/a0/33b549958200768a3687a41c50f78460c77bb915d20c7e13d9e9731c1559/MobileInventoryCLI-0.4.81.tar.gz
+[2024-05-04 02:13:17] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-05-04 02:13:18] INFO root fetch - processPackages [listpicker]: Downloading https://files.pythonhosted.org/packages/0b/f9/8e183063a477c7382dd13170f7026295db612d39f03678a1dc801a09b30a/listpicker-0.1.1.tar.gz
+[2024-05-04 02:13:18] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-05-04 02:13:18] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/70/f2/6a1fc26b23940d1cfa992c84a912efa90bbc65881047d43ea7de5690abb5/MobileInventoryCLI-0.4.82.tar.gz
+[2024-05-04 02:13:18] INFO root fetch - processPackages [cdk-nag]: Downloading https://files.pythonhosted.org/packages/71/78/6a2d0c627f1033774d5be3d2faca465e0bc0b07cf97cec491c795775999a/cdk-nag-2.9.7.tar.gz
+[2024-05-04 02:13:18] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-05-04 02:13:18] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240504/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-04 02:13:18] INFO root fetch - processPackages [listpicker]: Downloading https://files.pythonhosted.org/packages/13/e6/ca175fec6a0cbaf58d3b6deb21732d160c3d932897971893576fd1ce934a/listpicker-0.2.0.tar.gz
+[2024-05-04 02:13:18] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-04 02:13:18] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.81.tar.gz tmp/MobileInventoryCLI-0.4.82.tar.gz --markdown 20240504/M/MobileInventoryCLI/0.4.81-0.4.82/README.md --exclude *.pyd
+[2024-05-04 02:13:18] INFO root fetch - processPackages [cdk-nag]: executing diffoscope
+[2024-05-04 02:13:18] INFO root fetch - processPackages [cdk-nag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-nag-2.9.6.tar.gz tmp/cdk-nag-2.9.7.tar.gz --markdown 20240504/c/cdk-nag/2.9.6-2.9.7/README.md --exclude *.pyd
+[2024-05-04 02:13:18] INFO root fetch - processPackages [listpicker]: executing diffoscope
+[2024-05-04 02:13:18] INFO root fetch - processPackages [listpicker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/listpicker-0.1.1.tar.gz tmp/listpicker-0.2.0.tar.gz --markdown 20240504/l/listpicker/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-04 02:13:19] INFO root fetch - processPackages [cdk-nag]: Remove: archive file [/home/abi/fetcher/tmp/cdk-nag-2.9.6.tar.gz]
+[2024-05-04 02:13:19] INFO root fetch - processPackages [cdk-nag]: Remove: archive file [/home/abi/fetcher/tmp/cdk-nag-2.9.7.tar.gz]
+[2024-05-04 02:13:19] INFO root fetch - main [MainThread]: End processing [cdk-nag]: success
+[2024-05-04 02:13:19] INFO root fetch - processPackages [listpicker]: Remove: archive file [/home/abi/fetcher/tmp/listpicker-0.1.1.tar.gz]
+[2024-05-04 02:13:19] INFO root fetch - processPackages [listpicker]: Remove: archive file [/home/abi/fetcher/tmp/listpicker-0.2.0.tar.gz]
+[2024-05-04 02:13:19] INFO root fetch - main [MainThread]: End processing [listpicker]: success
+[2024-05-04 02:13:19] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.81.tar.gz]
+[2024-05-04 02:13:19] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.82.tar.gz]
+[2024-05-04 02:13:19] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-04 02:13:19] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.98.tar.gz]
+[2024-05-04 02:13:19] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
+[2024-05-04 02:13:19] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-05-04 02:13:19] INFO root fetch - main [MainThread]: Store serial: [23052924]
