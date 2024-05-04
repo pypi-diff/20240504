@@ -11135,3 +11135,34 @@
 [2024-05-04 09:31:43] INFO root fetch - processPackages [travdata]: Remove: archive file [/home/abi/fetcher/tmp/travdata-0.4.1.tar.gz]
 [2024-05-04 09:31:43] INFO root fetch - main [MainThread]: End processing [travdata]: success
 [2024-05-04 09:31:43] INFO root fetch - main [MainThread]: Store serial: [23056583]
+[2024-05-04 09:33:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056583]
+[2024-05-04 09:33:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 09:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lfg-llama
+[2024-05-04 09:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inegi-explorer
+[2024-05-04 09:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CTDFjorder
+[2024-05-04 09:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lfg-llama
+[2024-05-04 09:33:52] INFO root fetch - processPackages [lfg-llama]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-04 09:33:52] INFO root fetch - processPackages [lfg-llama]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-04 09:33:52] INFO root fetch - processPackages [CTDFjorder]: New version: [0.0.38] Old Version: [0.0.37]
+[2024-05-04 09:33:52] WARNING root fetch - processPackages [inegi-explorer]: Skipping, unable to determine old version
+[2024-05-04 09:33:52] INFO root fetch - main [MainThread]: End processing [inegi-explorer] error
+[2024-05-04 09:33:52] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/32/90/56b5ad75be806569a9dc98eb3ccc00bfe6fc674c4587590562bca678873a/ctdfjorder-0.0.37.tar.gz
+[2024-05-04 09:33:52] INFO root fetch - processPackages [lfg-llama]: Downloading https://files.pythonhosted.org/packages/c7/da/1020d41dfc0f8de5d9d23ad0098c6775a124a8e91c28b16885e876c5cf5f/lfg_llama-1.2.0.tar.gz
+[2024-05-04 09:33:52] INFO root fetch - processPackages [lfg-llama]: Downloading https://files.pythonhosted.org/packages/c7/da/1020d41dfc0f8de5d9d23ad0098c6775a124a8e91c28b16885e876c5cf5f/lfg_llama-1.2.0.tar.gz
+[2024-05-04 09:33:52] INFO root fetch - processPackages [CTDFjorder]: Downloading https://files.pythonhosted.org/packages/e7/62/9f886c811fd7840b120136aa677557acd25d69107ae4a2c8d41eff2f07f0/ctdfjorder-0.0.38.tar.gz
+[2024-05-04 09:33:52] INFO root fetch - processPackages [lfg-llama]: Downloading https://files.pythonhosted.org/packages/d1/aa/e9835bdf3d275f4a98a16e969a99de012533c14ae3783d434b0dd4c04ff4/lfg_llama-1.2.1.tar.gz
+[2024-05-04 09:33:52] INFO root fetch - processPackages [lfg-llama]: Downloading https://files.pythonhosted.org/packages/d1/aa/e9835bdf3d275f4a98a16e969a99de012533c14ae3783d434b0dd4c04ff4/lfg_llama-1.2.1.tar.gz
+[2024-05-04 09:33:52] INFO root fetch - processPackages [CTDFjorder]: executing diffoscope
+[2024-05-04 09:33:52] INFO root fetch - processPackages [CTDFjorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctdfjorder-0.0.37.tar.gz tmp/ctdfjorder-0.0.38.tar.gz --markdown 20240504/C/CTDFjorder/0.0.37-0.0.38/README.md --exclude *.pyd
+[2024-05-04 09:33:52] INFO root fetch - processPackages [lfg-llama]: executing diffoscope
+[2024-05-04 09:33:52] INFO root fetch - processPackages [lfg-llama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lfg_llama-1.2.0.tar.gz tmp/lfg_llama-1.2.1.tar.gz --markdown 20240504/l/lfg-llama/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-04 09:33:52] INFO root fetch - processPackages [lfg-llama]: executing diffoscope
+[2024-05-04 09:33:52] INFO root fetch - processPackages [lfg-llama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lfg_llama-1.2.0.tar.gz tmp/lfg_llama-1.2.1.tar.gz --markdown 20240504/l/lfg-llama/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-04 09:33:53] INFO root fetch - processPackages [lfg-llama]: Remove: archive file [/home/abi/fetcher/tmp/lfg_llama-1.2.0.tar.gz]
+[2024-05-04 09:33:53] INFO root fetch - processPackages [lfg-llama]: Remove: archive file [/home/abi/fetcher/tmp/lfg_llama-1.2.1.tar.gz]
+[2024-05-04 09:33:53] INFO root fetch - main [MainThread]: End processing [lfg-llama]: success
+[2024-05-04 09:33:53] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.37.tar.gz]
+[2024-05-04 09:33:53] INFO root fetch - processPackages [CTDFjorder]: Remove: archive file [/home/abi/fetcher/tmp/ctdfjorder-0.0.38.tar.gz]
+[2024-05-04 09:33:53] INFO root fetch - main [MainThread]: End processing [CTDFjorder]: success
+[2024-05-04 09:33:53] INFO root fetch - main [MainThread]: End processing [lfg-llama]: success
+[2024-05-04 09:33:53] INFO root fetch - main [MainThread]: Store serial: [23056596]
