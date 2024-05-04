@@ -16049,3 +16049,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:20:53] INFO root fetch - processPackages [digitalarztools]: Remove: archive file [/home/abi/fetcher/tmp/digitalarztools-0.1.9.tar.gz]
 [2024-05-04 17:20:53] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
 [2024-05-04 17:20:53] INFO root fetch - main [MainThread]: Store serial: [23058841]
+[2024-05-04 17:22:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058841]
+[2024-05-04 17:23:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 17:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: safe-store
+[2024-05-04 17:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcicutils
+[2024-05-04 17:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyedpro
+[2024-05-04 17:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mpmaps
+[2024-05-04 17:23:01] WARNING root fetch - processPackages [mpmaps]: Skipping, unable to determine old version
+[2024-05-04 17:23:01] INFO root fetch - main [MainThread]: End processing [mpmaps] error
+[2024-05-04 17:23:01] INFO root fetch - processPackages [dcicutils]: New version: [8.8.4.1b9] Old Version: [8.8.4.1b8]
+[2024-05-04 17:23:02] INFO root fetch - processPackages [pyedpro]: New version: [3.3.7] Old Version: [3.3.6]
+[2024-05-04 17:23:02] INFO root fetch - processPackages [safe-store]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-05-04 17:23:02] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/88/e3/a68b919149fb754f37e341f70d383d88a49db02e5b5e7f34d0cf00879646/dcicutils-8.8.4.1b8.tar.gz
+[2024-05-04 17:23:02] INFO root fetch - processPackages [safe-store]: Downloading https://files.pythonhosted.org/packages/39/72/9f1e6290b57967d7f0b350f6e13575d878731854de98cbb676b53f7c2837/safe_store-0.7.1.tar.gz
+[2024-05-04 17:23:02] INFO root fetch - processPackages [pyedpro]: Downloading https://files.pythonhosted.org/packages/6d/d2/79930bdde23ae3a03456eb83bd7963436ecb26d99309d58a07bdbbaff8e2/pyedpro-3.3.6.tar.gz
+[2024-05-04 17:23:02] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/ab/80/64152621f2e387ed0dff6f4fbf31f5b2e11f4dfe300d598bbfb27dfd25b5/dcicutils-8.8.4.1b9.tar.gz
+[2024-05-04 17:23:02] INFO root fetch - processPackages [safe-store]: Downloading https://files.pythonhosted.org/packages/23/d4/fe1738899383b9816e8406637df37f920fe11383b59ed7d48bd76822ae1f/safe_store-0.7.2.tar.gz
+[2024-05-04 17:23:02] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-05-04 17:23:02] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.4.1b8.tar.gz tmp/dcicutils-8.8.4.1b9.tar.gz --markdown 20240504/d/dcicutils/8.8.4.1b8-8.8.4.1b9/README.md --exclude *.pyd
+[2024-05-04 17:23:02] INFO root fetch - processPackages [safe-store]: executing diffoscope
+[2024-05-04 17:23:02] INFO root fetch - processPackages [safe-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safe_store-0.7.1.tar.gz tmp/safe_store-0.7.2.tar.gz --markdown 20240504/s/safe-store/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-05-04 17:23:02] INFO root fetch - processPackages [pyedpro]: Downloading https://files.pythonhosted.org/packages/34/db/1f1f44cb0a113ad7f41c821bde2907cb67bbe43a0a26c00bd2ea1c05d4fb/pyedpro-3.3.7.tar.gz
+[2024-05-04 17:23:03] INFO root fetch - processPackages [pyedpro]: executing diffoscope
+[2024-05-04 17:23:03] INFO root fetch - processPackages [pyedpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyedpro-3.3.6.tar.gz tmp/pyedpro-3.3.7.tar.gz --markdown 20240504/p/pyedpro/3.3.6-3.3.7/README.md --exclude *.pyd
+[2024-05-04 17:23:03] INFO root fetch - processPackages [safe-store]: Remove: archive file [/home/abi/fetcher/tmp/safe_store-0.7.1.tar.gz]
+[2024-05-04 17:23:03] INFO root fetch - processPackages [safe-store]: Remove: archive file [/home/abi/fetcher/tmp/safe_store-0.7.2.tar.gz]
+[2024-05-04 17:23:03] INFO root fetch - main [MainThread]: End processing [safe-store]: success
+[2024-05-04 17:23:03] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.4.1b8.tar.gz]
+[2024-05-04 17:23:03] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.4.1b9.tar.gz]
+[2024-05-04 17:23:03] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-05-04 17:23:04] INFO root fetch - processPackages [pyedpro]: Remove: archive file [/home/abi/fetcher/tmp/pyedpro-3.3.6.tar.gz]
+[2024-05-04 17:23:04] INFO root fetch - processPackages [pyedpro]: Remove: archive file [/home/abi/fetcher/tmp/pyedpro-3.3.7.tar.gz]
+[2024-05-04 17:23:04] INFO root fetch - main [MainThread]: End processing [pyedpro]: success
+[2024-05-04 17:23:04] INFO root fetch - main [MainThread]: Store serial: [23058856]
