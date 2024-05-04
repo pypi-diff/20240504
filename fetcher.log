@@ -16082,3 +16082,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:23:04] INFO root fetch - processPackages [pyedpro]: Remove: archive file [/home/abi/fetcher/tmp/pyedpro-3.3.7.tar.gz]
 [2024-05-04 17:23:04] INFO root fetch - main [MainThread]: End processing [pyedpro]: success
 [2024-05-04 17:23:04] INFO root fetch - main [MainThread]: Store serial: [23058856]
+[2024-05-04 17:25:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058856]
+[2024-05-04 17:25:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 17:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyqueen
+[2024-05-04 17:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meta-machina
+[2024-05-04 17:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: requake
+[2024-05-04 17:25:13] INFO root fetch - processPackages [meta-machina]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-04 17:25:13] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/46/83/4f3e452858fdbfda5ba1a3de0beee1cc1ccc6b163b761cdfb345b35f8588/meta_machina-0.0.2.tar.gz
+[2024-05-04 17:25:13] INFO root fetch - processPackages [pyqueen]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-04 17:25:13] INFO root fetch - processPackages [requake]: New version: [0.6] Old Version: [0.5]
+[2024-05-04 17:25:13] INFO root fetch - processPackages [pyqueen]: Downloading https://files.pythonhosted.org/packages/0a/10/b23d8b81663cdab86625000c9a1173a2332177c5678c1d6a79f1b45d5cd6/pyqueen-1.0.8.tar.gz
+[2024-05-04 17:25:13] INFO root fetch - processPackages [requake]: Downloading https://files.pythonhosted.org/packages/29/81/22e03fed018fa1ae47549692b2ff4b5b9cb9345536fba7ab0063aea5ff9d/requake-0.5.tar.gz
+[2024-05-04 17:25:13] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/6c/82/7511880baa0f649fd3542216197fa0680daf6013c6c9b5fd256c57e38bd5/meta_machina-0.0.3.tar.gz
+[2024-05-04 17:25:13] INFO root fetch - processPackages [meta-machina]: executing diffoscope
+[2024-05-04 17:25:13] INFO root fetch - processPackages [meta-machina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta_machina-0.0.2.tar.gz tmp/meta_machina-0.0.3.tar.gz --markdown 20240504/m/meta-machina/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-04 17:25:13] INFO root fetch - processPackages [pyqueen]: Downloading https://files.pythonhosted.org/packages/01/d2/8c6b250edcb2a4d24cd2de765c4544c491d31948789b0f4d435fdca9fc15/pyqueen-1.0.9.tar.gz
+[2024-05-04 17:25:13] INFO root fetch - processPackages [requake]: Downloading https://files.pythonhosted.org/packages/af/48/5a4d612236d457a11556e753d1408551b89539b569b5cae67617acc13b69/requake-0.6.tar.gz
+[2024-05-04 17:25:13] INFO root fetch - processPackages [pyqueen]: executing diffoscope
+[2024-05-04 17:25:13] INFO root fetch - processPackages [pyqueen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqueen-1.0.8.tar.gz tmp/pyqueen-1.0.9.tar.gz --markdown 20240504/p/pyqueen/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-04 17:25:13] INFO root fetch - processPackages [requake]: executing diffoscope
+[2024-05-04 17:25:13] INFO root fetch - processPackages [requake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requake-0.5.tar.gz tmp/requake-0.6.tar.gz --markdown 20240504/r/requake/0.5-0.6/README.md --exclude *.pyd
+[2024-05-04 17:25:14] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.2.tar.gz]
+[2024-05-04 17:25:14] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.3.tar.gz]
+[2024-05-04 17:25:14] INFO root fetch - main [MainThread]: End processing [meta-machina]: success
+[2024-05-04 17:25:14] INFO root fetch - processPackages [pyqueen]: Remove: archive file [/home/abi/fetcher/tmp/pyqueen-1.0.8.tar.gz]
+[2024-05-04 17:25:14] INFO root fetch - processPackages [pyqueen]: Remove: archive file [/home/abi/fetcher/tmp/pyqueen-1.0.9.tar.gz]
+[2024-05-04 17:25:14] INFO root fetch - main [MainThread]: End processing [pyqueen]: success
+[2024-05-04 17:25:14] INFO root fetch - processPackages [requake]: Remove: archive file [/home/abi/fetcher/tmp/requake-0.5.tar.gz]
+[2024-05-04 17:25:14] INFO root fetch - processPackages [requake]: Remove: archive file [/home/abi/fetcher/tmp/requake-0.6.tar.gz]
+[2024-05-04 17:25:14] INFO root fetch - main [MainThread]: End processing [requake]: success
+[2024-05-04 17:25:14] INFO root fetch - main [MainThread]: Store serial: [23058873]
