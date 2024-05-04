@@ -15200,3 +15200,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:05:38] INFO root fetch - processPackages [dltrain]: Remove: archive file [/home/abi/fetcher/tmp/dltrain-0.0.4.tar.gz]
 [2024-05-04 16:05:38] INFO root fetch - main [MainThread]: End processing [dltrain]: success
 [2024-05-04 16:05:38] INFO root fetch - main [MainThread]: Store serial: [23058393]
+[2024-05-04 16:07:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058393]
+[2024-05-04 16:07:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 16:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wxhook
+[2024-05-04 16:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-any2text-parser
+[2024-05-04 16:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: APSTooler
+[2024-05-04 16:07:47] WARNING root fetch - processPackages [py-any2text-parser]: Skipping, unable to determine old version
+[2024-05-04 16:07:47] INFO root fetch - main [MainThread]: End processing [py-any2text-parser] error
+[2024-05-04 16:07:47] WARNING root fetch - processPackages [APSTooler]: Skipping, unable to determine old version
+[2024-05-04 16:07:47] INFO root fetch - main [MainThread]: End processing [APSTooler] error
+[2024-05-04 16:07:47] WARNING root fetch - processPackages [wxhook]: Skipping, unable to determine old version
+[2024-05-04 16:07:47] INFO root fetch - main [MainThread]: End processing [wxhook] error
+[2024-05-04 16:07:47] INFO root fetch - main [MainThread]: Store serial: [23058403]
