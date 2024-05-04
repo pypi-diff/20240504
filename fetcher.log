@@ -9666,3 +9666,42 @@
 [2024-05-04 07:19:20] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
 [2024-05-04 07:19:20] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
 [2024-05-04 07:19:20] INFO root fetch - main [MainThread]: Store serial: [23055861]
+[2024-05-04 07:21:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055861]
+[2024-05-04 07:21:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 07:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pc-perf
+[2024-05-04 07:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thundra-ai
+[2024-05-04 07:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dummyML
+[2024-05-04 07:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pretty-confusion-matrix
+[2024-05-04 07:21:29] INFO root fetch - processPackages [pc-perf]: New version: [1.2.0] Old Version: [1.1.6]
+[2024-05-04 07:21:29] INFO root fetch - processPackages [thundra-ai]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 07:21:29] INFO root fetch - processPackages [pc-perf]: Downloading https://files.pythonhosted.org/packages/c1/72/453deddf40b193d2935557544a7a1ce8c82e7fdfb87e70eb0742800a71ec/pc-perf-1.1.6.tar.gz
+[2024-05-04 07:21:29] INFO root fetch - processPackages [pretty-confusion-matrix]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-04 07:21:29] INFO root fetch - processPackages [dummyML]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-04 07:21:29] INFO root fetch - processPackages [thundra-ai]: Downloading https://files.pythonhosted.org/packages/0f/23/88002595281fb2c2cc9f94f71511b1708d0cefb1f4c49d5770d1d3d24f84/thundra_ai-0.0.8.tar.gz
+[2024-05-04 07:21:29] INFO root fetch - processPackages [dummyML]: Downloading https://files.pythonhosted.org/packages/a9/bc/29745ae741e7d5cbd66fd9c36f1174d5d5bb24a6c2c6d089aa3b241361b9/dummyml-0.9.6.tar.gz
+[2024-05-04 07:21:29] INFO root fetch - processPackages [pretty-confusion-matrix]: Downloading https://files.pythonhosted.org/packages/86/df/58bd1765f2597c1b04da5807ae4ee9e28d1ba87da7b58ac065c1f0417f38/pretty-confusion-matrix-0.1.1.tar.gz
+[2024-05-04 07:21:29] INFO root fetch - processPackages [pc-perf]: Downloading https://files.pythonhosted.org/packages/aa/ff/75ea5da5999772295109a158e51e7d15fc0d623f7a5dd85bbb55572d1c72/pc-perf-1.2.0.tar.gz
+[2024-05-04 07:21:29] INFO root fetch - processPackages [pc-perf]: executing diffoscope
+[2024-05-04 07:21:29] INFO root fetch - processPackages [pc-perf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pc-perf-1.1.6.tar.gz tmp/pc-perf-1.2.0.tar.gz --markdown 20240504/p/pc-perf/1.1.6-1.2.0/README.md --exclude *.pyd
+[2024-05-04 07:21:29] INFO root fetch - processPackages [thundra-ai]: Downloading https://files.pythonhosted.org/packages/99/8e/2bd572bb0647b2f04ecc2e27990693664ae793269bd1057405216141dc18/thundra_ai-0.0.9.tar.gz
+[2024-05-04 07:21:29] INFO root fetch - processPackages [dummyML]: Downloading https://files.pythonhosted.org/packages/bb/57/a78895e93dab76bee0bf9c9704469558e2e8c0d454c505f40720358725d3/dummyml-0.9.7.tar.gz
+[2024-05-04 07:21:29] INFO root fetch - processPackages [dummyML]: executing diffoscope
+[2024-05-04 07:21:29] INFO root fetch - processPackages [dummyML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dummyml-0.9.6.tar.gz tmp/dummyml-0.9.7.tar.gz --markdown 20240504/d/dummyML/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-04 07:21:29] INFO root fetch - processPackages [pretty-confusion-matrix]: Downloading https://files.pythonhosted.org/packages/8d/a8/59f2b2c6e9a188b6cdc6a79ad3433c3e1b6609946103f98139ce7097b02a/pretty_confusion_matrix-0.2.0.tar.gz
+[2024-05-04 07:21:30] INFO root fetch - processPackages [pretty-confusion-matrix]: executing diffoscope
+[2024-05-04 07:21:30] INFO root fetch - processPackages [pretty-confusion-matrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretty-confusion-matrix-0.1.1.tar.gz tmp/pretty_confusion_matrix-0.2.0.tar.gz --markdown 20240504/p/pretty-confusion-matrix/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-04 07:21:30] INFO root fetch - processPackages [pc-perf]: Remove: archive file [/home/abi/fetcher/tmp/pc-perf-1.1.6.tar.gz]
+[2024-05-04 07:21:30] INFO root fetch - processPackages [pc-perf]: Remove: archive file [/home/abi/fetcher/tmp/pc-perf-1.2.0.tar.gz]
+[2024-05-04 07:21:30] INFO root fetch - main [MainThread]: End processing [pc-perf]: success
+[2024-05-04 07:21:30] INFO root fetch - processPackages [dummyML]: Remove: archive file [/home/abi/fetcher/tmp/dummyml-0.9.6.tar.gz]
+[2024-05-04 07:21:30] INFO root fetch - processPackages [dummyML]: Remove: archive file [/home/abi/fetcher/tmp/dummyml-0.9.7.tar.gz]
+[2024-05-04 07:21:30] INFO root fetch - main [MainThread]: End processing [dummyML]: success
+[2024-05-04 07:21:30] INFO root fetch - processPackages [pretty-confusion-matrix]: Remove: archive file [/home/abi/fetcher/tmp/pretty-confusion-matrix-0.1.1.tar.gz]
+[2024-05-04 07:21:30] INFO root fetch - processPackages [pretty-confusion-matrix]: Remove: archive file [/home/abi/fetcher/tmp/pretty_confusion_matrix-0.2.0.tar.gz]
+[2024-05-04 07:21:30] INFO root fetch - main [MainThread]: End processing [pretty-confusion-matrix]: success
+[2024-05-04 07:21:31] INFO root fetch - processPackages [thundra-ai]: executing diffoscope
+[2024-05-04 07:21:31] INFO root fetch - processPackages [thundra-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thundra_ai-0.0.8.tar.gz tmp/thundra_ai-0.0.9.tar.gz --markdown 20240504/t/thundra-ai/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 07:21:31] INFO root fetch - processPackages [thundra-ai]: Remove: archive file [/home/abi/fetcher/tmp/thundra_ai-0.0.8.tar.gz]
+[2024-05-04 07:21:31] INFO root fetch - processPackages [thundra-ai]: Remove: archive file [/home/abi/fetcher/tmp/thundra_ai-0.0.9.tar.gz]
+[2024-05-04 07:21:31] INFO root fetch - main [MainThread]: End processing [thundra-ai]: success
+[2024-05-04 07:21:31] INFO root fetch - main [MainThread]: Store serial: [23055873]
