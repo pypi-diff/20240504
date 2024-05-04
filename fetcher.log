@@ -16007,3 +16007,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:16:32] INFO root fetch - processPackages [pygazpar]: Remove: archive file [/home/abi/fetcher/tmp/pygazpar-1.3.0a6.tar.gz]
 [2024-05-04 17:16:32] INFO root fetch - main [MainThread]: End processing [pygazpar]: success
 [2024-05-04 17:16:32] INFO root fetch - main [MainThread]: Store serial: [23058816]
+[2024-05-04 17:18:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058816]
+[2024-05-04 17:18:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 17:18:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyauth0
+[2024-05-04 17:18:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wordc
+[2024-05-04 17:18:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-gpt
+[2024-05-04 17:18:41] INFO root fetch - processPackages [pyauth0]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 17:18:41] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/1c/8f/28e5502ab8583bdc419aeadde8dc6c9f235723a6f92507d33de9ed162a4c/pyauth0-0.1.1.tar.gz
+[2024-05-04 17:18:41] INFO root fetch - processPackages [nonebot-plugin-gpt]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 17:18:41] INFO root fetch - processPackages [wordc]: New version: [1.0.0] Old Version: [0.1.2]
+[2024-05-04 17:18:41] INFO root fetch - processPackages [wordc]: Downloading https://files.pythonhosted.org/packages/6a/8c/1749bfb0bd4eaeda192b59e2cb89125338571f12e529a67b2bdbf7211773/wordc-0.1.2.tar.gz
+[2024-05-04 17:18:41] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/1d/8f/8344d14d371539b9d779d12244a2f7b2de001a25a5fc40dcce481e9a7fc3/pyauth0-0.1.2.tar.gz
+[2024-05-04 17:18:41] INFO root fetch - processPackages [nonebot-plugin-gpt]: Downloading https://files.pythonhosted.org/packages/d3/b8/e98732cabdc5211650e901088c2fde40acd5a0131b175d00468129132813/nonebot-plugin-gpt-0.0.8.tar.gz
+[2024-05-04 17:18:41] INFO root fetch - processPackages [pyauth0]: executing diffoscope
+[2024-05-04 17:18:41] INFO root fetch - processPackages [pyauth0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyauth0-0.1.1.tar.gz tmp/pyauth0-0.1.2.tar.gz --markdown 20240504/p/pyauth0/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 17:18:41] INFO root fetch - processPackages [wordc]: Downloading https://files.pythonhosted.org/packages/f4/98/0ba7e49db0191f3c88b2cc3bf3ae77a5c603c995cf8a49967d9b63f3835c/wordc-1.0.0.tar.gz
+[2024-05-04 17:18:42] INFO root fetch - processPackages [nonebot-plugin-gpt]: Downloading https://files.pythonhosted.org/packages/3d/9f/81d150090fcea62c65939c289c40f03dc27e061ec4bc33f5dafeb79fc785/nonebot-plugin-gpt-0.0.9.tar.gz
+[2024-05-04 17:18:42] INFO root fetch - processPackages [wordc]: executing diffoscope
+[2024-05-04 17:18:42] INFO root fetch - processPackages [wordc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wordc-0.1.2.tar.gz tmp/wordc-1.0.0.tar.gz --markdown 20240504/w/wordc/0.1.2-1.0.0/README.md --exclude *.pyd
+[2024-05-04 17:18:42] INFO root fetch - processPackages [nonebot-plugin-gpt]: executing diffoscope
+[2024-05-04 17:18:42] INFO root fetch - processPackages [nonebot-plugin-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-gpt-0.0.8.tar.gz tmp/nonebot-plugin-gpt-0.0.9.tar.gz --markdown 20240504/n/nonebot-plugin-gpt/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 17:18:42] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.1.tar.gz]
+[2024-05-04 17:18:42] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.2.tar.gz]
+[2024-05-04 17:18:42] INFO root fetch - main [MainThread]: End processing [pyauth0]: success
+[2024-05-04 17:18:42] INFO root fetch - processPackages [wordc]: Remove: archive file [/home/abi/fetcher/tmp/wordc-0.1.2.tar.gz]
+[2024-05-04 17:18:42] INFO root fetch - processPackages [wordc]: Remove: archive file [/home/abi/fetcher/tmp/wordc-1.0.0.tar.gz]
+[2024-05-04 17:18:42] INFO root fetch - main [MainThread]: End processing [wordc]: success
+[2024-05-04 17:18:42] INFO root fetch - processPackages [nonebot-plugin-gpt]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-gpt-0.0.8.tar.gz]
+[2024-05-04 17:18:42] INFO root fetch - processPackages [nonebot-plugin-gpt]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-gpt-0.0.9.tar.gz]
+[2024-05-04 17:18:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-gpt]: success
+[2024-05-04 17:18:42] INFO root fetch - main [MainThread]: Store serial: [23058833]
