@@ -12286,3 +12286,33 @@
 [2024-05-04 11:18:31] INFO root fetch - processPackages [fingerprintMatcher]: Remove: archive file [/home/abi/fetcher/tmp/fingerprintMatcher-1.0.6.tar.gz]
 [2024-05-04 11:18:31] INFO root fetch - main [MainThread]: End processing [fingerprintMatcher]: success
 [2024-05-04 11:18:31] INFO root fetch - main [MainThread]: Store serial: [23057231]
+[2024-05-04 11:20:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057231]
+[2024-05-04 11:20:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 11:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlforge
+[2024-05-04 11:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SMClib.py
+[2024-05-04 11:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: taskwarrior_flow
+[2024-05-04 11:20:40] INFO root fetch - processPackages [SMClib.py]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-04 11:20:40] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/96/c6/d1b31101df0474515c4ccac169aa233e2f65203aeac3c17f4eb82274d0bd/SMClib.py-1.0.5.tar.gz
+[2024-05-04 11:20:40] INFO root fetch - processPackages [mlforge]: New version: [0.1.3a0] Old Version: [0.1.2a0]
+[2024-05-04 11:20:40] INFO root fetch - processPackages [taskwarrior_flow]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-04 11:20:40] INFO root fetch - processPackages [SMClib.py]: Downloading https://files.pythonhosted.org/packages/f3/a6/6f041767c2ca59b8f625a77ae37cf5e47e3732486adbeae4ae6bac70ffd7/SMClib.py-1.0.6.tar.gz
+[2024-05-04 11:20:40] INFO root fetch - processPackages [mlforge]: Downloading https://files.pythonhosted.org/packages/51/79/26253f0659d8106f3b14f72721552c0cc31c5be6a774b48425c56fefa246/mlforge-0.1.2a0.tar.gz
+[2024-05-04 11:20:40] INFO root fetch - processPackages [taskwarrior_flow]: Downloading https://files.pythonhosted.org/packages/d9/a7/0b4560e9cef32c14a5bf18472bdb48390c848460f33d1ba512f9ec006af2/taskwarrior_flow-0.1.0.tar.gz
+[2024-05-04 11:20:40] INFO root fetch - processPackages [SMClib.py]: executing diffoscope
+[2024-05-04 11:20:40] INFO root fetch - processPackages [SMClib.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SMClib.py-1.0.5.tar.gz tmp/SMClib.py-1.0.6.tar.gz --markdown 20240504/S/SMClib.py/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-04 11:20:40] INFO root fetch - processPackages [mlforge]: Downloading https://files.pythonhosted.org/packages/d7/60/2bf53a41a474e15e315495bd791fff4c88bf11e8bd63958851fe2218b9c6/mlforge-0.1.3a0.tar.gz
+[2024-05-04 11:20:40] INFO root fetch - processPackages [taskwarrior_flow]: Downloading https://files.pythonhosted.org/packages/8c/69/0f7e10b6925da231df9d88fbf0c1bf0acf1675a0734c76cfdb1f55440611/taskwarrior_flow-0.1.1.tar.gz
+[2024-05-04 11:20:40] INFO root fetch - processPackages [mlforge]: executing diffoscope
+[2024-05-04 11:20:40] INFO root fetch - processPackages [mlforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlforge-0.1.2a0.tar.gz tmp/mlforge-0.1.3a0.tar.gz --markdown 20240504/m/mlforge/0.1.2a0-0.1.3a0/README.md --exclude *.pyd
+[2024-05-04 11:20:40] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.5.tar.gz]
+[2024-05-04 11:20:40] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.6.tar.gz]
+[2024-05-04 11:20:40] INFO root fetch - main [MainThread]: End processing [SMClib.py]: success
+[2024-05-04 11:20:40] INFO root fetch - processPackages [taskwarrior_flow]: executing diffoscope
+[2024-05-04 11:20:40] INFO root fetch - processPackages [taskwarrior_flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskwarrior_flow-0.1.0.tar.gz tmp/taskwarrior_flow-0.1.1.tar.gz --markdown 20240504/t/taskwarrior_flow/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-04 11:20:41] INFO root fetch - processPackages [taskwarrior_flow]: Remove: archive file [/home/abi/fetcher/tmp/taskwarrior_flow-0.1.0.tar.gz]
+[2024-05-04 11:20:41] INFO root fetch - processPackages [taskwarrior_flow]: Remove: archive file [/home/abi/fetcher/tmp/taskwarrior_flow-0.1.1.tar.gz]
+[2024-05-04 11:20:41] INFO root fetch - main [MainThread]: End processing [taskwarrior_flow]: success
+[2024-05-04 11:20:41] INFO root fetch - processPackages [mlforge]: Remove: archive file [/home/abi/fetcher/tmp/mlforge-0.1.2a0.tar.gz]
+[2024-05-04 11:20:41] INFO root fetch - processPackages [mlforge]: Remove: archive file [/home/abi/fetcher/tmp/mlforge-0.1.3a0.tar.gz]
+[2024-05-04 11:20:41] INFO root fetch - main [MainThread]: End processing [mlforge]: success
+[2024-05-04 11:20:41] INFO root fetch - main [MainThread]: Store serial: [23057239]
