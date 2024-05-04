@@ -15119,3 +15119,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:59:08] INFO root fetch - processPackages [flake8-commas-x]: Remove: archive file [/home/abi/fetcher/tmp/flake8_commas_x-3.0.0.post1.tar.gz]
 [2024-05-04 15:59:08] INFO root fetch - main [MainThread]: End processing [flake8-commas-x]: success
 [2024-05-04 15:59:08] INFO root fetch - main [MainThread]: Store serial: [23058358]
+[2024-05-04 16:01:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058358]
+[2024-05-04 16:01:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 16:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-any2text-parser
+[2024-05-04 16:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flops-utils
+[2024-05-04 16:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: grand-cypher
+[2024-05-04 16:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kan-gpt
+[2024-05-04 16:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nl-matcher
+[2024-05-04 16:01:17] INFO root fetch - processPackages [flops-utils]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-04 16:01:17] INFO root fetch - processPackages [kan-gpt]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 16:01:17] INFO root fetch - processPackages [grand-cypher]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-04 16:01:17] WARNING root fetch - processPackages [nl-matcher]: Skipping, unable to determine old version
+[2024-05-04 16:01:17] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/a6/e9/2f218b7097cdbfdd669499a9704af90d4e11f3217d73b0236c3d8bcba616/flops_utils-0.2.8.tar.gz
+[2024-05-04 16:01:17] INFO root fetch - main [MainThread]: End processing [nl-matcher] error
+[2024-05-04 16:01:17] INFO root fetch - processPackages [kan-gpt]: Downloading https://files.pythonhosted.org/packages/05/a9/9ba4d6c97097254f8113e00a4ee51cba9bd858b0e5c32e0f6d0e0addeceb/kan_gpt-0.1.1.tar.gz
+[2024-05-04 16:01:17] WARNING root fetch - processPackages [py-any2text-parser]: Skipping, unable to determine old version
+[2024-05-04 16:01:17] INFO root fetch - main [MainThread]: End processing [py-any2text-parser] error
+[2024-05-04 16:01:17] INFO root fetch - processPackages [grand-cypher]: Downloading https://files.pythonhosted.org/packages/10/a3/007927a5ad5714e80dc18d325f3ae7ecada67d571dd3183a914be1b41795/grand-cypher-0.6.0.tar.gz
+[2024-05-04 16:01:17] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/19/26/b7665c064fbad4bf3a9e12f3e3f5fafc1f610cfe9eef17b7a62fe49e8cf4/flops_utils-0.2.9.tar.gz
+[2024-05-04 16:01:17] INFO root fetch - processPackages [kan-gpt]: Downloading https://files.pythonhosted.org/packages/e1/4f/d6e93bf22132280219a8545ee6f5c67022830841fb54631cb470781b6c74/kan_gpt-0.1.2.tar.gz
+[2024-05-04 16:01:17] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-04 16:01:17] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.2.8.tar.gz tmp/flops_utils-0.2.9.tar.gz --markdown 20240504/f/flops-utils/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-04 16:01:17] INFO root fetch - processPackages [kan-gpt]: executing diffoscope
+[2024-05-04 16:01:17] INFO root fetch - processPackages [kan-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kan_gpt-0.1.1.tar.gz tmp/kan_gpt-0.1.2.tar.gz --markdown 20240504/k/kan-gpt/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 16:01:17] INFO root fetch - processPackages [grand-cypher]: Downloading https://files.pythonhosted.org/packages/74/55/2b3b44de1020a304011d564d34a7d6397879d2458a21b69fb0b1f0039a03/grand-cypher-0.7.0.tar.gz
+[2024-05-04 16:01:17] INFO root fetch - processPackages [grand-cypher]: executing diffoscope
+[2024-05-04 16:01:17] INFO root fetch - processPackages [grand-cypher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grand-cypher-0.6.0.tar.gz tmp/grand-cypher-0.7.0.tar.gz --markdown 20240504/g/grand-cypher/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-04 16:01:18] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.2.8.tar.gz]
+[2024-05-04 16:01:18] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.2.9.tar.gz]
+[2024-05-04 16:01:18] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-04 16:01:18] INFO root fetch - processPackages [kan-gpt]: Remove: archive file [/home/abi/fetcher/tmp/kan_gpt-0.1.1.tar.gz]
+[2024-05-04 16:01:18] INFO root fetch - processPackages [kan-gpt]: Remove: archive file [/home/abi/fetcher/tmp/kan_gpt-0.1.2.tar.gz]
+[2024-05-04 16:01:18] INFO root fetch - main [MainThread]: End processing [kan-gpt]: success
+[2024-05-04 16:01:18] INFO root fetch - processPackages [grand-cypher]: Remove: archive file [/home/abi/fetcher/tmp/grand-cypher-0.6.0.tar.gz]
+[2024-05-04 16:01:18] INFO root fetch - processPackages [grand-cypher]: Remove: archive file [/home/abi/fetcher/tmp/grand-cypher-0.7.0.tar.gz]
+[2024-05-04 16:01:18] INFO root fetch - main [MainThread]: End processing [grand-cypher]: success
+[2024-05-04 16:01:18] INFO root fetch - main [MainThread]: Store serial: [23058377]
