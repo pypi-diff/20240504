@@ -10771,3 +10771,15 @@
 [2024-05-04 08:59:03] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod190]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat_mod190-16.0.1.3.0.1-py3-none-any.whl.zip]
 [2024-05-04 08:59:03] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat-mod190]: success
 [2024-05-04 08:59:03] INFO root fetch - main [MainThread]: Store serial: [23056364]
+[2024-05-04 09:01:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056364]
+[2024-05-04 09:01:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 09:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphemy
+[2024-05-04 09:01:11] INFO root fetch - processPackages [graphemy]: New version: [1.0.0rc4] Old Version: [1.0.0b4]
+[2024-05-04 09:01:12] INFO root fetch - processPackages [graphemy]: Downloading https://files.pythonhosted.org/packages/df/0f/6fcc1e9219acc1f957608940c71597ff99a59dcee9b243c2380b35b11c31/graphemy-1.0.0b4.tar.gz
+[2024-05-04 09:01:12] INFO root fetch - processPackages [graphemy]: Downloading https://files.pythonhosted.org/packages/c3/ca/6019e0e4c5c0b47446b0e01981630280be409a9794dcce8eed5e389aac59/graphemy-1.0.0rc4.tar.gz
+[2024-05-04 09:01:12] INFO root fetch - processPackages [graphemy]: executing diffoscope
+[2024-05-04 09:01:12] INFO root fetch - processPackages [graphemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphemy-1.0.0b4.tar.gz tmp/graphemy-1.0.0rc4.tar.gz --markdown 20240504/g/graphemy/1.0.0b4-1.0.0rc4/README.md --exclude *.pyd
+[2024-05-04 09:01:13] INFO root fetch - processPackages [graphemy]: Remove: archive file [/home/abi/fetcher/tmp/graphemy-1.0.0b4.tar.gz]
+[2024-05-04 09:01:13] INFO root fetch - processPackages [graphemy]: Remove: archive file [/home/abi/fetcher/tmp/graphemy-1.0.0rc4.tar.gz]
+[2024-05-04 09:01:13] INFO root fetch - main [MainThread]: End processing [graphemy]: success
+[2024-05-04 09:01:13] INFO root fetch - main [MainThread]: Store serial: [23056367]
