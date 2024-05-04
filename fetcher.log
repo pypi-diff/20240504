@@ -13765,3 +13765,18 @@
 [2024-05-04 13:50:23] INFO root fetch - processPackages [pcffont]: Remove: archive file [/home/abi/fetcher/tmp/pcffont-0.0.7.tar.gz]
 [2024-05-04 13:50:23] INFO root fetch - main [MainThread]: End processing [pcffont]: success
 [2024-05-04 13:50:23] INFO root fetch - main [MainThread]: Store serial: [23057778]
+[2024-05-04 13:52:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057778]
+[2024-05-04 13:52:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 13:52:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: APSTooler
+[2024-05-04 13:52:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: setux-plus
+[2024-05-04 13:52:32] WARNING root fetch - processPackages [APSTooler]: Skipping, unable to determine old version
+[2024-05-04 13:52:32] INFO root fetch - main [MainThread]: End processing [APSTooler] error
+[2024-05-04 13:52:32] INFO root fetch - processPackages [setux-plus]: New version: [0.2418.0] Old Version: [0.2405.1]
+[2024-05-04 13:52:32] INFO root fetch - processPackages [setux-plus]: Downloading https://files.pythonhosted.org/packages/2d/94/9a5f405b0916a6d0f3f585c78789da5fbbc6cc1fb4aa52b05bdf7de57411/setux_plus-0.2405.1.tar.gz
+[2024-05-04 13:52:33] INFO root fetch - processPackages [setux-plus]: Downloading https://files.pythonhosted.org/packages/b6/d1/7eab7b0915e6786f0339fb028840c2231094ea680de809c1af0a76466ad2/setux_plus-0.2418.0.tar.gz
+[2024-05-04 13:52:33] INFO root fetch - processPackages [setux-plus]: executing diffoscope
+[2024-05-04 13:52:33] INFO root fetch - processPackages [setux-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux_plus-0.2405.1.tar.gz tmp/setux_plus-0.2418.0.tar.gz --markdown 20240504/s/setux-plus/0.2405.1-0.2418.0/README.md --exclude *.pyd
+[2024-05-04 13:52:33] INFO root fetch - processPackages [setux-plus]: Remove: archive file [/home/abi/fetcher/tmp/setux_plus-0.2405.1.tar.gz]
+[2024-05-04 13:52:33] INFO root fetch - processPackages [setux-plus]: Remove: archive file [/home/abi/fetcher/tmp/setux_plus-0.2418.0.tar.gz]
+[2024-05-04 13:52:33] INFO root fetch - main [MainThread]: End processing [setux-plus]: success
+[2024-05-04 13:52:33] INFO root fetch - main [MainThread]: Store serial: [23057786]
