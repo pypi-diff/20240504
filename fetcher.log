@@ -16371,3 +16371,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:42:41] INFO root fetch - processPackages [drawlib]: Remove: archive file [/home/abi/fetcher/tmp/drawlib-0.1.2.tar.gz]
 [2024-05-04 17:42:41] INFO root fetch - main [MainThread]: End processing [drawlib]: success
 [2024-05-04 17:42:41] INFO root fetch - main [MainThread]: Store serial: [23058993]
+[2024-05-04 17:44:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058993]
+[2024-05-04 17:44:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 17:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioWiserHeatAPI
+[2024-05-04 17:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meta-machina
+[2024-05-04 17:44:50] INFO root fetch - processPackages [meta-machina]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-04 17:44:50] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/6c/82/7511880baa0f649fd3542216197fa0680daf6013c6c9b5fd256c57e38bd5/meta_machina-0.0.3.tar.gz
+[2024-05-04 17:44:50] INFO root fetch - processPackages [aioWiserHeatAPI]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-05-04 17:44:50] INFO root fetch - processPackages [aioWiserHeatAPI]: Downloading https://files.pythonhosted.org/packages/c1/42/eae0059dd5a3d87f8bbab1ad0b487bdcebb91811cce9e6b395157b25eb18/aioWiserHeatAPI-1.5.8.tar.gz
+[2024-05-04 17:44:50] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/6a/06/ddf70cebadffb8817f293dd08862e458839e36d85f85ed13e49d4ef97357/meta_machina-0.0.4.tar.gz
+[2024-05-04 17:44:50] INFO root fetch - processPackages [meta-machina]: executing diffoscope
+[2024-05-04 17:44:50] INFO root fetch - processPackages [meta-machina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta_machina-0.0.3.tar.gz tmp/meta_machina-0.0.4.tar.gz --markdown 20240504/m/meta-machina/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-04 17:44:50] INFO root fetch - processPackages [aioWiserHeatAPI]: Downloading https://files.pythonhosted.org/packages/5c/90/d0dd325859761f02abb241f3b39e6c2272ea53bc99f3b450cfcfb4ad565c/aioWiserHeatAPI-1.5.9.tar.gz
+[2024-05-04 17:44:51] INFO root fetch - processPackages [aioWiserHeatAPI]: executing diffoscope
+[2024-05-04 17:44:51] INFO root fetch - processPackages [aioWiserHeatAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioWiserHeatAPI-1.5.8.tar.gz tmp/aioWiserHeatAPI-1.5.9.tar.gz --markdown 20240504/a/aioWiserHeatAPI/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-05-04 17:44:51] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.3.tar.gz]
+[2024-05-04 17:44:51] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.4.tar.gz]
+[2024-05-04 17:44:51] INFO root fetch - main [MainThread]: End processing [meta-machina]: success
+[2024-05-04 17:44:51] INFO root fetch - processPackages [aioWiserHeatAPI]: Remove: archive file [/home/abi/fetcher/tmp/aioWiserHeatAPI-1.5.8.tar.gz]
+[2024-05-04 17:44:51] INFO root fetch - processPackages [aioWiserHeatAPI]: Remove: archive file [/home/abi/fetcher/tmp/aioWiserHeatAPI-1.5.9.tar.gz]
+[2024-05-04 17:44:51] INFO root fetch - main [MainThread]: End processing [aioWiserHeatAPI]: success
+[2024-05-04 17:44:51] INFO root fetch - main [MainThread]: Store serial: [23058999]
