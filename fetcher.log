@@ -10642,3 +10642,36 @@
 [2024-05-04 08:50:18] INFO root fetch - processPackages [exctrap]: Remove: archive file [/home/abi/fetcher/tmp/exctrap-0.2.tar.gz]
 [2024-05-04 08:50:18] INFO root fetch - main [MainThread]: End processing [exctrap]: success
 [2024-05-04 08:50:18] INFO root fetch - main [MainThread]: Store serial: [23056305]
+[2024-05-04 08:52:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056305]
+[2024-05-04 08:52:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 08:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-l10n-es-vat-book
+[2024-05-04 08:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-product-pricelist-direct-print
+[2024-05-04 08:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CalSim
+[2024-05-04 08:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiida-quantum-transport
+[2024-05-04 08:52:27] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: New version: [16.0.1.0.3] Old Version: [16.0.1.0.2.3]
+[2024-05-04 08:52:27] WARNING root fetch - processPackages [aiida-quantum-transport]: Skipping, unable to determine old version
+[2024-05-04 08:52:27] INFO root fetch - main [MainThread]: End processing [aiida-quantum-transport] error
+[2024-05-04 08:52:27] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.4.0.2]
+[2024-05-04 08:52:27] INFO root fetch - processPackages [CalSim]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 08:52:27] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: Downloading https://files.pythonhosted.org/packages/e9/22/66f3645bd80a3f54a0d295327685b5aef4690997018d61c4d66ddc51f0c9/odoo_addon_l10n_es_vat_book-16.0.1.4.0.2-py3-none-any.whl
+[2024-05-04 08:52:28] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: Downloading https://files.pythonhosted.org/packages/00/60/e5aef905ec746a54971fda02050a18a26b80ecad6cb9de8d2aff7bd90621/odoo_addon_product_pricelist_direct_print-16.0.1.0.2.3-py3-none-any.whl
+[2024-05-04 08:52:28] INFO root fetch - processPackages [CalSim]: Downloading https://files.pythonhosted.org/packages/9c/ee/10ee1f0aac4cceb86a1b873cf16fb9b223bd38be45cc04d38f07d7d0b40c/calsim-0.0.8.tar.gz
+[2024-05-04 08:52:28] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: Downloading https://files.pythonhosted.org/packages/3c/0f/60d3b6dff05fdb98da0aec4f359e49f2aa3b4be731885ca4b40603600c39/odoo_addon_l10n_es_vat_book-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-04 08:52:28] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: Downloading https://files.pythonhosted.org/packages/43/10/cd09a802a66d4da01f5e78384488963d308e0f6e41b29af50a9e30855980/odoo_addon_product_pricelist_direct_print-16.0.1.0.3-py3-none-any.whl
+[2024-05-04 08:52:28] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: executing diffoscope
+[2024-05-04 08:52:28] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_vat_book-16.0.1.4.0.2-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_vat_book-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-l10n-es-vat-book/16.0.1.4.0.2-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-04 08:52:28] INFO root fetch - processPackages [CalSim]: Downloading https://files.pythonhosted.org/packages/65/a1/95437c20af234eb1ed67c5cd349670e67df09bd27fafd7f248f5f12a3045/calsim-0.0.9.tar.gz
+[2024-05-04 08:52:28] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: executing diffoscope
+[2024-05-04 08:52:28] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_pricelist_direct_print-16.0.1.0.2.3-py3-none-any.whl.zip tmp/odoo_addon_product_pricelist_direct_print-16.0.1.0.3-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-product-pricelist-direct-print/16.0.1.0.2.3-16.0.1.0.3/README.md --exclude *.pyd
+[2024-05-04 08:52:28] INFO root fetch - processPackages [CalSim]: executing diffoscope
+[2024-05-04 08:52:28] INFO root fetch - processPackages [CalSim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calsim-0.0.8.tar.gz tmp/calsim-0.0.9.tar.gz --markdown 20240504/C/CalSim/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 08:52:29] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_pricelist_direct_print-16.0.1.0.2.3-py3-none-any.whl.zip]
+[2024-05-04 08:52:29] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_pricelist_direct_print-16.0.1.0.3-py3-none-any.whl.zip]
+[2024-05-04 08:52:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-pricelist-direct-print]: success
+[2024-05-04 08:52:29] INFO root fetch - processPackages [CalSim]: Remove: archive file [/home/abi/fetcher/tmp/calsim-0.0.8.tar.gz]
+[2024-05-04 08:52:29] INFO root fetch - processPackages [CalSim]: Remove: archive file [/home/abi/fetcher/tmp/calsim-0.0.9.tar.gz]
+[2024-05-04 08:52:29] INFO root fetch - main [MainThread]: End processing [CalSim]: success
+[2024-05-04 08:52:29] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_vat_book-16.0.1.4.0.2-py3-none-any.whl.zip]
+[2024-05-04 08:52:29] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_vat_book-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-04 08:52:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-vat-book]: success
+[2024-05-04 08:52:29] INFO root fetch - main [MainThread]: Store serial: [23056320]
