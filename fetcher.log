@@ -10726,3 +10726,24 @@
 [2024-05-04 08:54:43] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.34.1.dev20240502.tar.gz]
 [2024-05-04 08:54:43] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2024-05-04 08:54:43] INFO root fetch - main [MainThread]: Store serial: [23056342]
+[2024-05-04 08:56:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056342]
+[2024-05-04 08:56:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 08:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whatshow-phy-mod-otfs
+[2024-05-04 08:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stepcount
+[2024-05-04 08:56:51] INFO root fetch - processPackages [stepcount]: New version: [3.7.0] Old Version: [3.6.0]
+[2024-05-04 08:56:51] INFO root fetch - processPackages [stepcount]: Downloading https://files.pythonhosted.org/packages/98/af/42af409baba3dc5b5c61aaf3f31bfc44fdf08334be2a2faf1cc2da391b32/stepcount-3.6.0.tar.gz
+[2024-05-04 08:56:51] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: New version: [2.1.1] Old Version: [2.0.1]
+[2024-05-04 08:56:52] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Downloading https://files.pythonhosted.org/packages/5f/55/dad1d186f47e1eb5b62364d6bcae4a81a76d7ec7b20059a87136575c3f07/whatshow_phy_mod_otfs-2.0.1.tar.gz
+[2024-05-04 08:56:52] INFO root fetch - processPackages [stepcount]: Downloading https://files.pythonhosted.org/packages/c8/28/8ceee7006a325a2d6f34cfbc78674b908c655a9ec121c32599b37de5c1ae/stepcount-3.7.0.tar.gz
+[2024-05-04 08:56:52] INFO root fetch - processPackages [stepcount]: executing diffoscope
+[2024-05-04 08:56:52] INFO root fetch - processPackages [stepcount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stepcount-3.6.0.tar.gz tmp/stepcount-3.7.0.tar.gz --markdown 20240504/s/stepcount/3.6.0-3.7.0/README.md --exclude *.pyd
+[2024-05-04 08:56:52] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Downloading https://files.pythonhosted.org/packages/5d/9f/b091d947da74cbaf578468014c8a5bb29ce23f7e39b696ec99afd9380046/whatshow_phy_mod_otfs-2.1.1.tar.gz
+[2024-05-04 08:56:52] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: executing diffoscope
+[2024-05-04 08:56:52] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatshow_phy_mod_otfs-2.0.1.tar.gz tmp/whatshow_phy_mod_otfs-2.1.1.tar.gz --markdown 20240504/w/whatshow-phy-mod-otfs/2.0.1-2.1.1/README.md --exclude *.pyd
+[2024-05-04 08:56:52] INFO root fetch - processPackages [stepcount]: Remove: archive file [/home/abi/fetcher/tmp/stepcount-3.6.0.tar.gz]
+[2024-05-04 08:56:52] INFO root fetch - processPackages [stepcount]: Remove: archive file [/home/abi/fetcher/tmp/stepcount-3.7.0.tar.gz]
+[2024-05-04 08:56:52] INFO root fetch - main [MainThread]: End processing [stepcount]: success
+[2024-05-04 08:56:52] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-2.0.1.tar.gz]
+[2024-05-04 08:56:52] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-2.1.1.tar.gz]
+[2024-05-04 08:56:52] INFO root fetch - main [MainThread]: End processing [whatshow-phy-mod-otfs]: success
+[2024-05-04 08:56:52] INFO root fetch - main [MainThread]: Store serial: [23056348]
