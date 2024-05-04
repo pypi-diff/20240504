@@ -16967,3 +16967,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:29:09] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-postprocess-0.4.99.tar.gz]
 [2024-05-04 18:29:09] INFO root fetch - main [MainThread]: End processing [honeybee-radiance-postprocess]: success
 [2024-05-04 18:29:09] INFO root fetch - main [MainThread]: Store serial: [23059280]
+[2024-05-04 18:31:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059280]
+[2024-05-04 18:31:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 18:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rumchat-actor
+[2024-05-04 18:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: copy-spotter
+[2024-05-04 18:31:18] INFO root fetch - processPackages [copy-spotter]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 18:31:18] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/f0/77/3e3348701a345eb7881da0ffa91811cd425cf43a95ab7dd9387a41301032/copy-spotter-0.1.8.tar.gz
+[2024-05-04 18:31:18] INFO root fetch - processPackages [rumchat-actor]: New version: [1.0.0] Old Version: [0.1.0]
+[2024-05-04 18:31:18] INFO root fetch - processPackages [rumchat-actor]: Downloading https://files.pythonhosted.org/packages/3e/6e/8de5964367292f86a08a855df506cdece99b7de138a8ec2ad7d3b561f5fc/rumchat_actor-0.1.0.tar.gz
+[2024-05-04 18:31:18] INFO root fetch - processPackages [copy-spotter]: Downloading https://files.pythonhosted.org/packages/45/b3/c6846a1e8f941cc094cd908f537068e64c6e0c6ad32b6c4dec297eabcd13/copy-spotter-0.1.9.tar.gz
+[2024-05-04 18:31:18] INFO root fetch - processPackages [copy-spotter]: executing diffoscope
+[2024-05-04 18:31:18] INFO root fetch - processPackages [copy-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copy-spotter-0.1.8.tar.gz tmp/copy-spotter-0.1.9.tar.gz --markdown 20240504/c/copy-spotter/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 18:31:18] INFO root fetch - processPackages [rumchat-actor]: Downloading https://files.pythonhosted.org/packages/e2/c8/0f0dfb5c8b3a6ebc226f11c47d882b1a007fd40b51eacd5e71e38e8723b7/rumchat_actor-1.0.0.tar.gz
+[2024-05-04 18:31:19] INFO root fetch - processPackages [rumchat-actor]: executing diffoscope
+[2024-05-04 18:31:19] INFO root fetch - processPackages [rumchat-actor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rumchat_actor-0.1.0.tar.gz tmp/rumchat_actor-1.0.0.tar.gz --markdown 20240504/r/rumchat-actor/0.1.0-1.0.0/README.md --exclude *.pyd
+[2024-05-04 18:31:19] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.8.tar.gz]
+[2024-05-04 18:31:19] INFO root fetch - processPackages [copy-spotter]: Remove: archive file [/home/abi/fetcher/tmp/copy-spotter-0.1.9.tar.gz]
+[2024-05-04 18:31:19] INFO root fetch - main [MainThread]: End processing [copy-spotter]: success
+[2024-05-04 18:31:19] INFO root fetch - processPackages [rumchat-actor]: Remove: archive file [/home/abi/fetcher/tmp/rumchat_actor-0.1.0.tar.gz]
+[2024-05-04 18:31:19] INFO root fetch - processPackages [rumchat-actor]: Remove: archive file [/home/abi/fetcher/tmp/rumchat_actor-1.0.0.tar.gz]
+[2024-05-04 18:31:19] INFO root fetch - main [MainThread]: End processing [rumchat-actor]: success
+[2024-05-04 18:31:19] INFO root fetch - main [MainThread]: Store serial: [23059286]
