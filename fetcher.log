@@ -19382,3 +19382,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:25:55] INFO root fetch - processPackages [papers-dl]: Remove: archive file [/home/abi/fetcher/tmp/papers_dl-0.0.4.tar.gz]
 [2024-05-04 21:25:55] INFO root fetch - main [MainThread]: End processing [papers-dl]: success
 [2024-05-04 21:25:55] INFO root fetch - main [MainThread]: Store serial: [23060445]
+[2024-05-04 21:27:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060445]
+[2024-05-04 21:28:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 21:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blankslate-python
+[2024-05-04 21:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ComplexJSON
+[2024-05-04 21:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapegraphai
+[2024-05-04 21:28:04] INFO root fetch - processPackages [blankslate-python]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-04 21:28:04] INFO root fetch - processPackages [scrapegraphai]: New version: [0.9.0b1] Old Version: [0.8.0b2]
+[2024-05-04 21:28:04] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/cc/f6/cfe4f815b606405527e13b7ac72db4fc5f092f9d324d617d164e0b4c580b/scrapegraphai-0.8.0b2.tar.gz
+[2024-05-04 21:28:04] INFO root fetch - processPackages [ComplexJSON]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-04 21:28:04] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/6e/e3/fdcb90cf32db76606c2d1502ea9adddfaf16624bbd6616811a81969daade/blankslate_python-1.0.0.tar.gz
+[2024-05-04 21:28:04] INFO root fetch - processPackages [ComplexJSON]: Downloading https://files.pythonhosted.org/packages/c6/e6/951dbdfba7edb662bc1aedfb6e8dc2e349fefbe577599ce3896cfbfc0433/ComplexJSON-1.0.1.tar.gz
+[2024-05-04 21:28:04] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/ec/f8/14f73c7c161672cd2e1f33a0a23d973a82074cad13c2e19d7c7a45a847d2/scrapegraphai-0.9.0b1.tar.gz
+[2024-05-04 21:28:04] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/89/8e/bc83908644e66a48f99d35536e1614d19f484fc7d7b1dc53c5a2d1569d72/blankslate_python-1.1.0.tar.gz
+[2024-05-04 21:28:05] INFO root fetch - processPackages [ComplexJSON]: Downloading https://files.pythonhosted.org/packages/8e/5a/74d059bcbb9c5019082dc7b3fc69ef316dcd2ae2b6aec8471b101c5c67c4/ComplexJSON-1.1.0.tar.gz
+[2024-05-04 21:28:05] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-04 21:28:05] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.0.0.tar.gz tmp/blankslate_python-1.1.0.tar.gz --markdown 20240504/b/blankslate-python/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-04 21:28:05] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-04 21:28:05] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.8.0b2.tar.gz tmp/scrapegraphai-0.9.0b1.tar.gz --markdown 20240504/s/scrapegraphai/0.8.0b2-0.9.0b1/README.md --exclude *.pyd
+[2024-05-04 21:28:05] INFO root fetch - processPackages [ComplexJSON]: executing diffoscope
+[2024-05-04 21:28:05] INFO root fetch - processPackages [ComplexJSON]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ComplexJSON-1.0.1.tar.gz tmp/ComplexJSON-1.1.0.tar.gz --markdown 20240504/C/ComplexJSON/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-04 21:28:05] INFO root fetch - processPackages [ComplexJSON]: Remove: archive file [/home/abi/fetcher/tmp/ComplexJSON-1.0.1.tar.gz]
+[2024-05-04 21:28:05] INFO root fetch - processPackages [ComplexJSON]: Remove: archive file [/home/abi/fetcher/tmp/ComplexJSON-1.1.0.tar.gz]
+[2024-05-04 21:28:05] INFO root fetch - main [MainThread]: End processing [ComplexJSON]: success
+[2024-05-04 21:28:05] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.0.0.tar.gz]
+[2024-05-04 21:28:05] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.0.tar.gz]
+[2024-05-04 21:28:05] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-04 21:28:05] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.8.0b2.tar.gz]
+[2024-05-04 21:28:05] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b1.tar.gz]
+[2024-05-04 21:28:05] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-04 21:28:05] INFO root fetch - main [MainThread]: Store serial: [23060455]
