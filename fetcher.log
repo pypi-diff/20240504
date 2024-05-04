@@ -11372,3 +11372,27 @@
 [2024-05-04 09:55:38] INFO root fetch - processPackages [hebill]: Remove: archive file [/home/abi/fetcher/tmp/hebill-1.2.7.tar.gz]
 [2024-05-04 09:55:38] INFO root fetch - main [MainThread]: End processing [hebill]: success
 [2024-05-04 09:55:38] INFO root fetch - main [MainThread]: Store serial: [23056671]
+[2024-05-04 09:57:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056671]
+[2024-05-04 09:57:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 09:57:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inegi-explorer
+[2024-05-04 09:57:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sparrow-parse
+[2024-05-04 09:57:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyassorted
+[2024-05-04 09:57:47] WARNING root fetch - processPackages [inegi-explorer]: Skipping, unable to determine old version
+[2024-05-04 09:57:47] INFO root fetch - main [MainThread]: End processing [inegi-explorer] error
+[2024-05-04 09:57:47] INFO root fetch - processPackages [sparrow-parse]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 09:57:47] INFO root fetch - processPackages [pyassorted]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-04 09:57:47] INFO root fetch - processPackages [sparrow-parse]: Downloading https://files.pythonhosted.org/packages/c4/a3/57fa6af9a403767bad6aeb0a3a8d961df65be8dfea9d885742dbee6c19d0/sparrow_parse-0.1.8.tar.gz
+[2024-05-04 09:57:47] INFO root fetch - processPackages [pyassorted]: Downloading https://files.pythonhosted.org/packages/ad/6a/d9cfa031d7624771a558d4d2c46f7fa86a52d5d5168d04354b5fa17a2152/pyassorted-0.8.0.tar.gz
+[2024-05-04 09:57:47] INFO root fetch - processPackages [sparrow-parse]: Downloading https://files.pythonhosted.org/packages/89/ba/61169c5c3cb2bb369125ce11365dca82a6d06056285ef4882ca792b04eaf/sparrow_parse-0.1.9.tar.gz
+[2024-05-04 09:57:48] INFO root fetch - processPackages [sparrow-parse]: executing diffoscope
+[2024-05-04 09:57:48] INFO root fetch - processPackages [sparrow-parse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow_parse-0.1.8.tar.gz tmp/sparrow_parse-0.1.9.tar.gz --markdown 20240504/s/sparrow-parse/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 09:57:48] INFO root fetch - processPackages [pyassorted]: Downloading https://files.pythonhosted.org/packages/e5/e6/e9b7b75a2c8a3be345206c5b0b87ef23544fd4d75ef70e0f654f86b0085f/pyassorted-0.9.0.tar.gz
+[2024-05-04 09:57:48] INFO root fetch - processPackages [sparrow-parse]: Remove: archive file [/home/abi/fetcher/tmp/sparrow_parse-0.1.8.tar.gz]
+[2024-05-04 09:57:48] INFO root fetch - processPackages [sparrow-parse]: Remove: archive file [/home/abi/fetcher/tmp/sparrow_parse-0.1.9.tar.gz]
+[2024-05-04 09:57:48] INFO root fetch - main [MainThread]: End processing [sparrow-parse]: success
+[2024-05-04 09:57:48] INFO root fetch - processPackages [pyassorted]: executing diffoscope
+[2024-05-04 09:57:48] INFO root fetch - processPackages [pyassorted]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyassorted-0.8.0.tar.gz tmp/pyassorted-0.9.0.tar.gz --markdown 20240504/p/pyassorted/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-04 09:57:49] INFO root fetch - processPackages [pyassorted]: Remove: archive file [/home/abi/fetcher/tmp/pyassorted-0.8.0.tar.gz]
+[2024-05-04 09:57:49] INFO root fetch - processPackages [pyassorted]: Remove: archive file [/home/abi/fetcher/tmp/pyassorted-0.9.0.tar.gz]
+[2024-05-04 09:57:49] INFO root fetch - main [MainThread]: End processing [pyassorted]: success
+[2024-05-04 09:57:49] INFO root fetch - main [MainThread]: Store serial: [23056677]
