@@ -9388,3 +9388,21 @@
 [2024-05-04 06:57:33] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.328.tar.gz]
 [2024-05-04 06:57:33] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-04 06:57:33] INFO root fetch - main [MainThread]: Store serial: [23055748]
+[2024-05-04 06:59:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055748]
+[2024-05-04 06:59:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 06:59:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wheat-packager
+[2024-05-04 06:59:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: multiconnect
+[2024-05-04 06:59:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytilpack
+[2024-05-04 06:59:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opendp
+[2024-05-04 06:59:42] WARNING root fetch - processPackages [wheat-packager]: Skipping, unable to determine old version
+[2024-05-04 06:59:42] WARNING root fetch - processPackages [multiconnect]: Skipping, unable to determine old version
+[2024-05-04 06:59:42] INFO root fetch - main [MainThread]: End processing [wheat-packager] error
+[2024-05-04 06:59:42] INFO root fetch - main [MainThread]: End processing [multiconnect] error
+[2024-05-04 06:59:42] INFO root fetch - processPackages [opendp]: New version: [0.9.2b20240207001] Old Version: [0.9.2a20240502001]
+[2024-05-04 06:59:42] WARNING root fetch - processPackages [pytilpack]: Skipping, unable to determine old version
+[2024-05-04 06:59:42] INFO root fetch - main [MainThread]: End processing [pytilpack] error
+[2024-05-04 06:59:42] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/c3/69/9dfbd1296d61f1b77ab005acff3f96ff55cf03d61e1b3becb0883deaee60/opendp-0.9.2a20240502001.tar.gz
+[2024-05-04 06:59:42] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/85/6c/b343f02569a02102fd61d7a89f66fb699dbdbf7903119928f4cc3ce8516d/opendp-0.9.2b20240207001-py3-none-any.whl
+[2024-05-04 06:59:43] WARNING root fetch - processPackages [opendp]: Skipping package: exceeds size limit 36048210>=10485760
+[2024-05-04 06:59:43] INFO root fetch - main [MainThread]: End processing [opendp] error
+[2024-05-04 06:59:43] INFO root fetch - main [MainThread]: Store serial: [23055762]
