@@ -18219,3 +18219,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 20:02:53] INFO root fetch - processPackages [bleak]: Remove: archive file [/home/abi/fetcher/tmp/bleak-0.9.1.tar.gz]
 [2024-05-04 20:02:53] INFO root fetch - main [MainThread]: End processing [bleak]: success
 [2024-05-04 20:02:53] INFO root fetch - main [MainThread]: Store serial: [23059958]
+[2024-05-04 20:04:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059958]
+[2024-05-04 20:05:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 20:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mtg-card-api
+[2024-05-04 20:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: entity-recognition-service
+[2024-05-04 20:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tasksflow
+[2024-05-04 20:05:02] INFO root fetch - processPackages [entity-recognition-service]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 20:05:02] WARNING root fetch - processPackages [mtg-card-api]: Skipping, unable to determine old version
+[2024-05-04 20:05:02] INFO root fetch - main [MainThread]: End processing [mtg-card-api] error
+[2024-05-04 20:05:02] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/23/18/7145326a6ea0566c2c41ba0bf3822fffc6b4da314a426433179c4724bda3/entity_recognition_service-0.1.8.tar.gz
+[2024-05-04 20:05:02] INFO root fetch - processPackages [tasksflow]: New version: [0.2.1] Old Version: [0.1.0]
+[2024-05-04 20:05:02] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/86/75/a994a9af22b16241a2b38cb3314e7d2457d9aaf73d35a5b70823d8c8ce18/entity_recognition_service-0.1.9.tar.gz
+[2024-05-04 20:05:02] INFO root fetch - processPackages [tasksflow]: Downloading https://files.pythonhosted.org/packages/ec/8e/0d202f0342d2790afec298c7f44fdd5cb4d26b0b1f39135c7c7c2f84947b/tasksflow-0.1.0.tar.gz
+[2024-05-04 20:05:02] INFO root fetch - processPackages [entity-recognition-service]: executing diffoscope
+[2024-05-04 20:05:02] INFO root fetch - processPackages [entity-recognition-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entity_recognition_service-0.1.8.tar.gz tmp/entity_recognition_service-0.1.9.tar.gz --markdown 20240504/e/entity-recognition-service/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 20:05:03] INFO root fetch - processPackages [tasksflow]: Downloading https://files.pythonhosted.org/packages/30/f3/d68b1b852cf05bde0ca64a5e4eaf76b9c09b04fb00174fdab8467c984597/tasksflow-0.2.1.tar.gz
+[2024-05-04 20:05:03] INFO root fetch - processPackages [tasksflow]: executing diffoscope
+[2024-05-04 20:05:03] INFO root fetch - processPackages [tasksflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tasksflow-0.1.0.tar.gz tmp/tasksflow-0.2.1.tar.gz --markdown 20240504/t/tasksflow/0.1.0-0.2.1/README.md --exclude *.pyd
+[2024-05-04 20:05:03] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.8.tar.gz]
+[2024-05-04 20:05:03] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.9.tar.gz]
+[2024-05-04 20:05:03] INFO root fetch - main [MainThread]: End processing [entity-recognition-service]: success
+[2024-05-04 20:05:03] INFO root fetch - processPackages [tasksflow]: Remove: archive file [/home/abi/fetcher/tmp/tasksflow-0.1.0.tar.gz]
+[2024-05-04 20:05:03] INFO root fetch - processPackages [tasksflow]: Remove: archive file [/home/abi/fetcher/tmp/tasksflow-0.2.1.tar.gz]
+[2024-05-04 20:05:03] INFO root fetch - main [MainThread]: End processing [tasksflow]: success
+[2024-05-04 20:05:03] INFO root fetch - main [MainThread]: Store serial: [23059968]
