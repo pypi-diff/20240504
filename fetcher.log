@@ -10827,3 +10827,15 @@
 [2024-05-04 09:03:23] WARNING root fetch - processPackages [openmc-data]: Skipping package: exceeds size limit 58039444>=10485760
 [2024-05-04 09:03:23] INFO root fetch - main [MainThread]: End processing [openmc-data] error
 [2024-05-04 09:03:23] INFO root fetch - main [MainThread]: Store serial: [23056385]
+[2024-05-04 09:05:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056385]
+[2024-05-04 09:05:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 09:05:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: carubi
+[2024-05-04 09:05:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mytiktok
+[2024-05-04 09:05:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xCloudClient
+[2024-05-04 09:05:32] WARNING root fetch - processPackages [mytiktok]: Skipping, unable to determine old version
+[2024-05-04 09:05:32] INFO root fetch - main [MainThread]: End processing [mytiktok] error
+[2024-05-04 09:05:32] WARNING root fetch - processPackages [xCloudClient]: Skipping, unable to determine old version
+[2024-05-04 09:05:32] WARNING root fetch - processPackages [carubi]: Skipping, unable to determine old version
+[2024-05-04 09:05:32] INFO root fetch - main [MainThread]: End processing [xCloudClient] error
+[2024-05-04 09:05:32] INFO root fetch - main [MainThread]: End processing [carubi] error
+[2024-05-04 09:05:32] INFO root fetch - main [MainThread]: Store serial: [23056398]
