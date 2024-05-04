@@ -17946,3 +17946,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 19:45:14] INFO root fetch - processPackages [KFSconfig]: Remove: archive file [/home/abi/fetcher/tmp/kfsconfig-2.0.0.tar.gz]
 [2024-05-04 19:45:14] INFO root fetch - main [MainThread]: End processing [KFSconfig]: success
 [2024-05-04 19:45:14] INFO root fetch - main [MainThread]: Store serial: [23059691]
+[2024-05-04 19:47:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059691]
+[2024-05-04 19:47:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 19:47:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: entity-recognition-service
+[2024-05-04 19:47:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlclasses
+[2024-05-04 19:47:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-dynamic-theme
+[2024-05-04 19:47:23] INFO root fetch - processPackages [entity-recognition-service]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 19:47:23] INFO root fetch - processPackages [sqlclasses]: New version: [1.1] Old Version: [1.0]
+[2024-05-04 19:47:23] INFO root fetch - processPackages [django-dynamic-theme]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-04 19:47:23] INFO root fetch - processPackages [sqlclasses]: Downloading https://files.pythonhosted.org/packages/80/29/7057a9dde2890f26f36ac8d916070dbf1e18306394c9bcd6006adc795d1d/sqlclasses-1.0.tar.gz
+[2024-05-04 19:47:23] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/23/18/7145326a6ea0566c2c41ba0bf3822fffc6b4da314a426433179c4724bda3/entity_recognition_service-0.1.8.tar.gz
+[2024-05-04 19:47:23] INFO root fetch - processPackages [django-dynamic-theme]: Downloading https://files.pythonhosted.org/packages/81/73/c1c25eb1fc1636da05539d5333df6bd5a78bc5236155aa58e64aae0dd4f8/django_dynamic_theme-0.0.6.tar.gz
+[2024-05-04 19:47:23] INFO root fetch - processPackages [entity-recognition-service]: Downloading https://files.pythonhosted.org/packages/86/75/a994a9af22b16241a2b38cb3314e7d2457d9aaf73d35a5b70823d8c8ce18/entity_recognition_service-0.1.9.tar.gz
+[2024-05-04 19:47:23] INFO root fetch - processPackages [sqlclasses]: Downloading https://files.pythonhosted.org/packages/a0/9d/ccec46de6c3c46b35250cd848d3c959042db65bc963fb7a20aabbc320335/sqlclasses-1.1.tar.gz
+[2024-05-04 19:47:23] INFO root fetch - processPackages [entity-recognition-service]: executing diffoscope
+[2024-05-04 19:47:23] INFO root fetch - processPackages [entity-recognition-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entity_recognition_service-0.1.8.tar.gz tmp/entity_recognition_service-0.1.9.tar.gz --markdown 20240504/e/entity-recognition-service/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 19:47:23] INFO root fetch - processPackages [django-dynamic-theme]: Downloading https://files.pythonhosted.org/packages/40/b5/06e5ad6b9bc577cd6521f41d5bfa1e3de296967c72bdb44cb3226905f11d/django_dynamic_theme-0.0.7.tar.gz
+[2024-05-04 19:47:24] INFO root fetch - processPackages [sqlclasses]: executing diffoscope
+[2024-05-04 19:47:24] INFO root fetch - processPackages [sqlclasses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlclasses-1.0.tar.gz tmp/sqlclasses-1.1.tar.gz --markdown 20240504/s/sqlclasses/1.0-1.1/README.md --exclude *.pyd
+[2024-05-04 19:47:24] INFO root fetch - processPackages [django-dynamic-theme]: executing diffoscope
+[2024-05-04 19:47:24] INFO root fetch - processPackages [django-dynamic-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_dynamic_theme-0.0.6.tar.gz tmp/django_dynamic_theme-0.0.7.tar.gz --markdown 20240504/d/django-dynamic-theme/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-04 19:47:24] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.8.tar.gz]
+[2024-05-04 19:47:24] INFO root fetch - processPackages [entity-recognition-service]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_service-0.1.9.tar.gz]
+[2024-05-04 19:47:24] INFO root fetch - main [MainThread]: End processing [entity-recognition-service]: success
+[2024-05-04 19:47:24] INFO root fetch - processPackages [django-dynamic-theme]: Remove: archive file [/home/abi/fetcher/tmp/django_dynamic_theme-0.0.6.tar.gz]
+[2024-05-04 19:47:24] INFO root fetch - processPackages [django-dynamic-theme]: Remove: archive file [/home/abi/fetcher/tmp/django_dynamic_theme-0.0.7.tar.gz]
+[2024-05-04 19:47:24] INFO root fetch - main [MainThread]: End processing [django-dynamic-theme]: success
+[2024-05-04 19:47:24] INFO root fetch - processPackages [sqlclasses]: Remove: archive file [/home/abi/fetcher/tmp/sqlclasses-1.0.tar.gz]
+[2024-05-04 19:47:24] INFO root fetch - processPackages [sqlclasses]: Remove: archive file [/home/abi/fetcher/tmp/sqlclasses-1.1.tar.gz]
+[2024-05-04 19:47:24] INFO root fetch - main [MainThread]: End processing [sqlclasses]: success
+[2024-05-04 19:47:24] INFO root fetch - main [MainThread]: Store serial: [23059701]
