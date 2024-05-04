@@ -16448,3 +16448,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:54:22] ERROR root fetch - processPackages [honeybee-schema]: Timeout during execution of pkgdiff
 [2024-05-04 17:54:22] INFO root fetch - main [MainThread]: End processing [honeybee-schema] error
 [2024-05-04 17:54:22] INFO root fetch - main [MainThread]: Store serial: [23059022]
+[2024-05-04 17:56:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059022]
+[2024-05-04 17:56:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 17:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyftg
+[2024-05-04 17:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyegeria
+[2024-05-04 17:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beta9
+[2024-05-04 17:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sphinx-last-updated-by-git
+[2024-05-04 17:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mtg-scryfall-api
+[2024-05-04 17:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Files.com
+[2024-05-04 17:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: asmu
+[2024-05-04 17:56:32] INFO root fetch - processPackages [pyftg]: New version: [2.1] Old Version: [2.0.1]
+[2024-05-04 17:56:32] WARNING root fetch - processPackages [mtg-scryfall-api]: Skipping, unable to determine old version
+[2024-05-04 17:56:32] INFO root fetch - main [MainThread]: End processing [mtg-scryfall-api] error
+[2024-05-04 17:56:32] INFO root fetch - processPackages [sphinx-last-updated-by-git]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-04 17:56:32] INFO root fetch - processPackages [beta9]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-04 17:56:32] INFO root fetch - processPackages [asmu]: New version: [0.0.1a8] Old Version: [0.0.1a7]
+[2024-05-04 17:56:32] INFO root fetch - processPackages [pyegeria]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-05-04 17:56:32] INFO root fetch - processPackages [Files.com]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-04 17:56:32] INFO root fetch - processPackages [pyftg]: Downloading https://files.pythonhosted.org/packages/f6/50/735359589acb29a2cd932ce02dfcec545c7c169c3043dddc075d9fe7af12/pyftg-2.0.1.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [pyegeria]: Downloading https://files.pythonhosted.org/packages/fa/a3/d17b43de50b5214b061171570d5acc2499028ce44c98efcd240bdf449197/pyegeria-0.3.7.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [sphinx-last-updated-by-git]: Downloading https://files.pythonhosted.org/packages/53/be/0c14431d822983620bd2a80627b8c490e1394d0ea0d4803ba4b28780d991/sphinx-last-updated-by-git-0.3.6.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [beta9]: Downloading https://files.pythonhosted.org/packages/ef/cc/70806f6e01d8b8e311af6e2e9d3a1336489db4b9009f10e521e2128084e7/beta9-0.1.7.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [asmu]: Downloading https://files.pythonhosted.org/packages/0e/4a/56ed7a59d794c363b4c858a8c81aa6cf49f206739182923b94604999e808/asmu-0.0.1a7.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [Files.com]: Downloading https://files.pythonhosted.org/packages/fe/9f/8654a34abe6ed4232708475bb6c7dd30b128ab68594cd684d58e72375385/Files.com-1.4.8.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [pyftg]: Downloading https://files.pythonhosted.org/packages/01/f0/88929667cde2a901567a2c56269de215aa44a6c49837c0bc85a1c120fcfb/pyftg-2.1.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [sphinx-last-updated-by-git]: Downloading https://files.pythonhosted.org/packages/f0/e7/262832f58170e132f5cc546bc6fb260d7651d244e3ae4606e8aba3e109ba/sphinx_last_updated_by_git-0.3.7.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [beta9]: Downloading https://files.pythonhosted.org/packages/11/67/b604fdb1907c1ee8dda9654212239b97efe74c015aa742cfe9806173d4d3/beta9-0.1.8.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [asmu]: Downloading https://files.pythonhosted.org/packages/01/d2/8062196f7ee40ffb94608fe71c530d377f49cd2c90017c1bedfe71f612d7/asmu-0.0.1a8.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [pyegeria]: Downloading https://files.pythonhosted.org/packages/f6/fb/71d76faf7a4db0ee4efbdf66b2a947539bcc045dfdf9d14fdad4d1cd2061/pyegeria-0.3.8.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [pyftg]: executing diffoscope
+[2024-05-04 17:56:32] INFO root fetch - processPackages [pyftg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyftg-2.0.1.tar.gz tmp/pyftg-2.1.tar.gz --markdown 20240504/p/pyftg/2.0.1-2.1/README.md --exclude *.pyd
+[2024-05-04 17:56:32] INFO root fetch - processPackages [sphinx-last-updated-by-git]: executing diffoscope
+[2024-05-04 17:56:32] INFO root fetch - processPackages [sphinx-last-updated-by-git]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-last-updated-by-git-0.3.6.tar.gz tmp/sphinx_last_updated_by_git-0.3.7.tar.gz --markdown 20240504/s/sphinx-last-updated-by-git/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-04 17:56:32] INFO root fetch - processPackages [Files.com]: Downloading https://files.pythonhosted.org/packages/50/2a/081bc12536110f3d42e66312b9c23d07fc87bd3eafaaa4b731c3a21d1660/Files.com-1.4.9.tar.gz
+[2024-05-04 17:56:32] INFO root fetch - processPackages [asmu]: executing diffoscope
+[2024-05-04 17:56:32] INFO root fetch - processPackages [asmu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asmu-0.0.1a7.tar.gz tmp/asmu-0.0.1a8.tar.gz --markdown 20240504/a/asmu/0.0.1a7-0.0.1a8/README.md --exclude *.pyd
+[2024-05-04 17:56:33] INFO root fetch - processPackages [pyegeria]: executing diffoscope
+[2024-05-04 17:56:33] INFO root fetch - processPackages [pyegeria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyegeria-0.3.7.tar.gz tmp/pyegeria-0.3.8.tar.gz --markdown 20240504/p/pyegeria/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-05-04 17:56:33] INFO root fetch - processPackages [beta9]: executing diffoscope
+[2024-05-04 17:56:33] INFO root fetch - processPackages [beta9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beta9-0.1.7.tar.gz tmp/beta9-0.1.8.tar.gz --markdown 20240504/b/beta9/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-04 17:56:33] INFO root fetch - processPackages [Files.com]: executing diffoscope
+[2024-05-04 17:56:33] INFO root fetch - processPackages [Files.com]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Files.com-1.4.8.tar.gz tmp/Files.com-1.4.9.tar.gz --markdown 20240504/F/Files.com/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-04 17:56:33] INFO root fetch - processPackages [sphinx-last-updated-by-git]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-last-updated-by-git-0.3.6.tar.gz]
+[2024-05-04 17:56:33] INFO root fetch - processPackages [sphinx-last-updated-by-git]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_last_updated_by_git-0.3.7.tar.gz]
+[2024-05-04 17:56:33] INFO root fetch - main [MainThread]: End processing [sphinx-last-updated-by-git]: success
+[2024-05-04 17:56:33] INFO root fetch - processPackages [asmu]: Remove: archive file [/home/abi/fetcher/tmp/asmu-0.0.1a7.tar.gz]
+[2024-05-04 17:56:33] INFO root fetch - processPackages [asmu]: Remove: archive file [/home/abi/fetcher/tmp/asmu-0.0.1a8.tar.gz]
+[2024-05-04 17:56:33] INFO root fetch - main [MainThread]: End processing [asmu]: success
+[2024-05-04 17:56:33] INFO root fetch - processPackages [pyftg]: Remove: archive file [/home/abi/fetcher/tmp/pyftg-2.0.1.tar.gz]
+[2024-05-04 17:56:33] INFO root fetch - processPackages [pyftg]: Remove: archive file [/home/abi/fetcher/tmp/pyftg-2.1.tar.gz]
+[2024-05-04 17:56:33] INFO root fetch - main [MainThread]: End processing [pyftg]: success
+[2024-05-04 17:56:33] INFO root fetch - processPackages [beta9]: Remove: archive file [/home/abi/fetcher/tmp/beta9-0.1.7.tar.gz]
+[2024-05-04 17:56:33] INFO root fetch - processPackages [beta9]: Remove: archive file [/home/abi/fetcher/tmp/beta9-0.1.8.tar.gz]
+[2024-05-04 17:56:33] INFO root fetch - main [MainThread]: End processing [beta9]: success
+[2024-05-04 17:56:33] INFO root fetch - processPackages [Files.com]: Remove: archive file [/home/abi/fetcher/tmp/Files.com-1.4.8.tar.gz]
+[2024-05-04 17:56:33] INFO root fetch - processPackages [Files.com]: Remove: archive file [/home/abi/fetcher/tmp/Files.com-1.4.9.tar.gz]
+[2024-05-04 17:56:33] INFO root fetch - main [MainThread]: End processing [Files.com]: success
+[2024-05-04 17:56:34] INFO root fetch - processPackages [pyegeria]: Remove: archive file [/home/abi/fetcher/tmp/pyegeria-0.3.7.tar.gz]
+[2024-05-04 17:56:34] INFO root fetch - processPackages [pyegeria]: Remove: archive file [/home/abi/fetcher/tmp/pyegeria-0.3.8.tar.gz]
+[2024-05-04 17:56:34] INFO root fetch - main [MainThread]: End processing [pyegeria]: success
+[2024-05-04 17:56:34] INFO root fetch - main [MainThread]: Store serial: [23059048]
