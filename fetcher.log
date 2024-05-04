@@ -16225,3 +16225,53 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:31:49] INFO root fetch - processPackages [pyvserv]: Remove: archive file [/home/abi/fetcher/tmp/pyvserv-1.0.6.tar.gz]
 [2024-05-04 17:31:49] INFO root fetch - main [MainThread]: End processing [pyvserv]: success
 [2024-05-04 17:31:49] INFO root fetch - main [MainThread]: Store serial: [23058909]
+[2024-05-04 17:33:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058909]
+[2024-05-04 17:33:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-04 17:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: digitalarztools
+[2024-05-04 17:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ojax
+[2024-05-04 17:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-kwargs
+[2024-05-04 17:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cryptography
+[2024-05-04 17:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cs-bahtml
+[2024-05-04 17:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cryptography-vectors
+[2024-05-04 17:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mwxlib
+[2024-05-04 17:33:58] INFO root fetch - processPackages [mo-kwargs]: New version: [7.614.24125] Old Version: [7.613.24121]
+[2024-05-04 17:33:58] INFO root fetch - processPackages [digitalarztools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 17:33:58] INFO root fetch - processPackages [cryptography]: New version: [42.0.5] Old Version: [42.0.4]
+[2024-05-04 17:33:58] WARNING root fetch - processPackages [ojax]: Skipping, unable to determine old version
+[2024-05-04 17:33:58] INFO root fetch - main [MainThread]: End processing [ojax] error
+[2024-05-04 17:33:58] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/ca/77/18351109a6391256719c42156c3cc2bc0b72114858ebc3b4ea07c816b226/mo_kwargs-7.613.24121.tar.gz
+[2024-05-04 17:33:58] WARNING root fetch - processPackages [cs-bahtml]: Skipping, unable to determine old version
+[2024-05-04 17:33:58] INFO root fetch - main [MainThread]: End processing [cs-bahtml] error
+[2024-05-04 17:33:58] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/b7/70/8b5b8aaee385637088cb6c095a922bf5f17957354ed8b60669d0d25a3811/digitalarztools-0.1.8.tar.gz
+[2024-05-04 17:33:58] INFO root fetch - processPackages [cryptography-vectors]: New version: [42.0.6] Old Version: [42.0.5]
+[2024-05-04 17:33:59] INFO root fetch - processPackages [cryptography]: Downloading https://files.pythonhosted.org/packages/81/d8/214d25515bf6034dce99aba22eeb47443b14c82160114e3d3f33067c6d3b/cryptography-42.0.4.tar.gz
+[2024-05-04 17:33:59] INFO root fetch - processPackages [mwxlib]: New version: [0.94.7] Old Version: [0.94.6]
+[2024-05-04 17:33:59] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/54/1e/aa56d921be449de7333dd2c6dcd144b91fba4801758e48a8cbf8b7bbe4ca/mo_kwargs-7.614.24125.tar.gz
+[2024-05-04 17:33:59] INFO root fetch - processPackages [cryptography-vectors]: Downloading https://files.pythonhosted.org/packages/a8/7f/20a3d24cb1b88a0225c7829c3e7bde038de26d114176a65bfc713065466f/cryptography_vectors-42.0.5.tar.gz
+[2024-05-04 17:33:59] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/8b/85/2a742b62f2427a45f092ea34127a93f724509fd219511c0838e61833a9a1/digitalarztools-0.1.9.tar.gz
+[2024-05-04 17:33:59] WARNING root fetch - processPackages [cryptography-vectors]: Skipping package: exceeds size limit 35277812>=10485760
+[2024-05-04 17:33:59] INFO root fetch - main [MainThread]: End processing [cryptography-vectors] error
+[2024-05-04 17:33:59] INFO root fetch - processPackages [mo-kwargs]: executing diffoscope
+[2024-05-04 17:33:59] INFO root fetch - processPackages [mo-kwargs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_kwargs-7.613.24121.tar.gz tmp/mo_kwargs-7.614.24125.tar.gz --markdown 20240504/m/mo-kwargs/7.613.24121-7.614.24125/README.md --exclude *.pyd
+[2024-05-04 17:33:59] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/7a/69/5a6729379f07c0cb713a56174a162540f89ed37c161ef6f6e949785d4ae2/mwxlib-0.94.6-py3-none-any.whl
+[2024-05-04 17:33:59] INFO root fetch - processPackages [cryptography]: Downloading https://files.pythonhosted.org/packages/13/9e/a55763a32d340d7b06d045753c186b690e7d88780cafce5f88cb931536be/cryptography-42.0.5.tar.gz
+[2024-05-04 17:33:59] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2024-05-04 17:33:59] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.1.8.tar.gz tmp/digitalarztools-0.1.9.tar.gz --markdown 20240504/d/digitalarztools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 17:33:59] INFO root fetch - processPackages [cryptography]: executing diffoscope
+[2024-05-04 17:33:59] INFO root fetch - processPackages [cryptography]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cryptography-42.0.4.tar.gz tmp/cryptography-42.0.5.tar.gz --markdown 20240504/c/cryptography/42.0.4-42.0.5/README.md --exclude *.pyd
+[2024-05-04 17:33:59] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/be/9d/3058698809a3a47f8afd6c8d1f461a5b338292118e61355b5925f88012ca/mwxlib-0.94.7-py3-none-any.whl
+[2024-05-04 17:33:59] INFO root fetch - processPackages [mwxlib]: executing diffoscope
+[2024-05-04 17:33:59] INFO root fetch - processPackages [mwxlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwxlib-0.94.6-py3-none-any.whl.zip tmp/mwxlib-0.94.7-py3-none-any.whl.zip --markdown 20240504/m/mwxlib/0.94.6-0.94.7/README.md --exclude *.pyd
+[2024-05-04 17:33:59] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.613.24121.tar.gz]
+[2024-05-04 17:33:59] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.614.24125.tar.gz]
+[2024-05-04 17:33:59] INFO root fetch - main [MainThread]: End processing [mo-kwargs]: success
+[2024-05-04 17:34:00] INFO root fetch - processPackages [digitalarztools]: Remove: archive file [/home/abi/fetcher/tmp/digitalarztools-0.1.8.tar.gz]
+[2024-05-04 17:34:00] INFO root fetch - processPackages [digitalarztools]: Remove: archive file [/home/abi/fetcher/tmp/digitalarztools-0.1.9.tar.gz]
+[2024-05-04 17:34:00] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2024-05-04 17:34:00] INFO root fetch - processPackages [mwxlib]: Remove: archive file [/home/abi/fetcher/tmp/mwxlib-0.94.6-py3-none-any.whl.zip]
+[2024-05-04 17:34:00] INFO root fetch - processPackages [mwxlib]: Remove: archive file [/home/abi/fetcher/tmp/mwxlib-0.94.7-py3-none-any.whl.zip]
+[2024-05-04 17:34:00] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
+[2024-05-04 17:34:01] INFO root fetch - processPackages [cryptography]: Remove: archive file [/home/abi/fetcher/tmp/cryptography-42.0.4.tar.gz]
+[2024-05-04 17:34:01] INFO root fetch - processPackages [cryptography]: Remove: archive file [/home/abi/fetcher/tmp/cryptography-42.0.5.tar.gz]
+[2024-05-04 17:34:01] INFO root fetch - main [MainThread]: End processing [cryptography]: success
+[2024-05-04 17:34:01] INFO root fetch - main [MainThread]: Store serial: [23058952]
