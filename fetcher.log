@@ -16661,3 +16661,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:07:25] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.617.24125.tar.gz]
 [2024-05-04 18:07:25] INFO root fetch - main [MainThread]: End processing [mo-logs]: success
 [2024-05-04 18:07:25] INFO root fetch - main [MainThread]: Store serial: [23059165]
+[2024-05-04 18:09:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059165]
+[2024-05-04 18:09:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 18:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipez
+[2024-05-04 18:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meta-machina
+[2024-05-04 18:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jarvis-tools
+[2024-05-04 18:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eidolon-ai-client
+[2024-05-04 18:09:33] INFO root fetch - processPackages [meta-machina]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-04 18:09:33] INFO root fetch - processPackages [eidolon-ai-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 18:09:33] INFO root fetch - processPackages [pipez]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-04 18:09:33] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/6a/06/ddf70cebadffb8817f293dd08862e458839e36d85f85ed13e49d4ef97357/meta_machina-0.0.4.tar.gz
+[2024-05-04 18:09:33] INFO root fetch - processPackages [eidolon-ai-client]: Downloading https://files.pythonhosted.org/packages/f0/61/6ca231006909006ba96753a764654d05e47de665b1bf7f42b131a6cdb841/eidolon_ai_client-0.1.8.tar.gz
+[2024-05-04 18:09:34] INFO root fetch - processPackages [jarvis-tools]: New version: [2024.4.20] Old Version: [2024.4.10]
+[2024-05-04 18:09:34] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/c8/62/5b717f40c0fa19b721b0c32e9704e07e3efc6ef66d9e9235e125637ee655/pipez-0.0.98.tar.gz
+[2024-05-04 18:09:34] INFO root fetch - processPackages [jarvis-tools]: Downloading https://files.pythonhosted.org/packages/d3/37/21e989859f93806ff749c2a90e7e25acffb94567cc2056cb661006f472b9/jarvis-tools-2024.4.10.tar.gz
+[2024-05-04 18:09:34] INFO root fetch - processPackages [eidolon-ai-client]: Downloading https://files.pythonhosted.org/packages/14/16/63be890da3058c38960189037563296eb56f3d69154718e4a35d80261950/eidolon_ai_client-0.1.9.tar.gz
+[2024-05-04 18:09:34] INFO root fetch - processPackages [meta-machina]: Downloading https://files.pythonhosted.org/packages/e0/f1/437c74821a0e00320226a27204a1e5913c55fe526ad7b46c98c80e078e6d/meta_machina-0.0.5.tar.gz
+[2024-05-04 18:09:34] INFO root fetch - processPackages [eidolon-ai-client]: executing diffoscope
+[2024-05-04 18:09:34] INFO root fetch - processPackages [eidolon-ai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eidolon_ai_client-0.1.8.tar.gz tmp/eidolon_ai_client-0.1.9.tar.gz --markdown 20240504/e/eidolon-ai-client/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 18:09:34] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/e6/6e/340bc500f971bf2861a377a6dd615982ddeeb6ee3175f01910d829d31484/pipez-0.0.99.tar.gz
+[2024-05-04 18:09:34] INFO root fetch - processPackages [meta-machina]: executing diffoscope
+[2024-05-04 18:09:34] INFO root fetch - processPackages [meta-machina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta_machina-0.0.4.tar.gz tmp/meta_machina-0.0.5.tar.gz --markdown 20240504/m/meta-machina/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-04 18:09:34] INFO root fetch - processPackages [pipez]: executing diffoscope
+[2024-05-04 18:09:34] INFO root fetch - processPackages [pipez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipez-0.0.98.tar.gz tmp/pipez-0.0.99.tar.gz --markdown 20240504/p/pipez/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-04 18:09:34] INFO root fetch - processPackages [jarvis-tools]: Downloading https://files.pythonhosted.org/packages/85/c6/4e1af1f5ead8b8ba4c8a159beb9ecf61e698c1317a1a0e8c157dc4c790f7/jarvis_tools-2024.4.20.tar.gz
+[2024-05-04 18:09:34] INFO root fetch - processPackages [eidolon-ai-client]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_client-0.1.8.tar.gz]
+[2024-05-04 18:09:34] INFO root fetch - processPackages [eidolon-ai-client]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_client-0.1.9.tar.gz]
+[2024-05-04 18:09:34] INFO root fetch - main [MainThread]: End processing [eidolon-ai-client]: success
+[2024-05-04 18:09:34] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.4.tar.gz]
+[2024-05-04 18:09:34] INFO root fetch - processPackages [meta-machina]: Remove: archive file [/home/abi/fetcher/tmp/meta_machina-0.0.5.tar.gz]
+[2024-05-04 18:09:34] INFO root fetch - main [MainThread]: End processing [meta-machina]: success
+[2024-05-04 18:09:35] INFO root fetch - processPackages [jarvis-tools]: executing diffoscope
+[2024-05-04 18:09:35] INFO root fetch - processPackages [jarvis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis-tools-2024.4.10.tar.gz tmp/jarvis_tools-2024.4.20.tar.gz --markdown 20240504/j/jarvis-tools/2024.4.10-2024.4.20/README.md --exclude *.pyd
+[2024-05-04 18:09:35] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.98.tar.gz]
+[2024-05-04 18:09:35] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.99.tar.gz]
+[2024-05-04 18:09:35] INFO root fetch - main [MainThread]: End processing [pipez]: success
+[2024-05-04 18:09:36] INFO root fetch - processPackages [jarvis-tools]: Remove: archive file [/home/abi/fetcher/tmp/jarvis-tools-2024.4.10.tar.gz]
+[2024-05-04 18:09:36] INFO root fetch - processPackages [jarvis-tools]: Remove: archive file [/home/abi/fetcher/tmp/jarvis_tools-2024.4.20.tar.gz]
+[2024-05-04 18:09:36] INFO root fetch - main [MainThread]: End processing [jarvis-tools]: success
+[2024-05-04 18:09:36] INFO root fetch - main [MainThread]: Store serial: [23059177]
