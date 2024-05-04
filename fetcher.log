@@ -21025,3 +21025,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:26:15] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
 [2024-05-04 23:26:15] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-04 23:26:15] INFO root fetch - main [MainThread]: Store serial: [23061111]
+[2024-05-04 23:28:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061111]
+[2024-05-04 23:28:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 23:28:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sfconn
+[2024-05-04 23:28:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vital-ai-social
+[2024-05-04 23:28:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lytils
+[2024-05-04 23:28:24] INFO root fetch - processPackages [lytils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 23:28:24] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/e5/63/947a765769a040af108780166ef416734281e055d3577ce6f8ecd6dcff7b/lytils-0.1.8.tar.gz
+[2024-05-04 23:28:24] WARNING root fetch - processPackages [vital-ai-social]: Skipping, unable to determine old version
+[2024-05-04 23:28:24] INFO root fetch - main [MainThread]: End processing [vital-ai-social] error
+[2024-05-04 23:28:24] INFO root fetch - processPackages [sfconn]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-04 23:28:24] INFO root fetch - processPackages [sfconn]: Downloading https://files.pythonhosted.org/packages/3b/02/94d35f6554c0bea798b9ab48b59c7d9e5639afaaf82f99969f4380857bb6/sfconn-0.3.0.tar.gz
+[2024-05-04 23:28:24] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/47/f2/15accaaf8b3ff3e0f0f877cb445d79db9dcd4614b25c36859a4bfd9c5c75/lytils-0.1.9.tar.gz
+[2024-05-04 23:28:25] INFO root fetch - processPackages [lytils]: executing diffoscope
+[2024-05-04 23:28:25] INFO root fetch - processPackages [lytils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lytils-0.1.8.tar.gz tmp/lytils-0.1.9.tar.gz --markdown 20240504/l/lytils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 23:28:25] INFO root fetch - processPackages [sfconn]: Downloading https://files.pythonhosted.org/packages/0b/d7/f7e711e62650175694d30b596be8cebf76eff93b81021faf1cd84803962d/sfconn-0.3.1.tar.gz
+[2024-05-04 23:28:25] INFO root fetch - processPackages [sfconn]: executing diffoscope
+[2024-05-04 23:28:25] INFO root fetch - processPackages [sfconn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfconn-0.3.0.tar.gz tmp/sfconn-0.3.1.tar.gz --markdown 20240504/s/sfconn/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-04 23:28:25] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.8.tar.gz]
+[2024-05-04 23:28:25] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.9.tar.gz]
+[2024-05-04 23:28:25] INFO root fetch - main [MainThread]: End processing [lytils]: success
+[2024-05-04 23:28:25] INFO root fetch - processPackages [sfconn]: Remove: archive file [/home/abi/fetcher/tmp/sfconn-0.3.0.tar.gz]
+[2024-05-04 23:28:25] INFO root fetch - processPackages [sfconn]: Remove: archive file [/home/abi/fetcher/tmp/sfconn-0.3.1.tar.gz]
+[2024-05-04 23:28:25] INFO root fetch - main [MainThread]: End processing [sfconn]: success
+[2024-05-04 23:28:25] INFO root fetch - main [MainThread]: Store serial: [23061122]
