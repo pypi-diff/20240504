@@ -7486,3 +7486,26 @@
 [2024-05-04 04:29:42] INFO root fetch - processPackages [gravitino]: Remove: archive file [/home/abi/fetcher/tmp/gravitino-0.5.0.dev3.tar.gz]
 [2024-05-04 04:29:42] INFO root fetch - main [MainThread]: End processing [gravitino]: success
 [2024-05-04 04:29:42] INFO root fetch - main [MainThread]: Store serial: [23054861]
+[2024-05-04 04:31:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054861]
+[2024-05-04 04:32:01] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-04 04:34:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054864]
+[2024-05-04 04:34:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 04:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drepr-v2
+[2024-05-04 04:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dunamai
+[2024-05-04 04:34:06] INFO root fetch - processPackages [drepr-v2]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-04 04:34:06] INFO root fetch - processPackages [drepr-v2]: Downloading https://files.pythonhosted.org/packages/3d/00/bf090d3acb59d99e8f27937776e4a3b0dac630688ffe26c42a494e94b784/drepr_v2-1.2.1.tar.gz
+[2024-05-04 04:34:06] INFO root fetch - processPackages [dunamai]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-04 04:34:06] INFO root fetch - processPackages [drepr-v2]: Downloading https://files.pythonhosted.org/packages/25/9a/d83b844f16746ba31134df106bfb89e854077fc8c1acacc3def10325a17e/drepr_v2-1.2.2.tar.gz
+[2024-05-04 04:34:06] INFO root fetch - processPackages [dunamai]: Downloading https://files.pythonhosted.org/packages/d5/1c/5771298a326ccae3fbe36c548014a5cb7dd1ab4dba1da7dfeeb10d4606f0/dunamai-1.8.0.tar.gz
+[2024-05-04 04:34:06] INFO root fetch - processPackages [drepr-v2]: executing diffoscope
+[2024-05-04 04:34:06] INFO root fetch - processPackages [drepr-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drepr_v2-1.2.1.tar.gz tmp/drepr_v2-1.2.2.tar.gz --markdown 20240504/d/drepr-v2/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-04 04:34:07] INFO root fetch - processPackages [dunamai]: Downloading https://files.pythonhosted.org/packages/0c/cb/0b91e5e7ef6ce73cfaf57867e2dea2c7db8b293fd5fd321b57e6942612d3/dunamai-1.9.0.tar.gz
+[2024-05-04 04:34:07] INFO root fetch - processPackages [dunamai]: executing diffoscope
+[2024-05-04 04:34:07] INFO root fetch - processPackages [dunamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dunamai-1.8.0.tar.gz tmp/dunamai-1.9.0.tar.gz --markdown 20240504/d/dunamai/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-04 04:34:07] INFO root fetch - processPackages [drepr-v2]: Remove: archive file [/home/abi/fetcher/tmp/drepr_v2-1.2.1.tar.gz]
+[2024-05-04 04:34:07] INFO root fetch - processPackages [drepr-v2]: Remove: archive file [/home/abi/fetcher/tmp/drepr_v2-1.2.2.tar.gz]
+[2024-05-04 04:34:07] INFO root fetch - main [MainThread]: End processing [drepr-v2]: success
+[2024-05-04 04:34:07] INFO root fetch - processPackages [dunamai]: Remove: archive file [/home/abi/fetcher/tmp/dunamai-1.8.0.tar.gz]
+[2024-05-04 04:34:07] INFO root fetch - processPackages [dunamai]: Remove: archive file [/home/abi/fetcher/tmp/dunamai-1.9.0.tar.gz]
+[2024-05-04 04:34:07] INFO root fetch - main [MainThread]: End processing [dunamai]: success
+[2024-05-04 04:34:07] INFO root fetch - main [MainThread]: Store serial: [23054878]
