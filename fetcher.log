@@ -12562,3 +12562,9 @@
 [2024-05-04 11:53:05] WARNING root fetch - processPackages [soundstorm-superfeel]: Skipping, unable to determine old version
 [2024-05-04 11:53:05] INFO root fetch - main [MainThread]: End processing [soundstorm-superfeel] error
 [2024-05-04 11:53:05] INFO root fetch - main [MainThread]: Store serial: [23057338]
+[2024-05-04 11:55:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057338]
+[2024-05-04 11:55:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 11:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlormx-generator
+[2024-05-04 11:55:14] WARNING root fetch - processPackages [sqlormx-generator]: Skipping, unable to determine old version
+[2024-05-04 11:55:14] INFO root fetch - main [MainThread]: End processing [sqlormx-generator] error
+[2024-05-04 11:55:14] INFO root fetch - main [MainThread]: Store serial: [23057342]
