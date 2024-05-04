@@ -8237,3 +8237,45 @@
 [2024-05-04 05:09:34] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.5.tar.gz]
 [2024-05-04 05:09:34] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
 [2024-05-04 05:09:34] INFO root fetch - main [MainThread]: Store serial: [23055219]
+[2024-05-04 05:11:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055219]
+[2024-05-04 05:11:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 05:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bihyung
+[2024-05-04 05:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abstract-pandas
+[2024-05-04 05:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ok-tool
+[2024-05-04 05:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkg-inspect
+[2024-05-04 05:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SparkleLogging
+[2024-05-04 05:11:54] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.6] Old Version: [0.0.0.5]
+[2024-05-04 05:11:54] INFO root fetch - processPackages [pkg-inspect]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-04 05:11:54] INFO root fetch - processPackages [SparkleLogging]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-04 05:11:54] WARNING root fetch - processPackages [ok-tool]: Skipping, unable to determine old version
+[2024-05-04 05:11:54] INFO root fetch - main [MainThread]: End processing [ok-tool] error
+[2024-05-04 05:11:54] INFO root fetch - processPackages [pkg-inspect]: Downloading https://files.pythonhosted.org/packages/4e/e9/70d33caa83458f0529b476a34c41a509752b5e97ee6aabdc21bc24e5b664/pkg_inspect-0.1.2.tar.gz
+[2024-05-04 05:11:54] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/36/b7/465ce4439308ee6979d883cb85321e9b16831b589cab32d003181b94a325/abstract_pandas-0.0.0.5.tar.gz
+[2024-05-04 05:11:54] INFO root fetch - processPackages [SparkleLogging]: Downloading https://files.pythonhosted.org/packages/e5/46/831b8afbb7672cd5129416faaeb491c876b19edfdcb0118ab2f9505d1031/SparkleLogging-1.0.6.tar.gz
+[2024-05-04 05:11:54] INFO root fetch - processPackages [bihyung]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-04 05:11:54] INFO root fetch - processPackages [bihyung]: Downloading https://files.pythonhosted.org/packages/df/60/19b2822b3d357f9a9a7bd1bed8c7c44df19525182190b0c844fab3b4c13b/bihyung-0.2.8.tar.gz
+[2024-05-04 05:11:54] INFO root fetch - processPackages [pkg-inspect]: Downloading https://files.pythonhosted.org/packages/71/65/93bb18801e7c52710b6ebf8a1fab8035bd09871706c99352d605becdbf4f/pkg_inspect-0.1.3.tar.gz
+[2024-05-04 05:11:54] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/fc/c3/ece30a86957c4e5ff8fb05c280187bdf0bd50d13332bd6b51607d60b3b96/abstract_pandas-0.0.0.6.tar.gz
+[2024-05-04 05:11:54] INFO root fetch - processPackages [SparkleLogging]: Downloading https://files.pythonhosted.org/packages/8a/4b/85d4acaed6765742375b94fd4fc293aa40c8e696780f9fd995df09c16b59/SparkleLogging-1.0.7.tar.gz
+[2024-05-04 05:11:54] INFO root fetch - processPackages [pkg-inspect]: executing diffoscope
+[2024-05-04 05:11:54] INFO root fetch - processPackages [pkg-inspect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkg_inspect-0.1.2.tar.gz tmp/pkg_inspect-0.1.3.tar.gz --markdown 20240504/p/pkg-inspect/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-04 05:11:55] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-04 05:11:55] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.5.tar.gz tmp/abstract_pandas-0.0.0.6.tar.gz --markdown 20240504/a/abstract-pandas/0.0.0.5-0.0.0.6/README.md --exclude *.pyd
+[2024-05-04 05:11:55] INFO root fetch - processPackages [SparkleLogging]: executing diffoscope
+[2024-05-04 05:11:55] INFO root fetch - processPackages [SparkleLogging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SparkleLogging-1.0.6.tar.gz tmp/SparkleLogging-1.0.7.tar.gz --markdown 20240504/S/SparkleLogging/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-04 05:11:55] INFO root fetch - processPackages [bihyung]: Downloading https://files.pythonhosted.org/packages/b2/df/86195960b0453808bc1fbcdbe8192d9b23a4b11a495c6e03c76e251f0b86/bihyung-0.2.9.tar.gz
+[2024-05-04 05:11:55] INFO root fetch - processPackages [bihyung]: executing diffoscope
+[2024-05-04 05:11:55] INFO root fetch - processPackages [bihyung]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bihyung-0.2.8.tar.gz tmp/bihyung-0.2.9.tar.gz --markdown 20240504/b/bihyung/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-04 05:11:55] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.5.tar.gz]
+[2024-05-04 05:11:55] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.6.tar.gz]
+[2024-05-04 05:11:55] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-04 05:11:55] INFO root fetch - processPackages [SparkleLogging]: Remove: archive file [/home/abi/fetcher/tmp/SparkleLogging-1.0.6.tar.gz]
+[2024-05-04 05:11:55] INFO root fetch - processPackages [SparkleLogging]: Remove: archive file [/home/abi/fetcher/tmp/SparkleLogging-1.0.7.tar.gz]
+[2024-05-04 05:11:55] INFO root fetch - main [MainThread]: End processing [SparkleLogging]: success
+[2024-05-04 05:11:55] INFO root fetch - processPackages [pkg-inspect]: Remove: archive file [/home/abi/fetcher/tmp/pkg_inspect-0.1.2.tar.gz]
+[2024-05-04 05:11:55] INFO root fetch - processPackages [pkg-inspect]: Remove: archive file [/home/abi/fetcher/tmp/pkg_inspect-0.1.3.tar.gz]
+[2024-05-04 05:11:55] INFO root fetch - main [MainThread]: End processing [pkg-inspect]: success
+[2024-05-04 05:11:55] INFO root fetch - processPackages [bihyung]: Remove: archive file [/home/abi/fetcher/tmp/bihyung-0.2.8.tar.gz]
+[2024-05-04 05:11:55] INFO root fetch - processPackages [bihyung]: Remove: archive file [/home/abi/fetcher/tmp/bihyung-0.2.9.tar.gz]
+[2024-05-04 05:11:55] INFO root fetch - main [MainThread]: End processing [bihyung]: success
+[2024-05-04 05:11:55] INFO root fetch - main [MainThread]: Store serial: [23055248]
