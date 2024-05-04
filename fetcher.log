@@ -15608,3 +15608,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:40:21] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-05-04 16:40:21] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-05-04 16:40:21] INFO root fetch - main [MainThread]: Store serial: [23058548]
+[2024-05-04 16:42:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058548]
+[2024-05-04 16:42:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 16:42:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytzen
+[2024-05-04 16:42:30] INFO root fetch - processPackages [pytzen]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-04 16:42:30] INFO root fetch - processPackages [pytzen]: Downloading https://files.pythonhosted.org/packages/dc/7b/4b3f1e9b3bcab29861591cfc3cf73f58c04daaa2cc54572e2323c57eda7c/pytzen-1.0.5.tar.gz
+[2024-05-04 16:42:30] INFO root fetch - processPackages [pytzen]: Downloading https://files.pythonhosted.org/packages/10/2e/632bcffabf963ff4737f207c8f2df5a898b0ddfca00f22499f16ef6d9e0a/pytzen-1.0.6.tar.gz
+[2024-05-04 16:42:30] INFO root fetch - processPackages [pytzen]: executing diffoscope
+[2024-05-04 16:42:30] INFO root fetch - processPackages [pytzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytzen-1.0.5.tar.gz tmp/pytzen-1.0.6.tar.gz --markdown 20240504/p/pytzen/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-04 16:42:31] INFO root fetch - processPackages [pytzen]: Remove: archive file [/home/abi/fetcher/tmp/pytzen-1.0.5.tar.gz]
+[2024-05-04 16:42:31] INFO root fetch - processPackages [pytzen]: Remove: archive file [/home/abi/fetcher/tmp/pytzen-1.0.6.tar.gz]
+[2024-05-04 16:42:31] INFO root fetch - main [MainThread]: End processing [pytzen]: success
+[2024-05-04 16:42:31] INFO root fetch - main [MainThread]: Store serial: [23058551]
