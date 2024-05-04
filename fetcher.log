@@ -10207,3 +10207,9 @@
 [2024-05-04 08:04:40] INFO root fetch - main [MainThread]: End processing [grplot]: success
 [2024-05-04 08:04:40] INFO root fetch - main [MainThread]: End processing [grplot]: success
 [2024-05-04 08:04:40] INFO root fetch - main [MainThread]: Store serial: [23056097]
+[2024-05-04 08:06:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23056097]
+[2024-05-04 08:06:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-04 08:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pySigma-validators-sigmahq
+[2024-05-04 08:06:49] WARNING root fetch - processPackages [pySigma-validators-sigmahq]: Skipping, unable to determine old version
+[2024-05-04 08:06:49] INFO root fetch - main [MainThread]: End processing [pySigma-validators-sigmahq] error
+[2024-05-04 08:06:49] INFO root fetch - main [MainThread]: Store serial: [23056102]
