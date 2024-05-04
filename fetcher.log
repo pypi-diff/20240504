@@ -9247,3 +9247,18 @@
 [2024-05-04 06:42:24] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat-17.0.1.0.1.2-py3-none-any.whl.zip]
 [2024-05-04 06:42:24] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat]: success
 [2024-05-04 06:42:24] INFO root fetch - main [MainThread]: Store serial: [23055672]
+[2024-05-04 06:44:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055672]
+[2024-05-04 06:44:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 06:44:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: napalm-srl
+[2024-05-04 06:44:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CTDFjorder
+[2024-05-04 06:44:33] WARNING root fetch - processPackages [CTDFjorder]: Skipping, unable to determine old version
+[2024-05-04 06:44:33] INFO root fetch - main [MainThread]: End processing [CTDFjorder] error
+[2024-05-04 06:44:33] INFO root fetch - processPackages [napalm-srl]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-04 06:44:33] INFO root fetch - processPackages [napalm-srl]: Downloading https://files.pythonhosted.org/packages/0c/2e/470f59e423349b9ead3fab632b465a666507269191707b40cbfef9da8424/napalm-srl-1.0.4.tar.gz
+[2024-05-04 06:44:34] INFO root fetch - processPackages [napalm-srl]: Downloading https://files.pythonhosted.org/packages/40/bd/006662611e354fffbba740e0072bba4cd84b42384d8636837ef6c6eecf0b/napalm_srl-1.0.5.tar.gz
+[2024-05-04 06:44:34] INFO root fetch - processPackages [napalm-srl]: executing diffoscope
+[2024-05-04 06:44:34] INFO root fetch - processPackages [napalm-srl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napalm-srl-1.0.4.tar.gz tmp/napalm_srl-1.0.5.tar.gz --markdown 20240504/n/napalm-srl/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-04 06:44:34] INFO root fetch - processPackages [napalm-srl]: Remove: archive file [/home/abi/fetcher/tmp/napalm-srl-1.0.4.tar.gz]
+[2024-05-04 06:44:34] INFO root fetch - processPackages [napalm-srl]: Remove: archive file [/home/abi/fetcher/tmp/napalm_srl-1.0.5.tar.gz]
+[2024-05-04 06:44:34] INFO root fetch - main [MainThread]: End processing [napalm-srl]: success
+[2024-05-04 06:44:34] INFO root fetch - main [MainThread]: Store serial: [23055679]
