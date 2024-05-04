@@ -19196,3 +19196,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 21:08:33] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.2.tar.gz]
 [2024-05-04 21:08:33] INFO root fetch - main [MainThread]: End processing [musical_games]: success
 [2024-05-04 21:08:33] INFO root fetch - main [MainThread]: Store serial: [23060375]
+[2024-05-04 21:10:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23060375]
+[2024-05-04 21:10:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-05-04 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psp-liquids-daq-parser
+[2024-05-04 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lime-stable
+[2024-05-04 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OZI
+[2024-05-04 21:10:42] INFO root fetch - processPackages [psp-liquids-daq-parser]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 21:10:42] INFO root fetch - processPackages [OZI]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-05-04 21:10:42] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-04 21:10:42] INFO root fetch - processPackages [psp-liquids-daq-parser]: Downloading https://files.pythonhosted.org/packages/5a/ac/acb2afa30ac1f5b2b0951c15a15e36c8ff37d2b157a58f13f26d6da72f9d/psp_liquids_daq_parser-0.0.8.tar.gz
+[2024-05-04 21:10:42] INFO root fetch - processPackages [lime-stable]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-04 21:10:42] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/85/58/c330b695fbdc31b63677091a0bf4f0ca1317ab5888eb0a57e017b45d2242/OZI-1.3.2.tar.gz
+[2024-05-04 21:10:42] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-04 21:10:42] INFO root fetch - processPackages [lime-stable]: Downloading https://files.pythonhosted.org/packages/61/87/66989de0d792765f5b5db23c20bfa0149ad8687d95e5d9492abd127cfc86/lime-stable-1.0.0.tar.gz
+[2024-05-04 21:10:42] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-04 21:10:42] INFO root fetch - processPackages [psp-liquids-daq-parser]: Downloading https://files.pythonhosted.org/packages/d4/93/54529293da723ef115445c4b8df210739f8431f36b86101fd0a2925667c2/psp_liquids_daq_parser-0.0.9.tar.gz
+[2024-05-04 21:10:42] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/97/46/67205e4a81c1c8352625e1324fba21bbc400bb031a685ec013cca883d430/OZI-1.3.3.tar.gz
+[2024-05-04 21:10:42] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-04 21:10:42] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240504/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-04 21:10:42] INFO root fetch - processPackages [psp-liquids-daq-parser]: executing diffoscope
+[2024-05-04 21:10:42] INFO root fetch - processPackages [psp-liquids-daq-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psp_liquids_daq_parser-0.0.8.tar.gz tmp/psp_liquids_daq_parser-0.0.9.tar.gz --markdown 20240504/p/psp-liquids-daq-parser/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 21:10:43] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-05-04 21:10:43] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.3.2.tar.gz tmp/OZI-1.3.3.tar.gz --markdown 20240504/O/OZI/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-05-04 21:10:43] INFO root fetch - processPackages [lime-stable]: Downloading https://files.pythonhosted.org/packages/e3/c7/2057a0571f2d79a93c808aac3f2e73d4f75494c2b919ce09595c1d320121/lime-stable-1.0.1.tar.gz
+[2024-05-04 21:10:43] INFO root fetch - processPackages [lime-stable]: executing diffoscope
+[2024-05-04 21:10:43] INFO root fetch - processPackages [lime-stable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lime-stable-1.0.0.tar.gz tmp/lime-stable-1.0.1.tar.gz --markdown 20240504/l/lime-stable/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-04 21:10:43] INFO root fetch - processPackages [psp-liquids-daq-parser]: Remove: archive file [/home/abi/fetcher/tmp/psp_liquids_daq_parser-0.0.8.tar.gz]
+[2024-05-04 21:10:43] INFO root fetch - processPackages [psp-liquids-daq-parser]: Remove: archive file [/home/abi/fetcher/tmp/psp_liquids_daq_parser-0.0.9.tar.gz]
+[2024-05-04 21:10:43] INFO root fetch - main [MainThread]: End processing [psp-liquids-daq-parser]: success
+[2024-05-04 21:10:43] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-04 21:10:43] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-04 21:10:43] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-04 21:10:43] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.3.2.tar.gz]
+[2024-05-04 21:10:43] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.3.3.tar.gz]
+[2024-05-04 21:10:43] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-05-04 21:10:43] INFO root fetch - processPackages [lime-stable]: Remove: archive file [/home/abi/fetcher/tmp/lime-stable-1.0.0.tar.gz]
+[2024-05-04 21:10:43] INFO root fetch - processPackages [lime-stable]: Remove: archive file [/home/abi/fetcher/tmp/lime-stable-1.0.1.tar.gz]
+[2024-05-04 21:10:43] INFO root fetch - main [MainThread]: End processing [lime-stable]: success
+[2024-05-04 21:10:43] INFO root fetch - main [MainThread]: Store serial: [23060389]
