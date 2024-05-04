@@ -13813,3 +13813,24 @@
 [2024-05-04 13:56:53] INFO root fetch - processPackages [rbase24]: Remove: archive file [/home/abi/fetcher/tmp/rbase24-0.3.0.tar.gz]
 [2024-05-04 13:56:53] INFO root fetch - main [MainThread]: End processing [rbase24]: success
 [2024-05-04 13:56:53] INFO root fetch - main [MainThread]: Store serial: [23057804]
+[2024-05-04 13:58:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057804]
+[2024-05-04 13:59:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 13:59:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asyncAminoLab
+[2024-05-04 13:59:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhwpx
+[2024-05-04 13:59:02] INFO root fetch - processPackages [asyncAminoLab]: New version: [1.1] Old Version: [1.0]
+[2024-05-04 13:59:02] INFO root fetch - processPackages [pyhwpx]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-04 13:59:02] INFO root fetch - processPackages [asyncAminoLab]: Downloading https://files.pythonhosted.org/packages/67/eb/640dc8a82981e82635ff05cb92cb6b74430d4112d307d679a250983301b8/asyncAminoLab-1.0.tar.gz
+[2024-05-04 13:59:02] INFO root fetch - processPackages [pyhwpx]: Downloading https://files.pythonhosted.org/packages/4a/e5/3895648f88eb03d7a6ebaecc77b96207d43729f22ae273ee336a1c8c047e/pyhwpx-0.9.8-py3-none-any.whl
+[2024-05-04 13:59:02] INFO root fetch - processPackages [asyncAminoLab]: Downloading https://files.pythonhosted.org/packages/ca/b4/9110e9ed7ef271cd57ecb770fd9a6ba5c639661dd60896827b23641b8b3b/asyncAminoLab-1.1.tar.gz
+[2024-05-04 13:59:02] INFO root fetch - processPackages [pyhwpx]: Downloading https://files.pythonhosted.org/packages/69/e5/3236cfc1321de1a027e1127dd349f0f271d36c76aabd73c87acc9dda5fe1/pyhwpx-0.9.9-py3-none-any.whl
+[2024-05-04 13:59:03] INFO root fetch - processPackages [asyncAminoLab]: executing diffoscope
+[2024-05-04 13:59:03] INFO root fetch - processPackages [asyncAminoLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncAminoLab-1.0.tar.gz tmp/asyncAminoLab-1.1.tar.gz --markdown 20240504/a/asyncAminoLab/1.0-1.1/README.md --exclude *.pyd
+[2024-05-04 13:59:03] INFO root fetch - processPackages [pyhwpx]: executing diffoscope
+[2024-05-04 13:59:03] INFO root fetch - processPackages [pyhwpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhwpx-0.9.8-py3-none-any.whl.zip tmp/pyhwpx-0.9.9-py3-none-any.whl.zip --markdown 20240504/p/pyhwpx/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-04 13:59:03] INFO root fetch - processPackages [asyncAminoLab]: Remove: archive file [/home/abi/fetcher/tmp/asyncAminoLab-1.0.tar.gz]
+[2024-05-04 13:59:03] INFO root fetch - processPackages [asyncAminoLab]: Remove: archive file [/home/abi/fetcher/tmp/asyncAminoLab-1.1.tar.gz]
+[2024-05-04 13:59:03] INFO root fetch - main [MainThread]: End processing [asyncAminoLab]: success
+[2024-05-04 13:59:03] INFO root fetch - processPackages [pyhwpx]: Remove: archive file [/home/abi/fetcher/tmp/pyhwpx-0.9.8-py3-none-any.whl.zip]
+[2024-05-04 13:59:03] INFO root fetch - processPackages [pyhwpx]: Remove: archive file [/home/abi/fetcher/tmp/pyhwpx-0.9.9-py3-none-any.whl.zip]
+[2024-05-04 13:59:03] INFO root fetch - main [MainThread]: End processing [pyhwpx]: success
+[2024-05-04 13:59:03] INFO root fetch - main [MainThread]: Store serial: [23057810]
