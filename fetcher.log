@@ -7647,3 +7647,42 @@
 [2024-05-04 04:48:13] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_account_invoicing-16.0.20240424.0-py3-none-any.whl.zip]
 [2024-05-04 04:48:13] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-account-invoicing]: success
 [2024-05-04 04:48:13] INFO root fetch - main [MainThread]: Store serial: [23054926]
+[2024-05-04 04:50:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23054926]
+[2024-05-04 04:50:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 04:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-invoice-refund-link
+[2024-05-04 04:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: packyak-aws-cdk
+[2024-05-04 04:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-invoice-warn-message
+[2024-05-04 04:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drepr-v2
+[2024-05-04 04:50:32] INFO root fetch - processPackages [odoo-addon-account-invoice-refund-link]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.4.3]
+[2024-05-04 04:50:32] INFO root fetch - processPackages [drepr-v2]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-04 04:50:32] INFO root fetch - processPackages [odoo-addon-account-invoice-warn-message]: New version: [17.0.1.0.0.4] Old Version: [17.0.1.0.0.2]
+[2024-05-04 04:50:32] INFO root fetch - processPackages [packyak-aws-cdk]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-04 04:50:32] INFO root fetch - processPackages [odoo-addon-account-invoice-refund-link]: Downloading https://files.pythonhosted.org/packages/95/f8/f35ef4942db1a8485d194a94feb6f6e540b90d694e278e755fba9af58e13/odoo_addon_account_invoice_refund_link-16.0.1.0.4.3-py3-none-any.whl
+[2024-05-04 04:50:32] INFO root fetch - processPackages [drepr-v2]: Downloading https://files.pythonhosted.org/packages/25/9a/d83b844f16746ba31134df106bfb89e854077fc8c1acacc3def10325a17e/drepr_v2-1.2.2.tar.gz
+[2024-05-04 04:50:33] INFO root fetch - processPackages [odoo-addon-account-invoice-warn-message]: Downloading https://files.pythonhosted.org/packages/71/8d/532c8aa5be298a008e94883cea50d5ec5acf40f4180572480993c33d344f/odoo_addon_account_invoice_warn_message-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-04 04:50:33] INFO root fetch - processPackages [packyak-aws-cdk]: Downloading https://files.pythonhosted.org/packages/3f/5c/9c62d5ca11e5b2b4dce5e057fc33093ed5dbde055cfab1842da917cf273b/packyak-aws-cdk-0.4.8.tar.gz
+[2024-05-04 04:50:33] INFO root fetch - processPackages [odoo-addon-account-invoice-refund-link]: Downloading https://files.pythonhosted.org/packages/08/c6/1305240a72607431cc0141fdc3d8c08022e361a2091a1e6f3a5059207859/odoo_addon_account_invoice_refund_link-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-04 04:50:33] INFO root fetch - processPackages [drepr-v2]: Downloading https://files.pythonhosted.org/packages/8a/b8/1faa689e0d1babc860c18f47732386f3042b1f0a622037ba47726f4bcd67/drepr_v2-1.2.3.tar.gz
+[2024-05-04 04:50:33] INFO root fetch - processPackages [odoo-addon-account-invoice-refund-link]: executing diffoscope
+[2024-05-04 04:50:33] INFO root fetch - processPackages [odoo-addon-account-invoice-refund-link]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_refund_link-16.0.1.0.4.3-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_refund_link-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-account-invoice-refund-link/16.0.1.0.4.3-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-04 04:50:33] INFO root fetch - processPackages [drepr-v2]: executing diffoscope
+[2024-05-04 04:50:33] INFO root fetch - processPackages [drepr-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drepr_v2-1.2.2.tar.gz tmp/drepr_v2-1.2.3.tar.gz --markdown 20240504/d/drepr-v2/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-04 04:50:33] INFO root fetch - processPackages [odoo-addon-account-invoice-warn-message]: Downloading https://files.pythonhosted.org/packages/8c/a6/b66f10512d41a662b85e70094a26cba8cc476fcd24ef9e9452d21028faa4/odoo_addon_account_invoice_warn_message-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-04 04:50:33] INFO root fetch - processPackages [packyak-aws-cdk]: Downloading https://files.pythonhosted.org/packages/f5/c9/e1e1e0b9b00311d30bf76d73a1b624c59a03f40fa3252dd635089b115f37/packyak-aws-cdk-0.4.9.tar.gz
+[2024-05-04 04:50:33] INFO root fetch - processPackages [odoo-addon-account-invoice-warn-message]: executing diffoscope
+[2024-05-04 04:50:33] INFO root fetch - processPackages [odoo-addon-account-invoice-warn-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_warn_message-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_warn_message-17.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240504/o/odoo-addon-account-invoice-warn-message/17.0.1.0.0.2-17.0.1.0.0.4/README.md --exclude *.pyd
+[2024-05-04 04:50:33] INFO root fetch - processPackages [packyak-aws-cdk]: executing diffoscope
+[2024-05-04 04:50:33] INFO root fetch - processPackages [packyak-aws-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packyak-aws-cdk-0.4.8.tar.gz tmp/packyak-aws-cdk-0.4.9.tar.gz --markdown 20240504/p/packyak-aws-cdk/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-04 04:50:34] INFO root fetch - processPackages [drepr-v2]: Remove: archive file [/home/abi/fetcher/tmp/drepr_v2-1.2.2.tar.gz]
+[2024-05-04 04:50:34] INFO root fetch - processPackages [drepr-v2]: Remove: archive file [/home/abi/fetcher/tmp/drepr_v2-1.2.3.tar.gz]
+[2024-05-04 04:50:34] INFO root fetch - main [MainThread]: End processing [drepr-v2]: success
+[2024-05-04 04:50:34] INFO root fetch - processPackages [odoo-addon-account-invoice-warn-message]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_warn_message-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-04 04:50:34] INFO root fetch - processPackages [odoo-addon-account-invoice-warn-message]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_warn_message-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-04 04:50:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-warn-message]: success
+[2024-05-04 04:50:34] INFO root fetch - processPackages [odoo-addon-account-invoice-refund-link]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_refund_link-16.0.1.0.4.3-py3-none-any.whl.zip]
+[2024-05-04 04:50:34] INFO root fetch - processPackages [odoo-addon-account-invoice-refund-link]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_refund_link-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-04 04:50:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-refund-link]: success
+[2024-05-04 04:50:34] INFO root fetch - processPackages [packyak-aws-cdk]: Remove: archive file [/home/abi/fetcher/tmp/packyak-aws-cdk-0.4.8.tar.gz]
+[2024-05-04 04:50:34] INFO root fetch - processPackages [packyak-aws-cdk]: Remove: archive file [/home/abi/fetcher/tmp/packyak-aws-cdk-0.4.9.tar.gz]
+[2024-05-04 04:50:34] INFO root fetch - main [MainThread]: End processing [packyak-aws-cdk]: success
+[2024-05-04 04:50:34] INFO root fetch - main [MainThread]: Store serial: [23054936]
