@@ -12217,3 +12217,48 @@
 [2024-05-04 11:14:10] INFO root fetch - processPackages [SMClib.py]: Remove: archive file [/home/abi/fetcher/tmp/SMClib.py-1.0.6.tar.gz]
 [2024-05-04 11:14:10] INFO root fetch - main [MainThread]: End processing [SMClib.py]: success
 [2024-05-04 11:14:10] INFO root fetch - main [MainThread]: Store serial: [23057195]
+[2024-05-04 11:16:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057195]
+[2024-05-04 11:16:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 11:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-05-04 11:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-04 11:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aa-charlink
+[2024-05-04 11:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: timmins
+[2024-05-04 11:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: staty-tests
+[2024-05-04 11:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aps-toolkit
+[2024-05-04 11:16:19] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-04 11:16:19] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-04 11:16:19] WARNING root fetch - processPackages [timmins]: Skipping, unable to determine old version
+[2024-05-04 11:16:19] INFO root fetch - main [MainThread]: End processing [timmins] error
+[2024-05-04 11:16:19] INFO root fetch - processPackages [aps-toolkit]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-05-04 11:16:19] WARNING root fetch - processPackages [staty-tests]: Skipping, unable to determine old version
+[2024-05-04 11:16:19] INFO root fetch - main [MainThread]: End processing [staty-tests] error
+[2024-05-04 11:16:19] INFO root fetch - processPackages [aa-charlink]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-04 11:16:19] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-04 11:16:19] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-04 11:16:19] INFO root fetch - processPackages [aps-toolkit]: Downloading https://files.pythonhosted.org/packages/5b/c0/d9a021e80fcce07fe5cacb9d53d358f35bf6f55640e06ee65fc4165f5e6c/aps-toolkit-0.5.3.tar.gz
+[2024-05-04 11:16:19] INFO root fetch - processPackages [aa-charlink]: Downloading https://files.pythonhosted.org/packages/a5/5b/91740b15a256393ff02dafb7504a98c041eec1d745aee4caef786d4cd75e/aa_charlink-1.2.0.tar.gz
+[2024-05-04 11:16:19] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-04 11:16:19] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-04 11:16:19] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-04 11:16:19] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240504/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-04 11:16:19] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-04 11:16:19] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240504/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-04 11:16:20] INFO root fetch - processPackages [aps-toolkit]: Downloading https://files.pythonhosted.org/packages/7f/61/cbd9fbdd87bc5a446fa0e3cfe7057f07d46245f958ef9aa318166b3ef3a3/aps-toolkit-0.5.4.tar.gz
+[2024-05-04 11:16:20] INFO root fetch - processPackages [aa-charlink]: Downloading https://files.pythonhosted.org/packages/ae/09/4bc39b4e35fc02d8606ec90178194070a4b06f63d801b5b4ff11d207dfff/aa_charlink-1.2.1.tar.gz
+[2024-05-04 11:16:20] INFO root fetch - processPackages [aa-charlink]: executing diffoscope
+[2024-05-04 11:16:20] INFO root fetch - processPackages [aa-charlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_charlink-1.2.0.tar.gz tmp/aa_charlink-1.2.1.tar.gz --markdown 20240504/a/aa-charlink/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-04 11:16:20] INFO root fetch - processPackages [aps-toolkit]: executing diffoscope
+[2024-05-04 11:16:20] INFO root fetch - processPackages [aps-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aps-toolkit-0.5.3.tar.gz tmp/aps-toolkit-0.5.4.tar.gz --markdown 20240504/a/aps-toolkit/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-05-04 11:16:20] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-04 11:16:20] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-04 11:16:20] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-04 11:16:20] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-04 11:16:20] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-04 11:16:20] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-04 11:16:20] INFO root fetch - processPackages [aa-charlink]: Remove: archive file [/home/abi/fetcher/tmp/aa_charlink-1.2.0.tar.gz]
+[2024-05-04 11:16:20] INFO root fetch - processPackages [aa-charlink]: Remove: archive file [/home/abi/fetcher/tmp/aa_charlink-1.2.1.tar.gz]
+[2024-05-04 11:16:20] INFO root fetch - main [MainThread]: End processing [aa-charlink]: success
+[2024-05-04 11:16:20] INFO root fetch - processPackages [aps-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/aps-toolkit-0.5.3.tar.gz]
+[2024-05-04 11:16:20] INFO root fetch - processPackages [aps-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/aps-toolkit-0.5.4.tar.gz]
+[2024-05-04 11:16:20] INFO root fetch - main [MainThread]: End processing [aps-toolkit]: success
+[2024-05-04 11:16:20] INFO root fetch - main [MainThread]: Store serial: [23057219]
