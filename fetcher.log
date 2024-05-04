@@ -9084,3 +9084,42 @@
 [2024-05-04 06:26:07] INFO root fetch - processPackages [odoo14-addon-assets-management]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_assets_management-14.0.1.5.1.dev2-py3-none-any.whl.zip]
 [2024-05-04 06:26:07] INFO root fetch - main [MainThread]: End processing [odoo14-addon-assets-management]: success
 [2024-05-04 06:26:07] INFO root fetch - main [MainThread]: Store serial: [23055606]
+[2024-05-04 06:28:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055606]
+[2024-05-04 06:28:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 06:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-spread-grid
+[2024-05-04 06:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: viser
+[2024-05-04 06:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ppacls
+[2024-05-04 06:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pdfplumber-aemc
+[2024-05-04 06:28:31] INFO root fetch - processPackages [viser]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-04 06:28:31] INFO root fetch - processPackages [pdfplumber-aemc]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-05-04 06:28:31] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 06:28:31] INFO root fetch - processPackages [ppacls]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-04 06:28:31] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/43/1c/d574f1040f257213ab3e861ee33711d900666dbbaf4a2be7b1e32213f27b/viser-0.1.8.tar.gz
+[2024-05-04 06:28:31] INFO root fetch - processPackages [pdfplumber-aemc]: Downloading https://files.pythonhosted.org/packages/11/45/1db032d152258bc4c1d0b2176b7ad414892fa46620682b2074f65556277a/pdfplumber-aemc-0.7.6.tar.gz
+[2024-05-04 06:28:31] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-05-04 06:28:31] INFO root fetch - processPackages [ppacls]: Downloading https://files.pythonhosted.org/packages/88/ba/fa6acf4a4a374be5cbbd6df4b0ddb91032473c7555ba80795b4c63f38531/ppacls-0.4.4-py3-none-any.whl
+[2024-05-04 06:28:32] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-05-04 06:28:32] INFO root fetch - processPackages [ppacls]: Downloading https://files.pythonhosted.org/packages/5e/11/f632441c374da36bea3341316056bce6a8765a64191c219ec2be62de3ffa/ppacls-0.4.5-py3-none-any.whl
+[2024-05-04 06:28:32] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-05-04 06:28:32] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240504/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 06:28:32] INFO root fetch - processPackages [pdfplumber-aemc]: Downloading https://files.pythonhosted.org/packages/ba/14/2964c33d2c7dab9419585ac28f625e1068a1a5d8c9b30e359a9ddd8868a0/pdfplumber-aemc-0.7.7.tar.gz
+[2024-05-04 06:28:32] INFO root fetch - processPackages [ppacls]: executing diffoscope
+[2024-05-04 06:28:32] INFO root fetch - processPackages [ppacls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ppacls-0.4.4-py3-none-any.whl.zip tmp/ppacls-0.4.5-py3-none-any.whl.zip --markdown 20240504/p/ppacls/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-04 06:28:32] INFO root fetch - processPackages [pdfplumber-aemc]: executing diffoscope
+[2024-05-04 06:28:32] INFO root fetch - processPackages [pdfplumber-aemc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfplumber-aemc-0.7.6.tar.gz tmp/pdfplumber-aemc-0.7.7.tar.gz --markdown 20240504/p/pdfplumber-aemc/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-05-04 06:28:32] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/c6/11/037d11188de9d326de379226a46229a7f59bdf1b4f74bf70f34d7d278638/viser-0.1.9.tar.gz
+[2024-05-04 06:28:33] INFO root fetch - processPackages [ppacls]: Remove: archive file [/home/abi/fetcher/tmp/ppacls-0.4.4-py3-none-any.whl.zip]
+[2024-05-04 06:28:33] INFO root fetch - processPackages [ppacls]: Remove: archive file [/home/abi/fetcher/tmp/ppacls-0.4.5-py3-none-any.whl.zip]
+[2024-05-04 06:28:33] INFO root fetch - main [MainThread]: End processing [ppacls]: success
+[2024-05-04 06:28:33] INFO root fetch - processPackages [pdfplumber-aemc]: Remove: archive file [/home/abi/fetcher/tmp/pdfplumber-aemc-0.7.6.tar.gz]
+[2024-05-04 06:28:33] INFO root fetch - processPackages [pdfplumber-aemc]: Remove: archive file [/home/abi/fetcher/tmp/pdfplumber-aemc-0.7.7.tar.gz]
+[2024-05-04 06:28:33] INFO root fetch - main [MainThread]: End processing [pdfplumber-aemc]: success
+[2024-05-04 06:28:33] INFO root fetch - processPackages [viser]: executing diffoscope
+[2024-05-04 06:28:33] INFO root fetch - processPackages [viser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viser-0.1.8.tar.gz tmp/viser-0.1.9.tar.gz --markdown 20240504/v/viser/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-04 06:28:34] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-05-04 06:28:34] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-05-04 06:28:34] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-05-04 06:28:34] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.8.tar.gz]
+[2024-05-04 06:28:34] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.9.tar.gz]
+[2024-05-04 06:28:34] INFO root fetch - main [MainThread]: End processing [viser]: success
+[2024-05-04 06:28:34] INFO root fetch - main [MainThread]: Store serial: [23055617]
