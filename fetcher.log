@@ -13508,3 +13508,27 @@
 [2024-05-04 13:24:34] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.4-cp39-cp39-manylinux1_x86_64.whl.zip]
 [2024-05-04 13:24:34] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
 [2024-05-04 13:24:34] INFO root fetch - main [MainThread]: Store serial: [23057689]
+[2024-05-04 13:26:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23057689]
+[2024-05-04 13:26:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 13:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: queue-pipelines
+[2024-05-04 13:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchx-nightly
+[2024-05-04 13:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flops-utils
+[2024-05-04 13:26:44] INFO root fetch - processPackages [flops-utils]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-04 13:26:44] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.5.3] Old Version: [2024.5.2]
+[2024-05-04 13:26:44] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/10/cb/c97674c0bc36c7bda63e6fe5debef2c525e23cf74107ddbc08ef5e7fc7ab/flops_utils-0.2.7.tar.gz
+[2024-05-04 13:26:44] WARNING root fetch - processPackages [queue-pipelines]: Skipping, unable to determine old version
+[2024-05-04 13:26:44] INFO root fetch - main [MainThread]: End processing [queue-pipelines] error
+[2024-05-04 13:26:44] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/e4/76/e6b97e58e829cf0b3d552307dc0d92a1134e373255f33034ad9d2e782f8b/torchx_nightly-2024.5.2-py3-none-any.whl
+[2024-05-04 13:26:44] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/12/a7/eb3fd40b4f7892dfc83b1d235085f5c901eec1023ed6127a9de7c23c8415/torchx_nightly-2024.5.3-py3-none-any.whl
+[2024-05-04 13:26:44] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/a6/e9/2f218b7097cdbfdd669499a9704af90d4e11f3217d73b0236c3d8bcba616/flops_utils-0.2.8.tar.gz
+[2024-05-04 13:26:44] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-05-04 13:26:44] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.5.2-py3-none-any.whl.zip tmp/torchx_nightly-2024.5.3-py3-none-any.whl.zip --markdown 20240504/t/torchx-nightly/2024.5.2-2024.5.3/README.md --exclude *.pyd
+[2024-05-04 13:26:44] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-04 13:26:44] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.2.7.tar.gz tmp/flops_utils-0.2.8.tar.gz --markdown 20240504/f/flops-utils/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-04 13:26:45] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.2.7.tar.gz]
+[2024-05-04 13:26:45] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.2.8.tar.gz]
+[2024-05-04 13:26:45] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-04 13:26:45] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.2-py3-none-any.whl.zip]
+[2024-05-04 13:26:45] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.3-py3-none-any.whl.zip]
+[2024-05-04 13:26:45] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-05-04 13:26:45] INFO root fetch - main [MainThread]: Store serial: [23057699]
