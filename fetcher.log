@@ -17146,3 +17146,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 18:40:00] INFO root fetch - processPackages [name-generator-nicomp]: Remove: archive file [/home/abi/fetcher/tmp/name_generator_nicomp-1.0.6.tar.gz]
 [2024-05-04 18:40:00] INFO root fetch - main [MainThread]: End processing [name-generator-nicomp]: success
 [2024-05-04 18:40:00] INFO root fetch - main [MainThread]: Store serial: [23059341]
+[2024-05-04 18:42:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23059341]
+[2024-05-04 18:42:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-04 18:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pritunl-api
+[2024-05-04 18:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ComradeAI
+[2024-05-04 18:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mtg-card-api
+[2024-05-04 18:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mov-cli
+[2024-05-04 18:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: otisnguyentransformation2024
+[2024-05-04 18:42:09] WARNING root fetch - processPackages [mtg-card-api]: Skipping, unable to determine old version
+[2024-05-04 18:42:09] INFO root fetch - main [MainThread]: End processing [mtg-card-api] error
+[2024-05-04 18:42:09] WARNING root fetch - processPackages [otisnguyentransformation2024]: Skipping, unable to determine old version
+[2024-05-04 18:42:09] INFO root fetch - main [MainThread]: End processing [otisnguyentransformation2024] error
+[2024-05-04 18:42:09] INFO root fetch - processPackages [pritunl-api]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-04 18:42:09] INFO root fetch - processPackages [ComradeAI]: New version: [0.18.9] Old Version: [0.18.8]
+[2024-05-04 18:42:09] INFO root fetch - processPackages [mov-cli]: New version: [4.4a1] Old Version: [4.3.8]
+[2024-05-04 18:42:09] INFO root fetch - processPackages [ComradeAI]: Downloading https://files.pythonhosted.org/packages/0f/6b/cbb210cdd66fba57a3515ccd9678ed6dab7911788e798fd28cdebb179f95/ComradeAI-0.18.8.tar.gz
+[2024-05-04 18:42:09] INFO root fetch - processPackages [pritunl-api]: Downloading https://files.pythonhosted.org/packages/fb/50/54b2a279220f696a1942a5899e26663399f71bf6b108fcdcb589eaf401c1/pritunl_api-1.1.8.tar.gz
+[2024-05-04 18:42:09] INFO root fetch - processPackages [mov-cli]: Downloading https://files.pythonhosted.org/packages/4d/1d/c33f4d15d63a1d641c0fbb9a17ed5214425655ba4a90ab9c4fbdcdda2b74/mov_cli-4.3.8.tar.gz
+[2024-05-04 18:42:10] INFO root fetch - processPackages [mov-cli]: Downloading https://files.pythonhosted.org/packages/74/38/f08afed7acc4db8eb2f3b292eb395fde44536534a64ab06b32008aaa3d60/mov_cli-4.4a1.tar.gz
+[2024-05-04 18:42:10] INFO root fetch - processPackages [ComradeAI]: Downloading https://files.pythonhosted.org/packages/57/22/e4aa2177ece664931452ca87630a7ac2a64722c0050b63a0d48c56009de8/ComradeAI-0.18.9.tar.gz
+[2024-05-04 18:42:10] INFO root fetch - processPackages [mov-cli]: executing diffoscope
+[2024-05-04 18:42:10] INFO root fetch - processPackages [mov-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mov_cli-4.3.8.tar.gz tmp/mov_cli-4.4a1.tar.gz --markdown 20240504/m/mov-cli/4.3.8-4.4a1/README.md --exclude *.pyd
+[2024-05-04 18:42:10] INFO root fetch - processPackages [pritunl-api]: Downloading https://files.pythonhosted.org/packages/44/8b/478c23e10d83f9375b994b6d60ae68e85efda2108021bf3dec9664c6fa74/pritunl_api-1.1.9.tar.gz
+[2024-05-04 18:42:10] INFO root fetch - processPackages [ComradeAI]: executing diffoscope
+[2024-05-04 18:42:10] INFO root fetch - processPackages [ComradeAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ComradeAI-0.18.8.tar.gz tmp/ComradeAI-0.18.9.tar.gz --markdown 20240504/C/ComradeAI/0.18.8-0.18.9/README.md --exclude *.pyd
+[2024-05-04 18:42:10] INFO root fetch - processPackages [pritunl-api]: executing diffoscope
+[2024-05-04 18:42:10] INFO root fetch - processPackages [pritunl-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pritunl_api-1.1.8.tar.gz tmp/pritunl_api-1.1.9.tar.gz --markdown 20240504/p/pritunl-api/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-04 18:42:10] INFO root fetch - processPackages [ComradeAI]: Remove: archive file [/home/abi/fetcher/tmp/ComradeAI-0.18.8.tar.gz]
+[2024-05-04 18:42:10] INFO root fetch - processPackages [ComradeAI]: Remove: archive file [/home/abi/fetcher/tmp/ComradeAI-0.18.9.tar.gz]
+[2024-05-04 18:42:10] INFO root fetch - main [MainThread]: End processing [ComradeAI]: success
+[2024-05-04 18:42:10] INFO root fetch - processPackages [pritunl-api]: Remove: archive file [/home/abi/fetcher/tmp/pritunl_api-1.1.8.tar.gz]
+[2024-05-04 18:42:10] INFO root fetch - processPackages [pritunl-api]: Remove: archive file [/home/abi/fetcher/tmp/pritunl_api-1.1.9.tar.gz]
+[2024-05-04 18:42:10] INFO root fetch - main [MainThread]: End processing [pritunl-api]: success
+[2024-05-04 18:42:11] INFO root fetch - processPackages [mov-cli]: Remove: archive file [/home/abi/fetcher/tmp/mov_cli-4.3.8.tar.gz]
+[2024-05-04 18:42:11] INFO root fetch - processPackages [mov-cli]: Remove: archive file [/home/abi/fetcher/tmp/mov_cli-4.4a1.tar.gz]
+[2024-05-04 18:42:11] INFO root fetch - main [MainThread]: End processing [mov-cli]: success
+[2024-05-04 18:42:11] INFO root fetch - main [MainThread]: Store serial: [23059359]
