@@ -15939,3 +15939,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 17:12:10] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240503-py3-none-win_amd64.whl.zip]
 [2024-05-04 17:12:10] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-05-04 17:12:10] INFO root fetch - main [MainThread]: Store serial: [23058776]
+[2024-05-04 17:14:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058776]
+[2024-05-04 17:14:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-04 17:14:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kfre
+[2024-05-04 17:14:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: freegenius
+[2024-05-04 17:14:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: salabim
+[2024-05-04 17:14:18] INFO root fetch - processPackages [kfre]: New version: [0.1.2b3] Old Version: [0.1.2b2]
+[2024-05-04 17:14:18] INFO root fetch - processPackages [freegenius]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-04 17:14:18] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/50/1c/568127dd68aa26fbd9d35d7897a1b9f9201d0fe7d1f3dbcaa4292993326d/kfre-0.1.2b2.tar.gz
+[2024-05-04 17:14:18] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/0e/ac/770840194beb2448580b2d97f020f15feef14a9ebd56e47efa6f48962cd7/freegenius-0.2.4.tar.gz
+[2024-05-04 17:14:18] INFO root fetch - processPackages [salabim]: New version: [24.0.4.post1] Old Version: [24.0.4.post0]
+[2024-05-04 17:14:19] INFO root fetch - processPackages [salabim]: Downloading https://files.pythonhosted.org/packages/88/d1/36f795197a2758a6406e1fc2f8b759e60464644021fac0398661c977a99e/salabim-24.0.4.post0.tar.gz
+[2024-05-04 17:14:19] INFO root fetch - processPackages [kfre]: Downloading https://files.pythonhosted.org/packages/a9/11/53b083f77553706b9b4b79f4d1a953005351d9995611d40d722c934338db/kfre-0.1.2b3.tar.gz
+[2024-05-04 17:14:19] INFO root fetch - processPackages [kfre]: executing diffoscope
+[2024-05-04 17:14:19] INFO root fetch - processPackages [kfre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfre-0.1.2b2.tar.gz tmp/kfre-0.1.2b3.tar.gz --markdown 20240504/k/kfre/0.1.2b2-0.1.2b3/README.md --exclude *.pyd
+[2024-05-04 17:14:19] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/f9/77/272f2c0804a4165db6608b5912bdc8ba9798abe9e603b0e24fb3f4bffbd3/freegenius-0.2.5.tar.gz
+[2024-05-04 17:14:19] INFO root fetch - processPackages [salabim]: Downloading https://files.pythonhosted.org/packages/0e/f2/0b0f2b6d17c51c1ceeb0840c34b3b6f930b94f8c14a1d55e476233bacb55/salabim-24.0.4.post1.tar.gz
+[2024-05-04 17:14:19] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-04 17:14:19] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.4.tar.gz tmp/freegenius-0.2.5.tar.gz --markdown 20240504/f/freegenius/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-04 17:14:19] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2b2.tar.gz]
+[2024-05-04 17:14:19] INFO root fetch - processPackages [kfre]: Remove: archive file [/home/abi/fetcher/tmp/kfre-0.1.2b3.tar.gz]
+[2024-05-04 17:14:19] INFO root fetch - main [MainThread]: End processing [kfre]: success
+[2024-05-04 17:14:19] INFO root fetch - processPackages [salabim]: executing diffoscope
+[2024-05-04 17:14:19] INFO root fetch - processPackages [salabim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salabim-24.0.4.post0.tar.gz tmp/salabim-24.0.4.post1.tar.gz --markdown 20240504/s/salabim/24.0.4.post0-24.0.4.post1/README.md --exclude *.pyd
+[2024-05-04 17:14:21] INFO root fetch - processPackages [salabim]: Remove: archive file [/home/abi/fetcher/tmp/salabim-24.0.4.post0.tar.gz]
+[2024-05-04 17:14:21] INFO root fetch - processPackages [salabim]: Remove: archive file [/home/abi/fetcher/tmp/salabim-24.0.4.post1.tar.gz]
+[2024-05-04 17:14:21] INFO root fetch - main [MainThread]: End processing [salabim]: success
+[2024-05-04 17:14:21] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.4.tar.gz]
+[2024-05-04 17:14:21] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.5.tar.gz]
+[2024-05-04 17:14:21] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-04 17:14:21] INFO root fetch - main [MainThread]: Store serial: [23058790]
