@@ -2504,3 +2504,56 @@
 [2024-05-04 02:43:45] INFO root fetch - processPackages [cocorum]: Remove: archive file [/home/abi/fetcher/tmp/cocorum-0.5.2.tar.gz]
 [2024-05-04 02:43:45] INFO root fetch - main [MainThread]: End processing [cocorum]: success
 [2024-05-04 02:43:45] INFO root fetch - main [MainThread]: Store serial: [23053104]
+[2024-05-04 02:45:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23053104]
+[2024-05-04 02:45:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 02:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfds-nightly
+[2024-05-04 02:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rship-sdk
+[2024-05-04 02:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nm-magic-wand-nightly
+[2024-05-04 02:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blackbox-cli
+[2024-05-04 02:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-databrew-cicd
+[2024-05-04 02:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fhirstarter
+[2024-05-04 02:45:54] INFO root fetch - processPackages [nm-magic-wand-nightly]: New version: [0.2.2.20240503] Old Version: [0.2.2.20240502]
+[2024-05-04 02:45:54] INFO root fetch - processPackages [rship-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-04 02:45:54] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-04 02:45:54] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202405030044] Old Version: [4.9.4.dev202405020044]
+[2024-05-04 02:45:54] INFO root fetch - processPackages [blackbox-cli]: New version: [2.4.0] Old Version: [2.3.2]
+[2024-05-04 02:45:54] INFO root fetch - processPackages [nm-magic-wand-nightly]: Downloading https://files.pythonhosted.org/packages/1a/be/bcd9bba2fcc23bda06fd208861ba30579830e832f998bdbb2206fb01a266/nm_magic_wand_nightly-0.2.2.20240502-cp39-cp39-manylinux_2_17_x86_64.whl
+[2024-05-04 02:45:54] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/3a/59/54682cd06bcbefd5dde8d84fb3de98d90b0b8e120a88abcece0c610e21bf/rship-sdk-0.0.8.tar.gz
+[2024-05-04 02:45:54] INFO root fetch - processPackages [fhirstarter]: New version: [2.4.0] Old Version: [2.3.0]
+[2024-05-04 02:45:54] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/17/7e/10dc4e180f3ff633d28e365b45352eceb2413eeef3ad1f26d4ef6cbf84e1/tfds-nightly-4.9.4.dev202405020044.tar.gz
+[2024-05-04 02:45:54] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/9c/18/acad9d22fe20a13d93a1aee49739981e3ab739a2edcb478344aa0fc5b783/cdk_databrew_cicd-2.0.98.tar.gz
+[2024-05-04 02:45:54] WARNING root fetch - processPackages [nm-magic-wand-nightly]: Skipping package: exceeds size limit 76878156>=10485760
+[2024-05-04 02:45:54] INFO root fetch - main [MainThread]: End processing [nm-magic-wand-nightly] error
+[2024-05-04 02:45:54] INFO root fetch - processPackages [blackbox-cli]: Downloading https://files.pythonhosted.org/packages/44/b8/1758b5549341322c956264a1d8c80c939b8e5a0ba3bdb848b70a15d77b69/blackbox_cli-2.3.2.tar.gz
+[2024-05-04 02:45:54] INFO root fetch - processPackages [fhirstarter]: Downloading https://files.pythonhosted.org/packages/d0/ea/75cf1a5c81ed9204c3ade1f68742560defc07ba203890be62347ea5e9f2e/fhirstarter-2.3.0.tar.gz
+[2024-05-04 02:45:54] INFO root fetch - processPackages [rship-sdk]: Downloading https://files.pythonhosted.org/packages/e2/03/acdd2ce759ba46fd3d4908fec2c95091d80ad09dab18be18f29f9cc8f62a/rship-sdk-0.0.9.tar.gz
+[2024-05-04 02:45:54] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/66/41/4c5089b171b28b627753bb3de1b4b696fdaeb4f78ef49dcb72a79fcb6e9d/cdk_databrew_cicd-2.0.99.tar.gz
+[2024-05-04 02:45:54] INFO root fetch - processPackages [rship-sdk]: executing diffoscope
+[2024-05-04 02:45:54] INFO root fetch - processPackages [rship-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rship-sdk-0.0.8.tar.gz tmp/rship-sdk-0.0.9.tar.gz --markdown 20240504/r/rship-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-04 02:45:54] INFO root fetch - processPackages [blackbox-cli]: Downloading https://files.pythonhosted.org/packages/d9/70/39102d92308c20003e06e88c6c8eaccd80853fe3a9d0ec644888532120bd/blackbox_cli-2.4.0.tar.gz
+[2024-05-04 02:45:54] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/2d/fd/292e1858f353f66d834f5419a352754870f91d17d1fd78e75241c0db0b51/tfds-nightly-4.9.4.dev202405030044.tar.gz
+[2024-05-04 02:45:54] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2024-05-04 02:45:54] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20240504/c/cdk-databrew-cicd/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-04 02:45:54] INFO root fetch - processPackages [blackbox-cli]: executing diffoscope
+[2024-05-04 02:45:54] INFO root fetch - processPackages [blackbox-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blackbox_cli-2.3.2.tar.gz tmp/blackbox_cli-2.4.0.tar.gz --markdown 20240504/b/blackbox-cli/2.3.2-2.4.0/README.md --exclude *.pyd
+[2024-05-04 02:45:55] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.8.tar.gz]
+[2024-05-04 02:45:55] INFO root fetch - processPackages [rship-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rship-sdk-0.0.9.tar.gz]
+[2024-05-04 02:45:55] INFO root fetch - main [MainThread]: End processing [rship-sdk]: success
+[2024-05-04 02:45:55] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-05-04 02:45:55] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202405020044.tar.gz tmp/tfds-nightly-4.9.4.dev202405030044.tar.gz --markdown 20240504/t/tfds-nightly/4.9.4.dev202405020044-4.9.4.dev202405030044/README.md --exclude *.pyd
+[2024-05-04 02:45:55] INFO root fetch - processPackages [fhirstarter]: Downloading https://files.pythonhosted.org/packages/cc/30/bf1b636ffb33a3611365528e04ff525ac65522f23eed70822b72c42be42a/fhirstarter-2.4.0.tar.gz
+[2024-05-04 02:45:55] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.98.tar.gz]
+[2024-05-04 02:45:55] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.99.tar.gz]
+[2024-05-04 02:45:55] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2024-05-04 02:45:55] INFO root fetch - processPackages [blackbox-cli]: Remove: archive file [/home/abi/fetcher/tmp/blackbox_cli-2.3.2.tar.gz]
+[2024-05-04 02:45:55] INFO root fetch - processPackages [blackbox-cli]: Remove: archive file [/home/abi/fetcher/tmp/blackbox_cli-2.4.0.tar.gz]
+[2024-05-04 02:45:55] INFO root fetch - main [MainThread]: End processing [blackbox-cli]: success
+[2024-05-04 02:45:56] INFO root fetch - processPackages [fhirstarter]: executing diffoscope
+[2024-05-04 02:45:56] INFO root fetch - processPackages [fhirstarter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhirstarter-2.3.0.tar.gz tmp/fhirstarter-2.4.0.tar.gz --markdown 20240504/f/fhirstarter/2.3.0-2.4.0/README.md --exclude *.pyd
+[2024-05-04 02:45:57] INFO root fetch - processPackages [fhirstarter]: Remove: archive file [/home/abi/fetcher/tmp/fhirstarter-2.3.0.tar.gz]
+[2024-05-04 02:45:57] INFO root fetch - processPackages [fhirstarter]: Remove: archive file [/home/abi/fetcher/tmp/fhirstarter-2.4.0.tar.gz]
+[2024-05-04 02:45:57] INFO root fetch - main [MainThread]: End processing [fhirstarter]: success
+[2024-05-04 02:46:04] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405020044.tar.gz]
+[2024-05-04 02:46:04] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405030044.tar.gz]
+[2024-05-04 02:46:04] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-05-04 02:46:04] INFO root fetch - main [MainThread]: Store serial: [23053121]
