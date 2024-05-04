@@ -21396,3 +21396,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 23:54:37] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.9.tar.gz]
 [2024-05-04 23:54:37] INFO root fetch - main [MainThread]: End processing [petrosa]: success
 [2024-05-04 23:54:37] INFO root fetch - main [MainThread]: Store serial: [23061266]
+[2024-05-04 23:56:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061266]
+[2024-05-04 23:56:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 23:56:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flarejax
+[2024-05-04 23:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: league-tools
+[2024-05-04 23:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpy-cross-v6.2
+[2024-05-04 23:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: instatest
+[2024-05-04 23:56:46] INFO root fetch - processPackages [flarejax]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-04 23:56:46] INFO root fetch - processPackages [league-tools]: New version: [0.1.0.dev1] Old Version: [0.1.0]
+[2024-05-04 23:56:46] INFO root fetch - processPackages [flarejax]: Downloading https://files.pythonhosted.org/packages/61/b4/9d04a605caee5088a5aa285b798d2ff3b883e4992b91d58694803b9b8bcc/flarejax-0.2.0.tar.gz
+[2024-05-04 23:56:46] WARNING root fetch - processPackages [mpy-cross-v6.2]: Skipping, unable to determine old version
+[2024-05-04 23:56:46] INFO root fetch - main [MainThread]: End processing [mpy-cross-v6.2] error
+[2024-05-04 23:56:46] WARNING root fetch - processPackages [instatest]: Skipping, unable to determine old version
+[2024-05-04 23:56:46] INFO root fetch - main [MainThread]: End processing [instatest] error
+[2024-05-04 23:56:46] INFO root fetch - processPackages [league-tools]: Downloading https://files.pythonhosted.org/packages/5a/4d/adef8ad67446cfb8bdc66d93d379b773ca8c6d846ac1fe0cf055c7f8b487/league_tools-0.1.0.tar.gz
+[2024-05-04 23:56:46] INFO root fetch - processPackages [flarejax]: Downloading https://files.pythonhosted.org/packages/67/35/7799e9deab55c87e21846fe4a514de125217d9379e18a5317539a8085477/flarejax-0.2.1.tar.gz
+[2024-05-04 23:56:46] INFO root fetch - processPackages [flarejax]: executing diffoscope
+[2024-05-04 23:56:46] INFO root fetch - processPackages [flarejax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarejax-0.2.0.tar.gz tmp/flarejax-0.2.1.tar.gz --markdown 20240504/f/flarejax/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-04 23:56:46] INFO root fetch - processPackages [league-tools]: Downloading https://files.pythonhosted.org/packages/4d/29/c3459a816da605fba7f1603485fe5eee6890e0fde06d0214a7404c432f1f/league_tools-0.1.0.dev1.tar.gz
+[2024-05-04 23:56:46] INFO root fetch - processPackages [league-tools]: executing diffoscope
+[2024-05-04 23:56:46] INFO root fetch - processPackages [league-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/league_tools-0.1.0.tar.gz tmp/league_tools-0.1.0.dev1.tar.gz --markdown 20240504/l/league-tools/0.1.0-0.1.0.dev1/README.md --exclude *.pyd
+[2024-05-04 23:56:47] INFO root fetch - processPackages [flarejax]: Remove: archive file [/home/abi/fetcher/tmp/flarejax-0.2.0.tar.gz]
+[2024-05-04 23:56:47] INFO root fetch - processPackages [flarejax]: Remove: archive file [/home/abi/fetcher/tmp/flarejax-0.2.1.tar.gz]
+[2024-05-04 23:56:47] INFO root fetch - main [MainThread]: End processing [flarejax]: success
+[2024-05-04 23:56:47] INFO root fetch - processPackages [league-tools]: Remove: archive file [/home/abi/fetcher/tmp/league_tools-0.1.0.tar.gz]
+[2024-05-04 23:56:47] INFO root fetch - processPackages [league-tools]: Remove: archive file [/home/abi/fetcher/tmp/league_tools-0.1.0.dev1.tar.gz]
+[2024-05-04 23:56:47] INFO root fetch - main [MainThread]: End processing [league-tools]: success
+[2024-05-04 23:56:47] INFO root fetch - main [MainThread]: Store serial: [23061281]
