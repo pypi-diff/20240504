@@ -14663,3 +14663,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:21:58] INFO root fetch - processPackages [tapo]: Remove: archive file [/home/abi/fetcher/tmp/tapo-0.3.0-pp39-pypy39_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
 [2024-05-04 15:21:58] INFO root fetch - main [MainThread]: End processing [tapo]: success
 [2024-05-04 15:21:58] INFO root fetch - main [MainThread]: Store serial: [23058165]
+[2024-05-04 15:24:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058165]
+[2024-05-04 15:24:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 15:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wlr-layout-ui
+[2024-05-04 15:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leonranp
+[2024-05-04 15:24:06] INFO root fetch - processPackages [wlr-layout-ui]: New version: [1.6.9] Old Version: [1.6.8]
+[2024-05-04 15:24:06] INFO root fetch - processPackages [wlr-layout-ui]: Downloading https://files.pythonhosted.org/packages/06/d7/3e9626f4efa8a82efeff6b5d02ec768aa8538e1040fe6c6a871e41647767/wlr_layout_ui-1.6.8.tar.gz
+[2024-05-04 15:24:06] INFO root fetch - processPackages [leonranp]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-04 15:24:06] INFO root fetch - processPackages [leonranp]: Downloading https://files.pythonhosted.org/packages/a0/1c/c688db57ce9f954ca96bc2c5bfde925b181dd1c473069fa9e68af3efb0ee/leonranp-0.1.4.tar.gz
+[2024-05-04 15:24:06] INFO root fetch - processPackages [wlr-layout-ui]: Downloading https://files.pythonhosted.org/packages/31/ac/58a6e19edffc7b9089c68eba5ce7a9f8bab9c42c248fd314a4231ddd8386/wlr_layout_ui-1.6.9.tar.gz
+[2024-05-04 15:24:06] INFO root fetch - processPackages [wlr-layout-ui]: executing diffoscope
+[2024-05-04 15:24:06] INFO root fetch - processPackages [wlr-layout-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wlr_layout_ui-1.6.8.tar.gz tmp/wlr_layout_ui-1.6.9.tar.gz --markdown 20240504/w/wlr-layout-ui/1.6.8-1.6.9/README.md --exclude *.pyd
+[2024-05-04 15:24:07] INFO root fetch - processPackages [leonranp]: Downloading https://files.pythonhosted.org/packages/d4/4c/08c7144475d5363e94835f40375e0c2320b894a754ed24d34c9dad797ffd/leonranp-0.1.5.tar.gz
+[2024-05-04 15:24:07] INFO root fetch - processPackages [leonranp]: executing diffoscope
+[2024-05-04 15:24:07] INFO root fetch - processPackages [leonranp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leonranp-0.1.4.tar.gz tmp/leonranp-0.1.5.tar.gz --markdown 20240504/l/leonranp/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-04 15:24:07] INFO root fetch - processPackages [wlr-layout-ui]: Remove: archive file [/home/abi/fetcher/tmp/wlr_layout_ui-1.6.8.tar.gz]
+[2024-05-04 15:24:07] INFO root fetch - processPackages [wlr-layout-ui]: Remove: archive file [/home/abi/fetcher/tmp/wlr_layout_ui-1.6.9.tar.gz]
+[2024-05-04 15:24:07] INFO root fetch - main [MainThread]: End processing [wlr-layout-ui]: success
+[2024-05-04 15:24:07] INFO root fetch - processPackages [leonranp]: Remove: archive file [/home/abi/fetcher/tmp/leonranp-0.1.4.tar.gz]
+[2024-05-04 15:24:07] INFO root fetch - processPackages [leonranp]: Remove: archive file [/home/abi/fetcher/tmp/leonranp-0.1.5.tar.gz]
+[2024-05-04 15:24:07] INFO root fetch - main [MainThread]: End processing [leonranp]: success
+[2024-05-04 15:24:07] INFO root fetch - main [MainThread]: Store serial: [23058198]
