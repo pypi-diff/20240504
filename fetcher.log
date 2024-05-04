@@ -15658,3 +15658,20 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 16:46:50] WARNING root fetch - processPackages [juxtapose]: Skipping package: exceeds size limit 19361597>=10485760
 [2024-05-04 16:46:50] INFO root fetch - main [MainThread]: End processing [juxtapose] error
 [2024-05-04 16:46:50] INFO root fetch - main [MainThread]: Store serial: [23058564]
+[2024-05-04 16:48:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058564]
+[2024-05-04 16:48:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-04 16:48:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rdkix
+[2024-05-04 16:48:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bluetooth-adapters
+[2024-05-04 16:48:59] INFO root fetch - processPackages [rdkix]: New version: [2023.9.5] Old Version: [2023.9.4]
+[2024-05-04 16:48:59] INFO root fetch - processPackages [bluetooth-adapters]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-04 16:48:59] INFO root fetch - processPackages [bluetooth-adapters]: Downloading https://files.pythonhosted.org/packages/97/e6/295a3e28b4b43961f0e2b2937f0ce6b20b10263624ba11027112071f5bec/bluetooth_adapters-0.8.0.tar.gz
+[2024-05-04 16:48:59] INFO root fetch - processPackages [rdkix]: Downloading https://files.pythonhosted.org/packages/24/87/26ab9bda53166ce2d24ecb60b6cecd4c8bbf1e5a788adc9da99da87170b3/rdkix-2023.9.4-1-cp39-cp39-win_amd64.whl
+[2024-05-04 16:48:59] WARNING root fetch - processPackages [rdkix]: Skipping package: exceeds size limit 20956062>=10485760
+[2024-05-04 16:48:59] INFO root fetch - main [MainThread]: End processing [rdkix] error
+[2024-05-04 16:48:59] INFO root fetch - processPackages [bluetooth-adapters]: Downloading https://files.pythonhosted.org/packages/cb/29/45f86e0db2abae311227eac6d39f676f6e68930f05cd1210a8b69dca580e/bluetooth_adapters-0.9.0.tar.gz
+[2024-05-04 16:49:00] INFO root fetch - processPackages [bluetooth-adapters]: executing diffoscope
+[2024-05-04 16:49:00] INFO root fetch - processPackages [bluetooth-adapters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluetooth_adapters-0.8.0.tar.gz tmp/bluetooth_adapters-0.9.0.tar.gz --markdown 20240504/b/bluetooth-adapters/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-04 16:49:00] INFO root fetch - processPackages [bluetooth-adapters]: Remove: archive file [/home/abi/fetcher/tmp/bluetooth_adapters-0.8.0.tar.gz]
+[2024-05-04 16:49:00] INFO root fetch - processPackages [bluetooth-adapters]: Remove: archive file [/home/abi/fetcher/tmp/bluetooth_adapters-0.9.0.tar.gz]
+[2024-05-04 16:49:00] INFO root fetch - main [MainThread]: End processing [bluetooth-adapters]: success
+[2024-05-04 16:49:00] INFO root fetch - main [MainThread]: Store serial: [23058570]
