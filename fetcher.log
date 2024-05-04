@@ -9013,3 +9013,32 @@
 [2024-05-04 06:18:48] WARNING root fetch - processPackages [genenet]: Skipping, unable to determine old version
 [2024-05-04 06:18:48] INFO root fetch - main [MainThread]: End processing [genenet] error
 [2024-05-04 06:18:48] INFO root fetch - main [MainThread]: Store serial: [23055569]
+[2024-05-04 06:21:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23055569]
+[2024-05-04 06:21:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-04 06:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: genenet
+[2024-05-04 06:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: skyramp
+[2024-05-04 06:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libvsbsdl-python
+[2024-05-04 06:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fs-attestation-safe-cli
+[2024-05-04 06:21:11] WARNING root fetch - processPackages [genenet]: Skipping, unable to determine old version
+[2024-05-04 06:21:11] INFO root fetch - main [MainThread]: End processing [genenet] error
+[2024-05-04 06:21:11] INFO root fetch - processPackages [fs-attestation-safe-cli]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-04 06:21:12] INFO root fetch - processPackages [fs-attestation-safe-cli]: Downloading https://files.pythonhosted.org/packages/12/18/792f5db70865770877de67e3b166cdb377a9d9fe6ba7b3c5b5d32fb5105d/fs_attestation_safe_cli-1.0.2.tar.gz
+[2024-05-04 06:21:12] INFO root fetch - processPackages [skyramp]: New version: [0.4.82] Old Version: [0.4.81]
+[2024-05-04 06:21:12] INFO root fetch - processPackages [libvsbsdl-python]: New version: [20240504] Old Version: [20240227]
+[2024-05-04 06:21:12] INFO root fetch - processPackages [skyramp]: Downloading https://files.pythonhosted.org/packages/7c/46/da352e9c7ec23ca19018c17328c6a25ff685299c4b95dd1f6533caf00df8/skyramp-0.4.81.tar.gz
+[2024-05-04 06:21:12] INFO root fetch - processPackages [libvsbsdl-python]: Downloading https://files.pythonhosted.org/packages/c0/58/573b60defe5b7b6776ccf25383cdc049def994de8822c71ec7d7a03d7a77/libvsbsdl-python-20240227.tar.gz
+[2024-05-04 06:21:12] INFO root fetch - processPackages [fs-attestation-safe-cli]: Downloading https://files.pythonhosted.org/packages/9e/32/e7229c885c9d7c5c88b0b86123016829eb4bd2332afab2406be7886d5a2c/fs_attestation_safe_cli-1.0.3.tar.gz
+[2024-05-04 06:21:12] WARNING root fetch - processPackages [skyramp]: Skipping package: exceeds size limit 162156899>=10485760
+[2024-05-04 06:21:12] INFO root fetch - main [MainThread]: End processing [skyramp] error
+[2024-05-04 06:21:12] INFO root fetch - processPackages [fs-attestation-safe-cli]: executing diffoscope
+[2024-05-04 06:21:12] INFO root fetch - processPackages [fs-attestation-safe-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fs_attestation_safe_cli-1.0.2.tar.gz tmp/fs_attestation_safe_cli-1.0.3.tar.gz --markdown 20240504/f/fs-attestation-safe-cli/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-04 06:21:12] INFO root fetch - processPackages [libvsbsdl-python]: Downloading https://files.pythonhosted.org/packages/17/51/0db3e01b90771949a7ca1ee6ad6811dda1b2599cd1e6a6012b5a5faacffa/libvsbsdl-python-20240504.tar.gz
+[2024-05-04 06:21:12] INFO root fetch - processPackages [libvsbsdl-python]: executing diffoscope
+[2024-05-04 06:21:12] INFO root fetch - processPackages [libvsbsdl-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libvsbsdl-python-20240227.tar.gz tmp/libvsbsdl-python-20240504.tar.gz --markdown 20240504/l/libvsbsdl-python/20240227-20240504/README.md --exclude *.pyd
+[2024-05-04 06:21:13] INFO root fetch - processPackages [fs-attestation-safe-cli]: Remove: archive file [/home/abi/fetcher/tmp/fs_attestation_safe_cli-1.0.2.tar.gz]
+[2024-05-04 06:21:13] INFO root fetch - processPackages [fs-attestation-safe-cli]: Remove: archive file [/home/abi/fetcher/tmp/fs_attestation_safe_cli-1.0.3.tar.gz]
+[2024-05-04 06:21:13] INFO root fetch - main [MainThread]: End processing [fs-attestation-safe-cli]: success
+[2024-05-04 06:21:17] INFO root fetch - processPackages [libvsbsdl-python]: Remove: archive file [/home/abi/fetcher/tmp/libvsbsdl-python-20240227.tar.gz]
+[2024-05-04 06:21:17] INFO root fetch - processPackages [libvsbsdl-python]: Remove: archive file [/home/abi/fetcher/tmp/libvsbsdl-python-20240504.tar.gz]
+[2024-05-04 06:21:17] INFO root fetch - main [MainThread]: End processing [libvsbsdl-python]: success
+[2024-05-04 06:21:17] INFO root fetch - main [MainThread]: Store serial: [23055581]
