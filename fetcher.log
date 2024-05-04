@@ -14870,3 +14870,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-04 15:41:30] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.606.24115.tar.gz]
 [2024-05-04 15:41:30] INFO root fetch - main [MainThread]: End processing [mo-dots]: success
 [2024-05-04 15:41:30] INFO root fetch - main [MainThread]: Store serial: [23058265]
+[2024-05-04 15:43:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23058265]
+[2024-05-04 15:43:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-04 15:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-redux
+[2024-05-04 15:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-kwargs
+[2024-05-04 15:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Pygments
+[2024-05-04 15:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ncmlistdownloader
+[2024-05-04 15:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ayjay
+[2024-05-04 15:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mo-math
+[2024-05-04 15:43:39] INFO root fetch - processPackages [Pygments]: New version: [2.9.0] Old Version: [2.8.1]
+[2024-05-04 15:43:39] INFO root fetch - processPackages [ayjay]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-04 15:43:39] INFO root fetch - processPackages [ncmlistdownloader]: New version: [1.1.0.240430a1] Old Version: [1.0.9.240504]
+[2024-05-04 15:43:39] INFO root fetch - processPackages [python-redux]: New version: [0.9.9a0] Old Version: [0.9.9]
+[2024-05-04 15:43:39] INFO root fetch - processPackages [mo-math]: New version: [7.614.24125] Old Version: [7.613.24121]
+[2024-05-04 15:43:39] INFO root fetch - processPackages [mo-kwargs]: New version: [7.614.24125] Old Version: [7.613.24121]
+[2024-05-04 15:43:39] INFO root fetch - processPackages [Pygments]: Downloading https://files.pythonhosted.org/packages/15/9d/bc9047ca1eee944cc245f3649feea6eecde3f38011ee9b8a6a64fb7088cd/Pygments-2.8.1.tar.gz
+[2024-05-04 15:43:39] INFO root fetch - processPackages [ncmlistdownloader]: Downloading https://files.pythonhosted.org/packages/22/40/f6c46c60e0ca9bfb505e2ea0e8245d2b67a36df04908098c6f80a12d7cd0/ncmlistdownloader-1.0.9.240504.tar.gz
+[2024-05-04 15:43:39] INFO root fetch - processPackages [python-redux]: Downloading https://files.pythonhosted.org/packages/25/f6/7f30f318faa9b9b4ed3d5b4517bc78ba60a0a3853efcecbfb8f1093f06f8/python_redux-0.9.9.tar.gz
+[2024-05-04 15:43:39] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/ca/77/18351109a6391256719c42156c3cc2bc0b72114858ebc3b4ea07c816b226/mo_kwargs-7.613.24121.tar.gz
+[2024-05-04 15:43:39] INFO root fetch - processPackages [ayjay]: Downloading https://files.pythonhosted.org/packages/c2/8c/85f8c3e3cdfdbba1dbe7e4b117f50b8f3f548b8acc3cc8921f7613e33f10/ayjay-0.1.1.tar.gz
+[2024-05-04 15:43:39] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/a5/8a/e10be139de13f98c3d4ae01204812a52d101311289f0cc7ef49a52083c18/mo_math-7.613.24121.tar.gz
+[2024-05-04 15:43:39] INFO root fetch - processPackages [ncmlistdownloader]: Downloading https://files.pythonhosted.org/packages/b5/af/620b1371bf6cc8c95c296120df670935975098ee268a27e57d17a1dbda75/ncmlistdownloader-1.1.0.240430a1.tar.gz
+[2024-05-04 15:43:39] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/54/1e/aa56d921be449de7333dd2c6dcd144b91fba4801758e48a8cbf8b7bbe4ca/mo_kwargs-7.614.24125.tar.gz
+[2024-05-04 15:43:39] INFO root fetch - processPackages [python-redux]: Downloading https://files.pythonhosted.org/packages/78/88/2425c5253a8005201b5b26b38481ea8784a32bea175f334a08082da43388/python_redux-0.9.9a0.tar.gz
+[2024-05-04 15:43:40] INFO root fetch - processPackages [ncmlistdownloader]: executing diffoscope
+[2024-05-04 15:43:40] INFO root fetch - processPackages [ncmlistdownloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ncmlistdownloader-1.0.9.240504.tar.gz tmp/ncmlistdownloader-1.1.0.240430a1.tar.gz --markdown 20240504/n/ncmlistdownloader/1.0.9.240504-1.1.0.240430a1/README.md --exclude *.pyd
+[2024-05-04 15:43:40] INFO root fetch - processPackages [ayjay]: Downloading https://files.pythonhosted.org/packages/93/01/581bb05cea062459f23738660255ecc6142fbf193c628a0ba97c36abf343/ayjay-0.1.2.tar.gz
+[2024-05-04 15:43:40] INFO root fetch - processPackages [mo-kwargs]: executing diffoscope
+[2024-05-04 15:43:40] INFO root fetch - processPackages [mo-kwargs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_kwargs-7.613.24121.tar.gz tmp/mo_kwargs-7.614.24125.tar.gz --markdown 20240504/m/mo-kwargs/7.613.24121-7.614.24125/README.md --exclude *.pyd
+[2024-05-04 15:43:40] INFO root fetch - processPackages [python-redux]: executing diffoscope
+[2024-05-04 15:43:40] INFO root fetch - processPackages [python-redux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_redux-0.9.9.tar.gz tmp/python_redux-0.9.9a0.tar.gz --markdown 20240504/p/python-redux/0.9.9-0.9.9a0/README.md --exclude *.pyd
+[2024-05-04 15:43:40] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/e6/87/566e1b158aed5fa9f1c97db3044249721d6aa6a11e53a5163dfc12053886/mo_math-7.614.24125.tar.gz
+[2024-05-04 15:43:40] INFO root fetch - processPackages [ayjay]: executing diffoscope
+[2024-05-04 15:43:40] INFO root fetch - processPackages [ayjay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ayjay-0.1.1.tar.gz tmp/ayjay-0.1.2.tar.gz --markdown 20240504/a/ayjay/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-04 15:43:40] INFO root fetch - processPackages [mo-math]: executing diffoscope
+[2024-05-04 15:43:40] INFO root fetch - processPackages [mo-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_math-7.613.24121.tar.gz tmp/mo_math-7.614.24125.tar.gz --markdown 20240504/m/mo-math/7.613.24121-7.614.24125/README.md --exclude *.pyd
+[2024-05-04 15:43:40] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.613.24121.tar.gz]
+[2024-05-04 15:43:40] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.614.24125.tar.gz]
+[2024-05-04 15:43:40] INFO root fetch - main [MainThread]: End processing [mo-kwargs]: success
+[2024-05-04 15:43:40] INFO root fetch - processPackages [python-redux]: Remove: archive file [/home/abi/fetcher/tmp/python_redux-0.9.9.tar.gz]
+[2024-05-04 15:43:40] INFO root fetch - processPackages [python-redux]: Remove: archive file [/home/abi/fetcher/tmp/python_redux-0.9.9a0.tar.gz]
+[2024-05-04 15:43:40] INFO root fetch - main [MainThread]: End processing [python-redux]: success
+[2024-05-04 15:43:40] INFO root fetch - processPackages [ncmlistdownloader]: Remove: archive file [/home/abi/fetcher/tmp/ncmlistdownloader-1.0.9.240504.tar.gz]
+[2024-05-04 15:43:40] INFO root fetch - processPackages [ncmlistdownloader]: Remove: archive file [/home/abi/fetcher/tmp/ncmlistdownloader-1.1.0.240430a1.tar.gz]
+[2024-05-04 15:43:40] INFO root fetch - main [MainThread]: End processing [ncmlistdownloader]: success
+[2024-05-04 15:43:40] INFO root fetch - processPackages [ayjay]: Remove: archive file [/home/abi/fetcher/tmp/ayjay-0.1.1.tar.gz]
+[2024-05-04 15:43:40] INFO root fetch - processPackages [ayjay]: Remove: archive file [/home/abi/fetcher/tmp/ayjay-0.1.2.tar.gz]
+[2024-05-04 15:43:40] INFO root fetch - main [MainThread]: End processing [ayjay]: success
+[2024-05-04 15:43:40] INFO root fetch - processPackages [Pygments]: Downloading https://files.pythonhosted.org/packages/ba/6e/7a7c13c21d8a4a7f82ccbfe257a045890d4dbf18c023f985f565f97393e3/Pygments-2.9.0.tar.gz
+[2024-05-04 15:43:40] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.613.24121.tar.gz]
+[2024-05-04 15:43:40] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.614.24125.tar.gz]
+[2024-05-04 15:43:40] INFO root fetch - main [MainThread]: End processing [mo-math]: success
+[2024-05-04 15:43:41] INFO root fetch - processPackages [Pygments]: executing diffoscope
+[2024-05-04 15:43:41] INFO root fetch - processPackages [Pygments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240504:/home/abi/fetcher/20240504:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pygments-2.8.1.tar.gz tmp/Pygments-2.9.0.tar.gz --markdown 20240504/P/Pygments/2.8.1-2.9.0/README.md --exclude *.pyd
+[2024-05-04 15:43:52] INFO root fetch - processPackages [Pygments]: Remove: archive file [/home/abi/fetcher/tmp/Pygments-2.8.1.tar.gz]
+[2024-05-04 15:43:52] INFO root fetch - processPackages [Pygments]: Remove: archive file [/home/abi/fetcher/tmp/Pygments-2.9.0.tar.gz]
+[2024-05-04 15:43:52] INFO root fetch - main [MainThread]: End processing [Pygments]: success
+[2024-05-04 15:43:52] INFO root fetch - main [MainThread]: Store serial: [23058285]
